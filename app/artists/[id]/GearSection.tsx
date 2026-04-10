@@ -40,7 +40,7 @@ export default function GearSection({ artist }: Props) {
     allGear = allGear.filter(g => g.user && g.user.includes(mf));
   }
 
-  const cats = ['すべて', ...new Set(allGear.map(g => g.cat))];
+  const cats = ['すべて', ...Array.from(new Set(allGear.map(g => g.cat)))];
   let gears = catFilter === 'すべて' ? allGear : allGear.filter(g => g.cat === catFilter);
   if ((catFilter === 'ギターエフェクター' || catFilter === 'ベースエフェクター') && fxSubcat !== 'すべて') {
     gears = gears.filter(g => getFxSubcat(g) === fxSubcat);
