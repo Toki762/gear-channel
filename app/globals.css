@@ -325,11 +325,16 @@
     @media (max-width: 768px) {
       .page { padding: 16px 14px 50px; }
       .a-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
-      .featured-grid { grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+      .featured-grid { grid-template-columns: repeat(3, 1fr); }
       .hero { padding: 22px 0 18px; }
       .hero h1 { font-size: 21px; }
       .hero p { font-size: 12px; }
       .gex-buy-row { flex-wrap: wrap; }
+      /* featured-card タブレット */
+      .featured-card { padding: 14px 12px; min-height: 80px; }
+      .featured-name { font-size: 14px; }
+      /* prose ページ */
+      .prose-block { font-size: 13px; }
     }
 
     /* ===== 640px 以下 (スマホ横向き・小型タブレット) ===== */
@@ -357,6 +362,18 @@
       /* ── Grids → 2列 ── */
       .a-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
       .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      /* featured-card スマホ */
+      .featured-card { padding: 12px 10px; min-height: 72px; border-radius: 10px; }
+      .featured-rank { font-size: 9px; }
+      .featured-name { font-size: 13px; }
+      .featured-en { font-size: 10px; }
+      /* prose ページ */
+      .prose-block h2 { font-size: 14px; margin: 20px 0 6px; }
+      .prose-block { font-size: 13px; }
+      /* BBS購入リンク: 横スクロール */
+      .bbs-buy-links { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-bottom: 2px; }
+      .bbs-buy-links::-webkit-scrollbar { display: none; }
+      .bbs-buy-links .g-buy { flex-shrink: 0; font-size: 11px; padding: 6px 10px; }
 
       /* ── カテゴリフィルター: 横スクロール ── */
       .cf {
@@ -421,6 +438,10 @@
       /* ── Artist card ── */
       .a-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
       .featured-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+      .featured-card { padding: 10px 8px; min-height: 66px; }
+      .featured-name { font-size: 12px; }
+      .featured-en { font-size: 9px; }
+      .featured-badge { font-size: 8px; }
       .a-card { padding: 10px; }
       .a-name { font-size: 13px; }
       .a-en { font-size: 10px; }

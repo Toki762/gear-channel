@@ -318,7 +318,7 @@ function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentCh
 
   // 購入リンク（機材タグがある場合）
   const buyLinks = p.gear_tag ? (
-    <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginTop: '8px' }}>
+    <div className="bbs-buy-links" style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginTop: '8px' }}>
       <a className="g-buy ba" href={`https://www.amazon.co.jp/s?k=${encodeURIComponent(p.gear_tag)}`} target="_blank" rel="noopener noreferrer">🛒 Amazon</a>
       <a className="g-buy br" href={`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(p.gear_tag)}/`} target="_blank" rel="noopener noreferrer">楽天</a>
       <a className="g-buy by" href={`https://shopping.yahoo.co.jp/search?p=${encodeURIComponent(p.gear_tag)}`} target="_blank" rel="noopener noreferrer">Yahoo</a>

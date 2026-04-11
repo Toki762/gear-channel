@@ -22,7 +22,7 @@ export default function ContactPage() {
           以下のGoogleフォームよりお問い合わせいただけます。通常2〜5営業日以内にご返信いたします。
         </p>
 
-        <div style={{
+        <div id="contact-form-wrap" style={{
           background: '#fafaf8',
           border: '1px solid #e4e2dd',
           borderRadius: '12px',
