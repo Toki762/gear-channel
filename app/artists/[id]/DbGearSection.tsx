@@ -12,6 +12,7 @@ interface DbGearItem {
   price: string;
   gear_desc: string;
   kw: string;
+  image_url: string;
   created_at: string;
 }
 
@@ -42,7 +43,24 @@ export default function DbGearSection({ gear }: Props) {
           <div style={{ display: 'grid', gap: 8 }}>
             {items.map(item => (
               <div key={item.id} style={{ background: '#fff', border: '1px solid #e4e2dd', borderRadius: 10, padding: '12px 14px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: 10 }}>
+                <div style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+
+                  {/* 商品画像 */}
+                  {item.image_url ? (
+                    <div style={{ width: 80, minWidth: 80, height: 80, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8f8f6', borderRadius: 8, border: '1px solid #ece9e3', overflow: 'hidden', flexShrink: 0 }}>
+                      <img
+                        src={item.image_url}
+                        alt={item.name}
+                        style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
+                      />
+                    </div>
+                  ) : (
+                    <div style={{ width: 80, minWidth: 80, height: 80, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#f8f8f6', borderRadius: 8, border: '1px solid #ece9e3', fontSize: 28, flexShrink: 0 }}>
+                      {item.cat_icon}
+                    </div>
+                  )}
+
+                  {/* 情報 */}
                   <div style={{ flex: 1, minWidth: 0 }}>
                     {/* ブランド + 機材名 */}
                     <div style={{ fontWeight: 700, fontSize: 15, marginBottom: 4 }}>
@@ -58,33 +76,18 @@ export default function DbGearSection({ gear }: Props) {
 
                     {/* 説明 */}
                     {item.gear_desc && (
-                      <div style={{ fontSize: 12, color: '#666', lineHeight: 1.7 }}>{item.gear_desc}</div>
+                      <div style={{ fontSize: 12, color: '#666', lineHeight: 1.7, marginBottom: 8 }}>{item.gear_desc}</div>
+                    )}
+
+                    {/* 購入リンク */}
+                    {(item.kw || item.name) && (
+                      <div style={{ display: 'flex', gap: 5, flexWrap: 'wrap' }}>
+                        <a className="g-buy ba" href={`https://www.amazon.co.jp/s?k=${encodeURIComponent(item.kw || item.name)}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, padding: '5px 8px' }}>🛒 Amazon</a>
+                        <a className="g-buy bs" href={`https://www.soundhouse.co.jp/search/index?search_all=${encodeURIComponent(item.kw || item.name)}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, padding: '5px 8px' }}>🎸 サウンドハウス</a>
+                        <a className="g-buy br" href={`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(item.kw || item.name)}/`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 11, padding: '5px 8px' }}>楽天</a>
+                      </div>
                     )}
                   </div>
-
-                  {/* 購入リンク */}
-                  {item.kw || item.name ? (
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: 4, flexShrink: 0 }}>
-                      <a
-                        className="g-buy ba"
-                        href={`https://www.amazon.co.jp/s?k=${encodeURIComponent(item.kw || item.name)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ fontSize: 11, padding: '5px 8px' }}
-                      >
-                        🛒 Amazon
-                      </a>
-                      <a
-                        className="g-buy bs"
-                        href={`https://www.soundhouse.co.jp/search/index?search_all=${encodeURIComponent(item.kw || item.name)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ fontSize: 11, padding: '5px 8px' }}
-                      >
-                        🎸 サウンドハウス
-                      </a>
-                    </div>
-                  ) : null}
                 </div>
               </div>
             ))}

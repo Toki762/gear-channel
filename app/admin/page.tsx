@@ -130,6 +130,7 @@ function GearForm() {
     price: '',
     desc: '',
     kw: '',
+    imageUrl: '',
   });
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
@@ -161,6 +162,7 @@ function GearForm() {
       price: form.price.trim(),
       gear_desc: form.desc.trim(),
       kw: form.kw.trim(),
+      image_url: form.imageUrl.trim(),
     });
 
     setLoading(false);
@@ -228,6 +230,28 @@ function GearForm() {
         <div>
           <Label>検索キーワード（機材名の英語表記など）</Label>
           <input placeholder="例: fender stratocaster strat" value={form.kw} onChange={e => setForm(f => ({ ...f, kw: e.target.value }))} style={inputStyle} />
+        </div>
+
+        {/* 商品画像URL */}
+        <div>
+          <Label>商品画像URL（メーカー公式・サウンドハウス・楽天などの画像URL）</Label>
+          <input
+            placeholder="例: https://www.soundhouse.co.jp/images/item/..."
+            value={form.imageUrl}
+            onChange={e => setForm(f => ({ ...f, imageUrl: e.target.value }))}
+            style={inputStyle}
+          />
+          {form.imageUrl && (
+            <div style={{ marginTop: 6, display: 'flex', alignItems: 'center', gap: 10 }}>
+              <img
+                src={form.imageUrl}
+                alt="プレビュー"
+                style={{ width: 64, height: 64, objectFit: 'contain', border: '1px solid #e4e2dd', borderRadius: 6, background: '#fafaf8' }}
+                onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
+              />
+              <span style={{ fontSize: 11, color: '#888' }}>← プレビュー</span>
+            </div>
+          )}
         </div>
 
         {/* 説明 */}
