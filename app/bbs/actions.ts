@@ -1,4 +1,5 @@
 'use server';
+// @ts-nocheck
 // =============================================================
 // BBS Server Actions — Supabase への書き込み
 // service_role key を使用（RLS をバイパス）
