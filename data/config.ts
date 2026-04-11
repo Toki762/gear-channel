@@ -118,7 +118,6 @@ export const ARTIST_KANA: Record<string, string> = {
   'radwimps':      'らどわいんぷす らどうぃんぷす',
   'john-mayer':    'じょんめいやー',
   'yoasobi':       'よあそび あやせ いくら',
-  'vaundy':        'ばうんでぃ',
   'bjc':           'ぶらんきーじぇっとしてぃ ぶらんきー あさいけんいち',
   'kinggnu':       'きんぐぬー king gnu',
   'oneokrock':     'わんおくろっく one ok rock',
@@ -133,5 +132,4 @@ export const ARTIST_KANA: Record<string, string> = {
   'quruli':        'くるり Quruli',
   'macaroni':      'まかろにえんぴつ Macaroni Enpitsu',
   'billie':        'びりーあいりっしゅ billie eilish',
-  'vaundy':        'ばうんでぃ',
 };
