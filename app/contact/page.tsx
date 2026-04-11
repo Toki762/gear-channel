@@ -36,7 +36,7 @@ export default function ContactPage() {
             ※ Googleフォームが開きます
           </div>
           <a
-            href="https://forms.gle/YOUR_FORM_ID"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe7vyVthjYuapRoN3ys1LWcgqWFXjtIALnRms25GO6Gg88Irw/viewform"
             target="_blank"
             rel="noopener noreferrer"
             style={{
