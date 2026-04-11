@@ -129,7 +129,34 @@
 
     /* ===== BBS ===== */
     .bbs-layout { display: grid; grid-template-columns: 1fr 230px; gap: 18px; align-items: start; }
-    @media(max-width: 680px){ .bbs-layout { grid-template-columns: 1fr; } .bbs-sidebar { display: none; } }
+    @media(max-width: 680px){
+      .bbs-layout { grid-template-columns: 1fr; }
+      /* サイドバーをメインの上に移動して横スクロール表示 */
+      .bbs-layout { display: flex; flex-direction: column-reverse; }
+      .bbs-sidebar {
+        display: flex !important;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 6px;
+        padding: 8px 0 10px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .bbs-sidebar::-webkit-scrollbar { display: none; }
+      .bbs-sidebar-label { display: none !important; } /* "カテゴリ" ラベルをスマホで非表示 */
+      .bbs-sidebar button {
+        display: inline-block !important;
+        width: auto !important;
+        white-space: nowrap;
+        flex-shrink: 0;
+        border: 1px solid #ddd !important;
+        border-radius: 20px !important;
+        padding: 6px 14px !important;
+        font-size: 12px !important;
+        margin-bottom: 0 !important;
+      }
+    }
     .bbs-topbar { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
     .bbs-title { font-size: 18px; font-weight: 900; letter-spacing: -0.4px; }
     .sort-btn { font-size: 12px; color: #888; background: none; border: 1px solid #ddd; border-radius: 4px; padding: 4px 10px; }
@@ -557,8 +584,7 @@
       /* ── Gear filter banner ── */
       .gear-filter-banner { font-size: 12px; padding: 8px 12px; }
 
-      /* ── BBS Sidebar (すでに非表示だが念のため) ── */
-      .bbs-sidebar { display: none !important; }
+      /* ── BBS Sidebar: スマホでは横スクロールバーに変換済み（上のメディアクエリで対応） ── */
 
       /* ── About/Privacy/Contact ページ ── */
       .page h2 { font-size: 16px !important; }

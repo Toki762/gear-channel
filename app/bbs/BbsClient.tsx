@@ -291,7 +291,7 @@ export default function BbsClient({
 
         {/* ── サイドバー ─── */}
         <aside className="bbs-sidebar">
-          <div style={{ fontWeight: 700, fontSize: '13px', marginBottom: '8px' }}>カテゴリ</div>
+          <div className="bbs-sidebar-label" style={{ fontWeight: 700, fontSize: '13px', marginBottom: '8px' }}>カテゴリ</div>
           {BBS_CATS.map(c => (
             <button
               key={c}
