@@ -10,7 +10,8 @@ import type { ActionResult, CreatePostInput, CreateCommentInput } from '@/lib/ty
 // ── 投稿を作成 ────────────────────────────────────────────
 export async function createPost(input: CreatePostInput): Promise<ActionResult<{ id: string }>> {
   try {
-    const supabase = createServerClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase = createServerClient() as any;
     const { data, error } = await supabase
       .from('bbs_posts')
       .insert({
@@ -35,7 +36,8 @@ export async function createPost(input: CreatePostInput): Promise<ActionResult<{
 // ── コメントを作成 ────────────────────────────────────────
 export async function createComment(input: CreateCommentInput): Promise<ActionResult<{ id: string }>> {
   try {
-    const supabase = createServerClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase = createServerClient() as any;
     const { data, error } = await supabase
       .from('bbs_comments')
       .insert({
@@ -59,7 +61,8 @@ export async function createComment(input: CreateCommentInput): Promise<ActionRe
 // ── 投稿に投票 ────────────────────────────────────────────
 export async function votePost(postId: string, delta: 1 | -1): Promise<ActionResult> {
   try {
-    const supabase = createServerClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase = createServerClient() as any;
 
     // 現在のvotes取得
     const { data: current, error: fetchErr } = await supabase
@@ -87,7 +90,8 @@ export async function votePost(postId: string, delta: 1 | -1): Promise<ActionRes
 // ── コメントに投票 ─────────────────────────────────────────
 export async function voteComment(commentId: string, delta: 1 | -1): Promise<ActionResult> {
   try {
-    const supabase = createServerClient();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const supabase = createServerClient() as any;
 
     const { data: current, error: fetchErr } = await supabase
       .from('bbs_comments')
