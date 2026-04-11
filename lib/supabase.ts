@@ -5,18 +5,35 @@ import { createClient } from '@supabase/supabase-js';
 import type { BbsPost, BbsComment } from './types';
 
 // ── Database 型（Supabase CLI で自動生成する場合はそちらを使用）──
+type PostInsert = {
+  author?: string;
+  flair: string;
+  title: string;
+  body: string;
+  votes?: number;
+  gear_tag?: string | null;
+  reply_to?: string | null;
+};
+type CommentInsert = {
+  post_id: string;
+  author?: string;
+  body: string;
+  votes?: number;
+  reply_to?: string | null;
+};
+
 export type Database = {
   public: {
     Tables: {
       bbs_posts: {
         Row: BbsPost;
-        Insert: Omit<BbsPost, 'id' | 'created_at'>;
-        Update: Partial<Omit<BbsPost, 'id'>>;
+        Insert: PostInsert;
+        Update: Partial<BbsPost>;
       };
       bbs_comments: {
         Row: BbsComment;
-        Insert: Omit<BbsComment, 'id' | 'created_at'>;
-        Update: Partial<Omit<BbsComment, 'id'>>;
+        Insert: CommentInsert;
+        Update: Partial<BbsComment>;
       };
     };
   };
