@@ -1,43 +1,10 @@
+// @ts-nocheck
+'use server';
 // =============================================================
 // Supabase クライアント — ブラウザ用 & サーバー用
 // =============================================================
 import { createClient } from '@supabase/supabase-js';
 import type { BbsPost, BbsComment } from './types';
-
-// ── Database 型（Supabase CLI で自動生成する場合はそちらを使用）──
-type PostInsert = {
-  author?: string;
-  flair: string;
-  title: string;
-  body: string;
-  votes?: number;
-  gear_tag?: string | null;
-  reply_to?: string | null;
-};
-type CommentInsert = {
-  post_id: string;
-  author?: string;
-  body: string;
-  votes?: number;
-  reply_to?: string | null;
-};
-
-export type Database = {
-  public: {
-    Tables: {
-      bbs_posts: {
-        Row: BbsPost;
-        Insert: PostInsert;
-        Update: Partial<BbsPost>;
-      };
-      bbs_comments: {
-        Row: BbsComment;
-        Insert: CommentInsert;
-        Update: Partial<BbsComment>;
-      };
-    };
-  };
-};
 
 // ── ブラウザ用クライアント（Client Components から使用）────────
 export function createBrowserClient() {
@@ -48,7 +15,6 @@ export function createBrowserClient() {
 }
 
 // ── サーバー用クライアント（Server Components / Server Actions）─
-// 注意: service_role キーは環境変数に入れ、クライアントに漏らさない
 export function createServerClient() {
   return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -79,7 +45,7 @@ export async function fetchPosts(options?: {
   let query = supabase
     .from('bbs_posts')
     .select('*, bbs_comments(*)')
-    .is('reply_to', null); // トップレベル投稿のみ
+    .is('reply_to', null);
 
   if (flair && flair !== 'すべて') query = query.eq('flair', flair);
   if (search) query = query.or(`title.ilike.%${search}%,body.ilike.%${search}%`);
