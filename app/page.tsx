@@ -26,9 +26,9 @@ export default async function HomePage() {
     <main className="page fade">
       {/* Hero */}
       <div className="hero">
-        <h1>🎸 Gear <span style={{ color: '#d97706' }}>ちゃんねる</span></h1>
+        <h1>Gear <span style={{ color: '#d97706' }}>ちゃんねる</span></h1>
         <p style={{ color: '#888', fontSize: '13px' }}>
-          日本のアーティストが使用している機材を調べよう
+          アーティストが使用している機材を調べよう
         </p>
       </div>
 
@@ -45,7 +45,6 @@ export default async function HomePage() {
         <div className="featured-grid">
           {popularArtists.map((a, i) => (
             <Link key={a.id} href={`/artists/${a.id}`} className="featured-card">
-              <div className="featured-rank">#{i + 1} 人気</div>
               <div className="featured-name">{a.name}</div>
               <div className="featured-en">{a.en}</div>
               <div style={{ marginTop: '8px' }}>
