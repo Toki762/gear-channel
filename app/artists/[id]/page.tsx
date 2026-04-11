@@ -5,6 +5,8 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { DB } from '@/data/artists';
 import GearSection from './GearSection';
+import DbGearSection from './DbGearSection';
+import { createServerClient } from '@/lib/supabase';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
 
@@ -48,9 +50,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // ── Page ──────────────────────────────────────────────────
-export default function ArtistPage({ params }: Props) {
+export default async function ArtistPage({ params }: Props) {
   const artist = DB.find(a => a.id === params.id);
   if (!artist) notFound();
+
+  // Supabase から管理者追加の機材を取得
+  const supabase = createServerClient();
+  const { data: dbGear } = await supabase
+    .from('db_gear')
+    .select('*')
+    .eq('artist_id', params.id)
+    .order('created_at', { ascending: false });
 
   // 機材リスト（全カテゴリをフラットに展開）
   const gearNames: string[] = Object.values(artist.gear ?? {})
@@ -106,8 +116,13 @@ export default function ArtistPage({ params }: Props) {
         <div style={{ fontSize: '12px', color: '#888', lineHeight: 1.7 }}>{artist.members}</div>
       </div>
 
-      {/* 機材セクション（インタラクティブ） */}
+      {/* 機材セクション（TypeScript静的データ） */}
       <GearSection artist={artist} />
+
+      {/* 管理者が追加した機材（Supabase） */}
+      {dbGear && dbGear.length > 0 && (
+        <DbGearSection gear={dbGear} />
+      )}
     </main>
   );
 }
