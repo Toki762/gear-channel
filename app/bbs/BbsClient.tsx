@@ -54,6 +54,8 @@ export default function BbsClient({
   const [newPost, setNewPost] = useState({ author: '', flair: 'ギター', title: '', body: '', gearTag: '' });
   const [newComment, setNewComment] = useState<Record<string, { author: string; body: string }>>({});
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [isSubmittingPost, setIsSubmittingPost] = useState(false);
+  const [isSubmittingComment, setIsSubmittingComment] = useState<Record<string, boolean>>({});
 
   // クエリを更新してページ再レンダリング
   function pushQuery(params: Record<string, string | undefined>) {
@@ -104,43 +106,55 @@ export default function BbsClient({
 
   async function handleSubmitPost(e: React.FormEvent) {
     e.preventDefault();
+    if (isSubmittingPost) return; // 二重送信防止
     setSubmitError(null);
     if (!newPost.title.trim() || !newPost.body.trim()) {
       setSubmitError('タイトルと本文は必須です');
       return;
     }
-    const result = await createPost({
-      author: newPost.author || '名無し',
-      flair: newPost.flair,
-      title: newPost.title,
-      body: newPost.body,
-      gear_tag: newPost.gearTag || undefined,
-    });
-    if (result.ok) {
-      setNewPost({ author: '', flair: 'ギター', title: '', body: '', gearTag: '' });
-      setShowNewPost(false);
-      router.refresh();
-    } else {
-      setSubmitError(result.error);
+    setIsSubmittingPost(true);
+    try {
+      const result = await createPost({
+        author: newPost.author || '名無し',
+        flair: newPost.flair,
+        title: newPost.title,
+        body: newPost.body,
+        gear_tag: newPost.gearTag || undefined,
+      });
+      if (result.ok) {
+        setNewPost({ author: '', flair: 'ギター', title: '', body: '', gearTag: '' });
+        setShowNewPost(false);
+        router.refresh();
+      } else {
+        setSubmitError(result.error);
+      }
+    } finally {
+      setIsSubmittingPost(false);
     }
   }
 
   async function handleSubmitComment(postId: string, e: React.FormEvent) {
     e.preventDefault();
+    if (isSubmittingComment[postId]) return; // 二重送信防止
     const c = newComment[postId];
     if (!c?.body.trim()) return;
-    const result = await createComment({
-      post_id: postId,
-      author: c.author || '名無し',
-      body: c.body,
-      reply_to: replyTo?.commentId,
-    });
-    if (result.ok) {
-      setNewComment(prev => ({ ...prev, [postId]: { author: '', body: '' } }));
-      setReplyTo(null);
-      router.refresh();
-    } else {
-      alert(result.error);
+    setIsSubmittingComment(prev => ({ ...prev, [postId]: true }));
+    try {
+      const result = await createComment({
+        post_id: postId,
+        author: c.author || '名無し',
+        body: c.body,
+        reply_to: replyTo?.commentId,
+      });
+      if (result.ok) {
+        setNewComment(prev => ({ ...prev, [postId]: { author: '', body: '' } }));
+        setReplyTo(null);
+        router.refresh();
+      } else {
+        alert(result.error);
+      }
+    } finally {
+      setIsSubmittingComment(prev => ({ ...prev, [postId]: false }));
     }
   }
 
@@ -223,8 +237,10 @@ export default function BbsClient({
                 <textarea className="bbs-in" placeholder="本文（必須）" value={newPost.body} onChange={e => setNewPost(p => ({ ...p, body: e.target.value }))} rows={4} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', resize: 'vertical' }} />
               </div>
               <div style={{ display: 'flex', gap: '8px', marginTop: '10px' }}>
-                <button type="submit" style={{ background: '#1a1a1a', color: '#fff', border: 'none', borderRadius: '6px', padding: '8px 18px', fontWeight: 700, fontSize: '13px', cursor: 'pointer' }}>投稿する</button>
-                <button type="button" onClick={() => setShowNewPost(false)} style={{ background: '#f0ede7', color: '#555', border: 'none', borderRadius: '6px', padding: '8px 14px', fontSize: '13px', cursor: 'pointer' }}>キャンセル</button>
+                <button type="submit" disabled={isSubmittingPost} style={{ background: isSubmittingPost ? '#888' : '#1a1a1a', color: '#fff', border: 'none', borderRadius: '6px', padding: '8px 18px', fontWeight: 700, fontSize: '13px', cursor: isSubmittingPost ? 'not-allowed' : 'pointer', opacity: isSubmittingPost ? 0.7 : 1 }}>
+                  {isSubmittingPost ? '送信中…' : '投稿する'}
+                </button>
+                <button type="button" onClick={() => setShowNewPost(false)} disabled={isSubmittingPost} style={{ background: '#f0ede7', color: '#555', border: 'none', borderRadius: '6px', padding: '8px 14px', fontSize: '13px', cursor: 'pointer' }}>キャンセル</button>
               </div>
             </form>
           )}
@@ -245,6 +261,7 @@ export default function BbsClient({
                 commentValue={newComment[p.id] ?? { author: '', body: '' }}
                 onCommentChange={val => setNewComment(prev => ({ ...prev, [p.id]: val }))}
                 onSubmitComment={e => handleSubmitComment(p.id, e)}
+                isSubmittingComment={!!isSubmittingComment[p.id]}
                 replyTo={replyTo}
                 onSetReplyTo={setReplyTo}
                 onVoteComment={handleVoteComment}
@@ -306,12 +323,13 @@ interface PostCardProps {
   commentValue: { author: string; body: string };
   onCommentChange: (v: { author: string; body: string }) => void;
   onSubmitComment: (e: React.FormEvent) => void;
+  isSubmittingComment: boolean;
   replyTo: { postId: string; commentId: string; author: string } | null;
   onSetReplyTo: (r: { postId: string; commentId: string; author: string } | null) => void;
   onVoteComment: (id: string, delta: 1 | -1) => void;
 }
 
-function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentChange, onSubmitComment, replyTo, onSetReplyTo, onVoteComment }: PostCardProps) {
+function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentChange, onSubmitComment, isSubmittingComment, replyTo, onSetReplyTo, onVoteComment }: PostCardProps) {
   const flairCls = FLAIR_CLS[p.flair] ?? 'f-other';
   const comments = p.bbs_comments ?? [];
   const excerpt = (p.body ?? '').slice(0, 120);
@@ -408,8 +426,8 @@ function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentCh
               rows={3}
               style={{ padding: '7px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', resize: 'vertical' }}
             />
-            <button type="submit" style={{ background: '#1a1a1a', color: '#fff', border: 'none', borderRadius: '6px', padding: '8px 16px', fontWeight: 700, fontSize: '13px', cursor: 'pointer', alignSelf: 'flex-start' }}>
-              コメントする
+            <button type="submit" disabled={isSubmittingComment} style={{ background: isSubmittingComment ? '#888' : '#1a1a1a', color: '#fff', border: 'none', borderRadius: '6px', padding: '8px 16px', fontWeight: 700, fontSize: '13px', cursor: isSubmittingComment ? 'not-allowed' : 'pointer', opacity: isSubmittingComment ? 0.7 : 1, alignSelf: 'flex-start' }}>
+              {isSubmittingComment ? '送信中…' : 'コメントする'}
             </button>
           </form>
         </div>
