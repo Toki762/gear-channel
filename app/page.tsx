@@ -7,10 +7,11 @@ import { POPULAR_IDS } from '@/data/config';
 import { fetchPosts } from '@/lib/supabase';
 
 export default async function HomePage() {
-  // 人気アーティスト
+  // 人気アーティスト（POPULAR_IDS の順、先頭6件）
   const popularArtists = POPULAR_IDS
     .map(id => DB.find(a => a.id === id))
-    .filter(Boolean) as typeof DB;
+    .filter(Boolean)
+    .slice(0, 6) as typeof DB;
 
   // 人気スレッド（votes順 上位5件）
   const { posts: popularPosts } = await fetchPosts({ sort: 'pop', pageSize: 5 });
@@ -27,35 +28,22 @@ export default async function HomePage() {
 
       {/* 人気アーティスト */}
       <section style={{ marginBottom: '36px' }}>
-        <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', marginBottom: '10px', letterSpacing: '0.5px' }}>
-          🔥 人気アーティスト
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+          <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', letterSpacing: '0.5px' }}>
+            🔥 人気アーティスト
+          </div>
+          <Link href="/artists" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600, textDecoration: 'none' }}>
+            全てのアーティストを見る →
+          </Link>
         </div>
         <div className="featured-grid">
-          {popularArtists.slice(0, 6).map(a => (
+          {popularArtists.map((a, i) => (
             <Link key={a.id} href={`/artists/${a.id}`} className="featured-card">
-              <div className="featured-badge">人気</div>
-              <div style={{ fontWeight: 700, fontSize: '15px', lineHeight: 1.3 }}>{a.name}</div>
-              <div style={{ fontSize: '11px', color: '#888', marginTop: '2px' }}>{a.en}</div>
-              <div style={{ fontSize: '11px', color: '#aaa', marginTop: '6px' }}>
-                <span className="tag" style={{ marginRight: '4px' }}>{a.genre}</span>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* 全アーティスト */}
-      <section style={{ marginBottom: '36px' }}>
-        <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', marginBottom: '10px', letterSpacing: '0.5px' }}>
-          🎵 アーティスト一覧
-        </div>
-        <div className="a-grid">
-          {DB.map(a => (
-            <Link key={a.id} href={`/artists/${a.id}`} className="a-card">
-              <div className="a-name">{a.name}</div>
-              <div className="a-en">{a.en}</div>
-              <div style={{ fontSize: '11px', color: '#aaa', marginTop: '4px' }}>
-                {(a.desc || '').slice(0, 60)}…
+              <div className="featured-rank">#{i + 1} 人気</div>
+              <div className="featured-name">{a.name}</div>
+              <div className="featured-en">{a.en}</div>
+              <div style={{ marginTop: '8px' }}>
+                <span className="featured-badge">{a.genre}</span>
               </div>
             </Link>
           ))}
@@ -65,14 +53,19 @@ export default async function HomePage() {
       {/* 人気スレッド */}
       {popularPosts.length > 0 && (
         <section>
-          <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', marginBottom: '10px', letterSpacing: '0.5px' }}>
-            💬 人気のスレッド
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+            <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', letterSpacing: '0.5px' }}>
+              💬 人気のスレッド
+            </div>
+            <Link href="/bbs" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600, textDecoration: 'none' }}>
+              掲示板をもっと見る →
+            </Link>
           </div>
           <div>
             {popularPosts.map(p => (
-              <Link key={p.id} href={`/bbs?post=${p.id}`} className="post-card" style={{ display: 'block', marginBottom: '8px' }}>
-                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
-                  <div className="vote-col" style={{ textAlign: 'center', minWidth: '32px' }}>
+              <Link key={p.id} href={`/bbs?post=${p.id}`} className="post-card" style={{ display: 'block', marginBottom: '8px', textDecoration: 'none' }}>
+                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', padding: '12px 14px' }}>
+                  <div style={{ textAlign: 'center', minWidth: '36px' }}>
                     <div style={{ fontWeight: 700, fontSize: '14px' }}>{p.votes}</div>
                     <div style={{ fontSize: '9px', color: '#aaa' }}>票</div>
                   </div>
@@ -88,11 +81,6 @@ export default async function HomePage() {
                 </div>
               </Link>
             ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: '12px' }}>
-            <Link href="/bbs" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600 }}>
-              掲示板をもっと見る →
-            </Link>
           </div>
         </section>
       )}

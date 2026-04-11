@@ -18,7 +18,7 @@ interface Props {
 export default function ArtistsPage({ searchParams }: Props) {
   const q = (searchParams.q ?? '').toLowerCase();
 
-  const filtered = q
+  const filtered = (q
     ? DB.filter(a => {
         const kana = ARTIST_KANA[a.id] ?? '';
         return (
@@ -28,7 +28,12 @@ export default function ArtistsPage({ searchParams }: Props) {
           a.genre.toLowerCase().includes(q)
         );
       })
-    : DB;
+    : [...DB]
+  ).sort((a, b) => {
+    const ka = ARTIST_KANA[a.id] ?? a.name;
+    const kb = ARTIST_KANA[b.id] ?? b.name;
+    return ka.localeCompare(kb, 'ja');
+  });
 
   return (
     <main className="page fade">

@@ -3,8 +3,8 @@
 // BbsClient — 掲示板の全インタラクション
 // ソート・フィルター・投票・新規投稿・コメント
 // =============================================================
-import { useState, useTransition } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useTransition, useEffect } from 'react';
+import { useRouter, usePathname } from 'next/navigation';
 import type { BbsPost, BbsComment } from '@/lib/types';
 import { BBS_CATS, FLAIR_CLS } from '@/data/config';
 import { createPost, createComment, votePost, voteComment } from './actions';
@@ -31,6 +31,7 @@ export default function BbsClient({
   pageSize,
 }: Props) {
   const router = useRouter();
+  const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
 
   // フィルター状態
@@ -38,6 +39,11 @@ export default function BbsClient({
   const [search, setSearch] = useState(initialSearch);
   const [sort, setSort] = useState<'pop' | 'new'>(initialSort);
   const [page, setPage] = useState(initialPage);
+
+  // ページ遷移時に検索バーをリセット
+  useEffect(() => {
+    setSearch('');
+  }, [pathname]);
 
   // 表示制御
   const [openPosts, setOpenPosts] = useState<Set<string>>(new Set());
@@ -310,20 +316,22 @@ function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentCh
   const comments = p.bbs_comments ?? [];
   const excerpt = (p.body ?? '').slice(0, 120);
 
-  // 購入リンク
+  // 購入リンク（機材タグがある場合）
   const buyLinks = p.gear_tag ? (
     <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap', marginTop: '8px' }}>
       <a className="g-buy ba" href={`https://www.amazon.co.jp/s?k=${encodeURIComponent(p.gear_tag)}`} target="_blank" rel="noopener noreferrer">🛒 Amazon</a>
       <a className="g-buy br" href={`https://search.rakuten.co.jp/search/mall/${encodeURIComponent(p.gear_tag)}/`} target="_blank" rel="noopener noreferrer">楽天</a>
       <a className="g-buy by" href={`https://shopping.yahoo.co.jp/search?p=${encodeURIComponent(p.gear_tag)}`} target="_blank" rel="noopener noreferrer">Yahoo</a>
+      <a className="g-buy bs" href={`https://www.soundhouse.co.jp/search/index?search_all=${encodeURIComponent(p.gear_tag)}`} target="_blank" rel="noopener noreferrer">🎸 サウンドハウス</a>
     </div>
   ) : null;
 
   return (
     <div className="post-card">
-      <div style={{ display: 'flex', gap: '10px' }}>
+      {/* 上部：投票 + 投稿本文 */}
+      <div style={{ display: 'flex', gap: '10px', padding: '12px 14px 10px' }}>
         {/* 投票カラム */}
-        <div className="vote-col">
+        <div className="vote-col" style={{ width: '44px', minWidth: '44px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px', flexShrink: 0 }}>
           <button className="vote-btn up" onClick={() => onVote(1)} title="いいね">▲</button>
           <div className="vote-n">{p.votes}</div>
           <button className="vote-btn dn" onClick={() => onVote(-1)} title="よくない">▼</button>
@@ -359,9 +367,9 @@ function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentCh
         </div>
       </div>
 
-      {/* コメントセクション */}
+      {/* コメントセクション（下に展開） */}
       {isOpen && (
-        <div className="comments-section" style={{ marginTop: '12px', paddingTop: '12px', borderTop: '1px solid #f0ede7' }}>
+        <div className="comments-section" style={{ borderTop: '1px solid #f0ede7', padding: '12px 14px 14px' }}>
           {/* コメント一覧 */}
           {comments.length > 0 && (
             <div style={{ marginBottom: '12px' }}>
