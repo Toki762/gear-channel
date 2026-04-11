@@ -155,7 +155,7 @@ export const DB: Artist[] = [
     genre: 'Blues / Rock / Pop',
     since: '1999年〜',
     origin: 'アメリカ コネチカット州',
-    members: 'John Mayer（ソロ / Dead & Company など）',
+    members: 'John Mayer（ソロ、Dead & Company など）',
     desc: `アメリカのギタリスト/シンガーソングライター。SRVとクラプトンに強く影響を受けたブルースの申し子。「Continuum」「Battle Studies」などの名盤と圧倒的なライブパフォーマンスで世界トップクラスの評価を受ける。機材へのこだわりも有名。`,
     gear: [
       { id: 'jm-strat', brand: 'Fender', name: 'John Mayer Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'John Mayer', price: '¥250,000〜¥380,000', kw: 'Fender John Mayer Stratocaster', yt: ["Fender John Mayer Strat レビュー サウンド", "John Mayer ストラト トーン 再現"], similar: ["Fender American Professional II Strat", "PRS Silver Sky", "Suhr Classic S"], desc: ``, wikiTitle: 'Fender_Stratocaster' },

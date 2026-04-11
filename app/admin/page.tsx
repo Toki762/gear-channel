@@ -141,9 +141,11 @@ function GearForm() {
   }
 
   // 選択アーティストのメンバーリスト
+  // members フィールドのセパレーターは ' / '（スペース付きスラッシュ）
+  // 括弧内の '/' (例: Vo/Gt) と区別するため、前後にスペースがある ' / ' のみで分割
   const artist = DB.find(a => a.id === form.artistId);
   const memberList = artist?.members
-    ? artist.members.split(/[、,，\n]/).map(s => s.trim()).filter(Boolean)
+    ? artist.members.split(/ \/ |[、,，\n]/).map(s => s.trim()).filter(Boolean)
     : [];
 
   async function handleSubmit(e: React.FormEvent) {
