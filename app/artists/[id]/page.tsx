@@ -54,13 +54,19 @@ export default async function ArtistPage({ params }: Props) {
   const artist = DB.find(a => a.id === params.id);
   if (!artist) notFound();
 
-  // Supabase から管理者追加の機材を取得
-  const supabase = createServerClient();
-  const { data: dbGear } = await supabase
-    .from('db_gear')
-    .select('*')
-    .eq('artist_id', params.id)
-    .order('created_at', { ascending: false });
+  // Supabase から管理者追加の機材を取得（テーブルが存在しない場合はスキップ）
+  let dbGear: any[] = [];
+  try {
+    const supabase = createServerClient();
+    const { data, error } = await supabase
+      .from('db_gear')
+      .select('*')
+      .eq('artist_id', params.id)
+      .order('created_at', { ascending: false });
+    if (!error && data) dbGear = data;
+  } catch {
+    // db_gearテーブル未作成の場合は無視
+  }
 
   // 機材リスト（全カテゴリをフラットに展開）
   const gearNames: string[] = Object.values(artist.gear ?? {})

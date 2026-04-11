@@ -14,7 +14,13 @@ export default async function HomePage() {
     .slice(0, 6) as typeof DB;
 
   // 人気スレッド（votes順 上位5件）
-  const { posts: popularPosts } = await fetchPosts({ sort: 'pop', pageSize: 5 });
+  let popularPosts: any[] = [];
+  try {
+    const result = await fetchPosts({ sort: 'pop', pageSize: 5 });
+    popularPosts = result.posts;
+  } catch {
+    // Supabase接続エラー時はスキップ
+  }
 
   return (
     <main className="page fade">
