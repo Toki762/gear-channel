@@ -51,7 +51,7 @@ export default function DbGearSection({ gear }: Props) {
                     </div>
 
                     {/* メタ情報 */}
-                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', fontSize: 12, color: '#888', marginBottom: item.desc ? 6 : 0 }}>
+                    <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', fontSize: 12, color: '#888', marginBottom: item.gear_desc ? 6 : 0 }}>
                       {item.user && <span>👤 {item.user}</span>}
                       {item.price && <span>💴 {item.price}</span>}
                     </div>
