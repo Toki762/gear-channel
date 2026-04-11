@@ -41,7 +41,7 @@ export type Database = {
 
 // ── ブラウザ用クライアント（Client Components から使用）────────
 export function createBrowserClient() {
-  return createClient<Database>(
+  return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
@@ -50,7 +50,7 @@ export function createBrowserClient() {
 // ── サーバー用クライアント（Server Components / Server Actions）─
 // 注意: service_role キーは環境変数に入れ、クライアントに漏らさない
 export function createServerClient() {
-  return createClient<Database>(
+  return createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.SUPABASE_SERVICE_ROLE_KEY!,
     { auth: { persistSession: false } }
