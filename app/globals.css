@@ -290,6 +290,16 @@
     .featured-en { font-size: 11px; color: #aaa; margin-top: 2px; }
     .featured-badge { font-size: 9px; background: #d97706; color: #fff; padding: 1px 6px; border-radius: 3px; font-weight: 800; }
 
+    /* Prose pages (privacy, about, contact) */
+    .prose-block { max-width: 680px; line-height: 1.8; font-size: 14px; color: #333; }
+    .prose-block h2 { font-size: 15px; font-weight: 800; margin: 28px 0 8px; padding-bottom: 4px; border-bottom: 2px solid #f0ede7; }
+    .prose-block p { margin: 0 0 12px; }
+    .prose-block ul { margin: 0 0 12px; padding-left: 20px; }
+    .prose-block ul li { margin-bottom: 6px; }
+    .prose-block a { color: #d97706; text-decoration: none; }
+    .prose-block a:hover { text-decoration: underline; }
+    .prose-block strong { color: #1a1a1a; }
+
     /* Not found */
     .nf { text-align: center; padding: 60px 0; }
     .nf h2 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
