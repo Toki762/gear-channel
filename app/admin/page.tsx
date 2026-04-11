@@ -159,7 +159,7 @@ function GearForm() {
       cat_icon: form.catIcon,
       user: form.user,
       price: form.price.trim(),
-      desc: form.desc.trim(),
+      gear_desc: form.desc.trim(),
       kw: form.kw.trim(),
     });
 
@@ -286,7 +286,7 @@ function ArtistForm() {
       since: form.since.trim(),
       origin: form.origin.trim(),
       members: form.members.trim(),
-      desc: form.desc.trim(),
+      artist_desc: form.desc.trim(),
     });
 
     setLoading(false);

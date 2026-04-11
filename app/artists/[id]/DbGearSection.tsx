@@ -10,7 +10,7 @@ interface DbGearItem {
   cat_icon: string;
   user: string;
   price: string;
-  desc: string;
+  gear_desc: string;
   kw: string;
   created_at: string;
 }
@@ -57,8 +57,8 @@ export default function DbGearSection({ gear }: Props) {
                     </div>
 
                     {/* 説明 */}
-                    {item.desc && (
-                      <div style={{ fontSize: 12, color: '#666', lineHeight: 1.7 }}>{item.desc}</div>
+                    {item.gear_desc && (
+                      <div style={{ fontSize: 12, color: '#666', lineHeight: 1.7 }}>{item.gear_desc}</div>
                     )}
                   </div>
 
