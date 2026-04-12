@@ -10,6 +10,9 @@ import { createServerClient } from '@/lib/supabase';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
 
+// ISR: 60秒ごとに再検証（管理画面の変更が反映される）
+export const revalidate = 60;
+
 interface Props {
   params: { id: string };
 }

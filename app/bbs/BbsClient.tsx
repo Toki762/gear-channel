@@ -7,7 +7,9 @@ import { useState, useTransition, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import type { BbsPost, BbsComment } from '@/lib/types';
 import { BBS_CATS, FLAIR_CLS } from '@/data/config';
-import { createPost, createComment, votePost, voteComment } from './actions';
+import { createPost, createComment } from './actions';
+
+const NAME_KEY = 'bbs_author_name';
 
 interface Props {
   initialPosts: BbsPost[];
@@ -50,12 +52,25 @@ export default function BbsClient({
   const [showNewPost, setShowNewPost] = useState(false);
   const [replyTo, setReplyTo] = useState<{ postId: string; commentId: string; author: string } | null>(null);
 
-  // 投稿フォーム
+  // 投稿フォーム（名前はlocalStorageから復元）
+  const [savedName, setSavedName] = useState('');
+  useEffect(() => {
+    const name = localStorage.getItem(NAME_KEY) ?? '';
+    setSavedName(name);
+    setNewPost(p => ({ ...p, author: name }));
+  }, []);
+
   const [newPost, setNewPost] = useState({ author: '', flair: 'ギター', title: '', body: '', gearTag: '' });
   const [newComment, setNewComment] = useState<Record<string, { author: string; body: string }>>({});
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [isSubmittingPost, setIsSubmittingPost] = useState(false);
   const [isSubmittingComment, setIsSubmittingComment] = useState<Record<string, boolean>>({});
+
+  // 名前が変わったらlocalStorageに保存
+  function setAuthorName(name: string) {
+    setNewPost(p => ({ ...p, author: name }));
+    localStorage.setItem(NAME_KEY, name);
+  }
 
   // クエリを更新してページ再レンダリング
   function pushQuery(params: Record<string, string | undefined>) {
@@ -94,16 +109,6 @@ export default function BbsClient({
     });
   }
 
-  async function handleVotePost(postId: string, delta: 1 | -1) {
-    const result = await votePost(postId, delta);
-    if (!result.ok) alert(result.error);
-  }
-
-  async function handleVoteComment(commentId: string, delta: 1 | -1) {
-    const result = await voteComment(commentId, delta);
-    if (!result.ok) alert(result.error);
-  }
-
   async function handleSubmitPost(e: React.FormEvent) {
     e.preventDefault();
     if (isSubmittingPost) return; // 二重送信防止
@@ -138,6 +143,8 @@ export default function BbsClient({
     if (isSubmittingComment[postId]) return; // 二重送信防止
     const c = newComment[postId];
     if (!c?.body.trim()) return;
+    // コメント欄の名前もlocalStorageに保存
+    if (c.author) localStorage.setItem(NAME_KEY, c.author);
     setIsSubmittingComment(prev => ({ ...prev, [postId]: true }));
     try {
       const result = await createComment({
@@ -226,7 +233,7 @@ export default function BbsClient({
               <div style={{ fontWeight: 700, fontSize: '14px', marginBottom: '10px' }}>新規スレッドを立てる</div>
               {submitError && <div style={{ color: '#cc0000', fontSize: '12px', marginBottom: '8px' }}>{submitError}</div>}
               <div style={{ display: 'grid', gap: '8px' }}>
-                <input className="bbs-in" placeholder="名前（省略可）" value={newPost.author} onChange={e => setNewPost(p => ({ ...p, author: e.target.value }))} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px' }} />
+                <input className="bbs-in" placeholder="名前（省略可）" value={newPost.author} onChange={e => setAuthorName(e.target.value)} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px' }} />
                 <div style={{ display: 'flex', gap: '6px' }}>
                   <select className="bbs-in" value={newPost.flair} onChange={e => setNewPost(p => ({ ...p, flair: e.target.value }))} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', flex: 1 }}>
                     {BBS_CATS.filter(c => c !== 'すべて').map(c => <option key={c}>{c}</option>)}
@@ -257,14 +264,12 @@ export default function BbsClient({
                 post={p}
                 isOpen={openPosts.has(p.id)}
                 onToggle={() => togglePost(p.id)}
-                onVote={delta => handleVotePost(p.id, delta)}
-                commentValue={newComment[p.id] ?? { author: '', body: '' }}
+                commentValue={newComment[p.id] ?? { author: savedName, body: '' }}
                 onCommentChange={val => setNewComment(prev => ({ ...prev, [p.id]: val }))}
                 onSubmitComment={e => handleSubmitComment(p.id, e)}
                 isSubmittingComment={!!isSubmittingComment[p.id]}
                 replyTo={replyTo}
                 onSetReplyTo={setReplyTo}
-                onVoteComment={handleVoteComment}
               />
             ))
           )}
@@ -319,17 +324,15 @@ interface PostCardProps {
   post: BbsPost;
   isOpen: boolean;
   onToggle: () => void;
-  onVote: (delta: 1 | -1) => void;
   commentValue: { author: string; body: string };
   onCommentChange: (v: { author: string; body: string }) => void;
   onSubmitComment: (e: React.FormEvent) => void;
   isSubmittingComment: boolean;
   replyTo: { postId: string; commentId: string; author: string } | null;
   onSetReplyTo: (r: { postId: string; commentId: string; author: string } | null) => void;
-  onVoteComment: (id: string, delta: 1 | -1) => void;
 }
 
-function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentChange, onSubmitComment, isSubmittingComment, replyTo, onSetReplyTo, onVoteComment }: PostCardProps) {
+function PostCard({ post: p, isOpen, onToggle, commentValue, onCommentChange, onSubmitComment, isSubmittingComment, replyTo, onSetReplyTo }: PostCardProps) {
   const flairCls = FLAIR_CLS[p.flair] ?? 'f-other';
   const comments = p.bbs_comments ?? [];
   const excerpt = (p.body ?? '').slice(0, 120);
@@ -346,15 +349,8 @@ function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentCh
 
   return (
     <div className="post-card">
-      {/* 上部：投票 + 投稿本文 */}
+      {/* 上部：投稿本文 */}
       <div style={{ display: 'flex', gap: '10px', padding: '12px 14px 10px' }}>
-        {/* 投票カラム */}
-        <div className="vote-col" style={{ width: '44px', minWidth: '44px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px', flexShrink: 0 }}>
-          <button className="vote-btn up" onClick={() => onVote(1)} title="いいね">▲</button>
-          <div className="vote-n">{p.votes}</div>
-          <button className="vote-btn dn" onClick={() => onVote(-1)} title="よくない">▼</button>
-        </div>
-
         {/* 投稿本文 */}
         <div style={{ flex: 1, minWidth: 0 }}>
           <div style={{ display: 'flex', gap: '6px', alignItems: 'center', flexWrap: 'wrap', marginBottom: '4px' }}>
@@ -396,7 +392,6 @@ function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentCh
                   key={c.id}
                   comment={c}
                   onReply={() => onSetReplyTo({ postId: p.id, commentId: c.id, author: c.author })}
-                  onVote={delta => onVoteComment(c.id, delta)}
                   allComments={comments}
                 />
               ))}
@@ -440,11 +435,10 @@ function PostCard({ post: p, isOpen, onToggle, onVote, commentValue, onCommentCh
 interface CommentItemProps {
   comment: BbsComment;
   onReply: () => void;
-  onVote: (delta: 1 | -1) => void;
   allComments: BbsComment[];
 }
 
-function CommentItem({ comment: c, onReply, onVote, allComments }: CommentItemProps) {
+function CommentItem({ comment: c, onReply, allComments }: CommentItemProps) {
   const parent = c.reply_to ? allComments.find(x => x.id === c.reply_to) : null;
   const isNested = !!c.reply_to;
 
@@ -463,10 +457,6 @@ function CommentItem({ comment: c, onReply, onVote, allComments }: CommentItemPr
               <span style={{ fontSize: '11px', color: '#bbb' }}>{new Date(c.created_at).toLocaleDateString('ja-JP')}</span>
             </div>
             <div style={{ fontSize: '13px', lineHeight: 1.6 }}>{c.body}</div>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2px', flexShrink: 0 }}>
-            <button onClick={() => onVote(1)} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '12px', color: '#aaa' }}>▲</button>
-            <span style={{ fontSize: '11px', fontWeight: 600 }}>{c.votes}</span>
           </div>
         </div>
         <button onClick={onReply} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '11px', color: '#aaa', marginTop: '4px', padding: 0 }}>
