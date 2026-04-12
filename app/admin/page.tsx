@@ -118,6 +118,13 @@ function AdminPanel() {
 // ───────────────────────────────────────────────
 // 機材追加フォーム
 // ───────────────────────────────────────────────
+interface AmazonItem {
+  asin: string;
+  title: string;
+  imageUrl: string;
+  pageUrl: string;
+}
+
 function GearForm() {
   const supabase = createBrowserClient();
   const [form, setForm] = useState({
@@ -134,6 +141,35 @@ function GearForm() {
   });
   const [loading, setLoading] = useState(false);
   const [msg, setMsg] = useState<{ ok: boolean; text: string } | null>(null);
+
+  // Amazon 検索
+  const [amzLoading, setAmzLoading] = useState(false);
+  const [amzResults, setAmzResults] = useState<AmazonItem[]>([]);
+  const [amzError, setAmzError] = useState<string | null>(null);
+
+  async function searchAmazon() {
+    const q = [form.brand, form.name].filter(Boolean).join(' ').trim();
+    if (!q) { setAmzError('機材名またはブランドを入力してください'); return; }
+    setAmzLoading(true);
+    setAmzError(null);
+    setAmzResults([]);
+    try {
+      const res = await fetch(`/api/amazon-image?q=${encodeURIComponent(q)}`);
+      const data = await res.json();
+      if (!res.ok) { setAmzError(data.error ?? 'Amazon APIエラー'); return; }
+      if (!data.items?.length) { setAmzError('商品が見つかりませんでした'); return; }
+      setAmzResults(data.items);
+    } catch {
+      setAmzError('通信エラーが発生しました');
+    } finally {
+      setAmzLoading(false);
+    }
+  }
+
+  function pickAmazonImage(item: AmazonItem) {
+    setForm(f => ({ ...f, imageUrl: item.imageUrl }));
+    setAmzResults([]);
+  }
 
   function setCategory(cat: string) {
     const found = CATEGORIES.find(c => c.cat === cat);
@@ -234,24 +270,119 @@ function GearForm() {
           <input placeholder="例: fender stratocaster strat" value={form.kw} onChange={e => setForm(f => ({ ...f, kw: e.target.value }))} style={inputStyle} />
         </div>
 
-        {/* 商品画像URL */}
+        {/* 商品画像URL + Amazon検索 */}
         <div>
-          <Label>商品画像URL（メーカー公式・サウンドハウス・楽天などの画像URL）</Label>
+          <Label>商品画像</Label>
+
+          {/* Amazon検索ボタン */}
+          <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
+            <button
+              type="button"
+              onClick={searchAmazon}
+              disabled={amzLoading}
+              style={{
+                background: amzLoading ? '#888' : '#f90',
+                color: '#111',
+                border: 'none',
+                borderRadius: 6,
+                padding: '8px 16px',
+                fontWeight: 700,
+                fontSize: 13,
+                cursor: amzLoading ? 'not-allowed' : 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                gap: 6,
+              }}
+            >
+              {amzLoading ? '🔍 検索中…' : '🛒 Amazonで画像を検索'}
+            </button>
+            <span style={{ fontSize: 11, color: '#aaa', alignSelf: 'center' }}>
+              ※ ブランド＋機材名で自動検索
+            </span>
+          </div>
+
+          {/* Amazon検索エラー */}
+          {amzError && (
+            <div style={{ fontSize: 12, color: '#cc0000', marginBottom: 8 }}>{amzError}</div>
+          )}
+
+          {/* Amazon検索結果サムネイル */}
+          {amzResults.length > 0 && (
+            <div style={{ background: '#fff9f0', border: '1px solid #f90', borderRadius: 8, padding: 10, marginBottom: 10 }}>
+              <div style={{ fontSize: 12, fontWeight: 700, marginBottom: 8, color: '#c65000' }}>
+                クリックして画像をセット
+              </div>
+              <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+                {amzResults.map(item => (
+                  <button
+                    key={item.asin}
+                    type="button"
+                    onClick={() => pickAmazonImage(item)}
+                    title={item.title}
+                    style={{
+                      background: '#fff',
+                      border: '2px solid #e4e2dd',
+                      borderRadius: 8,
+                      padding: 4,
+                      cursor: 'pointer',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      alignItems: 'center',
+                      gap: 4,
+                      width: 90,
+                      transition: 'border-color 0.15s',
+                    }}
+                    onMouseEnter={e => (e.currentTarget.style.borderColor = '#f90')}
+                    onMouseLeave={e => (e.currentTarget.style.borderColor = '#e4e2dd')}
+                  >
+                    <img
+                      src={item.imageUrl}
+                      alt={item.title}
+                      style={{ width: 72, height: 72, objectFit: 'contain' }}
+                    />
+                    <span style={{ fontSize: 9, color: '#888', lineHeight: 1.3, maxWidth: 80, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                      {item.title}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => setAmzResults([])}
+                style={{ marginTop: 8, background: 'none', border: 'none', color: '#aaa', fontSize: 11, cursor: 'pointer' }}
+              >
+                × 閉じる
+              </button>
+            </div>
+          )}
+
+          {/* 手動URL入力 */}
           <input
-            placeholder="例: https://www.soundhouse.co.jp/images/item/..."
+            placeholder="または画像URLを直接入力…"
             value={form.imageUrl}
             onChange={e => setForm(f => ({ ...f, imageUrl: e.target.value }))}
             style={inputStyle}
           />
+
+          {/* プレビュー */}
           {form.imageUrl && (
             <div style={{ marginTop: 6, display: 'flex', alignItems: 'center', gap: 10 }}>
               <img
                 src={form.imageUrl}
                 alt="プレビュー"
-                style={{ width: 64, height: 64, objectFit: 'contain', border: '1px solid #e4e2dd', borderRadius: 6, background: '#fafaf8' }}
+                style={{ width: 80, height: 80, objectFit: 'contain', border: '1px solid #e4e2dd', borderRadius: 6, background: '#fafaf8' }}
                 onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
               />
-              <span style={{ fontSize: 11, color: '#888' }}>← プレビュー</span>
+              <div style={{ fontSize: 11, color: '#888' }}>
+                ← セット済み
+                <button
+                  type="button"
+                  onClick={() => setForm(f => ({ ...f, imageUrl: '' }))}
+                  style={{ marginLeft: 8, background: 'none', border: 'none', color: '#cc4444', cursor: 'pointer', fontSize: 11 }}
+                >
+                  × クリア
+                </button>
+              </div>
             </div>
           )}
         </div>
