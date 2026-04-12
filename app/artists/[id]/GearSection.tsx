@@ -3,7 +3,7 @@
 // GearSection — Client Component
 // カテゴリフィルター・アコーディオンカードのインタラクション
 // =============================================================
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import type { Artist, GearItem } from '@/lib/types';
 import { getFxSubcat, FX_SUBCATS } from '@/data/config';
 
@@ -194,6 +194,9 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
   );
 }
 
+// ── 機材画像キャッシュ（ページ内で同じ機材を重複リクエストしない）──
+const gearImageCache = new Map<string, string | null>();
+
 // ── 個別機材カード ──────────────────────────────────────────
 interface GearCardProps {
   g: GearItem;
@@ -213,6 +216,26 @@ interface GearCardProps {
 function GearCard({ g, artistId, isOpen, isEditing, override, isUserAdded, onToggle, onStartEdit, onCancelEdit, onSaveEdit, onDelete, onMemberClick }: GearCardProps) {
   const ov = override ?? {};
   const name = ov.name || g.name;
+
+  // 商品画像を楽天APIから自動取得（キャッシュ付き）
+  const [thumbUrl, setThumbUrl] = useState<string | null>(g.imageUrl ?? null);
+  useEffect(() => {
+    if (thumbUrl) return; // すでに画像あり（管理画面設定 or 取得済み）
+    const cacheKey = g.kw;
+    if (gearImageCache.has(cacheKey)) {
+      setThumbUrl(gearImageCache.get(cacheKey) ?? null);
+      return;
+    }
+    const query = [g.brand, g.name].filter(Boolean).join(' ');
+    fetch(`/api/gear-image?q=${encodeURIComponent(query)}`)
+      .then(r => r.json())
+      .then(({ url }: { url: string | null }) => {
+        gearImageCache.set(cacheKey, url ?? null);
+        setThumbUrl(url ?? null);
+      })
+      .catch(() => gearImageCache.set(cacheKey, null));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [g.kw]);
   const price = ov.price || g.price;
   const user = ov.user || g.user;
   const cat = ov.cat || g.cat;
@@ -235,8 +258,13 @@ function GearCard({ g, artistId, isOpen, isEditing, override, isUserAdded, onTog
       <div className="g-top" onClick={onToggle}>
         <div className="g-thumb">
           <div className="g-thumb-box">
-            {g.imageUrl ? (
-              <img src={g.imageUrl} alt={g.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            {thumbUrl ? (
+              <img
+                src={thumbUrl}
+                alt={name}
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                onError={() => setThumbUrl(null)} // 読み込み失敗時はアイコンにフォールバック
+              />
             ) : (
               <span className="g-thumb-init">{g.catIcon}</span>
             )}
