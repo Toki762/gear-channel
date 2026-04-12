@@ -15,6 +15,7 @@ export interface GearItem {
   similar: string[];
   desc: string;
   wikiTitle: string;
+  imageUrl?: string; // 管理画面から追加した機材の商品画像URL
 }
 
 export interface Artist {

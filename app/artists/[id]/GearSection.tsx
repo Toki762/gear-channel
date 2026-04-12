@@ -9,6 +9,7 @@ import { getFxSubcat, FX_SUBCATS } from '@/data/config';
 
 interface Props {
   artist: Artist;
+  dbGear?: GearItem[]; // 管理画面から追加した機材
 }
 
 type EditOverride = {
@@ -20,7 +21,7 @@ type EditOverride = {
 
 const ALL_CATS = ['ギター','ベース','ギターアンプ','ベースアンプ','ギターエフェクター','ベースエフェクター','キーボード','シンセ/プラグイン','ドラム','DAW','マイク','音響機材'];
 
-export default function GearSection({ artist }: Props) {
+export default function GearSection({ artist, dbGear = [] }: Props) {
   const a = artist;
 
   const [openCards, setOpenCards] = useState<Set<string>>(new Set());
@@ -33,8 +34,8 @@ export default function GearSection({ artist }: Props) {
   const [showAddForm, setShowAddForm] = useState(false);
   const [addForm, setAddForm] = useState({ brand: '', name: '', cat: 'ギター', user: '', price: '', yt: '' });
 
-  // 表示する機材リスト
-  let allGear = [...a.gear, ...userGear];
+  // 表示する機材リスト（静的データ＋管理画面追加分＋ユーザー追加分）
+  let allGear = [...a.gear, ...dbGear, ...userGear];
   if (memberFilter) {
     const mf = memberFilter.replace(/\s*\(.*?\)/g, '').trim();
     allGear = allGear.filter(g => g.user && g.user.includes(mf));
@@ -234,7 +235,11 @@ function GearCard({ g, artistId, isOpen, isEditing, override, isUserAdded, onTog
       <div className="g-top" onClick={onToggle}>
         <div className="g-thumb">
           <div className="g-thumb-box">
-            <span className="g-thumb-init">{g.catIcon}</span>
+            {g.imageUrl ? (
+              <img src={g.imageUrl} alt={g.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            ) : (
+              <span className="g-thumb-init">{g.catIcon}</span>
+            )}
           </div>
           <div className="g-brand-s">{g.brand}</div>
         </div>

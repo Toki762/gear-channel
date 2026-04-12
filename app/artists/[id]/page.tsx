@@ -5,8 +5,8 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { DB } from '@/data/artists';
 import GearSection from './GearSection';
-import DbGearSection from './DbGearSection';
 import { createServerClient } from '@/lib/supabase';
+import type { GearItem } from '@/lib/types';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
 
@@ -57,16 +57,32 @@ export default async function ArtistPage({ params }: Props) {
   const artist = DB.find(a => a.id === params.id);
   if (!artist) notFound();
 
-  // Supabase から管理者追加の機材を取得（テーブルが存在しない場合はスキップ）
-  let dbGear: any[] = [];
+  // Supabase から管理者追加の機材を取得し GearItem 形式に変換
+  let dbGear: GearItem[] = [];
   try {
     const supabase = createServerClient();
     const { data, error } = await supabase
       .from('db_gear')
       .select('*')
       .eq('artist_id', params.id)
-      .order('created_at', { ascending: false });
-    if (!error && data) dbGear = data;
+      .order('created_at', { ascending: true });
+    if (!error && data) {
+      dbGear = data.map((item: any): GearItem => ({
+        id: `db_${item.id}`,
+        brand: item.brand ?? '',
+        name: item.name,
+        cat: item.cat ?? 'その他',
+        catIcon: item.cat_icon ?? '🎵',
+        user: item.user ?? '',
+        price: item.price ?? '',
+        kw: item.kw || item.name,
+        yt: [`${item.name} レビュー`, `${item.name} サウンドデモ`, `${item.name} 使い方`],
+        similar: [],
+        desc: item.gear_desc ?? '',
+        wikiTitle: '',
+        imageUrl: item.image_url || undefined,
+      }));
+    }
   } catch {
     // db_gearテーブル未作成の場合は無視
   }
@@ -125,13 +141,8 @@ export default async function ArtistPage({ params }: Props) {
         <div style={{ fontSize: '12px', color: '#888', lineHeight: 1.7 }}>{artist.members}</div>
       </div>
 
-      {/* 機材セクション（TypeScript静的データ） */}
-      <GearSection artist={artist} />
-
-      {/* 管理者が追加した機材（Supabase） */}
-      {dbGear && dbGear.length > 0 && (
-        <DbGearSection gear={dbGear} />
-      )}
+      {/* 機材セクション（静的データ＋管理画面追加分を統合表示） */}
+      <GearSection artist={artist} dbGear={dbGear} />
     </main>
   );
 }
