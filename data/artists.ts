@@ -1129,4 +1129,39 @@ export const DB: Artist[] = [
       { id: 'mxr-m80-tk-mc', brand: 'MXR', name: 'M80 Bass DI+', cat: 'ギターエフェクター', catIcon: '⚡', user: '高野賢也', price: '¥22,000〜¥28,000', kw: 'MXR M80 Bass DI+ ベース DI 高野賢也', yt: ["MXR M80 Bass DI 高野賢也 マカロニえんぴつ", "エムエックスアール ベース プリアンプ"], similar: ["Tech 21 SansAmp", "Darkglass B3K", "Aguilar Tone Hammer"], desc: ``, wikiTitle: '' },
     ],
   },
+  // ─────────────────────────────────────────────────────────
+  {
+    id: 'saucy-dog',
+    name: 'Saucy Dog',
+    en: 'Saucy Dog',
+    genre: 'ロック / ポップ',
+    since: '2013年〜',
+    origin: '石川県',
+    members: '石原慎也 (Vo/Gt) / せとあやか (Gt) / 秋澤和貴 (Ba)',
+    desc: `2013年石川県結成の3人組バンド。「シンデレラボーイ」「いつか」「放課後の Around you」など切なくも美しいメロディと石原慎也の繊細なボーカルが特徴。ストリーミングで爆発的に支持を集め、全国規模のアーティストへと成長した。`,
+    gear: [
+      // 石原慎也（Vo/Gt）
+      { id: 'gibson-lp-std-si-sd', brand: 'Gibson', name: 'Les Paul Standard 60s', cat: 'ギター', catIcon: '🎸', user: '石原慎也', price: '¥300,000〜¥400,000', kw: 'Gibson Les Paul Standard 60s レスポール 石原慎也 Saucy Dog', yt: ["Gibson Les Paul Standard 石原慎也 Saucy Dog", "レスポール スタンダード 60s サウシードッグ"], similar: ["Gibson Les Paul Classic", "Epiphone Les Paul Standard", "Gibson SG Standard"], desc: ``, wikiTitle: 'Gibson_Les_Paul' },
+      { id: 'gibson-lp-custom-si-sd', brand: 'Gibson', name: 'Les Paul Custom', cat: 'ギター', catIcon: '🎸', user: '石原慎也', price: '¥450,000〜¥600,000', kw: 'Gibson Les Paul Custom レスポールカスタム 石原慎也 Saucy Dog', yt: ["Gibson Les Paul Custom 石原慎也 Saucy Dog", "レスポール カスタム ブラック"], similar: ["Gibson Les Paul Standard", "Epiphone Les Paul Custom", "PRS SE 245"], desc: ``, wikiTitle: 'Gibson_Les_Paul' },
+      { id: 'fender-tele-si-sd', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '石原慎也', price: '¥100,000〜¥200,000', kw: 'Fender Telecaster テレキャスター 石原慎也 Saucy Dog', yt: ["Fender Telecaster 石原慎也 Saucy Dog", "テレキャスター フェンダー サウシードッグ"], similar: ["Fender Stratocaster", "Gibson Les Paul Standard", "Squier Classic Vibe Telecaster"], desc: ``, wikiTitle: 'Fender_Telecaster' },
+      { id: 'martin-d28-si-sd', brand: 'Martin', name: 'D-28', cat: 'ギター', catIcon: '🎸', user: '石原慎也', price: '¥200,000〜¥280,000', kw: 'Martin D-28 マーチン アコースティックギター 石原慎也 Saucy Dog', yt: ["Martin D-28 石原慎也 Saucy Dog", "マーチン D28 アコギ サウシードッグ"], similar: ["Gibson J-45", "Taylor 314ce", "Yamaha LL36"], desc: ``, wikiTitle: 'Martin_D-28' },
+      { id: 'marshall-jcm2000-si-sd', brand: 'Marshall', name: 'JCM2000 DSL100', cat: 'アンプ', catIcon: '🔊', user: '石原慎也', price: '¥200,000〜¥280,000', kw: 'Marshall JCM2000 DSL100 マーシャル ギターアンプ 石原慎也 Saucy Dog', yt: ["Marshall JCM2000 石原慎也 Saucy Dog", "マーシャル DSL100 ヘッドアンプ サウシードッグ"], similar: ["Marshall JCM800", "Mesa Boogie Dual Rectifier", "Bogner Ecstasy"], desc: ``, wikiTitle: 'Marshall_amplification' },
+      { id: 'boss-od1x-si-sd', brand: 'Boss', name: 'OD-1X OverDrive', cat: 'ギターエフェクター', catIcon: '⚡', user: '石原慎也', price: '¥14,000〜¥18,000', kw: 'Boss OD-1X OverDrive オーバードライブ 石原慎也 Saucy Dog', yt: ["Boss OD-1X 石原慎也 Saucy Dog", "ボス OD-1X オーバードライブ サウシードッグ"], similar: ["Ibanez TS9", "Boss SD-1", "Fulltone OCD"], desc: ``, wikiTitle: '' },
+      { id: 'boss-dd8-si-sd', brand: 'Boss', name: 'DD-8 Digital Delay', cat: 'ギターエフェクター', catIcon: '⚡', user: '石原慎也', price: '¥14,000〜¥18,000', kw: 'Boss DD-8 Digital Delay デジタルディレイ 石原慎也 Saucy Dog', yt: ["Boss DD-8 石原慎也 Saucy Dog", "ボス DD-8 ディレイ サウシードッグ"], similar: ["TC Electronic Flashback 2", "MXR Carbon Copy", "Strymon Timeline"], desc: ``, wikiTitle: '' },
+      { id: 'boss-rv6-si-sd', brand: 'Boss', name: 'RV-6 Reverb', cat: 'ギターエフェクター', catIcon: '⚡', user: '石原慎也', price: '¥14,000〜¥18,000', kw: 'Boss RV-6 Reverb リバーブ 石原慎也 Saucy Dog', yt: ["Boss RV-6 石原慎也 Saucy Dog", "ボス RV-6 リバーブ サウシードッグ"], similar: ["Strymon BigSky", "TC Electronic Hall of Fame 2", "EHX Holy Grail"], desc: ``, wikiTitle: '' },
+      { id: 'tc-polytune3-si-sd', brand: 'TC Electronic', name: 'PolyTune 3', cat: 'ギターエフェクター', catIcon: '⚡', user: '石原慎也', price: '¥12,000〜¥16,000', kw: 'TC Electronic PolyTune 3 ポリチューン チューナー 石原慎也 Saucy Dog', yt: ["TC Electronic PolyTune 3 石原慎也 Saucy Dog", "ポリチューン チューナー サウシードッグ"], similar: ["Boss TU-3", "Korg Pitchblack", "Peterson StroboStomp HD"], desc: ``, wikiTitle: '' },
+      // せとあやか（Gt）
+      { id: 'fender-strat-sa-sd', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'せとあやか', price: '¥150,000〜¥250,000', kw: 'Fender Stratocaster ストラトキャスター せとあやか Saucy Dog', yt: ["Fender Stratocaster せとあやか Saucy Dog", "ストラト フェンダー サウシードッグ"], similar: ["Fender Telecaster", "Gibson SG Standard", "Squier Classic Vibe Strat"], desc: ``, wikiTitle: 'Fender_Stratocaster' },
+      { id: 'fender-jm-sa-sd', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'せとあやか', price: '¥150,000〜¥250,000', kw: 'Fender Jazzmaster ジャズマスター せとあやか Saucy Dog', yt: ["Fender Jazzmaster せとあやか Saucy Dog", "ジャズマスター フェンダー サウシードッグ"], similar: ["Fender Jaguar", "Fender Mustang", "Squier Classic Vibe Jazzmaster"], desc: ``, wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'vox-ac15-sa-sd', brand: 'Vox', name: 'AC15C1', cat: 'アンプ', catIcon: '🔊', user: 'せとあやか', price: '¥100,000〜¥130,000', kw: 'Vox AC15C1 ヴォックス ギターアンプ せとあやか Saucy Dog', yt: ["Vox AC15 せとあやか Saucy Dog", "ヴォックス AC15 コンボ サウシードッグ"], similar: ["Fender Blues Junior", "Marshall Origin 20C", "Orange Rocker 15"], desc: ``, wikiTitle: '' },
+      { id: 'boss-ce2w-sa-sd', brand: 'Boss', name: 'CE-2W Chorus', cat: 'ギターエフェクター', catIcon: '⚡', user: 'せとあやか', price: '¥22,000〜¥28,000', kw: 'Boss CE-2W Chorus コーラス せとあやか Saucy Dog', yt: ["Boss CE-2W せとあやか Saucy Dog", "ボス CE-2W コーラス サウシードッグ"], similar: ["TC Electronic Corona", "MXR M234 Analog Chorus", "Strymon Ola"], desc: ``, wikiTitle: '' },
+      { id: 'ehx-smallclone-sa-sd', brand: 'Electro-Harmonix', name: 'Small Clone Chorus', cat: 'ギターエフェクター', catIcon: '⚡', user: 'せとあやか', price: '¥9,000〜¥13,000', kw: 'Electro-Harmonix Small Clone Chorus スモールクローン せとあやか Saucy Dog', yt: ["EHX Small Clone せとあやか Saucy Dog", "スモールクローン コーラス サウシードッグ"], similar: ["Boss CE-2W", "MXR M234", "TC Electronic Corona"], desc: ``, wikiTitle: '' },
+      // 秋澤和貴（Ba）
+      { id: 'fender-pb-ak-sd', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: '秋澤和貴', price: '¥150,000〜¥250,000', kw: 'Fender Precision Bass プレシジョンベース 秋澤和貴 Saucy Dog', yt: ["Fender Precision Bass 秋澤和貴 Saucy Dog", "プレベ フェンダー サウシードッグ"], similar: ["Fender Jazz Bass", "Music Man StingRay", "Squier Classic Vibe Precision Bass"], desc: ``, wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'fender-jb-ak-sd', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: '秋澤和貴', price: '¥150,000〜¥250,000', kw: 'Fender Jazz Bass ジャズベース 秋澤和貴 Saucy Dog', yt: ["Fender Jazz Bass 秋澤和貴 Saucy Dog", "ジャズベース フェンダー サウシードッグ"], similar: ["Fender Precision Bass", "Music Man StingRay", "Squier Classic Vibe Jazz Bass"], desc: ``, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'ampeg-svtcl-ak-sd', brand: 'Ampeg', name: 'SVT-CL Classic Bass Head', cat: 'アンプ', catIcon: '🔊', user: '秋澤和貴', price: '¥300,000〜¥380,000', kw: 'Ampeg SVT-CL ベースヘッドアンプ 秋澤和貴 Saucy Dog', yt: ["Ampeg SVT-CL 秋澤和貴 Saucy Dog", "アンペグ SVT ベースアンプ サウシードッグ"], similar: ["Ampeg SVT-4PRO", "Hartke LH500", "TC Electronic RH750"], desc: ``, wikiTitle: '' },
+      { id: 'sansamp-bddi-ak-sd', brand: 'Tech 21', name: 'SansAmp Bass Driver DI', cat: 'ギターエフェクター', catIcon: '⚡', user: '秋澤和貴', price: '¥22,000〜¥28,000', kw: 'Tech 21 SansAmp Bass Driver DI サンズアンプ 秋澤和貴 Saucy Dog', yt: ["SansAmp Bass Driver DI 秋澤和貴 Saucy Dog", "サンズアンプ ベース サウシードッグ"], similar: ["MXR M80 Bass DI+", "Darkglass B3K", "Aguilar Tone Hammer"], desc: ``, wikiTitle: '' },
+      { id: 'boss-tu3-ak-sd', brand: 'Boss', name: 'TU-3 Chromatic Tuner', cat: 'ギターエフェクター', catIcon: '⚡', user: '秋澤和貴', price: '¥7,000〜¥9,000', kw: 'Boss TU-3 クロマチックチューナー 秋澤和貴 Saucy Dog', yt: ["Boss TU-3 秋澤和貴 Saucy Dog", "ボス TU-3 チューナー サウシードッグ"], similar: ["TC Electronic Polytune", "Korg Pitchblack", "Peterson StroboStomp"], desc: ``, wikiTitle: '' },
+    ],
+  },
 ];

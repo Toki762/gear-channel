@@ -132,4 +132,5 @@ export const ARTIST_KANA: Record<string, string> = {
   'quruli':        'くるり Quruli',
   'macaroni':      'まかろにえんぴつ Macaroni Enpitsu',
   'billie':        'びりーあいりっしゅ billie eilish',
+  'saucy-dog':     'さうしーどっぐ Saucy Dog いしはらしんや せとあやか あきざわかずき',
 };
