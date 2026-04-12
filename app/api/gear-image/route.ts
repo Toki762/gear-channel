@@ -1,6 +1,5 @@
 // =============================================================
 // /api/gear-image — 機材名で楽天市場を検索し商品画像URLを返す
-// レスポンスは Next.js サーバー側で 24h キャッシュされる
 // 環境変数: RAKUTEN_APP_ID（楽天デベロッパーサイトで無料取得）
 // =============================================================
 import { NextRequest, NextResponse } from 'next/server';
@@ -12,7 +11,10 @@ export async function GET(req: NextRequest) {
   if (!q) return NextResponse.json({ url: null });
 
   const appId = process.env.RAKUTEN_APP_ID;
-  if (!appId) return NextResponse.json({ url: null });
+  if (!appId) {
+    console.warn('[gear-image] RAKUTEN_APP_ID が設定されていません');
+    return NextResponse.json({ url: null });
+  }
 
   try {
     const searchUrl = new URL(
@@ -22,29 +24,39 @@ export async function GET(req: NextRequest) {
     searchUrl.searchParams.set('keyword', q);
     searchUrl.searchParams.set('imageFlag', '1');
     searchUrl.searchParams.set('hits', '5');
-    // レビュー数の多い（実績のある）商品を優先
     searchUrl.searchParams.set('sort', '-reviewCount');
-    searchUrl.searchParams.set('formatVersion', '2');
+    // formatVersion は指定しない → デフォルト(v1) を使用
+    // v1: Items[i].Item.mediumImageUrls[j].imageUrl (オブジェクト形式)
 
     const res = await fetch(searchUrl.toString(), {
       next: { revalidate: 86400 }, // 24時間キャッシュ
     });
 
-    if (!res.ok) return NextResponse.json({ url: null });
+    if (!res.ok) {
+      console.error('[gear-image] Rakuten API error:', res.status, await res.text());
+      return NextResponse.json({ url: null });
+    }
 
     const json = await res.json();
-
-    // formatVersion=2 だと Items は配列の配列
     const items: any[] = json.Items ?? [];
-    for (const item of items) {
-      // formatVersion=2: item は直接オブジェクト
-      const imageUrls: { imageUrl: string }[] =
-        item?.mediumImageUrls ?? item?.Item?.mediumImageUrls ?? [];
-      const url = imageUrls[0]?.imageUrl ?? null;
-      if (url) {
-        return NextResponse.json({ url }, {
-          headers: { 'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=3600' },
-        });
+
+    for (const wrapper of items) {
+      // v1 形式: { Item: { mediumImageUrls: [{ imageUrl: "..." }] } }
+      const item = wrapper?.Item ?? wrapper;
+      const imageUrls: any[] = item?.mediumImageUrls ?? [];
+
+      for (const entry of imageUrls) {
+        // v1: entry = { imageUrl: "..." }
+        // v2: entry = "..." (文字列)
+        const url: string | null =
+          typeof entry === 'string' ? entry : (entry?.imageUrl ?? null);
+        if (url) {
+          return NextResponse.json({ url }, {
+            headers: {
+              'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=3600',
+            },
+          });
+        }
       }
     }
 
