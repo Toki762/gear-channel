@@ -16,13 +16,21 @@ export const metadata: Metadata = {
     siteName: 'Gear ちゃんねる',
     locale: 'ja_JP',
     type: 'website',
+    // OGP画像は app/opengraph-image.tsx で自動生成される
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
+    // Twitter画像も opengraph-image.tsx から自動適用
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

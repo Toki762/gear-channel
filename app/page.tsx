@@ -1,10 +1,28 @@
 // =============================================================
 // Home Page — Server Component
 // =============================================================
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { POPULAR_IDS } from '@/data/config';
 import { fetchPosts } from '@/lib/supabase';
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+
+export const metadata: Metadata = {
+  title: 'Gear ちゃんねる — アーティストの機材を調べよう',
+  description: '日本のアーティストが使用しているギター・ベース・シンセ・エフェクター・DAWを調べるサイト。Official髭男dism・YOASOBI・King Gnuなど人気アーティストの機材情報が充実。',
+  alternates: { canonical: BASE_URL },
+  openGraph: {
+    title: 'Gear ちゃんねる — アーティストの機材を調べよう',
+    description: '日本のアーティストが使用しているギター・ベース・シンセ・エフェクター・DAWを調べるサイト。',
+    url: BASE_URL,
+    siteName: 'Gear ちゃんねる',
+    locale: 'ja_JP',
+    type: 'website',
+    // OGP画像は app/opengraph-image.tsx で自動生成
+  },
+};
 
 export default async function HomePage() {
   // 人気アーティスト（POPULAR_IDS の順、先頭6件）
@@ -89,6 +107,43 @@ export default async function HomePage() {
           </div>
         </section>
       )}
+
+      {/* JSON-LD: WebSite + Sitelinks Searchbox */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@graph': [
+            {
+              '@type': 'WebSite',
+              '@id': `${BASE_URL}/#website`,
+              url: BASE_URL,
+              name: 'Gear ちゃんねる',
+              description: '日本のアーティストが使用している機材・ギター・シンセ・エフェクターを調べるサイト',
+              inLanguage: 'ja',
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: { '@type': 'EntryPoint', urlTemplate: `${BASE_URL}/artists?q={search_term_string}` },
+                'query-input': 'required name=search_term_string',
+              },
+            },
+            {
+              '@type': 'CollectionPage',
+              '@id': `${BASE_URL}/#collection`,
+              url: BASE_URL,
+              name: 'Gear ちゃんねる',
+              description: '日本のアーティストが使用している機材・ギター・シンセ・エフェクターを調べるサイト',
+              inLanguage: 'ja',
+              isPartOf: { '@id': `${BASE_URL}/#website` },
+              hasPart: DB.slice(0, 20).map(a => ({
+                '@type': 'WebPage',
+                url: `${BASE_URL}/artists/${a.id}`,
+                name: `${a.name} の機材`,
+              })),
+            },
+          ],
+        })}}
+      />
     </main>
   );
 }

@@ -6,9 +6,20 @@ import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { ARTIST_KANA } from '@/data/config';
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+
 export const metadata: Metadata = {
-  title: 'アーティスト一覧 — Gear ちゃんねる',
-  description: '日本のアーティストが使用している機材・ギター・シンセ・エフェクターを調べるサイト。',
+  title: 'アーティスト一覧',
+  description: `Official髭男dism・YOASOBI・King Gnu・RADWIMPSなど${DB.length}組のアーティストが使用しているギター・ベース・シンセ・エフェクター機材情報をまとめています。`,
+  alternates: { canonical: `${BASE_URL}/artists` },
+  openGraph: {
+    title: 'アーティスト一覧 | Gear ちゃんねる',
+    description: `${DB.length}組のアーティストの機材情報を網羅。使用ギター・エフェクター・DAWを調べよう。`,
+    url: `${BASE_URL}/artists`,
+    siteName: 'Gear ちゃんねる',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 };
 
 interface Props {
@@ -63,6 +74,25 @@ export default function ArtistsPage({ searchParams }: Props) {
           ))}
         </div>
       )}
+
+      {/* JSON-LD: ItemList（検索結果でのリッチ表示対応） */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'ItemList',
+          name: 'アーティスト一覧 — Gear ちゃんねる',
+          description: `${DB.length}組のアーティストの機材情報`,
+          url: `${BASE_URL}/artists`,
+          numberOfItems: filtered.length,
+          itemListElement: filtered.slice(0, 30).map((a, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            url: `${BASE_URL}/artists/${a.id}`,
+            name: a.name,
+          })),
+        })}}
+      />
     </main>
   );
 }
