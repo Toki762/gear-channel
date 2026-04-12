@@ -12,7 +12,6 @@ async function searchRakuten(appId: string, keyword: string): Promise<string | n
   url.searchParams.set('keyword', keyword);
   url.searchParams.set('imageFlag', '1');
   url.searchParams.set('hits', '3');
-  // sort は省略してデフォルト（標準順）を使う
 
   const res = await fetch(url.toString(), { next: { revalidate: 86400 } });
   if (!res.ok) return null;
@@ -34,31 +33,27 @@ async function searchRakuten(appId: string, keyword: string): Promise<string | n
 
 export async function GET(req: NextRequest) {
   const q = req.nextUrl.searchParams.get('q');
-  if (!q) return NextResponse.json({ url: null });
+  if (!q) return NextResponse.json({ url: null, debug: 'no query' });
 
   const appId = process.env.RAKUTEN_APP_ID;
   if (!appId) {
-    console.warn('[gear-image] RAKUTEN_APP_ID が未設定です');
-    return NextResponse.json({ url: null });
+    return NextResponse.json({ url: null, debug: 'RAKUTEN_APP_ID not set' });
   }
 
   try {
     // 1回目: ブランド＋機材名で検索
     let url = await searchRakuten(appId, q);
 
-    // 2回目: 機材名だけで再検索（ブランド名が邪魔で0件になるケース対策）
+    // 2回目: 末尾2ワードで再検索
     if (!url) {
-      const nameOnly = q.split(' ').slice(-2).join(' '); // 末尾2ワード（モデル名寄り）
-      if (nameOnly !== q) {
-        url = await searchRakuten(appId, nameOnly);
-      }
+      const nameOnly = q.split(' ').slice(-2).join(' ');
+      if (nameOnly !== q) url = await searchRakuten(appId, nameOnly);
     }
 
-    return NextResponse.json({ url }, {
+    return NextResponse.json({ url, debug: url ? 'ok' : 'no results' }, {
       headers: { 'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=3600' },
     });
-  } catch (e) {
-    console.error('[gear-image] error:', e);
-    return NextResponse.json({ url: null });
+  } catch (e: any) {
+    return NextResponse.json({ url: null, debug: `error: ${e?.message}` });
   }
 }
