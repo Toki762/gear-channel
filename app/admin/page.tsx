@@ -270,43 +270,67 @@ function GearForm() {
           <input placeholder="例: fender stratocaster strat" value={form.kw} onChange={e => setForm(f => ({ ...f, kw: e.target.value }))} style={inputStyle} />
         </div>
 
-        {/* 商品画像URL + Amazon検索 */}
+        {/* 商品画像URL + Amazon連携 */}
         <div>
           <Label>商品画像</Label>
 
-          {/* Amazon検索ボタン */}
-          <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
-            <button
-              type="button"
-              onClick={searchAmazon}
-              disabled={amzLoading}
-              style={{
-                background: amzLoading ? '#888' : '#f90',
-                color: '#111',
-                border: 'none',
-                borderRadius: 6,
-                padding: '8px 16px',
-                fontWeight: 700,
-                fontSize: 13,
-                cursor: amzLoading ? 'not-allowed' : 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 6,
-              }}
-            >
-              {amzLoading ? '🔍 検索中…' : '🛒 Amazonで画像を検索'}
-            </button>
-            <span style={{ fontSize: 11, color: '#aaa', alignSelf: 'center' }}>
-              ※ ブランド＋機材名で自動検索
-            </span>
-          </div>
+          {/* PA API が使える場合：自動検索ボタン */}
+          {process.env.NEXT_PUBLIC_AMAZON_PA_ENABLED === 'true' ? (
+            <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
+              <button
+                type="button"
+                onClick={searchAmazon}
+                disabled={amzLoading}
+                style={{
+                  background: amzLoading ? '#888' : '#f90',
+                  color: '#111',
+                  border: 'none',
+                  borderRadius: 6,
+                  padding: '8px 16px',
+                  fontWeight: 700,
+                  fontSize: 13,
+                  cursor: amzLoading ? 'not-allowed' : 'pointer',
+                }}
+              >
+                {amzLoading ? '🔍 検索中…' : '🛒 Amazonで画像を自動取得'}
+              </button>
+              <span style={{ fontSize: 11, color: '#aaa', alignSelf: 'center' }}>ブランド＋機材名で検索</span>
+            </div>
+          ) : (
+            /* PA API 未承認中：手動コピー案内 */
+            <div style={{ background: '#f8f6f0', border: '1px solid #e4e2dd', borderRadius: 8, padding: '10px 12px', marginBottom: 10, fontSize: 12, color: '#555', lineHeight: 1.8 }}>
+              <b>📋 画像URLの取得方法</b>（PA API承認後は自動化されます）<br />
+              ① 下の「Amazonで検索」ボタンで商品ページを開く<br />
+              ② 商品のメイン画像を<b>右クリック → 「画像のURLをコピー」</b><br />
+              ③ 下の入力欄にペースト
+              <div style={{ marginTop: 6 }}>
+                <a
+                  href={`https://www.amazon.co.jp/s?k=${encodeURIComponent([form.brand, form.name].filter(Boolean).join(' '))}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-block',
+                    background: '#f90',
+                    color: '#111',
+                    fontWeight: 700,
+                    fontSize: 12,
+                    padding: '5px 12px',
+                    borderRadius: 6,
+                    textDecoration: 'none',
+                  }}
+                >
+                  🛒 Amazonで検索して開く →
+                </a>
+              </div>
+            </div>
+          )}
 
           {/* Amazon検索エラー */}
           {amzError && (
             <div style={{ fontSize: 12, color: '#cc0000', marginBottom: 8 }}>{amzError}</div>
           )}
 
-          {/* Amazon検索結果サムネイル */}
+          {/* Amazon検索結果サムネイル（PA API使用時） */}
           {amzResults.length > 0 && (
             <div style={{ background: '#fff9f0', border: '1px solid #f90', borderRadius: 8, padding: 10, marginBottom: 10 }}>
               <div style={{ fontSize: 12, fontWeight: 700, marginBottom: 8, color: '#c65000' }}>
@@ -330,35 +354,26 @@ function GearForm() {
                       alignItems: 'center',
                       gap: 4,
                       width: 90,
-                      transition: 'border-color 0.15s',
                     }}
                     onMouseEnter={e => (e.currentTarget.style.borderColor = '#f90')}
                     onMouseLeave={e => (e.currentTarget.style.borderColor = '#e4e2dd')}
                   >
-                    <img
-                      src={item.imageUrl}
-                      alt={item.title}
-                      style={{ width: 72, height: 72, objectFit: 'contain' }}
-                    />
+                    <img src={item.imageUrl} alt={item.title} style={{ width: 72, height: 72, objectFit: 'contain' }} />
                     <span style={{ fontSize: 9, color: '#888', lineHeight: 1.3, maxWidth: 80, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                       {item.title}
                     </span>
                   </button>
                 ))}
               </div>
-              <button
-                type="button"
-                onClick={() => setAmzResults([])}
-                style={{ marginTop: 8, background: 'none', border: 'none', color: '#aaa', fontSize: 11, cursor: 'pointer' }}
-              >
+              <button type="button" onClick={() => setAmzResults([])} style={{ marginTop: 8, background: 'none', border: 'none', color: '#aaa', fontSize: 11, cursor: 'pointer' }}>
                 × 閉じる
               </button>
             </div>
           )}
 
-          {/* 手動URL入力 */}
+          {/* 画像URL入力 */}
           <input
-            placeholder="または画像URLを直接入力…"
+            placeholder="画像URLをペースト（例: https://m.media-amazon.com/images/I/...）"
             value={form.imageUrl}
             onChange={e => setForm(f => ({ ...f, imageUrl: e.target.value }))}
             style={inputStyle}
@@ -373,8 +388,8 @@ function GearForm() {
                 style={{ width: 80, height: 80, objectFit: 'contain', border: '1px solid #e4e2dd', borderRadius: 6, background: '#fafaf8' }}
                 onError={e => { (e.target as HTMLImageElement).style.display = 'none'; }}
               />
-              <div style={{ fontSize: 11, color: '#888' }}>
-                ← セット済み
+              <div style={{ fontSize: 11, color: '#555' }}>
+                ← プレビュー
                 <button
                   type="button"
                   onClick={() => setForm(f => ({ ...f, imageUrl: '' }))}
