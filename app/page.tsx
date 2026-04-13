@@ -90,7 +90,6 @@ export default async function HomePage() {
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', padding: '12px 14px' }}>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', gap: '6px', alignItems: 'center', marginBottom: '3px' }}>
-                      <span className={`flair f-${p.flair}`}>{p.flair}</span>
                       <span style={{ fontWeight: 600, fontSize: '14px' }}>{p.title}</span>
                     </div>
                     <div style={{ fontSize: '12px', color: '#888' }}>
