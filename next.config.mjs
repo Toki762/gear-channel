@@ -8,6 +8,7 @@ const nextConfig = {
       { protocol: 'https', hostname: 'www.soundhouse.co.jp' },
       { protocol: 'https', hostname: 'thumbnail.image.rakuten.co.jp' },
       { protocol: 'https', hostname: '*.supabase.co' },
+      { protocol: 'https', hostname: 'upload.wikimedia.org' },
     ],
     formats: ['image/avif', 'image/webp'],
   },

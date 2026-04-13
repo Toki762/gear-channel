@@ -19,13 +19,14 @@ type EditOverride = {
   cat?: string;
 };
 
-const ALL_CATS = ['ギター','ベース','ギターアンプ','ベースアンプ','ギターエフェクター','ベースエフェクター','キーボード','シンセ/プラグイン','ドラム','DAW','マイク','音響機材'];
+const ALL_CATS = ['ギター','ベース','アンプ','ギターアンプ','ベースアンプ','ギターエフェクター','ベースエフェクター','エフェクター','キーボード','シンセ/プラグイン','ドラム','DAW','マイク','音響機材'];
 
 export default function GearSection({ artist, dbGear = [] }: Props) {
   const a = artist;
 
   const [openCards, setOpenCards] = useState<Set<string>>(new Set());
   const [editCard, setEditCard] = useState<string | null>(null);
+  const [editValues, setEditValues] = useState<Record<string, { name: string; user: string; cat: string }>>({});
   const [catFilter, setCatFilter] = useState('すべて');
   const [fxSubcat, setFxSubcat] = useState('すべて');
   const [memberFilter, setMemberFilter] = useState<string | null>(null);
@@ -57,19 +58,22 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
     setEditCard(null);
   }, []);
 
+  function startEdit(gearId: string, currentName: string, currentUser: string, currentCat: string) {
+    const key = `${a.id}-${gearId}`;
+    setEditValues(prev => ({ ...prev, [key]: { name: currentName, user: currentUser, cat: currentCat } }));
+    setEditCard(key);
+  }
+
   function saveEdit(gearId: string) {
     const key = `${a.id}-${gearId}`;
-    const nameEl = document.getElementById(`ed-name-${key}`) as HTMLInputElement | null;
-    const priceEl = document.getElementById(`ed-price-${key}`) as HTMLInputElement | null;
-    const userEl = document.getElementById(`ed-user-${key}`) as HTMLInputElement | null;
-    const catEl = document.getElementById(`ed-cat-${key}`) as HTMLSelectElement | null;
+    const vals = editValues[key];
+    if (!vals) return;
     setEdits(prev => ({
       ...prev,
       [key]: {
-        ...(nameEl?.value.trim() ? { name: nameEl.value.trim() } : {}),
-        ...(priceEl?.value.trim() ? { price: priceEl.value.trim() } : {}),
-        ...(userEl?.value.trim() ? { user: userEl.value.trim() } : {}),
-        ...(catEl?.value ? { cat: catEl.value } : {}),
+        ...(vals.name.trim() ? { name: vals.name.trim() } : {}),
+        ...(vals.user.trim() ? { user: vals.user.trim() } : {}),
+        ...(vals.cat ? { cat: vals.cat } : {}),
       },
     }));
     setEditCard(null);
@@ -149,9 +153,11 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
             override={edits[`${a.id}-${g.id}`]}
             isUserAdded={userGear.some(u => u.id === g.id)}
             onToggle={() => toggleCard(`${a.id}-${g.id}`)}
-            onStartEdit={() => setEditCard(`${a.id}-${g.id}`)}
+            onStartEdit={() => startEdit(g.id, edits[`${a.id}-${g.id}`]?.name || g.name, edits[`${a.id}-${g.id}`]?.user || g.user, edits[`${a.id}-${g.id}`]?.cat || g.cat)}
             onCancelEdit={() => setEditCard(null)}
             onSaveEdit={() => saveEdit(g.id)}
+            editValues={editValues[`${a.id}-${g.id}`]}
+            onEditValuesChange={v => setEditValues(prev => ({ ...prev, [`${a.id}-${g.id}`]: v }))}
             onDelete={() => setUserGear(prev => prev.filter(u => u.id !== g.id))}
             onMemberClick={setMemberFilter}
           />
@@ -204,6 +210,8 @@ interface GearCardProps {
   isOpen: boolean;
   isEditing: boolean;
   override?: EditOverride;
+  editValues?: { name: string; user: string; cat: string };
+  onEditValuesChange?: (v: { name: string; user: string; cat: string }) => void;
   isUserAdded: boolean;
   onToggle: () => void;
   onStartEdit: () => void;
@@ -213,7 +221,7 @@ interface GearCardProps {
   onMemberClick: (m: string) => void;
 }
 
-function GearCard({ g, artistId, isOpen, isEditing, override, isUserAdded, onToggle, onStartEdit, onCancelEdit, onSaveEdit, onDelete, onMemberClick }: GearCardProps) {
+function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEditValuesChange, isUserAdded, onToggle, onStartEdit, onCancelEdit, onSaveEdit, onDelete, onMemberClick }: GearCardProps) {
   const ov = override ?? {};
   const name = ov.name || g.name;
 
@@ -274,6 +282,7 @@ function GearCard({ g, artistId, isOpen, isEditing, override, isUserAdded, onTog
         <div className="g-body">
           <div className="g-cat">{cat}</div>
           <div className="g-name">
+            {g.brand && <span style={{ color: '#999', fontWeight: 400, marginRight: '4px', fontSize: '0.85em' }}>{g.brand}</span>}
             {name}
             {hasEdit && <span className="g-edited-badge">編集済</span>}
             {isUserAdded && <span className="user-gear-badge">追加</span>}
@@ -285,7 +294,6 @@ function GearCard({ g, artistId, isOpen, isEditing, override, isUserAdded, onTog
           >
             {user}
           </button>
-          <div className="g-price">{price}</div>
         </div>
         <div className="g-chevron">▼</div>
       </div>
@@ -339,32 +347,28 @@ function GearCard({ g, artistId, isOpen, isEditing, override, isUserAdded, onTog
             )}
 
             {/* 編集フォーム */}
-            {isEditing && (
+            {isEditing && editValues && onEditValuesChange && (
               <div className="edit-form">
                 <div className="edit-form-ttl">情報を編集 <span className="edit-wiki-badge">Wiki編集</span></div>
                 <div className="edit-row">
                   <span className="edit-label">名前</span>
-                  <input className="edit-in" id={`ed-name-${key}`} defaultValue={name} placeholder={g.name} />
-                </div>
-                <div className="edit-row">
-                  <span className="edit-label">価格</span>
-                  <input className="edit-in" id={`ed-price-${key}`} defaultValue={price} placeholder={g.price} />
+                  <input className="edit-in" value={editValues.name} onChange={e => onEditValuesChange({ ...editValues, name: e.target.value })} placeholder={g.name} />
                 </div>
                 <div className="edit-row">
                   <span className="edit-label">カテゴリ</span>
-                  <select className="edit-in" id={`ed-cat-${key}`} defaultValue={cat}>
+                  <select className="edit-in" value={editValues.cat} onChange={e => onEditValuesChange({ ...editValues, cat: e.target.value })}>
                     {ALL_CATS.map(c => <option key={c} value={c}>{c}</option>)}
                   </select>
                 </div>
                 <div className="edit-row">
                   <span className="edit-label">使用者</span>
-                  <input className="edit-in" id={`ed-user-${key}`} defaultValue={user} placeholder={g.user} />
+                  <input className="edit-in" value={editValues.user} onChange={e => onEditValuesChange({ ...editValues, user: e.target.value })} placeholder={g.user} />
                 </div>
                 <div className="edit-actions">
                   <button className="edit-save" onClick={onSaveEdit}>保存</button>
                   <button className="edit-cancel" onClick={onCancelEdit}>キャンセル</button>
                 </div>
-                <div className="edit-note">編集内容はこのブラウザのみに保存されます（React state）</div>
+                <div className="edit-note">編集内容はこのブラウザのみに保存されます</div>
               </div>
             )}
 

@@ -27,12 +27,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const artist = DB.find(a => a.id === params.id);
   if (!artist) return { title: 'Not Found' };
 
+  // メンバー名を抽出（"石原慎也 (Vo/Gt)" → "石原慎也"）
+  const memberNames = (artist.members ?? '')
+    .split(/[、,，\n\/]|(?<=[^\s])\s*\(/)
+    .map(s => s.replace(/[（(）)].*/g, '').trim())
+    .filter(s => s.length > 0 && s !== artist.name);
+  const memberStr = memberNames.length > 0 ? `${memberNames.slice(0, 4).join('・')} ` : '';
+
+  // 機材名を上位6件抽出（検索キーワードとして）
+  const topGear = (artist.gear ?? []).slice(0, 6).map(g => [g.brand, g.name].filter(Boolean).join(' '));
+
   const title = `${artist.name} の機材・使用ギター・エフェクター — Gear ちゃんねる`;
-  const description = `${artist.name}（${artist.en}）が実際に使用しているギター・ベース・シンセ・エフェクターなどの機材を一覧で確認できます。${(artist.desc || '').slice(0, 80)}`;
+  const description = `${memberStr}${artist.name}（${artist.en}）が使用するギター・ベース・エフェクターを一覧で確認。${topGear.slice(0, 3).join('、')}など。${(artist.desc || '').slice(0, 60)}`;
 
   return {
     title,
     description,
+    keywords: [artist.name, artist.en, ...memberNames, ...topGear, 'ギター', 'エフェクター', '機材', 'Gear ちゃんねる'].filter(Boolean),
     openGraph: {
       title,
       description,
