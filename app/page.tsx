@@ -88,10 +88,6 @@ export default async function HomePage() {
             {popularPosts.map(p => (
               <Link key={p.id} href={`/bbs?post=${p.id}`} className="post-card" style={{ display: 'block', marginBottom: '8px', textDecoration: 'none' }}>
                 <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', padding: '12px 14px' }}>
-                  <div style={{ textAlign: 'center', minWidth: '36px' }}>
-                    <div style={{ fontWeight: 700, fontSize: '14px' }}>{p.votes}</div>
-                    <div style={{ fontSize: '9px', color: '#aaa' }}>票</div>
-                  </div>
                   <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', gap: '6px', alignItems: 'center', marginBottom: '3px' }}>
                       <span className={`flair f-${p.flair}`}>{p.flair}</span>
