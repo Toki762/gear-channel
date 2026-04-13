@@ -302,6 +302,18 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
       {isOpen && (
         <div className="g-expand">
           <div className="gex-inner">
+            {/* 拡大画像 */}
+            {thumbUrl && (
+              <div style={{ textAlign: 'center', marginBottom: '16px' }}>
+                <img
+                  src={thumbUrl}
+                  alt={name}
+                  style={{ maxWidth: '240px', maxHeight: '240px', objectFit: 'contain', borderRadius: '10px', background: '#f8f8f6', padding: '12px', border: '1px solid #ece9e3' }}
+                  onError={() => setThumbUrl(null)}
+                />
+              </div>
+            )}
+
             {/* 機材説明 */}
             {g.desc && (
               <div>
