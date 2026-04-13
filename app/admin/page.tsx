@@ -551,6 +551,9 @@ function GearList() {
   const [loading, setLoading] = useState(true);
   const [filterArtist, setFilterArtist] = useState('');
   const [deleting, setDeleting] = useState<string | null>(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editForm, setEditForm] = useState<any>({});
+  const [saving, setSaving] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -570,6 +573,31 @@ function GearList() {
     setDeleting(id);
     await supabase.from('db_gear').delete().eq('id', id);
     setDeleting(null);
+    load();
+  }
+
+  function startEdit(g: any) {
+    setEditingId(g.id);
+    setEditForm({
+      name: g.name ?? '',
+      brand: g.brand ?? '',
+      cat: g.cat ?? '',
+      user: g.user ?? '',
+      price: g.price ?? '',
+      gear_desc: g.gear_desc ?? '',
+      kw: g.kw ?? '',
+      image_url: g.image_url ?? '',
+    });
+  }
+
+  async function saveEdit() {
+    if (!editingId) return;
+    setSaving(true);
+    const catIcon = CATEGORIES.find(c => c.cat === editForm.cat)?.catIcon ?? '🎵';
+    const { error } = await supabase.from('db_gear').update({ ...editForm, cat_icon: catIcon }).eq('id', editingId);
+    setSaving(false);
+    if (error) { alert('保存エラー: ' + error.message); return; }
+    setEditingId(null);
     load();
   }
 
@@ -627,27 +655,59 @@ function GearList() {
       ) : (
         <div style={{ display: 'grid', gap: 6 }}>
           {filtered.map(g => (
-            <div key={g.id} style={{ background: '#fff', border: '1px solid #e4e2dd', borderRadius: 8, padding: '10px 14px', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap', marginBottom: 3 }}>
-                  <span style={{ fontSize: 13 }}>{g.cat_icon}</span>
-                  <span style={{ background: '#f0ede7', color: '#666', fontSize: 11, padding: '1px 6px', borderRadius: 4 }}>{g.cat}</span>
-                  <span style={{ fontWeight: 700, fontSize: 14 }}>{g.brand ? `${g.brand} ` : ''}{g.name}</span>
+            <div key={g.id} style={{ background: '#fff', border: `1px solid ${editingId === g.id ? '#6366f1' : '#e4e2dd'}`, borderRadius: 8, padding: '10px 14px' }}>
+              {editingId === g.id ? (
+                // ── インライン編集フォーム ──
+                <div style={{ display: 'grid', gap: 8 }}>
+                  <div style={{ fontWeight: 700, fontSize: 13, marginBottom: 2 }}>✏️ 機材を編集</div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                    <div><Label>ブランド</Label><input value={editForm.brand} onChange={e => setEditForm((f: any) => ({ ...f, brand: e.target.value }))} style={inputStyle} /></div>
+                    <div><Label>機材名 ＊</Label><input value={editForm.name} onChange={e => setEditForm((f: any) => ({ ...f, name: e.target.value }))} style={inputStyle} /></div>
+                  </div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                    <div>
+                      <Label>カテゴリ</Label>
+                      <select value={editForm.cat} onChange={e => setEditForm((f: any) => ({ ...f, cat: e.target.value }))} style={inputStyle}>
+                        {CATEGORIES.map(c => <option key={c.cat} value={c.cat}>{c.catIcon} {c.cat}</option>)}
+                      </select>
+                    </div>
+                    <div><Label>使用メンバー</Label><input value={editForm.user} onChange={e => setEditForm((f: any) => ({ ...f, user: e.target.value }))} style={inputStyle} /></div>
+                  </div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                    <div><Label>検索キーワード(kw)</Label><input value={editForm.kw} onChange={e => setEditForm((f: any) => ({ ...f, kw: e.target.value }))} style={inputStyle} /></div>
+                    <div><Label>画像URL</Label><input value={editForm.image_url} onChange={e => setEditForm((f: any) => ({ ...f, image_url: e.target.value }))} style={inputStyle} placeholder="https://..." /></div>
+                  </div>
+                  <div><Label>説明文</Label><textarea value={editForm.gear_desc} onChange={e => setEditForm((f: any) => ({ ...f, gear_desc: e.target.value }))} rows={2} style={{ ...inputStyle, resize: 'vertical' }} /></div>
+                  <div style={{ display: 'flex', gap: 8 }}>
+                    <button onClick={saveEdit} disabled={saving} style={{ background: '#1a1a1a', color: '#fff', border: 'none', borderRadius: 6, padding: '7px 18px', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>
+                      {saving ? '保存中…' : '💾 保存'}
+                    </button>
+                    <button onClick={() => setEditingId(null)} style={{ background: '#f0ede7', color: '#555', border: 'none', borderRadius: 6, padding: '7px 14px', fontSize: 13, cursor: 'pointer' }}>キャンセル</button>
+                  </div>
                 </div>
-                <div style={{ fontSize: 12, color: '#888' }}>
-                  🎤 {artistName(g.artist_id)}
-                  {g.user && <span style={{ marginLeft: 8 }}>👤 {g.user}</span>}
-                  {g.price && <span style={{ marginLeft: 8 }}>💴 {g.price}</span>}
+              ) : (
+                // ── 通常表示 ──
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: 'flex', gap: 6, alignItems: 'center', flexWrap: 'wrap', marginBottom: 3 }}>
+                      <span style={{ fontSize: 13 }}>{g.cat_icon}</span>
+                      <span style={{ background: '#f0ede7', color: '#666', fontSize: 11, padding: '1px 6px', borderRadius: 4 }}>{g.cat}</span>
+                      <span style={{ fontWeight: 700, fontSize: 14 }}>{g.brand ? `${g.brand} ` : ''}{g.name}</span>
+                    </div>
+                    <div style={{ fontSize: 12, color: '#888' }}>
+                      🎤 {artistName(g.artist_id)}
+                      {g.user && <span style={{ marginLeft: 8 }}>👤 {g.user}</span>}
+                    </div>
+                    {g.gear_desc && <div style={{ fontSize: 12, color: '#aaa', marginTop: 3 }}>{g.gear_desc.slice(0, 60)}{g.gear_desc.length > 60 ? '…' : ''}</div>}
+                  </div>
+                  <div style={{ display: 'flex', gap: 6, flexShrink: 0, marginLeft: 10 }}>
+                    <button onClick={() => startEdit(g)} style={{ background: '#eff6ff', color: '#1d4ed8', border: 'none', borderRadius: 6, padding: '4px 10px', fontSize: 12, cursor: 'pointer' }}>編集</button>
+                    <button onClick={() => deleteGear(g.id)} disabled={deleting === g.id} style={{ background: '#fee2e2', color: '#991b1b', border: 'none', borderRadius: 6, padding: '4px 10px', fontSize: 12, cursor: 'pointer' }}>
+                      {deleting === g.id ? '…' : '削除'}
+                    </button>
+                  </div>
                 </div>
-                {g.desc && <div style={{ fontSize: 12, color: '#aaa', marginTop: 3 }}>{g.desc}</div>}
-              </div>
-              <button
-                onClick={() => deleteGear(g.id)}
-                disabled={deleting === g.id}
-                style={{ background: '#fee2e2', color: '#991b1b', border: 'none', borderRadius: 6, padding: '4px 10px', fontSize: 12, cursor: 'pointer', flexShrink: 0, marginLeft: 10 }}
-              >
-                {deleting === g.id ? '…' : '削除'}
-              </button>
+              )}
             </div>
           ))}
         </div>

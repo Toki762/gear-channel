@@ -30,7 +30,18 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
   const [catFilter, setCatFilter] = useState('すべて');
   const [fxSubcat, setFxSubcat] = useState('すべて');
   const [memberFilter, setMemberFilter] = useState<string | null>(null);
-  const [edits, setEdits] = useState<Record<string, EditOverride>>({});
+  const editsKey = `gear_edits_${a.id}`;
+  const [edits, setEditsRaw] = useState<Record<string, EditOverride>>(() => {
+    if (typeof window === 'undefined') return {};
+    try { return JSON.parse(localStorage.getItem(`gear_edits_${a.id}`) ?? '{}'); } catch { return {}; }
+  });
+  function setEdits(fn: (prev: Record<string, EditOverride>) => Record<string, EditOverride>) {
+    setEditsRaw(prev => {
+      const next = fn(prev);
+      try { localStorage.setItem(editsKey, JSON.stringify(next)); } catch {}
+      return next;
+    });
+  }
   const [userGear, setUserGear] = useState<GearItem[]>([]);
   const [showAddForm, setShowAddForm] = useState(false);
   const [addForm, setAddForm] = useState({ brand: '', name: '', cat: 'ギター', user: '', price: '', yt: '' });
