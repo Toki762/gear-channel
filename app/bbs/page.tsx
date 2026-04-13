@@ -5,6 +5,9 @@ import type { Metadata } from 'next';
 import { fetchPosts } from '@/lib/supabase';
 import BbsClient from './BbsClient';
 
+// 掲示板は常に最新データを表示（書き込みがリアルタイムで反映されるように）
+export const revalidate = 0;
+
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
 
 export const metadata: Metadata = {
