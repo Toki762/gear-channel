@@ -330,24 +330,6 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
       {isOpen && (
         <div className="g-expand">
           <div className="gex-inner">
-            {/* 拡大画像（クリックでAmazonへ） */}
-            {thumbUrl && (
-              <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-                <a href={`https://www.amazon.co.jp/s?k=${enc}`} target="_blank" rel="noopener noreferrer" title={`${name} をAmazonで見る`}>
-                  <img
-                    src={thumbUrl}
-                    alt={name}
-                    style={{ maxWidth: '240px', maxHeight: '240px', objectFit: 'contain', borderRadius: '10px', background: '#f8f8f6', padding: '12px', border: '1px solid #ece9e3', cursor: 'pointer' }}
-                    onError={() => setThumbUrl(null)}
-                  />
-                </a>
-                <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'center', gap: '8px' }}>
-                  <a href={`https://www.amazon.co.jp/s?k=${enc}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: '12px', color: '#e47911', fontWeight: 700, textDecoration: 'none', border: '1px solid #e47911', borderRadius: '4px', padding: '3px 10px' }}>🛒 Amazon</a>
-                  <a href={`https://search.rakuten.co.jp/search/mall/${enc}/`} target="_blank" rel="noopener noreferrer" style={{ fontSize: '12px', color: '#bf0000', fontWeight: 700, textDecoration: 'none', border: '1px solid #bf0000', borderRadius: '4px', padding: '3px 10px' }}>楽天市場</a>
-                </div>
-              </div>
-            )}
-
             {/* 機材説明 */}
             {g.desc && (
               <div>
@@ -355,6 +337,51 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
                 <div className="gex-desc">{g.desc}</div>
               </div>
             )}
+
+            {/* アフィリエイトカード（Ameba風） */}
+            <div className="af-card">
+              {/* 画像 + 商品名 */}
+              <a
+                href={`https://www.amazon.co.jp/s?k=${enc}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="af-card-top"
+              >
+                <div className="af-card-img">
+                  {thumbUrl ? (
+                    <img
+                      src={thumbUrl}
+                      alt={name}
+                      style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                      onError={() => setThumbUrl(null)}
+                    />
+                  ) : (
+                    <span style={{ fontSize: '40px', opacity: 0.4 }}>{g.catIcon}</span>
+                  )}
+                </div>
+                <div className="af-card-info">
+                  <div className="af-card-name">
+                    {g.brand && <span className="af-card-brand">{g.brand}</span>}
+                    {name}
+                  </div>
+                  <div className="af-card-store">Amazon（アマゾン）</div>
+                </div>
+              </a>
+
+              {/* ショップボタン */}
+              <a className="af-btn af-btn-amazon" href={`https://www.amazon.co.jp/s?k=${enc}`} target="_blank" rel="noopener noreferrer">
+                Amazon（アマゾン）で詳細を見る <span>›</span>
+              </a>
+              <a className="af-btn af-btn-rakuten" href={`https://search.rakuten.co.jp/search/mall/${enc}/`} target="_blank" rel="noopener noreferrer">
+                楽天市場で詳細を見る <span>›</span>
+              </a>
+              <a className="af-btn af-btn-yahoo" href={`https://shopping.yahoo.co.jp/search?p=${enc}`} target="_blank" rel="noopener noreferrer">
+                Yahoo!ショッピングで詳細を見る <span>›</span>
+              </a>
+              <a className="af-btn af-btn-soundhouse" href={`https://www.soundhouse.co.jp/search/index/?search_all=${soundhouseQ}&i_type=a`} target="_blank" rel="noopener noreferrer">
+                サウンドハウスで詳細を見る <span>›</span>
+              </a>
+            </div>
 
             {/* YouTube */}
             <div>
@@ -368,17 +395,6 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
                 <a className="gex-yt-link" href={`https://www.youtube.com/results?search_query=${nameEnc}`} target="_blank" rel="noopener noreferrer" style={{ color: '#cc0000', borderColor: '#cc0000', background: '#fff4f4', fontWeight: 700 }}>
                   <span>🔍</span><span>「{name}」でYouTubeを検索する</span>
                 </a>
-              </div>
-            </div>
-
-            {/* 購入リンク */}
-            <div>
-              <div className="gex-sec-ttl">🛒 購入・価格チェック</div>
-              <div className="gex-buy-row">
-                <a className="g-buy ba" href={`https://www.amazon.co.jp/s?k=${enc}`} target="_blank" rel="noopener noreferrer">🛒 Amazon</a>
-                <a className="g-buy br" href={`https://search.rakuten.co.jp/search/mall/${enc}/`} target="_blank" rel="noopener noreferrer">楽天</a>
-                <a className="g-buy by" href={`https://shopping.yahoo.co.jp/search?p=${enc}`} target="_blank" rel="noopener noreferrer">Yahoo</a>
-                <a className="g-buy bs" href={`https://www.soundhouse.co.jp/search/index/?search_all=${soundhouseQ}&i_type=a`} target="_blank" rel="noopener noreferrer">SoundHouse</a>
               </div>
             </div>
 

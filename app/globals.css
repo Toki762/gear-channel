@@ -107,6 +107,28 @@
     .post-buy-label { font-size: 11px; color: #888; display: flex; align-items: center; margin-right: 2px; }
 
     .gex-sim-row { display: flex; flex-wrap: wrap; gap: 5px; }
+
+    /* ── アフィリエイトカード（Ameba風） ── */
+    .af-card { border: 1px solid #e4e2dd; border-radius: 10px; overflow: hidden; margin: 12px 0 16px; background: #fff; }
+    .af-card-top { display: flex; gap: 12px; padding: 14px; text-decoration: none; color: inherit; align-items: center; }
+    .af-card-top:hover { background: #fafaf8; }
+    .af-card-img { width: 100px; min-width: 100px; height: 100px; background: #f5f4f0; border-radius: 8px; border: 1px solid #ece9e3; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
+    .af-card-img img { width: 100%; height: 100%; object-fit: contain; }
+    .af-card-info { flex: 1; min-width: 0; }
+    .af-card-brand { display: block; font-size: 11px; color: #999; font-weight: 600; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.3px; }
+    .af-card-name { font-size: 14px; font-weight: 700; line-height: 1.4; color: #1a1a1a; margin-bottom: 6px; }
+    .af-card-store { font-size: 11px; color: #e47911; font-weight: 600; }
+    .af-btn { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; font-size: 13px; font-weight: 600; text-decoration: none; border-top: 1px solid #f0ede7; transition: background .12s; }
+    .af-btn span { font-size: 18px; font-weight: 300; opacity: 0.5; }
+    .af-btn:hover { opacity: 0.85; }
+    .af-btn-amazon { color: #e47911; background: #fffdf7; }
+    .af-btn-amazon:hover { background: #fff8e6; }
+    .af-btn-rakuten { color: #bf0000; background: #fff; }
+    .af-btn-rakuten:hover { background: #fff5f5; }
+    .af-btn-yahoo { color: #7700cc; background: #fff; }
+    .af-btn-yahoo:hover { background: #fdf5ff; }
+    .af-btn-soundhouse { color: #1b4da0; background: #fff; }
+    .af-btn-soundhouse:hover { background: #f0f5ff; }
     .gex-sim-tag { background: #f0ede7; color: #666; font-size: 11px; padding: 2px 9px; border-radius: 4px; }
 
     .gex-actions { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding-top: 10px; border-top: 1px solid #f0ede7; }
