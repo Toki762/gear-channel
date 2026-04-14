@@ -276,18 +276,35 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
       {/* カードヘッダー（クリックで開閉） */}
       <div className="g-top" onClick={onToggle}>
         <div className="g-thumb">
-          <div className="g-thumb-box">
-            {thumbUrl ? (
-              <img
-                src={thumbUrl}
-                alt={name}
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-                onError={() => setThumbUrl(null)} // 読み込み失敗時はアイコンにフォールバック
-              />
-            ) : (
-              <span className="g-thumb-init">{g.catIcon}</span>
-            )}
-          </div>
+          <a
+            href={`https://www.amazon.co.jp/s?k=${enc}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={e => e.stopPropagation()}
+            title={`${name} をAmazonで見る`}
+            style={{ display: 'block', textDecoration: 'none' }}
+          >
+            <div className="g-thumb-box" style={{ position: 'relative' }}>
+              {thumbUrl ? (
+                <img
+                  src={thumbUrl}
+                  alt={name}
+                  style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                  onError={() => setThumbUrl(null)}
+                />
+              ) : (
+                <span className="g-thumb-init">{g.catIcon}</span>
+              )}
+              {/* ホバー時にショッピングアイコン表示 */}
+              <span style={{
+                position: 'absolute', inset: 0,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                background: 'rgba(0,0,0,0.35)', color: '#fff', fontSize: '18px',
+                borderRadius: '8px', opacity: 0,
+                transition: 'opacity 0.15s',
+              }} className="g-thumb-hover">🛒</span>
+            </div>
+          </a>
           <div className="g-brand-s">{g.brand}</div>
         </div>
         <div className="g-body">
@@ -313,15 +330,21 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
       {isOpen && (
         <div className="g-expand">
           <div className="gex-inner">
-            {/* 拡大画像 */}
+            {/* 拡大画像（クリックでAmazonへ） */}
             {thumbUrl && (
               <div style={{ textAlign: 'center', marginBottom: '16px' }}>
-                <img
-                  src={thumbUrl}
-                  alt={name}
-                  style={{ maxWidth: '240px', maxHeight: '240px', objectFit: 'contain', borderRadius: '10px', background: '#f8f8f6', padding: '12px', border: '1px solid #ece9e3' }}
-                  onError={() => setThumbUrl(null)}
-                />
+                <a href={`https://www.amazon.co.jp/s?k=${enc}`} target="_blank" rel="noopener noreferrer" title={`${name} をAmazonで見る`}>
+                  <img
+                    src={thumbUrl}
+                    alt={name}
+                    style={{ maxWidth: '240px', maxHeight: '240px', objectFit: 'contain', borderRadius: '10px', background: '#f8f8f6', padding: '12px', border: '1px solid #ece9e3', cursor: 'pointer' }}
+                    onError={() => setThumbUrl(null)}
+                  />
+                </a>
+                <div style={{ marginTop: '8px', display: 'flex', justifyContent: 'center', gap: '8px' }}>
+                  <a href={`https://www.amazon.co.jp/s?k=${enc}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: '12px', color: '#e47911', fontWeight: 700, textDecoration: 'none', border: '1px solid #e47911', borderRadius: '4px', padding: '3px 10px' }}>🛒 Amazon</a>
+                  <a href={`https://search.rakuten.co.jp/search/mall/${enc}/`} target="_blank" rel="noopener noreferrer" style={{ fontSize: '12px', color: '#bf0000', fontWeight: 700, textDecoration: 'none', border: '1px solid #bf0000', borderRadius: '4px', padding: '3px 10px' }}>楽天市場</a>
+                </div>
               </div>
             )}
 

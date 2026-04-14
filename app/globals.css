@@ -68,6 +68,7 @@
     /* Thumbnail */
     .g-thumb { width: 70px; min-width: 70px; height: 70px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; border-right: 1px solid #ece9e3; flex-shrink: 0; padding: 8px 4px; }
     .g-thumb-box { width: 46px; height: 46px; border-radius: 9px; border: 1px solid #e8e5df; background: #fafaf8; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; padding: 2px; position: relative; }
+    .g-thumb-box:hover .g-thumb-hover { opacity: 1 !important; }
     .g-thumb-init { font-size: 22px; line-height: 1; opacity: 0.75; }
     .g-thumb-ico { font-size: 22px; }
     .g-brand-s { font-size: 7px; font-weight: 800; color: #bbb; text-align: center; text-transform: uppercase; letter-spacing: 0.3px; max-width: 64px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
