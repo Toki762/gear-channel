@@ -19,7 +19,7 @@ type EditOverride = {
   cat?: string;
 };
 
-const ALL_CATS = ['ギター','ベース','アンプ','ギターアンプ','ベースアンプ','ギターエフェクター','ベースエフェクター','エフェクター','キーボード','シンセ/プラグイン','ドラム','DAW','マイク','音響機材'];
+const ALL_CATS = ['ギター','ベース','アンプ','ギターエフェクター','ベースエフェクター','エフェクター','キーボード','シンセ/プラグイン','ドラム','DAW','マイク','音響機材'];
 
 export default function GearSection({ artist, dbGear = [] }: Props) {
   const a = artist;

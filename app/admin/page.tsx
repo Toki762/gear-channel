@@ -13,8 +13,6 @@ const CORRECT_PASS = process.env.NEXT_PUBLIC_ADMIN_PASSWORD ?? 'gear-admin';
 const CATEGORIES = [
   { cat: 'ギター',           catIcon: '🎸' },
   { cat: 'ベース',           catIcon: '🎸' },
-  { cat: 'ギターアンプ',     catIcon: '🔊' },
-  { cat: 'ベースアンプ',     catIcon: '🔊' },
   { cat: 'アンプ',           catIcon: '🔊' },
   { cat: 'エフェクター',     catIcon: '⚡'  },
   { cat: 'ギターエフェクター', catIcon: '⚡' },
