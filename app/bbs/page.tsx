@@ -2,7 +2,7 @@
 // BBS Page — Server Component
 // =============================================================
 import type { Metadata } from 'next';
-import { fetchPosts } from '@/lib/supabase';
+import { fetchPosts, createServerClient } from '@/lib/supabase';
 import BbsClient from './BbsClient';
 
 // 掲示板は常に最新データを表示（書き込みがリアルタイムで反映されるように）
@@ -45,14 +45,20 @@ export default async function BbsPage({ searchParams }: Props) {
   const sort = searchParams.sort === 'new' ? 'new' : 'pop';
   const page = Math.max(0, parseInt(searchParams.page ?? '0', 10) || 0);
 
-  const { posts, total } = await fetchPosts({
-    flair,
-    search,
-    gearKw,
-    sort,
-    page,
-    pageSize: PAGE_SIZE,
-  });
+  const [{ posts, total }, dbGearResult] = await Promise.all([
+    fetchPosts({ flair, search, gearKw, sort, page, pageSize: PAGE_SIZE }),
+    createServerClient().from('db_gear').select('id, brand, name, kw'),
+  ]);
+
+  // Supabase db_gear をリンク用に整形
+  type DbGearEntry = { id: number; brand: string | null; name: string; kw: string | null };
+  const dbGear: { brand: string; name: string; kw: string; artistId: string }[] =
+    ((dbGearResult.data ?? []) as DbGearEntry[]).map(g => ({
+      brand: g.brand ?? '',
+      name: g.name,
+      kw: g.kw ?? g.name,
+      artistId: String(g.id),
+    }));
 
   // JSON-LD: DiscussionForumPosting（上位10件）
   const jsonLd = {
@@ -86,6 +92,7 @@ export default async function BbsPage({ searchParams }: Props) {
         initialSort={sort}
         initialPage={page}
         pageSize={PAGE_SIZE}
+        dbGear={dbGear}
       />
     </>
   );

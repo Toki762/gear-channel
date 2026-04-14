@@ -8,11 +8,11 @@ import { useRouter, usePathname } from 'next/navigation';
 import type { BbsPost, BbsComment } from '@/lib/types';
 import { BBS_CATS, FLAIR_CLS } from '@/data/config';
 import { createPost, createComment } from './actions';
-import { linkifyGear, type Segment } from '@/data/gearIndex';
+import { linkifyGear, type Segment, type DbGearEntry } from '@/data/gearIndex';
 
 // 機材名を薄いリンクに変換するコンポーネント
-function GearLinkedText({ text }: { text: string }) {
-  const segments: Segment[] = linkifyGear(text);
+function GearLinkedText({ text, dbGear }: { text: string; dbGear?: DbGearEntry[] }) {
+  const segments: Segment[] = linkifyGear(text, dbGear);
   return (
     <>
       {segments.map((seg, i) =>
@@ -20,8 +20,8 @@ function GearLinkedText({ text }: { text: string }) {
           <a
             key={i}
             href={seg.href}
-            style={{ color: '#aaa', textDecoration: 'underline dotted', textDecorationColor: '#ccc' }}
-            title={seg.gearName}
+            style={{ color: 'inherit', opacity: 0.55, textDecoration: 'underline', textDecorationStyle: 'dotted', textDecorationColor: 'currentColor' }}
+            title={`機材ページ: ${seg.gearName}`}
             onClick={e => e.stopPropagation()}
           >
             {seg.text}
@@ -45,6 +45,7 @@ interface Props {
   initialSort: 'pop' | 'new';
   initialPage: number;
   pageSize: number;
+  dbGear?: DbGearEntry[];
 }
 
 export default function BbsClient({
@@ -56,6 +57,7 @@ export default function BbsClient({
   initialSort,
   initialPage,
   pageSize,
+  dbGear = [],
 }: Props) {
   const router = useRouter();
   const pathname = usePathname();
@@ -295,6 +297,7 @@ export default function BbsClient({
                 isSubmittingComment={!!isSubmittingComment[p.id]}
                 replyTo={replyTo}
                 onSetReplyTo={setReplyTo}
+                dbGear={dbGear}
               />
             ))
           )}
@@ -355,9 +358,10 @@ interface PostCardProps {
   isSubmittingComment: boolean;
   replyTo: { postId: string; commentId: string; author: string } | null;
   onSetReplyTo: (r: { postId: string; commentId: string; author: string } | null) => void;
+  dbGear?: DbGearEntry[];
 }
 
-function PostCard({ post: p, isOpen, onToggle, commentValue, onCommentChange, onSubmitComment, isSubmittingComment, replyTo, onSetReplyTo }: PostCardProps) {
+function PostCard({ post: p, isOpen, onToggle, commentValue, onCommentChange, onSubmitComment, isSubmittingComment, replyTo, onSetReplyTo, dbGear }: PostCardProps) {
   const flairCls = FLAIR_CLS[p.flair] ?? 'f-other';
   const comments = p.bbs_comments ?? [];
   const excerpt = (p.body ?? '').slice(0, 120);
@@ -390,7 +394,7 @@ function PostCard({ post: p, isOpen, onToggle, commentValue, onCommentChange, on
             {p.title}
           </div>
           <div style={{ fontSize: '12px', color: '#777', marginBottom: '6px' }}>
-            <GearLinkedText text={excerpt} />{(p.body ?? '').length > 120 ? '…' : ''}
+            <GearLinkedText text={excerpt} dbGear={dbGear} />{(p.body ?? '').length > 120 ? '…' : ''}
           </div>
           {buyLinks}
           <div style={{ display: 'flex', gap: '12px', alignItems: 'center', marginTop: '8px', fontSize: '12px', color: '#aaa' }}>
@@ -418,6 +422,7 @@ function PostCard({ post: p, isOpen, onToggle, commentValue, onCommentChange, on
                   comment={c}
                   onReply={() => onSetReplyTo({ postId: p.id, commentId: c.id, author: c.author })}
                   allComments={comments}
+                  dbGear={dbGear}
                 />
               ))}
             </div>
@@ -461,9 +466,10 @@ interface CommentItemProps {
   comment: BbsComment;
   onReply: () => void;
   allComments: BbsComment[];
+  dbGear?: DbGearEntry[];
 }
 
-function CommentItem({ comment: c, onReply, allComments }: CommentItemProps) {
+function CommentItem({ comment: c, onReply, allComments, dbGear }: CommentItemProps) {
   const parent = c.reply_to ? allComments.find(x => x.id === c.reply_to) : null;
   const isNested = !!c.reply_to;
 
@@ -481,7 +487,7 @@ function CommentItem({ comment: c, onReply, allComments }: CommentItemProps) {
               <span style={{ fontWeight: 600, fontSize: '12px' }}>{c.author}</span>
               <span style={{ fontSize: '11px', color: '#bbb' }}>{new Date(c.created_at).toLocaleDateString('ja-JP')}</span>
             </div>
-            <div style={{ fontSize: '13px', lineHeight: 1.6 }}><GearLinkedText text={c.body} /></div>
+            <div style={{ fontSize: '13px', lineHeight: 1.6 }}><GearLinkedText text={c.body} dbGear={dbGear} /></div>
           </div>
         </div>
         <button onClick={onReply} style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '11px', color: '#aaa', marginTop: '4px', padding: 0 }}>

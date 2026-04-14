@@ -9,86 +9,129 @@ export interface GearLink {
   href: string;   // /artists/{id}
 }
 
-// 機材名（小文字）→ GearLink のマップ
-let _cache: Map<string, GearLink> | null = null;
+export type Segment = { text: string; href?: string; gearName?: string };
 
-export function getGearIndex(): Map<string, GearLink> {
-  if (_cache) return _cache;
+// Supabase db_gear のエントリ型（BBS page から渡される）
+export interface DbGearEntry {
+  brand: string;
+  name: string;
+  kw: string;
+  artistId: string;
+}
 
-  _cache = new Map<string, GearLink>();
+// 汎用すぎて誤マッチしやすいキーワードを除外
+const BLOCKLIST = new Set([
+  'jazz chorus', 'jazz bass', 'stage 4', 'standard', 'classic',
+  'special', 'custom', 'vintage', 'studio', 'deluxe', 'custom shop',
+]);
+
+// 機材名から登録候補バリアントを生成
+function variants(brand: string, name: string, kw: string): string[] {
+  const fullName = [brand, name].filter(Boolean).join(' ');
+  const words = name.split(/\s+/);
+  const list: string[] = [name, fullName];
+
+  if (kw) list.push(kw);
+
+  // "Custom Shop Stratocaster" → "Stratocaster", "Shop Stratocaster"
+  for (let i = 1; i < words.length; i++) {
+    list.push(words.slice(i).join(' '));
+  }
+
+  // "Fender Stratocaster", "Fender Shop Stratocaster"
+  if (brand && words.length >= 2) {
+    for (let i = 1; i < words.length; i++) {
+      list.push(`${brand} ${words.slice(i).join(' ')}`);
+    }
+  }
+
+  return list;
+}
+
+// 静的DBインデックス（初回のみ構築してキャッシュ）
+let _staticCache: Map<string, GearLink> | null = null;
+
+function buildStaticIndex(): Map<string, GearLink> {
+  if (_staticCache) return _staticCache;
+  _staticCache = new Map();
 
   for (const artist of DB) {
+    const href = `/artists/${artist.id}`;
     for (const g of artist.gear ?? []) {
-      const href = `/artists/${artist.id}`;
       const fullName = [g.brand, g.name].filter(Boolean).join(' ');
-
-      // モデル名（スペースなし短縮含む）と完全名の両方を登録
-      const variants = [g.name, fullName];
-
-      // 4文字以上のもののみ登録（短すぎると誤マッチが多い）
-      for (const v of variants) {
-        if (v.length >= 4) {
-          const key = v.toLowerCase();
-          if (!_cache.has(key)) {
-            _cache.set(key, { name: fullName, href });
-          }
+      for (const v of variants(g.brand ?? '', g.name, g.kw ?? '')) {
+        if (!v || v.length < 4) continue;
+        const key = v.toLowerCase().trim();
+        if (BLOCKLIST.has(key)) continue;
+        if (!_staticCache.has(key)) {
+          _staticCache.set(key, { name: fullName, href });
         }
       }
     }
   }
 
-  return _cache;
+  return _staticCache;
 }
 
-// テキスト中の機材名をリンクに変換するユーティリティ
-// React向けに JSX を返すのではなく、{ text, href } セグメントの配列を返す
-export type Segment = { text: string; href?: string; gearName?: string };
+// テキスト中の機材名をリンクセグメントに変換
+export function linkifyGear(text: string, dbGear?: DbGearEntry[]): Segment[] {
+  const index = buildStaticIndex();
 
-export function linkifyGear(text: string): Segment[] {
-  const index = getGearIndex();
+  // dbGear があれば静的DBに上書きせずマージ
+  const merged: Map<string, GearLink> = new Map(index);
+  if (dbGear?.length) {
+    for (const g of dbGear) {
+      const fullName = [g.brand, g.name].filter(Boolean).join(' ');
+      const href = `/artists/${g.artistId}`;
+      for (const v of variants(g.brand, g.name, g.kw)) {
+        if (!v || v.length < 4) continue;
+        const key = v.toLowerCase().trim();
+        if (BLOCKLIST.has(key)) continue;
+        if (!merged.has(key)) {
+          merged.set(key, { name: fullName, href });
+        }
+      }
+    }
+  }
 
-  // 長い名前から先にマッチ（"Les Paul Standard" が "Les Paul" より先にマッチするよう）
-  const sorted = Array.from(index.keys()).sort((a, b) => b.length - a.length);
+  // 長い名前から先にマッチ（誤マッチ防止）
+  const sorted = Array.from(merged.keys()).sort((a, b) => b.length - a.length);
 
-  // 単純な置換: テキストを走査してマッチする機材名を見つける
   const segments: Segment[] = [{ text }];
 
   for (const key of sorted) {
-    const link = index.get(key)!;
+    const link = merged.get(key)!;
     const result: Segment[] = [];
 
     for (const seg of segments) {
-      if (seg.href) {
-        result.push(seg); // すでにリンク化済みはスキップ
-        continue;
-      }
+      if (seg.href) { result.push(seg); continue; }
 
       const lower = seg.text.toLowerCase();
       const idx = lower.indexOf(key);
-      if (idx === -1) {
-        result.push(seg);
-        continue;
-      }
+      if (idx === -1) { result.push(seg); continue; }
 
-      // マッチ前後の文字が単語境界かチェック（誤マッチ防止）
+      // 単語境界チェック（誤マッチ防止: 前後が文字の途中でないことを確認）
       const before = seg.text[idx - 1];
       const after = seg.text[idx + key.length];
-      const wordBoundary = /[\s、。！？「」,\n]|^$/;
-      if (before !== undefined && !wordBoundary.test(before)) {
-        result.push(seg);
-        continue;
-      }
-      if (after !== undefined && !wordBoundary.test(after)) {
+      const isBoundary = (ch: string | undefined) =>
+        ch === undefined || /[\s、。！？「」,.!?()/\-\n]/.test(ch);
+
+      if (!isBoundary(before) || !isBoundary(after)) {
         result.push(seg);
         continue;
       }
 
       if (idx > 0) result.push({ text: seg.text.slice(0, idx) });
-      result.push({ text: seg.text.slice(idx, idx + key.length), href: link.href, gearName: link.name });
-      if (idx + key.length < seg.text.length) result.push({ text: seg.text.slice(idx + key.length) });
+      result.push({
+        text: seg.text.slice(idx, idx + key.length),
+        href: link.href,
+        gearName: link.name,
+      });
+      if (idx + key.length < seg.text.length) {
+        result.push({ text: seg.text.slice(idx + key.length) });
+      }
     }
 
-    // セグメントを更新
     segments.length = 0;
     segments.push(...result);
   }
