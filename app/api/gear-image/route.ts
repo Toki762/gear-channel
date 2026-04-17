@@ -1,11 +1,12 @@
 // =============================================================
 // /api/gear-image — 機材名で商品画像URLを自動取得
-// 優先順位: 楽天API（確実）→ Amazon スクレイピング → サウンドハウス
+// 優先順位: Yahoo!ショッピングAPI → Amazon → サウンドハウス
 // =============================================================
 import { NextRequest, NextResponse } from 'next/server';
 
 export const runtime = 'nodejs';
 
+const YAHOO_APP_ID = process.env.YAHOO_APP_ID ?? '';
 const RAKUTEN_APP_ID = process.env.RAKUTEN_APP_ID ?? '';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
@@ -14,6 +15,29 @@ const HEADERS = {
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'ja,en-US;q=0.9',
 };
+
+// ── Yahoo!ショッピング API ────────────────────────────────
+async function searchYahooShopping(keyword: string): Promise<string | null> {
+  if (!YAHOO_APP_ID) return null;
+  const url = new URL('https://shopping.yahooapis.jp/ShoppingWebService/V3/itemSearch');
+  url.searchParams.set('appid', YAHOO_APP_ID);
+  url.searchParams.set('query', keyword);
+  url.searchParams.set('results', '1');
+  url.searchParams.set('image_size', '300');
+
+  try {
+    const res = await fetch(url.toString(), { cache: 'no-store' });
+    if (!res.ok) return null;
+    const json = await res.json();
+    const item = json?.hits?.[0];
+    if (!item) return null;
+    const img = item.image?.medium ?? item.image?.small ?? null;
+    return img ?? null;
+  } catch (e) {
+    console.error('[yahoo-api]', e);
+  }
+  return null;
+}
 
 // ── 楽天 API（正式、画像URL確実に取れる） ────────────────
 async function searchRakutenAPI(keyword: string): Promise<string | null> {
@@ -118,19 +142,19 @@ export async function GET(req: NextRequest) {
   try {
     let url: string | null = null;
 
-    // 1. 楽天API（フルクエリ）— 最も確実
-    url = await searchRakutenAPI(q);
+    // 1. Yahoo!ショッピングAPI（設定済みの場合）
+    url = await searchYahooShopping(q);
+    if (!url && shorter !== q) url = await searchYahooShopping(shorter);
 
-    // 2. 楽天API（短縮）
+    // 2. 楽天API（設定済みで有効な場合）
+    if (!url) url = await searchRakutenAPI(q);
     if (!url && shorter !== q) url = await searchRakutenAPI(shorter);
 
-    // 3. Amazon（フルクエリ）
+    // 3. Amazon
     if (!url) url = await searchAmazon(q);
-
-    // 4. Amazon（短縮）
     if (!url && shorter !== q) url = await searchAmazon(shorter);
 
-    // 5. サウンドハウス
+    // 4. サウンドハウス
     if (!url) url = await searchSoundhouse(q);
     if (!url && shorter !== q) url = await searchSoundhouse(shorter);
 
