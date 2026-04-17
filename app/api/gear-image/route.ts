@@ -69,13 +69,27 @@ async function searchAmazon(keyword: string): Promise<string | null> {
     const res = await fetch(url, { headers: HEADERS, cache: 'no-store' });
     if (!res.ok) return null;
     const html = await res.text();
-    const patterns = [
+
+    // data-component-type="s-search-result" の最初の商品画像を優先的に取得
+    // data-image-latency="s-product-image" や s-image クラスに含まれる画像URLを探す
+    const productImgPatterns = [
+      // 商品カード内の画像（src= or data-src= に含まれる）
+      /s-product-image[^>]*>[\s\S]{0,500}?https:\/\/m\.media-amazon\.com\/images\/I\/([A-Za-z0-9%+_.-]+)\.(jpg|jpeg|png)/,
+      // s-image クラス付近
+      /class="[^"]*s-image[^"]*"[^>]*src="(https:\/\/m\.media-amazon\.com\/images\/I\/[A-Za-z0-9%+_.-]+\.(jpg|jpeg|png))"/,
+      // 通常の画像URL（フォールバック）
       /https:\/\/m\.media-amazon\.com\/images\/I\/[A-Za-z0-9%+_.-]+\.(jpg|jpeg|png)/,
       /https:\/\/images-na\.ssl-images-amazon\.com\/images\/I\/[A-Za-z0-9%+_.-]+\.(jpg|jpeg|png)/,
     ];
-    for (const pat of patterns) {
+    for (const pat of productImgPatterns) {
       const m = html.match(pat);
-      if (m) return m[0].replace(/_SL\d+_/, '_SL300_');
+      if (m) {
+        // グループキャプチャあり（パターン1,2）かどうかで取り出し方を変える
+        const imgUrl = pat.source.includes('s-product-image')
+          ? `https://m.media-amazon.com/images/I/${m[1]}.${m[2]}`
+          : (m[1]?.startsWith('https://') ? m[1] : m[0]);
+        return imgUrl.replace(/_SL\d+_/, '_SL300_').replace(/_AC_[A-Z0-9,]+_/, '_AC_SL300_');
+      }
     }
   } catch { /* ignore */ }
   return null;
