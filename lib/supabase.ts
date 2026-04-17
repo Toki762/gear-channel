@@ -41,10 +41,10 @@ export async function fetchPosts(options?: {
     pageSize = 20,
   } = options ?? {};
 
+  // ① 投稿一覧を取得（コメントは別途取得するため bbs_comments JOIN しない）
   let query = supabase
     .from('bbs_posts')
-    .select('*, bbs_comments(*)')
-    .is('reply_to', null);
+    .select('*', { count: 'exact' });
 
   if (flair && flair !== 'すべて') query = query.eq('flair', flair);
   if (search) query = query.or(`title.ilike.%${search}%,body.ilike.%${search}%`);
@@ -56,9 +56,30 @@ export async function fetchPosts(options?: {
   if (sort === 'pop') query = query.order('votes', { ascending: false });
   else query = query.order('created_at', { ascending: false });
 
-  const { data, error, count } = await query
+  const { data: posts, error, count } = await query
     .range(page * pageSize, (page + 1) * pageSize - 1);
 
   if (error) throw error;
-  return { posts: (data ?? []) as BbsPost[], total: count ?? 0 };
+  if (!posts || posts.length === 0) return { posts: [] as BbsPost[], total: count ?? 0 };
+
+  // ② 取得した投稿 ID に紐づくコメントを一括取得
+  const postIds = posts.map((p: any) => p.id);
+  const { data: comments } = await supabase
+    .from('bbs_comments')
+    .select('*')
+    .in('post_id', postIds)
+    .order('created_at', { ascending: true });
+
+  // ③ 投稿にコメントをマージ
+  const commentsByPost: Record<string, BbsComment[]> = {};
+  for (const c of (comments ?? []) as BbsComment[]) {
+    if (!commentsByPost[c.post_id]) commentsByPost[c.post_id] = [];
+    commentsByPost[c.post_id].push(c);
+  }
+  const merged = posts.map((p: any) => ({
+    ...p,
+    bbs_comments: commentsByPost[p.id] ?? [],
+  })) as BbsPost[];
+
+  return { posts: merged, total: count ?? 0 };
 }
