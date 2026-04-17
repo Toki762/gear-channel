@@ -60,21 +60,30 @@ export default async function BbsPage({ searchParams }: Props) {
       artistId: String(g.id),
     }));
 
-  // JSON-LD: DiscussionForumPosting（上位10件）
+  // JSON-LD: ItemList of DiscussionForumPosting（上位10件）
+  // Google要件: headline, url, author(name), datePublished が各投稿に必要
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'DiscussionForumPosting',
+    '@type': 'ItemList',
     name: '音楽機材掲示板 — Gear ちゃんねる',
     url: `${BASE_URL}/bbs`,
     description: '音楽機材について語る掲示板。ギター・シンセ・エフェクター・DAWなど。',
-    ...(posts.length > 0 && {
-      comment: posts.slice(0, 10).map(p => ({
-        '@type': 'Comment',
-        text: (p.title ?? '') + (p.body ? ` — ${p.body.slice(0, 100)}` : ''),
-        author: { '@type': 'Person', name: p.author ?? '名無し' },
+    itemListElement: posts.slice(0, 10).map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'DiscussionForumPosting',
+        headline: p.title ?? '無題',
+        url: `${BASE_URL}/bbs?thread=${p.id}`,
         datePublished: p.created_at,
-      })),
-    }),
+        author: {
+          '@type': 'Person',
+          name: p.author ?? '名無し',
+          url: `${BASE_URL}/bbs`,
+        },
+        ...(p.body ? { text: p.body.slice(0, 200) } : {}),
+      },
+    })),
   };
 
   return (

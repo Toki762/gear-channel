@@ -17,7 +17,10 @@ const HEADERS = {
 
 // ── 楽天 API（正式、画像URL確実に取れる） ────────────────
 async function searchRakutenAPI(keyword: string): Promise<string | null> {
-  if (!RAKUTEN_APP_ID) return null;
+  if (!RAKUTEN_APP_ID) {
+    console.warn('[rakuten-api] RAKUTEN_APP_ID が未設定');
+    return null;
+  }
   const url = new URL('https://app.rakuten.co.jp/services/api/IchibaItem/Search/20220601');
   url.searchParams.set('applicationId', RAKUTEN_APP_ID);
   url.searchParams.set('keyword', keyword);
@@ -27,10 +30,24 @@ async function searchRakutenAPI(keyword: string): Promise<string | null> {
 
   try {
     const res = await fetch(url.toString(), { cache: 'no-store' });
-    if (!res.ok) return null;
+    if (!res.ok) {
+      const errText = await res.text().catch(() => '');
+      console.error(`[rakuten-api] HTTP ${res.status} — appId="${RAKUTEN_APP_ID}" kw="${keyword}" body=${errText.slice(0, 300)}`);
+      return null;
+    }
     const json = await res.json();
+
+    // エラーレスポンス（wrong_parameter等）のログ
+    if (json?.error) {
+      console.error(`[rakuten-api] APIエラー: ${json.error} / ${json.error_description} — appId="${RAKUTEN_APP_ID}"`);
+      return null;
+    }
+
     const item = json?.Items?.[0]?.Item;
-    if (!item) return null;
+    if (!item) {
+      console.log(`[rakuten-api] 結果0件 kw="${keyword}"`);
+      return null;
+    }
 
     // mediumImageUrls から最初の画像を取得
     const imgs = item.mediumImageUrls;
@@ -38,8 +55,9 @@ async function searchRakutenAPI(keyword: string): Promise<string | null> {
       const img = typeof imgs[0] === 'string' ? imgs[0] : imgs[0]?.imageUrl;
       if (img) return img.replace('?_ex=128x128', '?_ex=300x300');
     }
+    console.log(`[rakuten-api] 画像なし itemName="${item.itemName}"`);
   } catch (e) {
-    console.error('[rakuten-api]', e);
+    console.error('[rakuten-api] fetch例外:', e);
   }
   return null;
 }
