@@ -81,7 +81,8 @@ export default async function BbsPage({ searchParams }: Props) {
           name: p.author ?? '名無し',
           url: `${BASE_URL}/bbs`,
         },
-        ...(p.body ? { text: p.body.slice(0, 200) } : {}),
+        // text は必須（image/video がないため常に含める）
+        text: (p.body || p.title || '音楽機材掲示板への投稿').slice(0, 200),
       },
     })),
   };
