@@ -7,7 +7,7 @@ import { DB } from '@/data/artists';
 import { POPULAR_IDS } from '@/data/config';
 import { fetchPosts } from '@/lib/supabase';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
 export const metadata: Metadata = {
   title: 'Gear ちゃんねる — アーティストの機材を調べよう',

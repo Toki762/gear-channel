@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     template: '%s | Gear ちゃんねる',
   },
   description: '日本のアーティストが使用している機材・ギター・シンセ・エフェクターを調べるサイト。掲示板でミュージシャンと語ろう。',
+  alternates: {
+    canonical: BASE_URL,
+  },
   openGraph: {
     siteName: 'Gear ちゃんねる',
     locale: 'ja_JP',

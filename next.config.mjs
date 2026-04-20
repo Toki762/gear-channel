@@ -1,5 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // www → non-www リダイレクト（SEO: canonical ドメインに統一）
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.gear-channel.com' }],
+        destination: 'https://gear-channel.com/:path*',
+        permanent: true,
+      },
+    ];
+  },
+
   // 画像最適化 — Amazon・サウンドハウス等の外部画像をNext.js経由で最適化
   images: {
     remotePatterns: [

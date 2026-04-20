@@ -8,7 +8,7 @@ import BbsClient from './BbsClient';
 // 掲示板は常に最新データを表示（書き込みがリアルタイムで反映されるように）
 export const revalidate = 0;
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
 export const metadata: Metadata = {
   title: '音楽機材 掲示板 — Gear ちゃんねる',

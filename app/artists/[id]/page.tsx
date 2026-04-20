@@ -8,7 +8,7 @@ import GearSection from './GearSection';
 import { createServerClient } from '@/lib/supabase';
 import type { GearItem } from '@/lib/types';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
 // ISR: 60秒ごとに再検証（管理画面の変更が反映される）
 export const revalidate = 60;

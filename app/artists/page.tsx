@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { ARTIST_KANA } from '@/data/config';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
 export const metadata: Metadata = {
   title: 'アーティスト一覧',
