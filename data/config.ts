@@ -142,4 +142,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'forlimitedsazabys':  'ふぉーりみてっどさざびーず 04 Limited Sazabys フォーリミ GEN KOUHEI RYU-TA HIROKAZ',
   'creephyp':           'くりーぷはいぷ クリープハイプ おざきせかいかん おがわこうじ はせがわかおなし ふるかわのりあき',
   'yabaitshatsuya':     'やばいてぃーしゃつやさん ヤバイTシャツ屋さん こやまたくや しばゆー もりもとりょうすけ',
+  'sambomaster':        'さんぼますたー サンボマスター やまぐちたかし こんどうよういち きうちやすふみ',
+  'kanaboon':           'かなぶーん KANA-BOON たにぐちまぐろ こがはやと いいだゆうま こいずみたかひろ',
+  'keytalk':            'きーとーく KEYTALK しゅとうよしかつ てらなかともまさ おのたけまさ やぎゆうき',
 };
