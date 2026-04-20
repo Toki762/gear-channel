@@ -80,16 +80,49 @@ export async function POST() {
   });
 }
 
-// GET でマッピング一覧確認
-export async function GET() {
+// GET?run=1 で実行、GETのみで現状確認
+export async function GET(req: Request) {
   const supabase = createServerClient();
+  const { searchParams } = new URL(req.url);
+
+  if (searchParams.get('run') === '1') {
+    // POST と同じ処理をGETでも実行（ブラウザから叩けるよう）
+    const { data: posts, error: fetchErr } = await supabase
+      .from('bbs_posts')
+      .select('id, title, flair')
+      .eq('flair', '機材');
+
+    if (fetchErr) return NextResponse.json({ ok: false, error: fetchErr.message }, { status: 500 });
+
+    const results: { title: string; old: string; new: string; ok: boolean }[] = [];
+    for (const post of posts ?? []) {
+      const newFlair = FLAIR_MAP[post.title] ?? '購入相談';
+      const { error } = await supabase.from('bbs_posts').update({ flair: newFlair }).eq('id', post.id);
+      results.push({ title: post.title, old: post.flair, new: newFlair, ok: !error });
+    }
+
+    return NextResponse.json({
+      ok: true,
+      updated: results.filter(r => r.ok).length,
+      failed: results.filter(r => !r.ok).length,
+      details: results,
+    });
+  }
+
+  // ?run=1 なし → 現在のflair一覧を返す
   const { data, count } = await supabase
     .from('bbs_posts')
     .select('title, flair', { count: 'exact' })
     .order('flair');
 
+  const remaining機材 = (data ?? []).filter((p: any) => p.flair === '機材').length;
+
   return NextResponse.json({
     total: count,
+    remaining_機材: remaining機材,
+    message: remaining機材 > 0
+      ? `「機材」flair が ${remaining機材} 件残っています。?run=1 を付けてアクセスすると修正できます`
+      : '✅ すべてのflairが正しく設定されています',
     posts: data,
   });
 }
