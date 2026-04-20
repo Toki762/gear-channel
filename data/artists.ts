@@ -1700,4 +1700,138 @@ export const DB: Artist[] = [
       { id: 'ampeg-miya', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: 'MIYA (Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL ZAZEN BOYS MIYA ベースアンプ', yt: ["Ampeg SVT-CL レビュー ベースアンプ 音", "SVT ベース ロック ファンク ライブ セッティング"], similar: ["Mesa Boogie Subway D-800+", "GK 2001RB", "Darkglass Microtubes 900"], desc: `MIYAが使用するAmpeg SVT-CLベースアンプ。全段真空管による圧倒的な音圧と温かみのあるローミッドがZAZEN BOYSのライブでベースの存在感を確立し、変拍子とグルーヴが渦巻くバンドアンサンブルの重低音を支える。`, wikiTitle: 'Ampeg_SVT' },
     ],
   },
+  // =============================================================
+  // フィッシュマンズ
+  // =============================================================
+  {
+    id: 'fishmans',
+    name: 'フィッシュマンズ',
+    en: 'Fishmans',
+    genre: 'J-Rock / Dub / Reggae / Psychedelic Rock',
+    since: '1987年〜（佐藤伸治逝去後も茂木欣一らが活動継続）',
+    origin: '東京都',
+    members: '佐藤伸治 (Vo/Gt) / 柏原譲 (Ba) / 茂木欣一 (Dr)',
+    desc: `「バックビートにのっかって」「ナイトクルージング」「感謝（驚）」など、日本語ロックの文法を超えたダブ/レゲエ/サイケデリックのハイブリッドサウンドで唯一無二の世界観を築いた東京出身のバンド。1999年の佐藤伸治の急逝後も茂木欣一らが活動を継続し、今なお世界中にカルト的なファンを持つ。「98.12.28 男たちの別れ」は日本のライブ録音史に刻まれる伝説的な作品。`,
+    gear: [
+      // 佐藤伸治 (Vo/Gt)
+      { id: 'strat-sato', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: '佐藤伸治 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Stratocaster フィッシュマンズ 佐藤伸治', yt: ["Fender Stratocaster レビュー サイケデリック ダブ 音作り", "ストラトキャスター クリーン コード ダブ エフェクト 音"], similar: ["Fender Telecaster", "Gibson ES-335", "Fender Jazzmaster"], desc: `佐藤伸治のメインギター。FenderストラトのトーンがRoland JC-120のクリーンなアンビエンスと結びつくことで、フィッシュマンズ独特の「浮遊する」ギターサウンドが生まれる。繰り返されるコードストロークとアルペジオがダブのうねりと混ざり合い、聴く者を夢の中に引き込む質感を生む。`, wikiTitle: 'Fender_Stratocaster' },
+      { id: 'jc120-sato', brand: 'Roland', name: 'JC-120 Jazz Chorus', cat: 'アンプ', catIcon: '🔊', user: '佐藤伸治 (Vo/Gt)', price: '¥100,000〜¥160,000', kw: 'Roland JC-120 Jazz Chorus フィッシュマンズ 佐藤伸治 クリーン', yt: ["Roland JC-120 Jazz Chorus レビュー 音 特徴", "JC-120 ダブ レゲエ クリーン アンビエント 音作り"], similar: ["Fender Twin Reverb", "Vox AC30", "Orange Rockerverb"], desc: `佐藤伸治が愛用したRoland JC-120。固体素子ならではの硬質でクリアなクリーントーンとビルトインコーラスが、フィッシュマンズのサウンドに欠かせないダビーな空間表現の土台を形成する。歪まないクリーンに様々なエフェクトを重ねることで「ゆらゆらとした夢の質感」を実現した。`, wikiTitle: 'Roland_Jazz_Chorus' },
+      { id: 'spaceecho-sato', brand: 'Roland', name: 'RE-201 Space Echo', cat: 'エフェクター', catIcon: '⚡', user: '佐藤伸治 (Vo/Gt)', price: '¥60,000〜¥120,000（中古）', kw: 'Roland RE-201 Space Echo フィッシュマンズ 佐藤伸治 ダブ エコー', yt: ["Roland RE-201 Space Echo レビュー ダブ エコー 使い方", "スペースエコー テープエコー サイケ レゲエ 音作り"], similar: ["Boss DM-2W", "Strymon El Capistan", "Electro-Harmonix Deluxe Memory Man"], desc: `フィッシュマンズのサウンドの核心。Roland RE-201 Space Echoのテープエコーによる揺らぎと残響がギター・ボーカル・リズム全体に絡みつき、ダブ特有の「空間が滲む」サウンドスケープを形成する。佐藤の繰り返されるフレーズがSpace Echoで溶け合い、フィッシュマンズの幻想的な音楽世界の源泉となった。`, wikiTitle: 'Roland_Space_Echo' },
+      { id: 'ce1-sato', brand: 'Boss', name: 'CE-1 Chorus Ensemble', cat: 'エフェクター', catIcon: '⚡', user: '佐藤伸治 (Vo/Gt)', price: '¥40,000〜¥80,000（中古）', kw: 'Boss CE-1 コーラス フィッシュマンズ 佐藤伸治', yt: ["Boss CE-1 Chorus Ensemble レビュー ヴィンテージ 音", "コーラス ダブ サイケデリック アンビエント 音作り"], similar: ["Boss CE-2", "Electro-Harmonix Small Clone", "TC Electronic Corona"], desc: `佐藤伸治が使用したBoss CE-1 Chorus Ensemble。JCコーラス回路を搭載したBossコーラスの原点で、その豊かな揺らぎがJC-120と合わさることでフィッシュマンズのギタートーンに独特の立体感と浮遊感を付与する。`, wikiTitle: 'Boss_CE-1' },
+      { id: 'dd3-sato', brand: 'Boss', name: 'DD-3 Digital Delay', cat: 'エフェクター', catIcon: '⚡', user: '佐藤伸治 (Vo/Gt)', price: '¥8,000〜¥14,000', kw: 'Boss DD-3 ディレイ フィッシュマンズ 佐藤伸治', yt: ["Boss DD-3 Digital Delay レビュー 使い方", "デジタルディレイ ダブ アンビエント 音作り"], similar: ["Boss DD-6", "TC Electronic Flashback", "MXR Carbon Copy"], desc: `佐藤伸治のペダルボードに収められていたBoss DD-3。Space Echoと組み合わせることで層を重ねたダブエコーサウンドを生み出し、フィッシュマンズのライブでの深みある音響世界を形成する一役を担った。`, wikiTitle: 'Boss_DD-3' },
+      { id: 'rv3-sato', brand: 'Boss', name: 'RV-3 Digital Reverb/Delay', cat: 'エフェクター', catIcon: '⚡', user: '佐藤伸治 (Vo/Gt)', price: '¥10,000〜¥20,000（中古）', kw: 'Boss RV-3 リバーブ ディレイ フィッシュマンズ 佐藤伸治', yt: ["Boss RV-3 Digital Reverb レビュー 使い方", "リバーブ ディレイ アンビエント ダブ 音作り"], similar: ["Boss RV-5", "Strymon BigSky", "Electro-Harmonix Holy Grail"], desc: `佐藤伸治が使用したBoss RV-3。リバーブとディレイを同時に扱えるユニークなペダルで、Space Echoやその他のディレイと組み合わせることでフィッシュマンズの深い残響空間を作り出した。曲の終わりに漂うように消えていく余韻はこのリバーブが生み出している。`, wikiTitle: 'Boss_RV-3' },
+      // 柏原譲 (Ba)
+      { id: 'jazzbass-kashiwabara', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: '柏原譲 (Ba)', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass フィッシュマンズ 柏原譲 ベース', yt: ["Fender Jazz Bass レビュー ダブ レゲエ 音作り", "ジャズベース グルーヴ ベースライン ダブ レゲエ"], similar: ["Fender Precision Bass", "Music Man StingRay", "Sadowsky Metro"], desc: `柏原譲のメインベース。Fender Jazz Bassのクリアで伸びやかなローエンドがフィッシュマンズのダブグルーヴを土台で支える。レゲエ/ダブ特有の空白を活かしたグルーヴィーなベースラインが佐藤の浮遊するギターと絡み合い、バンドの独特のダンスグルーヴを形成する。`, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'svt-kashiwabara', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: '柏原譲 (Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL フィッシュマンズ 柏原譲 ベースアンプ', yt: ["Ampeg SVT-CL レビュー ベースアンプ 音", "SVT ベース ダブ レゲエ グルーヴ"], similar: ["GK 2001RB", "Mesa Boogie Subway D-800+", "Orange OB1-500"], desc: `柏原譲が使用するAmpeg SVT-CL。全段真空管による温かみとパンチ力のあるローエンドがフィッシュマンズのダブグルーヴに不可欠な低音の存在感を確立する。空間を揺らすような佐藤のエフェクト群の中でも埋もれない骨太なベーストーンがバンドの音楽を地面に繋ぎとめる。`, wikiTitle: 'Ampeg_SVT' },
+      // 茂木欣一 (Dr)
+      { id: 'pearl-mogi', brand: 'Pearl', name: 'Masters Custom', cat: 'ドラム', catIcon: '🥁', user: '茂木欣一 (Dr)', price: '¥350,000〜¥700,000（セット）', kw: 'Pearl Masters Custom フィッシュマンズ 茂木欣一 ドラム', yt: ["Pearl Masters Custom レビュー 音 特徴", "パール マスター カスタム ドラム ダブ レゲエ グルーヴ"], similar: ["Yamaha Recording Custom", "DW Collector's", "Sonor SQ2"], desc: `茂木欣一のメインドラムキット。Pearl Masters Customのレスポンスの速さと芯のある音質がフィッシュマンズのダブグルーヴを支える。茂木のレゲエ的なビートの間のとり方と繊細なハイハットワークがバンドのダンサブルで浮遊感あるサウンドの基盤となる。`, wikiTitle: 'Pearl_(instrument_manufacturer)' },
+    ],
+  },
+  // =============================================================
+  // Thee Michelle Gun Elephant
+  // =============================================================
+  {
+    id: 'michelle',
+    name: 'Thee Michelle Gun Elephant',
+    en: 'Thee Michelle Gun Elephant',
+    genre: 'J-Rock / Garage Rock / Punk Blues',
+    since: '1991年〜2003年',
+    origin: '東京都',
+    members: 'チバユウスケ (Vo/Gt) / アベフトシ (Gt) / ウエノコウジ (Ba) / クハラカズユキ (Dr)',
+    desc: `「暴力的な愛」「世界の終わり」「ゲット・アップ・ルーシー」など、ガレージロック・ブルース・パンクを融合させた爆発的なサウンドで90年代日本のロックシーンを牽引した4人組。チバユウスケの獣のようなボーカルとアベフトシの切り込むようなギターリフが伝説的な化学反応を生んだ。2003年の解散後、チバ（2023年逝去）はNOT WONK等、アベ（2009年逝去）はDTBCKS等で活動。`,
+    gear: [
+      // チバユウスケ (Vo/Gt)
+      { id: 'tele-chiba', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'チバユウスケ (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster Thee Michelle Gun Elephant チバユウスケ', yt: ["Fender Telecaster レビュー ガレージロック パンク 音作り", "テレキャスター ブルース ロック カッティング 音"], similar: ["Gibson SG", "Fender Jazzmaster", "Epiphone Casino"], desc: `チバユウスケのメインギター。Fender Telecasterのドライでアタック感が鋭いトーンがチバの荒削りなリフワークと一体となり、Thee Michelle Gun Elephantのガレージロックサウンドの中核を成す。ピックスクラッチや荒々しいコードワークでテレキャスを武器として使い倒す姿はバンドの美学そのものだった。`, wikiTitle: 'Fender_Telecaster' },
+      { id: 'jcm800-chiba', brand: 'Marshall', name: 'JCM800 2203', cat: 'アンプ', catIcon: '🔊', user: 'チバユウスケ (Vo/Gt)', price: '¥250,000〜¥400,000（中古）', kw: 'Marshall JCM800 Thee Michelle Gun Elephant チバユウスケ', yt: ["Marshall JCM800 レビュー 音作り ガレージロック", "JCM800 パンク ブルース ロック アンプ 使い方"], similar: ["Marshall JCM900", "Orange Rockerverb", "Hiwatt DR103"], desc: `チバユウスケが使用するMarshall JCM800。荒々しいゲインとミッドの張りがテレキャスターと結びつき、Thee Michelle Gun Elephantの爆発的なガレージロックサウンドを生む。フルアップに近い設定でのドライブが楽曲の衝動そのものを音にする。`, wikiTitle: 'Marshall_JCM800' },
+      { id: 'ds1-chiba', brand: 'Boss', name: 'DS-1 Distortion', cat: 'エフェクター', catIcon: '⚡', user: 'チバユウスケ (Vo/Gt)', price: '¥6,000〜¥9,000', kw: 'Boss DS-1 ディストーション Thee Michelle Gun Elephant チバユウスケ', yt: ["Boss DS-1 レビュー 使い方 ガレージロック パンク", "DS-1 歪み ブルース ロック 音作り"], similar: ["ProCo RAT", "MXR Distortion+", "Electro-Harmonix Big Muff"], desc: `チバユウスケが愛用したBoss DS-1。JCM800のナチュラルなドライブに加えDS-1でさらにゲインを押し込むスタイルが、Thee Michelle Gun Elephantの野蛮で直線的な歪みサウンドを確立した。シンプルな3ノブの設定を極限まで試した結果として生まれる音は、バンドの衝動の結晶だ。`, wikiTitle: 'Boss_DS-1' },
+      // アベフトシ (Gt)
+      { id: 'tele-custom-abe', brand: 'Fender', name: 'Telecaster Custom', cat: 'ギター', catIcon: '🎸', user: 'アベフトシ (Gt)', price: '¥200,000〜¥400,000（中古）', kw: 'Fender Telecaster Custom Thee Michelle Gun Elephant アベフトシ', yt: ["Fender Telecaster Custom レビュー 音 特徴", "テレキャスターカスタム ハムバッカー ガレージ ロック 音作り"], similar: ["Fender Telecaster", "Mosrite Ventures Model", "Gibson SG"], desc: `アベフトシのメインギター。Fender Telecaster CustomのフロントWide Range Humbuckerがチバのテレキャスターとは異なるコシとウォームさを加え、ツインギターに厚みと奥行きをもたらす。アベの独特のアップストロークと乾いた刻みがバンドの「ガレージ感」を彩る存在感を放つ。`, wikiTitle: 'Fender_Telecaster' },
+      { id: 'mosrite-abe', brand: 'Mosrite', name: 'Ventures Model', cat: 'ギター', catIcon: '🎸', user: 'アベフトシ (Gt)', price: '¥150,000〜¥400,000（中古）', kw: 'Mosrite Ventures Model アベフトシ Thee Michelle Gun Elephant', yt: ["Mosrite Ventures Model レビュー 音 特徴", "モズライト ガレージロック サーフ ロカビリー 音作り"], similar: ["Fender Telecaster Custom", "Danelectro 59", "Harmony Bobkat"], desc: `アベフトシが使用するMosrite Ventures Model。独特の細身ネックとビブラートアームによるサーフ/ガレージサウンドが、Thee Michelle Gun Elephantの楽曲に60年代ロックの匂いを混ぜ込む。モズライト特有の「チャリッ」としたトーンがバンドのガレージ感を深める。`, wikiTitle: 'Mosrite' },
+      { id: 'ac30-abe', brand: 'Vox', name: 'AC30C2', cat: 'アンプ', catIcon: '🔊', user: 'アベフトシ (Gt)', price: '¥150,000〜¥200,000', kw: 'Vox AC30 アベフトシ Thee Michelle Gun Elephant', yt: ["Vox AC30 レビュー 音 特徴", "AC30 ブリティッシュ ガレージロック ビンテージ 音作り"], similar: ["Marshall JTM45", "Fender Deluxe Reverb", "Orange Rockerverb 30"], desc: `アベフトシが使用するVox AC30。チバのJCM800との対比でAC30のブリティッシュな煌めきがThee Michelle Gun Elephantのツインギターに明暗をつける。Top Boostによる高域の輝きとNatural Overdrive回路の自然な歪みがアベの独特の「乾いたブルース感」を生む。`, wikiTitle: 'Vox_AC30' },
+      // ウエノコウジ (Ba)
+      { id: 'precision-ueno', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: 'ウエノコウジ (Ba)', price: '¥150,000〜¥280,000', kw: 'Fender Precision Bass Thee Michelle Gun Elephant ウエノコウジ', yt: ["Fender Precision Bass レビュー ガレージロック パンク 音作り", "プレベ ベース ロック パンク ライブ"], similar: ["Gibson EB-3", "Music Man StingRay", "Fender Jazz Bass"], desc: `ウエノコウジのメインベース。Fender Precision Bassのシンプルで太いパンチ力がThee Michelle Gun Elephantのガレージロックサウンドに骨格を与える。チバとアベの爆発的なギターに対してプレベの一本筋の通ったトーンがバンドを地に足つけた状態に保つ。`, wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'svt-ueno', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: 'ウエノコウジ (Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL Thee Michelle Gun Elephant ウエノコウジ ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース ガレージロック ロック ライブ セッティング"], similar: ["GK 2001RB", "Orange OB1-500", "Mesa Boogie Subway D-800+"], desc: `ウエノコウジが使用するAmpeg SVT-CL。全段真空管による圧倒的な音圧がThee Michelle Gun Elephantのライブで二本のギターに対峙するベースの壁を作り出す。オールチューブの温かみと爆発的なパンチがウエノのプレベとの組み合わせで最高のガレージベーストーンを生む。`, wikiTitle: 'Ampeg_SVT' },
+      // クハラカズユキ (Dr)
+      { id: 'tama-kuhara', brand: 'Tama', name: 'Starclassic Maple', cat: 'ドラム', catIcon: '🥁', user: 'クハラカズユキ (Dr)', price: '¥400,000〜¥800,000（セット）', kw: 'Tama Starclassic クハラカズユキ Thee Michelle Gun Elephant ドラム', yt: ["Tama Starclassic Maple レビュー 音 特徴", "タマ ドラム ガレージロック パンク ライブ"], similar: ["Pearl Reference", "Ludwig Classic Maple", "DW Collector's"], desc: `クハラカズユキのメインドラムキット。Tama Starclassicの明るいアタックと力強いレスポンスがThee Michelle Gun Elephantの爆走するガレージロックを推進する。クハラのパワフルかつシンプルなドラミングスタイルがバンドの衝動的な音楽に揺るぎない土台を提供する。`, wikiTitle: 'Tama_(drums)' },
+    ],
+  },
+  // =============================================================
+  // サニーデイ・サービス
+  // =============================================================
+  {
+    id: 'sunnyday',
+    name: 'サニーデイ・サービス',
+    en: 'Sunny Day Service',
+    genre: 'J-Rock / Indie Pop / シティポップ',
+    since: '1992年〜（活動休止・再結成を経て現在も活動）',
+    origin: '東京都',
+    members: '曽我部恵一 (Vo/Gt) / 田中貴 (Ba) / 丸山晴茂 (Dr・2020年逝去)',
+    desc: `「青春狂走曲」「東京」「セツナ」など、日本語ロックの詩情とギターポップの瑞々しさを融合させた90年代を代表するバンド。曽我部恵一の独自の詩世界と浮遊感あるギターサウンドが多くのリスナーの青春と記憶を彩った。活動休止・再結成を経て現在も精力的に活動し、ROSE RECORDSを主宰する曽我部は日本インディーシーンの中心的存在として活躍を続ける。`,
+    gear: [
+      // 曽我部恵一 (Vo/Gt)
+      { id: 'tele-sogabe', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '曽我部恵一 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster サニーデイ・サービス 曽我部恵一', yt: ["Fender Telecaster レビュー インディーポップ 音作り", "テレキャスター コード ストローク ポップ ロック"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "Gibson ES-335"], desc: `曽我部恵一のメインギター。Fender Telecasterのドライで煌めくシングルコイルトーンがサニーデイ・サービスの「はにかみ」と「疾走感」を同居させる楽曲表現を可能にする。曽我部の繊細なコードワークと歯切れよいストロークがテレキャスターの持ち味と絶妙に噛み合い、90年代ギターポップの名演を生み出した。`, wikiTitle: 'Fender_Telecaster' },
+      { id: 'jazzmaster-sogabe', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '曽我部恵一 (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster サニーデイ・サービス 曽我部恵一', yt: ["Fender Jazzmaster レビュー インディー ポップ 音作り", "ジャズマスター アルペジオ オルタナ 浮遊感 音"], similar: ["Fender Telecaster", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `曽我部恵一がテレキャスターと使い分けるFender Jazzmaster。フローティングトレモロと浮遊感あるトーンがサニーデイ・サービスの「ゆらぎ」のある楽曲で生かされ、テレキャスとは異なる柔らかなアルペジオ表現を可能にする。後期の活動ではシューゲイザー的な轟音サウンドにも対応。`, wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'twin-sogabe', brand: 'Fender', name: 'Twin Reverb', cat: 'アンプ', catIcon: '🔊', user: '曽我部恵一 (Vo/Gt)', price: '¥120,000〜¥200,000', kw: 'Fender Twin Reverb サニーデイ・サービス 曽我部恵一 クリーン', yt: ["Fender Twin Reverb レビュー 音 特徴", "ツインリバーブ クリーン アンプ ポップ ロック 音作り"], similar: ["Roland JC-120", "Vox AC30", "Matchless DC30"], desc: `曽我部恵一が使用するFender Twin Reverb。クリスタルクリーンなトーンとビルトインリバーブがサニーデイ・サービスの澄んだギターサウンドを形成する。ペダルのオーバードライブと組み合わせた際の「歪んでいるのにどこか爽やか」なニュアンスは曽我部の音楽の詩情そのものを体現する。`, wikiTitle: 'Fender_Twin_Reverb' },
+      { id: 'ds1-sogabe', brand: 'Boss', name: 'DS-1 Distortion', cat: 'エフェクター', catIcon: '⚡', user: '曽我部恵一 (Vo/Gt)', price: '¥6,000〜¥9,000', kw: 'Boss DS-1 ディストーション サニーデイ・サービス 曽我部恵一', yt: ["Boss DS-1 レビュー インディーポップ 音作り", "DS-1 ロック オルタナ ディストーション 使い方"], similar: ["ProCo RAT", "Electro-Harmonix Big Muff", "Boss BD-2"], desc: `曽我部恵一が使用するBoss DS-1。クリーンなTwin Reverbに軽くかけることでサニーデイ・サービスの楽曲に必要な「青さ」のある歪みを付与する。曲によってはゲインを低めにしてオーバードライブ的に使用し、繊細な歪み表現でギターポップの質感を彩る。`, wikiTitle: 'Boss_DS-1' },
+      { id: 'small-clone-sogabe', brand: 'Electro-Harmonix', name: 'Small Clone', cat: 'エフェクター', catIcon: '⚡', user: '曽我部恵一 (Vo/Gt)', price: '¥8,000〜¥12,000', kw: 'EHX Small Clone コーラス サニーデイ・サービス 曽我部恵一', yt: ["EHX Small Clone レビュー コーラス 使い方", "スモールクローン インディーポップ コーラス エフェクト"], similar: ["Boss CE-2", "MXR Analog Chorus", "TC Electronic Corona"], desc: `曽我部恵一が使用するEHX Small Clone。ウォームで深みのあるコーラスサウンドがサニーデイ・サービスのギタートーンに「揺らぎ」と「立体感」を加え、楽曲の抒情的な表現に貢献する。Twin Reverbのクリーンと組み合わさることで90年代インディーポップの「あの音」を確立する重要なピース。`, wikiTitle: 'Electro-Harmonix_Small_Clone' },
+      // 田中貴 (Ba)
+      { id: 'jazzbass-tanaka', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: '田中貴 (Ba)', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass サニーデイ・サービス 田中貴 ベース', yt: ["Fender Jazz Bass レビュー インディーポップ 音作り", "ジャズベース ベースライン ポップ ロック"], similar: ["Fender Precision Bass", "Music Man StingRay", "Rickenbacker 4003"], desc: `田中貴のメインベース。Fender Jazz Bassのクリアで輪郭のはっきりしたトーンがサニーデイ・サービスの瑞々しいギターポップサウンドを下支えし、曽我部の詩世界に寄り添うメロディアスなベースラインを奏でる。`, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'bassman-tanaka', brand: 'Fender', name: 'Bassman', cat: 'アンプ', catIcon: '🔊', user: '田中貴 (Ba)', price: '¥100,000〜¥200,000（中古）', kw: 'Fender Bassman サニーデイ・サービス 田中貴 ベースアンプ', yt: ["Fender Bassman レビュー 音 特徴", "ベースマン ヴィンテージ ベースアンプ ロック ポップ"], similar: ["Ampeg SVT-CL", "Orange OBC810", "Vox AC100"], desc: `田中貴が使用するFender Bassman。ヴィンテージライクな暖かみのあるトーンと自然な歪み感が、サニーデイ・サービスの温もりある音楽にマッチする。曽我部のギターとともに60〜70年代のロック的な空気感をバンドサウンドに持ち込む。`, wikiTitle: 'Fender_Bassman' },
+      // 丸山晴茂 (Dr・2020年逝去)
+      { id: 'pearl-maruyama', brand: 'Pearl', name: 'Reference Series', cat: 'ドラム', catIcon: '🥁', user: '丸山晴茂 (Dr・2020年逝去)', price: '¥500,000〜¥1,000,000（セット）', kw: 'Pearl Reference サニーデイ・サービス 丸山晴茂 ドラム', yt: ["Pearl Reference Series レビュー 音 特徴", "パール リファレンス ドラム ロック ポップ 音作り"], similar: ["Yamaha Recording Custom", "DW Collector's", "Gretsch Broadkaster"], desc: `丸山晴茂（2020年逝去）のメインドラムキット。Pearl Referenceの豊かな倍音とダイナミクスの広さがサニーデイ・サービスの楽曲に表情豊かなリズムをもたらした。繊細なブラシワークからパワフルなドラミングまで、丸山の音楽的な感受性を余すことなく表現できるキットだった。`, wikiTitle: 'Pearl_(instrument_manufacturer)' },
+    ],
+  },
+  // =============================================================
+  // ゆらゆら帝国
+  // =============================================================
+  {
+    id: 'yurateikoku',
+    name: 'ゆらゆら帝国',
+    en: 'Yura Yura Teikoku',
+    genre: 'J-Rock / Psychedelic Rock / Garage Rock',
+    since: '1989年〜2010年',
+    origin: '東京都',
+    members: '坂本慎太郎 (Vo/Gt) / 亀川千代 (Ba/Key) / 柴田一郎 (Dr)',
+    desc: `「美しい」「できれば愛を」「ズックにロック」など、ガレージ・サイケデリック・プリミティヴなロックを独自の方法論で極限まで突き詰めた3人組。坂本慎太郎の「踊れるサイケデリック」ともいうべきリフの反復と亀川千代のヘヴィなベースグルーヴが生む催眠的なサウンドは他に類を見ない。2010年の解散後、坂本はソロ活動で新たな音楽実験を続けている。`,
+    gear: [
+      // 坂本慎太郎 (Vo/Gt)
+      { id: 'tele-sakamoto', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '坂本慎太郎 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster ゆらゆら帝国 坂本慎太郎', yt: ["Fender Telecaster レビュー サイケデリック ガレージ 音作り", "テレキャスター リフ 反復 サイケ ロック"], similar: ["Gibson SG", "Fender Jazzmaster", "Mosrite Ventures Model"], desc: `坂本慎太郎のメインギター。Fender Telecasterのドライで刃のようなトーンが、ゆらゆら帝国の反復リフと催眠的なグルーヴを生み出す武器となる。テレキャスのアタック感あるシングルコイルサウンドがファズやエフェクトと組み合わさることでサイケデリックな音響空間を形成する。`, wikiTitle: 'Fender_Telecaster' },
+      { id: 'jc120-sakamoto', brand: 'Roland', name: 'JC-120 Jazz Chorus', cat: 'アンプ', catIcon: '🔊', user: '坂本慎太郎 (Vo/Gt)', price: '¥100,000〜¥160,000', kw: 'Roland JC-120 ゆらゆら帝国 坂本慎太郎 クリーン', yt: ["Roland JC-120 Jazz Chorus レビュー 音 特徴", "JC-120 クリーン アンプ サイケ ガレージ エフェクト"], similar: ["Fender Twin Reverb", "Vox AC30", "Orange Rockerverb"], desc: `坂本慎太郎が使用するRoland JC-120。固体素子アンプの完全クリーンなトーンにファズやエフェクトを重ねることで、ゆらゆら帝国の「クリーンでありながら音の外縁がサイケデリックに溶ける」独特のサウンドを生み出す。JCのハイファイさが歪みペダルの個性をよりクリアに際立たせる。`, wikiTitle: 'Roland_Jazz_Chorus' },
+      { id: 'fuzzface-sakamoto', brand: 'Dunlop', name: 'Fuzz Face Mini', cat: 'エフェクター', catIcon: '⚡', user: '坂本慎太郎 (Vo/Gt)', price: '¥13,000〜¥18,000', kw: 'Dunlop Fuzz Face ファズ ゆらゆら帝国 坂本慎太郎', yt: ["Dunlop Fuzz Face Mini レビュー 使い方 音", "ファズフェイス ゲルマニウム サイケデリック ガレージ 音作り"], similar: ["Electro-Harmonix Big Muff", "ProCo RAT", "Z.Vex Fuzz Factory"], desc: `坂本慎太郎が使用するDunlop Fuzz Face。ゲルマニウムファズの「モコッ」とした有機的な歪みがゆらゆら帝国のサイケデリックな反復リフに催眠的な質感を付与する。JC-120の完全クリーンに薄くかけることでファズの粒立ちが際立ち、独特のガレージサイケサウンドを形成する。`, wikiTitle: 'Fuzz_Face' },
+      { id: 'octavia-sakamoto', brand: 'Tycobrahe', name: 'Octavia（オクタービア）', cat: 'エフェクター', catIcon: '⚡', user: '坂本慎太郎 (Vo/Gt)', price: '¥50,000〜¥120,000（中古・クローン含む）', kw: 'Octavia オクターブファズ ゆらゆら帝国 坂本慎太郎 サイケ', yt: ["Octavia オクタービア ファズ レビュー 使い方", "オクターブファズ サイケデリック ガレージ 音作り"], similar: ["Electro-Harmonix POG2", "Boss OC-2", "Roger Mayer Octavia"], desc: `坂本慎太郎が使用するオクタービア系ファズ。原音に1オクターブ上の倍音が混ざる特異なサウンドがゆらゆら帝国の楽曲にサイケデリックな宇宙感を付与する。「美しい」などの楽曲のソロや一部のリフで聞かれる異形の音色は、このオクタービアが生み出すゆらゆら帝国の「秘密兵器」だ。`, wikiTitle: 'Octavia_(effects_unit)' },
+      { id: 'bigmuff-sakamoto', brand: 'Electro-Harmonix', name: 'Big Muff Pi', cat: 'エフェクター', catIcon: '⚡', user: '坂本慎太郎 (Vo/Gt)', price: '¥12,000〜¥16,000', kw: 'EHX Big Muff Pi ファズ ゆらゆら帝国 坂本慎太郎', yt: ["EHX Big Muff Pi レビュー 使い方 サイケ", "ビッグマフ ファズ ガレージ サイケデリック 音作り"], similar: ["Dunlop Fuzz Face", "ProCo RAT", "Z.Vex Fuzz Factory"], desc: `坂本慎太郎が場面によって使用するEHX Big Muff Pi。モコッとしたサステインと密度の高いファズサウンドがゆらゆら帝国の楽曲によっては分厚いウォールオブファズを形成する。ファズフェイスとの使い分けで曲ごとに異なる「歪みの質感」を表現する。`, wikiTitle: 'Electro-Harmonix_Big_Muff' },
+      // 亀川千代 (Ba/Key)
+      { id: 'jazzbass-kamekawa', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: '亀川千代 (Ba/Key)', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass ゆらゆら帝国 亀川千代 ベース', yt: ["Fender Jazz Bass レビュー サイケ ガレージ 音作り", "ジャズベース グルーヴ 反復 ベースライン ロック"], similar: ["Fender Precision Bass", "Music Man StingRay", "Gibson EB-3"], desc: `亀川千代のメインベース。Fender Jazz Bassのクリアで輪郭のはっきりしたトーンがゆらゆら帝国の催眠的な反復グルーヴを底辺で支える。坂本のファズギターと絡み合う亀川のヘヴィで粘り気のあるベースラインがバンドの「ゆらゆら感」の核心をなす。`, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'svt-kamekawa', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: '亀川千代 (Ba/Key)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL ゆらゆら帝国 亀川千代 ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース サイケ ガレージ ライブ グルーヴ"], similar: ["Mesa Boogie Subway D-800+", "GK 2001RB", "Orange OB1-500"], desc: `亀川千代が使用するAmpeg SVT-CL。全段真空管による圧倒的な音圧とダブのような重低音がゆらゆら帝国のサウンドに壁のようなベースの質量をもたらす。坂本のサイケデリックなギターと並ぶバンドサウンドの物理的な柱として機能する。`, wikiTitle: 'Ampeg_SVT' },
+      // 柴田一郎 (Dr)
+      { id: 'ludwig-shibata', brand: 'Ludwig', name: 'Classic Maple', cat: 'ドラム', catIcon: '🥁', user: '柴田一郎 (Dr)', price: '¥250,000〜¥500,000（セット）', kw: 'Ludwig Classic Maple ゆらゆら帝国 柴田一郎 ドラム', yt: ["Ludwig Classic Maple レビュー 音 特徴", "ルードウィッグ ドラム ガレージ サイケ ロック 音作り"], similar: ["Gretsch Broadkaster", "Tama Starclassic", "Pearl Masters Custom"], desc: `柴田一郎のメインドラムキット。Ludwig Classic Mapleの明るく乾いたアタックがゆらゆら帝国の催眠的な反復グルーヴを刻む。シンプルで力強いドラミングが坂本の反復リフと相まって「踊れるサイケデリック」を生み出すバンドの根幹として機能する。`, wikiTitle: 'Ludwig_Drums' },
+    ],
+  },
+  // =============================================================
+  // 凛として時雨
+  // =============================================================
+  {
+    id: 'ling-tosite-sigure',
+    name: '凛として時雨',
+    en: 'Ling Tosite Sigure',
+    genre: 'J-Rock / Post-Hardcore / Math Rock',
+    since: '2002年〜',
+    origin: '埼玉県',
+    members: 'TK (Vo/Gt) / 345 (Vo/Ba) / Piti (Dr)',
+    desc: `「nakigoto はここに」「abnormalize」「聖者たちの行進」など、変拍子とユニゾンを駆使した超絶技巧のマスロック/ポストハードコアサウンドで独自の地位を確立した3人組。TKの甲高いスクリームボーカルと精緻なギタープレイ、345のハイトーンボーカルとヘヴィなベース、Pitiの鬼気迫るドラミングが織りなす「ゼロコンマ一秒もズレを許さない」アンサンブルが圧倒的な演奏力で評価される。TKはアニメタイアップでも多数の名曲を生み出している。`,
+    gear: [
+      // TK (Vo/Gt)
+      { id: 'prs-tk', brand: 'PRS', name: 'Custom 24', cat: 'ギター', catIcon: '🎸', user: 'TK (Vo/Gt)', price: '¥300,000〜¥500,000', kw: 'PRS Custom 24 凛として時雨 TK ギター', yt: ["PRS Custom 24 レビュー 音 特徴", "ピーアールエス カスタム24 マスロック ポストハードコア 音作り"], similar: ["Gibson Les Paul", "Ibanez RG", "ESP Eclipse"], desc: `TKのメインギターの一つPRS Custom 24。PRSの高い精度と多彩なトーンキャラクターが凛として時雨の複雑な変拍子リフとアルペジオを支える。85/15ピックアップのクリアでレンジの広いサウンドが、クリーンの繊細な表現からドライブ時の激しい歪みまで幅広い表現を可能にする。`, wikiTitle: 'PRS_Guitars' },
+      { id: 'strat-tk', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'TK (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Stratocaster 凛として時雨 TK ギター', yt: ["Fender Stratocaster レビュー マスロック ポストハードコア 音作り", "ストラトキャスター クリーン アルペジオ エモ 音"], similar: ["PRS Custom 24", "Ibanez RG", "Suhr Modern"], desc: `TKがPRSと使い分けるFender Stratocaster。ストラトのシングルコイルトーンが凛として時雨の楽曲の繊細なクリーンパートやアルペジオに独特の「線の細さ」と「透明感」を与え、ドライブとのコントラストを際立たせる。`, wikiTitle: 'Fender_Stratocaster' },
+      { id: 'axefx-tk', brand: 'Fractal Audio', name: 'Axe-FX III', cat: 'アンプ', catIcon: '🔊', user: 'TK (Vo/Gt)', price: '¥330,000〜¥400,000', kw: 'Fractal Audio Axe-FX III 凛として時雨 TK', yt: ["Fractal Audio Axe-FX III レビュー 使い方", "アクスエフエックス アンプモデリング マスロック ポストハードコア 音作り"], similar: ["Line 6 Helix Floor", "Kemper Profiler", "Neural DSP Quad Cortex"], desc: `TKが使用するFractal Audio Axe-FX III。世界最高峰のアンプモデリングと膨大なエフェクトルーティングが凛として時雨の複雑なサウンドデザインを支える。楽曲ごとに精密に作り込まれたプリセットが、ライブでのシームレスなトーン切り替えを実現し、スタジオクオリティのサウンドをそのままライブで再現する。`, wikiTitle: 'Fractal_Audio_Systems' },
+      { id: 'ts9-tk', brand: 'Ibanez', name: 'Tube Screamer TS9', cat: 'エフェクター', catIcon: '⚡', user: 'TK (Vo/Gt)', price: '¥12,000〜¥16,000', kw: 'Ibanez TS9 Tube Screamer 凛として時雨 TK オーバードライブ', yt: ["Ibanez TS9 Tube Screamer レビュー 使い方 音", "チューブスクリーマー オーバードライブ マスロック ポストハードコア"], similar: ["Boss OD-1X", "Xotic BB Preamp", "Fulltone OCD"], desc: `TKがAxe-FX IIIのブースターとして使用するIbanez TS9 Tube Screamer。アンプのフロントエンドをプッシュするTS9の中域ブーストが、凛として時雨の激しいリフパートで鋭いアタックと高域の煌めきを生み出す。Axe-FXのアンプモデルとの相性も考慮された精密なサウンドセッティングの一部だ。`, wikiTitle: 'Ibanez_Tube_Screamer' },
+      // 345 (Vo/Ba)
+      { id: 'stingray-345', brand: 'Music Man', name: 'StingRay', cat: 'ベース', catIcon: '🎸', user: '345 (Vo/Ba)', price: '¥200,000〜¥350,000', kw: 'Music Man StingRay 凛として時雨 345 ベース', yt: ["Music Man StingRay レビュー 音 特徴", "スティングレイ アクティブ ベース マスロック ポストハードコア 音作り"], similar: ["Fender Jazz Bass", "Lakland 55-02", "Warwick Streamer"], desc: `345のメインベース。Music Man StingRayのアクティブハムバッカーによるパンチ力と存在感あるローミッドが凛として時雨の複雑なアンサンブルの中でベースラインをクリアに際立たせる。345の速いフィンガリングとアグレッシブなピッキングに応えるレスポンスの速さもStingRay選択の理由だ。`, wikiTitle: 'Music_Man_StingRay' },
+      { id: 'darkglass-345', brand: 'Darkglass', name: 'B7K Ultra', cat: 'エフェクター', catIcon: '🎛', user: '345 (Vo/Ba)', price: '¥55,000〜¥70,000', kw: 'Darkglass B7K Ultra 凛として時雨 345 ベースプリアンプ', yt: ["Darkglass B7K Ultra レビュー 使い方 音", "ダークグラス ベースプリアンプ オーバードライブ マスロック ポストハードコア"], similar: ["Tech 21 SansAmp Bass Driver DI", "MXR M80 Bass DI+", "Aguilar Tone Hammer"], desc: `345が使用するDarkglass B7K Ultra。低音の輪郭を保ちながらモダンなハイゲインドライブを付与するDarkglassのフラッグシッププリアンプが凛として時雨の激しいベーストーンを形成する。TKの歪んだギターに対峙できる攻撃力と明瞭さのバランスを実現し、345の技巧的なベースラインをヘヴィに際立たせる。`, wikiTitle: 'Darkglass_Electronics' },
+      { id: 'svt-345', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: '345 (Vo/Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL 凛として時雨 345 ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース ポストハードコア マスロック ライブ"], similar: ["Mesa Boogie Subway D-800+", "GK 2001RB", "Darkglass Microtubes 900"], desc: `345が使用するAmpeg SVT-CL。全段真空管による圧倒的な音圧とミッドの厚みがDarkglass B7K Ultraと組み合わさることで、凛として時雨のライブで壁のようなベーストーンを実現する。TKの精密なギターに負けない存在感と密度で、バンドの重厚なサウンドアーキテクチャを支える。`, wikiTitle: 'Ampeg_SVT' },
+      // Piti (Dr)
+      { id: 'pearl-piti', brand: 'Pearl', name: 'Reference Pure', cat: 'ドラム', catIcon: '🥁', user: 'Piti (Dr)', price: '¥600,000〜¥1,200,000（セット）', kw: 'Pearl Reference Pure 凛として時雨 Piti ドラム', yt: ["Pearl Reference Pure レビュー 音 特徴", "パール リファレンスピュア ドラム マスロック ポストハードコア"], similar: ["DW Collector's", "Yamaha Recording Custom", "Sonor SQ2"], desc: `Pitiのメインドラムキット。Pearl Reference PureのオールメイプルシェルによるレスポンスとダイナミクスがPitiの超高速かつ正確なドラミングを余すことなく表現する。凛として時雨の「ゼロコンマ一秒のズレも許さない」アンサンブルにおいて、その精密なアタックと豊かな倍音がバンド全体の縦のラインを揃える。`, wikiTitle: 'Pearl_(instrument_manufacturer)' },
+      { id: 'zildjian-piti', brand: 'Zildjian', name: 'A Custom Cymbals', cat: 'ドラム', catIcon: '🥁', user: 'Piti (Dr)', price: '¥25,000〜¥60,000（1枚）', kw: 'Zildjian A Custom シンバル 凛として時雨 Piti', yt: ["Zildjian A Custom シンバル レビュー 音 特徴", "Aカスタム シンバル マスロック ポストハードコア ドラム"], similar: ["Paiste 2002", "Meinl Byzance", "Istanbul Agop"], desc: `PitiのシンバルセットにはZildjian A Customを使用。ブライトで明快なA Customのサウンドが凛として時雨の複雑なビートのシンバルワークを鮮明にし、ハードヒットのクラッシュからデリケートなハイハットプレイまでPitiの表現の幅を支える。`, wikiTitle: 'Zildjian' },
+    ],
+  },
 ];

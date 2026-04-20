@@ -148,4 +148,9 @@ export const ARTIST_KANA: Record<string, string> = {
   'sim':                'しむ SiM まー MAH しん SIN しょーへいと SHOW-HATE ごっどり GODRi レゲエパンク',
   'numbergirl':         'なんばーがーる NUMBER GIRL むかいひでのり たぶちひさこ なかおけんたろう あひといなざわ',
   'zazenboys':          'ざぜんぼーいず ZAZEN BOYS むかいひでのり よしかねさとし まつしたあつし みや MIYA かしおまん',
+  'fishmans':           'ふぃっしゅまんず Fishmans さとうしんじ かしわばらゆずる もぎきんいち ダブ レゲエ',
+  'michelle':           'みっしぇる Thee Michelle Gun Elephant ちばゆうすけ あべふとし うえのこうじ くはらかずゆき ガレージロック',
+  'sunnyday':           'さにーでい サニーデイサービス Sunny Day Service そがべけいいち たなかたかし まるやまはるしげ',
+  'yurateikoku':        'ゆらゆらていこく Yura Yura Teikoku さかもとしんたろう かめかわちよ しばたいちろう サイケデリック',
+  'ling-tosite-sigure': 'りんとしてしぐれ 凛として時雨 Ling Tosite Sigure TK 345 Piti マスロック ポストハードコア',
 };
