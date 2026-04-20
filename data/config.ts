@@ -145,4 +145,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'sambomaster':        'さんぼますたー サンボマスター やまぐちたかし こんどうよういち きうちやすふみ',
   'kanaboon':           'かなぶーん KANA-BOON たにぐちまぐろ こがはやと いいだゆうま こいずみたかひろ',
   'keytalk':            'きーとーく KEYTALK しゅとうよしかつ てらなかともまさ おのたけまさ やぎゆうき',
+  'sim':                'しむ SiM まー MAH しん SIN しょーへいと SHOW-HATE ごっどり GODRi レゲエパンク',
+  'numbergirl':         'なんばーがーる NUMBER GIRL むかいひでのり たぶちひさこ なかおけんたろう あひといなざわ',
+  'zazenboys':          'ざぜんぼーいず ZAZEN BOYS むかいひでのり よしかねさとし ひのひろしろう',
 };
