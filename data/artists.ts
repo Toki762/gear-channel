@@ -2108,4 +2108,131 @@ export const DB: Artist[] = [
       { id: 'pearl-koshiuchi', brand: 'Pearl', name: 'Reference Series', cat: 'ドラム', catIcon: '🥁', user: 'コシウチナオ (Dr)', price: '¥500,000〜¥1,000,000（セット）', kw: 'Pearl Reference コシウチナオ tricot ドラム マスロック', yt: ["Pearl Reference Series レビュー 音 特徴", "パール リファレンス ドラム マスロック 変拍子 超絶技巧"], similar: ["DW Collector's", "Yamaha Recording Custom", "Tama Starclassic"], desc: `コシウチナオのメインドラムキット。Pearl Referenceの超高精度なレスポンスと多彩な音色がtricotの超絶的な変拍子ドラミングを完全に表現する。ポリリズムの複数のビートを同時に演奏し分ける要求に応えるアタックの速さと各ストロークの粒立ちの良さが、世界的にも評価される「コシウチマジック」を支える。`, wikiTitle: 'Pearl_(instrument_manufacturer)' },
     ],
   },
+  // =============================================================
+  // Chilli Beans.
+  // =============================================================
+  {
+    id: 'chilli-beans',
+    name: 'Chilli Beans.',
+    en: 'Chilli Beans.',
+    genre: 'Indie Rock / Alternative / Shoegaze',
+    since: '2019年〜',
+    origin: '東京都',
+    members: 'Moeka (Vo/Gt) / Lily (Ba) / Kaina (Dr)',
+    desc: `「Talking」「ANTI ANTI GENERATION」「Pool」など、シューゲイザー・インディーロック・オルタナティブを横断するクールでアーバンなサウンドで国内外に支持を広げる女性3人組。Moekaのクールで透明感あるボーカルと轟音ギター、Lilyのうねるベース、Kainaのタイトなドラムが生む密度の高いアンサンブルが特徴。英語詞を多用しグローバルなオーディエンスにも届くバンドとして注目を集める。`,
+    gear: [
+      // Moeka (Vo/Gt)
+      { id: 'jazzmaster-moeka', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Moeka (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster Chilli Beans. Moeka ギター', yt: ["Fender Jazzmaster レビュー シューゲイザー インディーロック 音作り", "ジャズマスター オルタナ 轟音 浮遊感 音"], similar: ["Fender Jaguar", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `MoekaのトレードマークであるFender Jazzmaster。フローティングトレモロと独特の浮遊感あるトーンがChilli Beans.のシューゲイザー的なウォールオブサウンドとクールなインディーロックサウンドの両面を担う。繊細なクリーンから轟音ファズまでJazzmasterの特性がMoekaの多彩な表現に対応する。`, wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'twin-moeka', brand: 'Fender', name: 'Twin Reverb', cat: 'アンプ', catIcon: '🔊', user: 'Moeka (Vo/Gt)', price: '¥120,000〜¥200,000', kw: 'Fender Twin Reverb Chilli Beans. Moeka アンプ クリーン', yt: ["Fender Twin Reverb レビュー 音 特徴", "ツインリバーブ シューゲイザー インディー クリーン 音作り"], similar: ["Roland JC-120", "Vox AC30", "Orange Rockerverb 30"], desc: `MoekaのメインアンプFender Twin Reverb。クリスタルクリーンなトーンにファズやコーラス・リバーブを重ねることでChilli Beans.の「クールで透明感のある轟音」を実現する。ビルトインリバーブとの組み合わせでJazzmasterの音の輪郭が美しく滲み、バンドの洗練されたサウンドスケープを形成する。`, wikiTitle: 'Fender_Twin_Reverb' },
+      { id: 'bigmuff-moeka', brand: 'Electro-Harmonix', name: 'Big Muff Pi', cat: 'エフェクター', catIcon: '⚡', user: 'Moeka (Vo/Gt)', price: '¥12,000〜¥16,000', kw: 'EHX Big Muff Pi ファズ Chilli Beans. Moeka シューゲイザー', yt: ["EHX Big Muff Pi レビュー 使い方 シューゲイザー", "ビッグマフ ファズ 轟音 インディーロック 音作り"], similar: ["Dunlop Fuzz Face", "ProCo RAT", "Boss DS-1"], desc: `MoekaのメインファズペダルEHX Big Muff Pi。分厚いサステインと滑らかなファズトーンがJazzmasterとTwin Reverbと組み合わさり、Chilli Beans.の轟音パートで壁のようなシューゲイザーサウンドを形成する。英語詞のクールなボーカルと絡み合うBig Muffの轟音がバンドの音楽的な核心だ。`, wikiTitle: 'Electro-Harmonix_Big_Muff' },
+      { id: 'smallclone-moeka', brand: 'Electro-Harmonix', name: 'Small Clone', cat: 'エフェクター', catIcon: '⚡', user: 'Moeka (Vo/Gt)', price: '¥8,000〜¥12,000', kw: 'EHX Small Clone コーラス Chilli Beans. Moeka', yt: ["EHX Small Clone レビュー コーラス 使い方", "スモールクローン シューゲイザー インディーロック コーラス 音作り"], similar: ["Boss CE-2", "MXR Analog Chorus", "TC Electronic Corona"], desc: `MoekaのペダルボードにあるEHX Small Clone。ウォームで深みのあるコーラスサウンドがJazzmasterのトーンに「揺れ」と「立体感」を付与し、Chilli Beans.のクールで空間的なサウンドスケープに欠かせない彩りを加える。Big Muffとの組み合わせでシューゲイザー的な音の層を重ねる。`, wikiTitle: 'Electro-Harmonix_Small_Clone' },
+      { id: 'rv6-moeka', brand: 'Boss', name: 'RV-6 Digital Reverb', cat: 'エフェクター', catIcon: '⚡', user: 'Moeka (Vo/Gt)', price: '¥14,000〜¥18,000', kw: 'Boss RV-6 リバーブ Chilli Beans. Moeka', yt: ["Boss RV-6 Digital Reverb レビュー 使い方 音", "リバーブ シューゲイザー アンビエント 空間 音作り"], similar: ["Strymon BigSky", "EarthQuaker Devices Afterneath", "Eventide Space"], desc: `MoekaのペダルボードにあるBoss RV-6。多彩なリバーブモードがChilli Beans.のギターサウンドに深い空間的な残響を付与する。ShimmerモードやModリバーブなどでシューゲイザー的な「音の海」の質感を演出し、バンドの没入感あるサウンドスケープを完成させる。`, wikiTitle: 'Boss_RV-6' },
+      // Lily (Ba)
+      { id: 'jazzbass-lily', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: 'Lily (Ba)', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass Chilli Beans. Lily ベース', yt: ["Fender Jazz Bass レビュー シューゲイザー インディーロック 音作り", "ジャズベース ベースライン オルタナ グルーヴ 音"], similar: ["Fender Precision Bass", "Music Man StingRay", "Rickenbacker 4003"], desc: `LilyのメインベースFender Jazz Bass。クリアで輪郭のはっきりしたトーンがChilli Beans.のシューゲイザーサウンドの中でもベースラインの独立した存在感を保ち、Moekaの轟音ギターとKainaのタイトなドラムの間をうねるようなグルーヴで繋ぐ。`, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'svt-lily', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: 'Lily (Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL Chilli Beans. Lily ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース シューゲイザー インディーロック ライブ"], similar: ["GK 2001RB", "Mesa Boogie Subway D-800+", "Orange OB1-500"], desc: `LilyのアンプAmpeg SVT-CL。全段真空管の圧倒的な音圧がChilli Beans.のシューゲイザー轟音の中でもベースの壁のような存在感を確立し、バンドサウンドに欠かせない重低音の柱となる。`, wikiTitle: 'Ampeg_SVT' },
+      // Kaina (Dr)
+      { id: 'tama-kaina', brand: 'Tama', name: 'Starclassic Maple', cat: 'ドラム', catIcon: '🥁', user: 'Kaina (Dr)', price: '¥400,000〜¥800,000（セット）', kw: 'Tama Starclassic Maple Chilli Beans. Kaina ドラム', yt: ["Tama Starclassic Maple レビュー 音 特徴", "タマ スタークラシック ドラム インディーロック シューゲイザー ライブ"], similar: ["Pearl Reference", "Yamaha Recording Custom", "DW Collector's"], desc: `KainaのメインドラムキットTama Starclassic Maple。明るいアタックとタイトなレスポンスがChilli Beans.のグルーヴィーかつダイナミックなドラミングを的確に伝達する。Moekaの轟音とLilyのうねるベースを支えながらも、楽曲のポップな疾走感を失わない絶妙なバランスのドラミングを可能にする。`, wikiTitle: 'Tama_(drums)' },
+    ],
+  },
+  // =============================================================
+  // Hump Back
+  // =============================================================
+  {
+    id: 'hump-back',
+    name: 'Hump Back',
+    en: 'Hump Back',
+    genre: 'J-Rock / Punk Rock / Indie Rock',
+    since: '2012年〜',
+    origin: '大阪府',
+    members: '林萌々子 (Vo/Gt) / 井田菜美 (Ba) / 岡本夏樹 (Dr)',
+    desc: `「拝啓、少年よ」「アイラブユー」「シェリー」など、青春・衝動・切なさを全力でぶつけるパンクロックサウンドで若いリスナーの心を掴む大阪出身の女性3人組。林萌々子の絶叫に近いパワフルなボーカルと荒削りで一切の妥協のないバンドアンサンブルが特徴。「女性がパンクをやる」というカテゴライズを一切拒絶し、ただひたすら「ロック」であり続けるバンドとして支持を集める。`,
+    gear: [
+      // 林萌々子 (Vo/Gt)
+      { id: 'mustang-hayashi', brand: 'Fender', name: 'Mustang', cat: 'ギター', catIcon: '🎸', user: '林萌々子 (Vo/Gt)', price: '¥80,000〜¥160,000', kw: 'Fender Mustang Hump Back 林萌々子 ギター', yt: ["Fender Mustang レビュー 音 特徴 パンク", "ムスタング ショートスケール インディーロック パンク 音作り"], similar: ["Fender Jazzmaster", "Fender Jaguar", "Fender Duo-Sonic"], desc: `林萌々子のメインギターFender Mustang。ショートスケールの弾きやすさとブライトでエッジのあるトーンが林の激しいストロークと絶叫ボーカルに応え、Hump Backのストレートでパワフルなパンクロックサウンドを形成する。ヴィンテージ感ある見た目も林のスタイルに完璧にマッチする。`, wikiTitle: 'Fender_Mustang' },
+      { id: 'tele-hayashi', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '林萌々子 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster Hump Back 林萌々子', yt: ["Fender Telecaster レビュー パンクロック インディー 音作り", "テレキャスター ストローク パンク ロック 音"], similar: ["Fender Mustang", "Fender Jazzmaster", "Gibson SG"], desc: `林萌々子がMustangと使い分けるFender Telecaster。テレキャスのドライで切れ味のあるシングルコイルトーンがHump Backの楽曲のある種のスピードと疾走感を担い、Mustangとは異なるアタックの鋭さを楽曲にもたらす。`, wikiTitle: 'Fender_Telecaster' },
+      { id: 'ac30-hayashi', brand: 'Vox', name: 'AC30C2', cat: 'アンプ', catIcon: '🔊', user: '林萌々子 (Vo/Gt)', price: '¥150,000〜¥200,000', kw: 'Vox AC30 Hump Back 林萌々子 アンプ', yt: ["Vox AC30 レビュー 音 特徴 パンク", "AC30 ブリティッシュ パンクロック インディーロック 音作り"], similar: ["Marshall JCM800", "Orange Rockerverb 30", "Fender Twin Reverb"], desc: `林萌々子が使用するVox AC30。Top Boostによるブリティッシュな輝きとNatural Overdrive回路の自然な歪みがHump Backのパンクロックサウンドに英国的なエッジを与える。Mustangとの組み合わせで60〜70年代のブリティッシュインベイジョンを彷彿とさせつつも、現代のインディーパンクとして昇華される。`, wikiTitle: 'Vox_AC30' },
+      { id: 'ds1-hayashi', brand: 'Boss', name: 'DS-1 Distortion', cat: 'エフェクター', catIcon: '⚡', user: '林萌々子 (Vo/Gt)', price: '¥6,000〜¥9,000', kw: 'Boss DS-1 ディストーション Hump Back 林萌々子', yt: ["Boss DS-1 レビュー 使い方 パンクロック", "DS-1 ディストーション ガレージ インディー 音作り 歪み"], similar: ["ProCo RAT", "Electro-Harmonix Big Muff", "MXR Distortion+"], desc: `林萌々子が使用するBoss DS-1。AC30のナチュラルな歪みにDS-1をブーストとして重ねることでHump Backのライブで炸裂する爆発的なディストーションサウンドを生み出す。シンプルな3ノブで迷いなく最大限のパワーを引き出す姿勢はバンドの音楽哲学と完全に一致する。`, wikiTitle: 'Boss_DS-1' },
+      // 井田菜美 (Ba)
+      { id: 'precision-ida', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: '井田菜美 (Ba)', price: '¥130,000〜¥270,000', kw: 'Fender Precision Bass Hump Back 井田菜美 ベース', yt: ["Fender Precision Bass レビュー パンクロック 音作り", "プレベ ベース パンク インディー ライブ 音"], similar: ["Gibson EB-3", "Fender Jazz Bass", "Music Man StingRay"], desc: `井田菜美のメインベースFender Precision Bass。プレベの太くパンチのあるシンプルなトーンがHump Backのパンクロックサウンドに骨太な低音の壁を作り出す。林の荒削りなギターと岡本のパワフルなドラムに一切引けを取らないベースの主張がバンドの「3人で音を埋め尽くす」アンサンブルを支える。`, wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'svt-ida', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: '井田菜美 (Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL Hump Back 井田菜美 ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース パンクロック ロック ライブ"], similar: ["GK 2001RB", "Orange OB1-500", "Mesa Boogie Subway D-800+"], desc: `井田菜美が使用するAmpeg SVT-CL。全段真空管の圧倒的な音圧がHump Backのライブでプレベのパンチを最大限に増幅し、客席を揺らすようなベースの壁を作り出す。`, wikiTitle: 'Ampeg_SVT' },
+      // 岡本夏樹 (Dr)
+      { id: 'pearl-okamoto', brand: 'Pearl', name: 'Export Series', cat: 'ドラム', catIcon: '🥁', user: '岡本夏樹 (Dr)', price: '¥80,000〜¥150,000（セット）', kw: 'Pearl Export Hump Back 岡本夏樹 ドラム パンク', yt: ["Pearl Export レビュー 音 特徴", "パール エクスポート ドラム パンクロック インディー ライブ"], similar: ["Tama Superstar Classic", "Yamaha Stage Custom", "Ludwig Accent"], desc: `岡本夏樹のドラムキット。パンクバンドらしく機材へのこだわりよりも演奏の衝動を優先するHump Backのスタイルに合った信頼性の高いPearl Exportで、林のギターに負けないパワフルなドラミングをライブで叩き出す。「機材よりも気合い」を体現するセットアップが岡本のプレイスタイルを象徴する。`, wikiTitle: 'Pearl_(instrument_manufacturer)' },
+    ],
+  },
+  // =============================================================
+  // サバシスター
+  // =============================================================
+  {
+    id: 'sabasister',
+    name: 'サバシスター',
+    en: 'Saba Sister',
+    genre: 'Indie Rock / Alternative / Punk Pop',
+    since: '2019年〜',
+    origin: '北海道',
+    members: 'あのぎ (Vo/Gt) / なみ (Ba) / ゆい (Dr)',
+    desc: `「グッドボーイ」「サーカス」「タイムカプセル」など、パンクポップとインディーロックを横断するエネルギッシュかつポップなサウンドで若い世代を中心に支持を集める北海道出身の女性3人組。あのぎのパワフルで溌剌としたボーカルと骨太なバンドアンサンブルが特徴。シンプルな構成でありながら聴く者の心をつかむポップセンスと衝動が共存するバンド。`,
+    gear: [
+      // あのぎ (Vo/Gt)
+      { id: 'jazzmaster-anogi', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'あのぎ (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster サバシスター あのぎ ギター', yt: ["Fender Jazzmaster レビュー インディーロック パンクポップ 音作り", "ジャズマスター ストローク ポップ インディー 音"], similar: ["Fender Mustang", "Fender Telecaster", "Squier J Mascis Jazzmaster"], desc: `あのぎのメインギターFender Jazzmaster。浮遊感あるトーンとフローティングトレモロがサバシスターのパンクポップサウンドに「ちょっとはみ出した」感触を加える。激しいストロークでも滲まない粒立ちの良さが、あのぎの溌剌としたプレイスタイルに対応する。`, wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'ac30-anogi', brand: 'Vox', name: 'AC30C2', cat: 'アンプ', catIcon: '🔊', user: 'あのぎ (Vo/Gt)', price: '¥150,000〜¥200,000', kw: 'Vox AC30 サバシスター あのぎ アンプ', yt: ["Vox AC30 レビュー 音 特徴 インディー", "AC30 ブリティッシュ インディーロック パンクポップ 音作り"], similar: ["Fender Twin Reverb", "Roland JC-120", "Orange Rockerverb 30"], desc: `あのぎが使用するVox AC30。Top Boostの明るく輝くトーンとNatural Overdriveの自然な歪みがサバシスターのキャッチーかつエネルギッシュなサウンドに英国的な活力を与える。Jazzmasterとの組み合わせで「ちょうど良い歪み感」のあるポップなロックトーンを実現する。`, wikiTitle: 'Vox_AC30' },
+      { id: 'rat-anogi', brand: 'ProCo', name: 'RAT2', cat: 'エフェクター', catIcon: '⚡', user: 'あのぎ (Vo/Gt)', price: '¥10,000〜¥15,000', kw: 'ProCo RAT2 ディストーション サバシスター あのぎ', yt: ["ProCo RAT2 レビュー 音 使い方 ディストーション", "RAT インディーロック パンクポップ 歪み 音作り"], similar: ["Boss DS-1", "MXR Distortion+", "Electro-Harmonix Big Muff"], desc: `あのぎが使用するProCo RAT2。中域の太い独特の歪みキャラクターがサバシスターのライブで楽曲のエネルギーを最大限に放出する。Filterツマミの調整でキャラクターが大きく変わるRATをあのぎ流の設定で使いこなし、バンドのパンクポップサウンドに鋭い切れ味を加える。`, wikiTitle: 'Pro_Co_RAT' },
+      // なみ (Ba)
+      { id: 'precision-nami', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: 'なみ (Ba)', price: '¥130,000〜¥270,000', kw: 'Fender Precision Bass サバシスター なみ ベース', yt: ["Fender Precision Bass レビュー パンクポップ インディー 音作り", "プレベ ベース パンク インディー ライブ 音"], similar: ["Fender Jazz Bass", "Gibson EB-3", "Music Man StingRay"], desc: `なみのメインベースFender Precision Bass。プレベのシンプルで太くパンチ力あるトーンがサバシスターのエネルギッシュなバンドサウンドに骨格を与える。あのぎの勢いあるギターとゆいのパワフルなドラムを繋ぐメロディアスかつグルーヴィーなベースラインでバンドの音楽の幅を広げる。`, wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'darkglass-nami', brand: 'Darkglass', name: 'Microtubes B3K', cat: 'エフェクター', catIcon: '🎛', user: 'なみ (Ba)', price: '¥28,000〜¥38,000', kw: 'Darkglass B3K ベースオーバードライブ サバシスター なみ', yt: ["Darkglass Microtubes B3K レビュー 使い方 音", "ダークグラス B3K ベース オーバードライブ インディーロック 音作り"], similar: ["Tech 21 SansAmp Bass Driver DI", "MXR M80 Bass DI+", "EBS MultiDrive"], desc: `なみが使用するDarkglass Microtubes B3K。低音の輪郭を保ちながらモダンなオーバードライブを付与するB3Kがサバシスターのライブでプレベにパンチとエッジを加え、あのぎの歪んだギターに引けを取らないアグレッシブなベーストーンを実現する。`, wikiTitle: 'Darkglass_Electronics' },
+      // ゆい (Dr)
+      { id: 'tama-yui', brand: 'Tama', name: 'Superstar Classic', cat: 'ドラム', catIcon: '🥁', user: 'ゆい (Dr)', price: '¥120,000〜¥200,000（セット）', kw: 'Tama Superstar Classic サバシスター ゆい ドラム', yt: ["Tama Superstar Classic レビュー 音 特徴", "タマ スーパースタークラシック ドラム インディーロック パンクポップ ライブ"], similar: ["Pearl Export", "Yamaha Stage Custom", "Ludwig Accent"], desc: `ゆいのメインドラムキット。Tama Superstar Classicのアタックの速さとパンチ力がサバシスターのエネルギッシュなライブパフォーマンスを下から支える。余計な装飾を省いたシンプルかつパワフルなドラミングがバンドの衝動をダイレクトに伝える。`, wikiTitle: 'Tama_(drums)' },
+    ],
+  },
+  // =============================================================
+  // w.o.d.
+  // =============================================================
+  {
+    id: 'wod',
+    name: 'w.o.d.',
+    en: 'w.o.d.',
+    genre: 'Garage Rock / Punk / Grunge',
+    since: '2013年〜',
+    origin: '東京都',
+    members: 'ケイタ (Vo/Gt) / ユウダイ (Ba) / ワタナベ (Dr)',
+    desc: `「S.S.S.」「TEENAGER」「10 DAYS」など、90年代グランジ・ガレージロック・パンクを現代に蘇らせたような生々しいサウンドで熱狂的なファンを持つスリーピース。ケイタの荒削りなボーカルとギター、最小限の機材から最大限の音を搾り出す3人のアンサンブルが特徴。「waste of days」という名の通り、無駄を削ぎ落とした衝動と轟音がバンドの全てを語る。`,
+    gear: [
+      // ケイタ (Vo/Gt)
+      { id: 'sg-keita', brand: 'Gibson', name: 'SG Special', cat: 'ギター', catIcon: '🎸', user: 'ケイタ (Vo/Gt)', price: '¥100,000〜¥160,000', kw: 'Gibson SG Special w.o.d. ケイタ ギター', yt: ["Gibson SG Special レビュー 音 特徴 ガレージ", "SG スペシャル グランジ ガレージロック パンク 音作り"], similar: ["Gibson SG Standard", "Epiphone SG Standard", "Fender Telecaster"], desc: `ケイタのメインギターGibson SG Special。P-90ピックアップのアタックのある荒削りなトーンがw.o.d.のガレージロックサウンドの粗削りな攻撃性を担う。P-90の「歪んでいるのにどこかクリアな」独特の音色がグランジ/パンク的なリフに鋭い切れ味と存在感を与える。`, wikiTitle: 'Gibson_SG' },
+      { id: 'jcm900-keita', brand: 'Marshall', name: 'JCM900 SL-X', cat: 'アンプ', catIcon: '🔊', user: 'ケイタ (Vo/Gt)', price: '¥180,000〜¥280,000（中古）', kw: 'Marshall JCM900 w.o.d. ケイタ アンプ グランジ', yt: ["Marshall JCM900 レビュー 音作り グランジ ガレージ", "JCM900 ハイゲイン アメリカン グランジ 音作り"], similar: ["Marshall JCM800", "Peavey 5150", "Mesa Boogie Dual Rectifier"], desc: `ケイタが使用するMarshall JCM900 SL-X。90年代グランジ/オルタナ黄金期に多用されたJCM900のダイオードクリッピングによる過激な歪みがw.o.d.のヘヴィでローファイなガレージサウンドを生み出す。SGのP-90との組み合わせで「汚いのに格好良い」グランジ的快感を体現する。`, wikiTitle: 'Marshall_amplification' },
+      { id: 'bigmuff-keita', brand: 'Electro-Harmonix', name: 'Big Muff Pi', cat: 'エフェクター', catIcon: '⚡', user: 'ケイタ (Vo/Gt)', price: '¥12,000〜¥16,000', kw: 'EHX Big Muff Pi ファズ w.o.d. ケイタ グランジ', yt: ["EHX Big Muff Pi レビュー 使い方 グランジ ガレージ", "ビッグマフ ファズ ニルヴァーナ グランジ パンク 音作り"], similar: ["Dunlop Fuzz Face", "ProCo RAT", "Boss DS-1"], desc: `ケイタが使用するEHX Big Muff Pi。90年代グランジの象徴的なファズサウンドがw.o.d.のへヴィなリフに分厚いサステインと壁のような歪みを付与する。JCM900の歪みにBig Muffを重ねることでNirvanaやPixiesを彷彿とさせるグランジ的な轟音が炸裂し、バンドの衝動的な音楽に完璧にマッチする。`, wikiTitle: 'Electro-Harmonix_Big_Muff' },
+      { id: 'tu3-keita', brand: 'Boss', name: 'TU-3 Chromatic Tuner', cat: 'エフェクター', catIcon: '⚡', user: 'ケイタ (Vo/Gt)', price: '¥8,000〜¥12,000', kw: 'Boss TU-3 チューナー w.o.d. ケイタ', yt: ["Boss TU-3 Chromatic Tuner レビュー 使い方", "ペダルチューナー ギター ロック ライブ 精度"], similar: ["Korg Pitchblack", "TC Electronic PolyTune", "Boss TU-2"], desc: `ケイタのペダルボードにあるBoss TU-3 Chromatic Tuner。w.o.d.のシンプルなペダルボードの中でチューナーとしての役割を確実に果たしながら、バッファとしてペダルチェーン全体のインピーダンスも安定させる縁の下の力持ち。`, wikiTitle: 'Boss_TU-3' },
+      // ユウダイ (Ba)
+      { id: 'jazzbass-yudai', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: 'ユウダイ (Ba)', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass w.o.d. ユウダイ ベース', yt: ["Fender Jazz Bass レビュー ガレージロック グランジ 音作り", "ジャズベース ベース パンク ガレージ ライブ 音"], similar: ["Fender Precision Bass", "Music Man StingRay", "Gibson EB-3"], desc: `ユウダイのメインベースFender Jazz Bass。クリアで引き締まったトーンがw.o.d.のガレージロックサウンドの中でベースラインの輪郭を保ち、ケイタの轟音ギターとワタナベの力強いドラムの間で骨格を支える。スリーピースとして音を埋める責任感あるベースアプローチがバンドの密度を高める。`, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'svt-yudai', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: 'ユウダイ (Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL w.o.d. ユウダイ ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース ガレージ グランジ ロック ライブ"], similar: ["GK 2001RB", "Mesa Boogie Subway D-800+", "Orange OB1-500"], desc: `ユウダイが使用するAmpeg SVT-CL。全段真空管の圧倒的な音圧がw.o.d.のライブでガレージロックの壁のようなベーストーンを生み出し、スリーピースでも大編成に引けを取らない音の密度を実現する。`, wikiTitle: 'Ampeg_SVT' },
+      // ワタナベ (Dr)
+      { id: 'ludwig-watanabe', brand: 'Ludwig', name: 'Classic Maple', cat: 'ドラム', catIcon: '🥁', user: 'ワタナベ (Dr)', price: '¥250,000〜¥500,000（セット）', kw: 'Ludwig Classic Maple w.o.d. ワタナベ ドラム ガレージ グランジ', yt: ["Ludwig Classic Maple レビュー 音 特徴", "ルードウィッグ ドラム ガレージロック グランジ パンク 音作り"], similar: ["Gretsch Broadkaster", "Pearl Masters Custom", "Tama Starclassic"], desc: `ワタナベのメインドラムキット。Ludwig Classic Mapleのアメリカンなアタックと乾いた鳴りがw.o.d.のガレージロック/グランジサウンドに90年代的な生々しさを与える。Nirvana・Pixies・Dinosaur Jr.的な轟音バンドのドラマーが選ぶべき一台として、バンドの衝動的なサウンドを体現する。`, wikiTitle: 'Ludwig_Drums' },
+    ],
+  },
+  // =============================================================
+  // Cody・Lee(李)
+  // =============================================================
+  {
+    id: 'cody-lee',
+    name: 'Cody・Lee(李)',
+    en: 'Cody Lee (Li)',
+    genre: 'Indie Pop / Alternative / J-Rock',
+    since: '2016年〜',
+    origin: '大阪府',
+    members: '吉田匡 (Vo/Gt) / 渡辺大地 (Gt) / 田中寿士 (Ba) / 関口慧太 (Dr)',
+    desc: `「愛の讃歌」「最高到達点」「それでも,やっぱり,」など、インディーポップ・オルタナ・エモを横断するエモーショナルかつポップなサウンドで幅広いリスナーに支持を集める大阪出身のバンド。吉田匡の繊細で力強いボーカルと、ツインギターが生む豊かなアンサンブルが特徴。バンド名に「(李)」と括弧書きで添えられた漢字が象徴するような、多様な文化的背景への親和性がバンドの音楽的な奥行きを形成する。`,
+    gear: [
+      // 吉田匡 (Vo/Gt)
+      { id: 'tele-yoshida-cl', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '吉田匡 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster Cody Lee 李 吉田匡 ギター', yt: ["Fender Telecaster レビュー インディーポップ エモ 音作り", "テレキャスター コード ストローク ポップ オルタナ 音"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "Gibson ES-335"], desc: `吉田匡のメインギターFender Telecaster。ドライでアタック感のあるシングルコイルトーンがCody・Lee(李)のエモーショナルかつポップな楽曲表現の核を担う。コードの煌めきとリードラインの切れ味を両立するテレキャスの特性が吉田の多彩なプレイスタイルを支える。`, wikiTitle: 'Fender_Telecaster' },
+      { id: 'twin-yoshida-cl', brand: 'Fender', name: 'Twin Reverb', cat: 'アンプ', catIcon: '🔊', user: '吉田匡 (Vo/Gt)', price: '¥120,000〜¥200,000', kw: 'Fender Twin Reverb Cody Lee 李 吉田匡 アンプ クリーン', yt: ["Fender Twin Reverb レビュー 音 特徴", "ツインリバーブ クリーン インディーポップ エモ 音作り"], similar: ["Roland JC-120", "Vox AC30", "Fender Blues Deluxe"], desc: `吉田匡が使用するFender Twin Reverb。クリスタルクリーンなトーンとビルトインリバーブがCody・Lee(李)の楽曲のキャッチーでエモーショナルな表現に品のある煌めきを与える。ドライブペダルと組み合わせた際の「クリーンな芯が残る歪み」がバンドサウンドのクオリティを担保する。`, wikiTitle: 'Fender_Twin_Reverb' },
+      { id: 'od808-yoshida-cl', brand: 'Ibanez', name: 'Tube Screamer TS808', cat: 'エフェクター', catIcon: '⚡', user: '吉田匡 (Vo/Gt)', price: '¥18,000〜¥25,000', kw: 'Ibanez TS808 Tube Screamer オーバードライブ Cody Lee 李 吉田匡', yt: ["Ibanez TS808 Tube Screamer レビュー 使い方 音", "チューブスクリーマー オーバードライブ インディーポップ エモ 音作り"], similar: ["Boss OD-1X", "Fulltone OCD", "Xotic BB Preamp"], desc: `吉田匡が使用するIbanez TS808 Tube Screamer。中域を豊かに持ち上げるTS808の滑らかなオーバードライブがCody・Lee(李)の楽曲の感情的な盛り上がりに温かみのある歪みをもたらす。Twin Reverbとの組み合わせでポップでありながらエモーショナルなクランチトーンを実現する。`, wikiTitle: 'Ibanez_Tube_Screamer' },
+      // 渡辺大地 (Gt)
+      { id: 'jazzmaster-watanabe-cl', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '渡辺大地 (Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster Cody Lee 李 渡辺大地 ギター', yt: ["Fender Jazzmaster レビュー インディーポップ オルタナ 音作り", "ジャズマスター ツインギター コード アルペジオ 音"], similar: ["Fender Telecaster", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `渡辺大地のメインギターFender Jazzmaster。吉田のTelecasterとは異なる浮遊感あるトーンがCody・Lee(李)のツインギターアンサンブルに立体感と奥行きをもたらす。アルペジオやコードのレイヤーで楽曲に豊かな音の層を重ね、バンドサウンドの広がりを生み出す。`, wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'jc120-watanabe-cl', brand: 'Roland', name: 'JC-120 Jazz Chorus', cat: 'アンプ', catIcon: '🔊', user: '渡辺大地 (Gt)', price: '¥100,000〜¥160,000', kw: 'Roland JC-120 Cody Lee 李 渡辺大地 アンプ', yt: ["Roland JC-120 Jazz Chorus レビュー 音 特徴", "JC-120 クリーン インディーポップ ツインギター 音作り"], similar: ["Fender Twin Reverb", "Vox AC30", "Mesa Boogie Lonestar"], desc: `渡辺大地が使用するRoland JC-120。吉田のTwin Reverbとは異なるJCのハイファイなクリーンとビルトインコーラスがCody・Lee(李)のツインギターに音像の広がりをもたらす。コーラスとディレイを重ねることで空間的なアンビエンスを生み、バンドサウンドの奥行きを形成する。`, wikiTitle: 'Roland_Jazz_Chorus' },
+      // 田中寿士 (Ba)
+      { id: 'jazzbass-tanaka-cl', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: '田中寿士 (Ba)', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass Cody Lee 李 田中寿士 ベース', yt: ["Fender Jazz Bass レビュー インディーポップ オルタナ 音作り", "ジャズベース ベースライン ポップ グルーヴ 音"], similar: ["Fender Precision Bass", "Music Man StingRay", "Sadowsky Metro"], desc: `田中寿士のメインベースFender Jazz Bass。クリアで輪郭のはっきりしたトーンがCody・Lee(李)の楽曲でツインギターのリッチなサウンドを底辺から支え、吉田のエモーショナルなボーカルと音楽的に対話するようなメロディアスなベースラインを描く。`, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'svt-tanaka-cl', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: '田中寿士 (Ba)', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL Cody Lee 李 田中寿士 ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース インディーポップ オルタナ ライブ"], similar: ["GK 2001RB", "Orange OB1-500", "Mesa Boogie Subway D-800+"], desc: `田中寿士が使用するAmpeg SVT-CL。全段真空管の温かみある音圧がCody・Lee(李)のライブでベースの豊かな存在感を確立し、ツインギターの厚みある音の中でも埋もれないローエンドを提供する。`, wikiTitle: 'Ampeg_SVT' },
+      // 関口慧太 (Dr)
+      { id: 'yamaha-sekiguchi', brand: 'Yamaha', name: 'Recording Custom', cat: 'ドラム', catIcon: '🥁', user: '関口慧太 (Dr)', price: '¥400,000〜¥900,000（セット）', kw: 'Yamaha Recording Custom Cody Lee 李 関口慧太 ドラム', yt: ["Yamaha Recording Custom レビュー 音 特徴", "ヤマハ レコーディングカスタム ドラム インディーポップ オルタナ ライブ"], similar: ["Pearl Reference", "DW Collector's", "Tama Starclassic"], desc: `関口慧太のメインドラムキット。Yamaha Recording Customのバーチシェルの乾いたアタックとレスポンスの速さがCody・Lee(李)の楽曲の繊細な弱音からダイナミックなサビまで、幅広いダイナミクスレンジを表現する。ツインギターの豊かなサウンドを下支えする正確なリズムワークがバンドアンサンブルの基盤を成す。`, wikiTitle: 'Yamaha_drums' },
+    ],
+  },
 ];
