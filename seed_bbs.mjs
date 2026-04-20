@@ -17,7 +17,7 @@ const posts = [
   },
   {
     author: 'ぺだる厨',
-    flair: '機材',
+    flair: 'エフェクター',
     title: 'Boss DS-1 vs ProCo RAT どっち派？',
     body: '歪みの定番2択、みんなどっち使ってる？自分はRAT一筋10年だけど最近DS-1も気になってきた。それぞれの良さ語ってくれ',
     gear_tag: 'Boss DS-1',
@@ -31,7 +31,7 @@ const posts = [
   },
   {
     author: 'トーンマニア',
-    flair: '機材',
+    flair: 'ギター',
     title: 'Fender Stratocaster のピックアップ交換してみた',
     body: 'ノーマルのシングルからTexas Specialに交換してみたけど、中域の張りが全然違う。コスパ最高だった。交換したことある人いる？',
     gear_tag: 'Fender Stratocaster',
@@ -45,7 +45,7 @@ const posts = [
   },
   {
     author: 'アナログ信者',
-    flair: '機材',
+    flair: 'エフェクター',
     title: 'アナログペダルとデジタルペダル、本気で音変わると思う？',
     body: 'ブラインドテストしたらわかんないって説もあるけど、自分はアナログの方が気持ちよく弾けてる気がする。プラシーボかもしれないけど大事よな',
     gear_tag: null,
@@ -59,7 +59,7 @@ const posts = [
   },
   {
     author: 'チューニング職人',
-    flair: '機材',
+    flair: 'エフェクター',
     title: 'ポリフォニックチューナーって実際どう？',
     body: 'TC ElectronicのPolyTuneずっと気になってる。ライブで全弦一気にチューニングできるって便利すぎない？使ってる人感想聞かせて',
     gear_tag: 'TC Electronic PolyTune',
@@ -73,14 +73,14 @@ const posts = [
   },
   {
     author: 'レトロフリーク',
-    flair: '機材',
+    flair: 'エフェクター',
     title: '70年代のビンテージペダル集めてる人いる？',
     body: 'MXR Phase 90のBlock Logo版をフリマで入手した。現行品と弾き比べると確かに違う気がする。ビンテージ好きのギタリストと語りたい',
     gear_tag: 'MXR Phase 90',
   },
   {
     author: 'アンプ難民',
-    flair: '機材',
+    flair: 'アンプ',
     title: 'マンションでもいい音出せるアンプ教えて',
     body: '一人暮らしマンションでギター弾いてるけど、アッテネーターかヘッドフォンアンプかで迷ってる。Fender Blues Juniorほしいけど音量的に無理かな',
     gear_tag: 'Fender Blues Junior',

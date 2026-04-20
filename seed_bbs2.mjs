@@ -11,28 +11,28 @@ const posts = [
   // ── ギター ──────────────────────────────────────
   {
     author: 'レスポール信者',
-    flair: '機材',
+    flair: 'ギター',
     title: 'Gibson Les Paul Standard vs Custom 何が違うの？',
     body: '見た目以外の違いがよくわからん。StandardとCustomで音って変わる？価格差5万くらいあるけど悩んでる',
     gear_tag: 'Gibson Les Paul',
   },
   {
     author: 'フレット磨き職人',
-    flair: '機材',
+    flair: 'ギター',
     title: 'Ibanez RG シリーズって現行どれが一番コスパいい？',
     body: 'RG450とRG550で迷ってる。フロイドローズ搭載モデルが欲しいけど予算10万以内で探してる。使ってる人いたら感想教えて',
     gear_tag: 'Ibanez RG',
   },
   {
     author: 'アコギ派',
-    flair: '機材',
+    flair: 'ギター',
     title: 'Martin と Taylor どっちが好き？',
     body: 'アコギ買い替え検討中。MartinのD-28とTaylorの814ceで迷ってる。試奏したけど好みが難しい。それぞれの特徴語り合おう',
     gear_tag: null,
   },
   {
     author: '弦オタク',
-    flair: '雑談',
+    flair: 'ギター',
     title: 'みんな弦何使ってる？ゲージと銘柄教えて',
     body: 'ずっとErnie Ball Regular Slinkys（10-46）使ってたけど最近Elixirのコーティング弦に変えた。長持ちするのはいいけど音の違い気になる人いる？',
     gear_tag: null,
@@ -41,14 +41,14 @@ const posts = [
   // ── ベース ──────────────────────────────────────
   {
     author: 'フィンガースタイル派',
-    flair: '機材',
+    flair: 'ベース',
     title: 'Fender Jazz Bass vs Precision Bass 初心者はどっち買うべき？',
     body: '初めてのベース購入検討中。JBとPBどっちがいいか迷いすぎてもう3ヶ月悩んでる。それぞれ弾いてる人の意見聞きたい',
     gear_tag: 'Fender Jazz Bass',
   },
   {
     author: 'スラッパー',
-    flair: '機材',
+    flair: 'ベース',
     title: 'スラップ用にベース買い替えたい。おすすめある？',
     body: 'スラップしやすいベース探してる。今はFender MexのJBだけど、もっとスラップ向きの音が欲しい。Music ManのStingRayとか気になってる',
     gear_tag: null,
@@ -57,14 +57,14 @@ const posts = [
   // ── アンプ ──────────────────────────────────────
   {
     author: 'チューブ原理主義者',
-    flair: '機材',
+    flair: 'アンプ',
     title: 'Marshall JCM800 中古で買うのってアリ？',
     body: '憧れのJCM800を中古で狙ってる。40年前のアンプをメンテせずに使うのはリスクある？球の状態とかどこ見ればいい？',
     gear_tag: 'Marshall JCM800',
   },
   {
     author: 'デジタル移行組',
-    flair: '機材',
+    flair: 'アンプ',
     title: 'Kemper vs Line6 Helix どっちにするか1年悩んでる',
     body: 'アンプシミュに移行しようと思って絞ったけど決められない。Kemperのプロファイリングに興味あるけどHelixの柔軟性も捨てがたい。使ってる人リアルな感想頼む',
     gear_tag: 'Kemper',
@@ -73,21 +73,21 @@ const posts = [
   // ── エフェクター ──────────────────────────────────
   {
     author: 'ボードビルダー',
-    flair: '機材',
+    flair: 'エフェクター',
     title: 'エフェクターボードの電源どうしてる？One Spotで全部まかなえる？',
     body: 'ペダル8個のボード組んでる。今はOne Spot使ってるけどノイズが気になってきた。Strymon Zuma買うか悩んでるけど高すぎ問題',
     gear_tag: null,
   },
   {
     author: 'ディレイコレクター',
-    flair: '機材',
+    flair: 'エフェクター',
     title: 'テープエコー風ディレイペダルおすすめ教えて',
     body: 'Echoplexみたいなテープエコーサウンドをペダルで再現したい。BOSS DM-2W、Strymon El Capistan、Way Huge Aqua-Pussとかどれがいい？',
     gear_tag: null,
   },
   {
     author: 'ファズ狂',
-    flair: '機材',
+    flair: 'エフェクター',
     title: 'ファズペダルって現行品だと何がおすすめ？',
     body: 'Fuzz Faceのシリコン版かゲルマニウム版かで迷ってる。弾いたことある人どっちが好き？Big Muffとの違いも気になる',
     gear_tag: null,
@@ -96,14 +96,14 @@ const posts = [
   // ── シンセ・キーボード ──────────────────────────────
   {
     author: 'シンセ沼住人',
-    flair: '機材',
+    flair: 'キーボード/鍵盤',
     title: 'Moog Minimoog vs Roland SH-101 どっちが好き？',
     body: 'アナログシンセ沼にハマって2年。Minimoofの太さも好きだけどSH-101の軽さと小ささが魅力的。ビンテージシンセ好きな人語ろう',
     gear_tag: 'Moog',
   },
   {
-    author: 'ポリシンセ探し中',
-    flair: '機材',
+    author: 'ポリシンせ探し中',
+    flair: 'キーボード/鍵盤',
     title: '予算20万以内でポリフォニックシンセ探してる',
     body: 'Roland Juno-60の音が好きなんだけど本物は高すぎ。Behringer JU-04AとかJupiter-Xmとか代替品多すぎてどれがいいか分からん',
     gear_tag: 'Roland',
@@ -112,21 +112,21 @@ const posts = [
   // ── DAW・宅録 ──────────────────────────────────
   {
     author: 'Logic使い',
-    flair: '機材',
+    flair: 'DAW・DTM',
     title: 'Logic ProとAbleton Liveどっちがバンド録音に向いてる？',
     body: 'バンドのデモ録り用にDAW選んでる。Logic使ってたけどAbletonの方がいいって言われた。実際バンド録音で使ってる人どっちが好き？',
     gear_tag: null,
   },
   {
     author: 'マイク沼',
-    flair: '機材',
+    flair: 'マイク',
     title: 'ボーカル録音に使えるコンデンサーマイク予算3万以内で教えて',
     body: 'Audio-TechnicaのAT2020ずっと使ってたけど買い替えたい。Rode NT1とかBlue Yaeti Xとか候補あるけど宅録でボーカルに最適なの何？',
     gear_tag: null,
   },
   {
     author: '宅録ドラマー',
-    flair: '機材',
+    flair: 'DAW・DTM',
     title: '電子ドラムの打ち込みってやっぱり打ち込みっぽくなる？',
     body: 'Roland TD-17KVX買ったけどMIDIでDAWに録ると打ち込みっぽさが抜けない。ベロシティのランダマイズとかグルーヴクオンタイズ使ってる人いる？',
     gear_tag: 'Roland',
@@ -135,7 +135,7 @@ const posts = [
   // ── ドラム ──────────────────────────────────────
   {
     author: 'スネア収集家',
-    flair: '機材',
+    flair: '音響・その他',
     title: '木胴スネアと金属スネアの使い分けってどうしてる？',
     body: 'PearlのフリーフローティングとLudwigの402使ってるけど曲によって使い分けがわからん。みんなどうやって判断してる？',
     gear_tag: 'Pearl',
