@@ -4,8 +4,20 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+
 export const metadata: Metadata = {
   title: 'プライバシーポリシー — Gear ちゃんねる',
+  description: 'Gear ちゃんねるのプライバシーポリシー。個人情報の取り扱いについて説明しています。',
+  alternates: { canonical: `${BASE_URL}/privacy` },
+  openGraph: {
+    title: 'プライバシーポリシー — Gear ちゃんねる',
+    description: 'Gear ちゃんねるのプライバシーポリシー。',
+    url: `${BASE_URL}/privacy`,
+    siteName: 'Gear ちゃんねる',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 };
 
 export default function PrivacyPage() {

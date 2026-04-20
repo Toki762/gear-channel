@@ -4,8 +4,20 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.vercel.app';
+
 export const metadata: Metadata = {
   title: 'お問い合わせ — Gear ちゃんねる',
+  description: 'Gear ちゃんねるへのお問い合わせページ。機材情報の修正・ご意見・ご要望はこちらから。',
+  alternates: { canonical: `${BASE_URL}/contact` },
+  openGraph: {
+    title: 'お問い合わせ — Gear ちゃんねる',
+    description: 'Gear ちゃんねるへのお問い合わせページ。',
+    url: `${BASE_URL}/contact`,
+    siteName: 'Gear ちゃんねる',
+    locale: 'ja_JP',
+    type: 'website',
+  },
 };
 
 export default function ContactPage() {
