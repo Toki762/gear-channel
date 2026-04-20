@@ -133,4 +133,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'macaroni':      'まかろにえんぴつ Macaroni Enpitsu',
   'billie':        'びりーあいりっしゅ billie eilish',
   'saucy-dog':     'さうしーどっぐ Saucy Dog いしはらしんや せとあやか あきざわかずき',
+  'novelbright':   'のべるぶらいと Novelbright たけなかゆうだい とうのようへい',
+  'myfirststory':  'まいふぁーすとすとーりー MY FIRST STORY ひろ のぶ てる',
+  'shishamo':      'ししゃも SHISHAMO みやざきあさこ まつおかあや よしかわみさき',
 };

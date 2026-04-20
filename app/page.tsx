@@ -52,13 +52,10 @@ export default async function HomePage() {
 
       {/* 人気アーティスト */}
       <section style={{ marginBottom: '36px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
+        <div style={{ marginBottom: '12px' }}>
           <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', letterSpacing: '0.5px' }}>
             🔥 人気アーティスト
           </div>
-          <Link href="/artists" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600, textDecoration: 'none' }}>
-            全てのアーティストを見る →
-          </Link>
         </div>
         <div className="featured-grid">
           {popularArtists.map((a, i) => (
@@ -71,18 +68,20 @@ export default async function HomePage() {
             </Link>
           ))}
         </div>
+        <div style={{ textAlign: 'right', marginTop: '10px' }}>
+          <Link href="/artists" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600, textDecoration: 'none' }}>
+            全てのアーティストを見る →
+          </Link>
+        </div>
       </section>
 
       {/* 人気スレッド */}
       {popularPosts.length > 0 && (
-        <section>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+        <section style={{ marginBottom: '36px' }}>
+          <div style={{ marginBottom: '10px' }}>
             <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', letterSpacing: '0.5px' }}>
               💬 人気のスレッド
             </div>
-            <Link href="/bbs" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600, textDecoration: 'none' }}>
-              掲示板をもっと見る →
-            </Link>
           </div>
           <div>
             {popularPosts.map(p => (
@@ -99,6 +98,11 @@ export default async function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+          <div style={{ textAlign: 'right', marginTop: '10px' }}>
+            <Link href="/bbs" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600, textDecoration: 'none' }}>
+              掲示板をもっと見る →
+            </Link>
           </div>
         </section>
       )}
