@@ -169,4 +169,9 @@ export const ARTIST_KANA: Record<string, string> = {
   'sabasister':        'さばしすたー サバシスター あのぎ なみ ゆい パンクポップ インディーロック 北海道',
   'wod':               'だぶりゅーおーでぃー w.o.d. ケイタ ユウダイ ワタナベ ガレージロック グランジ',
   'cody-lee':          'こでぃりー Cody Lee 李 よしだただし わたなべだいち たなかとしじ せきぐちけいた 大阪',
+  'paledusk':          'ぺいるだすく Paledusk Tasshi CHIKA NOBE DORY メタルコア トラップメタル 大阪',
+  'cvlte':             'しーゔぃえるてぃー CVLTE SHOGO LUCA YU HIRO ポストハードコア アトモスフェリック',
+  'kurayamisaka':      'くらやみさか kurayamisaka インディーロック シューゲイザー ポストパンク',
+  'clan-queen':        'くらんくいーん CLAN QUEEN インディーロック ポストパンク オルタナ',
+  'shukatsu-club':     'しゅうかつくらぶ 終活クラブ Shukatsu Club インディーポップ ポストパンク',
 };

@@ -2235,4 +2235,129 @@ export const DB: Artist[] = [
       { id: 'yamaha-sekiguchi', brand: 'Yamaha', name: 'Recording Custom', cat: 'ドラム', catIcon: '🥁', user: '関口慧太 (Dr)', price: '¥400,000〜¥900,000（セット）', kw: 'Yamaha Recording Custom Cody Lee 李 関口慧太 ドラム', yt: ["Yamaha Recording Custom レビュー 音 特徴", "ヤマハ レコーディングカスタム ドラム インディーポップ オルタナ ライブ"], similar: ["Pearl Reference", "DW Collector's", "Tama Starclassic"], desc: `関口慧太のメインドラムキット。Yamaha Recording Customのバーチシェルの乾いたアタックとレスポンスの速さがCody・Lee(李)の楽曲の繊細な弱音からダイナミックなサビまで、幅広いダイナミクスレンジを表現する。ツインギターの豊かなサウンドを下支えする正確なリズムワークがバンドアンサンブルの基盤を成す。`, wikiTitle: 'Yamaha_drums' },
     ],
   },
+  // =============================================================
+  // Paledusk
+  // =============================================================
+  {
+    id: 'paledusk',
+    name: 'Paledusk',
+    en: 'Paledusk',
+    genre: 'Metalcore / Electronic / Trap Metal',
+    since: '2017年〜',
+    origin: '大阪府',
+    members: 'Tasshi (Vo) / CHIKA (Gt) / NOBE (Ba) / DORY (Dr)',
+    desc: `「Bloody Anime Montage」「SWIPE」「BACK AGAIN」など、メタルコアの重厚なギターリフとトラップ/EDMのビートを融合したハイブリッドサウンドで国内外のシーンに衝撃を与えた大阪出身のバンド。Tasshiの高音スクリームとクリーンボーカルの対比、8弦ギターの重低音、電子音楽的なプロダクションが一体となったパフォーマンスは「ジャンルの破壊」として評価される。`,
+    gear: [
+      // CHIKA (Gt)
+      { id: 'rg8-chika', brand: 'Ibanez', name: 'RG8 (8弦ギター)', cat: 'ギター', catIcon: '🎸', user: 'CHIKA (Gt)', price: '¥90,000〜¥160,000', kw: 'Ibanez RG8 8弦ギター Paledusk CHIKA メタルコア', yt: ["Ibanez RG8 8弦 レビュー 音 特徴 メタルコア", "8弦ギター ダウンチューニング ヘヴィ メタル 音作り"], similar: ["Ibanez RG752", "ESP E-II Horizon FR-7", "Schecter Hellraiser C-8"], desc: `CHIKAのメインギターIbanez RG8。8弦の最低弦が生み出す超低音リフがPaleduskのトラップビートと合わさり、メタルコアとEDMを融合した圧倒的なヘヴィサウンドを形成する。Ibanezのウィザードネックによる演奏性の高さが複雑なリフピッキングを可能にし、ダウンチューニングでの縦横無尽なフレージングを支える。`, wikiTitle: 'Ibanez_RG' },
+      { id: '5150iii-chika', brand: 'EVH', name: '5150III 50W', cat: 'アンプ', catIcon: '🔊', user: 'CHIKA (Gt)', price: '¥160,000〜¥220,000', kw: 'EVH 5150III Paledusk CHIKA アンプ ハイゲイン', yt: ["EVH 5150III レビュー 音作り メタルコア ハイゲイン", "5150 ヘヴィ メタル アンプ ダウンチューニング 音作り"], similar: ["Mesa Boogie Dual Rectifier", "Peavey 5150", "Marshall JVM410H"], desc: `CHIKAが使用するEVH 5150III。Eddie Van Halenの設計思想を受け継ぐハイゲインアンプの圧倒的なゲイン量とタイトな低音がPaleduskの8弦ギターと組み合わさり、電子音楽と競り合う壁のようなギタートーンを生み出す。3チャンネル構成でクリーンからドライブまでライブでの素早い切り替えにも対応する。`, wikiTitle: 'EVH_5150' },
+      { id: 'neural-chika', brand: 'Neural DSP', name: 'Quad Cortex', cat: 'アンプ', catIcon: '🔊', user: 'CHIKA (Gt)', price: '¥180,000〜¥230,000', kw: 'Neural DSP Quad Cortex Paledusk CHIKA デジタルアンプ', yt: ["Neural DSP Quad Cortex レビュー 使い方 メタルコア", "クアッドコーテックス アンプモデリング ハイゲイン ライブ 音作り"], similar: ["Fractal Audio Axe-FX III", "Kemper Profiler", "Line 6 Helix Floor"], desc: `CHIKAがツアー・レコーディングで使用するNeural DSP Quad Cortex。最先端のニューラルネットワーク技術によるアンプキャプチャが5150やDual Rectifierのサウンドをスタジオレベルで再現する。トラップビートに同期するPaleduskのライブで、一音も逃さないタイトなハイゲインサウンドを安定供給する。`, wikiTitle: 'Neural_DSP' },
+      { id: 'ableton-paledusk', brand: 'Ableton', name: 'Live 12 Suite', cat: 'DAW', catIcon: '💻', user: 'Paledusk (バッキングトラック)', price: '¥90,000〜¥100,000', kw: 'Ableton Live Paledusk バッキングトラック DAW 電子音楽', yt: ["Ableton Live レビュー 使い方 ライブ バッキングトラック", "エイブルトン ライブ メタルコア 電子音楽 トラップ 同期"], similar: ["Logic Pro", "FL Studio", "Bitwig Studio"], desc: `PaleduskのライブパフォーマンスにおけるトラップビートとEDM系電子音楽のバッキングトラックを管理するAbleton Live。電子音楽とメタルコアの融合というバンドのアイデンティティを可能にするソフトウェアで、ライブでの楽曲シーケンスとビート同期をLive Suiteが担う。`, wikiTitle: 'Ableton_Live' },
+      // NOBE (Ba)
+      { id: 'btb-nobe', brand: 'Ibanez', name: 'BTB Bass', cat: 'ベース', catIcon: '🎸', user: 'NOBE (Ba)', price: '¥120,000〜¥200,000', kw: 'Ibanez BTB Paledusk NOBE ベース メタルコア', yt: ["Ibanez BTB レビュー 音 特徴 メタルコア", "イバニーズ BTB アクティブベース ヘヴィ 音作り"], similar: ["Music Man StingRay", "Schecter Stiletto", "ESP LTD B-5E"], desc: `NOBEのメインベースIbanez BTB。アクティブ5弦構成の幅広いレンジとタイトなローエンドがPaleduskの超低音リフと電子ビートの間でベースの存在感を際立たせる。CHIKAの8弦ギターとの連動でバンドの低音域を豊かに満たす重要な役割を担う。`, wikiTitle: 'Ibanez_BTB' },
+      { id: 'darkglass-nobe', brand: 'Darkglass', name: 'B7K Ultra', cat: 'エフェクター', catIcon: '🎛', user: 'NOBE (Ba)', price: '¥55,000〜¥70,000', kw: 'Darkglass B7K Ultra Paledusk NOBE ベースプリアンプ', yt: ["Darkglass B7K Ultra レビュー 使い方 音", "ダークグラス B7K ベース メタルコア ヘヴィ 音作り"], similar: ["Tech 21 SansAmp Bass Driver DI", "MXR M80 Bass DI+", "Aguilar Tone Hammer"], desc: `NOBEが使用するDarkglass B7K Ultra。低音の輪郭を保ちながらモダンなハイゲインドライブを付与するDarkglassのフラッグシッププリアンプが、Paleduskのヘヴィなギターリフに対峙するアグレッシブなベーストーンを形成する。EQ機能で8弦ギターとの棲み分けを精密にコントロールする。`, wikiTitle: 'Darkglass_Electronics' },
+      // DORY (Dr)
+      { id: 'pearl-dory', brand: 'Pearl', name: 'Reference Pure', cat: 'ドラム', catIcon: '🥁', user: 'DORY (Dr)', price: '¥600,000〜¥1,200,000（セット）', kw: 'Pearl Reference Pure Paledusk DORY ドラム メタルコア', yt: ["Pearl Reference Pure レビュー 音 特徴", "パール リファレンスピュア ドラム メタルコア ヘヴィ ライブ"], similar: ["DW Collector's", "Tama Starclassic", "Sonor SQ2"], desc: `DORYのメインドラムキット。Pearl Reference Pureのオールメイプルシェルによる超高速ダブルバスのレスポンスとアタックの明瞭さがPaleduskのメタルコア/トラップハイブリッドサウンドの複雑なリズムを完璧に再現する。電子ビートとのシンクロを保ちながら生身のドラミングが炸裂する最前線を支えるキット。`, wikiTitle: 'Pearl_(instrument_manufacturer)' },
+    ],
+  },
+  // =============================================================
+  // CVLTE
+  // =============================================================
+  {
+    id: 'cvlte',
+    name: 'CVLTE',
+    en: 'CVLTE',
+    genre: 'Post-Hardcore / Atmospheric Metal / Metalcore',
+    since: '2020年〜',
+    origin: '東京都',
+    members: 'SHOGO (Vo/Gt) / LUCA (Gt) / YU (Ba) / HIRO (Dr)',
+    desc: `「Ivory」「Halo」「Crimson」など、アトモスフェリックブラックメタル・ポストハードコア・シネマティックなオーケストレーションを融合したサウンドで国内外の重音楽シーンに衝撃を与えたバンド。轟音のギターウォールとSHOGOの清澄なクリーンボーカル・スクリームの対比、劇的な楽曲展開が特徴。海外の大型フェス出演や海外ツアーでも高い評価を受けており、日本のメタルシーンの国際的な発信源として注目される。`,
+    gear: [
+      // SHOGO (Vo/Gt)
+      { id: 'esp-shogo', brand: 'ESP', name: 'E-II Horizon FR-7', cat: 'ギター', catIcon: '🎸', user: 'SHOGO (Vo/Gt)', price: '¥200,000〜¥350,000', kw: 'ESP E-II Horizon FR-7 CVLTE SHOGO ギター 7弦', yt: ["ESP E-II Horizon レビュー 音 特徴 7弦", "ESP 7弦 フロイドローズ ポストハードコア アトモスフェリック 音作り"], similar: ["Ibanez RG752", "PRS SE Custom 24-7", "Schecter Hellraiser C-7"], desc: `SHOGOのメインギターESP E-II Horizon FR-7。7弦とフロイドローズトレモロを備えたこのギターがCVLTEのアトモスフェリックな空間系サウンドとヘヴィなリフを同時に担う。7弦の低域拡張とフロイドローズの安定したチューニングがライブでのダイナミックな演奏を支える。`, wikiTitle: 'ESP_Guitars' },
+      { id: 'axefx-shogo', brand: 'Fractal Audio', name: 'Axe-FX III', cat: 'アンプ', catIcon: '🔊', user: 'SHOGO (Vo/Gt)', price: '¥330,000〜¥400,000', kw: 'Fractal Audio Axe-FX III CVLTE SHOGO アンプモデリング', yt: ["Fractal Audio Axe-FX III レビュー 使い方", "アクスエフエックス アトモスフェリック ポストハードコア メタル 音作り"], similar: ["Neural DSP Quad Cortex", "Kemper Profiler", "Line 6 Helix Floor"], desc: `SHOGOが使用するFractal Audio Axe-FX III。CVLTEのシネマティックで多層的なサウンドデザインにはAxe-FXの高精度アンプモデリングと豊富なエフェクトルーティングが不可欠だ。ハイゲインのリフから漂うような空間系クリーンまで一台で実現し、楽曲ごとに精密に構築されたプリセットがライブでの完璧な再現を支える。`, wikiTitle: 'Fractal_Audio_Systems' },
+      { id: 'bigsky-shogo', brand: 'Strymon', name: 'BigSky', cat: 'エフェクター', catIcon: '⚡', user: 'SHOGO (Vo/Gt)', price: '¥55,000〜¥70,000', kw: 'Strymon BigSky リバーブ CVLTE SHOGO アトモスフェリック', yt: ["Strymon BigSky リバーブ レビュー 使い方", "ビッグスカイ シマーリバーブ アトモスフェリック ポストハードコア 音作り"], similar: ["Eventide Space", "EarthQuaker Devices Afterneath", "Boss RV-6"], desc: `SHOGOが使用するStrymon BigSky。CVLTEのアトモスフェリックなサウンドスケープに欠かせないリバーブペダルで、Cloudリバーブ・Shimmer・Hallなど多彩なアルゴリズムが楽曲の壮大な空間表現を実現する。ヘヴィなギターリフが消えた後に広がる「無限の残響空間」がバンドの映画的な世界観を音で体現する。`, wikiTitle: 'Strymon' },
+      // LUCA (Gt)
+      { id: 'esp-luca', brand: 'ESP', name: 'E-II M-7', cat: 'ギター', catIcon: '🎸', user: 'LUCA (Gt)', price: '¥200,000〜¥320,000', kw: 'ESP E-II M-7 CVLTE LUCA ギター 7弦', yt: ["ESP E-II M-7 レビュー 音 特徴 7弦 メタル", "7弦 ダウンチューニング アトモスフェリック ポストハードコア 音"], similar: ["Ibanez RG752", "Schecter Hellraiser", "PRS SE 277"], desc: `LUCAのメインギターESP E-II M-7。SHOGOとのツイン7弦ギターがCVLTEの壁のようなギターウォールを形成し、アトモスフェリックなレイヤーとヘヴィなユニゾンリフの両面を担う。二本の7弦が生む広大な音域とダイナミクスがバンドのシネマティックなサウンドの骨格となる。`, wikiTitle: 'ESP_Guitars' },
+      // YU (Ba)
+      { id: 'schecter-yu', brand: 'Schecter', name: 'Stiletto Extreme-5', cat: 'ベース', catIcon: '🎸', user: 'YU (Ba)', price: '¥90,000〜¥150,000', kw: 'Schecter Stiletto CVLTE YU ベース 5弦 メタルコア', yt: ["Schecter Stiletto レビュー 音 メタルコア 5弦", "シェクター スティレット アクティブベース ヘヴィ 音作り"], similar: ["Ibanez BTB", "Music Man StingRay 5", "ESP LTD B-5E"], desc: `YUのメインベースSchecter Stiletto Extreme-5。アクティブ5弦構成のパンチ力とレンジの広さがCVLTEのヘヴィかつアトモスフェリックな楽曲で7弦ギターとの低音域の棲み分けを実現する。Darkglassプリアンプとの組み合わせでモダンメタルに相応しいベーストーンを確立する。`, wikiTitle: 'Schecter_Guitar_Research' },
+      { id: 'darkglass-yu', brand: 'Darkglass', name: 'Microtubes 900', cat: 'アンプ', catIcon: '🔊', user: 'YU (Ba)', price: '¥100,000〜¥130,000', kw: 'Darkglass Microtubes 900 CVLTE YU ベースアンプ', yt: ["Darkglass Microtubes 900 レビュー 使い方 音", "ダークグラス 900 ベースアンプ メタルコア ヘヴィ 音作り"], similar: ["Ampeg SVT-CL", "Mesa Boogie Subway D-800+", "GK 2001RB"], desc: `YUが使用するDarkglass Microtubes 900。B3KとB7Kのサーキットを内蔵したオールインワンベースアンプヘッドがCVLTEのヘヴィなサウンドに対応する攻撃的なベーストーンを生み出す。900Wの出力が7弦ギター2本に引けを取らない圧倒的なベースの音圧をステージに放つ。`, wikiTitle: 'Darkglass_Electronics' },
+      // HIRO (Dr)
+      { id: 'tama-hiro', brand: 'Tama', name: 'Starclassic Walnut/Birch', cat: 'ドラム', catIcon: '🥁', user: 'HIRO (Dr)', price: '¥350,000〜¥700,000（セット）', kw: 'Tama Starclassic CVLTE HIRO ドラム メタルコア', yt: ["Tama Starclassic レビュー 音 特徴", "タマ スタークラシック ドラム ポストハードコア メタルコア ライブ"], similar: ["Pearl Reference", "DW Collector's", "Sonor SQ2"], desc: `HIROのメインドラムキット。Tama Starclassicのレスポンスの速さとアタックの明瞭さがCVLTEの超高速ダブルバスとダイナミックなブレイクダウンを完璧に表現する。アトモスフェリックな静寂からメタルコアの爆発的なフルパワーまで、バンドの劇的なダイナミクスレンジを支える信頼性の高いキットだ。`, wikiTitle: 'Tama_(drums)' },
+    ],
+  },
+  // =============================================================
+  // kurayamisaka
+  // =============================================================
+  {
+    id: 'kurayamisaka',
+    name: 'kurayamisaka',
+    en: 'kurayamisaka',
+    genre: 'Indie Rock / Post-Punk / Shoegaze',
+    since: '2020年〜',
+    origin: '東京都',
+    members: 'Vo/Gt / Gt / Ba / Dr',
+    desc: `ダークでメランコリックなポストパンク/シューゲイザーサウンドと、内省的な歌詞世界で若いリスナーから支持を集めるバンド。「暗闇坂」の名が示すように、光の届かない場所への眼差しと、そこから見える何かを音楽で表現するスタイルが特徴。繊細なアルペジオと轟音の間を揺れ動くダイナミクスが独自のサウンドスケープを形成する。`,
+    gear: [
+      // Vo/Gt
+      { id: 'jazzmaster-kurayami', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Vo/Gt', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster kurayamisaka ギター シューゲイザー ポストパンク', yt: ["Fender Jazzmaster レビュー シューゲイザー ポストパンク 音作り", "ジャズマスター ダーク インディー 浮遊感 音"], similar: ["Fender Jaguar", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `メインギターFender Jazzmaster。フローティングトレモロと独特の浮遊感あるトーンがkurayamisakaのダークでメランコリックなサウンドスケープを形成する核となる。繊細なアルペジオから轟音ファズまでJazzmasterの特性がバンドの光と闇の対比を音で表現する。`, wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'jc120-kurayami', brand: 'Roland', name: 'JC-120 Jazz Chorus', cat: 'アンプ', catIcon: '🔊', user: 'Vo/Gt', price: '¥100,000〜¥160,000', kw: 'Roland JC-120 kurayamisaka クリーン アンプ ポストパンク', yt: ["Roland JC-120 Jazz Chorus レビュー 音 特徴", "JC-120 ダーク シューゲイザー ポストパンク クリーン 音作り"], similar: ["Fender Twin Reverb", "Vox AC30", "Orange Rocker 32"], desc: `使用アンプRoland JC-120。ハイファイなクリーントーンにファズやリバーブを重ねることでkurayamisakaの「光の届かない場所の空気感」を音で再現する。コーラスとディレイを積み重ねた空間系サウンドがバンドの内省的な世界観を深める。`, wikiTitle: 'Roland_Jazz_Chorus' },
+      { id: 'bigmuff-kurayami', brand: 'Electro-Harmonix', name: 'Big Muff Pi', cat: 'エフェクター', catIcon: '⚡', user: 'Vo/Gt', price: '¥12,000〜¥16,000', kw: 'EHX Big Muff Pi ファズ kurayamisaka シューゲイザー', yt: ["EHX Big Muff Pi レビュー 使い方 シューゲイザー", "ビッグマフ ファズ ダーク インディーロック 音作り"], similar: ["Dunlop Fuzz Face", "ProCo RAT", "Boss DS-1"], desc: `使用ファズペダルEHX Big Muff Pi。分厚いサステインと密度の高いファズサウンドがkurayamisakaの轟音パートで壁のような暗い音の海を形成する。JC-120のクリーンと組み合わせることでビッグマフの「影のような歪み」がバンドの暗闇のイメージを音で体現する。`, wikiTitle: 'Electro-Harmonix_Big_Muff' },
+      { id: 'afterneath-kurayami', brand: 'EarthQuaker Devices', name: 'Afterneath', cat: 'エフェクター', catIcon: '⚡', user: 'Vo/Gt', price: '¥28,000〜¥38,000', kw: 'EarthQuaker Devices Afterneath リバーブ kurayamisaka アンビエント', yt: ["EarthQuaker Devices Afterneath レビュー 使い方 音", "アフターニース リバーブ アンビエント シューゲイザー 音作り"], similar: ["Strymon BigSky", "Eventide Space", "Chase Bliss Audio CXM 1978"], desc: `使用リバーブペダルEarthQuaker Devices Afterneath。洞窟の中にいるような独特のリバーブアルゴリズムと無限に広がるディケイがkurayamisakaの「暗闇の奥に広がる空間」を音響的に実現する。他のリバーブでは出せない不可思議な残響がバンドの音楽世界に唯一無二の質感を与える。`, wikiTitle: 'EarthQuaker_Devices' },
+      // Ba
+      { id: 'jazzbass-kurayami-ba', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: 'Ba', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass kurayamisaka ベース ポストパンク シューゲイザー', yt: ["Fender Jazz Bass レビュー ポストパンク インディー 音作り", "ジャズベース ダーク インディーロック グルーヴ 音"], similar: ["Fender Precision Bass", "Music Man StingRay", "Rickenbacker 4003"], desc: `メインベースFender Jazz Bass。クリアで輪郭のはっきりしたトーンがkurayamisakaのダークなサウンドスケープの中でもベースラインの存在を失わず、轟音ギターの底を支えながら楽曲のポストパンク的なグルーヴを刻む。`, wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'svt-kurayami', brand: 'Ampeg', name: 'SVT-CL', cat: 'アンプ', catIcon: '🔊', user: 'Ba', price: '¥300,000〜¥480,000', kw: 'Ampeg SVT-CL kurayamisaka ベースアンプ', yt: ["Ampeg SVT-CL レビュー 音 ベースアンプ", "SVT ベース ポストパンク シューゲイザー ライブ"], similar: ["GK 2001RB", "Orange OB1-500", "Mesa Boogie Subway D-800+"], desc: `使用ベースアンプAmpeg SVT-CL。全段真空管の音圧と温かみがkurayamisakaの轟音ギターに対峙する重厚なベーストーンを生み出し、バンドのダークなサウンドスケープを底辺からグラウンディングする。`, wikiTitle: 'Ampeg_SVT' },
+    ],
+  },
+  // =============================================================
+  // CLAN QUEEN
+  // =============================================================
+  {
+    id: 'clan-queen',
+    name: 'CLAN QUEEN',
+    en: 'CLAN QUEEN',
+    genre: 'Indie Rock / Post-Punk / Alternative',
+    since: '2020年〜',
+    origin: '東京都',
+    members: 'Vo/Gt / Gt / Ba / Dr',
+    desc: `「Burning」「Neon」など、ポストパンクとインディーロックを横断するクールでエッジの立ったサウンドで注目を集めるバンド。バンド名が示す「女王」的な威厳と反骨心が楽曲の随所に滲み出る。タイトなリズムとシャープなギターリフ、フロントの存在感あるボーカルが生み出す「クールな緊張感」がバンドの最大の武器だ。`,
+    gear: [
+      // Vo/Gt
+      { id: 'tele-clanqueen', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Vo/Gt', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster CLAN QUEEN ギター ポストパンク', yt: ["Fender Telecaster レビュー ポストパンク インディー 音作り", "テレキャスター シャープ クール ロック 音"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "Gibson SG"], desc: `メインギターFender Telecaster。ドライでアタック感のあるシングルコイルトーンがCLAN QUEENのポストパンク的なシャープなリフと緊張感あるカッティングを担う。テレキャスの持つ「硬質な切れ味」がバンドのクールな音楽性と完璧にマッチする。`, wikiTitle: 'Fender_Telecaster' },
+      { id: 'jcm800-clanqueen', brand: 'Marshall', name: 'JCM800 2203', cat: 'アンプ', catIcon: '🔊', user: 'Vo/Gt', price: '¥250,000〜¥400,000（中古）', kw: 'Marshall JCM800 CLAN QUEEN アンプ ポストパンク', yt: ["Marshall JCM800 レビュー 音作り ポストパンク インディー", "JCM800 クリーン クランチ ブリティッシュ 音作り"], similar: ["Marshall JCM900", "Vox AC30", "Orange Rockerverb"], desc: `使用アンプMarshall JCM800。ブリティッシュなクランチとミッドの存在感がCLAN QUEENのポストパンク的なギタートーンに必要な「硬さ」と「緊張感」を付与する。テレキャスターとの組み合わせでガレージからポストパンクまで幅広い楽曲表現を可能にする。`, wikiTitle: 'Marshall_JCM800' },
+      { id: 'od1x-clanqueen', brand: 'Boss', name: 'OD-1X OverDrive', cat: 'エフェクター', catIcon: '⚡', user: 'Vo/Gt', price: '¥14,000〜¥18,000', kw: 'Boss OD-1X オーバードライブ CLAN QUEEN ポストパンク', yt: ["Boss OD-1X OverDrive レビュー 使い方", "OD-1X オーバードライブ ポストパンク インディー 音作り"], similar: ["Ibanez TS9", "Boss BD-2", "Xotic BB Preamp"], desc: `使用オーバードライブBoss OD-1X。JCM800のナチュラルなクランチにOD-1Xのダイナミクス対応の歪みを重ねることでCLAN QUEENの楽曲のダイナミクスに応じた有機的なドライブサウンドを実現する。`, wikiTitle: 'Boss_OD-1' },
+      // Gt
+      { id: 'jazzmaster-clanqueen2', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Gt', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster CLAN QUEEN セカンドギター ポストパンク', yt: ["Fender Jazzmaster レビュー ポストパンク インディー 音作り", "ジャズマスター リバーブ ディレイ アンビエント 音"], similar: ["Fender Telecaster", "Fender Jaguar", "Squier J Mascis Jazzmaster"], desc: `セカンドギタリストのFender Jazzmaster。テレキャスターとの対比でCLAN QUEENのサウンドに「浮遊感」と「立体感」を加え、ポストパンクとインディーロックの間を行き来するバンドの音像の幅を広げる。`, wikiTitle: 'Fender_Jazzmaster' },
+      // Ba
+      { id: 'precision-clanqueen', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: 'Ba', price: '¥130,000〜¥270,000', kw: 'Fender Precision Bass CLAN QUEEN ベース ポストパンク', yt: ["Fender Precision Bass レビュー ポストパンク インディー 音作り", "プレベ ベース タイト グルーヴ ポストパンク 音"], similar: ["Fender Jazz Bass", "Gibson EB-3", "Music Man StingRay"], desc: `メインベースFender Precision Bass。プレベのシンプルでパンチ力あるトーンがCLAN QUEENのタイトなポストパンクグルーヴを骨格で支える。ギターのシャープなリフと対等に渡り合うベースの主張がバンドのアンサンブルに緊張感を生む。`, wikiTitle: 'Fender_Precision_Bass' },
+      // Dr
+      { id: 'pearl-clanqueen', brand: 'Pearl', name: 'Masters Custom', cat: 'ドラム', catIcon: '🥁', user: 'Dr', price: '¥350,000〜¥700,000（セット）', kw: 'Pearl Masters Custom CLAN QUEEN ドラム ポストパンク', yt: ["Pearl Masters Custom レビュー 音 特徴", "パール マスターカスタム ドラム ポストパンク インディー タイト"], similar: ["DW Collector's", "Yamaha Recording Custom", "Tama Starclassic"], desc: `メインドラムキットPearl Masters Custom。タイトなアタックと豊かな倍音がCLAN QUEENのポストパンク的なリズムの緊張感を正確に表現する。シンプルながら楽曲の骨格を担う力強いドラミングがバンドの「クールな緊張感」を底辺から支える。`, wikiTitle: 'Pearl_(instrument_manufacturer)' },
+    ],
+  },
+  // =============================================================
+  // 終活クラブ
+  // =============================================================
+  {
+    id: 'shukatsu-club',
+    name: '終活クラブ',
+    en: 'Shukatsu Club',
+    genre: 'Indie Rock / Post-Punk / Alternative',
+    since: '2020年〜',
+    origin: '東京都',
+    members: '酒井 (Vo/Gt) / 橋本 (Gt) / 田中 (Ba) / 高橋 (Dr)',
+    desc: `「終活クラブ」「在りし日の歌」「ロマンスグレー」など、「人生の終い支度」を意味するバンド名が示す通り、死・喪失・記憶をテーマにしたポップでありながらどこか乾いた諦念が滲む歌詞と、ギターポップ/ポストパンク的なサウンドで独自の世界観を構築するバンド。シニカルかつ詩的な言葉と、それに反してポップで踊れる音楽の乖離がバンドの大きな魅力だ。`,
+    gear: [
+      // Vo/Gt
+      { id: 'mustang-shukatsu', brand: 'Fender', name: 'Mustang', cat: 'ギター', catIcon: '🎸', user: 'Vo/Gt', price: '¥80,000〜¥160,000', kw: 'Fender Mustang 終活クラブ ギター インディーポップ ポストパンク', yt: ["Fender Mustang レビュー 音 特徴 インディーポップ", "ムスタング ショートスケール ポップ インディー 音作り"], similar: ["Fender Jazzmaster", "Fender Jaguar", "Fender Duo-Sonic"], desc: `メインギターFender Mustang。ショートスケールの弾きやすさとブライトでエッジのあるトーンが終活クラブの「ポップだけどどこか乾いた」サウンドを担う。コードストロークの歯切れよさとリードラインの軽さがバンドの「諦念のポップス」を音で体現する。`, wikiTitle: 'Fender_Mustang' },
+      { id: 'deluxe-shukatsu', brand: 'Fender', name: 'Deluxe Reverb', cat: 'アンプ', catIcon: '🔊', user: 'Vo/Gt', price: '¥100,000〜¥180,000', kw: 'Fender Deluxe Reverb 終活クラブ アンプ クリーン', yt: ["Fender Deluxe Reverb レビュー 音 特徴", "デラックスリバーブ クリーン ポップ インディー 音作り"], similar: ["Fender Twin Reverb", "Vox AC15", "Roland JC-40"], desc: `使用アンプFender Deluxe Reverb。スプリングリバーブの懐かしさと真空管の温かみが終活クラブの楽曲の「古びた記憶」のような質感を生み出す。クリーンからナチュラルクランチまでの繊細な表情がMustangと組み合わさり、バンドの乾いたポップサウンドに哀愁を添える。`, wikiTitle: 'Fender_Deluxe_Reverb' },
+      { id: 'ds1-shukatsu', brand: 'Boss', name: 'DS-1 Distortion', cat: 'エフェクター', catIcon: '⚡', user: 'Vo/Gt', price: '¥6,000〜¥9,000', kw: 'Boss DS-1 ディストーション 終活クラブ', yt: ["Boss DS-1 レビュー 使い方 インディーポップ", "DS-1 ポップ インディーロック ディストーション 音作り"], similar: ["ProCo RAT", "Boss BD-2", "Electro-Harmonix Big Muff"], desc: `使用ディストーションBoss DS-1。終活クラブの楽曲の盛り上がり部分で踏み込まれるDS-1が「諦念の爆発」ともいうべき瞬発力あるディストーションサウンドを生み出す。シンプルで安価ながら楽曲に必要な衝動を的確に表現するペダル選びがバンドの美学を物語る。`, wikiTitle: 'Boss_DS-1' },
+      { id: 'ce2w-shukatsu', brand: 'Boss', name: 'CE-2W Chorus', cat: 'エフェクター', catIcon: '⚡', user: 'Vo/Gt', price: '¥18,000〜¥24,000', kw: 'Boss CE-2W コーラス 終活クラブ', yt: ["Boss CE-2W Waza Craft Chorus レビュー 使い方 音", "コーラス ヴィンテージ インディーポップ 揺れ 音作り"], similar: ["Electro-Harmonix Small Clone", "MXR Analog Chorus", "TC Electronic Corona"], desc: `使用コーラスBoss CE-2W Waza Craft。CE-2の回路を忠実に再現したWaza Craftバージョンのウォームな揺らぎが終活クラブのギタートーンに「遠くから聞こえるような揺れ」を付与する。バンドの「記憶の中にある音楽」的な質感を生み出すのに理想的なコーラスサウンドだ。`, wikiTitle: 'Boss_CE-2' },
+      // Gt
+      { id: 'jazzmaster-shukatsu2', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Gt', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster 終活クラブ セカンドギター インディー', yt: ["Fender Jazzmaster レビュー インディーポップ ポストパンク 音作り", "ジャズマスター ツインギター コード アルペジオ 音"], similar: ["Fender Mustang", "Fender Telecaster", "Squier J Mascis Jazzmaster"], desc: `セカンドギタリストのFender Jazzmaster。MustangとJazzmasterの対比が終活クラブのツインギターにショートスケールの歯切れよさと浮遊感のある揺らぎという異なるキャラクターをもたらし、バンドの音楽の幅を広げる。`, wikiTitle: 'Fender_Jazzmaster' },
+      // Ba
+      { id: 'jazzbass-shukatsu', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: 'Ba', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass 終活クラブ ベース インディーポップ ポストパンク', yt: ["Fender Jazz Bass レビュー インディーポップ ポストパンク 音作り", "ジャズベース ベースライン ポップ グルーヴ 音"], similar: ["Fender Precision Bass", "Music Man StingRay", "Rickenbacker 4003"], desc: `メインベースFender Jazz Bass。クリアで輪郭のはっきりしたトーンが終活クラブの楽曲のダンスグルーヴを刻みながら、酒井の乾いたボーカルと歌詞の世界観を音楽的に下支えする。ポップでありながら「どこか遠い」感触がJazz Bassのトーンと楽曲の空気感と相まって生まれる。`, wikiTitle: 'Fender_Jazz_Bass' },
+      // Dr
+      { id: 'tama-shukatsu', brand: 'Tama', name: 'Superstar Classic', cat: 'ドラム', catIcon: '🥁', user: 'Dr', price: '¥120,000〜¥200,000（セット）', kw: 'Tama Superstar Classic 終活クラブ ドラム インディーポップ', yt: ["Tama Superstar Classic レビュー 音 特徴", "タマ スーパースタークラシック ドラム インディーポップ ポップロック ライブ"], similar: ["Pearl Export", "Yamaha Stage Custom", "Ludwig Accent"], desc: `メインドラムキットTama Superstar Classic。シンプルでアタックのはっきりしたキットがバンドの「踊れるポストパンク」のビートを的確に刻む。終活クラブの楽曲の「諦念なのになぜか踊れる」感覚をドラムのストレートなグルーヴが体現する。`, wikiTitle: 'Tama_(drums)' },
+    ],
+  },
 ];
