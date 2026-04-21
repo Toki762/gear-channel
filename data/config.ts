@@ -174,4 +174,8 @@ export const ARTIST_KANA: Record<string, string> = {
   'kurayamisaka':      'くらやみさか kurayamisaka インディーロック シューゲイザー ポストパンク',
   'clan-queen':        'くらんくいーん CLAN QUEEN インディーロック ポストパンク オルタナ',
   'shukatsu-club':     'しゅうかつくらぶ 終活クラブ Shukatsu Club インディーポップ ポストパンク',
+  'yonezu':            'よねずけんし 米津玄師 Kenshi Yonezu ハチ Hachi ボカロP Lemon Paprika KICK BACK',
+  'fujii-kaze':        'ふじいかぜ 藤井風 Fujii Kaze なんなんw きらり 死ぬのがいいわ ソウル R&B',
+  'vaundy':            'ばうんでぃ Vaundy 東京フラッシュ 不動明王 怪獣の花唄 踊り子 Jポップ',
+  'hoshino-gen':       'ほしのげん 星野源 Gen Hoshino SAKEROCK 恋 SUN アイデア 喜劇 化物 シティポップ',
 };
