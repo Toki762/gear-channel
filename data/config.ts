@@ -186,4 +186,9 @@ export const ARTIST_KANA: Record<string, string> = {
   'syudou':            'しゅどう syudou 現状ディストラクション ベルセルク スーパーノヴァ チェリーボム ボカロP ロック',
   'tsumiki':           'つみき ツミキ Tsumiki フォニイ Phony IDOLA アイドル 推しの子 ボカロP',
   'iyowa':             'いよわ iyowa 1000年生きてる 海底都市 ラブカ ボカロP テクニカル 超複雑 初音ミク',
+  'surii':             'すりぃ Suriri 快楽性難聴 マーシャルマキシマイザー 乙女怪獣キャラメリゼ ボカロP ロック',
+  'chinozo':           'ちのぞ Chinozo グッバイ宣言 このゆびとまれ ボカロP エレクトロポップ 初音ミク',
+  'nayutan':           'なゆたんせいじん ナユタン星人 Nayutan ダンスロボットダンス エイリアンエイリアン アンドロメダ ボカロP',
+  'djkrush':           'でぃーじぇーくらっしゅ DJ KRUSH ターンテーブリスト アブストラクトヒップホップ トリップホップ MoWax',
+  'ichikanito':        'いちかにと Ichika Nito タッピング プログレ マスロック インストギタリスト PRS',
 };
