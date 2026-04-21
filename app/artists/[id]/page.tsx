@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { DB } from '@/data/artists';
 import GearSection from './GearSection';
+import ViewTracker from './ViewTracker';
 import { createServerClient } from '@/lib/supabase';
 import type { GearItem } from '@/lib/types';
 
@@ -129,6 +130,9 @@ export default async function ArtistPage({ params }: Props) {
 
   return (
     <main className="page fade">
+      {/* ページビューを記録（クライアントサイドで静かに送信） */}
+      <ViewTracker artistId={params.id} />
+
       {/* JSON-LD */}
       <script
         type="application/ld+json"

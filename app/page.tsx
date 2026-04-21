@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { POPULAR_IDS } from '@/data/config';
-import { fetchPosts } from '@/lib/supabase';
+import { fetchPosts, createServerClient } from '@/lib/supabase';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
@@ -25,11 +25,34 @@ export const metadata: Metadata = {
 };
 
 export default async function HomePage() {
-  // 人気アーティスト（POPULAR_IDS の順、先頭6件）
-  const popularArtists = POPULAR_IDS
-    .map(id => DB.find(a => a.id === id))
-    .filter(Boolean)
-    .slice(0, 6) as typeof DB;
+  // 人気アーティスト（artist_views のビュー数順 → フォールバックで POPULAR_IDS）
+  let popularArtists: typeof DB = [];
+  try {
+    const supabase = createServerClient();
+    const { data } = await supabase
+      .from('artist_views')
+      .select('artist_id, view_count')
+      .order('view_count', { ascending: false })
+      .limit(12); // 余裕を持って取得し、DB に存在するアーティストのみ表示
+    if (data && data.length > 0) {
+      popularArtists = data
+        .map(row => DB.find(a => a.id === row.artist_id))
+        .filter(Boolean) as typeof DB;
+    }
+  } catch {
+    // artist_views テーブル未作成の場合は無視
+  }
+  // 6件未満なら POPULAR_IDS で補完
+  if (popularArtists.length < 6) {
+    const existing = new Set(popularArtists.map(a => a.id));
+    const fallback = POPULAR_IDS
+      .filter(id => !existing.has(id))
+      .map(id => DB.find(a => a.id === id))
+      .filter(Boolean) as typeof DB;
+    popularArtists = [...popularArtists, ...fallback].slice(0, 6);
+  } else {
+    popularArtists = popularArtists.slice(0, 6);
+  }
 
   // 人気スレッド（votes順 上位5件）
   let popularPosts: any[] = [];
