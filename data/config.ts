@@ -181,4 +181,9 @@ export const ARTIST_KANA: Record<string, string> = {
   'eve':               'いぶ Eve 廻廻奇譚 呪術廻戦 お気に召すまま 蒼のワルツ 心予報 ネット出身 インディーロック',
   'yorushika':         'よるしか ヨルシカ Yorushika n-buna suis だから僕は音楽を辞めた ただ君に晴れ インディーロック',
   'tatsuro':           'やましたたつろう 山下達郎 Tatsuro Yamashita RIDE ON TIME クリスマスイブ シティポップ AOR',
+  'deco27':            'でこにじゅうなな DECO*27 モザイクロール ゴーストルール 乙女解剖 ヴァンパイア アンドロイドガール ボカロP 初音ミク',
+  'pinocchiop':        'ぴのきおぴー ピノキオピー PinocchioP すきなことだけでいいです 神っぽいな ドーナツホール ボカロP GUMI',
+  'syudou':            'しゅどう syudou 現状ディストラクション ベルセルク スーパーノヴァ チェリーボム ボカロP ロック',
+  'tsumiki':           'つみき ツミキ Tsumiki フォニイ Phony IDOLA アイドル 推しの子 ボカロP',
+  'iyowa':             'いよわ iyowa 1000年生きてる 海底都市 ラブカ ボカロP テクニカル 超複雑 初音ミク',
 };
