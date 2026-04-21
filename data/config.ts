@@ -166,7 +166,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'tricot':            'とりこ tricot いしかわむつみ ひろみ こたえかなこ こしうちなお マスロック 変拍子',
   'chilli-beans':      'ちりびーんず Chilli Beans. Moeka Lily Kaina シューゲイザー インディーロック',
   'hump-back':         'はんぷばっく Hump Back はやしももこ いだなみ おかもとなつき パンクロック 大阪',
-  'sabasister':        'さばしすたー サバシスター あのぎ なみ ゆい パンクポップ インディーロック 北海道',
+  'sabasister':        'さばしすたー サバシスター なち ごうけ るみなす パンクポップ インディーロック 北海道',
   'wod':               'だぶりゅーおーでぃー w.o.d. ケイタ ユウダイ ワタナベ ガレージロック グランジ',
   'cody-lee':          'こでぃりー Cody Lee 李 よしだただし わたなべだいち たなかとしじ せきぐちけいた 大阪',
   'paledusk':          'ぺいるだすく Paledusk Tasshi CHIKA NOBE DORY メタルコア トラップメタル 大阪',
