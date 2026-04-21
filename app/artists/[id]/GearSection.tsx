@@ -334,14 +334,6 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
       {isOpen && (
         <div className="g-expand">
           <div className="gex-inner">
-            {/* 機材説明 */}
-            {g.desc && (
-              <div>
-                <div className="gex-sec-ttl">📖 機材について</div>
-                <div className="gex-desc">{g.desc}</div>
-              </div>
-            )}
-
             {/* アフィリエイトカード（Ameba風） */}
             <div className="af-card">
               {/* 画像 + 商品名 */}
