@@ -178,4 +178,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'fujii-kaze':        'ふじいかぜ 藤井風 Fujii Kaze なんなんw きらり 死ぬのがいいわ ソウル R&B',
   'vaundy':            'ばうんでぃ Vaundy 東京フラッシュ 不動明王 怪獣の花唄 踊り子 Jポップ',
   'hoshino-gen':       'ほしのげん 星野源 Gen Hoshino SAKEROCK 恋 SUN アイデア 喜劇 化物 シティポップ',
+  'eve':               'いぶ Eve 廻廻奇譚 呪術廻戦 お気に召すまま 蒼のワルツ 心予報 ネット出身 インディーロック',
+  'yorushika':         'よるしか ヨルシカ Yorushika n-buna suis だから僕は音楽を辞めた ただ君に晴れ インディーロック',
+  'tatsuro':           'やましたたつろう 山下達郎 Tatsuro Yamashita RIDE ON TIME クリスマスイブ シティポップ AOR',
 };
