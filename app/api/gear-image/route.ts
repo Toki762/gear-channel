@@ -160,8 +160,14 @@ export async function GET(req: NextRequest) {
 
     console.log(`[gear-image] q="${q}" → ${url ?? 'null'}`);
 
+    // 画像取得成功 → 24時間キャッシュ
+    // null（取得失敗）→ 5分だけキャッシュ（次回リトライで画像が取れる可能性を残す）
+    const cacheHeader = url
+      ? 'public, s-maxage=86400, stale-while-revalidate=3600'
+      : 'public, s-maxage=300, stale-while-revalidate=60';
+
     return NextResponse.json({ url }, {
-      headers: { 'Cache-Control': 'public, s-maxage=86400, stale-while-revalidate=3600' },
+      headers: { 'Cache-Control': cacheHeader },
     });
   } catch (e) {
     console.error('[gear-image]', e);
