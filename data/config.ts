@@ -209,4 +209,10 @@ export const ARTIST_KANA: Record<string, string> = {
   'foofighters':       'フーファイターズ Foo Fighters Dave Grohl Taylor Hawkins Nate Mendel Chris Shiflett オルタナ ハードロック Everlong Best of You',
   'greenday':          'グリーンデイ Green Day Billie Joe Armstrong Mike Dirnt Tré Cool パンクロック ポップパンク Dookie American Idiot',
   'gnr':               "ガンズアンドローゼズ Guns N' Roses Slash Axl Rose Duff McKagan ハードロック グラムメタル Appetite for Destruction November Rain",
+  'pearljam':          'パールジャム Pearl Jam Eddie Vedder Mike McCready Stone Gossard Jeff Ament Matt Cameron グランジ オルタナ Ten Alive',
+  'linkinpark':        'リンキンパーク Linkin Park Chester Bennington Mike Shinoda Brad Delson Joe Hahn Rob Bourdon ニューメタル Hybrid Theory Meteora',
+  'nin':               'ナインインチネイルズ Nine Inch Nails NIN Trent Reznor インダストリアルロック エレクトロ The Downward Spiral Closer Hurt',
+  'ratm':              'レイジアゲインストザマシーン Rage Against the Machine RATM Tom Morello Zack de la Rocha ラップメタル Killing in the Name Bulls on Parade',
+  'johnmayer':         'ジョンメイヤー John Mayer ブルースロック ポップ Continuum Born and Raised Slow Dancing in a Burning Room',
+  'jackwhite':         'ジャックホワイト Jack White White Stripes ホワイトストライプス ブルースロック ガレージロック Seven Nation Army Icky Thump',
 };
