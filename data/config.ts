@@ -215,4 +215,9 @@ export const ARTIST_KANA: Record<string, string> = {
   'ratm':              'レイジアゲインストザマシーン Rage Against the Machine RATM Tom Morello Zack de la Rocha ラップメタル Killing in the Name Bulls on Parade',
   'johnmayer':         'ジョンメイヤー John Mayer ブルースロック ポップ Continuum Born and Raised Slow Dancing in a Burning Room',
   'jackwhite':         'ジャックホワイト Jack White White Stripes ホワイトストライプス ブルースロック ガレージロック Seven Nation Army Icky Thump',
+  'stvincent':         'セントビンセント St. Vincent Annie Clark アートロック インディーロック アヴァンポップ Masseduction Strange Mercy',
+  'prince':            'プリンス Prince Rogers Nelson ファンク R&B ポップ ロック Purple Rain Sign o the Times Paisley Park',
+  'jimihendrix':       'ジミヘンドリックス Jimi Hendrix ブルースロック サイケデリック ハードロック Purple Haze All Along the Watchtower Electric Lady',
+  'bobdylan':          'ボブディラン Bob Dylan フォーク ブルースロック カントリー ノーベル文学賞 Blowin in the Wind Like a Rolling Stone',
+  'springsteen':       'ブルーススプリングスティーン Bruce Springsteen The Boss ハートランドロック E Street Band Born to Run Born in the USA',
 };
