@@ -203,4 +203,10 @@ export const ARTIST_KANA: Record<string, string> = {
   'muque':             'みゅーく muque ドリームポップ アンビエント エレクトロニック インディー',
   'noshi':             'のし 乃紫 Noshi ひみつ わたし解散 シンガーソングライター エレクトロポップ Jポップ',
   'rikondensetsu':     'りこんでんせつ 離婚伝説 Rikon Densetsu 失恋伝説 ロマンスがありあまる インディーロック',
+  'nirvana':           'ニルヴァーナ Nirvana Kurt Cobain カートコバーン グランジ オルタナ Nevermind In Utero Come as You Are',
+  'metallica':         'メタリカ Metallica James Hetfield Kirk Hammett Lars Ulrich スラッシュメタル ヘヴィメタル Master of Puppets',
+  'rhcp':              'レッドホットチリペッパーズ Red Hot Chili Peppers RHCP Flea John Frusciante Anthony Kiedis Chad Smith ファンクロック Californication',
+  'foofighters':       'フーファイターズ Foo Fighters Dave Grohl Taylor Hawkins Nate Mendel Chris Shiflett オルタナ ハードロック Everlong Best of You',
+  'greenday':          'グリーンデイ Green Day Billie Joe Armstrong Mike Dirnt Tré Cool パンクロック ポップパンク Dookie American Idiot',
+  'gnr':               "ガンズアンドローゼズ Guns N' Roses Slash Axl Rose Duff McKagan ハードロック グラムメタル Appetite for Destruction November Rain",
 };
