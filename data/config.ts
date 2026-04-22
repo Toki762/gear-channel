@@ -237,4 +237,10 @@ export const ARTIST_KANA: Record<string, string> = {
   'strokes':           'ザストロークス The Strokes Julian Casablancas Is This It Last Nite Someday Room on Fire ガレージロック インディー ニューヨーク',
   'pixies':            'ピクシーズ Pixies Black Francis Kim Deal Joey Santiago Where Is My Mind Debaser Here Comes Your Man オルタナ グランジ',
   'sonicyouth':        'ソニックユース Sonic Youth Thurston Moore Kim Gordon Lee Ranaldo Teenage Riot Kool Thing ノイズロック オルタナ 実験音楽',
+  'vulfpeck':          'ヴァルフペック Vulfpeck Joe Dart Jack Stratton Theo Katzman Woody Goss Funky Claude Running in the Garden Dean Town ファンク R&B',
+  'aerosmith':         'エアロスミス Aerosmith Steven Tyler Joe Perry Brad Whitford Tom Hamilton Joey Kramer Walk This Way Dream On ハードロック ブルースロック',
+  'vanhalen':          'ヴァンヘイレン Van Halen Eddie Van Halen David Lee Roth Michael Anthony Alex Van Halen Jump Eruption Panama ハードロック タッピング',
+  'zztop':             'ZZトップ ZZ Top Billy Gibbons Dusty Hill Frank Beard Sharp Dressed Man Legs La Grange Tush ブルースロック テキサス Pearly Gates',
+  'slipknot':          'スリップノット Slipknot Corey Taylor Jim Root Mick Thomson Joey Jordison Wait and Bleed Duality Before I Forget ヘヴィメタル ニューメタル',
+  'pavement':          'ペイブメント Pavement Stephen Malkmus Scott Kannberg Mark Ibold Crooked Rain Slanted Enchanted Carrot Rope ローファイ インディーロック 90年代',
 };
