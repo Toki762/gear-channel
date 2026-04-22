@@ -23,6 +23,12 @@ type EditOverride = {
 
 const ALL_CATS = ['ギター','ベース','アンプ','ギターエフェクター','ベースエフェクター','エフェクター','キーボード','シンセ/プラグイン','ドラム','DAW','マイク','音響機材'];
 
+/** "名前 (役割)\n名前 (役割)" → ["名前 (役割)", ...] */
+function parseMemberOptions(members: string): string[] {
+  if (!members) return [];
+  return members.split(/\\n|\n/).map(s => s.trim()).filter(Boolean);
+}
+
 export default function GearSection({ artist, dbGear = [] }: Props) {
   const a = artist;
   const router = useRouter();
@@ -159,6 +165,7 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
             key={g.id}
             g={g}
             artistId={a.id}
+            memberOptions={parseMemberOptions(a.members)}
             isOpen={openCards.has(`${a.id}-${g.id}`)}
             isEditing={editCard === `${a.id}-${g.id}`}
             override={edits[`${a.id}-${g.id}`]}
@@ -194,7 +201,14 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
             <select className="add-gear-in" value={addForm.cat} onChange={e => setAddForm(p => ({ ...p, cat: e.target.value }))}>
               {ALL_CATS.map(c => <option key={c}>{c}</option>)}
             </select>
-            <input className="add-gear-in" placeholder="使用メンバー" value={addForm.user} onChange={e => setAddForm(p => ({ ...p, user: e.target.value }))} />
+            <select className="add-gear-in" value={addForm.user} onChange={e => setAddForm(p => ({ ...p, user: e.target.value }))}>
+              <option value="">── メンバーを選択 ──</option>
+              {parseMemberOptions(a.members).map(m => (
+                <option key={m} value={m}>{m}</option>
+              ))}
+              <option value="バンド全体">バンド全体</option>
+              <option value="不明">不明</option>
+            </select>
           </div>
           <div className="add-gear-grid">
             <input className="add-gear-in" placeholder="価格（例：¥50,000〜）" value={addForm.price} onChange={e => setAddForm(p => ({ ...p, price: e.target.value }))} />
@@ -220,6 +234,7 @@ const gearImageCache = new Map<string, string | null>();
 interface GearCardProps {
   g: GearItem;
   artistId: string;
+  memberOptions: string[];
   isOpen: boolean;
   isEditing: boolean;
   override?: EditOverride;
@@ -234,7 +249,7 @@ interface GearCardProps {
   onMemberClick: (m: string) => void;
 }
 
-function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEditValuesChange, isUserAdded, onToggle, onStartEdit, onCancelEdit, onSaveEdit, onDelete, onMemberClick }: GearCardProps) {
+function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, editValues, onEditValuesChange, isUserAdded, onToggle, onStartEdit, onCancelEdit, onSaveEdit, onDelete, onMemberClick }: GearCardProps) {
   const ov = override ?? {};
   const name = ov.name || g.name;
 
@@ -420,7 +435,14 @@ function GearCard({ g, artistId, isOpen, isEditing, override, editValues, onEdit
                 </div>
                 <div className="edit-row">
                   <span className="edit-label">使用者</span>
-                  <input className="edit-in" value={editValues.user} onChange={e => onEditValuesChange({ ...editValues, user: e.target.value })} placeholder={g.user} />
+                  <select className="edit-in" value={editValues.user} onChange={e => onEditValuesChange({ ...editValues, user: e.target.value })}>
+                    <option value="">── メンバーを選択 ──</option>
+                    {memberOptions.map(m => (
+                      <option key={m} value={m}>{m}</option>
+                    ))}
+                    <option value="バンド全体">バンド全体</option>
+                    <option value="不明">不明</option>
+                  </select>
                 </div>
                 <div className="edit-actions">
                   <button className="edit-save" onClick={onSaveEdit}>保存</button>
