@@ -249,4 +249,9 @@ export const ARTIST_KANA: Record<string, string> = {
   'iggypop':           'イギーポップ Iggy Pop The Stooges Ron Asheton Scott Asheton Dave Alexander Lust for Life The Passenger Search and Destroy プロトパンク パンクの神様',
   'beatles':           'ビートルズ The Beatles John Lennon Paul McCartney George Harrison Ringo Starr Let It Be Yesterday Hey Jude Come Together Abbey Road Sgt Pepper',
   'rollingstones':     'ローリングストーンズ The Rolling Stones Mick Jagger Keith Richards Ronnie Wood Charlie Watts Bill Wyman Satisfaction Paint It Black Jumpin Jack Flash Exile on Main St',
+  'ledzeppelin':       'レッドツェッペリン Led Zeppelin Jimmy Page Robert Plant John Paul Jones John Bonham Stairway to Heaven Whole Lotta Love Kashmir Communication Breakdown ハードロック ブルース',
+  'pinkfloyd':         'ピンクフロイド Pink Floyd David Gilmour Roger Waters Rick Wright Nick Mason Syd Barrett Comfortably Numb Wish You Were Here The Wall Dark Side of the Moon プログレ サイケデリック',
+  'queen':             'クイーン Queen Freddie Mercury Brian May John Deacon Roger Taylor Bohemian Rhapsody We Will Rock You We Are the Champions Radio Ga Ga グラムロック',
+  'davidbowie':        'デヴィッドボウイ David Bowie Ziggy Stardust Aladdin Sane Thin White Duke Space Oddity Heroes Changes Let\'s Dance グラムロック ニューウェーブ ベルリン',
+  'ericclapton':       'エリッククラプトン Eric Clapton Slowhand Yardbirds Cream Bluesbreakers Derek and the Dominos Layla Tears in Heaven Wonderful Tonight ブルースロック Blackie',
 };
