@@ -220,4 +220,11 @@ export const ARTIST_KANA: Record<string, string> = {
   'jimihendrix':       'ジミヘンドリックス Jimi Hendrix ブルースロック サイケデリック ハードロック Purple Haze All Along the Watchtower Electric Lady',
   'bobdylan':          'ボブディラン Bob Dylan フォーク ブルースロック カントリー ノーベル文学賞 Blowin in the Wind Like a Rolling Stone',
   'springsteen':       'ブルーススプリングスティーン Bruce Springsteen The Boss ハートランドロック E Street Band Born to Run Born in the USA',
+  'beachboys':         'ビーチボーイズ The Beach Boys Brian Wilson Pet Sounds Good Vibrations サーフロック サイケデリックポップ California Girls',
+  'steelydan':         'スティーリーダン Steely Dan Walter Becker Donald Fagen ジャズロック AOR Aja Gaucho Reelin in the Years Do It Again',
+  'toto':              'トト Toto Steve Lukather Jeff Porcaro David Paich AOR ソフトロック Rosanna Africa Hold the Line',
+  'taylorswift':       'テイラースウィフト Taylor Swift カントリーポップ ポップ Fearless 1989 Folklore Midnights Shake it Off Anti-Hero',
+  'kendricklamar':     'ケンドリックラマー Kendrick Lamar ヒップホップ コンシャスラップ DAMN To Pimp a Butterfly ピューリッツァー TDE Humble',
+  'kanyewest':         'カニエウェスト Kanye West Ye ヒップホップ College Dropout 808s Heartbreak My Beautiful Dark Twisted Fantasy Graduation',
+  'brunomars':         'ブルーノマーズ Bruno Mars ファンク R&B ポップ Uptown Funk 24K Magic Just the Way You Are Silk Sonic',
 };
