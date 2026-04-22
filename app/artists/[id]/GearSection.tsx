@@ -23,10 +23,16 @@ type EditOverride = {
 
 const ALL_CATS = ['ギター','ベース','アンプ','ギターエフェクター','ベースエフェクター','エフェクター','キーボード','シンセ/プラグイン','ドラム','DAW','マイク','音響機材'];
 
-/** "名前 (役割)\n名前 (役割)" → ["名前 (役割)", ...] */
+/**
+ * members フィールドを個人ごとに分割して返す
+ * 対応フォーマット:
+ *   洋楽: "Kurt Cobain (Vo/Gt)\nKrist Novoselic (Ba)"  ← \\n リテラル or 改行
+ *   邦楽: "藤原聡 (Vo/Pf) / 小笹大輔 (Gt)"            ← " / " 区切り
+ */
 function parseMemberOptions(members: string): string[] {
   if (!members) return [];
-  return members.split(/\\n|\n/).map(s => s.trim()).filter(Boolean);
+  // \\n（リテラル2文字）・実改行・" / "（スペース付きスラッシュ）の3種に対応
+  return members.split(/\\n|\n| \/ /).map(s => s.trim()).filter(Boolean);
 }
 
 export default function GearSection({ artist, dbGear = [] }: Props) {
