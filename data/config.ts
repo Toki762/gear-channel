@@ -243,4 +243,10 @@ export const ARTIST_KANA: Record<string, string> = {
   'zztop':             'ZZトップ ZZ Top Billy Gibbons Dusty Hill Frank Beard Sharp Dressed Man Legs La Grange Tush ブルースロック テキサス Pearly Gates',
   'slipknot':          'スリップノット Slipknot Corey Taylor Jim Root Mick Thomson Joey Jordison Wait and Bleed Duality Before I Forget ヘヴィメタル ニューメタル',
   'pavement':          'ペイブメント Pavement Stephen Malkmus Scott Kannberg Mark Ibold Crooked Rain Slanted Enchanted Carrot Rope ローファイ インディーロック 90年代',
+  'television':        'テレヴィジョン Television Tom Verlaine Richard Lloyd Fred Smith Billy Ficca Marquee Moon Friction Elevation NYパンク ポストパンク CBGBs',
+  'talkingheads':      'トーキングヘッズ Talking Heads David Byrne Tina Weymouth Chris Frantz Jerry Harrison Remain in Light Once in a Lifetime Psycho Killer ニューウェーブ',
+  'velvetunderground': 'ヴェルヴェットアンダーグラウンド The Velvet Underground Lou Reed John Cale Sterling Morrison Moe Tucker Pale Blue Eyes Heroin Venus in Furs バナナ アバンギャルド',
+  'iggypop':           'イギーポップ Iggy Pop The Stooges Ron Asheton Scott Asheton Dave Alexander Lust for Life The Passenger Search and Destroy プロトパンク パンクの神様',
+  'beatles':           'ビートルズ The Beatles John Lennon Paul McCartney George Harrison Ringo Starr Let It Be Yesterday Hey Jude Come Together Abbey Road Sgt Pepper',
+  'rollingstones':     'ローリングストーンズ The Rolling Stones Mick Jagger Keith Richards Ronnie Wood Charlie Watts Bill Wyman Satisfaction Paint It Black Jumpin Jack Flash Exile on Main St',
 };
