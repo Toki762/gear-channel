@@ -4999,4 +4999,50 @@ export const DB: Artist[] = [
       { id: 'elka-synthex-aphex', brand: 'Elka', name: 'Synthex（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥300,000〜¥800,000（ヴィンテージ）', kw: 'Elka Synthex Aphex Twin Richard James アナログポリシンせ Selected Ambient Works', yt: ['Elka Synthex Aphex Twin Richard James ポリシンせ Selected Ambient Works', 'Elka Synthex ヴィンテージポリシンせ サウンドデモ'], similar: ['Sequential Circuits Prophet-5', 'Oberheim OBX', 'Roland Jupiter-8'], desc: '', wikiTitle: 'Elka_Synthex' }
     ]
   },
+
+  {
+    id: 'edsheeran', name: 'Ed Sheeran', en: 'Ed Sheeran', genre: 'ポップ/アコースティックポップ/フォーク',
+    since: '2004年〜現在',
+    origin: 'イギリス（サフォーク州フラムリンガム）',
+    members: 'Ed Sheeran (ソロ)',
+    desc: 'ループペダルを駆使したソロライブパフォーマンスで世界的人気を誇るシンガーソングライター。Shape of You・Thinking Out Loud・Perfectなど多くのヒットを生み出した。',
+    gear: [
+      { id: 'martin-ed-sig', brand: 'Martin', name: 'Ed Sheeran Signature +（Ed Sheeran）', cat: 'アコギ', catIcon: '🎸', user: 'Ed Sheeran (ソロ)', price: '¥80,000〜¥130,000', kw: 'Martin Ed Sheeran Signature アコギ シグネチャー 小型 ループ', yt: ['Martin Ed Sheeran Signature アコギ シグネチャー ループ', 'Martin Ed Sheeran Signature アコースティックギター サウンドデモ'], similar: ['Martin 000-28EC', 'Taylor GS Mini', 'Gibson J-45'], desc: '', wikiTitle: 'Martin_Guitar' },
+      { id: 'martin-lx1e-ed', brand: 'Martin', name: 'LX1E Little Martin（Ed Sheeran 初期）', cat: 'アコギ', catIcon: '🎸', user: 'Ed Sheeran (ソロ)', price: '¥25,000〜¥40,000', kw: 'Martin LX1E Little Martin Ed Sheeran アコギ 小型 初期 ストリート', yt: ['Martin LX1E Little Martin Ed Sheeran 初期 ストリート アコギ', 'Martin LX1E Little Martin アコースティックギター サウンドデモ'], similar: ['Martin Ed Sheeran Signature', 'Taylor GS Mini', 'Baby Taylor'], desc: '', wikiTitle: 'Martin_LX1' },
+      { id: 'boss-rc30-ed', brand: 'Boss', name: 'RC-30 Loop Station（Ed Sheeran）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Ed Sheeran (ソロ)', price: '¥20,000〜¥35,000', kw: 'Boss RC-30 Loop Station Ed Sheeran ループペダル ソロライブ アコギ', yt: ['Boss RC-30 Loop Station Ed Sheeran ループペダル ソロライブ アコギ', 'Boss RC-30 Loop Station ループペダル サウンドデモ'], similar: ['Boss RC-1', 'TC Electronic Ditto X2', 'Line 6 DL4'], desc: '', wikiTitle: 'Boss_RC-30' },
+      { id: 'tc-ditto-ed', brand: 'TC Electronic', name: 'Ditto Looper（Ed Sheeran）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Ed Sheeran (ソロ)', price: '¥8,000〜¥15,000', kw: 'TC Electronic Ditto Looper Ed Sheeran ループペダル シンプル アコギ', yt: ['TC Electronic Ditto Looper Ed Sheeran ループペダル シンプル', 'TC Electronic Ditto Looper ループペダル サウンドデモ'], similar: ['Boss RC-1', 'Boss RC-30', 'Electro-Harmonix 360 Nano Looper'], desc: '', wikiTitle: 'TC_Electronic' },
+      { id: 'fender-strat-ed', brand: 'Fender', name: 'Stratocaster（Ed Sheeran エレクトリック）', cat: 'ギター', catIcon: '🎸', user: 'Ed Sheeran (ソロ)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Ed Sheeran エレクトリック バンドセット ポップロック', yt: ['Fender Stratocaster Ed Sheeran エレクトリック バンドセット', 'Fender Stratocaster ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'PRS S2 Custom'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'shure-sm58-ed', brand: 'Shure', name: 'SM58（Ed Sheeran）', cat: 'マイク', catIcon: '🎤', user: 'Ed Sheeran (ソロ)', price: '¥10,000〜¥15,000', kw: 'Shure SM58 Ed Sheeran ダイナミックマイク ライブ ループ ボーカル', yt: ['Shure SM58 Ed Sheeran ライブ ループ ボーカル', 'Shure SM58 ダイナミックマイク ライブ サウンドデモ'], similar: ['Sennheiser e935', 'AKG D5', 'Audix OM5'], desc: '', wikiTitle: 'Shure_SM58' }
+    ]
+  },
+  {
+    id: 'wetleg', name: 'Wet Leg', en: 'Wet Leg', genre: 'インディーロック/ポストパンク/オルタナ',
+    since: '2019年〜現在',
+    origin: 'イギリス（アイル・オブ・ワイト）',
+    members: 'Rhian Teasdale (Gt/Vo)\nHester Chambers (Gt/Vo)\nEllis Durand (Ba)\nHenry Holmes (Dr)\nJosh Omead Mobaraki (Key)',
+    desc: 'アイル・オブ・ワイト出身の5人組。Chaise Loungeでデビューし一躍注目を浴びた。ウィットに富んだ歌詞と90年代オルタナを彷彿とさせるギターサウンドが特徴。',
+    gear: [
+      { id: 'jazzmaster-rhian', brand: 'Fender', name: 'Jazzmaster（Rhian Teasdale）', cat: 'ギター', catIcon: '🎸', user: 'Rhian Teasdale (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Rhian Teasdale Wet Leg インディーロック Chaise Longue ギター', yt: ['Fender Jazzmaster Rhian Teasdale Wet Leg Chaise Longue インディーロック', 'Fender Jazzmaster ギター インディーロック サウンドデモ'], similar: ['Fender Jaguar', 'Fender Mustang', 'Fender Telecaster'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'telecaster-hester', brand: 'Fender', name: 'Telecaster（Hester Chambers）', cat: 'ギター', catIcon: '🎸', user: 'Hester Chambers (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Hester Chambers Wet Leg インディーロック ギター', yt: ['Fender Telecaster Hester Chambers Wet Leg インディーロック ギター', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Stratocaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'vox-wetleg', brand: 'Vox', name: 'AC30（Wet Leg）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Rhian Teasdale (Gt/Vo)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Wet Leg インディーロック ブリティッシュアンプ クリーン', yt: ['Vox AC30 Wet Leg インディーロック ブリティッシュアンプ', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Deluxe Reverb', 'Orange Rockerverb', 'Marshall DSL40'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'dba-wetleg', brand: 'Death By Audio', name: 'Fuzz War（Rhian Teasdale）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Rhian Teasdale (Gt/Vo)', price: '¥20,000〜¥35,000', kw: 'Death By Audio Fuzz War Wet Leg ファズ インディーロック オルタナ', yt: ['Death By Audio Fuzz War Wet Leg ファズ インディーロック', 'Death By Audio Fuzz War ファズペダル サウンドデモ'], similar: ['Electro-Harmonix Big Muff', 'Zvex Fuzz Factory', 'ProCo RAT'], desc: '', wikiTitle: 'Death_By_Audio' },
+      { id: 'boss-ds1-wetleg', brand: 'Boss', name: 'DS-1 Distortion（Hester Chambers）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Hester Chambers (Gt/Vo)', price: '¥6,000〜¥10,000', kw: 'Boss DS-1 Distortion Hester Chambers Wet Leg ディストーション インディーロック', yt: ['Boss DS-1 Wet Leg Hester Chambers ディストーション インディーロック', 'Boss DS-1 Distortion ペダル サウンドデモ'], similar: ['ProCo RAT', 'MXR Distortion+', 'Electro-Harmonix Hot Tubes'], desc: '', wikiTitle: 'Boss_DS-1' },
+      { id: 'precision-wetleg', brand: 'Fender', name: 'Precision Bass（Ellis Durand）', cat: 'ベース', catIcon: '🎸', user: 'Ellis Durand (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Ellis Durand Wet Leg ベース インディーロック', yt: ['Fender Precision Bass Ellis Durand Wet Leg ベース インディーロック', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Fender_Precision_Bass' }
+    ]
+  },
+  {
+    id: 'tommisch', name: 'Tom Misch', en: 'Tom Misch', genre: 'ネオソウル/ジャズ/R&B/インディーポップ',
+    since: '2012年〜現在',
+    origin: 'イギリス（ロンドン・フォレストヒル）',
+    members: 'Tom Misch (ソロ/Gt/Key/プロデューサー)',
+    desc: 'ロンドン出身のマルチプレーヤー/プロデューサー。Geography・What Kinda Music（Yussef Dayes共作）でネオソウルとジャズをクロスオーバーし、滑らかなギタートーンと温かいプロダクションで知られる。',
+    gear: [
+      { id: 'strat-tommisch', brand: 'Fender', name: 'Stratocaster（Tom Misch メインギター）', cat: 'ギター', catIcon: '🎸', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Tom Misch ネオソウル ジャズ R&B Geography Disco Yes Indeed', yt: ['Fender Stratocaster Tom Misch ネオソウル ジャズ Geography Disco Yes Indeed', 'Fender Stratocaster ネオソウル ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'PRS Silver Sky'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'es335-tommisch', brand: 'Gibson', name: 'ES-335（Tom Misch）', cat: 'ギター', catIcon: '🎸', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥380,000〜¥600,000', kw: 'Gibson ES-335 Tom Misch セミアコ ジャズ ネオソウル', yt: ['Gibson ES-335 Tom Misch セミアコ ジャズ ネオソウル', 'Gibson ES-335 セミアコ ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-330', 'Epiphone Casino'], desc: '', wikiTitle: 'Gibson_ES-335' },
+      { id: 'sp404-tommisch', brand: 'Roland', name: 'SP-404 サンプラー（Tom Misch）', cat: 'ドラムマシン', catIcon: '🥁', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥40,000〜¥70,000', kw: 'Roland SP-404 Tom Misch サンプラー ビートメイク ネオソウル プロダクション', yt: ['Roland SP-404 Tom Misch サンプラー ビートメイク ネオソウル', 'Roland SP-404 サンプラー サウンドデモ'], similar: ['Akai MPC', 'Native Instruments Maschine', 'Elektron Digitakt'], desc: '', wikiTitle: 'Roland_SP-404' },
+      { id: 'rhodes-tommisch', brand: 'Fender', name: 'Rhodes Stage Piano（Tom Misch）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Fender Rhodes Stage Piano Tom Misch エレクトリックピアノ ネオソウル R&B Geography', yt: ['Fender Rhodes Tom Misch エレクトリックピアノ ネオソウル R&B Geography', 'Fender Rhodes Stage Piano エレピ ヴィンテージ サウンドデモ'], similar: ['Wurlitzer 200A', 'Hohner Clavinet', 'Nord Electro'], desc: '', wikiTitle: 'Rhodes_piano' },
+      { id: 'fender-deluxe-tm', brand: 'Fender', name: 'Deluxe Reverb（Tom Misch）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥150,000〜¥280,000', kw: 'Fender Deluxe Reverb Tom Misch ギターアンプ クリーン ネオソウル ジャズ', yt: ['Fender Deluxe Reverb Tom Misch ネオソウル ジャズ クリーントーン', 'Fender Deluxe Reverb ギターアンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Vox AC30', 'Roland JC-120'], desc: '', wikiTitle: 'Fender_Deluxe_Reverb' },
+      { id: 'ableton-tm', brand: 'Ableton', name: 'Live（Tom Misch DAW）', cat: 'その他', catIcon: '🎛️', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥60,000〜¥100,000', kw: 'Ableton Live Tom Misch DAW プロダクション ネオソウル Geography ビートメイク', yt: ['Ableton Live Tom Misch DAW プロダクション Geography ネオソウル', 'Ableton Live DAW 音楽制作 サウンドデモ'], similar: ['Logic Pro', 'FL Studio', 'Native Instruments Maschine'], desc: '', wikiTitle: 'Ableton_Live' }
+    ]
+  },
 ];

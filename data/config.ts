@@ -286,4 +286,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'gorillaz':          'ゴリラズ Gorillaz Damon Albarn Jamie Hewlett Clint Eastwood Feel Good Inc Stylo On Melancholy Hill DARE Tranz オルタナ エレクトロニック ヴァーチャルバンド',
   'brianeno':          'ブライアンイーノ Brian Eno Roxy Music Ambient 1 Music for Airports Discreet Music Another Green World Before and After Science アンビエント プロデューサー U2 Talking Heads',
   'aphextwin':         'エイフェックスツイン Aphex Twin Richard D. James Selected Ambient Works Come to Daddy Windowlicker Syro Drukqs IDM テクノ アンビエント エレクトロニック',
+  'edsheeran':         'エドシーラン Ed Sheeran Shape of You Thinking Out Loud Perfect Bad Habits Shivers Overpass Graffiti ポップ アコースティック ループペダル',
+  'wetleg':            'ウェットレッグ Wet Leg Rhian Teasdale Hester Chambers Chaise Longue Angelica Ur Mum Too Late Now インディーロック ポストパンク アイル・オブ・ワイト',
+  'tommisch':          'トムミッシュ Tom Misch Geography What Kinda Music Yussef Dayes Disco Yes Indeed Lost in Paris South of the River ネオソウル ジャズ R&B',
 };
