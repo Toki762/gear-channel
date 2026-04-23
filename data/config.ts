@@ -289,4 +289,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'edsheeran':         'エドシーラン Ed Sheeran Shape of You Thinking Out Loud Perfect Bad Habits Shivers Overpass Graffiti ポップ アコースティック ループペダル',
   'wetleg':            'ウェットレッグ Wet Leg Rhian Teasdale Hester Chambers Chaise Longue Angelica Ur Mum Too Late Now インディーロック ポストパンク アイル・オブ・ワイト',
   'tommisch':          'トムミッシュ Tom Misch Geography What Kinda Music Yussef Dayes Disco Yes Indeed Lost in Paris South of the River ネオソウル ジャズ R&B',
+  'littlesimz':        'リトルシムズ Little Simz Simbi Ajikawo Sometimes I Might Be Introvert Grey Area No Thank You Venom Introvert Point and Kill ヒップホップ ネオソウル Mercury Prize',
+  'thelibertines':     'ザリバティーンズ The Libertines Pete Doherty Carl Barat John Hassall Gary Powell Up the Bracket Can You Stand Me Now What Katie Did Time for Heroes インディーロック ガレージ',
+  'manicstreetpreachers': 'マニックストリートプリーチャーズ Manic Street Preachers James Dean Bradfield Nicky Wire Sean Moore Richey Edwards A Design for Life If You Tolerate This Motorcycle Emptiness ウェールズ オルタナ',
 };

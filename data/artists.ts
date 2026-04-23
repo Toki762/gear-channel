@@ -5045,4 +5045,50 @@ export const DB: Artist[] = [
       { id: 'ableton-tm', brand: 'Ableton', name: 'Live（Tom Misch DAW）', cat: 'その他', catIcon: '🎛️', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥60,000〜¥100,000', kw: 'Ableton Live Tom Misch DAW プロダクション ネオソウル Geography ビートメイク', yt: ['Ableton Live Tom Misch DAW プロダクション Geography ネオソウル', 'Ableton Live DAW 音楽制作 サウンドデモ'], similar: ['Logic Pro', 'FL Studio', 'Native Instruments Maschine'], desc: '', wikiTitle: 'Ableton_Live' }
     ]
   },
+
+  {
+    id: 'littlesimz', name: 'Little Simz', en: 'Little Simz', genre: 'ヒップホップ/ネオソウル/オルタナティブR&B',
+    since: '2010年〜現在',
+    origin: 'イギリス（ロンドン・イズリントン）',
+    members: 'Little Simz / Simbi Ajikawo (ソロ)',
+    desc: 'ロンドン・イズリントン出身のラッパー/シンガー。Sometimes I Might Be IntrovertでMercury Prize受賞。ライブ感あふれるバンドサウンドとラップを融合し、英国最重要アーティストの一人として注目される。',
+    gear: [
+      { id: 'maschine-simz', brand: 'Native Instruments', name: 'Maschine MK3（プロダクション）', cat: 'ドラムマシン', catIcon: '🥁', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥60,000〜¥90,000', kw: 'Native Instruments Maschine Little Simz ビートメイク プロダクション ヒップホップ', yt: ['Native Instruments Maschine Little Simz ビートメイク プロダクション ヒップホップ', 'Native Instruments Maschine MK3 ビートメイク サウンドデモ'], similar: ['Akai MPC', 'Ableton Push', 'Roland SP-404'], desc: '', wikiTitle: 'Native_Instruments_Maschine' },
+      { id: 'ableton-simz', brand: 'Ableton', name: 'Live（Little Simz DAW）', cat: 'その他', catIcon: '🎛️', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥60,000〜¥100,000', kw: 'Ableton Live Little Simz DAW プロダクション ヒップホップ Sometimes I Might Be Introvert', yt: ['Ableton Live Little Simz プロダクション DAW ヒップホップ', 'Ableton Live DAW 音楽制作 サウンドデモ'], similar: ['Logic Pro', 'FL Studio', 'Pro Tools'], desc: '', wikiTitle: 'Ableton_Live' },
+      { id: 'sm7b-simz', brand: 'Shure', name: 'SM7B（スタジオボーカル）', cat: 'マイク', catIcon: '🎤', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥40,000〜¥60,000', kw: 'Shure SM7B Little Simz スタジオマイク ボーカル ラップ レコーディング', yt: ['Shure SM7B Little Simz スタジオ ボーカル ラップ', 'Shure SM7B スタジオマイク レコーディング サウンドデモ'], similar: ['Neumann U87', 'AKG C414', 'Audio-Technica AT4050'], desc: '', wikiTitle: 'Shure_SM7B' },
+      { id: 'tr808-simz', brand: 'Roland', name: 'TR-808 Rhythm Composer', cat: 'ドラムマシン', catIcon: '🥁', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland TR-808 Little Simz ヒップホップ ドラムマシン ビート 808', yt: ['Roland TR-808 Little Simz ヒップホップ ドラムマシン ビート', 'Roland TR-808 ドラムマシン ヴィンテージ サウンドデモ'], similar: ['Roland TR-909', 'Oberheim DMX', 'Akai MPC'], desc: '', wikiTitle: 'Roland_TR-808' },
+      { id: 'strat-simz', brand: 'Fender', name: 'Stratocaster（Little Simz ライブ）', cat: 'ギター', catIcon: '🎸', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Little Simz ギター ライブ ネオソウル ヒップホップ', yt: ['Fender Stratocaster Little Simz ライブ ネオソウル ヒップホップ', 'Fender Stratocaster ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'PRS Silver Sky'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'mpc-simz', brand: 'Akai', name: 'MPC One サンプラー', cat: 'ドラムマシン', catIcon: '🥁', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥50,000〜¥80,000', kw: 'Akai MPC One Little Simz サンプラー ビートメイク ヒップホップ バンド', yt: ['Akai MPC One Little Simz サンプラー ビートメイク', 'Akai MPC One サンプラーシーケンサー サウンドデモ'], similar: ['Native Instruments Maschine', 'Roland SP-404', 'Elektron Digitakt'], desc: '', wikiTitle: 'Akai_MPC' }
+    ]
+  },
+  {
+    id: 'thelibertines', name: 'The Libertines', en: 'The Libertines', genre: 'インディーロック/ガレージロック/ポストパンク',
+    since: '1997年〜2004年・2010年〜現在',
+    origin: 'イギリス（ロンドン）',
+    members: 'Pete Doherty (Gt/Vo)\nCarl Barat (Gt/Vo)\nJohn Hassall (Ba)\nGary Powell (Dr)',
+    desc: 'ロンドン出身の4人組。Pete DohertyとCarl Baratの天才的なソングライティングコンビで2000年代初頭UKインディーロック復権の立役者。Up the Bracket・Can You Stand Me Now・What Katie Didが代表曲。',
+    gear: [
+      { id: 'telecaster-doherty', brand: 'Fender', name: 'Telecaster（Pete Doherty）', cat: 'ギター', catIcon: '🎸', user: 'Pete Doherty (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Pete Doherty The Libertines ギター インディーロック ガレージ Up the Bracket', yt: ['Fender Telecaster Pete Doherty The Libertines Up the Bracket インディーロック', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Epiphone Casino', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'casino-barat', brand: 'Epiphone', name: 'Casino（Carl Barat）', cat: 'ギター', catIcon: '🎸', user: 'Carl Barat (Gt/Vo)', price: '¥80,000〜¥150,000', kw: 'Epiphone Casino Carl Barat The Libertines ギター セミアコ インディーロック', yt: ['Epiphone Casino Carl Barat The Libertines セミアコ インディーロック', 'Epiphone Casino セミアコ ギター サウンドデモ'], similar: ['Gibson ES-330', 'Gibson ES-335', 'Fender Jazzmaster'], desc: '', wikiTitle: 'Epiphone_Casino' },
+      { id: 'vox-libertines', brand: 'Vox', name: 'AC30（The Libertines）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Pete Doherty (Gt/Vo)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 The Libertines インディーロック ブリティッシュアンプ ガレージ', yt: ['Vox AC30 The Libertines インディーロック ブリティッシュアンプ', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Marshall JTM45', 'Orange Rockerverb', 'Fender Deluxe Reverb'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'sg-doherty', brand: 'Gibson', name: 'SG Standard（Pete Doherty）', cat: 'ギター', catIcon: '🎸', user: 'Pete Doherty (Gt/Vo)', price: '¥150,000〜¥250,000', kw: 'Gibson SG Pete Doherty The Libertines ギター ガレージロック インディー', yt: ['Gibson SG Pete Doherty The Libertines ガレージロック インディー', 'Gibson SG Standard ギター サウンドデモ'], similar: ['Fender Telecaster', 'Epiphone Casino', 'Fender Stratocaster'], desc: '', wikiTitle: 'Gibson_SG' },
+      { id: 'jazzbass-libertines', brand: 'Fender', name: 'Jazz Bass（John Hassall）', cat: 'ベース', catIcon: '🎸', user: 'John Hassall (Ba)', price: '¥130,000〜¥250,000', kw: 'Fender Jazz Bass John Hassall The Libertines ベース インディーロック', yt: ['Fender Jazz Bass John Hassall The Libertines ベース インディーロック', 'Jazz Bass フェンダー ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Music Man StingRay', 'Hofner'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'marshall-libertines', brand: 'Marshall', name: 'JCM 800（The Libertines）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Carl Barat (Gt/Vo)', price: '¥250,000〜¥450,000', kw: 'Marshall JCM 800 The Libertines Carl Barat ガレージロック ブリティッシュアンプ', yt: ['Marshall JCM 800 The Libertines ガレージロック ブリティッシュアンプ', 'Marshall JCM 800 ギターアンプ サウンドデモ'], similar: ['Vox AC30', 'Orange Rockerverb', 'Hiwatt DR103'], desc: '', wikiTitle: 'Marshall_JCM800' }
+    ]
+  },
+  {
+    id: 'manicstreetpreachers', name: 'Manic Street Preachers', en: 'Manic Street Preachers', genre: 'オルタナティブロック/グラムパンク/ハードロック',
+    since: '1986年〜現在',
+    origin: 'イギリス（ウェールズ・ブラックウッド）',
+    members: 'James Dean Bradfield (Gt/Vo)\nNicky Wire (Ba)\nSean Moore (Dr)\nRichey Edwards (Gt)',
+    desc: 'ウェールズ・ブラックウッド出身の4人組。A Design for Lifeでブリットポップ時代に頭角を現し、政治的・文学的なリリックで知られる。Richey Edwardsの1995年失踪は今も謎のまま。',
+    gear: [
+      { id: 'lespaul-bradfield', brand: 'Gibson', name: 'Les Paul Standard（James Dean Bradfield）', cat: 'ギター', catIcon: '🎸', user: 'James Dean Bradfield (Gt/Vo)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul James Dean Bradfield Manic Street Preachers ギター A Design for Life ウェールズ', yt: ['Gibson Les Paul James Dean Bradfield Manic Street Preachers A Design for Life', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Fender Telecaster', 'Gibson SG', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
+      { id: 'telecaster-bradfield', brand: 'Fender', name: 'Telecaster（James Dean Bradfield）', cat: 'ギター', catIcon: '🎸', user: 'James Dean Bradfield (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster James Dean Bradfield Manic Street Preachers ギター If You Tolerate This', yt: ['Fender Telecaster James Dean Bradfield Manic Street Preachers If You Tolerate This', 'Fender Telecaster ギター サウンドデモ'], similar: ['Gibson Les Paul', 'Gibson SG', 'Fender Stratocaster'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'jcm800-manics', brand: 'Marshall', name: 'JCM 800（James Dean Bradfield）', cat: 'ギターアンプ', catIcon: '🔊', user: 'James Dean Bradfield (Gt/Vo)', price: '¥250,000〜¥450,000', kw: 'Marshall JCM 800 James Dean Bradfield Manic Street Preachers ギターアンプ ハードロック', yt: ['Marshall JCM 800 Manic Street Preachers James Dean Bradfield ハードロック', 'Marshall JCM 800 ギターアンプ サウンドデモ'], similar: ['Marshall JVM410', 'Hiwatt DR103', 'Orange Rockerverb'], desc: '', wikiTitle: 'Marshall_JCM800' },
+      { id: 'jazzbass-nicky', brand: 'Fender', name: 'Jazz Bass（Nicky Wire）', cat: 'ベース', catIcon: '🎸', user: 'Nicky Wire (Ba)', price: '¥130,000〜¥250,000', kw: 'Fender Jazz Bass Nicky Wire Manic Street Preachers ベース ウェールズ', yt: ['Fender Jazz Bass Nicky Wire Manic Street Preachers ベース', 'Jazz Bass フェンダー ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Rickenbacker 4001', 'Music Man StingRay'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'boss-ds1-manics', brand: 'Boss', name: 'DS-1 Distortion（James Dean Bradfield）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'James Dean Bradfield (Gt/Vo)', price: '¥6,000〜¥10,000', kw: 'Boss DS-1 Distortion James Dean Bradfield Manic Street Preachers ディストーション', yt: ['Boss DS-1 Manic Street Preachers James Dean Bradfield ディストーション', 'Boss DS-1 Distortion ペダル サウンドデモ'], similar: ['ProCo RAT', 'MXR Distortion+', 'Marshall Guvnor'], desc: '', wikiTitle: 'Boss_DS-1' },
+      { id: 'pearl-manics', brand: 'Pearl', name: 'Masters Custom（Sean Moore）', cat: 'ドラム', catIcon: '🥁', user: 'Sean Moore (Dr)', price: '¥400,000〜¥800,000', kw: 'Pearl Masters Sean Moore Manic Street Preachers ドラム ウェールズ', yt: ['Pearl Masters Sean Moore Manic Street Preachers ドラム', 'Pearl Masters ドラムキット サウンドデモ'], similar: ['Ludwig Classic Maple', 'Tama Starclassic', 'DW Collector'], desc: '', wikiTitle: 'Pearl_Drums' }
+    ]
+  },
 ];
