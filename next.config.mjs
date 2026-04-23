@@ -1,5 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // vercel.app ドメインからカスタムドメインへ 301 リダイレクト
+  // → 重複コンテンツ・canonical 不一致を解消
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'gear-channel.vercel.app' }],
+        destination: 'https://gear-channel.com/:path*',
+        permanent: true, // 301
+      },
+    ];
+  },
+
   // 画像最適化 — Amazon・サウンドハウス等の外部画像をNext.js経由で最適化
   images: {
     remotePatterns: [
