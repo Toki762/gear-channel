@@ -4864,4 +4864,93 @@ export const DB: Artist[] = [
       { id: 'ludwig-bruford', brand: 'Ludwig', name: 'Classic Maple（Bill Bruford）', cat: 'ドラム', catIcon: '🥁', user: 'Bill Bruford (Dr)', price: '¥300,000〜¥600,000', kw: 'Ludwig Classic Maple Bill Bruford King Crimson Yes ドラム プログレ 変拍子', yt: ['Ludwig Bill Bruford King Crimson Yes プログレ ドラム 変拍子', 'Ludwig Classic Maple ドラムキット サウンドデモ'], similar: ['Pearl Masters', 'Tama Starclassic', 'Gretsch Broadkaster'], desc: '', wikiTitle: 'Bill_Bruford' }
     ]
   },
+
+  {
+    id: 'elp', name: 'Emerson, Lake & Palmer', en: 'Emerson, Lake & Palmer', genre: 'プログレッシブロック/クラシカルロック',
+    since: '1970年〜1998年',
+    origin: 'イギリス（ロンドン）',
+    members: 'Keith Emerson (Key)\nGreg Lake (Ba/Gt/Vo)\nCarl Palmer (Dr)',
+    desc: 'Keith Emersonの超絶技巧キーボードプレイ、Greg Lakeの荘厳なボーカル、Carl Palmerの圧倒的ドラムで知られる。クラシック音楽をロックに昇華した巨人。',
+    gear: [
+      { id: 'moog-modular-emerson', brand: 'Moog', name: 'Moog Modular System（Keith Emerson）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Keith Emerson (Key)', price: '¥2,000,000以上（ヴィンテージ）', kw: 'Moog Modular Keith Emerson ELP プログレ シンせ Lucky Man Tarkus', yt: ['Moog Modular Keith Emerson ELP プログレ Lucky Man Tarkus シンせ', 'Moog Modular System ヴィンテージシンせ サウンドデモ'], similar: ['ARP 2600', 'Buchla 200', 'Roland System 700'], desc: '', wikiTitle: 'Moog_synthesizer' },
+      { id: 'hammond-emerson', brand: 'Hammond', name: 'L-100 オルガン（Keith Emerson）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Keith Emerson (Key)', price: '¥300,000〜¥700,000', kw: 'Hammond L-100 Keith Emerson ELP オルガン ナイフ刺し プログレ', yt: ['Hammond L-100 Keith Emerson ELP オルガン ナイフ刺し ライブパフォーマンス', 'Hammond L-100 オルガン ヴィンテージ サウンドデモ'], similar: ['Hammond C-3', 'Hammond B-3', 'Vox Continental'], desc: '', wikiTitle: 'Hammond_organ' },
+      { id: 'yamaha-gx1', brand: 'Yamaha', name: 'GX-1 Dream Machine（Keith Emerson）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Keith Emerson (Key)', price: '¥5,000,000以上（ヴィンテージ）', kw: 'Yamaha GX-1 Dream Machine Keith Emerson ELP シンせ プログレ レア', yt: ['Yamaha GX-1 Dream Machine Keith Emerson ELP シンせ プログレ', 'Yamaha GX-1 Dream Machine レアシンせ サウンドデモ'], similar: ['Hammond B-3', 'Moog Modular', 'Sequential Circuits Prophet-10'], desc: '', wikiTitle: 'Yamaha_GX-1' },
+      { id: 'lespaul-lake', brand: 'Gibson', name: 'Les Paul（Greg Lake）', cat: 'ギター', catIcon: '🎸', user: 'Greg Lake (Ba/Gt/Vo)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Greg Lake ELP ギター Lucky Man ラグジュアリーアコースティック', yt: ['Gibson Les Paul Greg Lake ELP Lucky Man ギター', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Martin D-28', 'Gibson J-45', 'Fender Telecaster'], desc: '', wikiTitle: 'Greg_Lake' },
+      { id: 'precision-lake-elp', brand: 'Fender', name: 'Precision Bass（Greg Lake）', cat: 'ベース', catIcon: '🎸', user: 'Greg Lake (Ba/Gt/Vo)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Greg Lake ELP ベース プログレ', yt: ['Fender Precision Bass Greg Lake ELP ベース プログレ', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Rickenbacker 4001', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'premier-palmer', brand: 'Premier', name: 'カスタム大型ドラムキット（Carl Palmer）', cat: 'ドラム', catIcon: '🥁', user: 'Carl Palmer (Dr)', price: '¥800,000〜¥2,000,000', kw: 'Premier Custom Carl Palmer ELP ドラム 大型 チューブラーベル ゴング プログレ', yt: ['Premier Custom Carl Palmer ELP ドラム 大型キット チューブラーベル ゴング', 'Premier Custom ドラムキット サウンドデモ'], similar: ['Ludwig Custom', 'Gretsch Broadkaster', 'Pearl Custom'], desc: '', wikiTitle: 'Carl_Palmer' }
+    ]
+  },
+  {
+    id: 'mybloodyvalentine', name: 'My Bloody Valentine', en: 'My Bloody Valentine', genre: 'シューゲイジング/ノイズポップ/オルタナティブ',
+    since: '1983年〜現在',
+    origin: 'アイルランド（ダブリン）',
+    members: 'Kevin Shields (Gt/Vo)\nBilinda Butcher (Gt/Vo)\nDebbie Googe (Ba)\nColm O Ciosóig (Dr)',
+    desc: 'ダブリン出身のシューゲイジングの元祖。LovedにはEverlasting Nothingを収録。Lovelessはグランジ・シューゲイジング双方に絶大な影響を与えた。',
+    gear: [
+      { id: 'jaguar-shields', brand: 'Fender', name: 'Jaguar（Kevin Shields トレモロアーム多用）', cat: 'ギター', catIcon: '🎸', user: 'Kevin Shields (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Jaguar Kevin Shields My Bloody Valentine シューゲイジング トレモロアーム Only Shallow', yt: ['Fender Jaguar Kevin Shields My Bloody Valentine シューゲイジング Only Shallow トレモロ', 'Fender Jaguar ギター シューゲイジング サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Mustang', 'Fender Stratocaster'], desc: '', wikiTitle: 'Fender_Jaguar' },
+      { id: 'jazzmaster-shields', brand: 'Fender', name: 'Jazzmaster（Kevin Shields）', cat: 'ギター', catIcon: '🎸', user: 'Kevin Shields (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Kevin Shields My Bloody Valentine シューゲイジング Loveless', yt: ['Fender Jazzmaster Kevin Shields My Bloody Valentine Loveless シューゲイジング', 'Fender Jazzmaster ギター シューゲイジング サウンドデモ'], similar: ['Fender Jaguar', 'Fender Mustang', 'Epiphone Casino'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'bigmuff-shields', brand: 'Electro-Harmonix', name: 'Big Muff Pi（Kevin Shields）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Kevin Shields (Gt/Vo)', price: '¥15,000〜¥25,000', kw: 'Electro-Harmonix Big Muff Pi Kevin Shields My Bloody Valentine ファズ シューゲイジング', yt: ['Electro-Harmonix Big Muff Kevin Shields My Bloody Valentine シューゲイジング ファズ', 'Big Muff Pi ファズペダル サウンドデモ'], similar: ['Boss DS-1', 'Zvex Fuzz Factory', 'Way Huge Swollen Pickle'], desc: '', wikiTitle: 'Big_Muff' },
+      { id: 'digitech-shields', brand: 'DigiTech', name: 'Whammy WH-1（Kevin Shields）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Kevin Shields (Gt/Vo)', price: '¥30,000〜¥60,000', kw: 'DigiTech Whammy Kevin Shields My Bloody Valentine ピッチシフター シューゲイジング', yt: ['DigiTech Whammy Kevin Shields My Bloody Valentine ピッチシフター シューゲイジング', 'Whammy WH-1 ピッチシフター ペダル サウンドデモ'], similar: ['Electro-Harmonix Pitch Fork', 'Boss PS-6', 'Eventide PitchFactor'], desc: '', wikiTitle: 'DigiTech_Whammy' },
+      { id: 'vibrolux-mbv', brand: 'Fender', name: 'Vibrolux Reverb（Kevin Shields）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Kevin Shields (Gt/Vo)', price: '¥200,000〜¥400,000（ヴィンテージ）', kw: 'Fender Vibrolux Reverb Kevin Shields My Bloody Valentine アンプ シューゲイジング', yt: ['Fender Vibrolux Reverb Kevin Shields My Bloody Valentine シューゲイジング アンプ', 'Fender Vibrolux Reverb ヴィンテージアンプ サウンドデモ'], similar: ['Fender Deluxe Reverb', 'Fender Twin Reverb', 'Vox AC30'], desc: '', wikiTitle: 'Fender_Vibrolux' },
+      { id: 'akai-s1000-mbv', brand: 'Akai', name: 'S1000 サンプラー', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Kevin Shields (Gt/Vo)', price: '¥50,000〜¥120,000（ヴィンテージ）', kw: 'Akai S1000 My Bloody Valentine サンプラー シューゲイジング テクスチャー', yt: ['Akai S1000 My Bloody Valentine サンプラー シューゲイジング テクスチャー', 'Akai S1000 サンプラー ヴィンテージ サウンドデモ'], similar: ['Akai S3000', 'EMU Emulator', 'Roland S-760'], desc: '', wikiTitle: 'Akai_S1000' }
+    ]
+  },
+  {
+    id: 'cocteautwins', name: 'Cocteau Twins', en: 'Cocteau Twins', genre: 'ドリームポップ/ゴシックロック/ポストパンク',
+    since: '1979年〜1997年',
+    origin: 'イギリス（スコットランド・グランジマウス）',
+    members: 'Elizabeth Fraser (Vo)\nRobin Guthrie (Gt/プログラミング)\nSimon Raymonde (Ba/Key)',
+    desc: 'スコットランド出身のドリームポップ先駆者。Elizabeth Fraserの幻想的ボーカルとRobin Guthrieの霧のようなギターサウンドで唯一無二の音世界を作り出した。',
+    gear: [
+      { id: 'jc120-guthrie', brand: 'Roland', name: 'Jazz Chorus JC-120（Robin Guthrie）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Robin Guthrie (Gt/プログラミング)', price: '¥130,000〜¥200,000', kw: 'Roland Jazz Chorus JC-120 Robin Guthrie Cocteau Twins ドリームポップ クリーン コーラス', yt: ['Roland JC-120 Robin Guthrie Cocteau Twins ドリームポップ クリーン コーラス', 'Roland JC-120 Jazz Chorus アンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Vox AC30', 'Fender Deluxe Reverb'], desc: '', wikiTitle: 'Roland_Jazz_Chorus' },
+      { id: 'space-echo-ct', brand: 'Roland', name: 'Space Echo RE-201（Robin Guthrie）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Robin Guthrie (Gt/プログラミング)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland Space Echo RE-201 Robin Guthrie Cocteau Twins テープエコー ドリームポップ', yt: ['Roland Space Echo RE-201 Robin Guthrie Cocteau Twins テープエコー ドリームポップ', 'Roland Space Echo RE-201 テープエコー ヴィンテージ サウンドデモ'], similar: ['Echoplex EP-3', 'Boss DD-7', 'Strymon El Capistan'], desc: '', wikiTitle: 'Roland_Space_Echo' },
+      { id: 'ce2-guthrie', brand: 'Boss', name: 'CE-2 Chorus（Robin Guthrie）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Robin Guthrie (Gt/プログラミング)', price: '¥15,000〜¥40,000（中古）', kw: 'Boss CE-2 Chorus Robin Guthrie Cocteau Twins コーラス ドリームポップ 幻想的', yt: ['Boss CE-2 Chorus Robin Guthrie Cocteau Twins ドリームポップ コーラス', 'Boss CE-2 Chorus ヴィンテージ コーラスペダル サウンドデモ'], similar: ['Electro-Harmonix Small Clone', 'TC Electronic Corona', 'MXR Analog Chorus'], desc: '', wikiTitle: 'Boss_CE-2' },
+      { id: 'dx7-guthrie', brand: 'Yamaha', name: 'DX7（Robin Guthrie）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Robin Guthrie (Gt/プログラミング)', price: '¥30,000〜¥80,000（ヴィンテージ）', kw: 'Yamaha DX7 Robin Guthrie Cocteau Twins FMシンせ ドリームポップ テクスチャー', yt: ['Yamaha DX7 Cocteau Twins Robin Guthrie FMシンせ ドリームポップ', 'Yamaha DX7 FMシンせ ヴィンテージ サウンドデモ'], similar: ['Korg DW-8000', 'Roland D-50', 'Yamaha TX7'], desc: '', wikiTitle: 'Yamaha_DX7' },
+      { id: 'es335-guthrie', brand: 'Gibson', name: 'ES-335（Robin Guthrie）', cat: 'ギター', catIcon: '🎸', user: 'Robin Guthrie (Gt/プログラミング)', price: '¥380,000〜¥600,000', kw: 'Gibson ES-335 Robin Guthrie Cocteau Twins ギター ドリームポップ コーラス', yt: ['Gibson ES-335 Robin Guthrie Cocteau Twins ドリームポップ ギター', 'Gibson ES-335 セミアコ ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Jaguar', 'Rickenbacker 330'], desc: '', wikiTitle: 'Gibson_ES-335' }
+    ]
+  },
+  {
+    id: 'slowdive', name: 'Slowdive', en: 'Slowdive', genre: 'シューゲイジング/ドリームポップ/アンビエント',
+    since: '1989年〜1995年・2014年〜現在',
+    origin: 'イギリス（バークシャー州レディング）',
+    members: 'Neil Halstead (Gt/Vo)\nRachel Goswell (Gt/Vo)\nSimon Scott (Dr)\nNick Chaplin (Ba)\nChristian Savill (Gt)',
+    desc: 'レディング出身のシューゲイジングバンド。Souvlaki・Alison・When the Sun Hitsなど霧のようなギターウォールと浮遊するボーカルで90年代シューゲイジング界を代表。',
+    gear: [
+      { id: 'jazzmaster-halstead', brand: 'Fender', name: 'Jazzmaster（Neil Halstead）', cat: 'ギター', catIcon: '🎸', user: 'Neil Halstead (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Neil Halstead Slowdive シューゲイジング When the Sun Hits Alison', yt: ['Fender Jazzmaster Neil Halstead Slowdive シューゲイジング When the Sun Hits', 'Fender Jazzmaster ギター シューゲイジング サウンドデモ'], similar: ['Fender Jaguar', 'Fender Stratocaster', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'strat-goswell', brand: 'Fender', name: 'Stratocaster（Rachel Goswell）', cat: 'ギター', catIcon: '🎸', user: 'Rachel Goswell (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Rachel Goswell Slowdive ギター ドリームポップ シューゲイジング', yt: ['Fender Stratocaster Rachel Goswell Slowdive シューゲイジング ドリームポップ', 'Fender Stratocaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Jaguar', 'Fender Telecaster'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'bigmuff-slowdive', brand: 'Electro-Harmonix', name: 'Big Muff Pi（Neil Halstead）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Neil Halstead (Gt/Vo)', price: '¥15,000〜¥25,000', kw: 'Electro-Harmonix Big Muff Slowdive Neil Halstead ファズ シューゲイジング', yt: ['Electro-Harmonix Big Muff Slowdive Neil Halstead シューゲイジング ファズ', 'Big Muff Pi ファズペダル サウンドデモ'], similar: ['Boss DS-1', 'Zvex Fuzz Factory', 'Wren and Cuff Tall Font Russian'], desc: '', wikiTitle: 'Big_Muff' },
+      { id: 'dd3-slowdive', brand: 'Boss', name: 'DD-3 Digital Delay（Neil Halstead）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Neil Halstead (Gt/Vo)', price: '¥10,000〜¥18,000', kw: 'Boss DD-3 Digital Delay Slowdive シューゲイジング ディレイ テクスチャー', yt: ['Boss DD-3 Slowdive シューゲイジング ディレイ テクスチャー', 'Boss DD-3 デジタルディレイ ペダル サウンドデモ'], similar: ['TC Electronic Flashback', 'MXR Carbon Copy', 'Strymon Timeline'], desc: '', wikiTitle: 'Boss_DD-3' },
+      { id: 'holygrail-slowdive', brand: 'Electro-Harmonix', name: 'Holy Grail Reverb', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Neil Halstead (Gt/Vo)', price: '¥12,000〜¥20,000', kw: 'Electro-Harmonix Holy Grail Reverb Slowdive シューゲイジング リバーブ 浮遊感', yt: ['Electro-Harmonix Holy Grail Reverb Slowdive シューゲイジング 浮遊感', 'Holy Grail Reverb リバーブペダル サウンドデモ'], similar: ['Boss RV-6', 'Strymon BigSky', 'Eventide Space'], desc: '', wikiTitle: 'Electro-Harmonix_Holy_Grail' },
+      { id: 'vox-slowdive', brand: 'Vox', name: 'AC30（Slowdive）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Neil Halstead (Gt/Vo)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Slowdive シューゲイジング ギターアンプ クリーン ドリームポップ', yt: ['Vox AC30 Slowdive シューゲイジング ギターアンプ クリーントーン', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Roland JC-120', 'Marshall DSL40'], desc: '', wikiTitle: 'Vox_AC30' }
+    ]
+  },
+  {
+    id: 'ride', name: 'Ride', en: 'Ride', genre: 'シューゲイジング/インディーロック',
+    since: '1988年〜1996年・2014年〜現在',
+    origin: 'イギリス（オックスフォード）',
+    members: 'Mark Gardener (Gt/Vo)\nAndy Bell (Gt/Vo)\nSteve Queralt (Ba)\nLoz Colbert (Dr)',
+    desc: 'オックスフォード出身のシューゲイジングバンド。Nowhere・Going Blank Againで頂点に達し、Vapour Trail・Twoleafcloverなど浮遊するギターウォールで知られる。',
+    gear: [
+      { id: 'jazzmaster-bell', brand: 'Fender', name: 'Jazzmaster（Andy Bell）', cat: 'ギター', catIcon: '🎸', user: 'Andy Bell (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Andy Bell Ride シューゲイジング Nowhere Twoleafclover', yt: ['Fender Jazzmaster Andy Bell Ride シューゲイジング Nowhere', 'Fender Jazzmaster ギター シューゲイジング サウンドデモ'], similar: ['Fender Jaguar', 'Fender Stratocaster', 'Fender Mustang'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'tele-gardener', brand: 'Fender', name: 'Telecaster（Mark Gardener）', cat: 'ギター', catIcon: '🎸', user: 'Mark Gardener (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Mark Gardener Ride シューゲイジング ギター Vapour Trail', yt: ['Fender Telecaster Mark Gardener Ride シューゲイジング Vapour Trail', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Stratocaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'bigmuff-ride', brand: 'Electro-Harmonix', name: 'Big Muff Pi（Ride）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Andy Bell (Gt/Vo)', price: '¥15,000〜¥25,000', kw: 'Electro-Harmonix Big Muff Ride シューゲイジング ファズ ギターウォール', yt: ['Electro-Harmonix Big Muff Ride シューゲイジング ファズ ギターウォール', 'Big Muff Pi ファズペダル サウンドデモ'], similar: ['Zvex Fuzz Factory', 'Boss DS-1', 'ProCo RAT'], desc: '', wikiTitle: 'Big_Muff' },
+      { id: 'vox-ride', brand: 'Vox', name: 'AC30（Ride）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Andy Bell (Gt/Vo)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Ride シューゲイジング ギターアンプ ブリティッシュ', yt: ['Vox AC30 Ride シューゲイジング ギターアンプ ブリティッシュ', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Marshall JCM 800', 'Orange Rockerverb', 'Fender Twin Reverb'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'boss-dd-ride', brand: 'Boss', name: 'DD-3 Digital Delay（Ride）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Andy Bell (Gt/Vo)', price: '¥10,000〜¥18,000', kw: 'Boss DD-3 Digital Delay Ride シューゲイジング ディレイ Nowhere', yt: ['Boss DD-3 Ride シューゲイジング ディレイ Nowhere', 'Boss DD-3 デジタルディレイ ペダル サウンドデモ'], similar: ['TC Electronic Flashback', 'MXR Carbon Copy', 'Strymon Timeline'], desc: '', wikiTitle: 'Boss_DD-3' }
+    ]
+  },
+  {
+    id: 'massiveattack', name: 'Massive Attack', en: 'Massive Attack', genre: 'トリップホップ/エレクトロニック/アンビエント',
+    since: '1987年〜現在',
+    origin: 'イギリス（ブリストル）',
+    members: 'Robert 3D Del Naja (MC/Gt)\nGrant Daddy G Marshall (MC)\nAndrew Mushroom Vowles (MC/DJ)',
+    desc: 'ブリストル出身のトリップホップの創始者。Teardrop・Unfinished Sympathy・Angel・Safeから Bond映画Blue Nothingまで独自の重厚なエレクトロニックサウンドで知られる。',
+    gear: [
+      { id: 'akai-mpc60-ma', brand: 'Akai', name: 'MPC60 サンプラー/シーケンサー', cat: 'ドラムマシン', catIcon: '🥁', user: 'Andrew Mushroom Vowles (MC/DJ)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Akai MPC60 Massive Attack トリップホップ サンプラー シーケンサー Unfinished Sympathy', yt: ['Akai MPC60 Massive Attack トリップホップ サンプラー Unfinished Sympathy', 'Akai MPC60 サンプラーシーケンサー ヴィンテージ サウンドデモ'], similar: ['Akai MPC3000', 'Roger Linn LM-1', 'E-mu SP-1200'], desc: '', wikiTitle: 'Akai_MPC' },
+      { id: 'tr808-ma', brand: 'Roland', name: 'TR-808 Rhythm Composer', cat: 'ドラムマシン', catIcon: '🥁', user: 'Andrew Mushroom Vowles (MC/DJ)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland TR-808 Massive Attack トリップホップ ドラムマシン ビート 重低音', yt: ['Roland TR-808 Massive Attack トリップホップ ドラムマシン 重低音', 'Roland TR-808 ドラムマシン ヴィンテージ サウンドデモ'], similar: ['Roland TR-909', 'Oberheim DMX', 'Linn LM-1'], desc: '', wikiTitle: 'Roland_TR-808' },
+      { id: 'sp1200-ma', brand: 'E-mu', name: 'SP-1200 サンプラー', cat: 'ドラムマシン', catIcon: '🥁', user: 'Andrew Mushroom Vowles (MC/DJ)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Emu SP-1200 Massive Attack トリップホップ サンプラー グレイニー ヒップホップ', yt: ['E-mu SP-1200 Massive Attack トリップホップ サンプラー グレイニー', 'E-mu SP-1200 サンプラー ヴィンテージ サウンドデモ'], similar: ['Akai MPC60', 'Akai S1000', 'Roger Linn LM-1'], desc: '', wikiTitle: 'E-mu_SP-1200' },
+      { id: 'ssl-ma', brand: 'SSL', name: 'SL 4000 コンソール（スタジオ）', cat: 'その他', catIcon: '🎛️', user: 'Robert 3D Del Naja (MC/Gt)', price: '¥5,000,000以上', kw: 'SSL 4000 Massive Attack スタジオ コンソール Teardrop Angel Unfinished Sympathy', yt: ['SSL 4000 Massive Attack スタジオ Teardrop Unfinished Sympathy', 'SSL 4000 コンソール スタジオ サウンドデモ'], similar: ['Neve 8078', 'API 2488', 'Neve 8028'], desc: '', wikiTitle: 'Solid_State_Logic' },
+      { id: 'korg-m1-ma', brand: 'Korg', name: 'M1 Music Workstation', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Andrew Mushroom Vowles (MC/DJ)', price: '¥30,000〜¥80,000（ヴィンテージ）', kw: 'Korg M1 Music Workstation Massive Attack トリップホップ シンせ テクスチャー', yt: ['Korg M1 Massive Attack トリップホップ シンせ テクスチャー', 'Korg M1 ワークステーション ヴィンテージ サウンドデモ'], similar: ['Roland D-50', 'Yamaha DX7', 'Korg Wavestation'], desc: '', wikiTitle: 'Korg_M1' },
+      { id: 'pioneer-cdj-ma', brand: 'Pioneer', name: 'CDJ-1000 / Technics 1200（DJ機材）', cat: 'その他', catIcon: '🎛️', user: 'Grant Daddy G Marshall (MC)', price: '¥100,000〜¥200,000', kw: 'Pioneer CDJ Technics 1200 Massive Attack DJ ターンテーブル トリップホップ ブリストル', yt: ['Pioneer CDJ Technics 1200 Massive Attack DJ ターンテーブル トリップホップ', 'Pioneer CDJ DJターンテーブル サウンドデモ'], similar: ['Rane TTM', 'Allen & Heath Xone', 'Vestax PDX'], desc: '', wikiTitle: 'Technics_SL-1200' }
+    ]
+  },
 ];

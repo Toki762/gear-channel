@@ -277,4 +277,10 @@ export const ARTIST_KANA: Record<string, string> = {
   'genesis':           'ジェネシス Genesis Peter Gabriel Phil Collins Tony Banks Mike Rutherford Steve Hackett Invisible Touch Sussudio In the Air Tonight The Lamb Lies Down on Broadway プログレ ポップロック',
   'yes':               'イエス Yes Jon Anderson Chris Squire Steve Howe Rick Wakeman Bill Bruford Roundabout Owner of a Lonely Heart Close to the Edge Fragile プログレ',
   'kingcrimson':       'キングクリムゾン King Crimson Robert Fripp Greg Lake Bill Bruford In the Court of the Crimson King 21st Century Schizoid Man Epitaph プログレ アヴァンギャルド',
+  'elp':               'エマーソンレイク&パーマー Emerson Lake Palmer Keith Emerson Greg Lake Carl Palmer Lucky Man Tarkus Karn Evil 9 プログレ クラシカルロック',
+  'mybloodyvalentine': 'マイブラッディヴァレンタイン My Bloody Valentine Kevin Shields Bilinda Butcher Debbie Googe Only Shallow When You Sleep Loveless Loveless Nowhere シューゲイジング ノイズポップ',
+  'cocteautwins':      'コクトーツインズ Cocteau Twins Elizabeth Fraser Robin Guthrie Simon Raymonde Heaven or Las Vegas Blue Bell Knoll Pearly Dewdrops Drop ドリームポップ ゴシック',
+  'slowdive':          'スロウダイヴ Slowdive Neil Halstead Rachel Goswell When the Sun Hits Alison Dagger Souvlaki Machine Gun シューゲイジング ドリームポップ アンビエント',
+  'ride':              'ライド Ride Mark Gardener Andy Bell Steve Queralt Loz Colbert Vapour Trail Twoleafclover Leave Them All Behind Nowhere Going Blank Again シューゲイジング インディーロック',
+  'massiveattack':     'マッシヴアタック Massive Attack 3D Robert Del Naja Daddy G Mushroom Teardrop Unfinished Sympathy Angel Safe from Harm トリップホップ エレクトロニック ブリストル',
 };
