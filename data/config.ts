@@ -283,4 +283,7 @@ export const ARTIST_KANA: Record<string, string> = {
   'slowdive':          'スロウダイヴ Slowdive Neil Halstead Rachel Goswell When the Sun Hits Alison Dagger Souvlaki Machine Gun シューゲイジング ドリームポップ アンビエント',
   'ride':              'ライド Ride Mark Gardener Andy Bell Steve Queralt Loz Colbert Vapour Trail Twoleafclover Leave Them All Behind Nowhere Going Blank Again シューゲイジング インディーロック',
   'massiveattack':     'マッシヴアタック Massive Attack 3D Robert Del Naja Daddy G Mushroom Teardrop Unfinished Sympathy Angel Safe from Harm トリップホップ エレクトロニック ブリストル',
+  'gorillaz':          'ゴリラズ Gorillaz Damon Albarn Jamie Hewlett Clint Eastwood Feel Good Inc Stylo On Melancholy Hill DARE Tranz オルタナ エレクトロニック ヴァーチャルバンド',
+  'brianeno':          'ブライアンイーノ Brian Eno Roxy Music Ambient 1 Music for Airports Discreet Music Another Green World Before and After Science アンビエント プロデューサー U2 Talking Heads',
+  'aphextwin':         'エイフェックスツイン Aphex Twin Richard D. James Selected Ambient Works Come to Daddy Windowlicker Syro Drukqs IDM テクノ アンビエント エレクトロニック',
 };

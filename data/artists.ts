@@ -4953,4 +4953,50 @@ export const DB: Artist[] = [
       { id: 'pioneer-cdj-ma', brand: 'Pioneer', name: 'CDJ-1000 / Technics 1200（DJ機材）', cat: 'その他', catIcon: '🎛️', user: 'Grant Daddy G Marshall (MC)', price: '¥100,000〜¥200,000', kw: 'Pioneer CDJ Technics 1200 Massive Attack DJ ターンテーブル トリップホップ ブリストル', yt: ['Pioneer CDJ Technics 1200 Massive Attack DJ ターンテーブル トリップホップ', 'Pioneer CDJ DJターンテーブル サウンドデモ'], similar: ['Rane TTM', 'Allen & Heath Xone', 'Vestax PDX'], desc: '', wikiTitle: 'Technics_SL-1200' }
     ]
   },
+
+  {
+    id: 'gorillaz', name: 'Gorillaz', en: 'Gorillaz', genre: 'オルタナティブロック/エレクトロニック/ヒップホップ',
+    since: '1998年〜現在',
+    origin: 'イギリス（ロンドン）',
+    members: 'Damon Albarn (Vo/Key/Gt)\nJamie Hewlett (アートディレクション)',
+    desc: 'Damon AlbarnとJamie Hewlettによるヴァーチャルバンド。ロック・エレクトロニック・ヒップホップを融合し、Clint Eastwood・Feel Good Inc・Stylo等のクロスジャンルヒットを生み出した。',
+    gear: [
+      { id: 'korg-triton-gorillaz', brand: 'Korg', name: 'Triton Music Workstation（Damon Albarn）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥150,000〜¥300,000（中古）', kw: 'Korg Triton Damon Albarn Gorillaz キーボード ワークステーション Feel Good Inc', yt: ['Korg Triton Damon Albarn Gorillaz キーボード Feel Good Inc', 'Korg Triton ワークステーション シンせ サウンドデモ'], similar: ['Korg Karma', 'Roland Fantom', 'Yamaha Motif'], desc: '', wikiTitle: 'Korg_Triton' },
+      { id: 'fender-rhodes-gorillaz', brand: 'Fender', name: 'Rhodes Stage Piano（Damon Albarn）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Fender Rhodes Stage Piano Damon Albarn Gorillaz エレクトリックピアノ Melancholy Hill', yt: ['Fender Rhodes Damon Albarn Gorillaz エレクトリックピアノ Melancholy Hill', 'Fender Rhodes Stage Piano エレピ ヴィンテージ サウンドデモ'], similar: ['Wurlitzer 200A', 'Hohner Clavinet', 'Roland RD-1000'], desc: '', wikiTitle: 'Rhodes_piano' },
+      { id: 'akai-mpc-gorillaz', brand: 'Akai', name: 'MPC3000 サンプラー/シーケンサー', cat: 'ドラムマシン', catIcon: '🥁', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Akai MPC3000 Gorillaz サンプラー シーケンサー ヒップホップ ビート Clint Eastwood', yt: ['Akai MPC3000 Gorillaz サンプラー ヒップホップ Clint Eastwood ビート', 'Akai MPC3000 サンプラーシーケンサー ヴィンテージ サウンドデモ'], similar: ['Akai MPC60', 'Roger Linn LM-1', 'E-mu SP-1200'], desc: '', wikiTitle: 'Akai_MPC' },
+      { id: 'tr808-gorillaz', brand: 'Roland', name: 'TR-808 Rhythm Composer', cat: 'ドラムマシン', catIcon: '🥁', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland TR-808 Gorillaz ドラムマシン エレクトロニック ヒップホップ ビート', yt: ['Roland TR-808 Gorillaz ドラムマシン エレクトロニック', 'Roland TR-808 ドラムマシン ヴィンテージ サウンドデモ'], similar: ['Roland TR-909', 'Oberheim DMX', 'Linn LM-1'], desc: '', wikiTitle: 'Roland_TR-808' },
+      { id: 'telecaster-albarn', brand: 'Fender', name: 'Telecaster（Damon Albarn）', cat: 'ギター', catIcon: '🎸', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Damon Albarn Gorillaz Blur ギター', yt: ['Fender Telecaster Damon Albarn Gorillaz Blur ギター', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'Danelectro'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'roland-juno-gorillaz', brand: 'Roland', name: 'Juno-106（Damon Albarn）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥80,000〜¥180,000（ヴィンテージ）', kw: 'Roland Juno-106 Damon Albarn Gorillaz アナログシンせ パッドサウンド', yt: ['Roland Juno-106 Damon Albarn Gorillaz アナログシンせ パッドサウンド', 'Roland Juno-106 アナログシンせ ヴィンテージ サウンドデモ'], similar: ['Roland Juno-60', 'Korg Polysix', 'Sequential Circuits Prophet-5'], desc: '', wikiTitle: 'Roland_Juno-106' }
+    ]
+  },
+  {
+    id: 'brianeno', name: 'Brian Eno', en: 'Brian Eno', genre: 'アンビエント/エクスペリメンタル/アートロック',
+    since: '1971年〜現在',
+    origin: 'イギリス（サフォーク州ウッドブリッジ）',
+    members: 'Brian Eno (ソロ/プロデューサー)',
+    desc: 'Roxy Music脱退後にアンビエントミュージックを創始したブライアン・イーノ。Discreet Music・Ambient 1からU2・Coldplay・Talkng Headsのプロデュースまで幅広く活動する音楽の革命家。',
+    gear: [
+      { id: 'ems-vcs3-eno', brand: 'EMS', name: 'VCS3 シンせサイザー（Brian Eno）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥500,000〜¥1,500,000（ヴィンテージ）', kw: 'EMS VCS3 Brian Eno Roxy Music アナログシンせ アンビエント 実験音楽', yt: ['EMS VCS3 Brian Eno Roxy Music アナログシンせ アンビエント 実験音楽', 'EMS VCS3 ヴィンテージシンせ サウンドデモ'], similar: ['Moog Minimoog', 'ARP 2600', 'Roland SH-5'], desc: '', wikiTitle: 'EMS_VCS3' },
+      { id: 'revox-a77-eno', brand: 'Revox', name: 'A77 テープレコーダー（Brian Eno テープループ）', cat: 'その他', catIcon: '🎛️', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥50,000〜¥150,000（ヴィンテージ）', kw: 'Revox A77 Brian Eno テープレコーダー テープループ Discreet Music アンビエント', yt: ['Revox A77 Brian Eno テープレコーダー テープループ アンビエント Discreet Music', 'Revox A77 テープレコーダー ヴィンテージ サウンドデモ'], similar: ['Studer A810', 'Echoplex EP-3', 'Roland RE-201'], desc: '', wikiTitle: 'Revox' },
+      { id: 'dx7-eno', brand: 'Yamaha', name: 'DX7（Brian Eno）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥30,000〜¥80,000（ヴィンテージ）', kw: 'Yamaha DX7 Brian Eno FMシンせ アンビエント プロデューサー 80年代', yt: ['Yamaha DX7 Brian Eno FMシンせ アンビエント 80年代', 'Yamaha DX7 FMシンせ ヴィンテージ サウンドデモ'], similar: ['Roland D-50', 'Korg DW-8000', 'Yamaha TX7'], desc: '', wikiTitle: 'Yamaha_DX7' },
+      { id: 'oberheim-eno', brand: 'Oberheim', name: 'Four Voice（Brian Eno）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥300,000〜¥800,000（ヴィンテージ）', kw: 'Oberheim Four Voice Brian Eno ポリシンせ アンビエント Before and After Science', yt: ['Oberheim Four Voice Brian Eno アンビエント ポリシンせ', 'Oberheim Four Voice ヴィンテージポリシンせ サウンドデモ'], similar: ['Sequential Circuits Prophet-5', 'ARP Quadra', 'Roland Jupiter-4'], desc: '', wikiTitle: 'Oberheim_Electronics' },
+      { id: 'space-echo-eno', brand: 'Roland', name: 'Space Echo RE-201（Brian Eno）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland Space Echo RE-201 Brian Eno テープエコー アンビエント Another Green World', yt: ['Roland Space Echo RE-201 Brian Eno テープエコー アンビエント', 'Roland Space Echo RE-201 テープエコー ヴィンテージ サウンドデモ'], similar: ['Echoplex EP-3', 'Roland RE-150', 'Boss DD-7'], desc: '', wikiTitle: 'Roland_Space_Echo' },
+      { id: 'neve8078-eno', brand: 'Neve', name: '8078 コンソール（プロデューサーとして）', cat: 'その他', catIcon: '🎛️', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥5,000,000以上', kw: 'Neve 8078 Brian Eno プロデューサー U2 Talking Heads Coldplay スタジオ コンソール', yt: ['Neve 8078 Brian Eno プロデューサー スタジオ U2 Talking Heads', 'Neve 8078 スタジオコンソール サウンドデモ'], similar: ['SSL 4000', 'API 2488', 'Neve 8028'], desc: '', wikiTitle: 'Neve_Electronics' }
+    ]
+  },
+  {
+    id: 'aphextwin', name: 'Aphex Twin', en: 'Aphex Twin', genre: 'エレクトロニック/アンビエント/IDM/テクノ',
+    since: '1991年〜現在',
+    origin: 'イギリス（コーンウォール）',
+    members: 'Richard D. James (ソロ)',
+    desc: 'コーンウォール出身のRichard D. Jamesによるソロプロジェクト。Selected Ambient Works・Come to Daddy・Windowlickerで知られ、IDMという音楽ジャンルを定義した天才。',
+    gear: [
+      { id: 'korg-ms20-aphex', brand: 'Korg', name: 'MS-20（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Korg MS-20 Aphex Twin Richard James アナログシンせ IDM パッチング', yt: ['Korg MS-20 Aphex Twin Richard James アナログシンせ IDM パッチング', 'Korg MS-20 アナログシンせ ヴィンテージ サウンドデモ'], similar: ['ARP 2600', 'Moog Minimoog', 'Roland SH-101'], desc: '', wikiTitle: 'Korg_MS-20' },
+      { id: 'tb303-aphex', brand: 'Roland', name: 'TB-303 Bass Line（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥60,000〜¥150,000（ヴィンテージ）', kw: 'Roland TB-303 Aphex Twin アシッドテクノ ベースライン IDM', yt: ['Roland TB-303 Aphex Twin アシッドテクノ ベースライン IDM', 'Roland TB-303 Bass Line ヴィンテージシンせ サウンドデモ'], similar: ['Roland TB-3', 'Behringer TD-3', 'Cyclone TT-303'], desc: '', wikiTitle: 'Roland_TB-303' },
+      { id: 'arp2600-aphex', brand: 'ARP', name: '2600（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥500,000〜¥1,500,000（ヴィンテージ）', kw: 'ARP 2600 Aphex Twin Richard James アナログシンせ モジュラー IDM アンビエント', yt: ['ARP 2600 Aphex Twin Richard James アナログシンせ IDM アンビエント', 'ARP 2600 ヴィンテージ セミモジュラーシンせ サウンドデモ'], similar: ['Moog Minimoog', 'EMS VCS3', 'Buchla 200'], desc: '', wikiTitle: 'ARP_2600' },
+      { id: 'dx7-aphex', brand: 'Yamaha', name: 'DX7（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥30,000〜¥80,000（ヴィンテージ）', kw: 'Yamaha DX7 Aphex Twin Richard James FMシンせ Selected Ambient Works IDM', yt: ['Yamaha DX7 Aphex Twin Richard James FMシンせ Selected Ambient Works', 'Yamaha DX7 FMシンせ ヴィンテージ サウンドデモ'], similar: ['Yamaha TX7', 'Korg DW-8000', 'Roland D-50'], desc: '', wikiTitle: 'Yamaha_DX7' },
+      { id: 'atari-st-aphex', brand: 'Atari', name: 'ST コンピュータ（シーケンシング）', cat: 'その他', catIcon: '🎛️', user: 'Richard D. James (ソロ)', price: '¥20,000〜¥80,000（ヴィンテージ）', kw: 'Atari ST Aphex Twin Richard James シーケンサー MIDIコンピュータ IDM テクノ', yt: ['Atari ST Aphex Twin Richard James MIDIシーケンサー IDM テクノ', 'Atari ST MIDIコンピュータ ヴィンテージ DAW サウンドデモ'], similar: ['Commodore Amiga', 'Apple Macintosh', 'Notator/Logic'], desc: '', wikiTitle: 'Atari_ST' },
+      { id: 'elka-synthex-aphex', brand: 'Elka', name: 'Synthex（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥300,000〜¥800,000（ヴィンテージ）', kw: 'Elka Synthex Aphex Twin Richard James アナログポリシンせ Selected Ambient Works', yt: ['Elka Synthex Aphex Twin Richard James ポリシンせ Selected Ambient Works', 'Elka Synthex ヴィンテージポリシンせ サウンドデモ'], similar: ['Sequential Circuits Prophet-5', 'Oberheim OBX', 'Roland Jupiter-8'], desc: '', wikiTitle: 'Elka_Synthex' }
+    ]
+  },
 ];
