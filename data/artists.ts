@@ -5091,4 +5091,35 @@ export const DB: Artist[] = [
       { id: 'pearl-manics', brand: 'Pearl', name: 'Masters Custom（Sean Moore）', cat: 'ドラム', catIcon: '🥁', user: 'Sean Moore (Dr)', price: '¥400,000〜¥800,000', kw: 'Pearl Masters Sean Moore Manic Street Preachers ドラム ウェールズ', yt: ['Pearl Masters Sean Moore Manic Street Preachers ドラム', 'Pearl Masters ドラムキット サウンドデモ'], similar: ['Ludwig Classic Maple', 'Tama Starclassic', 'DW Collector'], desc: '', wikiTitle: 'Pearl_Drums' }
     ]
   },
+
+  {
+    id: 'theverve', name: 'The Verve', en: 'The Verve', genre: 'ブリットポップ/サイケデリックロック/オルタナティブ',
+    since: '1990年〜1999年・2007年〜2009年',
+    origin: 'イギリス（ウィガン）',
+    members: 'Richard Ashcroft (Vo)\nNick McCabe (Gt)\nSimon Jones (Ba)\nPeter Salisbury (Dr)',
+    desc: 'ウィガン出身の4人組。Nick McCabeの渦巻くサイケデリックギターとRichard Ashcroftの詩的ボーカルが融合。Bitter Sweet SymphonyとThe Drugsは90年代UKロックの頂点に立つ。',
+    gear: [
+      { id: 'strat-mccabe', brand: 'Fender', name: 'Stratocaster（Nick McCabe）', cat: 'ギター', catIcon: '🎸', user: 'Nick McCabe (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Nick McCabe The Verve ギター サイケデリック Bitter Sweet Symphony The Drugs', yt: ['Fender Stratocaster Nick McCabe The Verve サイケデリック Bitter Sweet Symphony', 'Fender Stratocaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Jaguar', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'vox-verve', brand: 'Vox', name: 'AC30（Nick McCabe）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Nick McCabe (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Nick McCabe The Verve ブリティッシュアンプ サイケデリック', yt: ['Vox AC30 Nick McCabe The Verve ブリティッシュアンプ サイケデリック', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Marshall JTM45', 'Orange Rockerverb'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'space-echo-verve', brand: 'Roland', name: 'Space Echo RE-201（Nick McCabe）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Nick McCabe (Gt)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland Space Echo RE-201 Nick McCabe The Verve テープエコー サイケデリック 渦巻き', yt: ['Roland Space Echo RE-201 Nick McCabe The Verve サイケデリック テープエコー', 'Roland Space Echo RE-201 テープエコー ヴィンテージ サウンドデモ'], similar: ['Echoplex EP-3', 'Boss DD-7', 'Strymon El Capistan'], desc: '', wikiTitle: 'Roland_Space_Echo' },
+      { id: 'bigmuff-verve', brand: 'Electro-Harmonix', name: 'Big Muff Pi（Nick McCabe）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Nick McCabe (Gt)', price: '¥15,000〜¥25,000', kw: 'Electro-Harmonix Big Muff Nick McCabe The Verve ファズ サイケデリック ウォール', yt: ['Electro-Harmonix Big Muff Nick McCabe The Verve サイケデリック ファズ', 'Big Muff Pi ファズペダル サウンドデモ'], similar: ['Boss DS-1', 'Zvex Fuzz Factory', 'Way Huge Swollen Pickle'], desc: '', wikiTitle: 'Big_Muff' },
+      { id: 'precision-jones', brand: 'Fender', name: 'Precision Bass（Simon Jones）', cat: 'ベース', catIcon: '🎸', user: 'Simon Jones (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Simon Jones The Verve ベース ブリットポップ', yt: ['Fender Precision Bass Simon Jones The Verve ベース ブリットポップ', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Rickenbacker 4001'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'boss-ph2-verve', brand: 'Boss', name: 'PH-2 Super Phaser（Nick McCabe）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Nick McCabe (Gt)', price: '¥8,000〜¥18,000（中古）', kw: 'Boss PH-2 Super Phaser Nick McCabe The Verve フェイザー サイケデリック うねり', yt: ['Boss PH-2 Super Phaser Nick McCabe The Verve フェイザー サイケデリック', 'Boss PH-2 フェイザー ペダル サウンドデモ'], similar: ['MXR Phase 90', 'Electro-Harmonix Small Stone', 'DOD Phasor 201'], desc: '', wikiTitle: 'Boss_PH-2' }
+    ]
+  },
+  {
+    id: 'primalscream', name: 'Primal Scream', en: 'Primal Scream', genre: 'オルタナティブロック/アシッドハウス/ダンスロック',
+    since: '1982年〜現在',
+    origin: 'イギリス（グラスゴー）',
+    members: 'Bobby Gillespie (Vo)\nAndrew Innes (Gt)\nRobert Young (Gt)\nMartin Duffy (Key)\nGary Mani Mounfield (Ba)\nDarrin Mooney (Dr)',
+    desc: 'グラスゴー出身のバンド。Screamadelicaでロックとアシッドハウスを融合させ時代を変えた。Andrew Innesのハードなリフとロールする電子ビートが共存する唯一無二のサウンドを持つ。',
+    gear: [
+      { id: 'lespaul-innes', brand: 'Gibson', name: 'Les Paul Standard（Andrew Innes）', cat: 'ギター', catIcon: '🎸', user: 'Andrew Innes (Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Andrew Innes Primal Scream ギター ハードロック Rocks Kowalski', yt: ['Gibson Les Paul Andrew Innes Primal Scream Rocks Kowalski ハードロック', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Gibson SG', 'Fender Telecaster', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
+      { id: 'hammond-duffy', brand: 'Hammond', name: 'B-3（Martin Duffy）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Martin Duffy (Key)', price: '¥500,000〜¥1,200,000', kw: 'Hammond B-3 Martin Duffy Primal Scream オルガン Movin On Up Come Together', yt: ['Hammond B-3 Martin Duffy Primal Scream オルガン Movin On Up Come Together', 'Hammond B-3 オルガン サウンドデモ'], similar: ['Vox Continental', 'Farfisa Organ', 'Crumar Organizer'], desc: '', wikiTitle: 'Hammond_organ' },
+      { id: 'tr808-primal', brand: 'Roland', name: 'TR-808 Rhythm Composer（Screamadelica）', cat: 'ドラムマシン', catIcon: '🥁', user: 'Bobby Gillespie (Vo)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland TR-808 Primal Scream Screamadelica アシッドハウス ドラムマシン Come Together', yt: ['Roland TR-808 Primal Scream Screamadelica アシッドハウス Come Together', 'Roland TR-808 ドラムマシン ヴィンテージ サウンドデモ'], similar: ['Roland TR-909', 'Oberheim DMX', 'Linn LM-1'], desc: '', wikiTitle: 'Roland_TR-808' },
+      { id: 'rick4001-mani', brand: 'Rickenbacker', name: '4001（Gary Mani Mounfield）', cat: 'ベース', catIcon: '🎸', user: 'Gary Mani Mounfield (Ba)', price: '¥220,000〜¥380,000', kw: 'Rickenbacker 4001 Mani Primal Scream Stone Roses ベース リッケンバッカー', yt: ['Rickenbacker 4001 Mani Primal Scream Stone Roses ベース', 'Rickenbacker 4001 ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Fender Jazz Bass', 'Music Man StingRay'], desc: '', wikiTitle: 'Rickenbacker_4001' },
+      { id: 'marshall-primal', brand: 'Marshall', name: 'JCM 800（Andrew Innes）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Andrew Innes (Gt)', price: '¥250,000〜¥450,000', kw: 'Marshall JCM 800 Andrew Innes Primal Scream ギターアンプ ハードロック Rocks', yt: ['Marshall JCM 800 Andrew Innes Primal Scream Rocks ハードロック', 'Marshall JCM 800 ギターアンプ サウンドデモ'], similar: ['Vox AC30', 'Orange Rockerverb', 'Hiwatt DR103'], desc: '', wikiTitle: 'Marshall_JCM800' },
+      { id: 'tb303-primal', brand: 'Roland', name: 'TB-303 Bass Line（Screamadelica）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Bobby Gillespie (Vo)', price: '¥60,000〜¥150,000（ヴィンテージ）', kw: 'Roland TB-303 Primal Scream Screamadelica アシッドベースライン Loaded Come Together', yt: ['Roland TB-303 Primal Scream Screamadelica アシッドベースライン Loaded', 'Roland TB-303 Bass Line ヴィンテージシンせ サウンドデモ'], similar: ['Roland TB-3', 'Behringer TD-3', 'Cyclone TT-303'], desc: '', wikiTitle: 'Roland_TB-303' }
+    ]
+  },
 ];

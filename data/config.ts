@@ -292,4 +292,6 @@ export const ARTIST_KANA: Record<string, string> = {
   'littlesimz':        'リトルシムズ Little Simz Simbi Ajikawo Sometimes I Might Be Introvert Grey Area No Thank You Venom Introvert Point and Kill ヒップホップ ネオソウル Mercury Prize',
   'thelibertines':     'ザリバティーンズ The Libertines Pete Doherty Carl Barat John Hassall Gary Powell Up the Bracket Can You Stand Me Now What Katie Did Time for Heroes インディーロック ガレージ',
   'manicstreetpreachers': 'マニックストリートプリーチャーズ Manic Street Preachers James Dean Bradfield Nicky Wire Sean Moore Richey Edwards A Design for Life If You Tolerate This Motorcycle Emptiness ウェールズ オルタナ',
+  'theverve':          'ザヴァーヴ The Verve Richard Ashcroft Nick McCabe Simon Jones Peter Salisbury Bitter Sweet Symphony The Drugs Dont Work Lucky Man Sonnet ブリットポップ サイケデリック',
+  'primalscream':      'プライマルスクリーム Primal Scream Bobby Gillespie Andrew Innes Mani Martin Duffy Movin On Up Loaded Come Together Rocks Kowalski Screamadelica アシッドハウス グラスゴー',
 };
