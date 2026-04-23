@@ -5122,4 +5122,22 @@ export const DB: Artist[] = [
       { id: 'tb303-primal', brand: 'Roland', name: 'TB-303 Bass Line（Screamadelica）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Bobby Gillespie (Vo)', price: '¥60,000〜¥150,000（ヴィンテージ）', kw: 'Roland TB-303 Primal Scream Screamadelica アシッドベースライン Loaded Come Together', yt: ['Roland TB-303 Primal Scream Screamadelica アシッドベースライン Loaded', 'Roland TB-303 Bass Line ヴィンテージシンせ サウンドデモ'], similar: ['Roland TB-3', 'Behringer TD-3', 'Cyclone TT-303'], desc: '', wikiTitle: 'Roland_TB-303' }
     ]
   },
+
+  {
+    id: 'suchmos', name: 'Suchmos', en: 'Suchmos', genre: 'ネオソウル / シティポップ / ファンク / R&B',
+    since: '2013年〜2019年',
+    origin: '神奈川県横浜市',
+    members: 'YONCE (Vo) / HSU (Ba) / TAI (Gt) / TAIKING (Gt) / KCEE (DJ/Key) / OK (Dr)',
+    desc: '横浜出身の6人組。ネオソウル・ファンク・シティポップを独自に昇華し、STAY TUNEのヒットで一躍注目を集めた。洗練されたグルーヴとライブパフォーマンスで次世代の邦楽シーンを牽引した。',
+    gear: [
+      { id: 'jazzbass-hsu', brand: 'Fender', name: 'Jazz Bass（HSU）', cat: 'ベース', catIcon: '🎸', user: 'HSU (Ba)', price: '¥130,000〜¥250,000', kw: 'Fender Jazz Bass HSU Suchmos ベース ネオソウル ファンク グルーヴ STAY TUNE', yt: ['Fender Jazz Bass HSU Suchmos ネオソウル ファンク グルーヴ STAY TUNE', 'Fender Jazz Bass ジャズベース サウンドデモ'], similar: ['Fender Precision Bass', 'Music Man StingRay', 'Sadowsky Metro'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'strat-tai', brand: 'Fender', name: 'Stratocaster（TAI）', cat: 'ギター', catIcon: '🎸', user: 'TAI (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster TAI Suchmos ギター ネオソウル シングルコイル クリーントーン', yt: ['Fender Stratocaster TAI Suchmos ネオソウル ギター クリーントーン', 'Fender Stratocaster ストラトキャスター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'PRS Silver Sky'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'es335-tai', brand: 'Gibson', name: 'ES-335（TAI）', cat: 'ギター', catIcon: '🎸', user: 'TAI (Gt)', price: '¥380,000〜¥600,000', kw: 'Gibson ES-335 TAI Suchmos セミアコ ギター ネオソウル ジャズ YMM', yt: ['Gibson ES-335 TAI Suchmos セミアコ ネオソウル YMM ギター', 'Gibson ES-335 セミアコ ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-330', 'Epiphone Casino'], desc: '', wikiTitle: 'Gibson_ES-335' },
+      { id: 'telecaster-taiking', brand: 'Fender', name: 'Telecaster（TAIKING）', cat: 'ギター', catIcon: '🎸', user: 'TAIKING (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster TAIKING Suchmos ギター リズムギター シティポップ', yt: ['Fender Telecaster TAIKING Suchmos リズムギター シティポップ', 'Fender Telecaster テレキャスター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'Fender Jazzmaster'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'twin-reverb-suchmos', brand: 'Fender', name: 'Twin Reverb（TAI / TAIKING）', cat: 'ギターアンプ', catIcon: '🔊', user: 'TAI (Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Twin Reverb Suchmos TAI TAIKING ギターアンプ クリーン ネオソウル', yt: ['Fender Twin Reverb Suchmos ギターアンプ クリーントーン ネオソウル', 'Fender Twin Reverb コンボアンプ サウンドデモ'], similar: ['Roland JC-120', 'Vox AC30', 'Fender Deluxe Reverb'], desc: '', wikiTitle: 'Fender_Twin_Reverb' },
+      { id: 'pioneer-cdj-kcee', brand: 'Pioneer DJ', name: 'CDJ-2000NXS2（KCEE）', cat: 'その他', catIcon: '🎛️', user: 'KCEE (DJ/Key)', price: '¥200,000〜¥300,000（2台セット）', kw: 'Pioneer CDJ-2000NXS2 KCEE Suchmos DJ ターンテーブル ライブ', yt: ['Pioneer CDJ-2000NXS2 KCEE Suchmos DJ ターンテーブル ライブ', 'Pioneer CDJ-2000NXS2 DJ プレーヤー サウンドデモ'], similar: ['Technics SL-1200', 'Rane Seventy-Two', 'Allen & Heath Xone:96'], desc: '', wikiTitle: 'Pioneer_DJ' },
+      { id: 'korg-minilogue-kcee', brand: 'Korg', name: 'Minilogue（KCEE）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'KCEE (DJ/Key)', price: '¥40,000〜¥60,000', kw: 'Korg Minilogue KCEE Suchmos シンせ アナログ キーボード ネオソウル', yt: ['Korg Minilogue KCEE Suchmos アナログシンせ ネオソウル', 'Korg Minilogue アナログシンせ サウンドデモ'], similar: ['Korg Prologue', 'Roland JU-06', 'Moog Grandmother'], desc: '', wikiTitle: 'Korg_Minilogue' },
+      { id: 'pearl-ok', brand: 'Pearl', name: 'Masters Custom（OK）', cat: 'ドラム', catIcon: '🥁', user: 'OK (Dr)', price: '¥400,000〜¥800,000', kw: 'Pearl Masters Custom OK Suchmos ドラム ネオソウル ファンク グルーヴ', yt: ['Pearl Masters OK Suchmos ドラム ネオソウル ファンク グルーヴ', 'Pearl Masters Custom ドラムキット サウンドデモ'], similar: ['DW Collector', 'Tama Starclassic', 'Ludwig Classic Maple'], desc: '', wikiTitle: 'Pearl_Drums' }
+    ]
+  },
 ];
