@@ -4773,4 +4773,95 @@ export const DB: Artist[] = [
       { id: 'synclavier-no', brand: 'New England Digital', name: 'Synclavier', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Gillian Gilbert (Key/Gt)', price: '¥2,000,000以上（ヴィンテージ）', kw: 'Synclavier New Order Gillian Gilbert デジタルシンせ サンプラー 先端技術', yt: ['Synclavier New Order Gillian Gilbert デジタルシンせ サンプラー', 'Synclavier デジタルシンせ ヴィンテージ サウンドデモ'], similar: ['Fairlight CMI', 'Emulator II', 'Kurzweil K250'], desc: '', wikiTitle: 'Synclavier' }
     ]
   },
+
+  {
+    id: 'thepolice', name: 'The Police', en: 'The Police', genre: 'ニューウェーブ/レゲエロック/ポストパンク',
+    since: '1977年〜1986年・2007年〜2008年',
+    origin: 'イギリス（ロンドン）',
+    members: 'Sting (Ba/Vo)\nAndy Summers (Gt)\nStewart Copeland (Dr)',
+    desc: 'ロンドン出身の3人組。レゲエのリズムと鋭いポストパンクサウンドを融合させ、Every Breath You Take・Roxanne・Message in a Bottleで世界的成功を収めた。',
+    gear: [
+      { id: 'precision-sting', brand: 'Fender', name: 'Precision Bass（Sting）', cat: 'ベース', catIcon: '🎸', user: 'Sting (Ba/Vo)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Sting The Police ベース レゲエロック', yt: ['Fender Precision Bass Sting The Police ベース レゲエロック', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Rickenbacker 4001'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'telecaster-summers', brand: 'Fender', name: 'Telecaster（Andy Summers）', cat: 'ギター', catIcon: '🎸', user: 'Andy Summers (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Andy Summers The Police ギター コーラス アルペジオ', yt: ['Fender Telecaster Andy Summers The Police コーラス アルペジオ', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'Rickenbacker 330'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'gr300-summers', brand: 'Roland', name: 'GR-300 Guitar Synthesizer（Andy Summers）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Andy Summers (Gt)', price: '¥80,000〜¥180,000（ヴィンテージ）', kw: 'Roland GR-300 Guitar Synthesizer Andy Summers The Police ギターシンせ Invisible Sun', yt: ['Roland GR-300 Andy Summers The Police ギターシンせ Invisible Sun', 'Roland GR-300 Guitar Synth ヴィンテージ サウンドデモ'], similar: ['Roland GR-55', 'Roland VG-88', 'Fishman TriplePlay'], desc: '', wikiTitle: 'Roland_GR-300' },
+      { id: 'boss-ce1-police', brand: 'Boss', name: 'CE-1 Chorus Ensemble（Andy Summers）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Andy Summers (Gt)', price: '¥60,000〜¥120,000（ヴィンテージ）', kw: 'Boss CE-1 Chorus Andy Summers The Police コーラス Message in a Bottle Every Breath', yt: ['Boss CE-1 Chorus Andy Summers The Police Message in a Bottle コーラス', 'Boss CE-1 Chorus Ensemble ヴィンテージ コーラス サウンドデモ'], similar: ['Roland CE-1', 'Boss CE-2', 'Electro-Harmonix Small Clone'], desc: '', wikiTitle: 'Boss_CE-1' },
+      { id: 'vox-summers', brand: 'Vox', name: 'AC30（Andy Summers）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Andy Summers (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Andy Summers The Police ブリティッシュアンプ クリーントーン', yt: ['Vox AC30 Andy Summers The Police ブリティッシュアンプ', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Deluxe Reverb', 'Marshall JTM45', 'Roland Jazz Chorus'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'pearl-copeland', brand: 'Pearl', name: 'Custom Drum Kit（Stewart Copeland）', cat: 'ドラム', catIcon: '🥁', user: 'Stewart Copeland (Dr)', price: '¥400,000〜¥800,000', kw: 'Pearl Custom Stewart Copeland The Police ドラム レゲエリズム クロスリズム', yt: ['Pearl Custom Stewart Copeland The Police ドラム レゲエリズム', 'Pearl Custom ドラムキット サウンドデモ'], similar: ['Ludwig Classic Maple', 'Tama Starclassic', 'DW Collector'], desc: '', wikiTitle: 'Pearl_Drums' },
+      { id: 'ampeg-sting', brand: 'Ampeg', name: 'SVT Classic（Sting）', cat: 'ベースアンプ', catIcon: '🔊', user: 'Sting (Ba/Vo)', price: '¥250,000〜¥400,000', kw: 'Ampeg SVT Sting The Police ベースアンプ パワフル', yt: ['Ampeg SVT Sting The Police ベースアンプ', 'Ampeg SVT Classic ベースアンプ サウンドデモ'], similar: ['Marshall Super Bass', 'Orange AD200', 'Trace Elliot'], desc: '', wikiTitle: 'Ampeg_SVT' }
+    ]
+  },
+  {
+    id: 'thewho', name: 'The Who', en: 'The Who', genre: 'ハードロック/モッズロック/ロック',
+    since: '1964年〜現在',
+    origin: 'イギリス（ロンドン）',
+    members: 'Roger Daltrey (Vo)\nPete Townshend (Gt)\nJohn Entwistle (Ba)\nKeith Moon (Dr)',
+    desc: 'ロンドン・モッズシーン出身の4人組。ギター破壊・爆発的ライブパフォーマンスで知られ、My GenerationからTommy・Quadrophenia等ロック史に残る名盤を制作。',
+    gear: [
+      { id: 'sg-townshend', brand: 'Gibson', name: 'SG Special（Pete Townshend 初期）', cat: 'ギター', catIcon: '🎸', user: 'Pete Townshend (Gt)', price: '¥150,000〜¥300,000', kw: 'Gibson SG Special Pete Townshend The Who 初期 My Generation ギター破壊 モッズ', yt: ['Gibson SG Special Pete Townshend The Who 初期 My Generation ギター破壊', 'Gibson SG Special ギター サウンドデモ'], similar: ['Gibson SG Standard', 'Rickenbacker 1998', 'Fender Stratocaster'], desc: '', wikiTitle: 'Gibson_SG' },
+      { id: 'strat-townshend', brand: 'Fender', name: 'Stratocaster（Pete Townshend）', cat: 'ギター', catIcon: '🎸', user: 'Pete Townshend (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Pete Townshend The Who ギター Baba ORiley Wont Get Fooled Again', yt: ['Fender Stratocaster Pete Townshend The Who Baba ORiley ギター', 'Stratocaster フェンダー ギター サウンドデモ'], similar: ['Gibson SG', 'Rickenbacker 1998', 'Hiwatt guitar'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'hiwatt-townshend', brand: 'Hiwatt', name: 'DR103 Custom 100（Pete Townshend）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Pete Townshend (Gt)', price: '¥300,000〜¥600,000', kw: 'Hiwatt DR103 Pete Townshend The Who ギターアンプ 大音量 ブリティッシュ', yt: ['Hiwatt DR103 Pete Townshend The Who 大音量 ブリティッシュアンプ', 'Hiwatt DR103 Custom 100 ギターアンプ サウンドデモ'], similar: ['Marshall Super Lead', 'Orange Rockerverb', 'Vox AC30'], desc: '', wikiTitle: 'Hiwatt' },
+      { id: 'jazzbass-entwistle', brand: 'Fender', name: 'Jazz Bass カスタム（John Entwistle）', cat: 'ベース', catIcon: '🎸', user: 'John Entwistle (Ba)', price: '¥130,000〜¥250,000', kw: 'Fender Jazz Bass John Entwistle The Who ベース Thunderfingers アグレッシブ', yt: ['Fender Jazz Bass John Entwistle The Who Thunderfingers ベース', 'Jazz Bass フェンダー ベース サウンドデモ'], similar: ['Rickenbacker 4001', 'Gibson Thunderbird', 'Music Man StingRay'], desc: '', wikiTitle: 'John_Entwistle' },
+      { id: 'marshall-entwistle', brand: 'Marshall', name: 'Super Bass 1992（John Entwistle）', cat: 'ベースアンプ', catIcon: '🔊', user: 'John Entwistle (Ba)', price: '¥250,000〜¥450,000（ヴィンテージ）', kw: 'Marshall Super Bass 1992 John Entwistle The Who ベースアンプ 大音量 ブリティッシュ', yt: ['Marshall Super Bass John Entwistle The Who ベースアンプ 大音量', 'Marshall Super Bass 1992 ベースアンプ ヴィンテージ サウンドデモ'], similar: ['Ampeg SVT', 'Orange AD200', 'Hiwatt DR103'], desc: '', wikiTitle: 'Marshall_amplification' },
+      { id: 'ludwig-moon', brand: 'Ludwig', name: 'カスタム大型ドラムキット（Keith Moon）', cat: 'ドラム', catIcon: '🥁', user: 'Keith Moon (Dr)', price: '¥600,000〜¥1,500,000', kw: 'Ludwig Custom Keith Moon The Who ドラム 大型キット 爆発的 ワイルド', yt: ['Ludwig Custom Keith Moon The Who ドラム 爆発的 ワイルドプレイ', 'Ludwig Custom ドラムキット サウンドデモ'], similar: ['Premier Custom', 'Gretsch Broadkaster', 'Slingerland'], desc: '', wikiTitle: 'Keith_Moon' }
+    ]
+  },
+  {
+    id: 'thekinks', name: 'The Kinks', en: 'The Kinks', genre: 'ブリティッシュロック/キンクスサウンド',
+    since: '1964年〜1996年',
+    origin: 'イギリス（ロンドン）',
+    members: 'Ray Davies (Vo/Gt)\nDave Davies (Gt)\nPete Quaife (Ba)\nMick Avory (Dr)',
+    desc: 'ロンドン出身の4人組。Dave DaviesがスピーカーをカミソリでスリットしてYou Really Got Meの歪んだリフを生み出し、ロックの歴史を変えた。',
+    gear: [
+      { id: 'harmony-dave', brand: 'Harmony', name: 'H77（Dave Davies ファズトーン）', cat: 'ギター', catIcon: '🎸', user: 'Dave Davies (Gt)', price: '¥30,000〜¥100,000（ヴィンテージ）', kw: 'Harmony H77 Dave Davies The Kinks You Really Got Me ファズ ヴィンテージ ガレージ', yt: ['Harmony H77 Dave Davies The Kinks You Really Got Me ファズ ヴィンテージ', 'Harmony H77 ヴィンテージギター サウンドデモ'], similar: ['Silvertone 1448', 'Danelectro U2', 'National Duolian'], desc: '', wikiTitle: 'Dave_Davies' },
+      { id: 'vox-kinks', brand: 'Vox', name: 'AC30（Dave Davies スラッシュスピーカー）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Dave Davies (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Dave Davies The Kinks スラッシュスピーカー ファズ You Really Got Me', yt: ['Vox AC30 Dave Davies The Kinks スラッシュスピーカー You Really Got Me', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Marshall Bluesbreaker', 'Fender Tweed Deluxe', 'Premier 45'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'framus-ray', brand: 'Framus', name: '12弦ギター（Ray Davies）', cat: 'ギター', catIcon: '🎸', user: 'Ray Davies (Vo/Gt)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Framus 12弦ギター Ray Davies The Kinks Sunny Afternoon Waterloo Sunset 12弦', yt: ['Framus 12弦ギター Ray Davies The Kinks Waterloo Sunset', 'Framus 12弦 ヴィンテージギター サウンドデモ'], similar: ['Rickenbacker 330/12', 'Fender Electric XII', 'Guild F-512'], desc: '', wikiTitle: 'Ray_Davies' },
+      { id: 'precision-kinks', brand: 'Fender', name: 'Precision Bass（Pete Quaife）', cat: 'ベース', catIcon: '🎸', user: 'Pete Quaife (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Pete Quaife The Kinks ベース ブリティッシュロック', yt: ['Fender Precision Bass Pete Quaife The Kinks ベース', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Hofner Violin Bass', 'Rickenbacker 4001'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'dallas-rangemaster', brand: 'Dallas Arbiter', name: 'Rangemaster Treble Booster（Dave Davies）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Dave Davies (Gt)', price: '¥60,000〜¥150,000（ヴィンテージ）', kw: 'Dallas Arbiter Rangemaster Treble Booster Dave Davies The Kinks トレブルブースター ヴィンテージ', yt: ['Dallas Rangemaster Treble Booster Dave Davies The Kinks ヴィンテージ', 'Dallas Rangemaster Treble Booster ヴィンテージ エフェクト サウンドデモ'], similar: ['Hornby Skewes Treble Booster', 'Naga Viper', 'MXR MicroAmp'], desc: '', wikiTitle: 'Dallas_Rangemaster' }
+    ]
+  },
+  {
+    id: 'genesis', name: 'Genesis', en: 'Genesis', genre: 'プログレッシブロック/ポップロック',
+    since: '1967年〜現在',
+    origin: 'イギリス（サリー州）',
+    members: 'Peter Gabriel (Vo)\nPhil Collins (Vo/Dr)\nTony Banks (Key)\nMike Rutherford (Gt/Ba)\nSteve Hackett (Gt)',
+    desc: '英国サリー州出身のバンド。Peter Gabriel時代の壮大なプログレから、Phil Collins主導のポップ路線まで幅広い音楽性を持つ。In the Air Tonightのゲートリバーブが特に有名。',
+    gear: [
+      { id: 'mellotron-genesis', brand: 'Mellotron', name: 'M400（Tony Banks）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Tony Banks (Key)', price: '¥800,000〜¥2,000,000（ヴィンテージ）', kw: 'Mellotron M400 Tony Banks Genesis プログレ キーボード Watcher of the Skies Firth of Fifth', yt: ['Mellotron M400 Tony Banks Genesis プログレ Watcher of the Skies', 'Mellotron M400 キーボード ヴィンテージ サウンドデモ'], similar: ['Chamberlin', 'Novatron', 'GForce M-Tron'], desc: '', wikiTitle: 'Mellotron' },
+      { id: 'hammond-genesis', brand: 'Hammond', name: 'B-3（Tony Banks）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Tony Banks (Key)', price: '¥500,000〜¥1,200,000', kw: 'Hammond B-3 Tony Banks Genesis プログレ オルガン キーボード Firth of Fifth', yt: ['Hammond B-3 Tony Banks Genesis プログレ オルガン Firth of Fifth', 'Hammond B-3 オルガン サウンドデモ'], similar: ['Vox Continental', 'Farfisa Organ', 'Crumar Organizer'], desc: '', wikiTitle: 'Hammond_organ' },
+      { id: 'minimoog-genesis', brand: 'Moog', name: 'Minimoog（Tony Banks）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Tony Banks (Key)', price: '¥200,000〜¥500,000（ヴィンテージ）', kw: 'Moog Minimoog Tony Banks Genesis プログレ シンせ リード', yt: ['Moog Minimoog Tony Banks Genesis プログレ シンせ', 'Minimoog ヴィンテージ モノシンせ サウンドデモ'], similar: ['ARP Odyssey', 'Roland SH-5', 'Korg 700'], desc: '', wikiTitle: 'Minimoog' },
+      { id: 'lespaul-hackett', brand: 'Gibson', name: 'Les Paul Standard（Steve Hackett）', cat: 'ギター', catIcon: '🎸', user: 'Steve Hackett (Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Steve Hackett Genesis プログレ ギター タッピング ライトハンド', yt: ['Gibson Les Paul Steve Hackett Genesis プログレ タッピング ライトハンド', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson SG', 'PRS McCarty'], desc: '', wikiTitle: 'Steve_Hackett' },
+      { id: 'ludwig-collins', brand: 'Ludwig', name: 'Classic Maple（Phil Collins ゲートリバーブ）', cat: 'ドラム', catIcon: '🥁', user: 'Phil Collins (Vo/Dr)', price: '¥300,000〜¥600,000', kw: 'Ludwig Classic Maple Phil Collins Genesis ドラム In the Air Tonight ゲートリバーブ', yt: ['Ludwig Phil Collins Genesis In the Air Tonight ドラム ゲートリバーブ', 'Ludwig Classic Maple ドラムキット サウンドデモ'], similar: ['Pearl Masters', 'Slingerland', 'Gretsch Broadkaster'], desc: '', wikiTitle: 'Phil_Collins' },
+      { id: 'shergold-rutherford', brand: 'Shergold', name: 'Marathon 12弦ベース（Mike Rutherford）', cat: 'ベース', catIcon: '🎸', user: 'Mike Rutherford (Gt/Ba)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Shergold Marathon 12弦ベース Mike Rutherford Genesis プログレ ダブルネック', yt: ['Shergold Marathon Bass Mike Rutherford Genesis プログレ 12弦ベース', 'Shergold Marathon ベース ヴィンテージ サウンドデモ'], similar: ['Rickenbacker 4001', 'Fender Precision Bass', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Mike_Rutherford' }
+    ]
+  },
+  {
+    id: 'yes', name: 'Yes', en: 'Yes', genre: 'プログレッシブロック',
+    since: '1968年〜現在',
+    origin: 'イギリス（ロンドン）',
+    members: 'Jon Anderson (Vo)\nChris Squire (Ba/Vo)\nSteve Howe (Gt)\nRick Wakeman (Key)\nBill Bruford (Dr)',
+    desc: 'ロンドン出身のプログレ界の頂点。Roundabout・Owner of a Lonely Heart・Close to the Edgeなど複雑な楽曲構成と超絶技巧メンバーで知られる。',
+    gear: [
+      { id: 'es175-howe', brand: 'Gibson', name: 'ES-175（Steve Howe）', cat: 'ギター', catIcon: '🎸', user: 'Steve Howe (Gt)', price: '¥400,000〜¥800,000', kw: 'Gibson ES-175 Steve Howe Yes プログレ ギター Roundabout ジャズ フルアコ', yt: ['Gibson ES-175 Steve Howe Yes プログレ Roundabout ジャズギター', 'Gibson ES-175 フルアコ ジャズギター サウンドデモ'], similar: ['Gibson L-5', 'Epiphone Emperor', 'Gibson ES-335'], desc: '', wikiTitle: 'Gibson_ES-175' },
+      { id: 'rick4001-squire', brand: 'Rickenbacker', name: '4001（Chris Squire）', cat: 'ベース', catIcon: '🎸', user: 'Chris Squire (Ba/Vo)', price: '¥220,000〜¥380,000', kw: 'Rickenbacker 4001 Chris Squire Yes ベース プログレ Roundabout リードベース', yt: ['Rickenbacker 4001 Chris Squire Yes Roundabout プログレ ベース', 'Rickenbacker 4001 ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Gibson Thunderbird', 'Music Man StingRay'], desc: '', wikiTitle: 'Rickenbacker_4001' },
+      { id: 'mellotron-yes', brand: 'Mellotron', name: 'M400（Rick Wakeman）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Rick Wakeman (Key)', price: '¥800,000〜¥2,000,000（ヴィンテージ）', kw: 'Mellotron M400 Rick Wakeman Yes プログレ キーボード Close to the Edge', yt: ['Mellotron M400 Rick Wakeman Yes プログレ Close to the Edge', 'Mellotron M400 キーボード ヴィンテージ サウンドデモ'], similar: ['Chamberlin', 'Novatron', 'GForce M-Tron'], desc: '', wikiTitle: 'Mellotron' },
+      { id: 'hammond-yes', brand: 'Hammond', name: 'B-3（Rick Wakeman）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Rick Wakeman (Key)', price: '¥500,000〜¥1,200,000', kw: 'Hammond B-3 Rick Wakeman Yes プログレ オルガン キーボード', yt: ['Hammond B-3 Rick Wakeman Yes プログレ オルガン', 'Hammond B-3 オルガン サウンドデモ'], similar: ['Vox Continental', 'Farfisa', 'Crumar Organizer'], desc: '', wikiTitle: 'Hammond_organ' },
+      { id: 'minimoog-yes', brand: 'Moog', name: 'Minimoog（Rick Wakeman）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Rick Wakeman (Key)', price: '¥200,000〜¥500,000（ヴィンテージ）', kw: 'Moog Minimoog Rick Wakeman Yes プログレ シンせ Close to the Edge', yt: ['Moog Minimoog Rick Wakeman Yes プログレ シンせ', 'Minimoog ヴィンテージ モノシンせ サウンドデモ'], similar: ['ARP Odyssey', 'Roland SH-5', 'Sequential Circuits Prophet-5'], desc: '', wikiTitle: 'Minimoog' },
+      { id: 'marshall-squire', brand: 'Marshall', name: 'Super Lead 100W（Chris Squire）', cat: 'ベースアンプ', catIcon: '🔊', user: 'Chris Squire (Ba/Vo)', price: '¥300,000〜¥500,000（ヴィンテージ）', kw: 'Marshall Super Lead Chris Squire Yes ベースアンプ Marshall ギターアンプ ベース兼用', yt: ['Marshall Super Lead Chris Squire Yes ベースアンプ ギターアンプ兼用', 'Marshall Super Lead ヴィンテージアンプ サウンドデモ'], similar: ['Ampeg SVT', 'Hiwatt DR103', 'Orange AD200'], desc: '', wikiTitle: 'Marshall_amplification' }
+    ]
+  },
+  {
+    id: 'kingcrimson', name: 'King Crimson', en: 'King Crimson', genre: 'プログレッシブロック/アヴァンギャルドロック',
+    since: '1968年〜現在',
+    origin: 'イギリス（ロンドン）',
+    members: 'Robert Fripp (Gt)\nGreg Lake (Ba/Vo)\nMichael Giles (Dr)\nIan McDonald (Key/Sax)',
+    desc: 'ロンドン出身のプログレの最重要バンド。Robert Frippを中心に変容を続け、In the Court of the Crimson Kingで世界を驚かせた。メンバーは時代ごとに大きく変化。',
+    gear: [
+      { id: 'lespaul-fripp', brand: 'Gibson', name: 'Les Paul（Robert Fripp 初期）', cat: 'ギター', catIcon: '🎸', user: 'Robert Fripp (Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Robert Fripp King Crimson プログレ ギター 初期 Crimson King', yt: ['Gibson Les Paul Robert Fripp King Crimson 初期 プログレ', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Gibson SG', 'Fender Stratocaster', 'Guild Stratford'], desc: '', wikiTitle: 'Robert_Fripp' },
+      { id: 'roland-vg-fripp', brand: 'Roland', name: 'GR-300 + Frippertronics（Robert Fripp）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Robert Fripp (Gt)', price: '¥80,000〜¥180,000（ヴィンテージ）', kw: 'Roland GR-300 Robert Fripp King Crimson Frippertronics テープループ ギターシンせ', yt: ['Roland GR-300 Robert Fripp King Crimson Frippertronics テープループ', 'Roland GR-300 Guitar Synth サウンドデモ'], similar: ['Roland GR-55', 'Eventide H9', 'Line 6 Helix'], desc: '', wikiTitle: 'Frippertronics' },
+      { id: 'mellotron-kc', brand: 'Mellotron', name: 'M400（Ian McDonald）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Ian McDonald (Key/Sax)', price: '¥800,000〜¥2,000,000（ヴィンテージ）', kw: 'Mellotron M400 Ian McDonald King Crimson プログレ In the Court Crimson King', yt: ['Mellotron M400 King Crimson In the Court of the Crimson King プログレ', 'Mellotron M400 キーボード ヴィンテージ サウンドデモ'], similar: ['Chamberlin', 'Novatron', 'GForce M-Tron'], desc: '', wikiTitle: 'Mellotron' },
+      { id: 'precision-lake', brand: 'Fender', name: 'Precision Bass（Greg Lake）', cat: 'ベース', catIcon: '🎸', user: 'Greg Lake (Ba/Vo)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Greg Lake King Crimson ベース プログレ 21st Century Schizoid Man', yt: ['Fender Precision Bass Greg Lake King Crimson プログレ 21st Century Schizoid Man', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Rickenbacker 4001', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Greg_Lake' },
+      { id: 'chapmans-levin', brand: 'Chapman', name: 'Stick（Tony Levin）', cat: 'ベース', catIcon: '🎸', user: 'Tony Levin (Ba)', price: '¥150,000〜¥300,000', kw: 'Chapman Stick Tony Levin King Crimson ベース タッピング 80年代 Elephant Talk', yt: ['Chapman Stick Tony Levin King Crimson Elephant Talk タッピング', 'Chapman Stick タッピング ベース サウンドデモ'], similar: ['Warr Guitar', 'Fender Jazz Bass', 'Music Man StingRay'], desc: '', wikiTitle: 'Chapman_Stick' },
+      { id: 'ludwig-bruford', brand: 'Ludwig', name: 'Classic Maple（Bill Bruford）', cat: 'ドラム', catIcon: '🥁', user: 'Bill Bruford (Dr)', price: '¥300,000〜¥600,000', kw: 'Ludwig Classic Maple Bill Bruford King Crimson Yes ドラム プログレ 変拍子', yt: ['Ludwig Bill Bruford King Crimson Yes プログレ ドラム 変拍子', 'Ludwig Classic Maple ドラムキット サウンドデモ'], similar: ['Pearl Masters', 'Tama Starclassic', 'Gretsch Broadkaster'], desc: '', wikiTitle: 'Bill_Bruford' }
+    ]
+  },
 ];

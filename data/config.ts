@@ -271,4 +271,10 @@ export const ARTIST_KANA: Record<string, string> = {
   'thecure':           'ザキュア The Cure Robert Smith Simon Gallup Roger ODonnell Jason Cooper Boys Dont Cry Lovesong Friday Im in Love Close to Me Disintegration ゴシックロック ポストパンク',
   'joydivision':       'ジョイディヴィジョン Joy Division Ian Curtis Bernard Sumner Peter Hook Stephen Morris Love Will Tear Us Apart Atmosphere She Lost Control Unknown Pleasures ポストパンク ゴシック マンチェスター',
   'neworder':          'ニューオーダー New Order Bernard Sumner Peter Hook Stephen Morris Gillian Gilbert Blue Monday Bizarre Love Triangle True Faith Regret エレクトロニック ダンスミュージック シンせポップ',
+  'thepolice':         'ザポリス The Police Sting Andy Summers Stewart Copeland Every Breath You Take Roxanne Message in a Bottle So Lonely ニューウェーブ レゲエロック ポストパンク',
+  'thewho':            'ザフー The Who Roger Daltrey Pete Townshend John Entwistle Keith Moon My Generation Baba ORiley Wont Get Fooled Again Pinball Wizard Tommy Quadrophenia ハードロック モッズ',
+  'thekinks':          'ザキンクス The Kinks Ray Davies Dave Davies Pete Quaife Mick Avory You Really Got Me Waterloo Sunset Sunny Afternoon Lola ブリティッシュロック ガレージ',
+  'genesis':           'ジェネシス Genesis Peter Gabriel Phil Collins Tony Banks Mike Rutherford Steve Hackett Invisible Touch Sussudio In the Air Tonight The Lamb Lies Down on Broadway プログレ ポップロック',
+  'yes':               'イエス Yes Jon Anderson Chris Squire Steve Howe Rick Wakeman Bill Bruford Roundabout Owner of a Lonely Heart Close to the Edge Fragile プログレ',
+  'kingcrimson':       'キングクリムゾン King Crimson Robert Fripp Greg Lake Bill Bruford In the Court of the Crimson King 21st Century Schizoid Man Epitaph プログレ アヴァンギャルド',
 };
