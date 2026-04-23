@@ -4502,4 +4502,275 @@ export const DB: Artist[] = [
       { id: 'u87-ec', brand: 'Neumann', name: 'U87', cat: 'マイク', catIcon: '🎤', user: 'Eric Clapton (Gt/Vo)', price: '¥350,000〜¥400,000', kw: 'Neumann U87 Eric Clapton レコーディング ボーカル ギター コンデンサーマイク', yt: ['Neumann U87 Eric Clapton Unplugged レコーディング ボーカル', 'U87 コンデンサーマイク ボーカル サウンドデモ'], similar: ['Neumann U47', 'AKG C414', 'Shure SM7B'], desc: '', wikiTitle: 'Neumann_U87' },
     ],
   },
+
+  // ── Jeff Beck ─────────────────────────────────────────────────
+  {
+    id: 'jeffbeck', name: 'Jeff Beck', en: 'Jeff Beck', genre: 'ブルースロック/フュージョン',
+    since: '1963年〜2023年',
+    origin: 'イギリス（サリー州）',
+    members: 'Jeff Beck (Gt)',
+    desc: 'ヤードバーズでクラプトンの後釜として台頭し、ソロでブルース・ハードロック・フュージョンを横断した「ギタリストのギタリスト」。ピックをほとんど使わない指弾きと音量ノブ操作による繊細な表現が唯一無二。',
+    gear: [
+      { id: 'strat-jb', brand: 'Fender', name: 'Stratocaster（フィンガーピッキング仕様）', cat: 'ギター', catIcon: '🎸', user: 'Jeff Beck (Gt)', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Jeff Beck フィンガーピッキング ストラト ブルース フュージョン', yt: ['Fender Stratocaster Jeff Beck フィンガーピッキング ブルース フュージョン', 'Jeff Beck Stratocaster トーン 解説 サウンドデモ'], similar: ['Jeff Beck Signature Strat', 'Fender Telecaster', 'Gibson Les Paul'], desc: '', wikiTitle: 'Jeff_Beck' },
+      { id: 'lespaul-jb', brand: 'Gibson', name: 'Les Paul Standard（初期・Yardbirds）', cat: 'ギター', catIcon: '🎸', user: 'Jeff Beck (Gt)', price: '¥350,000〜¥500,000', kw: 'Gibson Les Paul Jeff Beck Yardbirds 初期 レスポール ブルースロック', yt: ['Gibson Les Paul Jeff Beck Yardbirds 初期 ブルースロック', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'PRS McCarty'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
+      { id: 'marshallblues-jb', brand: 'Marshall', name: 'Bluesbreaker Combo 1962', cat: 'ギターアンプ', catIcon: '🔊', user: 'Jeff Beck (Gt)', price: '¥200,000〜¥400,000（ヴィンテージ）', kw: 'Marshall Bluesbreaker 1962 Jeff Beck コンボアンプ ブルースロック ヴィンテージ', yt: ['Marshall Bluesbreaker 1962 Jeff Beck ブルースロック ヴィンテージ', 'Marshall Bluesbreaker コンボアンプ ヴィンテージ サウンドデモ'], similar: ['Fender Tweed Deluxe', 'Vox AC15', 'Fender Princeton'], desc: '', wikiTitle: 'Marshall_Bluesbreaker' },
+      { id: 'maestrofuzz-jb', brand: 'Maestro', name: 'Fuzz-Tone FZ-1A', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Jeff Beck (Gt)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Maestro Fuzz-Tone FZ-1A Jeff Beck Yardbirds ファズ ヴィンテージ ブルース', yt: ['Maestro Fuzz-Tone FZ-1A Jeff Beck Yardbirds ファズ ヴィンテージ', 'Maestro Fuzz-Tone ヴィンテージ ファズペダル サウンドデモ'], similar: ['Dallas Arbiter Fuzz Face', 'Electro-Harmonix Big Muff', 'Shin-ei FY-2'], desc: '', wikiTitle: 'Maestro_Fuzz-Tone' },
+      { id: 'whammy-jb', brand: 'DigiTech', name: 'Whammy WH-1', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Jeff Beck (Gt)', price: '¥30,000〜¥60,000', kw: 'DigiTech Whammy WH-1 Jeff Beck ピッチシフター エフェクター フュージョン', yt: ['DigiTech Whammy WH-1 Jeff Beck ピッチシフター フュージョン', 'Whammy WH-1 ピッチシフター ペダル サウンドデモ'], similar: ['Electro-Harmonix Pitch Fork', 'Boss PS-6', 'Eventide PitchFactor'], desc: '', wikiTitle: 'DigiTech_Whammy' },
+      { id: 'vocorder-jb', brand: 'Roland', name: 'GR-33 Guitar Synth', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'Jeff Beck (Gt)', price: '¥80,000〜¥150,000（中古）', kw: 'Roland GR-33 Guitar Synthesizer Jeff Beck ギターシンせ フュージョン', yt: ['Roland GR-33 Guitar Synth Jeff Beck ギターシンせ フュージョン', 'Roland GR-33 ギターシンせ サウンドデモ'], similar: ['Roland GR-55', 'Roland VG-88', 'Fishman TriplePlay'], desc: '', wikiTitle: 'Roland_GR-33' },
+      { id: 'trem-jb', brand: 'Kahler', name: 'Tremolo System', cat: 'ギター', catIcon: '🎸', user: 'Jeff Beck (Gt)', price: '¥30,000〜¥60,000', kw: 'Kahler Tremolo Jeff Beck トレモロ アーム フローティング ヴィブラート', yt: ['Kahler Tremolo Jeff Beck トレモロアーム ヴィブラート テクニック', 'Kahler Tremolo フロイドローズ比較 アーミング サウンドデモ'], similar: ['Floyd Rose', 'Bigsby B5', 'Fender Synchronized Tremolo'], desc: '', wikiTitle: 'Kahler_(guitar_hardware)' },
+      { id: 'u87-jb', brand: 'Neumann', name: 'U87', cat: 'マイク', catIcon: '🎤', user: 'Jeff Beck (Gt)', price: '¥350,000〜¥400,000', kw: 'Neumann U87 Jeff Beck レコーディング ギター コンデンサーマイク', yt: ['Neumann U87 Jeff Beck レコーディング ギターアンプ収音', 'U87 コンデンサーマイク ギターアンプ マイキング サウンドデモ'], similar: ['AKG C414', 'Shure SM57', 'Royer R-121'], desc: '', wikiTitle: 'Neumann_U87' },
+    ],
+  },
+
+  // ── Black Sabbath ─────────────────────────────────────────────
+  {
+    id: 'blacksabbath', name: 'Black Sabbath', en: 'Black Sabbath', genre: 'ヘヴィメタル/ハードロック',
+    since: '1968年〜2017年',
+    origin: 'イギリス（バーミンガム）',
+    members: 'Ozzy Osbourne (Vo)\nTony Iommi (Gt)\nGeezer Butler (Ba)\nBill Ward (Dr)',
+    desc: 'ヘヴィメタルの始祖。Tony Iommのダウンチューニングと指先カットに合わせたカスタム弦によるリフと、Geezer Butlerの文学的歌詞でメタルというジャンルを創造した。Paranoid・Iron Man・War Pigsは不朽の名曲。',
+    gear: [
+      { id: 'sg-iommi', brand: 'Gibson', name: 'SG Special（Tony Iommi カスタム仕様）', cat: 'ギター', catIcon: '🎸', user: 'Tony Iommi (Gt)', price: '¥150,000〜¥300,000', kw: 'Gibson SG Tony Iommi Black Sabbath ダウンチューニング カスタム ヘヴィメタル', yt: ['Gibson SG Tony Iommi Black Sabbath ダウンチューニング ヘヴィメタル', 'Gibson SG Special SG ヘヴィメタル サウンドデモ'], similar: ['Gibson SG Standard', 'Jaydee SG', 'Jaydee Monkey Special'], desc: '', wikiTitle: 'Tony_Iommi' },
+      { id: 'jaydee-iommi', brand: 'Jaydee', name: 'Monkey Special（カスタム）', cat: 'ギター', catIcon: '🎸', user: 'Tony Iommi (Gt)', price: '（カスタムオーダー品）', kw: 'Jaydee Monkey Special Tony Iommi Black Sabbath カスタムギター ヘヴィメタル', yt: ['Jaydee Monkey Special Tony Iommi Black Sabbath カスタム ヘヴィメタル', 'Tony Iommi Jaydee カスタムギター ヘヴィメタル トーン'], similar: ['Gibson SG', 'Laney Supergroup', 'ESP Signature'], desc: '', wikiTitle: 'Tony_Iommi' },
+      { id: 'laney-sabbath', brand: 'Laney', name: 'Supergroup LA100BL', cat: 'ギターアンプ', catIcon: '🔊', user: 'Tony Iommi (Gt)', price: '¥200,000〜¥500,000（中古）', kw: 'Laney Supergroup LA100BL Tony Iommi Black Sabbath ギターアンプ ブリティッシュ ヘヴィ', yt: ['Laney Supergroup Tony Iommi Black Sabbath ギターアンプ ヘヴィメタル', 'Laney Supergroup LA100BL アンプ サウンドデモ'], similar: ['Marshall JMP', 'Hiwatt DR103', 'Orange Rockerverb'], desc: '', wikiTitle: 'Laney_Amplification' },
+      { id: 'jazbass-sabbath', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: 'Geezer Butler (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Jazz Bass Geezer Butler Black Sabbath ジャズベース ヘヴィメタル ベース', yt: ['Fender Jazz Bass Geezer Butler Black Sabbath ベース ヘヴィメタル', 'Jazz Bass フェンダー ジャズベース ヘヴィ サウンドデモ'], similar: ['Fender Precision Bass', 'Gibson Thunderbird', 'Music Man StingRay'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'wah-sabbath', brand: 'Vox', name: 'Clyde McCoy Wah', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Tony Iommi (Gt)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Vox Clyde McCoy Wah Tony Iommi Black Sabbath ワウ ヴィンテージ', yt: ['Vox Clyde McCoy Wah Tony Iommi Black Sabbath ワウ Iron Man', 'Vox Clyde McCoy Wah ヴィンテージ ワウペダル サウンドデモ'], similar: ['Dunlop Cry Baby', 'Morley Bad Horsie', 'RMC Real McCoy'], desc: '', wikiTitle: 'Wah-wah_pedal' },
+      { id: 'ampeg-sabbath', brand: 'Ampeg', name: 'SVT Classic', cat: 'ベースアンプ', catIcon: '🔊', user: 'Geezer Butler (Ba)', price: '¥250,000〜¥400,000', kw: 'Ampeg SVT Geezer Butler Black Sabbath ベースアンプ ヘヴィメタル', yt: ['Ampeg SVT Geezer Butler Black Sabbath ベースアンプ ヘヴィメタル', 'Ampeg SVT Classic ベースアンプ サウンドデモ'], similar: ['Marshall Super Bass', 'Orange AD200', 'Mesa/Boogie Strategy'], desc: '', wikiTitle: 'Ampeg_SVT' },
+      { id: 'ludwig-sabbath', brand: 'Ludwig', name: 'Classic Maple', cat: 'ドラム', catIcon: '🥁', user: 'Bill Ward (Dr)', price: '¥300,000〜¥500,000', kw: 'Ludwig Classic Maple Bill Ward Black Sabbath ドラム ヘヴィメタル War Pigs', yt: ['Ludwig Classic Maple Bill Ward Black Sabbath ドラム War Pigs', 'Ludwig Classic Maple ドラムキット サウンドデモ'], similar: ['Gretsch Broadkaster', 'DW Collector', 'Slingerland'], desc: '', wikiTitle: 'Ludwig_Drums' },
+      { id: 'protools-sabbath', brand: 'Avid', name: 'Pro Tools', cat: 'DAW', catIcon: '💻', user: 'Black Sabbath', price: '¥35,000〜/年', kw: 'Avid Pro Tools Black Sabbath レコーディング DAW', yt: ['Pro Tools Black Sabbath レコーディング ヘヴィメタル', 'Pro Tools DAW レコーディング 使い方'], similar: ['Logic Pro', 'Cubase', 'Ableton Live'], desc: '', wikiTitle: 'Pro_Tools' },
+    ],
+  },
+
+  // ── Deep Purple ───────────────────────────────────────────────
+  {
+    id: 'deeppurple', name: 'Deep Purple', en: 'Deep Purple', genre: 'ハードロック/ヘヴィメタル',
+    since: '1968年〜',
+    origin: 'イギリス（ハートフォードシャー）',
+    members: 'Ian Gillan (Vo)\nRitchie Blackmore (Gt)\nJon Lord (Key)\nRoger Glover (Ba)\nIan Paice (Dr)',
+    desc: 'Smoke on the WaterのあのリフでRitchie Blackmoreは歴史を変えた。Jon LordのDistortionをかけたハモンドオルガンとギターの対決という独自フォーマットがディープ・パープルサウンドの本質。',
+    gear: [
+      { id: 'strat-dp', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'Ritchie Blackmore (Gt)', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Ritchie Blackmore Deep Purple ストラト ハードロック Smoke on the Water', yt: ['Fender Stratocaster Ritchie Blackmore Deep Purple Smoke on the Water ハードロック', 'Ritchie Blackmore Stratocaster ストラト トーン 解説 サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul', 'PRS Custom 24'], desc: '', wikiTitle: 'Ritchie_Blackmore' },
+      { id: 'marshall200-dp', brand: 'Marshall', name: 'Major 200W', cat: 'ギターアンプ', catIcon: '🔊', user: 'Ritchie Blackmore (Gt)', price: '¥500,000〜¥1,200,000（ヴィンテージ）', kw: 'Marshall Major 200W Ritchie Blackmore Deep Purple ギターアンプ ハードロック', yt: ['Marshall Major 200W Ritchie Blackmore Deep Purple ハードロック', 'Marshall Major 200W ヴィンテージ アンプ サウンドデモ'], similar: ['Marshall JMP 100W', 'Hiwatt DR201', 'Orange Thunderverb 200'], desc: '', wikiTitle: 'Marshall_Major' },
+      { id: 'hammond-dp', brand: 'Hammond', name: 'B-3 Organ（ディストーション使用）', cat: 'キーボード', catIcon: '🎹', user: 'Jon Lord (Key)', price: '¥500,000〜¥1,500,000（中古）', kw: 'Hammond B-3 Jon Lord Deep Purple オルガン ディストーション Child in Time', yt: ['Hammond B-3 Jon Lord Deep Purple Child in Time ディストーションオルガン', 'Hammond B-3 ハモンドオルガン ロック サウンドデモ'], similar: ['Vox Continental', 'Farfisa Compact', 'Nord C2D'], desc: '', wikiTitle: 'Hammond_organ' },
+      { id: 'leslie-dp', brand: 'Leslie', name: '122 Rotary Cabinet', cat: '音響機材', catIcon: '🎚️', user: 'Jon Lord (Key)', price: '¥200,000〜¥500,000（中古）', kw: 'Leslie 122 Jon Lord Deep Purple ロータリーキャビネット オルガン ハモンド', yt: ['Leslie 122 Jon Lord Deep Purple ロータリーキャビネット ハモンドオルガン', 'Leslie 122 ロータリーキャビネット サウンドデモ'], similar: ['Leslie 147', 'Neo Instruments Ventilator II', 'Strymon Lex'], desc: '', wikiTitle: 'Leslie_speaker' },
+      { id: 'precision-dp', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: 'Roger Glover (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Roger Glover Deep Purple プレシジョンベース ハードロック', yt: ['Fender Precision Bass Roger Glover Deep Purple ベース', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'ampeg-dp', brand: 'Ampeg', name: 'SVT Classic', cat: 'ベースアンプ', catIcon: '🔊', user: 'Roger Glover (Ba)', price: '¥250,000〜¥400,000', kw: 'Ampeg SVT Roger Glover Deep Purple ベースアンプ ハードロック', yt: ['Ampeg SVT Roger Glover Deep Purple ベースアンプ', 'Ampeg SVT Classic ベースアンプ サウンドデモ'], similar: ['Marshall Super Bass', 'Orange AD200', 'Hiwatt'], desc: '', wikiTitle: 'Ampeg_SVT' },
+      { id: 'pearl-dp', brand: 'Pearl', name: 'Reference Series', cat: 'ドラム', catIcon: '🥁', user: 'Ian Paice (Dr)', price: '¥500,000〜¥900,000', kw: 'Pearl Reference Ian Paice Deep Purple ドラム ハードロック Speed King', yt: ['Pearl Reference Ian Paice Deep Purple ドラム Speed King', 'Pearl Reference ドラムキット サウンドデモ'], similar: ['Ludwig Classic Maple', 'DW Collector', 'Tama Starclassic'], desc: '', wikiTitle: 'Pearl_Drums' },
+      { id: 'univibe-dp', brand: 'Shin-ei', name: 'Uni-Vibe', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Ritchie Blackmore (Gt)', price: '¥50,000〜¥150,000（中古）', kw: 'Shin-ei Uni-Vibe Ritchie Blackmore Deep Purple コーラス ヴィブラート モジュレーション', yt: ['Shin-ei Uni-Vibe Ritchie Blackmore Deep Purple モジュレーション', 'Uni-Vibe ユニヴァイブ コーラス モジュレーション サウンドデモ'], similar: ['Dunlop Uni-Vibe UV-1', 'Boss CE-2', 'MXR Phase 90'], desc: '', wikiTitle: 'Uni-Vibe' },
+    ],
+  },
+
+  // ── Iron Maiden ───────────────────────────────────────────────
+  {
+    id: 'ironmaiden', name: 'Iron Maiden', en: 'Iron Maiden', genre: 'ヘヴィメタル/NWOBHM',
+    since: '1975年〜',
+    origin: 'イギリス（ロンドン）',
+    members: 'Bruce Dickinson (Vo)\nDave Murray (Gt)\nAdrian Smith (Gt)\nJanick Gers (Gt)\nSteve Harris (Ba)\nNicko McBrain (Dr)',
+    desc: 'NWOBHMの旗手。Steve Harrisのギャロッピング・ベースライン、3本ギターの壁、ブルース・ディッキンソンの圧倒的なオペラティックボイスで世界的成功を収めた。Eddieというマスコットキャラも文化的アイコン。',
+    gear: [
+      { id: 'strat-maiden', brand: 'Fender', name: 'Stratocaster（Dave Murray）', cat: 'ギター', catIcon: '🎸', user: 'Dave Murray (Gt)', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Dave Murray Iron Maiden ストラト ヘヴィメタル NWOBHM', yt: ['Fender Stratocaster Dave Murray Iron Maiden ヘヴィメタル NWOBHM', 'Dave Murray Stratocaster Iron Maiden ストラト トーン 解説'], similar: ['Jackson Soloist', 'ESP Horizon', 'Charvel San Dimas'], desc: '', wikiTitle: 'Dave_Murray_(musician)' },
+      { id: 'esp-smith', brand: 'ESP', name: 'Adrian Smith Signature', cat: 'ギター', catIcon: '🎸', user: 'Adrian Smith (Gt)', price: '¥200,000〜¥350,000', kw: 'ESP Adrian Smith Signature Iron Maiden シグネチャーギター ヘヴィメタル', yt: ['ESP Adrian Smith Signature Iron Maiden ヘヴィメタル', 'ESP Adrian Smith Signature ギター サウンドデモ'], similar: ['Jackson DKMG', 'Charvel San Dimas', 'Fender Stratocaster'], desc: '', wikiTitle: 'Adrian_Smith' },
+      { id: 'jcm800-maiden', brand: 'Marshall', name: 'JCM 800 2203', cat: 'ギターアンプ', catIcon: '🔊', user: 'Dave Murray (Gt)', price: '¥250,000〜¥500,000（中古）', kw: 'Marshall JCM 800 2203 Iron Maiden Dave Murray ギターアンプ ヘヴィメタル NWOBHM', yt: ['Marshall JCM 800 2203 Iron Maiden Dave Murray ヘヴィメタル', 'Marshall JCM 800 2203 ギターアンプ サウンドデモ'], similar: ['Marshall JMP', 'Laney AOR', 'Hiwatt DR103'], desc: '', wikiTitle: 'Marshall_JCM800' },
+      { id: 'precision-maiden', brand: 'Fender', name: 'Precision Bass（Steve Harris カスタム）', cat: 'ベース', catIcon: '🎸', user: 'Steve Harris (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Steve Harris Iron Maiden ギャロッピング プレシジョンベース ヘヴィメタル', yt: ['Fender Precision Bass Steve Harris Iron Maiden ギャロッピング ヘヴィメタル', 'Steve Harris Precision Bass Iron Maiden ベーステクニック ギャロッピング'], similar: ['Fender Jazz Bass', 'Gibson Thunderbird', 'Rickenbacker 4001'], desc: '', wikiTitle: 'Steve_Harris_(musician)' },
+      { id: 'ampeg-maiden', brand: 'Ampeg', name: 'SVT Classic', cat: 'ベースアンプ', catIcon: '🔊', user: 'Steve Harris (Ba)', price: '¥250,000〜¥400,000', kw: 'Ampeg SVT Steve Harris Iron Maiden ベースアンプ ギャロッピング ヘヴィメタル', yt: ['Ampeg SVT Steve Harris Iron Maiden ベースアンプ', 'Ampeg SVT Classic ベースアンプ サウンドデモ'], similar: ['Marshall Super Bass', 'Orange AD200', 'Trace Elliot'], desc: '', wikiTitle: 'Ampeg_SVT' },
+      { id: 'pearl-maiden', brand: 'Pearl', name: 'Reference Series（カスタム大型）', cat: 'ドラム', catIcon: '🥁', user: 'Nicko McBrain (Dr)', price: '¥600,000〜¥1,200,000', kw: 'Pearl Reference Nicko McBrain Iron Maiden ドラム ヘヴィメタル カスタム大型キット', yt: ['Pearl Reference Nicko McBrain Iron Maiden ドラム ヘヴィメタル', 'Pearl Reference ドラムキット カスタム サウンドデモ'], similar: ['DW Collector', 'Tama Starclassic', 'Ludwig Classic Maple'], desc: '', wikiTitle: 'Pearl_Drums' },
+      { id: 'jackson-gers', brand: 'Jackson', name: 'Rhoads RR（Janick Gers）', cat: 'ギター', catIcon: '🎸', user: 'Janick Gers (Gt)', price: '¥150,000〜¥250,000', kw: 'Jackson Rhoads RR Janick Gers Iron Maiden フライングV ヘヴィメタル シュレッダー', yt: ['Jackson Rhoads Janick Gers Iron Maiden ヘヴィメタル', 'Jackson Rhoads RR フライングV ヘヴィメタル サウンドデモ'], similar: ['BC Rich Warlock', 'Dean ML', 'Gibson Flying V'], desc: '', wikiTitle: 'Jackson_Guitars' },
+      { id: 'sm58-maiden', brand: 'Shure', name: 'SM58', cat: 'マイク', catIcon: '🎤', user: 'Bruce Dickinson (Vo)', price: '¥10,000〜¥15,000', kw: 'Shure SM58 Bruce Dickinson Iron Maiden ライブ ボーカル マイク ヘヴィメタル', yt: ['Shure SM58 Bruce Dickinson Iron Maiden ライブ ボーカル', 'Shure SM58 ライブ ダイナミックマイク レビュー'], similar: ['Sennheiser e935', 'AKG D5', 'Audix OM6'], desc: '', wikiTitle: 'Shure_SM58' },
+    ],
+  },
+
+  // ── Judas Priest ──────────────────────────────────────────────
+  {
+    id: 'judaspriest', name: 'Judas Priest', en: 'Judas Priest', genre: 'ヘヴィメタル/NWOBHM',
+    since: '1969年〜',
+    origin: 'イギリス（バーミンガム）',
+    members: 'Rob Halford (Vo)\nGlenn Tipton (Gt)\nK.K. Downing (Gt)\nIan Hill (Ba)\nScott Travis (Dr)',
+    desc: 'ヘヴィメタルのスタイルを確立した「メタルゴッド」。ツインギターによる攻撃的なリフ、Rob Halfordの超高音スクリームで知られ、革ジャンとスタッズというメタルの視覚的アイデンティティも同バンドが生み出した。',
+    gear: [
+      { id: 'sgsabbath-jp', brand: 'Gibson', name: 'SG Standard（K.K. Downing 初期）', cat: 'ギター', catIcon: '🎸', user: 'K.K. Downing (Gt)', price: '¥150,000〜¥300,000', kw: 'Gibson SG K.K. Downing Judas Priest 初期 ヘヴィメタル NWOBHM', yt: ['Gibson SG K.K. Downing Judas Priest 初期 ヘヴィメタル', 'Gibson SG ヘヴィメタル サウンドデモ'], similar: ['Gibson Flying V', 'Hamer', 'Jackson Soloist'], desc: '', wikiTitle: 'K.K._Downing' },
+      { id: 'flyingv-jp', brand: 'Gibson', name: 'Flying V（K.K. Downing）', cat: 'ギター', catIcon: '🎸', user: 'K.K. Downing (Gt)', price: '¥200,000〜¥400,000', kw: 'Gibson Flying V K.K. Downing Judas Priest フライングV ヘヴィメタル', yt: ['Gibson Flying V K.K. Downing Judas Priest ヘヴィメタル フライングV', 'Gibson Flying V ヘヴィメタル サウンドデモ'], similar: ['Gibson SG', 'Dean ML', 'Jackson Rhoads'], desc: '', wikiTitle: 'Gibson_Flying_V' },
+      { id: 'jcm800-jp', brand: 'Marshall', name: 'JCM 800', cat: 'ギターアンプ', catIcon: '🔊', user: 'Glenn Tipton (Gt)', price: '¥250,000〜¥500,000（中古）', kw: 'Marshall JCM 800 Glenn Tipton Judas Priest ギターアンプ ヘヴィメタル ブリティッシュ', yt: ['Marshall JCM 800 Glenn Tipton Judas Priest ヘヴィメタル', 'Marshall JCM 800 ギターアンプ サウンドデモ'], similar: ['Marshall JMP', 'Hiwatt DR103', 'Laney AOR'], desc: '', wikiTitle: 'Marshall_JCM800' },
+      { id: 'hamer-jp', brand: 'Hamer', name: 'Standard（Glenn Tipton）', cat: 'ギター', catIcon: '🎸', user: 'Glenn Tipton (Gt)', price: '¥100,000〜¥250,000（中古）', kw: 'Hamer Standard Glenn Tipton Judas Priest ギター ヘヴィメタル USA', yt: ['Hamer Standard Glenn Tipton Judas Priest ヘヴィメタル ギター', 'Hamer Standard USAギター ヴィンテージ サウンドデモ'], similar: ['Gibson Les Paul', 'Gibson SG', 'ESP LTD'], desc: '', wikiTitle: 'Hamer_Guitars' },
+      { id: 'precision-jp', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: 'Ian Hill (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Ian Hill Judas Priest プレシジョンベース ヘヴィメタル', yt: ['Fender Precision Bass Ian Hill Judas Priest ベース', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Gibson Thunderbird', 'Music Man StingRay', 'Fender Jazz Bass'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'sm58-jp', brand: 'Shure', name: 'SM58', cat: 'マイク', catIcon: '🎤', user: 'Rob Halford (Vo)', price: '¥10,000〜¥15,000', kw: 'Shure SM58 Rob Halford Judas Priest ライブ ボーカル マイク ヘヴィメタル', yt: ['Shure SM58 Rob Halford Judas Priest ライブ ボーカル メタルゴッド', 'Shure SM58 ダイナミックマイク ライブ レビュー'], similar: ['Sennheiser e935', 'AKG D5', 'Audix OM6'], desc: '', wikiTitle: 'Shure_SM58' },
+      { id: 'pearl-jp', brand: 'Pearl', name: 'Reference Series', cat: 'ドラム', catIcon: '🥁', user: 'Scott Travis (Dr)', price: '¥500,000〜¥900,000', kw: 'Pearl Reference Scott Travis Judas Priest ドラム ヘヴィメタル NWOBHM', yt: ['Pearl Reference Scott Travis Judas Priest ドラム ヘヴィメタル', 'Pearl Reference ドラムキット サウンドデモ'], similar: ['DW Collector', 'Tama Starclassic', 'Ludwig Classic Maple'], desc: '', wikiTitle: 'Pearl_Drums' },
+      { id: 'digitech-jp', brand: 'DigiTech', name: 'Whammy WH-1', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Glenn Tipton (Gt)', price: '¥30,000〜¥60,000', kw: 'DigiTech Whammy Glenn Tipton Judas Priest ピッチシフター エフェクター', yt: ['DigiTech Whammy Glenn Tipton Judas Priest ピッチシフター', 'Whammy ピッチシフター ペダル サウンドデモ'], similar: ['Eventide PitchFactor', 'Boss PS-6', 'TC Electronic Quintessence'], desc: '', wikiTitle: 'DigiTech_Whammy' },
+    ],
+  },
+
+  // ── Motörhead ─────────────────────────────────────────────────
+  {
+    id: 'motorhead', name: 'Motörhead', en: 'Motörhead', genre: 'ハードロック/スピードメタル',
+    since: '1975年〜2015年',
+    origin: 'イギリス（ロンドン）',
+    members: 'Lemmy Kilmister (Ba/Vo)\nPhil Campbell (Gt)\nMikkey Dee (Dr)',
+    desc: 'Lemmy Kilmisterのベースがリードをとるというユニークなアプローチで「ハードロックとパンクの橋渡し」としてメタル史に刻まれた。Aceのスペードは不朽のアンセム。速く、ラウドに、そしてタフに生きたバンド。',
+    gear: [
+      { id: 'rick4001-lemmy', brand: 'Rickenbacker', name: '4001 Bass（Marshall直結歪みトーン）', cat: 'ベース', catIcon: '🎸', user: 'Lemmy Kilmister (Ba/Vo)', price: '¥250,000〜¥400,000', kw: 'Rickenbacker 4001 Lemmy Kilmister Motorhead ベース リッケンバッカー ハードロック Ace of Spades', yt: ['Rickenbacker 4001 Lemmy Kilmister Motorhead Ace of Spades ベース', 'Rickenbacker 4001 ベース サウンドデモ ロック'], similar: ['Fender Precision Bass', 'Gibson Thunderbird', 'Fender Jazz Bass'], desc: '', wikiTitle: 'Lemmy_Kilmister' },
+      { id: 'marshallbass-lemmy', brand: 'Marshall', name: 'Super Bass 1992（歪みベースアンプ）', cat: 'ベースアンプ', catIcon: '🔊', user: 'Lemmy Kilmister (Ba/Vo)', price: '¥300,000〜¥600,000（ヴィンテージ）', kw: 'Marshall Super Bass 1992 Lemmy Kilmister Motorhead ベースアンプ 歪み ハードロック', yt: ['Marshall Super Bass 1992 Lemmy Kilmister Motorhead 歪みベースアンプ', 'Marshall Super Bass 1992 ヴィンテージ ベースアンプ サウンドデモ'], similar: ['Ampeg SVT', 'Orange AD200', 'Hiwatt'], desc: '', wikiTitle: 'Marshall_Super_Bass' },
+      { id: 'lespaul-campbell', brand: 'Gibson', name: 'Les Paul（Phil Campbell）', cat: 'ギター', catIcon: '🎸', user: 'Phil Campbell (Gt)', price: '¥350,000〜¥500,000', kw: 'Gibson Les Paul Phil Campbell Motorhead レスポール ハードロック スピードメタル', yt: ['Gibson Les Paul Phil Campbell Motorhead ハードロック レスポール', 'Gibson Les Paul Standard レスポール ハードロック サウンドデモ'], similar: ['Gibson SG', 'Fender Telecaster', 'ESP LTD EC-1000'], desc: '', wikiTitle: 'Phil_Campbell_(musician)' },
+      { id: 'hiwatt-motorhead', brand: 'Hiwatt', name: 'DR103', cat: 'ギターアンプ', catIcon: '🔊', user: 'Phil Campbell (Gt)', price: '¥300,000〜¥600,000（中古）', kw: 'Hiwatt DR103 Phil Campbell Motorhead ギターアンプ ハードロック', yt: ['Hiwatt DR103 Phil Campbell Motorhead ギターアンプ ハードロック', 'Hiwatt DR103 ギターアンプ サウンドデモ'], similar: ['Marshall JMP', 'Orange Rockerverb', 'Laney Supergroup'], desc: '', wikiTitle: 'Hiwatt' },
+      { id: 'tama-motorhead', brand: 'Tama', name: 'Starclassic Performer', cat: 'ドラム', catIcon: '🥁', user: 'Mikkey Dee (Dr)', price: '¥300,000〜¥500,000', kw: 'Tama Starclassic Mikkey Dee Motorhead ドラム スピードメタル ハードロック', yt: ['Tama Starclassic Mikkey Dee Motorhead ドラム スピードメタル', 'Tama Starclassic Performer ドラムキット サウンドデモ'], similar: ['DW Collector', 'Pearl Reference', 'Ludwig Classic Maple'], desc: '', wikiTitle: 'Tama_Drums' },
+      { id: 'sm58-lemmy', brand: 'Shure', name: 'SM58', cat: 'マイク', catIcon: '🎤', user: 'Lemmy Kilmister (Ba/Vo)', price: '¥10,000〜¥15,000', kw: 'Shure SM58 Lemmy Kilmister Motorhead ライブ ボーカル マイク 斜め持ち', yt: ['Shure SM58 Lemmy Kilmister Motorhead ライブ ボーカル 斜め持ち', 'Shure SM58 ダイナミックマイク ライブ レビュー'], similar: ['Sennheiser e935', 'AKG D5', 'Audix OM6'], desc: '', wikiTitle: 'Shure_SM58' },
+      { id: 'fernandes-motorhead', brand: 'Fernandes', name: 'Sustainer System（Phil Campbell）', cat: 'ギター', catIcon: '🎸', user: 'Phil Campbell (Gt)', price: '¥30,000〜¥60,000（ピックアップ単体）', kw: 'Fernandes Sustainer Phil Campbell Motorhead サスティナー エンドレスサステイン', yt: ['Fernandes Sustainer Phil Campbell Motorhead サスティナー', 'Fernandes Sustainer サスティナー 無限サステイン サウンドデモ'], similar: ['E-Bow', 'Digitech FreqOut', 'Electro-Harmonix Freeze'], desc: '', wikiTitle: 'Fernandes_Sustainer' },
+      { id: 'protools-motorhead', brand: 'Avid', name: 'Pro Tools', cat: 'DAW', catIcon: '💻', user: 'Motörhead', price: '¥35,000〜/年', kw: 'Avid Pro Tools Motorhead レコーディング DAW ハードロック', yt: ['Pro Tools Motorhead レコーディング ハードロック', 'Pro Tools DAW レコーディング 使い方'], similar: ['Logic Pro', 'Cubase', 'Ableton Live'], desc: '', wikiTitle: 'Pro_Tools' },
+    ],
+  },
+
+  {
+    id: 'radiohead', name: 'Radiohead', en: 'Radiohead', genre: 'オルタナティブロック/アートロック',
+    since: '1985年〜現在',
+    origin: 'イギリス（オックスフォード）',
+    members: 'Thom Yorke (Vo/Gt/Key)\nJonny Greenwood (Gt/Key)\nColin Greenwood (Ba)\nEd OBrien (Gt)\nPhilip Selway (Dr)',
+    desc: 'UKオックスフォード出身の5人組。繊細な感受性と実験的サウンドを融合させ、OK Computer・Kid Aなど時代を超える名盤を生み出した。',
+    gear: [
+      { id: 'strat-yorke', brand: 'Fender', name: 'Telecaster（Thom Yorke）', cat: 'ギター', catIcon: '🎸', user: 'Thom Yorke (Vo/Gt/Key)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Thom Yorke Radiohead ギター アルペジオ オルタナ アートロック', yt: ['Fender Telecaster Thom Yorke Radiohead アルペジオ', 'Thom Yorke Telecaster ギタートーン サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'Rickenbacker 360'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'es335-jg', brand: 'Gibson', name: 'ES-335（Jonny Greenwood）', cat: 'ギター', catIcon: '🎸', user: 'Jonny Greenwood (Gt/Key)', price: '¥380,000〜¥600,000', kw: 'Gibson ES-335 Jonny Greenwood Radiohead セミアコ ギター アートロック', yt: ['Gibson ES-335 Jonny Greenwood Radiohead セミアコ ギター', 'Gibson ES-335 セミアコ ギター サウンドデモ'], similar: ['Gibson ES-345', 'Fender Telecaster', 'Rickenbacker 330'], desc: '', wikiTitle: 'Gibson_ES-335' },
+      { id: 'whammy-rh', brand: 'DigiTech', name: 'Whammy WH-1（Jonny Greenwood）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Jonny Greenwood (Gt/Key)', price: '¥30,000〜¥60,000', kw: 'DigiTech Whammy WH-1 Jonny Greenwood Radiohead ピッチシフター Just', yt: ['DigiTech Whammy Jonny Greenwood Radiohead Just ピッチシフター', 'Whammy WH-1 ピッチシフター ペダル サウンドデモ'], similar: ['Electro-Harmonix Pitch Fork', 'Boss PS-6', 'Eventide PitchFactor'], desc: '', wikiTitle: 'DigiTech_Whammy' },
+      { id: 'marshall-rh', brand: 'Marshall', name: 'JMP 1959 Super Lead', cat: 'ギターアンプ', catIcon: '🔊', user: 'Jonny Greenwood (Gt/Key)', price: '¥300,000〜¥500,000（ヴィンテージ）', kw: 'Marshall JMP 1959 Super Lead Jonny Greenwood Radiohead アンプ ブリティッシュ', yt: ['Marshall JMP 1959 Radiohead Jonny Greenwood ブリティッシュアンプ', 'Marshall Super Lead JMP アンプ ヴィンテージ サウンドデモ'], similar: ['Hiwatt DR103', 'Orange Rockerverb', 'Vox AC30'], desc: '', wikiTitle: 'Marshall_amplification' },
+      { id: 'ondes-rh', brand: 'Ondes Martenot', name: 'Ondes Martenot', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Jonny Greenwood (Gt/Key)', price: '¥1,000,000以上', kw: 'Ondes Martenot Jonny Greenwood Radiohead テルミン 電子楽器 How to Disappear', yt: ['Ondes Martenot Jonny Greenwood Radiohead 電子楽器', 'Ondes Martenot テルミン系 電子楽器 演奏デモ'], similar: ['テルミン', 'Moog Theremin', 'EMS Synthi'], desc: '', wikiTitle: 'Ondes_Martenot' },
+      { id: 'jazzbass-rh', brand: 'Fender', name: 'Jazz Bass（Colin Greenwood）', cat: 'ベース', catIcon: '🎸', user: 'Colin Greenwood (Ba)', price: '¥130,000〜¥250,000', kw: 'Fender Jazz Bass Colin Greenwood Radiohead ベース アンビエント', yt: ['Fender Jazz Bass Colin Greenwood Radiohead ベース', 'Jazz Bass フェンダー ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Music Man StingRay', 'Hofner'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'pearl-rh', brand: 'Pearl', name: 'Masters Custom（Philip Selway）', cat: 'ドラム', catIcon: '🥁', user: 'Philip Selway (Dr)', price: '¥400,000〜¥800,000', kw: 'Pearl Masters Philip Selway Radiohead ドラム ブラシ繊細', yt: ['Pearl Masters Philip Selway Radiohead ドラム', 'Pearl Masters ドラムキット サウンドデモ'], similar: ['DW Collector', 'Tama Starclassic', 'Ludwig Classic Maple'], desc: '', wikiTitle: 'Pearl_Drums' }
+    ]
+  },
+  {
+    id: 'muse', name: 'Muse', en: 'Muse', genre: 'オルタナティブロック/プログレッシブロック',
+    since: '1994年〜現在',
+    origin: 'イギリス（デヴォン州テインマス）',
+    members: 'Matt Bellamy (Vo/Gt/Key)\nChris Wolstenholme (Ba)\nDom Howard (Dr)',
+    desc: '英国デヴォン州出身の3人組。壮大なオーケストラルロックと激しいギターサウンドを融合し、スタジアムを揺るがすスペクタクルなライブで知られる。',
+    gear: [
+      { id: 'manson-mb', brand: 'Manson Guitar Works', name: 'MA Series Custom（Matt Bellamy）', cat: 'ギター', catIcon: '🎸', user: 'Matt Bellamy (Vo/Gt/Key)', price: '¥800,000〜¥2,000,000', kw: 'Manson Guitar MA Series Matt Bellamy Muse カスタムギター 内蔵シンせ MIDIコントローラー', yt: ['Manson Guitar MA Series Matt Bellamy Muse カスタムギター', 'Manson Guitar Works カスタム ギター サウンドデモ'], similar: ['Parker Fly', 'Chapman ML1', 'Gibson Les Paul'], desc: '', wikiTitle: 'Manson_Guitar_Works' },
+      { id: 'diezel-mb', brand: 'Diezel', name: 'VH4（Matt Bellamy）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Matt Bellamy (Vo/Gt/Key)', price: '¥500,000〜¥800,000', kw: 'Diezel VH4 Matt Bellamy Muse ハイゲインアンプ ドイツ製', yt: ['Diezel VH4 Matt Bellamy Muse ハイゲインアンプ', 'Diezel VH4 ハイゲインアンプ サウンドデモ'], similar: ['Mesa/Boogie Dual Rectifier', 'Peavey 5150', 'EVH 5150 III'], desc: '', wikiTitle: 'Diezel_amplification' },
+      { id: 'whammy-mb', brand: 'DigiTech', name: 'Whammy（Matt Bellamy）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Matt Bellamy (Vo/Gt/Key)', price: '¥25,000〜¥45,000', kw: 'DigiTech Whammy Matt Bellamy Muse ピッチシフター Hysteria Plug In Baby', yt: ['DigiTech Whammy Matt Bellamy Muse Hysteria ピッチシフター', 'Whammy ピッチシフター サウンドデモ'], similar: ['Electro-Harmonix Pitch Fork', 'Boss PS-6', 'TC Electronic Quintessence'], desc: '', wikiTitle: 'DigiTech_Whammy' },
+      { id: 'fuzzfactory-mb', brand: 'Zvex', name: 'Fuzz Factory（Matt Bellamy）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Matt Bellamy (Vo/Gt/Key)', price: '¥30,000〜¥45,000', kw: 'Zvex Fuzz Factory Matt Bellamy Muse ファズ Plug In Baby ゲルマニウム', yt: ['Zvex Fuzz Factory Matt Bellamy Muse Plug In Baby ファズ', 'Fuzz Factory ゲルマニウム ファズペダル サウンドデモ'], similar: ['Dallas Arbiter Fuzz Face', 'Electro-Harmonix Big Muff', 'Way Huge Swollen Pickle'], desc: '', wikiTitle: 'Z.Vex_Effects' },
+      { id: 'rick4003-muse', brand: 'Rickenbacker', name: '4003（Chris Wolstenholme）', cat: 'ベース', catIcon: '🎸', user: 'Chris Wolstenholme (Ba)', price: '¥250,000〜¥400,000', kw: 'Rickenbacker 4003 Chris Wolstenholme Muse ベース リッケンバッカー', yt: ['Rickenbacker 4003 Chris Wolstenholme Muse ベース', 'Rickenbacker 4003 ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Gibson Thunderbird', 'Music Man StingRay'], desc: '', wikiTitle: 'Rickenbacker_4003' },
+      { id: 'tama-muse', brand: 'Tama', name: 'Starclassic Performer（Dom Howard）', cat: 'ドラム', catIcon: '🥁', user: 'Dom Howard (Dr)', price: '¥350,000〜¥700,000', kw: 'Tama Starclassic Performer Dom Howard Muse ドラム スタジアムロック', yt: ['Tama Starclassic Dom Howard Muse ドラム スタジアム', 'Tama Starclassic Performer ドラムキット サウンドデモ'], similar: ['Pearl Masters', 'DW Collector', 'Ludwig Classic Maple'], desc: '', wikiTitle: 'Tama_drums' }
+    ]
+  },
+  {
+    id: 'coldplay', name: 'Coldplay', en: 'Coldplay', genre: 'ポストブリットポップ/オルタナティブロック',
+    since: '1996年〜現在',
+    origin: 'イギリス（ロンドン）',
+    members: 'Chris Martin (Vo/Gt/Key)\nJonny Buckland (Gt)\nGuy Berryman (Ba)\nWill Champion (Dr)',
+    desc: 'ロンドン出身の4人組。メランコリックなメロディとスタジアム級のアンセムで世界的な成功を収め、現代最大のロックバンドの一つ。',
+    gear: [
+      { id: 'j45-cp', brand: 'Gibson', name: 'J-45（Chris Martin）', cat: 'アコギ', catIcon: '🎸', user: 'Chris Martin (Vo/Gt/Key)', price: '¥200,000〜¥350,000', kw: 'Gibson J-45 Chris Martin Coldplay アコギ The Scientist Fix You', yt: ['Gibson J-45 Chris Martin Coldplay アコギ The Scientist', 'Gibson J-45 アコースティックギター サウンドデモ'], similar: ['Martin D-28', 'Taylor 814ce', 'Gibson J-200'], desc: '', wikiTitle: 'Gibson_J-45' },
+      { id: 'strat-buckland', brand: 'Fender', name: 'Stratocaster（Jonny Buckland）', cat: 'ギター', catIcon: '🎸', user: 'Jonny Buckland (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Jonny Buckland Coldplay ギター クリーントーン アルペジオ', yt: ['Fender Stratocaster Jonny Buckland Coldplay クリーントーン', 'Stratocaster フェンダー ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'Rickenbacker 360'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'vox-cp', brand: 'Vox', name: 'AC30（Jonny Buckland）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Jonny Buckland (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Jonny Buckland Coldplay ギターアンプ ブリティッシュ クリスタルクリーン', yt: ['Vox AC30 Jonny Buckland Coldplay ブリティッシュアンプ', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Roland Jazz Chorus', 'Marshall DSL40'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'boss-dd-cp', brand: 'Boss', name: 'DD-6 Digital Delay（Jonny Buckland）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Jonny Buckland (Gt)', price: '¥15,000〜¥25,000', kw: 'Boss DD-6 Digital Delay Jonny Buckland Coldplay ディレイ アルペジオ', yt: ['Boss DD-6 Coldplay Jonny Buckland ディレイ アルペジオ', 'Boss DD-6 デジタルディレイ ペダル サウンドデモ'], similar: ['Boss DD-7', 'TC Electronic Flashback', 'MXR Carbon Copy'], desc: '', wikiTitle: 'Boss_DD_series' },
+      { id: 'precision-cp', brand: 'Fender', name: 'Precision Bass（Guy Berryman）', cat: 'ベース', catIcon: '🎸', user: 'Guy Berryman (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Guy Berryman Coldplay ベース プレシジョン', yt: ['Fender Precision Bass Guy Berryman Coldplay ベース', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'ludwig-cp', brand: 'Ludwig', name: 'Classic Maple（Will Champion）', cat: 'ドラム', catIcon: '🥁', user: 'Will Champion (Dr)', price: '¥300,000〜¥600,000', kw: 'Ludwig Classic Maple Will Champion Coldplay ドラム スタジアム', yt: ['Ludwig Classic Maple Will Champion Coldplay ドラム スタジアム', 'Ludwig Classic Maple ドラムキット サウンドデモ'], similar: ['DW Collector', 'Pearl Masters', 'Tama Starclassic'], desc: '', wikiTitle: 'Ludwig_drums' }
+    ]
+  },
+  {
+    id: 'arcticmonkeys', name: 'Arctic Monkeys', en: 'Arctic Monkeys', genre: 'インディーロック/ガレージロック',
+    since: '2002年〜現在',
+    origin: 'イギリス（シェフィールド）',
+    members: 'Alex Turner (Vo/Gt)\nJamie Cook (Gt)\nNick OMalley (Ba)\nMatt Helders (Dr)',
+    desc: '英国シェフィールド出身の4人組。鋭いリリックとキャッチーなリフで2000年代インディーロックを牽引し、現代最重要バンドの一つとなった。',
+    gear: [
+      { id: 'es355-at', brand: 'Gibson', name: 'ES-355（Alex Turner 近年）', cat: 'ギター', catIcon: '🎸', user: 'Alex Turner (Vo/Gt)', price: '¥500,000〜¥900,000', kw: 'Gibson ES-355 Alex Turner Arctic Monkeys セミアコ Tranquility Base ギター', yt: ['Gibson ES-355 Alex Turner Arctic Monkeys Tranquility Base ギター', 'Gibson ES-355 セミアコ ギター サウンドデモ'], similar: ['Gibson ES-335', 'Gibson ES-330', 'Epiphone Casino'], desc: '', wikiTitle: 'Gibson_ES-355' },
+      { id: 'sg-at', brand: 'Gibson', name: 'SG Standard（Alex Turner 初期）', cat: 'ギター', catIcon: '🎸', user: 'Alex Turner (Vo/Gt)', price: '¥150,000〜¥250,000', kw: 'Gibson SG Alex Turner Arctic Monkeys 初期 I Bet You Look Good インディーロック', yt: ['Gibson SG Alex Turner Arctic Monkeys 初期 I Bet You Look Good', 'Gibson SG スタンダード ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul Junior', 'Epiphone SG'], desc: '', wikiTitle: 'Gibson_SG' },
+      { id: 'vox-at', brand: 'Vox', name: 'AC30（Alex Turner）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Alex Turner (Vo/Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Alex Turner Arctic Monkeys ブリティッシュアンプ インディーロック', yt: ['Vox AC30 Alex Turner Arctic Monkeys ブリティッシュアンプ', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Marshall JTM45', 'Fender Deluxe Reverb', 'Orange Rockerverb'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'orange-jc', brand: 'Orange', name: 'Rockerverb 100（Jamie Cook）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Jamie Cook (Gt)', price: '¥250,000〜¥400,000', kw: 'Orange Rockerverb Jamie Cook Arctic Monkeys ギターアンプ ブリティッシュ ミッドレンジ', yt: ['Orange Rockerverb Jamie Cook Arctic Monkeys ギターアンプ', 'Orange Rockerverb 100 ギターアンプ サウンドデモ'], similar: ['Marshall JCM 800', 'Vox AC30', 'Hiwatt DR103'], desc: '', wikiTitle: 'Orange_amplifiers' },
+      { id: 'jazzbass-am', brand: 'Fender', name: 'Jazz Bass（Nick OMalley）', cat: 'ベース', catIcon: '🎸', user: 'Nick OMalley (Ba)', price: '¥130,000〜¥250,000', kw: 'Fender Jazz Bass Nick OMalley Arctic Monkeys ベース インディーロック', yt: ['Fender Jazz Bass Nick OMalley Arctic Monkeys ベース', 'Jazz Bass フェンダー ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Music Man StingRay', 'Hofner'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
+      { id: 'ludwig-am', brand: 'Ludwig', name: 'Classic Maple（Matt Helders）', cat: 'ドラム', catIcon: '🥁', user: 'Matt Helders (Dr)', price: '¥300,000〜¥600,000', kw: 'Ludwig Classic Maple Matt Helders Arctic Monkeys ドラム グルーヴ', yt: ['Ludwig Classic Maple Matt Helders Arctic Monkeys ドラム グルーヴ', 'Ludwig Classic Maple ドラムキット サウンドデモ'], similar: ['Pearl Reference', 'Tama Starclassic', 'DW Performance'], desc: '', wikiTitle: 'Ludwig_drums' }
+    ]
+  },
+  {
+    id: 'oasis', name: 'Oasis', en: 'Oasis', genre: 'ブリットポップ/ロック',
+    since: '1991年〜2009年',
+    origin: 'イギリス（マンチェスター）',
+    members: 'Liam Gallagher (Vo)\nNoel Gallagher (Gt/Vo)\nPaul Arthurs (Gt)\nPaul McGuigan (Ba)\nTony McCarroll (Dr)',
+    desc: 'マンチェスター出身の兄弟ロックバンド。Liam・Noel Gallagher兄弟を中心に90年代ブリットポップシーンを席巻した。WonderwallとDont Look Back in Angerが代表曲。',
+    gear: [
+      { id: 'sheraton-ng', brand: 'Epiphone', name: 'Sheraton（Noel Gallagher ユニオンジャック）', cat: 'ギター', catIcon: '🎸', user: 'Noel Gallagher (Gt/Vo)', price: '¥80,000〜¥150,000', kw: 'Epiphone Sheraton Noel Gallagher Oasis ユニオンジャック ブリットポップ ギター', yt: ['Epiphone Sheraton Noel Gallagher Oasis ユニオンジャック ブリットポップ', 'Epiphone Sheraton セミアコ ギター サウンドデモ'], similar: ['Gibson ES-335', 'Epiphone Casino', 'Gibson ES-345'], desc: '', wikiTitle: 'Epiphone_Sheraton' },
+      { id: 'lespaul-ng', brand: 'Gibson', name: 'Les Paul Standard（Noel Gallagher）', cat: 'ギター', catIcon: '🎸', user: 'Noel Gallagher (Gt/Vo)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Noel Gallagher Oasis レスポール ブリットポップ ハムバッカー', yt: ['Gibson Les Paul Noel Gallagher Oasis レスポール ブリットポップ', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Epiphone Sheraton', 'Gibson SG', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
+      { id: 'jcm900-oasis', brand: 'Marshall', name: 'JCM 900', cat: 'ギターアンプ', catIcon: '🔊', user: 'Noel Gallagher (Gt/Vo)', price: '¥250,000〜¥400,000', kw: 'Marshall JCM 900 Noel Gallagher Oasis アンプ ブリットポップ クランチ', yt: ['Marshall JCM 900 Noel Gallagher Oasis ブリットポップ アンプ', 'Marshall JCM 900 ギターアンプ サウンドデモ'], similar: ['Marshall JCM 800', 'Marshall JVM410', 'Vox AC30'], desc: '', wikiTitle: 'Marshall_JCM900' },
+      { id: 'precision-oasis', brand: 'Fender', name: 'Precision Bass（Paul McGuigan）', cat: 'ベース', catIcon: '🎸', user: 'Paul McGuigan (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Paul McGuigan Oasis ベース Guigs ブリットポップ', yt: ['Fender Precision Bass Paul McGuigan Oasis ベース Guigs', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Gibson Thunderbird', 'Music Man StingRay'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
+      { id: 'boss-cs3-oasis', brand: 'Boss', name: 'CS-3 Compression Sustainer（Noel）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Noel Gallagher (Gt/Vo)', price: '¥8,000〜¥15,000', kw: 'Boss CS-3 Compressor Noel Gallagher Oasis コンプレッサー アルペジオ', yt: ['Boss CS-3 Compressor Noel Gallagher Oasis コンプレッサー', 'Boss CS-3 コンプレッサー ペダル サウンドデモ'], similar: ['MXR Dyna Comp', 'Keeley Compressor', 'Wampler Ego Compressor'], desc: '', wikiTitle: 'Boss_CS-3' }
+    ]
+  },
+  {
+    id: 'blur', name: 'Blur', en: 'Blur', genre: 'ブリットポップ/オルタナティブロック',
+    since: '1988年〜現在',
+    origin: 'イギリス（ロンドン）',
+    members: 'Damon Albarn (Vo/Key)\nGraham Coxon (Gt)\nAlex James (Ba)\nDave Rowntree (Dr)',
+    desc: 'ロンドン出身の4人組。Oasisとのブリットポップ対決で一世を風靡し、後に実験的サウンドへ進化。Damon AlbarnはGorillazでも知られる。',
+    gear: [
+      { id: 'tele-coxon', brand: 'Fender', name: 'Telecaster（Graham Coxon）', cat: 'ギター', catIcon: '🎸', user: 'Graham Coxon (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Graham Coxon Blur ギター Song 2 Girls and Boys カッティング', yt: ['Fender Telecaster Graham Coxon Blur Song 2 ギター カッティング', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson SG Special', 'Danelectro 59'], desc: '', wikiTitle: 'Fender_Telecaster' },
+      { id: 'sg-coxon', brand: 'Gibson', name: 'SG Special（Graham Coxon）', cat: 'ギター', catIcon: '🎸', user: 'Graham Coxon (Gt)', price: '¥150,000〜¥250,000', kw: 'Gibson SG Special P-90 Graham Coxon Blur ギター ノイジー P90', yt: ['Gibson SG Special P-90 Graham Coxon Blur ノイジーギター', 'Gibson SG Special P-90 ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul Junior', 'Harmony Stratotone'], desc: '', wikiTitle: 'Gibson_SG' },
+      { id: 'vox-blur', brand: 'Vox', name: 'AC30（Graham Coxon）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Graham Coxon (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Graham Coxon Blur ブリティッシュアンプ オーバードライブ', yt: ['Vox AC30 Graham Coxon Blur ブリティッシュアンプ', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Deluxe Reverb', 'Marshall JTM45', 'Orange Rockerverb'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'fuzz-coxon', brand: 'Boss', name: 'FZ-2 Hyper Fuzz（Graham Coxon）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Graham Coxon (Gt)', price: '¥15,000〜¥30,000（中古）', kw: 'Boss FZ-2 Hyper Fuzz Graham Coxon Blur Song 2 ウー ファズ', yt: ['Boss FZ-2 Hyper Fuzz Graham Coxon Blur Song 2 ウーのファズ', 'Boss FZ-2 Hyper Fuzz ファズペダル サウンドデモ'], similar: ['Electro-Harmonix Big Muff', 'Zvex Fuzz Factory', 'Dallas Arbiter Fuzz Face'], desc: '', wikiTitle: 'Boss_FZ-2' },
+      { id: 'precision-blur', brand: 'Fender', name: 'Precision Bass（Alex James）', cat: 'ベース', catIcon: '🎸', user: 'Alex James (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Alex James Blur ベース Song 2 Country House', yt: ['Fender Precision Bass Alex James Blur ベース Song 2', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Fender_Precision_Bass' }
+    ]
+  },
+  {
+    id: 'pulp', name: 'Pulp', en: 'Pulp', genre: 'ブリットポップ/インディーロック',
+    since: '1978年〜現在',
+    origin: 'イギリス（シェフィールド）',
+    members: 'Jarvis Cocker (Vo/Gt)\nMark Webber (Gt)\nSteve Mackey (Ba)\nNick Banks (Dr)\nCandida Doyle (Key)',
+    desc: 'シェフィールド出身の5人組。階級意識に満ちたリリックとキャッチーなポップサウンドで90年代ブリットポップを代表。Common Peopleが不朽の名曲。',
+    gear: [
+      { id: 'es330-jc', brand: 'Gibson', name: 'ES-330（Jarvis Cocker）', cat: 'ギター', catIcon: '🎸', user: 'Jarvis Cocker (Vo/Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson ES-330 Jarvis Cocker Pulp セミアコ ギター ブリットポップ', yt: ['Gibson ES-330 Jarvis Cocker Pulp セミアコ ギター', 'Gibson ES-330 セミアコ ギター サウンドデモ'], similar: ['Epiphone Casino', 'Gibson ES-335', 'Gibson ES-345'], desc: '', wikiTitle: 'Gibson_ES-330' },
+      { id: 'juno60-pulp', brand: 'Roland', name: 'Juno-60（Candida Doyle）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Candida Doyle (Key)', price: '¥100,000〜¥200,000（ヴィンテージ）', kw: 'Roland Juno-60 Candida Doyle Pulp アナログシンせ Common People 80年代サウンド', yt: ['Roland Juno-60 Candida Doyle Pulp アナログシンせ Common People', 'Roland Juno-60 アナログシンせ サウンドデモ'], similar: ['Roland Juno-106', 'Korg Poly-6', 'Sequential Circuits Prophet-5'], desc: '', wikiTitle: 'Roland_Juno-60' },
+      { id: 'strat-pulp', brand: 'Fender', name: 'Stratocaster（Mark Webber）', cat: 'ギター', catIcon: '🎸', user: 'Mark Webber (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Mark Webber Pulp ギター ブリットポップ', yt: ['Fender Stratocaster Mark Webber Pulp ギター', 'Stratocaster フェンダー ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-330', 'Rickenbacker 330'], desc: '', wikiTitle: 'Fender_Stratocaster' },
+      { id: 'precision-pulp', brand: 'Fender', name: 'Precision Bass（Steve Mackey）', cat: 'ベース', catIcon: '🎸', user: 'Steve Mackey (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Steve Mackey Pulp ベース グルーヴ ダンスフロア', yt: ['Fender Precision Bass Steve Mackey Pulp ベース グルーヴ', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Gibson Thunderbird'], desc: '', wikiTitle: 'Fender_Precision_Bass' }
+    ]
+  },
+  {
+    id: 'thesmiths', name: 'The Smiths', en: 'The Smiths', genre: 'インディーポップ/ポストパンク',
+    since: '1982年〜1987年',
+    origin: 'イギリス（マンチェスター）',
+    members: 'Morrissey (Vo)\nJohnny Marr (Gt)\nAndy Rourke (Ba)\nMike Joyce (Dr)',
+    desc: 'マンチェスター出身の4人組。Morrissey・Johnny Marrの才能が結びつき、80年代英国インディーシーンを変えた伝説的バンド。',
+    gear: [
+      { id: 'rick330-marr', brand: 'Rickenbacker', name: '330（Johnny Marr）', cat: 'ギター', catIcon: '🎸', user: 'Johnny Marr (Gt)', price: '¥220,000〜¥380,000', kw: 'Rickenbacker 330 Johnny Marr The Smiths ギター インディーポップ アルペジオ', yt: ['Rickenbacker 330 Johnny Marr The Smiths インディーポップ アルペジオ', 'Rickenbacker 330 ギター サウンドデモ'], similar: ['Rickenbacker 360', 'Fender Jazzmaster', 'Gibson ES-335'], desc: '', wikiTitle: 'Rickenbacker_330' },
+      { id: 'jazzmaster-marr', brand: 'Fender', name: 'Jazzmaster（Johnny Marr）', cat: 'ギター', catIcon: '🎸', user: 'Johnny Marr (Gt)', price: '¥150,000〜¥250,000', kw: 'Fender Jazzmaster Johnny Marr The Smiths ギター フローティングトレモロ', yt: ['Fender Jazzmaster Johnny Marr The Smiths ギター', 'Fender Jazzmaster ギター サウンドデモ'], similar: ['Fender Jaguar', 'Rickenbacker 330', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'vox-smiths', brand: 'Vox', name: 'AC30（Johnny Marr）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Johnny Marr (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Johnny Marr The Smiths ブリティッシュアンプ クリーントーン', yt: ['Vox AC30 Johnny Marr The Smiths ブリティッシュアンプ クリーントーン', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Marshall JTM45', 'Roland Jazz Chorus'], desc: '', wikiTitle: 'Vox_AC30' },
+      { id: 'precision-smiths', brand: 'Fender', name: 'Precision Bass（Andy Rourke）', cat: 'ベース', catIcon: '🎸', user: 'Andy Rourke (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Andy Rourke The Smiths ベース メロディック インディーポップ', yt: ['Fender Precision Bass Andy Rourke The Smiths ベース メロディック', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Rickenbacker 4001', 'Music Man StingRay'], desc: '', wikiTitle: 'Fender_Precision_Bass' }
+    ]
+  },
+  {
+    id: 'thecure', name: 'The Cure', en: 'The Cure', genre: 'ポストパンク/ゴシックロック',
+    since: '1976年〜現在',
+    origin: 'イギリス（クローリー）',
+    members: 'Robert Smith (Vo/Gt)\nSimon Gallup (Ba)\nRoger ODonnell (Key)\nJason Cooper (Dr)\nReeves Gabrels (Gt)',
+    desc: '英国クローリー出身のバンド。Robert Smithを中心に、暗く詩的なゴシックサウンドと意外なポップセンスを融合させた独自の音楽世界を構築。',
+    gear: [
+      { id: 'jazzmaster-rs', brand: 'Fender', name: 'Jazzmaster（Robert Smith）', cat: 'ギター', catIcon: '🎸', user: 'Robert Smith (Vo/Gt)', price: '¥150,000〜¥250,000', kw: 'Fender Jazzmaster Robert Smith The Cure ゴシックロック ギター ローチューニング リバーブ', yt: ['Fender Jazzmaster Robert Smith The Cure ゴシックロック ギター', 'Fender Jazzmaster ギター サウンドデモ'], similar: ['Fender Jaguar', 'Fender Stratocaster', 'Rickenbacker 330'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
+      { id: 'roland-ce1-cure', brand: 'Roland', name: 'CE-1 Chorus Ensemble（Robert Smith）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Robert Smith (Vo/Gt)', price: '¥60,000〜¥120,000（ヴィンテージ）', kw: 'Roland CE-1 Chorus Robert Smith The Cure コーラス ゴシック ウェットサウンド', yt: ['Roland CE-1 Chorus Robert Smith The Cure ゴシック コーラス', 'Roland CE-1 コーラス ヴィンテージエフェクト サウンドデモ'], similar: ['Boss CE-2', 'Electro-Harmonix Small Clone', 'TC Electronic Corona'], desc: '', wikiTitle: 'Roland_CE-1' },
+      { id: 'boss-rv3-cure', brand: 'Boss', name: 'RV-3 Digital Reverb/Delay', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Robert Smith (Vo/Gt)', price: '¥15,000〜¥30,000（中古）', kw: 'Boss RV-3 Reverb Delay Robert Smith The Cure リバーブ ディレイ 幻想的', yt: ['Boss RV-3 Reverb Delay The Cure Robert Smith 幻想的サウンド', 'Boss RV-3 リバーブ・ディレイ ペダル サウンドデモ'], similar: ['Boss RV-6', 'Strymon BigSky', 'Eventide Space'], desc: '', wikiTitle: 'Boss_RV-3' },
+      { id: 'precision-cure', brand: 'Fender', name: 'Precision Bass（Simon Gallup）', cat: 'ベース', catIcon: '🎸', user: 'Simon Gallup (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Simon Gallup The Cure ベース ゴシック ドロップD', yt: ['Fender Precision Bass Simon Gallup The Cure ベース ゴシック', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Rickenbacker 4001', 'Music Man StingRay'], desc: '', wikiTitle: 'Fender_Precision_Bass' }
+    ]
+  },
+  {
+    id: 'joydivision', name: 'Joy Division', en: 'Joy Division', genre: 'ポストパンク/ゴシックロック',
+    since: '1976年〜1980年',
+    origin: 'イギリス（サルフォード）',
+    members: 'Ian Curtis (Vo)\nBernard Sumner (Gt/Key)\nPeter Hook (Ba)\nStephen Morris (Dr)',
+    desc: 'サルフォード出身の4人組。Ian Curtisの苦悩に満ちたボーカルと暗く実験的なサウンドで短命ながら永続的な影響を与えた伝説的バンド。',
+    gear: [
+      { id: 'casino-jd', brand: 'Epiphone', name: 'Casino（Bernard Sumner）', cat: 'ギター', catIcon: '🎸', user: 'Bernard Sumner (Gt/Key)', price: '¥80,000〜¥150,000', kw: 'Epiphone Casino Bernard Sumner Joy Division ギター ポストパンク ゴシック', yt: ['Epiphone Casino Bernard Sumner Joy Division ポストパンク ギター', 'Epiphone Casino セミアコ ギター サウンドデモ'], similar: ['Gibson ES-330', 'Rickenbacker 330', 'Fender Telecaster'], desc: '', wikiTitle: 'Epiphone_Casino' },
+      { id: 'hondo-hook', brand: 'Hondo', name: 'Rickenbacker Copy Bass（Peter Hook）', cat: 'ベース', catIcon: '🎸', user: 'Peter Hook (Ba)', price: '¥30,000〜¥80,000', kw: 'Hondo Bass Peter Hook Joy Division メロディックベース 高音弦 ポストパンク', yt: ['Peter Hook Joy Division メロディックベース 高音弦 Hondo ポストパンク', 'Hondo Rickenbacker Copy Bass ポストパンク サウンドデモ'], similar: ['Rickenbacker 4001', 'Fender Jazz Bass', 'Yamaha BB'], desc: '', wikiTitle: 'Peter_Hook' },
+      { id: 'roland-rs202-jd', brand: 'Roland', name: 'RS-202 String Machine', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Bernard Sumner (Gt/Key)', price: '¥50,000〜¥120,000（ヴィンテージ）', kw: 'Roland RS-202 String Machine Bernard Sumner Joy Division ストリングス シンせ ポストパンク', yt: ['Roland RS-202 String Machine Joy Division ポストパンク ストリングス', 'Roland RS-202 String Machine ヴィンテージシンせ サウンドデモ'], similar: ['ARP Solina', 'Elka Rhapsody', 'Crumar Performer'], desc: '', wikiTitle: 'Roland_RS-202' },
+      { id: 'yamaha-dr-jd', brand: 'Yamaha', name: 'Recording Custom（Stephen Morris）', cat: 'ドラム', catIcon: '🥁', user: 'Stephen Morris (Dr)', price: '¥200,000〜¥400,000', kw: 'Yamaha Recording Custom Stephen Morris Joy Division ドラム 機械的 冷たいサウンド', yt: ['Yamaha Recording Custom Stephen Morris Joy Division ドラム 機械的', 'Yamaha Recording Custom ドラムキット サウンドデモ'], similar: ['Ludwig Classic Maple', 'Pearl Masters', 'Sonor SQ1'], desc: '', wikiTitle: 'Yamaha_drums' }
+    ]
+  },
+  {
+    id: 'neworder', name: 'New Order', en: 'New Order', genre: 'シンセポップ/ポストパンク/ダンスミュージック',
+    since: '1980年〜現在',
+    origin: 'イギリス（サルフォード）',
+    members: 'Bernard Sumner (Vo/Gt/Key)\nPeter Hook (Ba)\nStephen Morris (Dr)\nGillian Gilbert (Key/Gt)',
+    desc: 'Joy Division解散後に結成。ロックとエレクトロニックダンスミュージックを融合させ、Blue Mondayでクラブカルチャーに多大な影響を与えた。',
+    gear: [
+      { id: 'tb303-no', brand: 'Roland', name: 'TB-303 Bass Line', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Bernard Sumner (Vo/Gt/Key)', price: '¥60,000〜¥150,000（ヴィンテージ）', kw: 'Roland TB-303 New Order シンせ ベースライン アシッド エレクトロニック', yt: ['Roland TB-303 New Order シンせ ベースライン アシッドハウス', 'Roland TB-303 Bass Line シンせ サウンドデモ'], similar: ['Roland TB-3', 'Behringer TD-3', 'Cyclone TT-303'], desc: '', wikiTitle: 'Roland_TB-303' },
+      { id: 'tr808-no', brand: 'Roland', name: 'TR-808 Rhythm Composer', cat: 'ドラムマシン', catIcon: '🥁', user: 'Stephen Morris (Dr)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland TR-808 New Order ドラムマシン Blue Monday エレクトロニック ビート', yt: ['Roland TR-808 New Order Blue Monday ドラムマシン エレクトロニック', 'Roland TR-808 ドラムマシン サウンドデモ'], similar: ['Roland TR-909', 'Linn LM-1', 'Oberheim DMX'], desc: '', wikiTitle: 'Roland_TR-808' },
+      { id: 'dmx-no', brand: 'Oberheim', name: 'DMX（Blue Monday）', cat: 'ドラムマシン', catIcon: '🥁', user: 'Stephen Morris (Dr)', price: '¥50,000〜¥120,000（ヴィンテージ）', kw: 'Oberheim DMX New Order Blue Monday ドラムマシン スネア ニューウェーブ', yt: ['Oberheim DMX New Order Blue Monday ドラムマシン ニューウェーブ', 'Oberheim DMX ドラムマシン ヴィンテージ サウンドデモ'], similar: ['Roland TR-808', 'Linn LM-1', 'Sequential Circuits Drumtraks'], desc: '', wikiTitle: 'Oberheim_DMX' },
+      { id: 'rick4001-no', brand: 'Rickenbacker', name: '4001（Peter Hook）', cat: 'ベース', catIcon: '🎸', user: 'Peter Hook (Ba)', price: '¥220,000〜¥380,000', kw: 'Rickenbacker 4001 Peter Hook New Order ベース 高音弦メロディック エレクトロニック', yt: ['Rickenbacker 4001 Peter Hook New Order ベース 高音弦 メロディック', 'Rickenbacker 4001 ベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Fender Precision Bass', 'Yamaha BB'], desc: '', wikiTitle: 'Rickenbacker_4001' },
+      { id: 'dx7-no', brand: 'Yamaha', name: 'DX7（Gillian Gilbert）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Gillian Gilbert (Key/Gt)', price: '¥30,000〜¥80,000（ヴィンテージ）', kw: 'Yamaha DX7 New Order Gillian Gilbert FMシンせ 80年代 ベル系サウンド', yt: ['Yamaha DX7 New Order Gillian Gilbert FMシンせ 80年代', 'Yamaha DX7 FMシンせ ヴィンテージ サウンドデモ'], similar: ['Yamaha TX7', 'Korg DW-8000', 'Roland D-50'], desc: '', wikiTitle: 'Yamaha_DX7' },
+      { id: 'synclavier-no', brand: 'New England Digital', name: 'Synclavier', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Gillian Gilbert (Key/Gt)', price: '¥2,000,000以上（ヴィンテージ）', kw: 'Synclavier New Order Gillian Gilbert デジタルシンせ サンプラー 先端技術', yt: ['Synclavier New Order Gillian Gilbert デジタルシンせ サンプラー', 'Synclavier デジタルシンせ ヴィンテージ サウンドデモ'], similar: ['Fairlight CMI', 'Emulator II', 'Kurzweil K250'], desc: '', wikiTitle: 'Synclavier' }
+    ]
+  },
 ];
