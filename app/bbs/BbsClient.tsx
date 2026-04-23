@@ -9,6 +9,7 @@ import type { BbsPost, BbsComment } from '@/lib/types';
 import { BBS_CATS, FLAIR_CLS } from '@/data/config';
 import { createPost, createComment } from './actions';
 import { linkifyGear, type Segment, type DbGearEntry } from '@/data/gearIndex';
+import AdUnit from '@/components/AdUnit';
 
 // 機材名を薄いリンクに変換するコンポーネント
 function GearLinkedText({ text, dbGear }: { text: string; dbGear?: DbGearEntry[] }) {
@@ -253,6 +254,9 @@ export default function BbsClient({
               </button>
             </div>
           )}
+
+          {/* 広告（投稿フォームの上） */}
+          <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BBS ?? ''} className="my-3" />
 
           {/* 新規投稿フォーム */}
           {showNewPost && (
