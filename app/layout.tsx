@@ -3,8 +3,10 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
+import { getLocale } from '@/lib/i18n';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
+const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -20,11 +22,9 @@ export const metadata: Metadata = {
     siteName: 'Gear ちゃんねる',
     locale: 'ja_JP',
     type: 'website',
-    // OGP画像は app/opengraph-image.tsx で自動生成される
   },
   twitter: {
     card: 'summary_large_image',
-    // Twitter画像も opengraph-image.tsx から自動適用
   },
   robots: {
     index: true,
@@ -39,10 +39,10 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
+  const locale = getLocale();
 
   return (
-    <html lang="ja">
+    <html lang={locale === 'en' ? 'en' : 'ja'}>
       <head>
         {adsenseId && (
           // eslint-disable-next-line @next/next/no-sync-scripts
@@ -54,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         )}
       </head>
       <body>
-        <Header />
+        <Header locale={locale} />
         {children}
         <Footer />
         <Analytics />

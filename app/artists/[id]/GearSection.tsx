@@ -8,10 +8,12 @@ import { useRouter } from 'next/navigation';
 import type { Artist, GearItem } from '@/lib/types';
 import { getFxSubcat, FX_SUBCATS } from '@/data/config';
 import { addUserGear } from './actions';
+import { type Locale, t, localeCat } from '@/lib/i18n';
 
 interface Props {
   artist: Artist;
-  dbGear?: GearItem[]; // 管理画面から追加した機材
+  dbGear?: GearItem[];
+  locale?: Locale;
 }
 
 type EditOverride = {
@@ -35,7 +37,7 @@ function parseMemberOptions(members: string): string[] {
   return members.split(/\\n|\n| \/ /).map(s => s.trim()).filter(Boolean);
 }
 
-export default function GearSection({ artist, dbGear = [] }: Props) {
+export default function GearSection({ artist, dbGear = [], locale = 'ja' }: Props) {
   const a = artist;
   const router = useRouter();
 
@@ -107,20 +109,19 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
   }
 
   async function addGear() {
-    if (!addForm.name.trim()) { alert('機材名を入力してください'); return; }
+    if (!addForm.name.trim()) { alert(t(locale, 'addGearValidation')); return; }
     setAdding(true);
     try {
       const result = await addUserGear(a.id, addForm);
       if (result.error) {
-        alert('追加に失敗しました: ' + result.error);
+        alert(t(locale, 'addGearFail'));
         return;
       }
       setAddForm({ brand: '', name: '', cat: 'ギター', user: '', price: '', yt: '' });
       setShowAddForm(false);
-      // サーバーコンポーネントを再フェッチ → dbGear に新機材が反映される
       router.refresh();
     } catch {
-      alert('追加に失敗しました。しばらくしてからお試しください。');
+      alert(t(locale, 'addGearFail'));
     } finally {
       setAdding(false);
     }
@@ -131,8 +132,8 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
       {/* メンバーフィルターバー */}
       {memberFilter && (
         <div className="member-filter-bar">
-          👤 <b>{memberFilter}</b> の機材を表示中{' '}
-          <button onClick={() => setMemberFilter(null)}>× 全員表示</button>
+          👤 <b>{memberFilter}</b>{locale === 'en' ? ' gear' : ' の機材を表示中'}{' '}
+          <button onClick={() => setMemberFilter(null)}>{t(locale, 'memberFilterClear')}</button>
         </div>
       )}
 
@@ -144,7 +145,7 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
             className={`cf-btn${catFilter === c ? ' on' : ''}`}
             onClick={() => { setCatFilter(c); setFxSubcat('すべて'); }}
           >
-            {c}
+            {localeCat(locale, c)}
           </button>
         ))}
       </div>
@@ -184,6 +185,7 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
             onEditValuesChange={v => setEditValues(prev => ({ ...prev, [`${a.id}-${g.id}`]: v }))}
             onDelete={() => setUserGear(prev => prev.filter(u => u.id !== g.id))}
             onMemberClick={setMemberFilter}
+            locale={locale}
           />
         ))}
       </div>
@@ -192,7 +194,7 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
       <div className="add-gear-row">
         {!showAddForm && (
           <button className="add-gear-btn" onClick={() => setShowAddForm(true)}>
-            ＋ 機材を追加する
+            {t(locale, 'addGearBtn')}
           </button>
         )}
       </div>
@@ -200,33 +202,33 @@ export default function GearSection({ artist, dbGear = [] }: Props) {
       {/* 機材追加フォーム */}
       {showAddForm && (
         <div className="add-gear-form">
-          <div className="add-gear-title">＋ 機材を追加</div>
+          <div className="add-gear-title">{t(locale, 'addGearTitle')}</div>
           <div className="add-gear-grid">
-            <input className="add-gear-in" placeholder="ブランド（例：Fender）" value={addForm.brand} onChange={e => setAddForm(p => ({ ...p, brand: e.target.value }))} />
-            <input className="add-gear-in" placeholder="機材名（必須）" value={addForm.name} onChange={e => setAddForm(p => ({ ...p, name: e.target.value }))} />
+            <input className="add-gear-in" placeholder={t(locale, 'addGearBrandPh')} value={addForm.brand} onChange={e => setAddForm(p => ({ ...p, brand: e.target.value }))} />
+            <input className="add-gear-in" placeholder={t(locale, 'addGearNamePh')} value={addForm.name} onChange={e => setAddForm(p => ({ ...p, name: e.target.value }))} />
             <select className="add-gear-in" value={addForm.cat} onChange={e => setAddForm(p => ({ ...p, cat: e.target.value }))}>
-              {ALL_CATS.map(c => <option key={c}>{c}</option>)}
+              {ALL_CATS.map(c => <option key={c} value={c}>{localeCat(locale, c)}</option>)}
             </select>
             <select className="add-gear-in" value={addForm.user} onChange={e => setAddForm(p => ({ ...p, user: e.target.value }))}>
-              <option value="">── メンバーを選択 ──</option>
+              <option value="">{t(locale, 'addGearSelectMember')}</option>
               {parseMemberOptions(a.members).map(m => (
                 <option key={m} value={m}>{m}</option>
               ))}
-              <option value="バンド全体">バンド全体</option>
-              <option value="不明">不明</option>
+              <option value="バンド全体">{t(locale, 'addGearWholeBand')}</option>
+              <option value="不明">{t(locale, 'addGearUnknown')}</option>
             </select>
           </div>
           <div className="add-gear-grid">
-            <input className="add-gear-in" placeholder="価格（例：¥50,000〜）" value={addForm.price} onChange={e => setAddForm(p => ({ ...p, price: e.target.value }))} />
-            <input className="add-gear-in" placeholder="YouTube検索ワード（任意）" value={addForm.yt} onChange={e => setAddForm(p => ({ ...p, yt: e.target.value }))} />
+            <input className="add-gear-in" placeholder={t(locale, 'addGearPricePh')} value={addForm.price} onChange={e => setAddForm(p => ({ ...p, price: e.target.value }))} />
+            <input className="add-gear-in" placeholder={t(locale, 'addGearYtPh')} value={addForm.yt} onChange={e => setAddForm(p => ({ ...p, yt: e.target.value }))} />
           </div>
           <div className="add-gear-actions">
             <button className="add-gear-save" onClick={addGear} disabled={adding}>
-              {adding ? '保存中…' : '追加する'}
+              {adding ? t(locale, 'addGearSavingBtn') : t(locale, 'addGearSaveBtn')}
             </button>
-            <button className="add-gear-cancel" onClick={() => setShowAddForm(false)} disabled={adding}>キャンセル</button>
+            <button className="add-gear-cancel" onClick={() => setShowAddForm(false)} disabled={adding}>{t(locale, 'addGearCancelBtn')}</button>
           </div>
-          <div style={{ fontSize: '10px', color: '#bbb' }}>追加した機材はサイト全体に反映されます</div>
+          <div style={{ fontSize: '10px', color: '#bbb' }}>{t(locale, 'addGearNote')}</div>
         </div>
       )}
     </>
@@ -253,9 +255,10 @@ interface GearCardProps {
   onSaveEdit: () => void;
   onDelete: () => void;
   onMemberClick: (m: string) => void;
+  locale: Locale;
 }
 
-function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, editValues, onEditValuesChange, isUserAdded, onToggle, onStartEdit, onCancelEdit, onSaveEdit, onDelete, onMemberClick }: GearCardProps) {
+function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, editValues, onEditValuesChange, isUserAdded, onToggle, onStartEdit, onCancelEdit, onSaveEdit, onDelete, onMemberClick, locale }: GearCardProps) {
   const ov = override ?? {};
   const name = ov.name || g.name;
 
@@ -337,8 +340,8 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
           <div className="g-name">
             {g.brand && <span style={{ color: '#999', fontWeight: 400, marginRight: '4px', fontSize: '0.85em' }}>{g.brand}</span>}
             {name}
-            {hasEdit && <span className="g-edited-badge">編集済</span>}
-            {isUserAdded && <span className="user-gear-badge">追加</span>}
+            {hasEdit && <span className="g-edited-badge">{t(locale, 'editedBadge')}</span>}
+            {isUserAdded && <span className="user-gear-badge">{t(locale, 'userAddedBadge')}</span>}
           </div>
           <button
             className="g-user"
@@ -381,28 +384,28 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
                     {g.brand && <span className="af-card-brand">{g.brand}</span>}
                     {name}
                   </div>
-                  <div className="af-card-store">Amazon（アマゾン）</div>
+                  <div className="af-card-store">{t(locale, 'amazonStore')}</div>
                 </div>
               </a>
 
               {/* ショップボタン */}
               <a className="af-btn af-btn-amazon" href={`https://www.amazon.co.jp/s?k=${shopEnc}`} target="_blank" rel="noopener noreferrer">
-                Amazon（アマゾン）で詳細を見る <span>›</span>
+                {t(locale, 'amazonBtn')} <span>›</span>
               </a>
               <a className="af-btn af-btn-rakuten" href={`https://search.rakuten.co.jp/search/mall/${shopEnc}/`} target="_blank" rel="noopener noreferrer">
-                楽天市場で詳細を見る <span>›</span>
+                {t(locale, 'rakutenBtn')} <span>›</span>
               </a>
               <a className="af-btn af-btn-yahoo" href={`https://shopping.yahoo.co.jp/search?p=${shopEnc}`} target="_blank" rel="noopener noreferrer">
-                Yahoo!ショッピングで詳細を見る <span>›</span>
+                {t(locale, 'yahooBtn')} <span>›</span>
               </a>
               <a className="af-btn af-btn-soundhouse" href={`https://www.soundhouse.co.jp/search/index/?search_all=${soundhouseQ}&i_type=a`} target="_blank" rel="noopener noreferrer">
-                サウンドハウスで詳細を見る <span>›</span>
+                {t(locale, 'soundhouseBtn')} <span>›</span>
               </a>
             </div>
 
             {/* YouTube */}
             <div>
-              <div className="gex-sec-ttl">▶ YouTube で調べる</div>
+              <div className="gex-sec-ttl">{t(locale, 'ytSectionTitle')}</div>
               <div className="gex-yt-list">
                 {ytQueries.map(q => (
                   <a key={q} className="gex-yt-link" href={`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`} target="_blank" rel="noopener noreferrer">
@@ -410,7 +413,7 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
                   </a>
                 ))}
                 <a className="gex-yt-link" href={`https://www.youtube.com/results?search_query=${nameEnc}`} target="_blank" rel="noopener noreferrer" style={{ color: '#cc0000', borderColor: '#cc0000', background: '#fff4f4', fontWeight: 700 }}>
-                  <span>🔍</span><span>「{name}」でYouTubeを検索する</span>
+                  <span>🔍</span><span>{t(locale, 'ytSearchLabel', { name })}</span>
                 </a>
               </div>
             </div>
@@ -418,7 +421,7 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
             {/* 似た機材 */}
             {g.similar && g.similar.length > 0 && (
               <div>
-                <div className="gex-sec-ttl">似た機材</div>
+                <div className="gex-sec-ttl">{t(locale, 'similarGear')}</div>
                 <div className="gex-sim-row">
                   {g.similar.map(s => <span key={s} className="gex-sim-tag">{s}</span>)}
                 </div>
@@ -428,50 +431,50 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
             {/* 編集フォーム */}
             {isEditing && editValues && onEditValuesChange && (
               <div className="edit-form">
-                <div className="edit-form-ttl">情報を編集 <span className="edit-wiki-badge">Wiki編集</span></div>
+                <div className="edit-form-ttl">{t(locale, 'editFormTitle')} <span className="edit-wiki-badge">{t(locale, 'editWikiBadge')}</span></div>
                 <div className="edit-row">
-                  <span className="edit-label">名前</span>
+                  <span className="edit-label">{t(locale, 'editLabelName')}</span>
                   <input className="edit-in" value={editValues.name} onChange={e => onEditValuesChange({ ...editValues, name: e.target.value })} placeholder={g.name} />
                 </div>
                 <div className="edit-row">
-                  <span className="edit-label">カテゴリ</span>
+                  <span className="edit-label">{t(locale, 'editLabelCat')}</span>
                   <select className="edit-in" value={editValues.cat} onChange={e => onEditValuesChange({ ...editValues, cat: e.target.value })}>
-                    {ALL_CATS.map(c => <option key={c} value={c}>{c}</option>)}
+                    {ALL_CATS.map(c => <option key={c} value={c}>{localeCat(locale, c)}</option>)}
                   </select>
                 </div>
                 <div className="edit-row">
-                  <span className="edit-label">使用者</span>
+                  <span className="edit-label">{t(locale, 'editLabelUser')}</span>
                   <select className="edit-in" value={editValues.user} onChange={e => onEditValuesChange({ ...editValues, user: e.target.value })}>
-                    <option value="">── メンバーを選択 ──</option>
+                    <option value="">{t(locale, 'addGearSelectMember')}</option>
                     {memberOptions.map(m => (
                       <option key={m} value={m}>{m}</option>
                     ))}
-                    <option value="バンド全体">バンド全体</option>
-                    <option value="不明">不明</option>
+                    <option value="バンド全体">{t(locale, 'addGearWholeBand')}</option>
+                    <option value="不明">{t(locale, 'addGearUnknown')}</option>
                   </select>
                 </div>
                 <div className="edit-actions">
-                  <button className="edit-save" onClick={onSaveEdit}>保存</button>
-                  <button className="edit-cancel" onClick={onCancelEdit}>キャンセル</button>
+                  <button className="edit-save" onClick={onSaveEdit}>{t(locale, 'editSave')}</button>
+                  <button className="edit-cancel" onClick={onCancelEdit}>{t(locale, 'editCancel')}</button>
                 </div>
-                <div className="edit-note">編集内容はこのブラウザのみに保存されます</div>
+                <div className="edit-note">{t(locale, 'editNote')}</div>
               </div>
             )}
 
             {/* アクションボタン */}
             <div className="gex-actions">
               <a className="gex-bbs-btn" href={`/bbs?gear=${encodeURIComponent(g.kw.split(' ')[0])}`}>
-                💬 掲示板で話す
+                {t(locale, 'discussBtn')}
               </a>
               {!isEditing && (
-                <button className="gex-edit-btn" onClick={onStartEdit}>✏️ 情報を編集</button>
+                <button className="gex-edit-btn" onClick={onStartEdit}>{t(locale, 'editInfoBtn')}</button>
               )}
               {isUserAdded ? (
-                <button className="del-gear-btn" onClick={() => { if (confirm('この機材を削除しますか？')) onDelete(); }}>
-                  🗑 削除
+                <button className="del-gear-btn" onClick={() => { if (confirm(t(locale, 'deleteConfirm'))) onDelete(); }}>
+                  {t(locale, 'deleteBtn')}
                 </button>
               ) : (
-                <span style={{ fontSize: '11px', color: '#bbb' }}>公式データは削除不可</span>
+                <span style={{ fontSize: '11px', color: '#bbb' }}>{t(locale, 'officialDataNote')}</span>
               )}
             </div>
           </div>

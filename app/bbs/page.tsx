@@ -4,27 +4,36 @@
 import type { Metadata } from 'next';
 import { fetchPosts, createServerClient } from '@/lib/supabase';
 import BbsClient from './BbsClient';
+import { getLocale } from '@/lib/i18n';
 
 // 掲示板は常に最新データを表示（書き込みがリアルタイムで反映されるように）
 export const revalidate = 0;
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
-export const metadata: Metadata = {
-  title: '音楽機材 掲示板 — Gear ちゃんねる',
-  description: 'ギター・シンセ・エフェクター・DAWなど音楽機材について語る掲示板。実際に使ってみた感想・購入相談・セッティングの質問など何でもどうぞ。',
-  openGraph: {
-    title: '音楽機材 掲示板 — Gear ちゃんねる',
-    description: 'ギター・シンセ・エフェクター・DAWなど音楽機材について語る掲示板。',
-    url: `${BASE_URL}/bbs`,
-    siteName: 'Gear ちゃんねる',
-    locale: 'ja_JP',
-    type: 'website',
-  },
-  alternates: {
-    canonical: `${BASE_URL}/bbs`,
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = getLocale();
+  const isEn = locale === 'en';
+  return {
+    title: isEn ? 'Music Gear Forum — Gear Channel' : '音楽機材 掲示板 — Gear ちゃんねる',
+    description: isEn
+      ? 'Discuss guitars, synths, effects, DAWs and all things music gear. Ask questions, share tips, and connect with fellow musicians.'
+      : 'ギター・シンセ・エフェクター・DAWなど音楽機材について語る掲示板。実際に使ってみた感想・購入相談・セッティングの質問など何でもどうぞ。',
+    openGraph: {
+      title: isEn ? 'Music Gear Forum — Gear Channel' : '音楽機材 掲示板 — Gear ちゃんねる',
+      description: isEn
+        ? 'Discuss guitars, synths, effects & DAWs with fellow musicians.'
+        : 'ギター・シンセ・エフェクター・DAWなど音楽機材について語る掲示板。',
+      url: `${BASE_URL}/bbs`,
+      siteName: isEn ? 'Gear Channel' : 'Gear ちゃんねる',
+      locale: isEn ? 'en_US' : 'ja_JP',
+      type: 'website',
+    },
+    alternates: {
+      canonical: `${BASE_URL}/bbs`,
+    },
+  };
+}
 
 interface Props {
   searchParams: {
@@ -39,6 +48,7 @@ interface Props {
 const PAGE_SIZE = 20;
 
 export default async function BbsPage({ searchParams }: Props) {
+  const locale = getLocale();
   const flair = searchParams.flair;
   const search = searchParams.q;
   const gearKw = searchParams.gear;
@@ -103,6 +113,7 @@ export default async function BbsPage({ searchParams }: Props) {
         initialPage={page}
         pageSize={PAGE_SIZE}
         dbGear={dbGear}
+        locale={locale}
       />
     </>
   );

@@ -10,6 +10,7 @@ import { BBS_CATS, FLAIR_CLS } from '@/data/config';
 import { createPost, createComment } from './actions';
 import { linkifyGear, type Segment, type DbGearEntry } from '@/data/gearIndex';
 import AdUnit from '@/components/AdUnit';
+import { type Locale, t, localeCat } from '@/lib/i18n';
 
 // 機材名を薄いリンクに変換するコンポーネント
 function GearLinkedText({ text, dbGear }: { text: string; dbGear?: DbGearEntry[] }) {
@@ -47,6 +48,7 @@ interface Props {
   initialPage: number;
   pageSize: number;
   dbGear?: DbGearEntry[];
+  locale?: Locale;
 }
 
 export default function BbsClient({
@@ -59,6 +61,7 @@ export default function BbsClient({
   initialPage,
   pageSize,
   dbGear = [],
+  locale = 'ja',
 }: Props) {
   const router = useRouter();
   const pathname = usePathname();
@@ -202,13 +205,13 @@ export default function BbsClient({
         <div className="bbs-main">
           {/* ヘッダー */}
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
-            <h1 style={{ fontSize: '18px', fontWeight: 800 }}>📋 掲示板</h1>
+            <h1 style={{ fontSize: '18px', fontWeight: 800 }}>📋 {t(locale, 'navBbs')}</h1>
             <button
               className="new-post-btn"
               onClick={() => setShowNewPost(v => !v)}
               style={{ background: '#1a1a1a', color: '#fff', border: 'none', borderRadius: '8px', padding: '8px 16px', fontWeight: 700, fontSize: '13px', cursor: 'pointer' }}
             >
-              ＋ 新規スレッド
+              {t(locale, 'bbsNewThread')}
             </button>
           </div>
 
@@ -219,14 +222,14 @@ export default function BbsClient({
               onClick={() => handleSort('pop')}
               style={{ padding: '5px 12px', borderRadius: '6px', border: '1px solid #ddd', cursor: 'pointer', fontWeight: sort === 'pop' ? 700 : 400, background: sort === 'pop' ? '#1a1a1a' : '#fff', color: sort === 'pop' ? '#fff' : '#333' }}
             >
-              🔥 人気順
+              {t(locale, 'bbsPopular')}
             </button>
             <button
               className={`sort-btn${sort === 'new' ? ' on' : ''}`}
               onClick={() => handleSort('new')}
               style={{ padding: '5px 12px', borderRadius: '6px', border: '1px solid #ddd', cursor: 'pointer', fontWeight: sort === 'new' ? 700 : 400, background: sort === 'new' ? '#1a1a1a' : '#fff', color: sort === 'new' ? '#fff' : '#333' }}
             >
-              🕐 新着順
+              {t(locale, 'bbsLatest')}
             </button>
           </div>
 
@@ -235,22 +238,22 @@ export default function BbsClient({
             <input
               className="s-in"
               type="search"
-              placeholder="スレッドを検索…"
+              placeholder={t(locale, 'bbsSearchPh')}
               value={search}
               onChange={e => setSearch(e.target.value)}
             />
-            <button type="submit" className="s-btn">検索</button>
+            <button type="submit" className="s-btn">{t(locale, 'bbsSearchBtn')}</button>
           </form>
 
           {/* 機材フィルターバナー */}
           {initialGearKw && (
             <div style={{ background: '#fffbeb', border: '1px solid #f59e0b', borderRadius: '8px', padding: '8px 12px', marginBottom: '10px', fontSize: '13px' }}>
-              🔍 <b>{initialGearKw}</b> 関連のスレッドを表示中
+              <b>{initialGearKw}</b> {locale === 'en' ? 'related threads' : '関連のスレッドを表示中'}
               <button
                 onClick={() => pushQuery({ gear: undefined })}
                 style={{ marginLeft: '8px', background: 'none', border: 'none', cursor: 'pointer', color: '#d97706' }}
               >
-                × 解除
+                {t(locale, 'bbsGearClear')}
               </button>
             </div>
           )}
@@ -261,24 +264,24 @@ export default function BbsClient({
           {/* 新規投稿フォーム */}
           {showNewPost && (
             <form onSubmit={handleSubmitPost} className="new-post-form" style={{ background: '#fafaf8', border: '1px solid #e4e2dd', borderRadius: '10px', padding: '16px', marginBottom: '16px' }}>
-              <div style={{ fontWeight: 700, fontSize: '14px', marginBottom: '10px' }}>新規スレッドを立てる</div>
+              <div style={{ fontWeight: 700, fontSize: '14px', marginBottom: '10px' }}>{t(locale, 'bbsPostFormTitle')}</div>
               {submitError && <div style={{ color: '#cc0000', fontSize: '12px', marginBottom: '8px' }}>{submitError}</div>}
               <div style={{ display: 'grid', gap: '8px' }}>
-                <input className="bbs-in" placeholder="名前（省略可）" value={newPost.author} onChange={e => setAuthorName(e.target.value)} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px' }} />
+                <input className="bbs-in" placeholder={t(locale, 'bbsNamePh')} value={newPost.author} onChange={e => setAuthorName(e.target.value)} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px' }} />
                 <div style={{ display: 'flex', gap: '6px' }}>
                   <select className="bbs-in" value={newPost.flair} onChange={e => setNewPost(p => ({ ...p, flair: e.target.value }))} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', flex: 1 }}>
-                    {BBS_CATS.filter(c => c !== 'すべて').map(c => <option key={c}>{c}</option>)}
+                    {BBS_CATS.filter(c => c !== 'すべて').map(c => <option key={c} value={c}>{localeCat(locale, c)}</option>)}
                   </select>
-                  <input className="bbs-in" placeholder="機材タグ（例：Telecaster）" value={newPost.gearTag} onChange={e => setNewPost(p => ({ ...p, gearTag: e.target.value }))} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', flex: 2 }} />
+                  <input className="bbs-in" placeholder={t(locale, 'bbsGearTagPh')} value={newPost.gearTag} onChange={e => setNewPost(p => ({ ...p, gearTag: e.target.value }))} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', flex: 2 }} />
                 </div>
-                <input className="bbs-in" placeholder="タイトル（必須）" value={newPost.title} onChange={e => setNewPost(p => ({ ...p, title: e.target.value }))} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px' }} />
-                <textarea className="bbs-in" placeholder="本文（必須）" value={newPost.body} onChange={e => setNewPost(p => ({ ...p, body: e.target.value }))} rows={4} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', resize: 'vertical' }} />
+                <input className="bbs-in" placeholder={locale === 'en' ? 'Title (required)' : 'タイトル（必須）'} value={newPost.title} onChange={e => setNewPost(p => ({ ...p, title: e.target.value }))} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px' }} />
+                <textarea className="bbs-in" placeholder={locale === 'en' ? 'Body (required)' : '本文（必須）'} value={newPost.body} onChange={e => setNewPost(p => ({ ...p, body: e.target.value }))} rows={4} style={{ padding: '8px 10px', border: '1px solid #ddd', borderRadius: '6px', fontSize: '13px', resize: 'vertical' }} />
               </div>
               <div style={{ display: 'flex', gap: '8px', marginTop: '10px' }}>
                 <button type="submit" disabled={isSubmittingPost} style={{ background: isSubmittingPost ? '#888' : '#1a1a1a', color: '#fff', border: 'none', borderRadius: '6px', padding: '8px 18px', fontWeight: 700, fontSize: '13px', cursor: isSubmittingPost ? 'not-allowed' : 'pointer', opacity: isSubmittingPost ? 0.7 : 1 }}>
-                  {isSubmittingPost ? '送信中…' : '投稿する'}
+                  {isSubmittingPost ? t(locale, 'bbsSubmittingBtn') : t(locale, 'bbsSubmitBtn')}
                 </button>
-                <button type="button" onClick={() => setShowNewPost(false)} disabled={isSubmittingPost} style={{ background: '#f0ede7', color: '#555', border: 'none', borderRadius: '6px', padding: '8px 14px', fontSize: '13px', cursor: 'pointer' }}>キャンセル</button>
+                <button type="button" onClick={() => setShowNewPost(false)} disabled={isSubmittingPost} style={{ background: '#f0ede7', color: '#555', border: 'none', borderRadius: '6px', padding: '8px 14px', fontSize: '13px', cursor: 'pointer' }}>{t(locale, 'bbsCancelBtn')}</button>
               </div>
             </form>
           )}

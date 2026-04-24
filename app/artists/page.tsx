@@ -1,32 +1,43 @@
 // =============================================================
-// Artists Listing Page — Server Component
+// Artists Listing Page — Server Component（多言語対応）
 // =============================================================
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { ARTIST_KANA } from '@/data/config';
+import { getLocale, t } from '@/lib/i18n';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
-export const metadata: Metadata = {
-  title: 'アーティスト一覧',
-  description: `Official髭男dism・YOASOBI・King Gnu・RADWIMPSなど${DB.length}組のアーティストが使用しているギター・ベース・シンセ・エフェクター機材情報をまとめています。`,
-  alternates: { canonical: `${BASE_URL}/artists` },
-  openGraph: {
-    title: 'アーティスト一覧 | Gear ちゃんねる',
-    description: `${DB.length}組のアーティストの機材情報を網羅。使用ギター・エフェクター・DAWを調べよう。`,
-    url: `${BASE_URL}/artists`,
-    siteName: 'Gear ちゃんねる',
-    locale: 'ja_JP',
-    type: 'website',
-  },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = getLocale();
+  const isEn = locale === 'en';
+
+  return {
+    title: isEn ? 'All Artists' : 'アーティスト一覧',
+    description: isEn
+      ? `Browse gear used by ${DB.length} artists — guitars, basses, synths, effects, DAWs and more.`
+      : `Official髭男dism・YOASOBI・King Gnu・RADWIMPSなど${DB.length}組のアーティストが使用しているギター・ベース・シンセ・エフェクター機材情報をまとめています。`,
+    alternates: { canonical: `${BASE_URL}/artists` },
+    openGraph: {
+      title: isEn ? `All Artists | Gear Channel` : 'アーティスト一覧 | Gear ちゃんねる',
+      description: isEn
+        ? `${DB.length} artists' gear — guitars, effects, synths & more.`
+        : `${DB.length}組のアーティストの機材情報を網羅。使用ギター・エフェクター・DAWを調べよう。`,
+      url: `${BASE_URL}/artists`,
+      siteName: isEn ? 'Gear Channel' : 'Gear ちゃんねる',
+      locale: isEn ? 'en_US' : 'ja_JP',
+      type: 'website',
+    },
+  };
+}
 
 interface Props {
   searchParams: { q?: string };
 }
 
 export default function ArtistsPage({ searchParams }: Props) {
+  const locale = getLocale();
   const q = (searchParams.q ?? '').toLowerCase();
 
   const filtered = (q
@@ -48,14 +59,20 @@ export default function ArtistsPage({ searchParams }: Props) {
 
   return (
     <main className="page fade">
-      <div className="bc"><Link href="/">ホーム</Link> › アーティスト一覧</div>
+      <div className="bc">
+        <Link href="/">{t(locale, 'bcHome')}</Link> › {t(locale, 'bcArtists')}
+      </div>
       <h1 style={{ fontSize: '18px', fontWeight: 800, marginBottom: '16px' }}>
-        🎵 アーティスト一覧
-        {q && <span style={{ fontSize: '14px', color: '#888', fontWeight: 400, marginLeft: '8px' }}>「{q}」の検索結果 {filtered.length}件</span>}
+        🎵 {t(locale, 'artistsPageTitle')}
+        {q && (
+          <span style={{ fontSize: '14px', color: '#888', fontWeight: 400, marginLeft: '8px' }}>
+            {t(locale, 'artistsResults', { q, n: filtered.length })}
+          </span>
+        )}
       </h1>
       {filtered.length === 0 ? (
         <div style={{ textAlign: 'center', color: '#aaa', padding: '40px 0' }}>
-          「{q}」に一致するアーティストが見つかりませんでした
+          {t(locale, 'artistsNoResults', { q })}
         </div>
       ) : (
         <div className="a-grid">
@@ -75,14 +92,14 @@ export default function ArtistsPage({ searchParams }: Props) {
         </div>
       )}
 
-      {/* JSON-LD: ItemList（検索結果でのリッチ表示対応） */}
+      {/* JSON-LD: ItemList */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: 'アーティスト一覧 — Gear ちゃんねる',
-          description: `${DB.length}組のアーティストの機材情報`,
+          name: locale === 'en' ? 'All Artists — Gear Channel' : 'アーティスト一覧 — Gear ちゃんねる',
+          description: `${DB.length} artists' gear database`,
           url: `${BASE_URL}/artists`,
           numberOfItems: filtered.length,
           itemListElement: filtered.slice(0, 30).map((a, i) => ({

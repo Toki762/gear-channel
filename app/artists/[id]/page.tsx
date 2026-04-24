@@ -7,6 +7,7 @@ import { DB } from '@/data/artists';
 import GearSection from './GearSection';
 import ViewTracker from './ViewTracker';
 import AdUnit from '@/components/AdUnit';
+import { getLocale, t } from '@/lib/i18n';
 import { createServerClient } from '@/lib/supabase';
 import type { GearItem } from '@/lib/types';
 
@@ -29,29 +30,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const artist = DB.find(a => a.id === params.id);
   if (!artist) return { title: 'Not Found' };
 
-  // メンバー名を抽出（"石原慎也 (Vo/Gt)" → "石原慎也"）
+  const locale = getLocale();
+  const isEn = locale === 'en';
+
+  // メンバー名を抽出
   const memberNames = (artist.members ?? '')
     .split(/[、,，\n\/]|(?<=[^\s])\s*\(/)
     .map(s => s.replace(/[（(）)].*/g, '').trim())
     .filter(s => s.length > 0 && s !== artist.name);
   const memberStr = memberNames.length > 0 ? `${memberNames.slice(0, 4).join('・')} ` : '';
 
-  // 機材名を上位6件抽出（検索キーワードとして）
+  // 機材名を上位6件抽出
   const topGear = (artist.gear ?? []).slice(0, 6).map(g => [g.brand, g.name].filter(Boolean).join(' '));
 
-  const title = `${artist.name} の機材・使用ギター・エフェクター — Gear ちゃんねる`;
-  const description = `${memberStr}${artist.name}（${artist.en}）が使用するギター・ベース・エフェクターを一覧で確認。${topGear.slice(0, 3).join('、')}など。${(artist.desc || '').slice(0, 60)}`;
+  const title = isEn
+    ? `${artist.en ?? artist.name} Gear & Equipment — Gear Channel`
+    : `${artist.name} の機材・使用ギター・エフェクター — Gear ちゃんねる`;
+
+  const description = isEn
+    ? `${artist.en ?? artist.name} gear list — guitars, basses, effects, synths & more. ${topGear.slice(0, 3).join(', ')}.`
+    : `${memberStr}${artist.name}（${artist.en}）が使用するギター・ベース・エフェクターを一覧で確認。${topGear.slice(0, 3).join('、')}など。${(artist.desc || '').slice(0, 60)}`;
 
   return {
     title,
     description,
-    keywords: [artist.name, artist.en, ...memberNames, ...topGear, 'ギター', 'エフェクター', '機材', 'Gear ちゃんねる'].filter(Boolean),
+    keywords: [artist.name, artist.en, ...memberNames, ...topGear, 'guitar', 'gear', 'effects', 'Gear Channel'].filter(Boolean),
     openGraph: {
       title,
       description,
       url: `${BASE_URL}/artists/${artist.id}`,
-      siteName: 'Gear ちゃんねる',
-      locale: 'ja_JP',
+      siteName: isEn ? 'Gear Channel' : 'Gear ちゃんねる',
+      locale: isEn ? 'en_US' : 'ja_JP',
       type: 'website',
     },
     twitter: {
@@ -69,6 +78,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function ArtistPage({ params }: Props) {
   const artist = DB.find(a => a.id === params.id);
   if (!artist) notFound();
+  const locale = getLocale();
 
   // Supabase から管理者追加の機材を取得し GearItem 形式に変換
   let dbGear: GearItem[] = [];
@@ -142,7 +152,7 @@ export default async function ArtistPage({ params }: Props) {
 
       {/* パンくず */}
       <nav className="bc">
-        <a href="/">ホーム</a> › <a href="/artists">アーティスト一覧</a> › {artist.name}
+        <a href="/">{t(locale, 'bcHome')}</a> › <a href="/artists">{t(locale, 'bcArtists')}</a> › {artist.name}
       </nav>
 
       {/* アーティストヘッダー */}
@@ -158,7 +168,7 @@ export default async function ArtistPage({ params }: Props) {
       </div>
 
       {/* 機材セクション（静的データ＋管理画面追加分を統合表示） */}
-      <GearSection artist={artist} dbGear={dbGear} />
+      <GearSection artist={artist} dbGear={dbGear} locale={locale} />
 
       {/* 広告（機材リストの下） */}
       <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTIST ?? ''} className="my-6" />
