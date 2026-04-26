@@ -10,11 +10,11 @@ import { fetchPosts, createServerClient } from '@/lib/supabase';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
 export const metadata: Metadata = {
-  title: 'Gear ちゃんねる — アーティストの機材を調べよう',
+  title: 'Gear ちゃんねる — アーティストの使用機材のデータベースを皆で作ろう',
   description: '日本のアーティストが使用しているギター・ベース・シンセ・エフェクター・DAWを調べるサイト。Official髭男dism・YOASOBI・King Gnuなど人気アーティストの機材情報が充実。',
   alternates: { canonical: BASE_URL },
   openGraph: {
-    title: 'Gear ちゃんねる — アーティストの機材を調べよう',
+    title: 'Gear ちゃんねる — アーティストの使用機材のデータベースを皆で作ろう',
     description: '日本のアーティストが使用しているギター・ベース・シンセ・エフェクター・DAWを調べるサイト。',
     url: BASE_URL,
     siteName: 'Gear ちゃんねる',
@@ -69,7 +69,7 @@ export default async function HomePage() {
       <div className="hero">
         <h1>Gear <span style={{ color: '#d97706' }}>ちゃんねる</span></h1>
         <p style={{ color: '#888', fontSize: '13px' }}>
-          アーティストが使用している機材を調べよう
+          アーティストの使用機材のデータベースを皆で作ろう
         </p>
       </div>
 

@@ -137,7 +137,7 @@ export const i18n = {
     footerContact: 'お問い合わせ',
     footerArtists: 'アーティスト一覧',
     footerBbs: '掲示板',
-    footerCopy: '© {year} Gear ちゃんねる — アーティストの機材を調べるサイト',
+    footerCopy: '© {year} Gear ちゃんねる — アーティストの使用機材のデータベースを皆で作ろう',
   },
   en: {
     // Header

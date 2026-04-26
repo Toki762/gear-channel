@@ -5,7 +5,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Gear ちゃんねる — アーティストの機材を調べよう';
+export const alt = 'Gear ちゃんねる — アーティストの使用機材のデータベースを皆で作ろう';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -42,7 +42,7 @@ export default function OgImage() {
             </span>
           </div>
           <div style={{ fontSize: 32, color: '#888888', marginBottom: 48, display: 'flex' }}>
-            アーティストが使用している機材を調べよう
+            アーティストの使用機材のデータベースを皆で作ろう
           </div>
 
           {/* タグ */}

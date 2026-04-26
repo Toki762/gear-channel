@@ -13,7 +13,7 @@
   <text x="100" y="240" font-family="'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="900" fill="#ffffff" letter-spacing="-2">Gear</text>
   <text x="100" y="340" font-family="'Helvetica Neue', Arial, sans-serif" font-size="88" font-weight="900" fill="#d97706" letter-spacing="-2">ちゃんねる</text>
   <!-- サブテキスト -->
-  <text x="100" y="420" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" fill="#888888">アーティストが使用している機材を調べよう</text>
+  <text x="100" y="420" font-family="'Helvetica Neue', Arial, sans-serif" font-size="30" fill="#888888">アーティストの使用機材のデータベースを皆で作ろう</text>
   <!-- 装飾ドット -->
   <circle cx="1050" cy="180" r="120" fill="#d97706" opacity="0.15"/>
   <circle cx="1100" cy="450" r="80" fill="#d97706" opacity="0.1"/>

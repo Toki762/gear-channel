@@ -11,7 +11,7 @@ const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: 'Gear ちゃんねる — アーティストの機材を調べよう',
+    default: 'Gear ちゃんねる — アーティストの使用機材のデータベースを皆で作ろう',
     template: '%s | Gear ちゃんねる',
   },
   description: '日本のアーティストが使用している機材・ギター・シンセ・エフェクターを調べるサイト。掲示板でミュージシャンと語ろう。',
