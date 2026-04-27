@@ -21,13 +21,22 @@ function detectLocale(request: NextRequest): 'ja' | 'en' {
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') ?? '';
 
-  // ① vercel.app → カスタムドメインへ 301 リダイレクト
   if (host === VERCEL_PROD_ALIAS) {
+    // vercel.app の /robots.txt → Disallow: / を返してクロールをブロック
+    if (request.nextUrl.pathname === '/robots.txt') {
+      return new NextResponse('User-agent: *\nDisallow: /\n', {
+        headers: { 'Content-Type': 'text/plain' },
+      });
+    }
+
+    // ① vercel.app → カスタムドメインへ 301 リダイレクト（noindex ヘッダー付き）
     const url = new URL(request.url);
     url.hostname = PRIMARY_DOMAIN;
     url.protocol = 'https:';
     url.port = '';
-    return NextResponse.redirect(url, { status: 301 });
+    const redirect = NextResponse.redirect(url, { status: 301 });
+    redirect.headers.set('X-Robots-Tag', 'noindex, nofollow');
+    return redirect;
   }
 
   const response = NextResponse.next();

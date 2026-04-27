@@ -7,7 +7,7 @@ import { DB } from '@/data/artists';
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
 // コンテンツの実際の最終更新日（artists.ts や静的ページを更新したら一緒に更新すること）
-const CONTENT_UPDATED_AT = new Date('2026-04-23');
+const CONTENT_UPDATED_AT = new Date('2026-04-27');
 const STATIC_UPDATED_AT  = new Date('2026-01-01');
 
 export default function sitemap(): MetadataRoute.Sitemap {

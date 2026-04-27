@@ -30,6 +30,14 @@ const nextConfig = {
   async headers() {
     return [
       {
+        // vercel.app ドメインには noindex を付与（重複インデックス防止）
+        source: '/(.*)',
+        has: [{ type: 'host', value: 'gear-channel.vercel.app' }],
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           // クリックジャッキング防止
