@@ -21,23 +21,21 @@ export default function BuybackBanner({ variant = 'text' }: Props) {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            border={0}
             width={336}
             height={280}
             alt="楽器の買取屋さん"
             src="https://www29.a8.net/svt/bgt?aid=260428387658&wid=002&eno=01&mid=s00000015892005018000&mc=1"
-            style={{ maxWidth: '100%', height: 'auto', display: 'block', borderRadius: '8px' }}
+            style={{ border: 0, maxWidth: '100%', height: 'auto', display: 'block', borderRadius: '8px' }}
           />
         </a>
         {/* トラッキングピクセル */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          border={0}
           width={1}
           height={1}
           src="https://www10.a8.net/0.gif?a8mat=4B1VTV+AVR9LM+3EMG+TVJ4X"
           alt=""
-          style={{ position: 'absolute', opacity: 0, pointerEvents: 'none' }}
+          style={{ border: 0, position: 'absolute', opacity: 0, pointerEvents: 'none' }}
         />
       </div>
     );
@@ -65,12 +63,11 @@ export default function BuybackBanner({ variant = 'text' }: Props) {
       {/* トラッキングピクセル */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        border={0}
         width={1}
         height={1}
         src="https://www11.a8.net/0.gif?a8mat=4B1VTV+AJ95WA+3EMG+BZ8OY"
         alt=""
-        style={{ position: 'absolute', opacity: 0, pointerEvents: 'none' }}
+        style={{ border: 0, position: 'absolute', opacity: 0, pointerEvents: 'none' }}
       />
     </div>
   );
