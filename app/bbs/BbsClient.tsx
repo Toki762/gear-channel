@@ -202,6 +202,12 @@ export default function BbsClient({
   return (
     <main className="page fade">
       <div className="bbs-layout">
+        {/* ── 左サイドバー広告 ─── */}
+        <aside className="bbs-sidebar-left">
+          <div style={{ fontWeight: 700, fontSize: '11px', color: '#bbb', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px' }}>PR</div>
+          <BuybackBanner />
+        </aside>
+
         {/* ── メインコンテンツ ─── */}
         <div className="bbs-main">
           {/* ヘッダー */}
@@ -350,13 +356,10 @@ export default function BbsClient({
             </button>
           ))}
 
-          {/* 買取バナー（楽器を語るユーザー向け） */}
+          {/* 買取バナー（右：336×280） */}
           <div style={{ marginTop: '16px' }}>
             <div style={{ fontWeight: 700, fontSize: '11px', color: '#bbb', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px' }}>PR</div>
             <BuybackBanner variant="image" />
-            <div style={{ marginTop: '12px' }}>
-              <BuybackBanner />
-            </div>
           </div>
         </aside>
       </div>

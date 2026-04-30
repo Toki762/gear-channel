@@ -142,6 +142,12 @@ export default async function ArtistPage({ params }: Props) {
 
   return (
     <main className="page-with-sidebar fade">
+      {/* 左サイドバー広告 */}
+      <aside className="page-sidebar-left">
+        <div className="page-sidebar-label">PR</div>
+        <BuybackBanner />
+      </aside>
+
       <ViewTracker artistId={params.id} />
       <script
         type="application/ld+json"
@@ -170,11 +176,10 @@ export default async function ArtistPage({ params }: Props) {
         <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTIST ?? ''} className="my-6" />
       </div>
 
-      {/* サイドバー広告（スクロールしても常に見える） */}
+      {/* 右サイドバー広告（スクロールしても常に見える） */}
       <aside className="page-sidebar">
         <div className="page-sidebar-label">PR</div>
         <BuybackBanner variant="image" />
-        <BuybackBanner />
       </aside>
     </main>
   );

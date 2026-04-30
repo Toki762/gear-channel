@@ -21,16 +21,23 @@
     .fade { animation: fd .16s ease; }
     @keyframes fd { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:none; } }
 
-    /* ── サイドバー付きページレイアウト ── */
-    .page-with-sidebar { max-width: 1300px; margin: 0 auto; padding: 20px 16px 60px; display: grid; grid-template-columns: 1fr 360px; gap: 28px; align-items: start; }
+    /* ── サイドバー付きページレイアウト（左右広告 + 中央コンテンツ） ── */
+    .page-with-sidebar { max-width: 1560px; margin: 0 auto; padding: 20px 16px 60px; display: grid; grid-template-columns: 320px 1fr 380px; gap: 28px; align-items: start; }
     .page-main { min-width: 0; }
     .page-sidebar { position: sticky; top: 16px; display: flex; flex-direction: column; gap: 16px; }
+    .page-sidebar-left { position: sticky; top: 16px; display: flex; flex-direction: column; gap: 16px; }
     .page-sidebar-label { font-size: 11px; font-weight: 700; color: #bbb; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 4px; }
+    /* 中幅：左サイドバーを隠して2カラムに */
+    @media (max-width: 1200px) {
+      .page-with-sidebar { grid-template-columns: 1fr 360px; }
+      .page-sidebar-left { display: none; }
+    }
+    /* スマホ：1カラム */
     @media (max-width: 960px) {
       .page-with-sidebar { grid-template-columns: 1fr; padding: 16px 14px 50px; }
+      .page-sidebar-left { display: flex; position: static; flex-direction: row; flex-wrap: wrap; gap: 12px; }
       .page-sidebar { position: static; flex-direction: row; flex-wrap: wrap; gap: 12px; }
-      .page-sidebar .buyback-banner { flex: 1 1 100%; }
-      .page-sidebar .buyback-img-wrap { flex: 0 0 auto; margin: 0 auto; }
+      .page-sidebar .buyback-img-wrap, .page-sidebar-left .buyback-img-wrap { flex: 0 0 auto; margin: 0 auto; }
     }
 
     /* Breadcrumb */
@@ -163,7 +170,12 @@
     .edit-note { font-size: 10px; color: #bbb; line-height: 1.5; }
 
     /* ===== BBS ===== */
-    .bbs-layout { display: grid; grid-template-columns: 1fr 360px; gap: 18px; align-items: start; }
+    .bbs-layout { display: grid; grid-template-columns: 320px 1fr 360px; gap: 18px; align-items: start; }
+    .bbs-sidebar-left { position: sticky; top: 16px; display: flex; flex-direction: column; gap: 12px; }
+    @media(max-width: 1200px){
+      .bbs-layout { grid-template-columns: 1fr 360px; }
+      .bbs-sidebar-left { display: none; }
+    }
     @media(max-width: 680px){
       .bbs-layout { grid-template-columns: 1fr; }
       /* サイドバーをメインの上に移動して横スクロール表示 */

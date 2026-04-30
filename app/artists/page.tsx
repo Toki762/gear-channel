@@ -60,6 +60,12 @@ export default function ArtistsPage({ searchParams }: Props) {
 
   return (
     <main className="page-with-sidebar fade">
+      {/* 左サイドバー広告 */}
+      <aside className="page-sidebar-left">
+        <div className="page-sidebar-label">PR</div>
+        <BuybackBanner />
+      </aside>
+
       {/* メインコンテンツ */}
       <div className="page-main">
         <div className="bc">
@@ -115,11 +121,10 @@ export default function ArtistsPage({ searchParams }: Props) {
         />
       </div>
 
-      {/* サイドバー広告 */}
+      {/* 右サイドバー広告 */}
       <aside className="page-sidebar">
         <div className="page-sidebar-label">PR</div>
         <BuybackBanner variant="image" />
-        <BuybackBanner />
       </aside>
     </main>
   );
