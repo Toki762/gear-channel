@@ -25,7 +25,7 @@ export default function BuybackBanner({ variant = 'text' }: Props) {
             width={336}
             height={280}
             alt="楽器の買取屋さん"
-            src="https://www20.a8.net/svt/bgt?aid=260428387658&wid=002&eno=01&mid=s00000015892005018000&mc=1"
+            src="https://www29.a8.net/svt/bgt?aid=260428387658&wid=002&eno=01&mid=s00000015892005018000&mc=1"
             style={{ maxWidth: '100%', height: 'auto', display: 'block', borderRadius: '8px' }}
           />
         </a>
@@ -35,7 +35,7 @@ export default function BuybackBanner({ variant = 'text' }: Props) {
           border={0}
           width={1}
           height={1}
-          src="https://www17.a8.net/0.gif?a8mat=4B1VTV+AVR9LM+3EMG+TVJ4X"
+          src="https://www10.a8.net/0.gif?a8mat=4B1VTV+AVR9LM+3EMG+TVJ4X"
           alt=""
           style={{ position: 'absolute', opacity: 0, pointerEvents: 'none' }}
         />

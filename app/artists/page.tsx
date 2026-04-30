@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { ARTIST_KANA } from '@/data/config';
 import { getLocale, t } from '@/lib/i18n';
+import BuybackBanner from '@/components/BuybackBanner';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
@@ -91,6 +92,11 @@ export default function ArtistsPage({ searchParams }: Props) {
           ))}
         </div>
       )}
+
+      {/* 画像バナー（アーティスト一覧 = 楽器への興味が高いユーザーが集まる） */}
+      <div style={{ display: 'flex', justifyContent: 'center', margin: '24px 0' }}>
+        <BuybackBanner variant="image" />
+      </div>
 
       {/* JSON-LD: ItemList */}
       <script
