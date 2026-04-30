@@ -65,7 +65,8 @@ export default async function HomePage() {
   }
 
   return (
-    <main className="page fade">
+    <main className="page-with-sidebar fade">
+      <div className="page-main">
       {/* Hero */}
       <div className="hero">
         <h1>Gear <span style={{ color: '#d97706' }}>ちゃんねる</span></h1>
@@ -131,9 +132,6 @@ export default async function HomePage() {
         </section>
       )}
 
-      {/* 買取バナー（人気アーティスト・スレッドを見た後 = 楽器への関心が高いタイミング） */}
-      <BuybackBanner />
-
       {/* JSON-LD: WebSite + Sitelinks Searchbox */}
       <script
         type="application/ld+json"
@@ -170,6 +168,14 @@ export default async function HomePage() {
           ],
         })}}
       />
+      </div>{/* /page-main */}
+
+      {/* サイドバー広告 */}
+      <aside className="page-sidebar">
+        <div className="page-sidebar-label">PR</div>
+        <BuybackBanner variant="image" />
+        <BuybackBanner />
+      </aside>
     </main>
   );
 }

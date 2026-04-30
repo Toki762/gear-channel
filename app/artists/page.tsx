@@ -59,63 +59,68 @@ export default function ArtistsPage({ searchParams }: Props) {
   });
 
   return (
-    <main className="page fade">
-      <div className="bc">
-        <Link href="/">{t(locale, 'bcHome')}</Link> › {t(locale, 'bcArtists')}
-      </div>
-      <h1 style={{ fontSize: '18px', fontWeight: 800, marginBottom: '16px' }}>
-        🎵 {t(locale, 'artistsPageTitle')}
-        {q && (
-          <span style={{ fontSize: '14px', color: '#888', fontWeight: 400, marginLeft: '8px' }}>
-            {t(locale, 'artistsResults', { q, n: filtered.length })}
-          </span>
+    <main className="page-with-sidebar fade">
+      {/* メインコンテンツ */}
+      <div className="page-main">
+        <div className="bc">
+          <Link href="/">{t(locale, 'bcHome')}</Link> › {t(locale, 'bcArtists')}
+        </div>
+        <h1 style={{ fontSize: '18px', fontWeight: 800, marginBottom: '16px' }}>
+          🎵 {t(locale, 'artistsPageTitle')}
+          {q && (
+            <span style={{ fontSize: '14px', color: '#888', fontWeight: 400, marginLeft: '8px' }}>
+              {t(locale, 'artistsResults', { q, n: filtered.length })}
+            </span>
+          )}
+        </h1>
+        {filtered.length === 0 ? (
+          <div style={{ textAlign: 'center', color: '#aaa', padding: '40px 0' }}>
+            {t(locale, 'artistsNoResults', { q })}
+          </div>
+        ) : (
+          <div className="a-grid">
+            {filtered.map(a => (
+              <Link key={a.id} href={`/artists/${a.id}`} className="a-card">
+                <div className="a-name">{a.name}</div>
+                <div className="a-en">{a.en}</div>
+                <div className="a-meta" style={{ marginTop: '4px' }}>
+                  <span className="tag">{a.genre}</span>
+                  <span className="tag" style={{ marginLeft: '4px' }}>{a.since}</span>
+                </div>
+                <div style={{ fontSize: '11px', color: '#aaa', marginTop: '4px' }}>
+                  {(a.desc || '').slice(0, 60)}…
+                </div>
+              </Link>
+            ))}
+          </div>
         )}
-      </h1>
-      {filtered.length === 0 ? (
-        <div style={{ textAlign: 'center', color: '#aaa', padding: '40px 0' }}>
-          {t(locale, 'artistsNoResults', { q })}
-        </div>
-      ) : (
-        <div className="a-grid">
-          {filtered.map(a => (
-            <Link key={a.id} href={`/artists/${a.id}`} className="a-card">
-              <div className="a-name">{a.name}</div>
-              <div className="a-en">{a.en}</div>
-              <div className="a-meta" style={{ marginTop: '4px' }}>
-                <span className="tag">{a.genre}</span>
-                <span className="tag" style={{ marginLeft: '4px' }}>{a.since}</span>
-              </div>
-              <div style={{ fontSize: '11px', color: '#aaa', marginTop: '4px' }}>
-                {(a.desc || '').slice(0, 60)}…
-              </div>
-            </Link>
-          ))}
-        </div>
-      )}
 
-      {/* 画像バナー（アーティスト一覧 = 楽器への興味が高いユーザーが集まる） */}
-      <div style={{ display: 'flex', justifyContent: 'center', margin: '24px 0' }}>
-        <BuybackBanner variant="image" />
+        {/* JSON-LD: ItemList */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: locale === 'en' ? 'All Artists — Gear Channel' : 'アーティスト一覧 — Gear ちゃんねる',
+            description: `${DB.length} artists' gear database`,
+            url: `${BASE_URL}/artists`,
+            numberOfItems: filtered.length,
+            itemListElement: filtered.slice(0, 30).map((a, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              url: `${BASE_URL}/artists/${a.id}`,
+              name: a.name,
+            })),
+          })}}
+        />
       </div>
 
-      {/* JSON-LD: ItemList */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'ItemList',
-          name: locale === 'en' ? 'All Artists — Gear Channel' : 'アーティスト一覧 — Gear ちゃんねる',
-          description: `${DB.length} artists' gear database`,
-          url: `${BASE_URL}/artists`,
-          numberOfItems: filtered.length,
-          itemListElement: filtered.slice(0, 30).map((a, i) => ({
-            '@type': 'ListItem',
-            position: i + 1,
-            url: `${BASE_URL}/artists/${a.id}`,
-            name: a.name,
-          })),
-        })}}
-      />
+      {/* サイドバー広告 */}
+      <aside className="page-sidebar">
+        <div className="page-sidebar-label">PR</div>
+        <BuybackBanner variant="image" />
+        <BuybackBanner />
+      </aside>
     </main>
   );
 }

@@ -141,41 +141,41 @@ export default async function ArtistPage({ params }: Props) {
   };
 
   return (
-    <main className="page fade">
-      {/* ページビューを記録（クライアントサイドで静かに送信） */}
+    <main className="page-with-sidebar fade">
       <ViewTracker artistId={params.id} />
-
-      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* パンくず */}
-      <nav className="bc">
-        <a href="/">{t(locale, 'bcHome')}</a> › <a href="/artists">{t(locale, 'bcArtists')}</a> › {artist.name}
-      </nav>
+      {/* メインコンテンツ */}
+      <div className="page-main">
+        <nav className="bc">
+          <a href="/">{t(locale, 'bcHome')}</a> › <a href="/artists">{t(locale, 'bcArtists')}</a> › {artist.name}
+        </nav>
 
-      {/* アーティストヘッダー */}
-      <div className="art-hd">
-        <div className="art-name">{artist.name}</div>
-        <div className="art-en">{artist.en}</div>
-        <div className="art-meta">
-          <span className="tag">{artist.genre}</span>
-          <span className="tag">{artist.since}</span>
-          <span className="tag">{artist.origin}</span>
+        <div className="art-hd">
+          <div className="art-name">{artist.name}</div>
+          <div className="art-en">{artist.en}</div>
+          <div className="art-meta">
+            <span className="tag">{artist.genre}</span>
+            <span className="tag">{artist.since}</span>
+            <span className="tag">{artist.origin}</span>
+          </div>
+          <div style={{ fontSize: '12px', color: '#888', lineHeight: 1.7 }}>{artist.members}</div>
         </div>
-        <div style={{ fontSize: '12px', color: '#888', lineHeight: 1.7 }}>{artist.members}</div>
+
+        <GearSection artist={artist} dbGear={dbGear} locale={locale} />
+
+        <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTIST ?? ''} className="my-6" />
       </div>
 
-      {/* 機材セクション（静的データ＋管理画面追加分を統合表示） */}
-      <GearSection artist={artist} dbGear={dbGear} locale={locale} />
-
-      {/* 買取バナー（機材リストを見た直後 = 高クリック期待） */}
-      <BuybackBanner />
-
-      {/* 広告（機材リストの下） */}
-      <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTIST ?? ''} className="my-6" />
+      {/* サイドバー広告（スクロールしても常に見える） */}
+      <aside className="page-sidebar">
+        <div className="page-sidebar-label">PR</div>
+        <BuybackBanner variant="image" />
+        <BuybackBanner />
+      </aside>
     </main>
   );
 }

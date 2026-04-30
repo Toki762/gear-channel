@@ -262,9 +262,6 @@ export default function BbsClient({
           {/* 広告（投稿フォームの上） */}
           <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BBS ?? ''} className="my-3" />
 
-          {/* 買取バナー（楽器を語るユーザー向け） */}
-          <BuybackBanner />
-
           {/* 新規投稿フォーム */}
           {showNewPost && (
             <form onSubmit={handleSubmitPost} className="new-post-form" style={{ background: '#fafaf8', border: '1px solid #e4e2dd', borderRadius: '10px', padding: '16px', marginBottom: '16px' }}>
@@ -352,6 +349,15 @@ export default function BbsClient({
               {c}
             </button>
           ))}
+
+          {/* 買取バナー（楽器を語るユーザー向け） */}
+          <div style={{ marginTop: '16px' }}>
+            <div style={{ fontWeight: 700, fontSize: '11px', color: '#bbb', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '8px' }}>PR</div>
+            <BuybackBanner variant="image" />
+            <div style={{ marginTop: '12px' }}>
+              <BuybackBanner />
+            </div>
+          </div>
         </aside>
       </div>
     </main>
