@@ -10,6 +10,7 @@ import { BBS_CATS, FLAIR_CLS } from '@/data/config';
 import { createPost, createComment } from './actions';
 import { linkifyGear, type Segment, type DbGearEntry } from '@/data/gearIndex';
 import AdUnit from '@/components/AdUnit';
+import BuybackBanner from '@/components/BuybackBanner';
 import { type Locale, t, localeCat } from '@/lib/i18n';
 
 // 機材名を薄いリンクに変換するコンポーネント
@@ -260,6 +261,9 @@ export default function BbsClient({
 
           {/* 広告（投稿フォームの上） */}
           <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BBS ?? ''} className="my-3" />
+
+          {/* 買取バナー（楽器を語るユーザー向け） */}
+          <BuybackBanner />
 
           {/* 新規投稿フォーム */}
           {showNewPost && (

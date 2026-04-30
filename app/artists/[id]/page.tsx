@@ -7,6 +7,7 @@ import { DB } from '@/data/artists';
 import GearSection from './GearSection';
 import ViewTracker from './ViewTracker';
 import AdUnit from '@/components/AdUnit';
+import BuybackBanner from '@/components/BuybackBanner';
 import { getLocale, t } from '@/lib/i18n';
 import { createServerClient } from '@/lib/supabase';
 import type { GearItem } from '@/lib/types';
@@ -169,6 +170,9 @@ export default async function ArtistPage({ params }: Props) {
 
       {/* 機材セクション（静的データ＋管理画面追加分を統合表示） */}
       <GearSection artist={artist} dbGear={dbGear} locale={locale} />
+
+      {/* 買取バナー（機材リストを見た直後 = 高クリック期待） */}
+      <BuybackBanner />
 
       {/* 広告（機材リストの下） */}
       <AdUnit slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_ARTIST ?? ''} className="my-6" />

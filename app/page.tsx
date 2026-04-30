@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { POPULAR_IDS } from '@/data/config';
 import { fetchPosts, createServerClient } from '@/lib/supabase';
+import BuybackBanner from '@/components/BuybackBanner';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
@@ -129,6 +130,9 @@ export default async function HomePage() {
           </div>
         </section>
       )}
+
+      {/* 買取バナー（人気アーティスト・スレッドを見た後 = 楽器への関心が高いタイミング） */}
+      <BuybackBanner />
 
       {/* JSON-LD: WebSite + Sitelinks Searchbox */}
       <script
