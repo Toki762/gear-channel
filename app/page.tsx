@@ -10,6 +10,9 @@ import BuybackBanner from '@/components/BuybackBanner';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
+// ISR: 1時間キャッシュ（Vercel無料枠のCPU消費を抑える）
+export const revalidate = 3600;
+
 export const metadata: Metadata = {
   title: 'Gear ちゃんねる — アーティストの使用機材のデータベースを皆で作ろう',
   description: '日本のアーティストが使用しているギター・ベース・シンセ・エフェクター・DAWを調べるサイト。Official髭男dism・YOASOBI・King Gnuなど人気アーティストの機材情報が充実。',

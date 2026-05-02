@@ -14,8 +14,8 @@ import type { GearItem } from '@/lib/types';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
 
-// ISR: 60秒ごとに再検証（管理画面の変更が反映される）
-export const revalidate = 60;
+// ISR: 1時間ごとに再検証（Vercel無料枠のCPU消費を抑える）
+export const revalidate = 3600;
 
 interface Props {
   params: { id: string };
