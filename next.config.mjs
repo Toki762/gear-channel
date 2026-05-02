@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Fluid compute をオフ → 従来の Lambda（Function Duration）に戻す
+  // Fluid Active CPU は無料枠4時間だが、Function Duration は100 GB-Hrs（未使用）
+  experimental: {
+    fluidCompute: false,
+  },
+
   // vercel.app ドメインからカスタムドメインへ 301 リダイレクト
   // → 重複コンテンツ・canonical 不一致を解消
   async redirects() {
