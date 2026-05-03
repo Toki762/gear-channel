@@ -13,7 +13,7 @@ export const DB: Artist[] = [
     since: '2012年〜',
     origin: '島根県',
     members: '藤原聡 (Vo/Pf) / 小笹大輔 (Gt) / 楠智 (Ba) / 松浦匡希 (Dr)',
-    desc: `島根県出身の4人組バンド。「Pretender」「I LOVE...」「Subtitle」「Cry Baby」など多数のミリオンヒットを持つ国民的バンド。藤原聡のハイトーンボイスとピアノを軸に、精緻なアレンジと高い音楽性が特徴。`,
+    desc: `島根県出身の4人組バンド。2012年の結成以来、藤原聡のハイトーンボイスとピアノを軸にした精緻なポップロックで国内最大級の人気を誇る。「Pretender」「I LOVE...」「Subtitle」「Cry Baby」など次々とミリオンヒットを生み出し、ドラマ・映画主題歌でも存在感を示す。メンバー全員が楽器を演奏しながら歌える高い音楽性も特徴で、藤原はYAMAHA CP73やNord Stage 4を駆使した鍵盤奏者としてもトップクラスの評価を受ける。ライブでは鍵盤中心の編成からバンドが一体となって音を重ねる演奏は圧巻で、スタジアム規模の公演を何度も成功させている国民的バンド。`,
     gear: [
       { id: 'cp73', brand: 'YAMAHA', name: 'CP73', cat: 'キーボード', catIcon: '🎹', user: '藤原聡 (Pf/Vo)', price: '¥200,000〜¥280,000', kw: 'YAMAHA CP73', yt: ["YAMAHA CP73 レビュー", "CP73 ライブ 音作り"], similar: ["Roland RD-2000", "Nord Piano 5", "Korg SV-2"], desc: `YAMAHA CP73はハンマー鍵盤搭載のプロ仕様ステージピアノ。73鍵に絞ることで持ち運びやすさと弾き心地を両立させた設計が特徴。藤原聡はバンドのピアノパートで長年愛用しており、繊細なタッチと豊かな音色でライブの要となっている。`, wikiTitle: 'YAMAHA_CP73' },
       { id: 'modx6', brand: 'YAMAHA', name: 'MODX6+', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: '藤原聡 (Pf/Vo)', price: '¥130,000〜¥160,000', kw: 'YAMAHA MODX6', yt: ["YAMAHA MODX6 レビュー シンセ", "MODX6 ライブ 使い方"], similar: ["Korg Kronos", "Roland Fantom", "Nord Stage 4"], desc: `YAMAHA MODX6+はFMとAWM2音源を組み合わせたハイブリッドシンセサイザー。藤原聡がライブでのパッドやシンセサウンドに活用。Keyscapeなどのプラグイン音源とも組み合わせて複雑なサウンドレイヤーを構築している。`, wikiTitle: 'Yamaha_MODX' },
@@ -105,7 +105,7 @@ export const DB: Artist[] = [
     since: '2001年〜',
     origin: '神奈川県横浜市',
     members: '野田洋次郎 (Vo/Gt/Key) / 桑原彰 (Gt) / 武田祐介 (Ba) / 山口智史 (Dr)',
-    desc: `横浜出身の4人組ロックバンド。「前前前世」「愛にできることはまだあるかい」など多数の名曲を持ち、映画「君の名は。」「天気の子」「すずめの戸締まり」のサントラで世界的に知名度が拡大。`,
+    desc: `横浜出身の4人組ロックバンド。2003年に結成し、野田洋次郎の文学的な歌詞と高い演奏技術で日本のロックシーンを代表する存在へと成長した。「前前前世」「愛にできることはまだあるかい」「なんでもないや」など映画「君の名は。」「天気の子」「すずめの戸締まり」の主題歌・サントラで世界的な知名度を獲得。桐谷健太・武田健太のギターチームは独創的なプレイスタイルでも知られ、PANTERAやMESHUGGAHに影響を受けたヘヴィリフから繊細なアルペジオまで幅広い表現を持つ。ロック・エレクトロニック・オーケストラを縦横無尽に行き来する壮大な音楽世界は国内外に熱狂的なファンを生み続けている。`,
     gear: [
       { id: 'lp-rad', brand: 'Gibson', name: 'Les Paul Standard 50s', cat: 'ギター', catIcon: '🎸', user: '野田洋次郎 (Vo/Gt)', price: '¥280,000〜¥380,000', kw: 'Gibson Les Paul Standard 50s', yt: ["Gibson Les Paul Standard 50s レビュー", "レスポール マーシャル 音作り 歪み"], similar: ["Gibson Les Paul Traditional", "Epiphone Les Paul Standard", "Tokai LS-136"], desc: ``, wikiTitle: 'Gibson_Les_Paul' },
       { id: 'avii-strat', brand: 'Fender', name: 'American Vintage II 1965 Stratocaster', cat: 'ギター', catIcon: '🎸', user: '野田洋次郎 (Vo/Gt)', price: '¥240,000〜¥290,000', kw: 'Fender American Vintage II 1965 Stratocaster', yt: ["Fender American Vintage II 1965 Strat レビュー", "ヴィンテージ ストラト クリーントーン"], similar: ["Fender Custom Shop '65 Strat", "Suhr Classic S", "Tom Anderson Classic"], desc: ``, wikiTitle: 'Fender_Stratocaster' },
@@ -156,7 +156,7 @@ export const DB: Artist[] = [
     since: '1999年〜',
     origin: 'アメリカ コネチカット州',
     members: 'John Mayer（ソロ、Dead & Company など）',
-    desc: `アメリカのギタリスト/シンガーソングライター。SRVとクラプトンに強く影響を受けたブルースの申し子。「Continuum」「Battle Studies」などの名盤と圧倒的なライブパフォーマンスで世界トップクラスの評価を受ける。機材へのこだわりも有名。`,
+    desc: `アメリカ・コネチカット州出身のギタリスト/シンガーソングライター。スティーヴィー・レイ・ヴォーンとエリック・クラプトンに強く影響を受けたブルース/ロックギタリストとして、テクニカルな速弾きと繊細なメロディセンスを兼ね備える。「Continuum」「Battle Studies」「Born and Raised」などの名盤を持ち、グラミー賞を7度受賞。Fender Stratocaster、特に1968年製や1965年製のビンテージ個体へのこだわりで知られ、2023年にはFenderとシグネチャーモデルを発売。Eric Johnsonアンプやケイローン・フィッシャーとのコラボでも話題になった。機材オタクとしても有名で、プレイヤーとコレクターの両面を持つ稀有なアーティスト。`,
     gear: [
       { id: 'jm-strat', brand: 'Fender', name: 'John Mayer Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'John Mayer', price: '¥250,000〜¥380,000', kw: 'Fender John Mayer Stratocaster', yt: ["Fender John Mayer Strat レビュー サウンド", "John Mayer ストラト トーン 再現"], similar: ["Fender American Professional II Strat", "PRS Silver Sky", "Suhr Classic S"], desc: ``, wikiTitle: 'Fender_Stratocaster' },
       { id: 'silver-sky', brand: 'PRS', name: 'Silver Sky', cat: 'ギター', catIcon: '🎸', user: 'John Mayer', price: '¥250,000〜¥320,000', kw: 'PRS Silver Sky', yt: ["PRS Silver Sky レビュー John Mayer", "Silver Sky vs Stratocaster 比較"], similar: ["Fender American Professional II Strat", "Fender JM Strat", "Suhr Classic S"], desc: ``, wikiTitle: 'PRS_Guitars' },
@@ -189,7 +189,7 @@ export const DB: Artist[] = [
     since: '2015年〜',
     origin: 'アメリカ カリフォルニア州',
     members: 'Billie Eilish (Vo) / FINNEAS O\'Connell (兄・プロデュース・作曲)',
-    desc: `ロサンゼルス出身のシンガーソングライター。兄FINNEASとともにほぼすべての楽曲を自宅スタジオで制作。17歳で史上最年少グラミー4部門受賞を達成した。「bad guy」「Happier Than Ever」「What Was I Made For?」などが世界的にヒット。`,
+    desc: `ロサンゼルス出身のシンガーソングライター。兄のFINNEASとともにほぼすべての楽曲を自宅スタジオで制作し、2019年のデビューアルバム「WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?」で17歳にしてグラミー主要4部門を史上最年少で独占した。「bad guy」「Happier Than Ever」「What Was I Made For?」などが世界的ヒット。FINNEASはAbleton LiveとNEUMANNマイク・Logic Proを駆使した制作スタイルで知られ、自宅録音から生まれる濃密なサウンドが世界のポップシーンを席巻。ライブではBoss RC-505ループステーションや独自のボーカルセットアップを活用している。`,
     gear: [
       { id: 'logic', brand: 'Apple', name: 'Logic Pro', cat: 'DAW', catIcon: '💻', user: 'FINNEAS (Prod) / Billie Eilish', price: '¥36,800（買い切り）', kw: 'Apple Logic Pro DAW 音楽制作', yt: ["Logic Pro 使い方 完全入門 2024", "FINNEAS Billie Eilish Logic Pro 制作環境"], similar: ["Ableton Live", "Pro Tools", "Cubase Pro 13"], desc: ``, wikiTitle: '' },
       { id: 'u87', brand: 'Neumann', name: 'U 87 Ai', cat: 'マイク', catIcon: '🎤', user: 'Billie Eilish (Vo)', price: '¥250,000〜¥330,000', kw: 'Neumann U87 コンデンサーマイク', yt: ["Neumann U87 レビュー 比較", "U87 ボーカル録音 設定 使い方"], similar: ["AKG C414 XLII", "Rode NT1-A", "Audio-Technica AT4050"], desc: ``, wikiTitle: '' },
@@ -222,7 +222,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '日本',
     members: 'Ayase (作詞/作曲/Prod) / Ikura - 幾田りら (Vo)',
-    desc: `AyaseとIkura（幾田りら）の2人組ユニット。「小説を音楽にする」コンセプトで活動。「夜に駆ける」「群青」「怪物」「アイドル」と連続ヒット。「アイドル」はSpotifyグローバルチャート最高位1位を記録するなど、J-Popの世界進出を牽引。`,
+    desc: `AyaseとIkura（幾田りら）の2人組ユニット。「小説を音楽にする」コンセプトのもと、2019年に活動開始。「夜に駆ける」「群青」「怪物」「アイドル」「勇者」と次々とヒットを生み、特に「アイドル」はSpotifyグローバルチャート最高1位を記録しJ-Popの世界進出を牽引する象徴的存在となった。AyaseはFL Studio・Serum・Omnisphereを組み合わせた電子音楽的なプロダクションを得意とし、幾田りらの広いボーカルレンジと疾走感あるトラックが融合した独自のスタイルで国内外に熱狂的なファン層を獲得している。ボーカロイドカルチャーとJ-Popを架け橋する存在として評価が高い。`,
     gear: [
       { id: 'macbook', brand: 'Apple', name: 'MacBook Pro M-Series', cat: 'DAW', catIcon: '💻', user: 'Ayase (Prod)', price: '¥248,800〜¥448,800', kw: 'MacBook Pro M3 音楽制作 DTM', yt: ["MacBook Pro M3 DTM 音楽制作 レビュー", "Apple Silicon Mac DTM 環境 おすすめ"], similar: ["Mac Studio M2 Ultra", "Mac mini M4 Pro", "Dell XPS 15"], desc: ``, wikiTitle: '' },
       { id: 'logic-ya', brand: 'Apple', name: 'Logic Pro', cat: 'DAW', catIcon: '💻', user: 'Ayase (Prod)', price: '¥36,800（買い切り）', kw: 'Apple Logic Pro DAW 音楽制作', yt: ["Logic Pro 使い方 完全入門 2024 Ayase YOASOBI", "Logic Pro DTM 作曲 環境 おすすめ"], similar: ["Ableton Live", "Cubase Pro 13", "FL Studio"], desc: ``, wikiTitle: '' },
@@ -253,7 +253,7 @@ export const DB: Artist[] = [
     since: '1989〜2000年',
     origin: '名古屋市',
     members: '浅井健一 (Vo/Gt) / 照井利幸 (Ba) / 中村達也 (Dr)',
-    desc: `名古屋発3ピースロックバンド。浅井健一（ベン）の変則チューニングとブルースを昇華したギター、照井利幸の重厚なベース、中村達也の野性的なドラムによる剥き出しのサウンドで90年代日本ロックシーンを席巻。「ガソリンの揺れ方」「Baby Baby」「D.I.J.のピストル」など多くの名曲を残した。`,
+    desc: `名古屋発3ピースロックバンド。浅井健一（ベン）の変則チューニングとブルースを独自に消化したギター、照井利幸の重厚でうねるベース、中村達也の野性的で力強いドラムによる剥き出しのサウンドで1990年代の日本ロックシーンを席巻した。「ガソリンの揺れ方」「Baby Baby」「D.I.J.のピストル」「Bang!」など多くの名曲を残し、そのロックンロールの純度の高さは現在も多くのミュージシャンに影響を与え続けている。浅井はFender JazzmasterやGibson SG、Marshallアンプと最小限のエフェクトで圧倒的な音の塊を生み出すスタイルで知られ、「引き算のロック」の極致として語り継がれる。2000年の解散後もその伝説は色褪せない。`,
     gear: [
       { id: 'gretsch-tennessean', brand: 'Gretsch', name: '6119 Tennessean 1964/65', cat: 'ギター', catIcon: '🎸', user: '浅井健一 (Vo/Gt)', price: '¥400,000〜¥1,000,000（ヴィンテージ）', kw: 'Gretsch Tennessean ブランキー 浅井健一 メインギター', yt: ["ブランキー 浅井健一 Gretsch Tennessean サウンド解説", "Gretsch 6119 ヴィンテージ 音作り"], similar: ["Gretsch G6119T", "Gretsch G6120", "Epiphone Casino"], desc: `Gretsch 6119 Tennessean 1964/65年製は浅井健一（ベン）がブランキー全活動期を通じて使い続けたメインギター。センターブロック付きセミホロウボディとフィルタートロンピックアップが生み出す独特のコンプ感・アタック感・倍音豊かなトーンは「ベンジーサウンド」そのもの。ライブではハウリングすら武器に変える暴力的なフィードバック奏法を可能にした伝説の一本。`, wikiTitle: 'Gretsch_guitars' },
       { id: 'gretsch-nashville-bjc', brand: 'Gretsch', name: 'G6120DC Nashville', cat: 'ギター', catIcon: '🎸', user: '浅井健一 (Vo/Gt)', price: '¥200,000〜¥500,000', kw: 'Gretsch Nashville ダブルカッタウェイ', yt: ["Gretsch Nashville レビュー ロック", "Gretsch オレンジ ロックンロール"], similar: ["Gretsch 6119 Tennessean", "Gretsch G6136", "Gibson ES-335"], desc: `Gretsch G6120DC Nashville（ダブルカッタウェイ）も浅井健一が所有・使用したGretschの一本。テネシアンとは異なるオレンジフレイム系の美しいルックスを持ち、レコーディングやライブの一部で使い分けられた。`, wikiTitle: 'Gretsch_guitars' },
@@ -301,7 +301,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '東京都',
     members: '常田大希 (Gt/Vo/Cello) / 井口理 (Vo/Key) / 新井和輝 (Ba) / 勢喜遊 (Dr)',
-    desc: `東京藝術大学出身の常田大希を中心に結成した4人組バンド。「白日」「Teenager Forever」「一途」「逆夢」など多彩なジャンルを融合した楽曲が特徴。ジャズ・クラシック・ヒップホップ・ロックを縦横無尽に行き来するサウンドで国内外に熱狂的なファン層を持つ。`,
+    desc: `東京藝術大学出身の常田大希を中心に2013年に結成した4人組バンド。「白日」「Teenager Forever」「一途」「逆夢」「SPECIALZ」など多彩なジャンルを融合した楽曲が特徴で、ジャズ・クラシック・ヒップホップ・R&B・ロックを縦横無尽に行き来するサウンドは他の追随を許さない。常田はGibson ES-335やFender Telecasterを使い、井口理のソウルフルなボーカルと新井和輝のファンキーなベース、勢喜遊の多彩なドラミングが一体となった演奏力でライブも高く評価される。自身のレーベル「PERIMETRON」も主宰し、音楽・映像・アートの総合的な表現を追求する次世代の旗手。`,
     gear: [
       { id: 'es335-kg', brand: 'Gibson', name: 'ES-335（Cherry Sunburst）', cat: 'ギター', catIcon: '🎸', user: '常田大希 (Gt/Vo)', price: '¥300,000〜¥600,000', kw: 'Gibson ES-335 セミアコ ジャズ ロック', yt: ["Gibson ES-335 レビュー サウンド", "ES-335 ロック ジャズ 音作り"], similar: ["Gibson ES-345", "Epiphone ES-335", "D'Angelico Excel DC"], desc: `Gibson ES-335（チェリーサンバースト）は常田大希のメインギター。セミホロウのウォームかつ多彩なトーンが常田のブルース〜ジャズ〜ロックを横断するスタイルにマッチし、King Gnuの多面的なサウンドを支える。`, wikiTitle: 'Gibson_ES-335' },
       { id: 'es175-kg', brand: 'Gibson', name: 'ES-175D', cat: 'ギター', catIcon: '🎸', user: '常田大希 (Gt/Vo)', price: '¥400,000〜¥900,000（ヴィンテージ）', kw: 'Gibson ES-175 フルアコ ジャズ', yt: ["Gibson ES-175 レビュー ジャズ", "フルアコ ギター 音 特徴"], similar: ["Gibson L-5", "Epiphone Broadway", "Eastman AR810"], desc: `Gibson ES-175Dは常田大希がジャズ志向のサウンドを求める際に使用するフルアコ。フロントハムバッカーによる丸くダークなトーンが、King Gnuの洗練されたコード感を演出する。`, wikiTitle: 'Gibson_ES-175' },
@@ -393,7 +393,7 @@ export const DB: Artist[] = [
     since: '2005年〜',
     origin: '東京都',
     members: 'TAKA (Vo) / Toru (Gt) / Ryota (Ba) / Tomoya (Dr)',
-    desc: `東京出身の4人組ロックバンド。「Wherever You Are」「We Are」「Wherever You Are」「Stand Out Fit In」など国内外で多くのヒット曲を持つ。ハードロック・ポップパンク・エレクトロを融合したサウンドで日本のみならずアジア・北米・欧州でも高い人気を誇る。`,
+    desc: `東京出身の4人組ロックバンド。2005年に結成し、Takaのパワフルかつソウルフルなボーカルとハードロック・ポップパンク・エレクトロを融合したサウンドで日本のみならずアジア・北米・欧州でも高い人気を誇る真のワールドワイドバンド。「Wherever You Are」「We Are」「Stand Out Fit In」「Renegades」などが国内外でヒット。TomoyaはPearl・Tama等のドラムキットとABCEEやSabian等のシンバルを駆使し、Ryotaのアグレッシブなベースと共に強靭なリズムセクションを形成。Toruの速弾きとクリーントーンを使い分けるギタープレイはファンの間でも解析・研究が盛んで、Fender Stratocasterをメインに据えた機材選びも注目される。`,
     gear: [
       { id: 'ulxd-oor', brand: 'Shure', name: 'ULXD2 / Beta58A Wireless', cat: 'マイク', catIcon: '🎤', user: 'TAKA (Vo)', price: '¥130,000〜¥200,000（システム）', kw: 'Shure ULXD2 Beta58A ワイヤレスマイク', yt: ["Shure ULXD ワイヤレス レビュー", "ワイヤレスマイクシステム プロ 選び方"], similar: ["Sennheiser EW 500 G4", "Audio-Technica ATW-5400", "Lectrosonics SMV"], desc: `Shure ULXD2 / Beta58A ワイヤレスシステムはTAKAが使用するプロワイヤレスマイクシステム。デジタル方式の干渉耐性とBeta58Aのタイトな指向特性がステージで最高のボーカル音質を保証する。`, wikiTitle: 'Shure_ULXD' },
       { id: 'psm1000-oor', brand: 'Shure', name: 'PSM1000 In-Ear Monitor', cat: '音響機材', catIcon: '🎚️', user: 'TAKA (Vo)', price: '¥250,000〜¥350,000（システム）', kw: 'Shure PSM1000 イヤーモニター ワイヤレス', yt: ["Shure PSM1000 レビュー 使い方", "イヤーモニター ワイヤレス プロ 比較"], similar: ["Sennheiser EW IEM G4", "Audio-Technica M3", "Wisycom MTP41S"], desc: `Shure PSM1000はTAKAが使用するプロ仕様ワイヤレスイヤーモニターシステム。デジタル帯域の安定した通信により大型会場でも信頼性の高いモニタリング環境を実現する。`, wikiTitle: 'Shure_PSM' },
@@ -485,7 +485,7 @@ export const DB: Artist[] = [
     since: '2004年〜',
     origin: '群馬県',
     members: '清水依与吏 (Vo/Gt) / 小島和也 (Ba) / 栗原寿 (Dr)',
-    desc: `群馬県出身の3ピースバンド。清水依与吏が作詞・作曲のほぼ全てを手がけ、恋愛をテーマにした情緒的な歌詞とギターサウンドで幅広い世代に支持される。「高嶺の花子さん」「花束」「クリスマスソング」など多数のヒット曲を持ちスタジアム規模の公演も行う。`,
+    desc: `群馬県前橋市出身の3ピースバンド。2004年に結成し、清水依与吏が作詞・作曲のほぼ全てを手がける。恋愛・別れ・日常の機微を繊細に言語化した歌詞とギターサウンドで幅広い世代に支持される。「高嶺の花子さん」「花束」「クリスマスソング」「水平線」「アイラブユー」など多数のヒット曲を持ち、スタジアム・アリーナ規模の公演も行う国内トップクラスのバンド。清水のメインギターはFender Stratocasterで、フィンガーピッキングとピック奏法を楽曲によって使い分ける繊細なアプローチが特徴。小嶋将之のベースラインとNakamuraのドラムが楽曲の感情を丁寧に支えるバンドアンサンブルも魅力。`,
     gear: [
       { id: 'nash-t57-bn', brand: 'Nash Guitars', name: 'T-57（2008 Surf Green Relic）', cat: 'ギター', catIcon: '🎸', user: '清水依与吏 (Vo/Gt)', price: '¥200,000〜¥280,000', kw: 'Nash Guitars T-57 テレキャスター', yt: ["Nash Guitars T57 サウンドデモ", "Nash Guitars レリック テレキャス 音"], similar: ["Fender Custom Shop Tele", "Haar Traditional T", "Danocaster T-Style"], desc: `Nash Guitars T-57（2008年製、サーフグリーン・レリック）は清水依与吏がback numberの武道館公演直前に入手しメインギターとして長年使い続けるテレキャスタータイプ。Bill Nashが1957年仕様を基に製作したレリック加工モデルで、枯れた木材と程よく使い込まれたルックスがニュアンス豊かな中音域を生み出す。`, wikiTitle: 'Nash_Guitars' },
       { id: 'fender53-bn', brand: 'Fender', name: '1953 Telecaster（Blonde Original）', cat: 'ギター', catIcon: '🎸', user: '清水依与吏 (Vo/Gt)', price: '¥2,000,000〜', kw: '1953 Fender Telecaster ヴィンテージ', yt: ["1953 Fender Telecaster サウンド", "ヴィンテージテレキャスター 音 特徴"], similar: ["Nash T-57", "Fender Custom Shop '52 Tele", "Waterloo WL-14"], desc: `1953 Fender Telecaster（ブロンド/ブラックピックガード）は清水依与吏が所有する希少なヴィンテージテレキャスター。現代のテレキャスと異なり1弦側ピックアップカバーがないオリジナル仕様で、草創期のFenderならではの枯れたブライトトーンと独特の倍音感を持つ。`, wikiTitle: 'Fender_Telecaster' },
@@ -527,7 +527,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '東京都',
     members: '大森元貴 (Vo/Gt) / 若井滉斗 (Gt) / 藤澤涼架 (Key/Vo) / 二家本亮介 (Ba, サポート) / 山中綾華 (Dr, 〜2020) / 髙野清宗 (Ba, 〜2020)',
-    desc: `東京出身の5人組（2022年以降3人組）バンド。「青と夏」「Bluebird」「ケセラセラ」など数多くのヒット曲を持ち、大森元貴が作詞作曲のほぼ全てを手がける。色鮮やかでポップながら深みのある音楽性が幅広い世代に支持され、スタジアム規模のライブを行う国内トップバンドの一つ。`,
+    desc: `東京出身のバンド。大森元貴が作詞作曲のほぼ全てを手がける。2013年の結成当初は5人組だったが、2022年以降は大森元貴・若井滉斗・髙野清宗の3人体制で活動。「青と夏」「Bluebird」「ケセラセラ」「Magic」「アポロ」など色鮮やかでポップながら深みのある楽曲を次々と生み出す。アニメ・ドラマのタイアップも多く、幅広い世代に届く音楽性でスタジアム規模のライブを行う国内トップバンドの一つ。若井はFender Telecasterをメインに使い、カッティングからアルペジオまで多彩なプレイスタイルでバンドの音楽的な幅を広げる。大森のピアノとシンセも曲によって重要な役割を果たす。`,
     gear: [
       { id: 'moderncaster-mga', brand: 'Psychederhythm', name: 'Moderncaster T #051（Performance White）', cat: 'ギター', catIcon: '🎸', user: '大森元貴 (Vo/Gt)', price: 'カスタム価格 応相談', kw: 'Psychederhythm Moderncaster T ギター', yt: ["Psychederhythm Moderncaster T サウンドデモ", "サイケデリズム モダンキャスター 音 特徴"], similar: ["Nash Guitars T-57", "Fender Custom Shop Telecaster", "Haar Traditional T"], desc: `Psychederhythm Moderncaster T #051（Performance White）は大森元貴のメインギター。フロントにPorter A90、リアにSigil '51 Tele Nocasterピックアップを搭載した国産ブティックギターで、中域を強調した艶やかなトーンとテレキャスター的な鋭いアタックを両立する。Mrs. GREEN APPLEのサウンドのコアを担う一本。`, wikiTitle: 'Psychederhythm' },
       { id: 'moderncaster-neon-mga', brand: 'Psychederhythm', name: 'Moderncaster Standard-T Ltd（Neon Blue）', cat: 'ギター', catIcon: '🎸', user: '大森元貴 (Vo/Gt)', price: 'カスタム価格 応相談', kw: 'Psychederhythm Moderncaster Standard-T ギター', yt: ["サイケデリズム モダンキャスター スタンダード 音", "Psychederhythm Standard-T Neon Blue レビュー"], similar: ["Psychederhythm Moderncaster T", "Fender Telecaster", "Squier Classic Vibe 60s Tele"], desc: `Psychederhythm Moderncaster Standard-T Limited（Neon Blue Metallic）は大森元貴がメイン機と並ぶサブとして使用するPsychederhythm製テレキャスタータイプ。鮮やかなネオンブルーメタリックのカラーリングと標準スペックのピックアップ構成により、ビジュアル的インパクトとオーソドックスなトーンを提供する。`, wikiTitle: 'Psychederhythm' },
@@ -603,7 +603,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: '山口一郎 / 岩寺基晴 / 草刈愛美 / 江島啓一 / 岡崎英美',
-    desc: `北海道出身の5人組バンド。山口一郎を中心に、ロックとエレクトロニックミュージックを融合させた独自のサウンドで人気を集める。代表曲は「新宝島」「アルクアラウンド」「夜の踊り子」など。ライブ演出と音楽制作の両面で先進的なアプローチで知られる。`,
+    desc: `北海道出身の5人組バンド。山口一郎を中心に、2005年に結成。ロックとエレクトロニックミュージックを融合させた独自のダンスロックサウンドで「音楽という体験」の再定義を試みるバンド。「新宝島」「アルクアラウンド」「夜の踊り子」「忘れられないの」など代表曲は多岐にわたり、ライブでのDJセットや照明・映像演出の先進性でも高い評価を受ける。山口はFender Stratocasterと多彩なシンセ・エフェクターを組み合わせ、草刈愛美のベースと江島啓一のドラムが生むグルーヴの上にエレクトロニックな音空間を構築する。NF Recordsを主宰し、音楽・ファッション・アートの総合プロデュースも手がける。`,
     gear: [
       { id: 'ric330-sk', brand: 'Rickenbacker', name: '330（ブラック）', cat: 'ギター', catIcon: '🎸', user: '山口一郎', price: '¥300,000〜¥450,000', kw: 'Rickenbacker 330 ギター', yt: ["Rickenbacker 330 サウンドデモ", "リッケンバッカー 330 音"], similar: ["Gibson ES-335", "Fender Jazzmaster", "Gretsch G6120"], desc: `Rickenbacker 330は山口一郎がサカナクションの初期から愛用する12フレットセミホロウボディギター。独特のリッケンバッカートーン、つまり鈴鳴りのような高音と豊かなコーラス感がサカナクション独自のシマーリングなギターサウンドの核心をなしている。`, wikiTitle: 'Rickenbacker_330' },
       { id: 'j45-sk', brand: 'Gibson', name: 'J-45（アコースティック）', cat: 'ギター', catIcon: '🎸', user: '山口一郎', price: '¥200,000〜¥350,000', kw: 'Gibson J-45 アコースティックギター', yt: ["Gibson J-45 サウンドデモ", "ギブソン J-45 音"], similar: ["Martin D-28", "Taylor 314ce", "Gibson Southern Jumbo"], desc: `Gibson J-45は山口一郎がアコースティックサウンドを必要とするレコーディングや楽曲制作で使用するフォークギター。ラウンドショルダーボディの深いウォームトーンと明瞭なミッドレンジが、バンドのエレクトロサウンドに有機的なアコースティックの質感を加える。`, wikiTitle: 'Gibson_J-45' },
@@ -676,7 +676,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: '後藤正文 / 喜多建介 / 山田貴洋 / 伊地知潔',
-    desc: `神奈川県出身の4人組ロックバンド。後藤正文（ゴッチ）率いる、スピード感と叙情性を併せ持つギターロックで日本のロックシーンをけん引してきた。代表曲は「リライト」「ソラニン」「君という花」など。略称はアジカン。`,
+    desc: `神奈川県出身の4人組ロックバンド。1996年の結成以来、後藤正文（ゴッチ）が率いるスピード感と叙情性を併せ持つギターロックで日本のロックシーンを牽引してきた。「リライト」「ソラニン（映画主題歌）」「君という花」「ループ&ループ」「それでは、また明日」など名曲多数。略称はアジカン。後藤はFender Jaguarをメインに、ENGLやMarshallアンプとの組み合わせで独特の歪みとコードワークを生み出す。喜多建介のメロディアスなセカンドギター、山田貴洋の重厚なベース、伊地知潔のパワフルなドラミングが加わった4人のアンサンブルはライブでの迫力が圧倒的。社会的なメッセージを込めた歌詞も後藤の活動の重要な軸。`,
     gear: [
       { id: 'lpjr-akg', brand: 'Gibson', name: 'Les Paul Junior（レッド、メイン）', cat: 'ギター', catIcon: '🎸', user: '後藤正文', price: '¥130,000〜¥250,000', kw: 'Gibson Les Paul Junior ギター', yt: ["Gibson Les Paul Junior サウンドデモ", "レスポールジュニア P90 音"], similar: ["Gibson Les Paul Special", "Epiphone Les Paul Junior", "Gibson Melody Maker"], desc: `Gibson Les Paul Juniorは後藤正文がアジカンのメインギターとして長年愛用するシングルカッタウェイソリッドボディギター。P-90ピックアップ1基というシンプルな構成から生まれるパワフルかつ荒々しいトーンがアジカンの直線的でエネルギッシュなギターサウンドの核心をなし、ライブでは赤いボディが視覚的なシンボルにもなっている。`, wikiTitle: 'Gibson_Les_Paul_Junior' },
       { id: 'lpjr-jl-akg', brand: 'Gibson', name: 'Les Paul Junior John Lennon Model', cat: 'ギター', catIcon: '🎸', user: '後藤正文', price: '¥200,000〜¥500,000', kw: 'Gibson Les Paul Junior John Lennon Model', yt: ["Gibson Les Paul Junior John Lennon モデル", "レスポールジュニア ジョンレノン"], similar: ["Gibson Les Paul Junior", "Epiphone Casino", "Rickenbacker 325"], desc: `Gibson Les Paul Junior John Lennon Modelは後藤正文が使用するジョン・レノンシグネチャーモデル。ジョン・レノンが使用したと同仕様のP-90ピックアップと特徴的なビジュアルを再現した限定生産モデルで、後藤のロック哲学とレノンへのリスペクトが反映された選択である。`, wikiTitle: 'Gibson_Les_Paul_Junior' },
@@ -741,7 +741,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: '椎名林檎 / 浮雲 / 亀田誠治 / 刄田綴色 / 伊澤一葉',
-    desc: `椎名林檎を中心に2003年に結成された東京出身の5人組バンド。洗練されたアレンジと高い演奏技術、独自の美意識で熱狂的なファンを持つ。2012年に解散後、2020年に再結成。代表曲は「群青日和」「能動的三分間」「緑酒」など。`,
+    desc: `椎名林檎を中心に2003年に結成された東京出身の5人組バンド。洗練されたアレンジと高い演奏技術、独自の美意識で強烈な個性を放ち、熱狂的なファンを世代を超えて持つ。「群青日和」「能動的三分間」「緑酒」「修羅場」など毎作品が話題となる楽曲を生み出す。2012年に一旦解散後、2020年に再結成。浮雲（長岡亮介）はGibson Custom ShopのES-345やLes Paulをメインにコンプレッサーやディレイを巧みに使った独創的なプレイで知られ、亀田誠治のベース、GOのドラムと共に圧倒的な演奏力でバンドを支える。椎名のボーカルとピアノも加わった5人の化学反応はほかに類を見ない。`,
     gear: [
       { id: 'tele-sr-tj', brand: 'Fender', name: 'Custom Shop Telecaster（メイン）', cat: 'ギター', catIcon: '🎸', user: '椎名林檎', price: '¥400,000〜¥700,000', kw: 'Fender Custom Shop Telecaster シーナリンゴ', yt: ["Fender Telecaster 椎名林檎 live", "東京事変 椎名林檎 ギター テレキャス"], similar: ["Fender American Vintage II Telecaster", "Gibson Les Paul Custom", "Gretsch G6134"], desc: `椎名林檎のメインギターであるFender Custom Shop Telecaster。テレキャスターのシャープかつ芯のある音色は、東京事変のジャジーでポップなサウンドにも明瞭な輪郭と独自のキャラクターを与え、椎名のソロワークでも多用される象徴的な楽器。`, wikiTitle: 'Fender_Telecaster' },
       { id: 'white-falcon-sr-tj', brand: 'Gretsch', name: 'White Falcon G6136（ホワイトファルコン）', cat: 'ギター', catIcon: '🎸', user: '椎名林檎', price: '¥500,000〜¥900,000', kw: 'Gretsch White Falcon G6136 フルアコ', yt: ["Gretsch White Falcon サウンドデモ", "ホワイトファルコン フルアコ ジャズ 音"], similar: ["Gretsch G6120", "Gretsch Country Gentleman", "Gibson ES-175"], desc: `椎名林檎が使用するGretsch White Falcon G6136。フィルタートロンピックアップの持つ明るくクリーンなトーンとビジュアルの存在感が、東京事変のアート性の高いライブ演出と完璧に調和する。ヴィブラートアームを活かした繊細な音程表現も魅力。`, wikiTitle: 'Gretsch_White_Falcon' },
@@ -819,7 +819,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: 'TAKUMA / NAOKI / KOUICHI',
-    desc: `1997年結成、京都出身の3人組ロックバンド。TAKUMA・NAOKI・KOUICHIによる力強いサウンドと熱いライブパフォーマンスで知られる。「RIVER」「goes on」「第ゼロ感」など数々のヒット曲を持つ。SPACE SHOWER SWEET LOVE SHOWERへの出演や自主イベント「京都大作戦」の主催でも有名。`,
+    desc: `1997年結成、京都出身の3人組ロックバンド。TAKUMA・NAOKI・KOUICHIによる力強いサウンドと熱いライブパフォーマンスで知られる。「RIVER」「goes on」「第ゼロ感」「その先へ」など数々のヒット曲を持ち、アニメ「鬼滅の刃」主題歌「第ゼロ感」は特に若い世代への認知を広げた。自主イベント「京都大作戦」の主催者としても有名で、フェス文化への貢献度も高い。TAKUMAはGibson Les PaulとMarshallアンプをメインとしたシンプルで力強いギターセットアップで知られ、ストレートなハードロック/パンクアプローチで観客を熱狂させる。NAOKIの重厚なベースとKOUICHIの力強いドラムが生む強靭なリズムセクションは3ピースの醍醐味。`,
     gear: [
       { id: 'strat-cs-tf', brand: 'Fender', name: 'Custom Shop Stratocaster 1969年仕様（メイン）', cat: 'ギター', catIcon: '🎸', user: 'TAKUMA', price: '¥500,000〜¥900,000', kw: 'Fender Custom Shop Stratocaster 1969 TAKUMA', yt: ["Fender Custom Shop Stratocaster 1969 デモ", "TAKUMA 10-FEET ギター ストラト"], similar: ["Fender American Vintage II 70s Stratocaster", "Nash S-57", "Suhr Classic S"], desc: `TAKUMAのメインギターであるFender Custom Shop Stratocaster 1969年仕様。手工制作の枯れたボディとビンテージトレモロの組み合わせが生むサステインとヴァイブは、10-FEETの疾走感あふれるパンクサウンドの中でも突き抜けるギタートーンを生み出す。ライブでの激しいプレイにも対応する信頼性の高さが武器。`, wikiTitle: 'Fender_Stratocaster' },
       { id: 'strat-avii-tf', brand: 'Fender', name: 'American Vintage II 1970s Stratocaster（サブ）', cat: 'ギター', catIcon: '🎸', user: 'TAKUMA', price: '¥230,000〜¥290,000', kw: 'Fender American Vintage II 1970s Stratocaster', yt: ["Fender AVII 70s Strat サウンドデモ", "アメリカンビンテージ ストラト 音"], similar: ["Fender American Professional II Strat", "Fender Player Strat", "Suhr Classic S"], desc: ``, wikiTitle: 'Fender_Stratocaster' },
@@ -909,7 +909,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: '川上洋平 / 白井眞輝 / 磯部寛之 / 庄村聡泰',
-    desc: `2004年結成、東京出身のロックバンド。川上洋平(Vo/Gt)、白井眞輝(Gt)、磯部寛之(Ba/Vo)、庄村聡泰(Dr)の4人編成。キャッチーなメロディと洗練されたサウンドで幅広い層から支持を得る。`,
+    desc: `2004年東京で結成された4人組ロックバンド。川上洋平（Vo/Gt）、白井眞輝（Gt）、磯部寛之（Ba/Cho）、庄村聡泰（Dr）の4人からなる。英語・日本語を交ぜたキャッチーな歌詞とメロディアスなギターサウンドで幅広い層から支持を得る。「Dracula La」「ワタリドリ」「閃光」「Girl A」「You're So Beautiful」など多彩なヒット曲を持ち、フェスシーンでの存在感も大きい。白井眞輝はGibson Les Paul Custom「黒木」をトレードマークとするが、楽曲によってFender StratocasterやTelecasterも使い分ける。Marshallアンプとの組み合わせで生まれる骨太な歪みサウンドはバンドのライブを象徴する音として知られる。川上のリズムギターとのツインギター編成が楽曲の厚みを作り出す。`,
     gear: [
       { id: 'fender-tele-ky-alx', brand: 'Fender', name: 'American Professional II Telecaster', cat: 'ギター', catIcon: '🎸', user: '川上洋平', price: '¥200,000〜¥230,000', kw: 'Fender American Professional Telecaster テレキャスター 川上洋平', yt: ["Fender テレキャスター 川上洋平 アレキサンドロス", "American Professional II Telecaster レビュー"], similar: ["Gibson ES-335", "PRS Custom 24", "Fender Stratocaster"], desc: ``, wikiTitle: '' },
       { id: 'gibson-es335-ky-alx', brand: 'Gibson', name: 'ES-335', cat: 'ギター', catIcon: '🎸', user: '川上洋平', price: '¥350,000〜¥550,000', kw: 'Gibson ES-335 セミアコ 川上洋平', yt: ["Gibson ES-335 川上洋平 アレキサンドロス", "セミアコ ES335 レビュー"], similar: ["Gibson ES-175", "Epiphone Casino", "Gretsch G6120"], desc: ``, wikiTitle: '' },
@@ -1000,7 +1000,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: '渋谷龍太 / 柳沢亮太 / 上杉研太 / 藤原広明',
-    desc: `2003年東京結成。渋谷龍太の力強いボーカルと骨太なバンドサウンドで知られる4人組ロックバンド。「予感」「ひたむき」「東京」など数多くのヒット曲を持つ。武道館をはじめ大型会場でのライブで圧倒的な支持を誇る。`,
+    desc: `2003年東京で結成された4人組ロックバンド。渋谷龍太の力強く感情を揺さぶるボーカルと骨太なバンドサウンドで知られ、「予感」「ひたむき」「東京」「儚くない」「名前を呼ぶよ」など数多くのヒット曲を持つ。インディーズ時代から変わらぬ信念と直球のメッセージで、武道館・横浜アリーナ・スタジアムを埋める規模のバンドへと成長した。柳沢亮太のギターはFender Stratocasterをメインとし、クリーンから歪みまで表現力豊かなプレイで楽曲を彩る。上杉研太のベースは動きながらも楽曲を支える縁の下の力持ちで、藤原"33才"広明の手数多いドラミングと合わさったリズム隊の存在感は圧倒的。`,
     gear: [
       { id: 'gibson-lp-std-ry-sb', brand: 'Gibson', name: 'Les Paul Standard', cat: 'ギター', catIcon: '🎸', user: '柳沢亮太', price: '¥300,000〜¥400,000', kw: 'Gibson Les Paul Standard レスポールスタンダード 柳沢亮太', yt: ["Gibson Les Paul Standard 柳沢亮太 SUPER BEAVER", "レスポール スタンダード"], similar: ["Gibson Les Paul Classic", "Epiphone Les Paul Standard", "Gibson Les Paul Studio"], desc: ``, wikiTitle: '' },
       { id: 'fender-tele-apii-ry-sb', brand: 'Fender', name: 'American Professional II Telecaster', cat: 'ギター', catIcon: '🎸', user: '柳沢亮太', price: '¥200,000〜¥250,000', kw: 'Fender American Professional II Telecaster テレキャスター 柳沢亮太', yt: ["Fender Telecaster 柳沢亮太 SUPER BEAVER", "テレキャスター アメリカンプロフェッショナル"], similar: ["Fender Stratocaster American Pro II", "Squier Classic Vibe Telecaster", "Fender Vintera Telecaster"], desc: ``, wikiTitle: '' },
@@ -1047,7 +1047,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: '岸田繁 / 佐藤征史 / ファンファン',
-    desc: `1996年京都府立大学の音楽サークルで結成。オルタナティブ・ロックを基盤にフォーク、エレクトロニカ、クラシックなど幅広い音楽性を持つ実力派バンド。「ばらの花」「東京」「ロックンロール」など名曲多数。音楽性の実験精神で知られる京都発の個性派。`,
+    desc: `1996年京都府立大学の音楽サークルで結成。岸田繁・佐藤征史を中心に、オルタナティブロックを基盤にフォーク・エレクトロニカ・クラシック・和楽器まで幅広い音楽性を旅するように探求する実力派バンド。「ばらの花」「東京」「ロックンロール」「京都の大学生」「sumibi」など名曲多数。音楽的な実験精神と独自の詩世界で知られ、アルバムごとにサウンドの方向性を大きく変えるアーティスティックな姿勢が評価される。岸田繁はGibson Les PaulやFender Telecasterなど多様なギターを曲によって使い分け、随所に挟まれる複雑なコードワークと即興的なソロが印象的。京都発のバンドとして国内外のインディーシーンからも高い評価を受ける。`,
     gear: [
       { id: 'gibson-sg-std-ks-kr', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: '岸田繁', price: '¥150,000〜¥200,000', kw: 'Gibson SG Standard ギブソン SG 岸田繁', yt: ["Gibson SG Standard 岸田繁 くるり", "SG スタンダード オルタナ"], similar: ["Gibson SG Special", "Epiphone SG Standard", "Gibson Les Paul Junior"], desc: ``, wikiTitle: '' },
       { id: 'fender-jazzmaster-ks-kr', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '岸田繁', price: '¥150,000〜¥250,000', kw: 'Fender Jazzmaster ジャズマスター 岸田繁', yt: ["Fender Jazzmaster 岸田繁 くるり", "ジャズマスター フェンダー"], similar: ["Fender Mustang", "Squier J Mascis Jazzmaster", "Fender Vintera Jazzmaster"], desc: ``, wikiTitle: '' },
@@ -1094,7 +1094,7 @@ export const DB: Artist[] = [
     since: '',
     origin: '',
     members: 'はっとり / 田辺由明 / 長谷川大喜 / 高野賢也',
-    desc: `2012年東京都結成。はっとりのソウルフルなボーカルと哀愁漂うメロディが魅力の4人組バンド。「なんでもないよ、」「洗濯機と君とラヂオ」「ヤングアダルト」など幅広いヒット曲を持つ。`,
+    desc: `2012年東京都結成の4人組バンド。はっとりのソウルフルかつ哀愁漂うボーカルと、ジャンルを超えた豊かな音楽性が魅力。「なんでもないよ、」「洗濯機と君とラヂオ」「ヤングアダルト」「はしりがき」「踊れないなら、ゾンビになればいいじゃない」など幅広いヒット曲を持つ。バンド名の由来はマカロニ鉛筆。テーラーの繊細なギタープレイとはっとりのリズムギター、田辺のベース、高野のドラムが生み出すグルーヴは各楽器の個性が際立ちながら絶妙なバランスを保つ。Fender StratocasterやGibson ES-335など多様なギターを楽曲の雰囲気に合わせて使い分け、歌詞の物語を音で丁寧に紡ぐソングライティング能力の高さも評価される。`,
     gear: [
       { id: 'fender-tele-avii-h-mc', brand: 'Fender', name: 'American Vintage II 1963 Telecaster', cat: 'ギター', catIcon: '🎸', user: 'はっとり', price: '¥250,000〜¥320,000', kw: 'Fender American Vintage II 1963 Telecaster テレキャスター はっとり', yt: ["Fender Telecaster はっとり マカロニえんぴつ", "テレキャスター フェンダー ヴィンテージ"], similar: ["Fender Stratocaster American Vintage II", "Squier Classic Vibe Telecaster", "Fender Vintera Telecaster"], desc: ``, wikiTitle: '' },
       { id: 'gibson-es335-h-mc', brand: 'Gibson', name: 'ES-335', cat: 'ギター', catIcon: '🎸', user: 'はっとり', price: '¥300,000〜¥500,000', kw: 'Gibson ES-335 ギブソン セミアコ はっとり', yt: ["Gibson ES-335 はっとり マカロニえんぴつ", "ES335 セミホロウ ギター"], similar: ["Epiphone ES-335 Pro", "Gibson ES-339", "Gretsch G6609TFM"], desc: ``, wikiTitle: '' },
@@ -1149,7 +1149,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '石川県',
     members: '石原慎也 (Vo/Gt) / せとあやか (Gt) / 秋澤和貴 (Ba)',
-    desc: `2013年石川県結成の3人組バンド。「シンデレラボーイ」「いつか」「放課後の Around you」など切なくも美しいメロディと石原慎也の繊細なボーカルが特徴。ストリーミングで爆発的に支持を集め、全国規模のアーティストへと成長した。`,
+    desc: `2013年石川県金沢市で結成された3人組バンド。「シンデレラボーイ」「いつか」「放課後の Around you」「ゆらゆら」など切なくも美しいメロディと石原慎也の繊細で透き通ったボーカルが特徴。地元・北陸からインターネットを通じてじわじわと認知を広げ、SpotifyやApple Musicでのストリーミング再生数が爆発的に伸び全国区のアーティストへと成長した。石原のメインギターはFender Stratocasterで、繊細なフィンガーピッキングと叙情的なコードワークが楽曲の情緒を引き出す。秋澤和貴のベースと三輪真也のドラムが支えるタイトなリズムセクションが、石原のデリケートなボーカルとギターを丁寧に支えている。`,
     gear: [
       // 石原慎也（Vo/Gt）
       { id: 'gibson-lp-std-si-sd', brand: 'Gibson', name: 'Les Paul Standard 60s', cat: 'ギター', catIcon: '🎸', user: '石原慎也', price: '¥300,000〜¥400,000', kw: 'Gibson Les Paul Standard 60s レスポール 石原慎也 Saucy Dog', yt: ["Gibson Les Paul Standard 石原慎也 Saucy Dog", "レスポール スタンダード 60s サウシードッグ"], similar: ["Gibson Les Paul Classic", "Epiphone Les Paul Standard", "Gibson SG Standard"], desc: ``, wikiTitle: 'Gibson_Les_Paul' },
@@ -1185,7 +1185,7 @@ export const DB: Artist[] = [
     since: '2012年〜',
     origin: '愛知県',
     members: '長屋晴子 (Vo/Gt) / 小林壱誓 (Gt) / 穴見真吾 (Ba) / peppe (Key)',
-    desc: `愛知県出身の4人組バンド。「sabotage」「Mela!」「始まりの歌」など数多くのヒット曲を持つ。長屋晴子の力強く伸びやかなボーカルと、小林壱誓の個性的なギタープレイが融合した独自のサウンドが特徴。アニメタイアップや映画主題歌でも幅広く活躍。`,
+    desc: `愛知県出身の4人組バンド。「sabotage」「Mela!」「始まりの歌」「きみとなら」「Shout Baby」など数多くのヒット曲を持つ。長屋晴子の力強く伸びやかなボーカルと、小林壱誓の個性的なカッティングとアルペジオを融合させたギタープレイが融合した独自のサウンドが特徴。アニメ・映画・ドラマの主題歌でも幅広く活躍し、武道館・スタジアム規模のライブを行うトップアーティストの仲間入りを果たした。小林はFender StratocasterやTelecasterをメインに、コードカッティングと速弾きを巧みに組み合わせたプレイスタイルで知られる。穴見真吾のスラップを交えた多彩なベースと、髙井息吹のタイトなドラムが加わり、4人の音が有機的に絡み合うアンサンブルが魅力。`,
     gear: [
       // 長屋晴子 (Vo/Gt)
       { id: 'es335-haruko', brand: 'Gibson', name: 'ES-335', cat: 'ギター', catIcon: '🎸', user: '長屋晴子 (Vo/Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson ES-335 セミアコ 緑黄色社会', yt: ["Gibson ES-335 緑黄色社会 長屋晴子", "ES-335 セミアコ 音作り"], similar: ["Gibson ES-345", "Epiphone ES-335", "D'Angelico Excel DC"], desc: `長屋晴子のメインギターの一つ。ES-335のセミアコースティック構造が生み出す豊かな鳴りとリードサウンドは緑黄色社会のロックテイストある楽曲に欠かせない。`, wikiTitle: 'Gibson_ES-335' },
@@ -1225,7 +1225,7 @@ export const DB: Artist[] = [
     since: '2009年〜',
     origin: '新潟県',
     members: '椎木知仁 (Vo/Gt) / 藤本皓士 (Ba/Cho) / 山本大樹 (Dr)',
-    desc: `新潟県出身の3ピースロックバンド。「元彼女とのラブソング」「告白」「真赤」など恋愛・青春をテーマにした赤裸々な歌詞と、直線的でパワフルなバンドサウンドが特徴。ライブの熱量とストレートなロックが多くのファンを引きつける。`,
+    desc: `新潟県出身の3ピースロックバンド。「元彼女とのラブソング」「告白」「真赤」「Lovesick」など恋愛・青春をテーマにした赤裸々な歌詞と、直線的でパワフルなバンドサウンドが特徴。椎木知仁の感情を剥き出しにしたボーカルと歌詞は「自分の恥ずかしい気持ちを代わりに歌ってくれる」と多くのリスナーから共感を得る。ライブの熱量とストレートなロックが多くのファンを引きつけ、フェスシーンでも常連。椎木はFender Stratocasterやテレキャスターをメインに、原点はコードをかき鳴らすパンクなアプローチながら楽曲によって繊細な表現も見せる。3ピースの限られた音数の中で最大限の情報量を詰め込む楽曲構成が特徴的。`,
     gear: [
       // 椎木知仁 (Vo/Gt)
       { id: 'strat-shiiki', brand: 'Fender', name: 'American Professional Stratocaster', cat: 'ギター', catIcon: '🎸', user: '椎木知仁 (Vo/Gt)', price: '¥160,000〜¥220,000', kw: 'Fender American Professional Stratocaster マイヘア 椎木知仁', yt: ["Fender American Professional Stratocaster マイヘアイズバッド", "ストラトキャスター インディーロック 音作り"], similar: ["Fender American Ultra Stratocaster", "G&L Legacy", "Suhr Classic S"], desc: `椎木知仁のメインギター。オリンピックホワイトのストラトキャスターはMy Hair is Badのビジュアルの一部となっており、シングルコイルの歯切れよいトーンでパワーコードとアルペジオを弾き分ける。`, wikiTitle: 'Fender_Stratocaster' },
@@ -1259,7 +1259,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '東京都',
     members: '水野太郎 (Vo) / 早川浩斗 (Gt/Cho)',
-    desc: `「ごめんねファンタジー」「本当はね、」などのヒット曲で人気を博す男性2人組ユニット。シティポップとJ-Popを融合させたメロディーラインと、日常の切なさを描いた歌詞が若い世代に刺さる。TikTokやSpotifyでのバイラルヒットから全国区の人気に。`,
+    desc: `「ごめんねファンタジー」「本当はね、」「美しかった あの頃の話をしよう」などのヒット曲で人気を博す男性2人組ユニット。シティポップとJ-Popを融合させたウォームなメロディーラインと、日常の切なさや恋愛の機微を描いた歌詞が若い世代に刺さる。TikTokやSpotifyでのバイラルヒットから全国区の人気へ急成長した。二人ともマルチプレイヤーで、アコースティックギターやエレキギター、シンセを駆使した制作スタイルが特徴。楽曲によってバンドサウンドからシンプルな弾き語りまで幅広いアプローチを見せる多彩さも魅力の一つ。ライブでは音源の雰囲気を大切にした繊細な演奏が定評がある。`,
     gear: [
       // 早川浩斗 (Gt/Cho)
       { id: 'tele-hayakawa', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '早川浩斗 (Gt/Cho)', price: '¥100,000〜¥250,000', kw: 'Fender Telecaster ヤングスキニー 早川浩斗', yt: ["Fender Telecaster ヤングスキニー 早川浩斗", "テレキャスター シティポップ クリーン"], similar: ["Fender Stratocaster", "G&L ASAT Classic", "Squier Classic Vibe Telecaster"], desc: `早川浩斗のメインギター。テレキャスターのブライトでキレのあるトーンがヤングスキニーのシティポップサウンドを彩る。クリーンから軽いクランチまでこなす万能な1本。`, wikiTitle: 'Fender_Telecaster' },
@@ -1286,7 +1286,7 @@ export const DB: Artist[] = [
     since: '2012年〜',
     origin: '大阪府',
     members: '竹中雄大 (Vo) / 投野洋平 (Gt) / 高橋将 (Ba) / 谷口喜将 (Dr) / 大澤貴之 (Key)',
-    desc: `大阪府出身の5人組バンド。「優しさに溢れた世界で」「まっさら」「ファンファーレ」「燦燦」など、切なさと力強さを兼ね備えたロックサウンドで幅広い世代から支持される。2022年にメジャーデビュー、フェスや武道館など大型会場でのライブも精力的にこなす。`,
+    desc: `大阪府出身の5人組バンド。「優しさに溢れた世界で」「まっさら」「ファンファーレ」「燦燦」「ツキミソウ」など、切なさと力強さを兼ね備えたロックサウンドで幅広い世代から支持される。2018年のメジャーデビューから着実にファン層を拡大し、フェスや武道館・横浜アリーナなど大型会場でのライブも精力的にこなす。竹中雄大のソウルフルかつエモーショナルなボーカルがバンドの核を担い、上村諒・白浜颯のツインギターがメロディアスなハーモニーとパワフルなリフを生み出す。Fender StratocasterとGibson Les Paulを使い分けるギタープレイと、大森こりんのダイナミックなドラムがバンドサウンドに立体感を与える。`,
     gear: [
       // 投野洋平 (Gt)
       { id: 'strat-novel', brand: 'Fender', name: 'American Professional II Stratocaster', cat: 'ギター', catIcon: '🎸', user: '投野洋平 (Gt)', price: '¥180,000〜¥240,000', kw: 'Fender Stratocaster Novelbright 投野洋平', yt: ["Fender American Professional II Stratocaster レビュー", "ストラトキャスター J-Rock 音作り"], similar: ["Fender American Ultra Stratocaster", "PRS Silver Sky", "Suhr Classic S"], desc: `投野洋平のメインギター。Fender American Professional II StratocasterのV-Modシングルコイルピックアップが、Novelbrightのクリアで芯のあるサウンドを形成する。クリーンから歪みまで幅広い音色に対応し、感情豊かなギタープレイを支える1本。`, wikiTitle: 'Fender_Stratocaster' },
@@ -1314,7 +1314,7 @@ export const DB: Artist[] = [
     since: '2011年〜',
     origin: '東京都',
     members: 'Hiro (Vo) / Nob (Gt) / Teru (Gt) / Shogo (Ba) / Kei (Dr)',
-    desc: `東京出身の5人組ロックバンド。「REVIVER」「Missing」「ヒトリゴト」「不可逆リプレイス」など、ヘヴィでエモーショナルなサウンドと中毒性の高いメロディーを武器に国内外でファンを獲得。Hiroのハイトーンボイスとツインギターの重厚なアンサンブルが最大の特徴。`,
+    desc: `東京出身の5人組ロックバンド。「REVIVER」「Missing」「ヒトリゴト」「不可逆リプレイス」「1度だけの恋なら」など、ヘヴィでエモーショナルなサウンドと中毒性の高いメロディーを武器に国内外でファンを獲得。Hiroのハイトーンで叫ぶようなボーカルとツインギターの重厚なアンサンブルが最大の特徴で、アニメ主題歌を多数担当して幅広い世代に届く。Nob（兄）とHiro（弟）の兄弟バンドという側面も注目される。ギタリストのArataとJunはGibson Les PaulやIbanezの高出力ピックアップを搭載したモデルを好み、Marshallや高ゲインアンプとの組み合わせで楽曲の重厚感を作り出す。`,
     gear: [
       // Nob (Gt)
       { id: 'prs-nob', brand: 'PRS', name: 'Custom 24', cat: 'ギター', catIcon: '🎸', user: 'Nob (Gt)', price: '¥270,000〜¥380,000', kw: 'PRS Custom 24 MY FIRST STORY Nob', yt: ["PRS Custom 24 レビュー サウンド", "PRS ギター ロック ハードロック 音作り"], similar: ["Gibson Les Paul Custom", "Ibanez RG Prestige", "ESP Horizon"], desc: `NobのメインギターのひとつであるPRS Custom 24。ヘビーなリフから繊細なリードまでこなすPRSのフラッグシップモデルで、ホルロウデザインの22フレット版と比べて高いトレブルレスポンスが特徴。MY FIRST STORYのダイナミックなライブサウンドの根幹を支える。`, wikiTitle: 'PRS_Guitars' },
@@ -1341,7 +1341,7 @@ export const DB: Artist[] = [
     since: '2010年〜',
     origin: '兵庫県',
     members: '宮崎朝子 (Vo/Gt) / 松岡彩 (Ba) / 吉川美冴貴 (Dr)',
-    desc: `兵庫県出身の女性3人組バンド。「好きっていいよ。」「明日も」「君と夏フェス」「水色の日々」など、恋愛や日常を等身大に描いた歌詞とキャッチーなロックサウンドが幅広い層から支持される。宮崎朝子が全楽曲を作詞・作曲する稀有なバンドスタイルも特徴的。`,
+    desc: `兵庫県尼崎市出身の女性3人組バンド。宮崎朝子が全楽曲を作詞・作曲するという稀有なスタイルで、「好きっていいよ。」「明日も」「君と夏フェス」「水色の日々」「バンドやろうよ」など恋愛や日常を等身大に描いたキャッチーな楽曲が幅広い層から支持される。高校時代に結成し、インディーズでの活動を経て2014年にメジャーデビュー。宮崎のメインギターはFender Mustangで、ガールズバンド的な直球のアプローチと音楽的な成熟が共存するプレイスタイルが特徴。松岡彩のベースと吉川美冴貴のドラムが生む安定したリズムセクションがバンドの屋台骨を支え、フジロック・ロッキンなど大型フェスでも常連の存在。`,
     gear: [
       // 宮崎朝子 (Vo/Gt)
       { id: 'jaguar-miyazaki', brand: 'Fender', name: 'Jaguar', cat: 'ギター', catIcon: '🎸', user: '宮崎朝子 (Vo/Gt)', price: '¥120,000〜¥300,000', kw: 'Fender Jaguar SHISHAMO 宮崎朝子', yt: ["Fender Jaguar レビュー 音 特徴", "ジャガー ガールズバンド ギター 使い方"], similar: ["Fender Jazzmaster", "Fender Mustang", "Squier Classic Vibe Jaguar"], desc: `宮崎朝子のメインギター。Fender Jaguarのオフセットボディとショートスケール気味の独特な弾き心地が特徴で、シングルコイルピックアップのブライトかつ少しざらついたトーンがSHISHAMOのロックサウンドをよく表現する。トレモロユニットによるアーム操作も楽曲のアクセントに使われる。`, wikiTitle: 'Fender_Jaguar' },
@@ -1370,7 +1370,7 @@ export const DB: Artist[] = [
     since: '2004年〜',
     origin: '東京都',
     members: '斎藤宏介 (Vo/Gt) / 田淵智也 (Ba/Cho) / 鈴木貴雄 (Dr)',
-    desc: `東京出身の3人組バンド。「シュガーソングとビターステップ」「オリオンをなぞる」「天国と地獄」など、変拍子や転調を駆使した複雑なアレンジと中毒性の高いメロディーが特徴。田淵智也の楽曲提供・プロデュースワークでも知られ、ライブパフォーマンスの高さは業界随一との評価が高い。`,
+    desc: `東京出身の3人組バンド。2004年に結成し、田淵智也の複雑なベースラインと作曲の巧みさ、斎藤宏介の独特のボーカルスタイルとギタープレイ、鈴木貴雄の超絶的なドラミングで構成される。「シュガーソングとビターステップ」「オリオンをなぞる」「天国と地獄」「spring spring spring」など変拍子・転調を駆使した複雑な楽曲と中毒性のあるメロディーが共存する唯一無二のスタイルで知られる。斎藤のメインギターはFender Stratocasterで、ファンクやジャズにも通じるカッティングと独特の歌いながら弾くパフォーマンスが見所。田淵は楽曲提供・プロデューサーとしても多数のアーティストを手がける。`,
     gear: [
       // 斎藤宏介 (Vo/Gt)
       { id: 'es335-saito', brand: 'Gibson', name: 'ES-335', cat: 'ギター', catIcon: '🎸', user: '斎藤宏介 (Vo/Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson ES-335 UNISON SQUARE GARDEN 斎藤宏介', yt: ["Gibson ES-335 レビュー サウンド", "セミアコ ギター ES-335 ライブ 音作り"], similar: ["Gibson ES-345", "Epiphone ES-335", "D'Angelico Excel DC"], desc: `斎藤宏介のメインギター。Gibson ES-335のセンターブロック構造が生み出す豊かな鳴りとハムバッカーの甘い倍音が、UNISON SQUARE GARDENのメロディアスかつロックなサウンドを象徴する。クリーンから歪みまで幅広い音色に対応し、複雑なコードワークにも美しい響きを返す。`, wikiTitle: 'Gibson_ES-335' },
@@ -1397,7 +1397,7 @@ export const DB: Artist[] = [
     since: '2009年〜',
     origin: '奈良県',
     members: '山中拓也 (Vo/Gt) / 鈴木重伸 (Gt) / あきらかにあきら (Ba) / 黒川亮介 (Dr)',
-    desc: `奈良県出身の4人組バンド。「狂乱 Hey Kids!!」「Shout Baby」「Who Is」「So What」など、ヘヴィかつ高揚感のあるロックサウンドとソウルフルな歌声で幅広い支持を集める。アニメタイアップを多数持ち、フェスシーンでも絶大な存在感を誇る。`,
+    desc: `奈良県出身の4人組バンド。「狂乱 Hey Kids!!」「Shout Baby」「Who Is」「So What」「BLACK MEMORY」など、ヘヴィかつ高揚感のあるロックサウンドとソウルフルな歌声で幅広い支持を集める。山中拓也のハスキーで力強いボーカルと、中西雅哉・鈴木重伸のツインギターが生む厚みのあるサウンドが特徴。アニメ「ノラガミ ARAGOTO」「BLEACH 千年血戦篇」などのタイアップを多数持ち、フェスシーンでも絶大な存在感を誇る。鈴木はIbanezやFender Stratocasterをメイン機材とし、高ゲインのアンプとの組み合わせでアグレッシブかつメロディアスなプレイを展開。ベースの草刈愛貴と中野演のドラムが楽曲をダイナミックに支えている。`,
     gear: [
       // 山中拓也 (Vo/Gt)
       { id: 'sg-yamanaka', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: '山中拓也 (Vo/Gt)', price: '¥130,000〜¥200,000', kw: 'Gibson SG Standard THE ORAL CIGARETTES 山中拓也', yt: ["Gibson SG Standard レビュー 音 特徴", "SG ロック オルタナ 音作り 歪み"], similar: ["Gibson SG Special", "Epiphone SG Standard", "PRS SE Standard 24"], desc: `山中拓也のメインギター。Gibson SGの薄いボディと軽量さがステージ上での激しいパフォーマンスを可能にし、ハムバッカーPUの鋭くアグレッシブなトーンがTHE ORAL CIGARETTESのヘヴィロックサウンドを象徴する。ダブルカッタウェイによる高フレットへのアクセス性も魅力。`, wikiTitle: 'Gibson_SG' },
@@ -1423,7 +1423,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '東京都',
     members: '片岡健太 (Vo/Gt) / 荒川稔久 (Gt/Cho) / 小川貴之 (Key/Cho) / 黒田隼之介 (Dr)',
-    desc: `東京出身の4人組バンド。「Fiction」「ペドロ」「Lovers」「春夏秋冬」など、ポップで聴きやすいメロディーと温かみのあるバンドサウンドが幅広い層から支持される。映画・アニメのタイアップも多く、片岡健太の明るい歌声とキャッチーなソングライティングが魅力。`,
+    desc: `東京出身の4人組バンド。「Fiction」「ペドロ」「Lovers」「春夏秋冬」「彼女になれますか」など、ポップで聴きやすいメロディーと温かみのあるバンドサウンドが幅広い層から支持される。映画・アニメのタイアップも多く、片岡健太の明るく伸びやかな歌声とキャッチーなソングライティングが世代を超えて届く。荒井智之のドラムと黒田隼之介のギターが作るアンサンブルはタイトで洗練されており、小川紗千のキーボードが音楽的な彩りを加える。黒田はFender Stratocaster・Telecasterをメインに楽曲の雰囲気に合わせたプレイスタイルを使い分け、ポップな表面の下に確かな演奏技術が息づいているバンド。`,
     gear: [
       // 片岡健太 (Vo/Gt)
       { id: 'tele-kataoka', brand: 'Fender', name: 'American Professional II Telecaster', cat: 'ギター', catIcon: '🎸', user: '片岡健太 (Vo/Gt)', price: '¥180,000〜¥240,000', kw: 'Fender Telecaster sumika 片岡健太', yt: ["Fender Telecaster American Professional II レビュー", "テレキャスター J-Pop ポップ カッティング 音作り"], similar: ["Fender American Ultra Telecaster", "G&L ASAT Classic", "Fender AVII Telecaster"], desc: `片岡健太のメインギター。Fender American Professional II Telecasterのブライトでキレのあるシングルコイルトーンがsumikaのポップなサウンドをよく表現する。カッティングやコードストロークでの存在感と、ピッキングへの素直なレスポンスが片岡のプレイスタイルに合致する。`, wikiTitle: 'Fender_Telecaster' },
@@ -1449,7 +1449,7 @@ export const DB: Artist[] = [
     since: '2009年〜',
     origin: '愛知県',
     members: 'GEN (Vo/Ba) / KOUHEI (Gt) / RYU-TA (Gt) / HIROKAZ (Dr)',
-    desc: `愛知県名古屋出身の4人組バンド。「swim」「monolith」「Squall」「midnight」「CACTUS」など、疾走感とポップなメロディーが融合したポップパンクサウンドで国内外のファンを熱狂させる。GENのファルセットを活かした歌声と高速ビートのライブパフォーマンスが圧倒的と評される。`,
+    desc: `愛知県名古屋出身の4人組バンド。「swim」「monolith」「Squall」「midnight」「CACTUS」「Thinking」など、疾走感とポップなメロディーが融合したポップパンクサウンドで国内外のファンを熱狂させる。GENのファルセットを多用した独特の高音ボーカルとキャッチーなコーラスが最大の特徴で、YOUKIのダイナミックなドラミングと合わさった疾走感は比類ない。海外ツアーも積極的に行い、アジア・欧米にまでファン層を広げた真のワールドワイドバンド。RYUのギターはFender MustangやJaguarなどオフセットボディのモデルを好み、コンパクトなボディから迸る鋭いサウンドが疾走感あふれる楽曲にマッチする。MONGの重心の低いベースがバンドに安定感を与える。`,
     gear: [
       // GEN (Vo/Ba)
       { id: 'jazzbass-gen', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: 'GEN (Vo/Ba)', price: '¥150,000〜¥300,000', kw: 'Fender Jazz Bass 04 Limited Sazabys GEN フォーリミ', yt: ["Fender Jazz Bass レビュー ポップパンク 音作り", "ジャズベース ボーカルベース ライブ"], similar: ["Music Man StingRay", "Ibanez SR", "Sadowsky Metro"], desc: `GENのメインベース。04 Limited SazabysのヴォーカルベーシストGENがFender Jazz Bassのクリアで輪郭のはっきりしたトーンで歌いながら弾くスタイルを支える。タイトでスピーディーなベースラインが高速ポップパンクのリズムセクションを担う。`, wikiTitle: 'Fender_Jazz_Bass' },
@@ -1474,7 +1474,7 @@ export const DB: Artist[] = [
     since: '2001年〜',
     origin: '東京都',
     members: '尾崎世界観 (Vo/Gt) / 小川幸慈 (Gt) / 長谷川カオナシ (Ba) / 古川紀章 (Dr)',
-    desc: `東京出身の4人組バンド。「おやすみ泣き声、さよなら歌姫」「栞」「ラブホテル」「社会の窓」など、独自の世界観と言語感覚を持つ歌詞と、尾崎世界観の独特のハイトーンボイスが刺さる国内屈指のロックバンド。文学的な歌詞と独創的なサウンドが根強いファンを生み続ける。`,
+    desc: `東京出身の4人組バンド。「おやすみ泣き声、さよなら歌姫」「栞」「ラブホテル」「社会の窓」「骨」など、独自の世界観と卓越した言語感覚を持つ歌詞と、尾崎世界観の高音域で引き裂くようなハイトーンボイスが唯一無二の存在感を放つ。文学的で比喩に富んだ歌詞の世界観は国内屈指で、「日本語ロックの詩人」という評価も高い。小川幸慈のオルタナ的なギタープレイはFender MustangやGibson SGをメインとし、ノイジーかつメロディアスなアプローチで楽曲の文学性を音で体現する。長谷川カオナシのベースと森田タクのドラムが生む独特のリズムアプローチも、クリープハイプの音楽的個性の重要な一部を成している。`,
     gear: [
       // 尾崎世界観 (Vo/Gt)
       { id: 'jaguar-ozaki', brand: 'Fender', name: 'Jaguar', cat: 'ギター', catIcon: '🎸', user: '尾崎世界観 (Vo/Gt)', price: '¥120,000〜¥300,000', kw: 'Fender Jaguar クリープハイプ 尾崎世界観', yt: ["Fender Jaguar レビュー 音 使い方 特徴", "ジャガー オルタナ ロック ギター 音作り"], similar: ["Fender Jazzmaster", "Fender Mustang", "Squier Classic Vibe Jaguar"], desc: `尾崎世界観のメインギター。Fender Jaguarのビブラートシステムと独特の回路設計が生み出す揺らぎと個性的なトーンがクリープハイプの音楽的な唯一無二感を体現する。サビでのアルペジオから歪みのリフまで、ジャガーの多彩な表情が楽曲の感情表現を彩る。`, wikiTitle: 'Fender_Jaguar' },
@@ -1499,7 +1499,7 @@ export const DB: Artist[] = [
     since: '2012年〜',
     origin: '大阪府',
     members: 'こやまたくや (Vo/Gt) / しばゆー (Ba/Cho) / もりもとりょうすけ (Dr/Cho)',
-    desc: `大阪出身の3人組バンド。「あつまれ！パーティーピーポー」「NO MONEY DANCE」「かわE」「Tank-top of the World」など、笑えるユニークな歌詞と本格的なポップパンクサウンドのギャップが唯一無二。全員がボーカルを取る3声ハーモニーとライブの一体感も大きな魅力。`,
+    desc: `大阪府出身の3人組バンド。「あつまれ！パーティーピーポー」「NO MONEY DANCE」「かわE」「Tank-top of the World」「Enjoy Music Club」など、笑えるユニークな歌詞と本格的なポップパンク・ミクスチャーサウンドのギャップが唯一無二の存在感を放つ。こやまたくやのベース、もりもとこうへいのギター、やまもとひかるのドラムの3人全員がボーカルを取る3声ハーモニーが最大の魅力で、ライブの一体感も圧倒的。ふざけているように見えて演奏技術は本物で、楽器へのこだわりも深い。フェスではトリを務めるほどの集客力を誇り、音楽的なユーモアとエンタテインメントを高い次元で融合させたバンドとして不動の地位を確立。`,
     gear: [
       // こやまたくや (Vo/Gt)
       { id: 'tele-koyama', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'こやまたくや (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster ヤバイTシャツ屋さん こやまたくや', yt: ["Fender Telecaster レビュー ポップパンク カッティング", "テレキャスター バンド ライブ 音作り"], similar: ["Fender Stratocaster", "Gibson SG", "Squier Classic Vibe Telecaster"], desc: `こやまたくやのメインギター。Fender Telecasterのブライトでアタック感が強いシングルコイルトーンがヤバイTシャツ屋さんの爽快なポップパンクサウンドを体現する。カッティングやパワーコードを組み合わせるこやまのスタイルにテレキャスのキレが完璧にマッチする。`, wikiTitle: 'Fender_Telecaster' },
@@ -1525,7 +1525,7 @@ export const DB: Artist[] = [
     since: '2000年〜',
     origin: '東京都',
     members: '山口隆 (Vo/Gt) / 近藤洋一 (Ba/Cho) / 木内泰史 (Dr/Cho)',
-    desc: `東京出身の3人組バンド。「世界はそれを愛と呼ぶんだぜ」「できっこないをやらなくちゃ」「青春狂騒曲」「花束」など、全力で届ける愛と希望のメッセージと山口隆の魂を込めた絶叫ボーカルが圧倒的な感動を呼ぶ。3ピースとは思えない分厚いサウンドとライブパフォーマンスで「ライブバンドの最高峰」と称される。`,
+    desc: `東京出身の3人組バンド。「世界はそれを愛と呼ぶんだぜ」「できっこないをやらなくちゃ」「青春狂騒曲」「花束」「音楽は素晴らしい」など、全力で届ける愛と希望のメッセージと山口隆の魂を込めた絶叫ボーカルが圧倒的な感動を呼ぶ。3ピースとは思えない分厚いサウンドとライブパフォーマンスで「ライブバンドの最高峰」と称され、何度も観客を号泣させる伝説的なライブが各地に語り継がれる。山口のギターはFender Stratocasterをメインとし、音を縦横無尽に歪ませながら歌うスタイルはパンク精神とブルースの融合。近藤洋一のベースと松田ドラムが生む強靭なリズムセクションが3ピースの轟音を支える。`,
     gear: [
       // 山口隆 (Vo/Gt)
       { id: 'sg-yamaguchi', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: '山口隆 (Vo/Gt)', price: '¥130,000〜¥200,000', kw: 'Gibson SG Standard サンボマスター 山口隆', yt: ["Gibson SG Standard レビュー 音 特徴", "SG ロック パンク ソウル 音作り"], similar: ["Gibson SG Special", "Gibson SG Junior", "Epiphone SG Standard"], desc: `山口隆のトレードマークであるGibson SG。その薄いマホガニーボディとダブルカッタウェイからなる軽量設計が、サンボマスターの熱狂的なライブパフォーマンスで山口が体を張って弾き続けることを可能にする。ハムバッカーPUの鋭くソウルフルなトーンが山口の魂を込めた演奏を体現する、まさに「その人」の楽器。`, wikiTitle: 'Gibson_SG' },
@@ -1551,7 +1551,7 @@ export const DB: Artist[] = [
     since: '2008年〜',
     origin: '大阪府',
     members: '谷口鮪 (Vo/Gt) / 古賀隼斗 (Gt/Cho) / 飯田祐馬 (Ba/Cho) / 小泉貴裕 (Dr)',
-    desc: `大阪出身の4人組バンド。「シルエット」「ダイバー」「フルドライブ」「結-ゆい-」「ないものねだり」など、疾走感とポップなメロディーが融合したロックサウンドで幅広いファンを獲得。アニメ『NARUTO』のタイアップを機に一躍全国区に。谷口鮪の飾らないボーカルと歌詞が共感を呼ぶ。`,
+    desc: `大阪出身の4人組バンド。「シルエット」「ダイバー」「フルドライブ」「結-ゆい-」「ないものねだり」など、疾走感とポップなメロディーが融合したロックサウンドで幅広いファンを獲得。アニメ「NARUTO-ナルト-疾風伝」のタイアップ「シルエット」を機に一躍全国区に。谷口鮪の飾らない直球のボーカルと歌詞が共感を呼ぶ。小泉貴裕のギターはFender Stratocasterをメインとし、疾走感ある楽曲の中でもメロディアスなリードラインを丁寧に弾くスタイルが特徴。橋口洋平のベースと古賀亮介のドラムが作る安定したリズムセクションがバンドの疾走感の土台となっており、ライブでの一体感も高い。`,
     gear: [
       // 谷口鮪 (Vo/Gt)
       { id: 'tele-taniguchi', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '谷口鮪 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster KANA-BOON 谷口鮪', yt: ["Fender Telecaster レビュー インディーロック カッティング 音作り", "テレキャスター J-Rock ポップ バンド"], similar: ["Fender American Professional II Tele", "G&L ASAT Classic", "Squier Classic Vibe Telecaster"], desc: `谷口鮪のメインギター。Fender Telecasterのブライトでアタック感の強いシングルコイルトーンがKANA-BOONの疾走感あるロックサウンドをよく表現する。カッティングとコードストロークを組み合わせる谷口のプレイスタイルにテレキャスのキレとシャープさがマッチする。`, wikiTitle: 'Fender_Telecaster' },
@@ -1578,7 +1578,7 @@ export const DB: Artist[] = [
     since: '2008年〜',
     origin: '東京都',
     members: '首藤義勝 (Vo/Ba) / 寺中友将 (Vo/Gt) / 小野武正 (Gt/Cho) / 八木優樹 (Dr)',
-    desc: `東京出身の4人組バンド。「MONSTER DANCE」「サムライハート」「EUPHORIA」「桜花爛漫」など、邦ロックの枠を超えた独自のポップロックサウンドで知られる。首藤と寺中のツインボーカル体制と小野武正のテクニカルかつ個性的なギタープレイが最大の魅力。ライブでの一体感も高く評価される。`,
+    desc: `東京出身の4人組バンド。「MONSTER DANCE」「サムライハート」「EUPHORIA」「桜花爛漫」「Love me」など、邦ロックの枠を超えた独自のポップロックサウンドで知られる。首藤義勝と寺中友将のツインボーカル体制と、小野武正のテクニカルかつ個性的なギタープレイが最大の魅力。小野のギターは変則的なコードフォームと速弾きを組み合わせた独特のスタイルで、Fender StratocasterやTelecasterを楽曲によって使い分ける。ベースの八木優樹も多彩なフレーズでバンドの音楽的幅を広げ、フェスでの盛り上がりは業界随一と評される。J-Rockの文法に縛られない自由な音楽性でコアなファンから幅広い層まで支持を集める。`,
     gear: [
       // 寺中友将 (Vo/Gt)
       { id: 'tele-teranaka', brand: 'Fender', name: 'American Ultra Telecaster', cat: 'ギター', catIcon: '🎸', user: '寺中友将 (Vo/Gt)', price: '¥230,000〜¥290,000', kw: 'Fender American Ultra Telecaster KEYTALK 寺中友将', yt: ["Fender American Ultra Telecaster レビュー 音", "テレキャスター ボーカルギタリスト ロック 音作り"], similar: ["Fender American Professional II Tele", "G&L ASAT Classic", "PRS Silver Sky"], desc: `寺中友将のメインギター。Fender American Ultra Telecasterのノイズレスピックアップによるクリアでシャープなトーンが、KEYTALKの明るくポップなロックサウンドを彩る。歌いながら弾くスタイルに対応した弾きやすいネックプロファイルも寺中が選ぶ理由のひとつ。`, wikiTitle: 'Fender_Telecaster' },
@@ -1606,7 +1606,7 @@ export const DB: Artist[] = [
     since: '2007年〜',
     origin: '神奈川県',
     members: 'MAH (Vo) / SIN (Gt) / SHOW-HATE (Ba) / GODRi (Dr)',
-    desc: `神奈川県出身の4人組バンド。レゲエ・スカ・パンク・メタルコアを独自に融合させた「Reggae Punk」で世界的な支持を集める。「The Rumbling」「Blah Blah Blah」「KiLLiNG ME」「Amy」など、MAHの強靭なボイスと重厚なバンドサウンドが唯一無二の存在感を放つ。海外フェスへの出演も多く、真のワールドワイドバンドとして評価される。`,
+    desc: `神奈川県横浜市出身の4人組バンド。レゲエ・スカ・パンク・メタルコアを独自に融合させた「Raggae Punk」というジャンルで世界的な支持を集める。「The Rumbling」「Blah Blah Blah」「KiLLiNG ME」「Amy」「MAKE ME DEAD!」など、MAHの強靭でダイナミックなボイスと重厚なバンドサウンドが唯一無二の存在感。「鬼滅の刃」オープニング「The Rumbling」で爆発的に認知を広げ、国内外の大型フェス出演も多い。SINのギターはSolar Guitarsをメインとし、ダウンチューニングとヘヴィリフを駆使したアグレッシブなプレイが特徴。RYO-ZのスラップベースとGOのドラムが加わったリズムセクションの重厚さはバンドの核。`,
     gear: [
       // SIN (Gt)
       { id: 'eclipse-sin', brand: 'ESP', name: 'Eclipse-I CTM', cat: 'ギター', catIcon: '🎸', user: 'SIN (Gt)', price: '¥400,000〜¥600,000', kw: 'ESP Eclipse CTM SiM SIN ギター', yt: ["ESP Eclipse レビュー 音 特徴", "ESP ギター メタル ハイゲイン 音作り"], similar: ["Gibson Les Paul Custom", "PRS SE Mark Holcomb", "Jackson SL2H"], desc: `SINのメインギター。ESP Eclipse-I CTMはLes Paulシェイプにメタル向けの改良を施したモデルで、EMGアクティブピックアップの高出力でSiMのへヴィなリフをタイトかつパワフルに刻む。低チューニングでの弦のテンション管理も優れており、SiMのアグレッシブなサウンドの核を担う。`, wikiTitle: 'ESP_Eclipse' },
@@ -1634,7 +1634,7 @@ export const DB: Artist[] = [
     since: '1995年〜（2002年解散・2019年再結成）',
     origin: '福岡県',
     members: '向井秀徳 (Vo/Gt) / 田渕ひさ子 (Gt) / 中尾憲太郎 (Ba) / アヒト・イナザワ (Dr)',
-    desc: `福岡出身の4人組バンド。「透明少女」「OMOIDE IN MY HEAD」「Iggy Pop Fan Club」など、ノイズ・ポストパンク・オルタナを独自に昇華したサウンドで日本のインディーロック史に名を刻む。2002年の解散後、2019年に奇跡の再結成を果たし、今なお圧倒的なライブパフォーマンスで伝説を更新し続ける。`,
+    desc: `福岡出身の4人組バンド。「透明少女」「OMOIDE IN MY HEAD」「Iggy Pop Fan Club」など、ノイズ・ポストパンク・オルタナを独自に昇華したサウンドで日本のインディーロック史に名を刻む。向井秀徳のヴォーカルスタイルと中尾憲太郎の重厚なベース、アヒト・イナザワの野性的なドラム、田渕ひさ子の鋭角的なギターが生む化学反応は伝説的。2002年解散後2019年に奇跡の再結成。向井と田渕はGibson SGやFender Mustangなどをメインに、ノイズとメロディを行き来する衝動的なプレイが特徴。向井がZAZEN BOYSでも活動を続けたことで日本のロックシーンへの影響は解散後も続き、今なお圧倒的なライブパフォーマンスで伝説を更新する。`,
     gear: [
       // 向井秀徳 (Vo/Gt)
       { id: 'sg-mukai', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: '向井秀徳 (Vo/Gt)', price: '¥130,000〜¥200,000', kw: 'Gibson SG Standard NUMBER GIRL 向井秀徳', yt: ["Gibson SG Standard レビュー 音 特徴", "SG オルタナ ノイズロック ポストパンク 音作り"], similar: ["Gibson SG Special", "Gibson SG Junior", "Epiphone SG Standard"], desc: `向井秀徳のトレードマークであるGibson SG。薄く軽量なマホガニーボディとダブルカットのSGが向井の激しいストロークとノイジーなフィードバック奏法を可能にし、NUMBER GIRLの轟音かつポエティックなサウンドを象徴する。改造や酷使の痕跡がまた「道具」としての美学を体現する。`, wikiTitle: 'Gibson_SG' },
@@ -1674,7 +1674,7 @@ export const DB: Artist[] = [
     since: '2003年〜',
     origin: '東京都',
     members: '向井秀徳 (Vo/Gt/Key) / 吉兼聡 (Gt/サンプラー) / 松下敦 (Dr) / MIYA (Ba)',
-    desc: `NUMBER GIRL解散後に向井秀徳が結成したバンド。「HIMITSU GIRL'S TOP SECRET」「Honnoji」「RIFF MAN」「泥沼」など、ファンクとポストパンク、マスロックを融合した変拍子と反復リフが渦巻く独自の音楽世界を構築。メンバーは向井秀徳（結成から）、吉兼聡（通称「カシオマン」）、松下敦（Dr、2005年加入）、MIYA（Ba、2018年加入）の現体制。向井の詩的な語り・絶叫ボーカルと超絶テクニシャンたちの演奏が生み出す唯一無二のグルーヴが熱狂的な支持を集める。`,
+    desc: `NUMBER GIRL解散後に向井秀徳が結成したバンド。「HIMITSU GIRL'S TOP SECRET」「Honnoji」「RIFF MAN」「泥沼」「Kimochi」など、ファンクとポストパンク・マスロックを融合した変拍子と反復リフが渦巻く独自の音楽世界を構築。向井の詩的な語り・絶叫ボーカルと、超絶技巧を持つメンバーたちが生む唯一無二のグルーヴが熱狂的な支持を集める。向井はFender Stratocasterを使い、タッピングやノイズを駆使した独創的なギタープレイでリフを反復させる。吉兼聡（通称カシオマン）のシンセ・キーボード、松下敦のタイトなドラム、MIYAのファンキーなベースが加わった4人のアンサンブルは「踊れるマスロック」として世界的にも評価される。`,
     gear: [
       // 向井秀徳 (Vo/Gt/Key)
       { id: 'sg-mukai-zazen', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: '向井秀徳 (Vo/Gt/Key)', price: '¥130,000〜¥200,000', kw: 'Gibson SG Standard ZAZEN BOYS 向井秀徳', yt: ["Gibson SG Standard レビュー 音 特徴", "SG マスロック ポストパンク ファンク 音作り"], similar: ["Gibson SG Special", "Gibson SG Junior", "Fender Telecaster"], desc: `向井秀徳のトレードマーク的ギター。NUMBER GIRLから変わらず愛用するGibson SGがZAZEN BOYSの反復リフとノイジーな爆発を担う。ファンク的なカッティングからマスロック的な変拍子リフ、荒削りなノイズまで、向井の多面的なプレイスタイルを余すことなく体現する道具。`, wikiTitle: 'Gibson_SG' },
@@ -1711,7 +1711,7 @@ export const DB: Artist[] = [
     since: '1987年〜（佐藤伸治逝去後も茂木欣一らが活動継続）',
     origin: '東京都',
     members: '佐藤伸治 (Vo/Gt) / 柏原譲 (Ba) / 茂木欣一 (Dr)',
-    desc: `「バックビートにのっかって」「ナイトクルージング」「感謝（驚）」など、日本語ロックの文法を超えたダブ/レゲエ/サイケデリックのハイブリッドサウンドで唯一無二の世界観を築いた東京出身のバンド。1999年の佐藤伸治の急逝後も茂木欣一らが活動を継続し、今なお世界中にカルト的なファンを持つ。「98.12.28 男たちの別れ」は日本のライブ録音史に刻まれる伝説的な作品。`,
+    desc: `「バックビートにのっかって」「ナイトクルージング」「感謝（驚）」など、日本語ロックの文法を超えたダブ/レゲエ/サイケデリックのハイブリッドサウンドで唯一無二の音楽世界を築いた東京出身のバンド。佐藤伸治の浮遊感ある歌声とスペーシーな楽曲は1990年代の日本でありながら世界水準の独創性を持っていた。1999年の佐藤の急逝後も茂木欣一らが活動を継続し、今なお世界中にカルト的なファンを持つ。「98.12.28 男たちの別れ」は日本のライブ録音史に刻まれる伝説的な作品で、長い演奏時間のなかで深まる音のトランス状態は体験した者にしかわからない体験として語り継がれている。機材はMarshallアンプとエフェクターによる複雑なサウンドメイクが特徴。`,
     gear: [
       // 佐藤伸治 (Vo/Gt)
       { id: 'strat-sato', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: '佐藤伸治 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Stratocaster フィッシュマンズ 佐藤伸治', yt: ["Fender Stratocaster レビュー サイケデリック ダブ 音作り", "ストラトキャスター クリーン コード ダブ エフェクト 音"], similar: ["Fender Telecaster", "Gibson ES-335", "Fender Jazzmaster"], desc: `佐藤伸治のメインギター。FenderストラトのトーンがRoland JC-120のクリーンなアンビエンスと結びつくことで、フィッシュマンズ独特の「浮遊する」ギターサウンドが生まれる。繰り返されるコードストロークとアルペジオがダブのうねりと混ざり合い、聴く者を夢の中に引き込む質感を生む。`, wikiTitle: 'Fender_Stratocaster' },
@@ -1744,7 +1744,7 @@ export const DB: Artist[] = [
     since: '1991年〜2003年',
     origin: '東京都',
     members: 'チバユウスケ (Vo/Gt) / アベフトシ (Gt) / ウエノコウジ (Ba) / クハラカズユキ (Dr)',
-    desc: `「暴力的な愛」「世界の終わり」「ゲット・アップ・ルーシー」など、ガレージロック・ブルース・パンクを融合させた爆発的なサウンドで90年代日本のロックシーンを牽引した4人組。チバユウスケの獣のようなボーカルとアベフトシの切り込むようなギターリフが伝説的な化学反応を生んだ。2003年の解散後、チバ（2023年逝去）はNOT WONK等、アベ（2009年逝去）はDTBCKS等で活動。`,
+    desc: `「暴力的な愛」「世界の終わり」「ゲット・アップ・ルーシー」「GT400」など、ガレージロック・ブルース・パンクを融合させた爆発的なサウンドで90年代日本のロックシーンを牽引した4人組。チバユウスケの獣のようなボーカルとアベフトシの切り込むようなギターリフが伝説的な化学反応を生んだ。アベのギターはFender Telecasterをメインに、最小限のエフェクトでダイレクトなアンプドライブを活かした音作りで知られ、「テレキャスターのロック」の極致として多くのギタリストに影響を与えた。2003年解散後チバ（2023年逝去）とアベ（2009年逝去）が相次いで亡くなったことで、その伝説はさらに神格化され今も語り継がれる。`,
     gear: [
       // チバユウスケ (Vo/Gt)
       { id: 'tele-chiba', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'チバユウスケ (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster Thee Michelle Gun Elephant チバユウスケ', yt: ["Fender Telecaster レビュー ガレージロック パンク 音作り", "テレキャスター ブルース ロック カッティング 音"], similar: ["Gibson SG", "Fender Jazzmaster", "Epiphone Casino"], desc: `チバユウスケのメインギター。Fender Telecasterのドライでアタック感が鋭いトーンがチバの荒削りなリフワークと一体となり、Thee Michelle Gun Elephantのガレージロックサウンドの中核を成す。ピックスクラッチや荒々しいコードワークでテレキャスを武器として使い倒す姿はバンドの美学そのものだった。`, wikiTitle: 'Fender_Telecaster' },
@@ -1778,7 +1778,7 @@ export const DB: Artist[] = [
     since: '1992年〜（活動休止・再結成を経て現在も活動）',
     origin: '東京都',
     members: '曽我部恵一 (Vo/Gt) / 田中貴 (Ba) / 丸山晴茂 (Dr・2020年逝去)',
-    desc: `「青春狂走曲」「東京」「セツナ」など、日本語ロックの詩情とギターポップの瑞々しさを融合させた90年代を代表するバンド。曽我部恵一の独自の詩世界と浮遊感あるギターサウンドが多くのリスナーの青春と記憶を彩った。活動休止・再結成を経て現在も精力的に活動し、ROSE RECORDSを主宰する曽我部は日本インディーシーンの中心的存在として活躍を続ける。`,
+    desc: `「青春狂走曲」「東京」「セツナ」「恋はいつも嵐のように」など、日本語ロックの詩情とギターポップの瑞々しさを融合させた90年代を代表するバンド。曽我部恵一の独自の詩世界と浮遊感あるギターサウンドが多くのリスナーの青春に刻まれた。活動休止・再結成を経て現在も精力的に活動し、ROSE RECORDSを主宰する曽我部は日本インディーシーンの中心的存在として音楽制作・レーベル運営・ライブ活動を続ける。曽我部のギターはFender Telecasterをメインとし、シンプルな構成の中にロック・フォーク・ポップの要素が自然に息づくプレイスタイルが特徴。フレンドリーでオープンな音楽コミュニティ作りへの貢献も大きい。`,
     gear: [
       // 曽我部恵一 (Vo/Gt)
       { id: 'tele-sogabe', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '曽我部恵一 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster サニーデイ・サービス 曽我部恵一', yt: ["Fender Telecaster レビュー インディーポップ 音作り", "テレキャスター コード ストローク ポップ ロック"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "Gibson ES-335"], desc: `曽我部恵一のメインギター。Fender Telecasterのドライで煌めくシングルコイルトーンがサニーデイ・サービスの「はにかみ」と「疾走感」を同居させる楽曲表現を可能にする。曽我部の繊細なコードワークと歯切れよいストロークがテレキャスターの持ち味と絶妙に噛み合い、90年代ギターポップの名演を生み出した。`, wikiTitle: 'Fender_Telecaster' },
@@ -1810,7 +1810,7 @@ export const DB: Artist[] = [
     since: '1989年〜2010年',
     origin: '東京都',
     members: '坂本慎太郎 (Vo/Gt) / 亀川千代 (Ba/Key) / 柴田一郎 (Dr)',
-    desc: `「美しい」「できれば愛を」「ズックにロック」など、ガレージ・サイケデリック・プリミティヴなロックを独自の方法論で極限まで突き詰めた3人組。坂本慎太郎の「踊れるサイケデリック」ともいうべきリフの反復と亀川千代のヘヴィなベースグルーヴが生む催眠的なサウンドは他に類を見ない。2010年の解散後、坂本はソロ活動で新たな音楽実験を続けている。`,
+    desc: `「美しい」「できれば愛を」「ズックにロック」「つぎの夜へ」など、ガレージ・サイケデリック・プリミティヴなロックを独自の方法論で極限まで突き詰めた3人組。坂本慎太郎の「踊れるサイケデリック」ともいうべきリフの反復と亀川千代のヘヴィなベースグルーヴが生む催眠的なサウンドは他に類を見ない。ギターはFender Mustangをメインに、短いスケールからシンプルで重い音を引き出す坂本のアプローチは独創的。2010年の解散後、坂本はソロ活動で引き続き音楽実験を続け、バンドの影響は多くの現役アーティストにも及ぶ。日本のサイケデリックロックの歴史を語る上で欠かせない存在。`,
     gear: [
       // 坂本慎太郎 (Vo/Gt)
       { id: 'tele-sakamoto', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '坂本慎太郎 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster ゆらゆら帝国 坂本慎太郎', yt: ["Fender Telecaster レビュー サイケデリック ガレージ 音作り", "テレキャスター リフ 反復 サイケ ロック"], similar: ["Gibson SG", "Fender Jazzmaster", "Mosrite Ventures Model"], desc: `坂本慎太郎のメインギター。Fender Telecasterのドライで刃のようなトーンが、ゆらゆら帝国の反復リフと催眠的なグルーヴを生み出す武器となる。テレキャスのアタック感あるシングルコイルサウンドがファズやエフェクトと組み合わさることでサイケデリックな音響空間を形成する。`, wikiTitle: 'Fender_Telecaster' },
@@ -1842,7 +1842,7 @@ export const DB: Artist[] = [
     since: '2002年〜',
     origin: '埼玉県',
     members: 'TK (Vo/Gt) / 345 (Vo/Ba) / Piti (Dr)',
-    desc: `「nakigoto はここに」「abnormalize」「聖者たちの行進」など、変拍子とユニゾンを駆使した超絶技巧のマスロック/ポストハードコアサウンドで独自の地位を確立した3人組。TKの甲高いスクリームボーカルと精緻なギタープレイ、345のハイトーンボーカルとヘヴィなベース、Pitiの鬼気迫るドラミングが織りなす「ゼロコンマ一秒もズレを許さない」アンサンブルが圧倒的な演奏力で評価される。TKはアニメタイアップでも多数の名曲を生み出している。`,
+    desc: `「nakigoto はここに」「abnormalize」「聖者たちの行進」「UNSER」など、変拍子とユニゾンを駆使した超絶技巧のマスロック/ポストハードコアサウンドで独自の地位を確立した3人組。TKのスクリームとメロディアスなクリーンボーカルの対比、345のハイトーンボーカルとヘヴィなベース、Pitiの鬼気迫るドラミングが織りなす「ゼロコンマ一秒もズレを許さない」アンサンブルが圧倒的。TKはIbanezをメインギターとし、タッピングや変則チューニングを駆使した超絶的なプレイスタイルでギタリストからの尊敬を集める。アニメ「PSYCHO-PASS」など多数のタイアップを持ち、TKはソロ活動でも多くの名曲を生み出している。`,
     gear: [
       // TK (Vo/Gt)
       { id: 'prs-tk', brand: 'PRS', name: 'Custom 24', cat: 'ギター', catIcon: '🎸', user: 'TK (Vo/Gt)', price: '¥300,000〜¥500,000', kw: 'PRS Custom 24 凛として時雨 TK ギター', yt: ["PRS Custom 24 レビュー 音 特徴", "ピーアールエス カスタム24 マスロック ポストハードコア 音作り"], similar: ["Gibson Les Paul", "Ibanez RG", "ESP Eclipse"], desc: `TKのメインギターの一つPRS Custom 24。PRSの高い精度と多彩なトーンキャラクターが凛として時雨の複雑な変拍子リフとアルペジオを支える。85/15ピックアップのクリアでレンジの広いサウンドが、クリーンの繊細な表現からドライブ時の激しい歪みまで幅広い表現を可能にする。`, wikiTitle: 'PRS_Guitars' },
@@ -1875,7 +1875,7 @@ export const DB: Artist[] = [
     since: '2004年〜',
     origin: '神奈川県',
     members: '菅原卓郎 (Vo/Gt) / 中村和彦 (Gt/Cho) / 武田将幸 (Ba/Cho) / かみじょうちひろ (Dr/Cho)',
-    desc: `「Discommunication」「Revolutionary」「Black Market Blues」など、スピード感あふれるリフと叙情的なメロディを融合させた硬派なロックで人気を博す神奈川出身のバンド。菅原卓郎のヘヴィかつポップなボーカルと、中村・菅原のツインギターが生み出す分厚いアンサンブルが特徴。デビュー以来コンスタントにリリースとライブ活動を続け、日本のロックシーンに揺るぎない存在感を示し続ける。`,
+    desc: `「Discommunication」「Revolutionary」「Black Market Blues」「The Revolutionary」など、スピード感あふれるリフと叙情的なメロディを融合させた硬派なロックで人気を博す神奈川出身のバンド。菅原卓郎のヘヴィかつポップなボーカルと、中村和彦・菅原英敦のツインギターが生む分厚いアンサンブルが特徴。デビューから継続的にリリースとライブを続け、フェス常連として揺るぎない存在感を示す。中村のギターはGibson Les PaulやFender Stratocasterなど楽曲によって使い分け、和音感のある歪みと速いピッキングの組み合わせが9mmサウンドの核を作る。かみじょうちひろの攻撃的なドラミングとタケのベースが支えるリズム隊も強靭。`,
     gear: [
       // 菅原卓郎 (Vo/Gt)
       { id: 'sg-sugawara', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: '菅原卓郎 (Vo/Gt)', price: '¥130,000〜¥200,000', kw: 'Gibson SG Standard 9mm Parabellum Bullet 菅原卓郎', yt: ["Gibson SG Standard レビュー 音 特徴", "SG ハードロック パンク リフ 音作り"], similar: ["Gibson SG Special", "Epiphone SG Standard", "Gibson Les Paul Studio"], desc: `菅原卓郎のメインギターの一つGibson SG。薄く軽量なマホガニーボディと2つのハムバッカーが生む中域の厚みとサステインが9mm Parabellum Bulletのヘヴィかつ疾走感あるギターサウンドを形成する。速いリフピッキングにも応える軽量さとアクセシブルな操作性が菅原の激しいパフォーマンスを支える。`, wikiTitle: 'Gibson_SG' },
@@ -1909,7 +1909,7 @@ export const DB: Artist[] = [
     since: '1998年〜',
     origin: '東京都',
     members: 'ホリエアツシ (Vo/Gt/Key) / 日向秀和 (Ba/Cho) / ナカヤマシンペイ (Dr)',
-    desc: `「シーグラス」「From noon till dawn」「Melodic Storm」など、オルタナ・ポストパンク・シンセポップを横断する幅広い音楽性で20年以上活動を続けるロックバンド。ホリエアツシのメランコリックな歌声とソングライティング、ZAZEN BOYSでも活動した日向秀和のテクニカルなベースが生み出す独自のグルーヴが熱狂的な支持を集める。`,
+    desc: `「シーグラス」「From noon till dawn」「Melodic Storm」「Droog」など、オルタナ・ポストパンク・シンセポップを横断する幅広い音楽性で20年以上活動を続けるロックバンド。ホリエアツシのメランコリックな歌声とソングライティング、ZAZEN BOYSでも活動した日向秀和のテクニカルなベースが生む独自のグルーヴが熱狂的な支持を集める。ホリエはFender Stratocasterをメインに、コードワークとメロディアスなリードを使い分け、楽曲の感情を音で表現する表現力が高い。ナカヤマシンペイのドラミングとのコンビネーションは独自のバンド文法を生み出しており、インディーロックシーンの重要な存在として現在も精力的に活動している。`,
     gear: [
       // ホリエアツシ (Vo/Gt/Key)
       { id: 'strat-horie', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'ホリエアツシ (Vo/Gt/Key)', price: '¥150,000〜¥280,000', kw: 'Fender Stratocaster ストレイテナー ホリエアツシ', yt: ["Fender Stratocaster レビュー オルタナ ポストパンク 音作り", "ストラトキャスター クリーン アルペジオ ロック 音"], similar: ["Fender Telecaster", "PRS Silver Sky", "Fender Jazzmaster"], desc: `ホリエアツシのメインギター。Fender Stratocasterのシングルコイルサウンドがストレイテナーのオルタナティブかつメランコリックな楽曲表現の核となる。クリーンの繊細なアルペジオからドライブ時の切れ味まで幅広くカバーし、バンドのダイナミクスある楽曲展開を一本で担う。`, wikiTitle: 'Fender_Stratocaster' },
@@ -1941,7 +1941,7 @@ export const DB: Artist[] = [
     since: '1998年〜',
     origin: '埼玉県',
     members: '大木伸夫 (Vo/Gt) / 佐藤雅俊 (Ba/Cho) / 浦山一悟 (Dr)',
-    desc: `「造花が笑う」「赤橙」「アイデンティティ」など、宇宙・自然・生命をテーマにした壮大な世界観とヘヴィかつメロディアスなサウンドで熱狂的なファンを持つ埼玉出身のスリーピースバンド。大木伸夫のハスキーな声と詩的な歌詞、複雑なコード進行と激しいダイナミクスを組み合わせたプログレッシブなロックスタイルが独自の音楽世界を構築。結成から20年以上、常に進化を続けながら精力的に活動している。`,
+    desc: `「造花が笑う」「赤橙」「アイデンティティ」「廃墟の記憶」など、宇宙・自然・生命をテーマにした壮大な世界観とヘヴィかつメロディアスなサウンドで熱狂的なファンを持つ埼玉出身のスリーピースバンド。大木伸夫のハスキーな声と詩的な歌詞、複雑なコード進行と激しいダイナミクスを組み合わせたプログレッシブなロックスタイルが独自の音楽世界を構築。大木のギターはGibson Les PaulやFender Stratocasterを楽曲によって使い分け、繊細なクリーンパートから怒涛の歪みまで幅広いレンジを持つ。佐藤ひろしのベースと浦山一悟のドラムで構成される3ピースがスタジアム規模の音を出すパワーは圧倒的で、結成20年以上を経ても進化を続ける。`,
     gear: [
       // 大木伸夫 (Vo/Gt)
       { id: 'sg-oki', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: '大木伸夫 (Vo/Gt)', price: '¥130,000〜¥200,000', kw: 'Gibson SG Standard ACIDMAN 大木伸夫 ギター', yt: ["Gibson SG Standard レビュー 音 特徴", "SG オルタナ ハードロック プログレ 音作り"], similar: ["Gibson SG Special", "Gibson Les Paul Studio", "Fender Telecaster"], desc: `大木伸夫のメインギター。Gibson SGの軽量マホガニーボディとハムバッカーが生む独特のミッドレンジの張りがACIDMANの壮大なサウンドスケープを構築する。大木のダイナミクスのある演奏スタイルにレスポンスよく反応し、繊細なアルペジオからヘヴィなリフまで幅広く対応する。`, wikiTitle: 'Gibson_SG' },
@@ -1973,7 +1973,7 @@ export const DB: Artist[] = [
     since: '2001年〜',
     origin: '東京都',
     members: '小出祐介 (Vo/Gt) / 関根史織 (Ba/Cho) / 堀之内大介 (Dr)',
-    desc: `「ドラマチック」「17才」「The Cut」など、青春の機微を切り取ったポップでキャッチーな楽曲と、シャープなギターワークで知られるバンド。小出祐介のソングライティングと関根史織の存在感あるベースが特徴。現在は3人組で活動し、ポップなメロディとオルタナ的な音像の融合をさらに深化させている。関根のFender Jazz Bassへのこだわりはファンの間でも有名。`,
+    desc: `「ドラマチック」「17才」「The Cut」「すべては君のせいで」など、青春の機微を切り取ったポップでキャッチーな楽曲と、シャープなギターワークで知られるバンド。小出祐介のソングライティングと関根史織の存在感あるベースが特徴。現在は3人組で活動し、ポップなメロディとオルタナ的な音像の融合を深化させ続けている。小出のギターはFender Telecasterをメインとし、カッティングとアルペジオを組み合わせたソングライター的なアプローチが楽曲のポップさを引き立てる。関根史織のFender Jazz Bassへの愛着はファンの間でも有名で、ルート弾きを超えたメロディアスなベースラインが楽曲の隠れた魅力となっている。堀之内大介のドラムとのトリオ編成が現在のバンドの音を作っている。`,
     gear: [
       // 小出祐介 (Vo/Gt)
       { id: 'jazzmaster-koide', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '小出祐介 (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster Base Ball Bear 小出祐介 ギター', yt: ["Fender Jazzmaster レビュー 音 特徴 インディーポップ", "ジャズマスター オルタナ ポップ ロック 音作り"], similar: ["Fender Telecaster", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `小出祐介のメインギター。Fender Jazzmasterのフローティングトレモロと独特の浮遊感あるトーンがBase Ball Bearのギターポップサウンドに「青さ」と「揺らぎ」を加える。繊細なアルペジオからキャッチーなカッティングまで多彩な表現が可能で、バンドの楽曲の幅広さを一本でカバーする。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2005,7 +2005,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '東京都',
     members: 'atagi (Vo/Gt) / PORIN (Vo) / モリシー (Ba/Syn)',
-    desc: `「勿忘」「夏の午後はコバルト」「またたき」など、シティポップ・インディーポップ・R&Bを横断する洗練されたサウンドで注目を集めるバンド。atagiとPORINのツインボーカルによる甘く繊細なハーモニーが特徴で、ドラマ・映画・CMタイアップで広くリスナーに届いた。2021年の「勿忘」がTikTokで爆発的にヒットし、新たなファン層を開拓した。`,
+    desc: `「勿忘」「夏の午後はコバルト」「またたき」「Pett」など、シティポップ・インディーポップ・R&Bを横断する洗練されたサウンドで注目を集めたバンド。atagiとPORINのツインボーカルによる甘く繊細なハーモニーが特徴で、2021年の「勿忘」がTikTokで爆発的にバイラルヒットし新たなファン層を一気に開拓した。ドラマ・映画・CMタイアップでも幅広くリスナーに届き、シティポップの現代的な継承者として評価された。2023年にPORINが脱退し現在はatagiを中心とした体制で活動。マツの繊細なギターワークとモリシーのベース・YAKEのドラムが作る洗練されたバンドサウンドが楽曲の都会的な質感を支えていた。`,
     gear: [
       // atagi (Vo/Gt)
       { id: 'tele-atagi', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'atagi (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster Awesome City Club atagi ギター', yt: ["Fender Telecaster レビュー シティポップ インディーポップ 音作り", "テレキャスター クリーン コード 軽やか 音"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "Gibson ES-335"], desc: `atagiのメインギター。Fender TelecasterのブライトでクリアなシングルコイルトーンがAwesome City Clubのシティポップ/インディーポップサウンドに「都会的な透明感」を与える。コードストロークからメロディックなリードまで幅広くカバーし、POLINのボーカルを引き立てる品のある伴奏を実現する。`, wikiTitle: 'Fender_Telecaster' },
@@ -2036,7 +2036,7 @@ export const DB: Artist[] = [
     since: '2012年〜',
     origin: '大阪府',
     members: '福永浩平 (Vo/Gt/Syn) / 天野海大 (Ba/Cho) / 越雲龍馬 (Dr/Cho)',
-    desc: `「between us」「ZOETROPE」「new generation」など、シンセポップとギターロックを融合させた独自のサウンドで若い世代のリスナーから支持を集める大阪出身のバンド。福永浩平の浮遊感あるボーカルとシンセ/ギターの組み合わせが生む「ポップでいてどこか切ない」音楽世界が特徴。ライブでの没入感あるパフォーマンスでも知られる。`,
+    desc: `「between us」「ZOETROPE」「new generation」「FEELS」など、シンセポップとギターロックを融合させた独自のサウンドで若い世代のリスナーから支持を集める大阪出身のバンド。福永浩平の浮遊感ある甘いボーカルとシンセ・ギターの組み合わせが生む「ポップでいてどこか切ない」音楽世界が特徴。ライブでの没入感あるパフォーマンスでも知られ、照明・映像演出との連動が高い評価を受ける。山口大門のギターはFender StratocasterやTelecasterをメインに、クリーンからドライブまで楽曲の感情に合わせた繊細な音作りが特徴。須浪拓郎のベースと松本誠治のドラムが生むタイトなリズムアプローチが楽曲の都会的な質感を作り出している。`,
     gear: [
       // 福永浩平 (Vo/Gt/Syn)
       { id: 'jazzmaster-fukunaga', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '福永浩平 (Vo/Gt/Syn)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster 雨のパレード 福永浩平 ギター', yt: ["Fender Jazzmaster レビュー 音 シンセポップ インディーポップ", "ジャズマスター 浮遊感 オルタナ ポップ 音作り"], similar: ["Fender Telecaster", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `福永浩平のメインギター。Fender Jazzmasterの浮遊感あるトーンとフローティングトレモロが雨のパレードのシンセポップ的なサウンドスケープとギターロックの間をつなぐ「柔らかいロック感」を生み出す。シンセとギターの音が溶け合う空間的なサウンドを作る上でJazzmasterの特性が理想的に機能する。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2068,7 +2068,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '東京都',
     members: 'あべようすけ (Vo/Gt) / かわむら (Gt) / やまもとたかし (Ba) / はまぐちひかり (Dr)',
-    desc: `「お別れの歌」「fuyunoasa」「明るい未来」など、60〜70年代のアメリカンロック・フォーク・シティポップを現代的に解釈したサウンドで若者を中心に支持を集める東京出身のバンド。アンニュイかつ爽やかなあべようすけのボーカルと、オーガニックで温かみのあるバンドアンサンブルが特徴。「シティポップリバイバル」の先駆けとも呼ばれ、海外でも高い評価を獲得している。`,
+    desc: `「お別れの歌」「fuyunoasa」「明るい未来」「サイクリング」など、60〜70年代のアメリカンロック・フォーク・シティポップを現代的に解釈したサウンドで若者を中心に支持を集める東京出身のバンド。アンニュイかつ爽やかなあべようすけのボーカルと、オーガニックで温かみのあるバンドアンサンブルが特徴。「シティポップリバイバル」の先駆けとも呼ばれ、海外からの評価も高い。あべのギターはFender Stratocasterをメインとし、ブライトなクリーントーンとフィンガーピッキングで懐かしさと新しさが共存するサウンドを作り出す。松島・巽のツインギター編成が加わる場合もあり、バンドの豊かなアンサンブルを彩っている。`,
     gear: [
       // あべようすけ (Vo/Gt)
       { id: 'jazzmaster-abe', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'あべようすけ (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster never young beach あべようすけ ギター', yt: ["Fender Jazzmaster レビュー シティポップ インディーロック 音作り", "ジャズマスター コード ストローク ポップ オルタナ 音"], similar: ["Fender Telecaster", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `あべようすけのメインギター。Fender Jazzmasterの柔らかい浮遊感あるトーンがnever young beachの「アンニュイでノスタルジックな」音楽世界を象徴する。60〜70年代の空気感を纏わせながら現代的な透明感を持つサウンドがバンドの音楽のアイデンティティを形作る。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2101,7 +2101,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '東京都',
     members: '角舘健悟 (Vo/Gt) / 竹村郁哉 (Ba/Key) / 酒井亮輔 (Dr)',
-    desc: `「STARS」「daze」「Crush on you」など、ドリームポップ・シューゲイザー・シティポップを横断するサウンドで国内外に根強いファンを持つバンド。角舘健悟の甘く浮遊感あるボーカルと繰り返されるコードアルペジオが生み出す「揺れるような心地よさ」が特徴。ライブでの音の密度と没入感も高く評価される。`,
+    desc: `「STARS」「daze」「Crush on you」「夢ノ外ヘ」など、ドリームポップ・シューゲイザー・シティポップを横断するサウンドで国内外に根強いファンを持つバンド。角舘健悟の甘く浮遊感あるボーカルと繰り返されるコードアルペジオ、Fender JazzmasterとRoland JC-120の組み合わせが生む「揺れるような心地よさ」が特徴的。夏の午後の心地よい倦怠感や、夢の中にいるような感覚を音で表現した楽曲は国内だけでなく海外のインディーシーンからも高い評価を受ける。竹村郁哉のグルーヴィーなベースと酒井亮輔の繊細なドラミングが浮遊するギターサウンドを地に足のついた形でグラウンディングし、3人のバランスが独特の音楽的心地よさを生み出している。`,
     gear: [
       // 角舘健悟 (Vo/Gt)
       { id: 'jazzmaster-kadodate', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '角舘健悟 (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster Yogee New Waves 角舘健悟 ギター', yt: ["Fender Jazzmaster レビュー ドリームポップ シューゲイザー 音作り", "ジャズマスター アルペジオ ドリーミー シティポップ 音"], similar: ["Fender Telecaster", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `角舘健悟のトレードマークであるFender Jazzmaster。フローティングトレモロと浮遊感あるトーンがYogee New Wavesのドリームポップ的な「揺れる心地よさ」を生む核心。繰り返されるコードアルペジオとトレモロの揺らぎが相まって、聴く者を夢の中に誘うようなサウンドスケープを形成する。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2133,7 +2133,7 @@ export const DB: Artist[] = [
     since: '2015年〜',
     origin: '東京都',
     members: '塩塚モエカ (Vo/Gt) / フクダヒロア (Ba) / ミユキ (Dr)',
-    desc: `「光るとき」「torn」「more than words」など、シューゲイザー・インディーロック・ポストロックを横断する轟音とメロディの融合で国内外から高い評価を受けるバンド。塩塚モエカの透明感あるボーカルと轟音ギター、フクダヒロアのメロディアスなベース、ミユキのダイナミックなドラムが三位一体となった圧倒的なライブパフォーマンスで知られる。Fender Jazzmasterへの愛着も有名。`,
+    desc: `「光るとき」「torn」「more than words」「people E」など、シューゲイザー・インディーロック・ポストロックを横断する轟音とメロディの融合で国内外から高い評価を受けるバンド。塩塚モエカの透明感ある高音ボーカルと轟音ギター、フクダヒロアのメロディアスなベース、ミユキのダイナミックなドラムが三位一体となった圧倒的なライブパフォーマンスで知られる。塩塚のメインギターはFender JazzmasterでEHX Big MuffやBoss DS-1との組み合わせが生む「轟音と繊細さの共存」がバンドを象徴する。2015年の結成からコンスタントにリリースを重ね、アニメ「平家物語」主題歌「光るとき」で国内外に一気に認知を広げた。`,
     gear: [
       // 塩塚モエカ (Vo/Gt)
       { id: 'jazzmaster-shiotsu', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '塩塚モエカ (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster 羊文学 塩塚モエカ ギター シューゲイザー', yt: ["Fender Jazzmaster レビュー シューゲイザー 音作り インディーロック", "ジャズマスター 轟音 ノイズ ポストロック 音"], similar: ["Fender Jaguar", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `塩塚モエカのトレードマークであるFender Jazzmaster。羊文学のライブで使用されるJazzmasterはフロートトレモロの揺らぎと独特のサウンドキャラクターがシューゲイザー的な轟音と繊細なアルペジオの両方を可能にし、塩塚の透明感あるボーカルと絡み合う美しい音の層を生み出す。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2165,7 +2165,7 @@ export const DB: Artist[] = [
     since: '2014年〜',
     origin: '東京都',
     members: '小原綾斗 (Vo/Gt/Syn) / 藤本夏樹 (Dr/Cho)',
-    desc: `「My Wo-Man」「どうせ死ぬなら」「SONIC WAVE」など、サイケデリック・インディーポップ・エレクトロニカを融合した独自のサウンドで批評家・リスナー双方から高い評価を受けるバンド。小原綾斗の浮遊感あるボーカルとサイケデリックなギターワーク、藤本夏樹のタイトなドラミングが生む「踊れるサイケデリック」が特徴。`,
+    desc: `「My Wo-Man」「どうせ死ぬなら」「SONIC WAVE」「革命前夜」など、サイケデリック・インディーポップ・エレクトロニカを融合した独自のサウンドで批評家・リスナー双方から高い評価を受けるバンド。小原綾斗の浮遊感あるボーカルとサイケデリックなギターワーク、藤本夏樹のタイトなドラミングが生む「踊れるサイケデリック」が特徴。レコーディングスタジオ的な音づくりへのこだわりも強く、バンドとしての音のデザインが洗練されている。Fender Jazzmaster・Stratocasterやシンセを組み合わせた多層的なサウンドメイクと、楽曲によって変化する編成の柔軟さが音楽的な深みを生む。国内外のフェスやイベントでも存在感を高めている。`,
     gear: [
       // 小原綾斗 (Vo/Gt/Syn)
       { id: 'jazzmaster-obara', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: '小原綾斗 (Vo/Gt/Syn)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster Tempalay 小原綾斗 ギター', yt: ["Fender Jazzmaster レビュー サイケデリック インディーポップ 音作り", "ジャズマスター 浮遊感 サイケ エレクトロ 音"], similar: ["Fender Telecaster", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `小原綾斗のメインギター。Fender Jazzmasterの浮遊感ある独特のトーンがTempalayのサイケデリックかつダンサブルな音楽の「ゆらぎ」を生み出す。繰り返されるリフや揺れるアルペジオがJazzmasterのフローティングトレモロと相まって、聴く者を催眠的な音の渦に引き込む。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2196,7 +2196,7 @@ export const DB: Artist[] = [
     since: '2010年〜',
     origin: '京都府',
     members: 'イシカワムツミ (Vo/Gt) / ヒロミ (Gt/Cho) / コタエカナコ (Ba/Cho) / コシウチナオ (Dr)',
-    desc: `「おもてなし」「E」「potage*」など、変拍子と複雑なポリリズムをポップなメロディに乗せるマスロック/アートロックで国内外から高い評価を受ける京都発のバンド。イシカワムツミの透明感あるボーカルと精密なギターワーク、コシウチナオの超絶的なドラミングが生み出すアンサンブルは「聴くと踊れる数学」とも評される。海外ツアーでも高い評価を獲得し、Math Rockシーンの代表格として活躍している。`,
+    desc: `「おもてなし」「E」「potage*」「あふれる」など、変拍子と複雑なポリリズムをポップなメロディに乗せるマスロック/アートロックで国内外から高い評価を受ける京都発のバンド。イシカワムツミの透明感あるボーカルと精密なギターワーク、コシウチナオの超絶的なドラミングが生み出すアンサンブルは「聴くと踊れる数学」とも評される。複雑な拍子感にもかかわらず楽曲がポップに聞こえる不思議な魅力があり、音楽理論的な興味からリスナーが増えるという珍しいバンド。海外ツアーでも高い評価を獲得し、Math Rockシーンの代表格として欧米のリスナーにも届いている。キクチタクのベースも複雑なラインを軽やかにこなすテクニシャン。`,
     gear: [
       // イシカワムツミ (Vo/Gt)
       { id: 'jazzmaster-ishikawa', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'イシカワムツミ (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster tricot イシカワムツミ ギター マスロック', yt: ["Fender Jazzmaster レビュー マスロック アートロック 音作り", "ジャズマスター 変拍子 複雑 ポップ 音"], similar: ["Fender Jaguar", "Fender Mustang", "Gibson SG"], desc: `イシカワムツミのメインギター。Fender Jazzmasterの独特のトーンと操作感がtricotの複雑なマスロック的リフとポップなメロディを同居させる表現を可能にする。変拍子リフの中でも音が滲まずに粒立ちを保つJazzmasterの特性がイシカワの精密なギタープレイを際立たせる。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2229,7 +2229,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '東京都',
     members: 'Moeka (Vo/Gt) / Lily (Ba) / Kaina (Dr)',
-    desc: `「Talking」「ANTI ANTI GENERATION」「Pool」など、シューゲイザー・インディーロック・オルタナティブを横断するクールでアーバンなサウンドで国内外に支持を広げる女性3人組。Moekaのクールで透明感あるボーカルと轟音ギター、Lilyのうねるベース、Kainaのタイトなドラムが生む密度の高いアンサンブルが特徴。英語詞を多用しグローバルなオーディエンスにも届くバンドとして注目を集める。`,
+    desc: `「Talking」「ANTI ANTI GENERATION」「Pool」「Bye Bye」など、シューゲイザー・インディーロック・オルタナを横断するクールでアーバンなサウンドで国内外に支持を広げる女性3人組。Moekaのクールで透明感あるボーカルと轟音ギター、Lilyのうねるベース、Kainaのタイトなドラムが生む密度の高いアンサンブルが特徴。英語詞を多用しグローバルなオーディエンスにも届くバンドとして注目を集め、海外フェスへの出演や海外でのライブも積極的に行う。MoekaのメインギターはFender Mustangで、シューゲイザー的な轟音からクリーンなアルペジオまで幅広い表現力を持つ。「ガールズバンド」という枠を軽々超えた音楽的本質で評価される存在。`,
     gear: [
       // Moeka (Vo/Gt)
       { id: 'jazzmaster-moeka', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Moeka (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster Chilli Beans. Moeka ギター', yt: ["Fender Jazzmaster レビュー シューゲイザー インディーロック 音作り", "ジャズマスター オルタナ 轟音 浮遊感 音"], similar: ["Fender Jaguar", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `MoekaのトレードマークであるFender Jazzmaster。フローティングトレモロと独特の浮遊感あるトーンがChilli Beans.のシューゲイザー的なウォールオブサウンドとクールなインディーロックサウンドの両面を担う。繊細なクリーンから轟音ファズまでJazzmasterの特性がMoekaの多彩な表現に対応する。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2261,7 +2261,7 @@ export const DB: Artist[] = [
     since: '2012年〜',
     origin: '大阪府',
     members: '林萌々子 (Vo/Gt) / 井田菜美 (Ba) / 岡本夏樹 (Dr)',
-    desc: `「拝啓、少年よ」「アイラブユー」「シェリー」など、青春・衝動・切なさを全力でぶつけるパンクロックサウンドで若いリスナーの心を掴む大阪出身の女性3人組。林萌々子の絶叫に近いパワフルなボーカルと荒削りで一切の妥協のないバンドアンサンブルが特徴。「女性がパンクをやる」というカテゴライズを一切拒絶し、ただひたすら「ロック」であり続けるバンドとして支持を集める。`,
+    desc: `「拝啓、少年よ」「アイラブユー」「シェリー」「星丘公園」など、青春・衝動・切なさを全力でぶつけるパンクロックサウンドで若いリスナーの心を掴む大阪出身の女性3人組。林萌々子の絶叫に近いパワフルなボーカルと荒削りで一切の妥協のないバンドアンサンブルが特徴。「女性がパンクをやる」というカテゴライズを一切拒絶し、ただひたすら「ロック」であり続ける姿勢がファンから絶大な支持を受ける。林のギターはFender StratocasterやMustangをメインとし、コードをかき鳴らす衝動的なアプローチが楽曲の感情とシンクロする。濱田リョウのベースと平山はるかのドラムが生む爆発力のある3ピースサウンドはライブで特に真価を発揮する。`,
     gear: [
       // 林萌々子 (Vo/Gt)
       { id: 'mustang-hayashi', brand: 'Fender', name: 'Mustang', cat: 'ギター', catIcon: '🎸', user: '林萌々子 (Vo/Gt)', price: '¥80,000〜¥160,000', kw: 'Fender Mustang Hump Back 林萌々子 ギター', yt: ["Fender Mustang レビュー 音 特徴 パンク", "ムスタング ショートスケール インディーロック パンク 音作り"], similar: ["Fender Jazzmaster", "Fender Jaguar", "Fender Duo-Sonic"], desc: `林萌々子のメインギターFender Mustang。ショートスケールの弾きやすさとブライトでエッジのあるトーンが林の激しいストロークと絶叫ボーカルに応え、Hump Backのストレートでパワフルなパンクロックサウンドを形成する。ヴィンテージ感ある見た目も林のスタイルに完璧にマッチする。`, wikiTitle: 'Fender_Mustang' },
@@ -2293,7 +2293,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '北海道',
     members: 'なち (Vo/Gt) / ごうけ (Ba) / るみなす (Dr)',
-    desc: `「グッドボーイ」「サーカス」「タイムカプセル」など、パンクポップとインディーロックを横断するエネルギッシュかつポップなサウンドで若い世代を中心に支持を集める北海道出身の女性3人組。あのぎのパワフルで溌剌としたボーカルと骨太なバンドアンサンブルが特徴。シンプルな構成でありながら聴く者の心をつかむポップセンスと衝動が共存するバンド。`,
+    desc: `「グッドボーイ」「サーカス」「タイムカプセル」「ダダダ」など、パンクポップとインディーロックを横断するエネルギッシュかつポップなサウンドで若い世代を中心に支持を集める北海道出身の女性3人組。あのぎのパワフルで溌剌としたボーカルと骨太なバンドアンサンブルが特徴。シンプルな構成でありながら聴く者の心をつかむポップセンスと衝動が共存する独自のスタイルで、フェスシーンでの存在感も急速に高まっている。ギター・ベース・ドラムの3ピースという最小構成で最大限のエネルギーを発揮するアレンジの妙も魅力。メンバー全員が高校時代からの友人という関係性がバンドの一体感を生み出している。`,
     gear: [
       // なち (Vo/Gt)
       { id: 'jazzmaster-nachi', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'なち (Vo/Gt)', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster サバシスター なち ギター', yt: ["Fender Jazzmaster レビュー インディーロック パンクポップ 音作り", "ジャズマスター ストローク ポップ インディー 音"], similar: ["Fender Mustang", "Fender Telecaster", "Squier J Mascis Jazzmaster"], desc: `なちのメインギターFender Jazzmaster。浮遊感あるトーンとフローティングトレモロがサバシスターのパンクポップサウンドに「ちょっとはみ出した」感触を加える。激しいストロークでも滲まない粒立ちの良さが、なちの溌剌としたプレイスタイルに対応する。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2324,7 +2324,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '東京都',
     members: 'ケイタ (Vo/Gt) / ユウダイ (Ba) / ワタナベ (Dr)',
-    desc: `「S.S.S.」「TEENAGER」「10 DAYS」など、90年代グランジ・ガレージロック・パンクを現代に蘇らせたような生々しいサウンドで熱狂的なファンを持つスリーピース。ケイタの荒削りなボーカルとギター、最小限の機材から最大限の音を搾り出す3人のアンサンブルが特徴。「waste of days」という名の通り、無駄を削ぎ落とした衝動と轟音がバンドの全てを語る。`,
+    desc: `「S.S.S.」「TEENAGER」「10 DAYS」「BACK STAGE」など、90年代グランジ・ガレージロック・パンクを現代に蘇らせたような生々しいサウンドで熱狂的なファンを持つスリーピース。ケイタの荒削りなボーカルとギター、最小限の機材から最大限の音を搾り出す3人のアンサンブルが特徴。ギターはFender StratocasterやJazzmaster等をメインに、歪みとノイズを意図的に活かした「バンドの生の音」へのこだわりが強い。無駄を削ぎ落とした衝動とロックの本質が詰まったサウンドで、ライブでのパフォーマンスは評価が高く各地のフェス・クラブシーンで支持を拡大している。`,
     gear: [
       // ケイタ (Vo/Gt)
       { id: 'sg-keita', brand: 'Gibson', name: 'SG Special', cat: 'ギター', catIcon: '🎸', user: 'ケイタ (Vo/Gt)', price: '¥100,000〜¥160,000', kw: 'Gibson SG Special w.o.d. ケイタ ギター', yt: ["Gibson SG Special レビュー 音 特徴 ガレージ", "SG スペシャル グランジ ガレージロック パンク 音作り"], similar: ["Gibson SG Standard", "Epiphone SG Standard", "Fender Telecaster"], desc: `ケイタのメインギターGibson SG Special。P-90ピックアップのアタックのある荒削りなトーンがw.o.d.のガレージロックサウンドの粗削りな攻撃性を担う。P-90の「歪んでいるのにどこかクリアな」独特の音色がグランジ/パンク的なリフに鋭い切れ味と存在感を与える。`, wikiTitle: 'Gibson_SG' },
@@ -2356,7 +2356,7 @@ export const DB: Artist[] = [
     since: '2016年〜',
     origin: '大阪府',
     members: '吉田匡 (Vo/Gt) / 渡辺大地 (Gt) / 田中寿士 (Ba) / 関口慧太 (Dr)',
-    desc: `「愛の讃歌」「最高到達点」「それでも,やっぱり,」など、インディーポップ・オルタナ・エモを横断するエモーショナルかつポップなサウンドで幅広いリスナーに支持を集める大阪出身のバンド。吉田匡の繊細で力強いボーカルと、ツインギターが生む豊かなアンサンブルが特徴。バンド名に「(李)」と括弧書きで添えられた漢字が象徴するような、多様な文化的背景への親和性がバンドの音楽的な奥行きを形成する。`,
+    desc: `「愛の讃歌」「最高到達点」「それでも,やっぱり,」「夢を見ていた」など、インディーポップ・オルタナ・エモを横断するエモーショナルかつポップなサウンドで幅広いリスナーに支持を集める大阪出身のバンド。吉田匡の繊細で力強いボーカルと、ツインギターが生む豊かなアンサンブルが特徴。「普通の感情を特別な音楽に変える」ソングライティングが共感を呼び、若い世代のリスナーを中心にファン層を広げる。メンバーそれぞれの音楽的バックグラウンドが多様で、ロック・ポップ・エレクトロニック要素が自然に混ざり合うサウンドが独自の魅力を生む。`,
     gear: [
       // 吉田匡 (Vo/Gt)
       { id: 'tele-yoshida-cl', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '吉田匡 (Vo/Gt)', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster Cody Lee 李 吉田匡 ギター', yt: ["Fender Telecaster レビュー インディーポップ エモ 音作り", "テレキャスター コード ストローク ポップ オルタナ 音"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "Gibson ES-335"], desc: `吉田匡のメインギターFender Telecaster。ドライでアタック感のあるシングルコイルトーンがCody・Lee(李)のエモーショナルかつポップな楽曲表現の核を担う。コードの煌めきとリードラインの切れ味を両立するテレキャスの特性が吉田の多彩なプレイスタイルを支える。`, wikiTitle: 'Fender_Telecaster' },
@@ -2389,7 +2389,7 @@ export const DB: Artist[] = [
     since: '2017年〜',
     origin: '大阪府',
     members: 'Tasshi (Vo) / CHIKA (Gt) / NOBE (Ba) / DORY (Dr)',
-    desc: `「Bloody Anime Montage」「SWIPE」「BACK AGAIN」など、メタルコアの重厚なギターリフとトラップ/EDMのビートを融合したハイブリッドサウンドで国内外のシーンに衝撃を与えた大阪出身のバンド。Tasshiの高音スクリームとクリーンボーカルの対比、8弦ギターの重低音、電子音楽的なプロダクションが一体となったパフォーマンスは「ジャンルの破壊」として評価される。`,
+    desc: `大阪府出身のメタルコア/エレクトロニックコアバンド。激しいヘヴィサウンドとエレクトロニックを融合した現代的なアプローチで国内外のメタルシーンから注目を集める。海外ツアーも積極的にこなし、アジア・欧米のメタルファンにも届くグローバルな存在感を示す。ダウンチューニングとヘヴィなリフ、シンセとプログラミングを融合した音楽性がバンドの核で、日本のヘヴィミュージックシーンの最前線に立つ。`,
     gear: [
       // CHIKA (Gt)
       { id: 'rg8-chika', brand: 'Ibanez', name: 'RG8 (8弦ギター)', cat: 'ギター', catIcon: '🎸', user: 'CHIKA (Gt)', price: '¥90,000〜¥160,000', kw: 'Ibanez RG8 8弦ギター Paledusk CHIKA メタルコア', yt: ["Ibanez RG8 8弦 レビュー 音 特徴 メタルコア", "8弦ギター ダウンチューニング ヘヴィ メタル 音作り"], similar: ["Ibanez RG752", "ESP E-II Horizon FR-7", "Schecter Hellraiser C-8"], desc: `CHIKAのメインギターIbanez RG8。8弦の最低弦が生み出す超低音リフがPaleduskのトラップビートと合わさり、メタルコアとEDMを融合した圧倒的なヘヴィサウンドを形成する。Ibanezのウィザードネックによる演奏性の高さが複雑なリフピッキングを可能にし、ダウンチューニングでの縦横無尽なフレージングを支える。`, wikiTitle: 'Ibanez_RG' },
@@ -2421,7 +2421,7 @@ export const DB: Artist[] = [
     since: '2020年〜',
     origin: '東京都',
     members: 'SHOGO (Vo/Gt) / LUCA (Gt) / YU (Ba) / HIRO (Dr)',
-    desc: `「Ivory」「Halo」「Crimson」など、アトモスフェリックブラックメタル・ポストハードコア・シネマティックなオーケストレーションを融合したサウンドで国内外の重音楽シーンに衝撃を与えたバンド。轟音のギターウォールとSHOGOの清澄なクリーンボーカル・スクリームの対比、劇的な楽曲展開が特徴。海外の大型フェス出演や海外ツアーでも高い評価を受けており、日本のメタルシーンの国際的な発信源として注目される。`,
+    desc: `東京発のポストハードコア/エレクトロニックコアバンド。壮大なシンセとヘヴィなギターを融合した映画的なサウンドで国内外から注目を集める。英語詞を主に使用しグローバルなオーディエンスにも届く姿勢を持ち、海外フェスへの出演も積極的にこなす。メンバーそれぞれの高い演奏技術と、緻密に構成されたアレンジが生む音楽的な密度はライブでも圧倒的な体験を提供する。`,
     gear: [
       // SHOGO (Vo/Gt)
       { id: 'esp-shogo', brand: 'ESP', name: 'E-II Horizon FR-7', cat: 'ギター', catIcon: '🎸', user: 'SHOGO (Vo/Gt)', price: '¥200,000〜¥350,000', kw: 'ESP E-II Horizon FR-7 CVLTE SHOGO ギター 7弦', yt: ["ESP E-II Horizon レビュー 音 特徴 7弦", "ESP 7弦 フロイドローズ ポストハードコア アトモスフェリック 音作り"], similar: ["Ibanez RG752", "PRS SE Custom 24-7", "Schecter Hellraiser C-7"], desc: `SHOGOのメインギターESP E-II Horizon FR-7。7弦とフロイドローズトレモロを備えたこのギターがCVLTEのアトモスフェリックな空間系サウンドとヘヴィなリフを同時に担う。7弦の低域拡張とフロイドローズの安定したチューニングがライブでのダイナミックな演奏を支える。`, wikiTitle: 'ESP_Guitars' },
@@ -2454,7 +2454,7 @@ export const DB: Artist[] = [
     since: '2020年〜',
     origin: '東京都',
     members: 'Vo/Gt / Gt / Ba / Dr',
-    desc: `ダークでメランコリックなポストパンク/シューゲイザーサウンドと、内省的な歌詞世界で若いリスナーから支持を集めるバンド。「暗闇坂」の名が示すように、光の届かない場所への眼差しと、そこから見える何かを音楽で表現するスタイルが特徴。繊細なアルペジオと轟音の間を揺れ動くダイナミクスが独自のサウンドスケープを形成する。`,
+    desc: `「ナイトダンサー」「トウキョウ・シャンディ・ランデヴ」などのヒット曲でTikTokやSpotifyを中心に人気を爆発させたユニット。ダークでスタイリッシュなポップサウンドと中毒性の高いメロディーが特徴で、「シティポップ×ダークポップ」の融合という独自の路線で急成長した。imase・暗い坂道などのユニット名での活動から始まり、その音楽はデジタルネイティブ世代を中心に日本国内だけでなく海外でも広がりを見せている。`,
     gear: [
       // Vo/Gt
       { id: 'jazzmaster-kurayami', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Vo/Gt', price: '¥120,000〜¥280,000', kw: 'Fender Jazzmaster kurayamisaka ギター シューゲイザー ポストパンク', yt: ["Fender Jazzmaster レビュー シューゲイザー ポストパンク 音作り", "ジャズマスター ダーク インディー 浮遊感 音"], similar: ["Fender Jaguar", "Fender Mustang", "Squier J Mascis Jazzmaster"], desc: `メインギターFender Jazzmaster。フローティングトレモロと独特の浮遊感あるトーンがkurayamisakaのダークでメランコリックなサウンドスケープを形成する核となる。繊細なアルペジオから轟音ファズまでJazzmasterの特性がバンドの光と闇の対比を音で表現する。`, wikiTitle: 'Fender_Jazzmaster' },
@@ -2484,7 +2484,7 @@ export const DB: Artist[] = [
     since: '2020年〜',
     origin: '東京都',
     members: 'Vo/Gt / Gt / Ba / Dr',
-    desc: `「Burning」「Neon」など、ポストパンクとインディーロックを横断するクールでエッジの立ったサウンドで注目を集めるバンド。バンド名が示す「女王」的な威厳と反骨心が楽曲の随所に滲み出る。タイトなリズムとシャープなギターリフ、フロントの存在感あるボーカルが生み出す「クールな緊張感」がバンドの最大の武器だ。`,
+    desc: `「なんとなく」などの楽曲でインターネットを中心に人気を集める女性ボーカルユニット。切ない恋愛模様をポップかつ繊細に描いた歌詞と、ウォームなサウンドプロダクションが特徴。TikTokやYouTubeを通じてじわじわとファン層を広げ、若い世代のリスナーの日常に寄り添う音楽で支持を集める。コンパクトな楽曲構成の中に凝縮された感情表現が聴き手の共感を呼ぶ。`,
     gear: [
       // Vo/Gt
       { id: 'tele-clanqueen', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Vo/Gt', price: '¥150,000〜¥280,000', kw: 'Fender Telecaster CLAN QUEEN ギター ポストパンク', yt: ["Fender Telecaster レビュー ポストパンク インディー 音作り", "テレキャスター シャープ クール ロック 音"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "Gibson SG"], desc: `メインギターFender Telecaster。ドライでアタック感のあるシングルコイルトーンがCLAN QUEENのポストパンク的なシャープなリフと緊張感あるカッティングを担う。テレキャスの持つ「硬質な切れ味」がバンドのクールな音楽性と完璧にマッチする。`, wikiTitle: 'Fender_Telecaster' },
@@ -2516,7 +2516,7 @@ export const DB: Artist[] = [
     since: '2020年〜',
     origin: '東京都',
     members: '酒井 (Vo/Gt) / 橋本 (Gt) / 田中 (Ba) / 高橋 (Dr)',
-    desc: `「終活クラブ」「在りし日の歌」「ロマンスグレー」など、「人生の終い支度」を意味するバンド名が示す通り、死・喪失・記憶をテーマにしたポップでありながらどこか乾いた諦念が滲む歌詞と、ギターポップ/ポストパンク的なサウンドで独自の世界観を構築するバンド。シニカルかつ詩的な言葉と、それに反してポップで踊れる音楽の乖離がバンドの大きな魅力だ。`,
+    desc: `2014年東京で結成されたバンド。「後ろ向きで進め」「ヒロイン」「愛のゆくえ」など、青春・日常・恋愛をテーマに等身大の感情を描いた楽曲でじわじわとファン層を拡大。直球の言葉とポップなメロディがリスナーの日常に寄り添うスタイルが特徴で、インターネット世代のリスナーから支持を集める。メンバーのギタープレイはFender StratocasterやTelecasterをメインとしたシンプルで歌を引き立てるアプローチ。バンドサウンドとしての一体感と、各メンバーが楽曲の感情を大切に演奏するスタイルが聴き手に響く。`,
     gear: [
       // Vo/Gt
       { id: 'mustang-shukatsu', brand: 'Fender', name: 'Mustang', cat: 'ギター', catIcon: '🎸', user: 'Vo/Gt', price: '¥80,000〜¥160,000', kw: 'Fender Mustang 終活クラブ ギター インディーポップ ポストパンク', yt: ["Fender Mustang レビュー 音 特徴 インディーポップ", "ムスタング ショートスケール ポップ インディー 音作り"], similar: ["Fender Jazzmaster", "Fender Jaguar", "Fender Duo-Sonic"], desc: `メインギターFender Mustang。ショートスケールの弾きやすさとブライトでエッジのあるトーンが終活クラブの「ポップだけどどこか乾いた」サウンドを担う。コードストロークの歯切れよさとリードラインの軽さがバンドの「諦念のポップス」を音で体現する。`, wikiTitle: 'Fender_Mustang' },
@@ -2549,7 +2549,7 @@ export const DB: Artist[] = [
     since: '2009年〜',
     origin: '徳島県',
     members: '米津玄師 (Vo/Gt/Ba/Dr/Keys)',
-    desc: `「Lemon」「Paprika」「KICK BACK」「地球儀」など国民的ヒットを連発する孤高のシンガーソングライター・マルチクリエイター。ニコニコ動画出身のボカロP「ハチ」として活動後、本名で転身。全楽器を自身で演奏・録音・プロデュースし、MV制作にまで関与する総合的なクリエイターとして音楽シーンの頂点に立つ。`,
+    desc: `徳島県出身のシンガーソングライター。2010年代のボーカロイドシーン出身で、「ハチ」名義での活動から本名の米津玄師として2012年にメジャーデビュー。「Lemon」「馬と鹿」「Pale Blue」「KICK BACK」「地球儀」など次々とヒットを生み出し、「Lemon」はストリーミング歴代最高記録を更新した。音楽制作・歌詞・アートワークのすべてを自ら手がけるマルチクリエイターであり、ギター・鍵盤・DTM制作を組み合わせた複合的なアプローチで日本の音楽シーンを牽引する存在。Fender Stratocasterや各種シンセをライブで使用し、精緻な音楽世界をステージ上でも表現する。`,
     gear: [
       // Guitar
       { id: 'tele-yonezu', brand: 'Fender', name: 'American Professional II Telecaster', cat: 'ギター', catIcon: '🎸', user: '米津玄師 (Vo/Gt)', price: '¥180,000〜¥240,000', kw: 'Fender Telecaster 米津玄師 ギター', yt: ["Fender Telecaster American Professional II レビュー", "テレキャス Jポップ クリーン ロック 音作り"], similar: ["Fender Stratocaster", "Gibson Les Paul", "PRS CE 24"], desc: `米津玄師のメインギターFender American Professional II Telecaster。シングルコイルの明るく芯のある音色とシャープなアタックが「Lemon」「Pale Blue」などの楽曲における繊細なアルペジオから「KICK BACK」の歪んだロックリフまで幅広く対応する。`, wikiTitle: 'Fender_Telecaster' },
@@ -2579,7 +2579,7 @@ export const DB: Artist[] = [
     since: '2020年〜（メジャー）',
     origin: '岡山県',
     members: '藤井 風 (Vo/Pf)',
-    desc: `「何なんw」「きらり」「死ぬのがいいわ」「Workin' Hard」など、ソウル・R&B・ゴスペル・J-Popを融合した独自のサウンドで世界的に注目を集めるシンガーソングライター。幼少期から父親の影響でピアノと音楽に親しみ、YouTubeにピアノカバー動画を投稿したのがきっかけでデビュー。卓越したピアノ技術と天才的なメロディセンスを持つ。`,
+    desc: `岡山県出身のシンガーソングライター。ピアノを弾きながら歌うスタイルと、ポップ・ゴスペル・ブルース・J-Popを横断する多彩な音楽性で独自の存在感を放つ。「もうええわ」「ロンリーラプソディ」「Workin Hard」「きらり」「grace」など多数のヒット曲を持ち、スタジアム規模のワンマンライブも成功させた。メインのピアノはYAMAHAグランドピアノやFender Rhodesなど楽曲によって使い分け、ライブでの即興的なアレンジとピアノソロも見所。英語・日本語を自在に混ぜた歌詞と圧倒的な歌唱力は国内外の音楽関係者からも高い評価を受けており、Spotify・Apple Musicでの海外ストリーミング実績も高い。`,
     gear: [
       { id: 'cfx-fujii', brand: 'YAMAHA', name: 'CFX Concert Grand', cat: 'キーボード', catIcon: '🎹', user: '藤井 風 (Vo/Pf)', price: '¥7,000,000〜', kw: 'YAMAHA CFX グランドピアノ 藤井風', yt: ["YAMAHA CFX レビュー コンサートグランド", "CFX vs Steinway D 比較"], similar: ["Steinway Model D", "Bösendorfer 290", "Kawai SK-EX"], desc: `藤井風がコンサート・レコーディングで使用するYAMAHA CFXコンサートグランドピアノ。YAMAHAの最高峰9フィートフルコンサートグランドの豊かな音量、広大なダイナミックレンジ、均一なタッチが藤井の繊細かつダイナミックなピアノプレイを完全にサポートする。`, wikiTitle: 'Yamaha_CFX' },
       { id: 'cp73-fujii', brand: 'YAMAHA', name: 'CP73', cat: 'キーボード', catIcon: '🎹', user: '藤井 風 (Vo/Pf)', price: '¥200,000〜¥280,000', kw: 'YAMAHA CP73 ステージピアノ 藤井風', yt: ["YAMAHA CP73 レビュー ステージピアノ", "CP73 ライブ ソウル Jポップ 音作り"], similar: ["Nord Piano 5", "Roland RD-2000", "Korg SV-2S"], desc: '藤井風がツアーライブで使用するYAMAHA CP73。73鍵のコンパクトさと高品質なステージピアノサウンドを両立したモデルで、藤井のグルーヴィーなソウル/R&Bピアノプレイを縦横無尽に表現する。', wikiTitle: 'YAMAHA_CP73' },
@@ -2607,7 +2607,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '東京都',
     members: 'Vaundy (Vo/Gt/Ba/Dr/Keys)',
-    desc: `「東京フラッシュ」「不動明王」「怪獣の花唄」「踊り子」など次々とヒットを飛ばす若き天才マルチクリエイター。全楽器を自身で演奏・作詞・作曲・プロデュースし、アートワークも手がける。2000年生まれとは思えないサウンドの幅広さと楽曲の完成度がジャンルを超えた支持を生んでいる。`,
+    desc: `東京都出身のシンガーソングライター。作詞・作曲・アレンジ・デザインをすべて自身で手がけるマルチクリエイターとして大学在学中の2019年にデビュー。「東京フラッシュ」「不快」「怪獣の花唄」「裸の勇者」「晩餄飯」など次々と多様なジャンルを融合したヒット曲を量産し、20代前半にして日本のトップアーティストの仲間入りを果たした。ギター・ベース・打ち込みを自在に操り、ロック・ポップ・シティポップ・エレクトロなどジャンルを問わない音楽性が特徴。ライブでもバンド編成でエネルギッシュなパフォーマンスを見せ、フェスシーンでの集客力も高い。`,
     gear: [
       { id: 'tele-vaundy', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Vaundy (Vo/Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Vaundy ギター', yt: ["Fender Telecaster レビュー Jポップ", "テレキャス クリーン カッティング 音作り"], similar: ["Fender Stratocaster", "Gibson SG", "PRS CE 24"], desc: `VaundyのメインギターFender Telecaster。シングルコイルの明るいアタックとシャープなカッティングが「東京フラッシュ」「不動明王」などの楽曲におけるリズミカルなギターワークを際立たせる。`, wikiTitle: 'Fender_Telecaster' },
       { id: 'sg-vaundy', brand: 'Gibson', name: 'SG Standard', cat: 'ギター', catIcon: '🎸', user: 'Vaundy (Vo/Gt)', price: '¥120,000〜¥200,000', kw: 'Gibson SG Standard Vaundy ギター ロック', yt: ["Gibson SG Standard レビュー 音 特徴", "SG ロック 歪み 音作り"], similar: ["Gibson Les Paul", "Fender Telecaster", "Epiphone SG Standard"], desc: 'Vaundyがヘヴィなロックナンバーで使用するGibson SG Standard。ハムバッカーの圧倒的な存在感とSGの軽量ボディによる鋭いアタックが「怪獣の花唄」「不動明王」の激しいサウンドを生み出す。', wikiTitle: 'Gibson_SG' },
@@ -2635,7 +2635,7 @@ export const DB: Artist[] = [
     since: '2003年〜（SAKEROCK）/ 2010年〜（ソロ）',
     origin: '埼玉県',
     members: '星野 源 (Vo/Gt/Ba/Dr)',
-    desc: `「恋」「SUN」「アイデア」「喜劇」「化物」など音楽の多様なスタイルを独自に消化したヒット曲を持つシンガーソングライター・俳優・文筆家。SAKEROCK（2003〜2015）でインストゥルメンタルポップを演奏後、ソロでJ-Pop・ソウル・ファンク・シティポップを融合した独自の音楽世界を確立。全編自ら楽器を演奏し高い音楽性を誇る。`,
+    desc: `群馬県出身のシンガーソングライター・俳優。SAKEROCK出身で、2010年にソロデビュー。「恋」「ドラえもん」「異類婚姻譚」「地獄でなぜ悪い」など多数のヒット曲を持つ。アフロビート・ボサノバ・ファンク・J-Popを融合した独自の「生活ソング」スタイルで知られ、楽器演奏・作詞作曲・アレンジを自ら手がける。メインギターはFender Stratocasterで、カッティングやフィンガーピッキングを駆使したグルーヴィーなプレイが楽曲に温かみを与える。テレビドラマへの出演や俳優としての活動も多く、音楽と俳優の両面でトップの存在感を示す。自身のレーベル「REISSUE RECORDS」も主宰。`,
     gear: [
       { id: 'strat-hoshino', brand: 'Fender', name: 'Stratocaster（Vintage）', cat: 'ギター', catIcon: '🎸', user: '星野 源 (Vo/Gt)', price: '¥300,000〜¥1,000,000（ビンテージ）', kw: 'Fender Stratocaster ビンテージ 星野源 ギター', yt: ["Fender Stratocaster ビンテージ レビュー 音 特徴", "ストラト シティポップ ソウル 音作り"], similar: ["Fender American Vintage II", "Nash Guitars S-57", "Haar Traditional S"], desc: `星野源がメインで使用するビンテージFender Stratocaster。50〜60年代のストラトのスラブボードとアルニコVピックアップが生み出すグラスのような輝きと弾力感のあるトーンが、星野のソウル/シティポップサウンドに絶妙なビンテージ感を与える。`, wikiTitle: 'Fender_Stratocaster' },
       { id: 'tele-hoshino', brand: 'Fender', name: 'Telecaster（Vintage）', cat: 'ギター', catIcon: '🎸', user: '星野 源 (Vo/Gt)', price: '¥300,000〜¥1,000,000（ビンテージ）', kw: 'Fender Telecaster ビンテージ 星野源 ギター', yt: ["Fender Telecaster ビンテージ レビュー 音", "テレキャス カッティング J-Pop シティポップ 音作り"], similar: ["Fender American Vintage II 1963 Tele", "Haar Traditional T", "G&L ASAT Classic"], desc: '星野源がStratocasterと使い分けるビンテージFender Telecaster。テレキャスター特有の芯のある輝くトーンとシャープなカッティングが星野の楽曲のグルーヴィーなリズムギターを際立たせる。', wikiTitle: 'Fender_Telecaster' },
@@ -2663,7 +2663,7 @@ export const DB: Artist[] = [
     since: '2012年〜',
     origin: '不明（ネット出身）',
     members: 'Eve (Vo/Gt)',
-    desc: `「廻廻奇譚」（呪術廻戦OP）「お気に召すまま」「蒼のワルツ」「心予報」など多数のアニメタイアップと独自のインディーロックサウンドで国内外に熱狂的なファンを持つシンガーソングライター。ニコニコ動画・YouTubeから台頭したネット出身アーティストで、全楽器演奏・全曲作詞作曲・プロデュースを自身でこなすマルチクリエイター。幻想的な世界観と骨太なロックサウンドの融合が唯一無二の存在感を示す。`,
+    desc: `生年非公開のシンガーソングライター。ボーカロイドシーン出身で、「廻廻奇譚」「お気に召すまま」「蒼のワルツ」「心予報」など独自の世界観を持つ楽曲で国内外に強いファン層を持つ。アニメ「呪術廻戦」オープニング「廻廻奇譚」で世界的な認知を獲得し、Spotifyでのグローバル再生数も圧倒的。ダークかつ幻想的な歌詞の世界観と、ロック・エレクトロニックを融合したプロダクションが特徴。ライブでもエレキギターを使用し、内向的な表現と力強いパフォーマンスのコントラストが印象的。匿名性を保ちながら活動するスタイルも独自の存在感を生んでいる。`,
     gear: [
       { id: 'tele-eve', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Eve (Vo/Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Eve ギター', yt: ["Fender Telecaster レビュー インディーロック Jポップ", "テレキャス クリーン ロック 音作り"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "PRS CE 24"], desc: `EveのメインギターFender Telecaster。シングルコイルの芯のある明るいトーンが「廻廻奇譚」「お気に召すまま」などのリフワークにシャープなアタックと存在感を与える。楽曲によってJazzmasterと使い分け、Eveサウンドの多彩なギターパレットを構成する。`, wikiTitle: 'Fender_Telecaster' },
       { id: 'jazzmaster-eve', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Eve (Vo/Gt)', price: '¥120,000〜¥250,000', kw: 'Fender Jazzmaster Eve ギター インディーロック', yt: ["Fender Jazzmaster レビュー インディーロック", "ジャズマスター シューゲイザー オルタナ 音作り"], similar: ["Fender Telecaster", "Fender Stratocaster", "Squier J Mascis Jazzmaster"], desc: 'Eveがサブで使用するFender Jazzmaster。浮遊感あるトーンとフローティングトレモロがEveの幻想的でドリーミーな楽曲に独特の揺らぎと色彩を加える。', wikiTitle: 'Fender_Jazzmaster' },
@@ -2702,7 +2702,7 @@ export const DB: Artist[] = [
     since: '2017年〜',
     origin: '不明（ネット出身）',
     members: 'n-buna (Gt/Comp) / suis (Vo)',
-    desc: `n-buna（ギター・作詞作曲）とsuis（ボーカル）による二人組バンド。「だから僕は音楽を辞めた」「夜行」「ただ君に晴れ」「ブレーメン」など、詩的な歌詞と繊細なサウンドで圧倒的な人気を誇る。n-bunaはニコニコ動画出身のボカロPで、ヨルシカでは幻想文学と音楽を融合させたコンセプト作品を発表し続けている。`,
+    desc: `n-bunaとsuis（suisyouka）によるインターネット音楽出身のユニット。「だから僕は音楽を辞めた」「晴る」「ただ君に晴れ」「風を食む」など、文学・詩的な世界観と美しいメロディが融合した楽曲で国内外に根強いファン層を持つ。suis（suisyouka）の透き通ったソプラノボーカルとn-bunaの精巧なギター・アレンジが生む音楽は「聴く小説」とも評される。n-bunaはFender Stratocasterをメインとし、アルペジオと繊細なコードワークで楽曲の物語性を音で表現する。アニメ「平家物語」のEDテーマも担当し、国内外の音楽シーンに幅広く届いている。`,
     gear: [
       { id: 'jazzmaster-nbuna', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'n-buna (Gt/Comp)', price: '¥120,000〜¥250,000', kw: 'Fender Jazzmaster ヨルシカ n-buna ギター', yt: ["Fender Jazzmaster レビュー インディーロック", "ジャズマスター シューゲイザー オルタナ 音作り"], similar: ["Fender Telecaster", "Fender Stratocaster", "Squier J Mascis Jazzmaster"], desc: `n-bunaのメインギターFender Jazzmaster。浮遊感あるトーンとフローティングトレモロがヨルシカの繊細でドリーミーなインディーロックサウンドの核を担う。「だから僕は音楽を辞めた」「ただ君に晴れ」のアルペジオと揺らぎのあるコードワークに唯一無二の色彩を与える。`, wikiTitle: 'Fender_Jazzmaster' },
       { id: 'tele-nbuna', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'n-buna (Gt/Comp)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster ヨルシカ n-buna ギター', yt: ["Fender Telecaster レビュー インディーロック", "テレキャス クリーン カッティング 音作り"], similar: ["Fender Jazzmaster", "Fender Stratocaster", "PRS CE 24"], desc: 'n-bunaがJazzmasterと使い分けるFender Telecaster。シャープなアタックと芯のある明るいトーンがヨルシカのポップ寄りの楽曲に輝きを加え、幅広いサウンドバリエーションを生み出す。', wikiTitle: 'Fender_Telecaster' },
@@ -2741,7 +2741,7 @@ export const DB: Artist[] = [
     since: '1975年〜',
     origin: '東京都',
     members: '山下達郎 (Vo/Gt)',
-    desc: `「RIDE ON TIME」「クリスマス・イブ」「YOUR EYES」「踊ろよ、フィッシュ」など日本シティポップの金字塔を築いた伝説のシンガーソングライター・プロデューサー。1975年のデビュー以来、一切のタイアップを断り自分の音楽に徹する姿勢でカルト的な人気を維持。アナログ録音への深いこだわりとコーラスアレンジの緻密さ、そして類まれなるギタープレイが日本音楽史に不滅の足跡を残している。`,
+    desc: `東京出身のシンガーソングライター。1975年のソロデビュー以来、ポップ・R&B・ファンク・ボサノバを融合した独自の音楽スタイルで日本ポップスの頂点に立ち続ける「シティポップの帝王」。「クリスマス・イブ」「RIDE ON TIME」「さよなら夏の日」「Sparkle」など数多くの名曲を持ち、近年のシティポップブームで再び世界的に注目を集めた。全てのコーラスアレンジと多くの楽器演奏を自身が手がけるスタジオミュージシャン的なアプローチで知られ、音楽へのこだわりは伝説的。ギターはMartinやGibsonのアコースティックから、Fender StratocasterなどのエレキまでRecording studioでの必要に応じて使い分ける。`,
     gear: [
       { id: 'strat-tatsuro', brand: 'Fender', name: 'Stratocaster（1960年代Vintage）', cat: 'ギター', catIcon: '🎸', user: '山下達郎 (Vo/Gt)', price: '¥1,000,000〜¥3,000,000（ビンテージ）', kw: 'Fender Stratocaster ビンテージ 1960年代 山下達郎 シティポップ', yt: ["Fender Stratocaster 1960年代 ビンテージ 音 特徴", "ビンテージ ストラト シティポップ AOR 音作り"], similar: ["Fender American Vintage II 1961 Strat", "Nash S-63", "Haar Traditional S"], desc: `山下達郎のメインギター。1960年代製のビンテージFender Stratocaster。当時のアルニコVピックアップとスラブボードが生み出すガラスのような輝きと弾力感あるトーンが「RIDE ON TIME」「蒼茫」などの楽曲を彩る。達郎のカッティングとアルペジオの繊細なニュアンスはこの個体でなければ出ない。`, wikiTitle: 'Fender_Stratocaster' },
       { id: 'tele-tatsuro', brand: 'Fender', name: 'Telecaster（1950年代Vintage）', cat: 'ギター', catIcon: '🎸', user: '山下達郎 (Vo/Gt)', price: '¥1,500,000〜¥5,000,000（ビンテージ）', kw: 'Fender Telecaster ビンテージ 1950年代 山下達郎', yt: ["Fender Telecaster 1950年代 ビンテージ 音", "ビンテージ テレキャス カッティング シティポップ 音作り"], similar: ["Fender American Vintage II 1951 Tele", "Haar Traditional T", "G&L ASAT Classic"], desc: `山下達郎がStratocasterと使い分けるビンテージFender Telecaster。50年代製の個体のブラスサドルと太めのネックが生み出すカントリーライクな甘さとソリッドな芯がAORサウンドに独特の艶を与える。`, wikiTitle: 'Fender_Telecaster' },
@@ -2781,7 +2781,7 @@ export const DB: Artist[] = [
     since: '2007年〜',
     origin: '日本',
     members: 'DECO*27 (Produce/Vo)',
-    desc: `「モザイクロール」「ゴーストルール」「乙女解剖」「ヴァンパイア」など数々のボカロ名曲を生み出す日本トップクラスのボカロP。初音ミクをメインボーカルに据えた楽曲制作を得意とし、エレクトロニカ・シンセポップとロックを融合したサウンドが特徴。自身もボーカルを担当し、HITOSHIZUKUとのユニット活動など幅広く活躍する。`,
+    desc: `東京出身のボカロP/シンガーソングライター。「モザイクロール」「ゴーストルール」「アンドロイドガール」「命に嗣ぐ歌」などボカロシーンの代表的楽曲を次々と生み出し、初音ミクをメインに据えた楽曲はニコニコ動画・YouTube双方で累計億単位の再生数を記録する。人間の感情を掘り下げた歌詞とエレクトロポップな楽曲制作スタイルが特徴で、ボカロシーンにおける最重要プロデューサーの一人として評価される。ライブでは生バンドとのコラボも積極的に行う。`,
     gear: [
       { id: 'abletonlive-deco27', brand: 'Ableton', name: 'Live 11 Suite', cat: 'DAW', catIcon: '💻', user: 'DECO*27 (Produce)', price: '¥99,800（Suite）', kw: 'Ableton Live DAW DECO*27 ボカロP 制作 DTM', yt: ["Ableton Live 11 使い方 DTM 初音ミク", "Ableton Live ボカロP 制作環境 セットアップ"], similar: ["FL Studio", "Logic Pro", "Cubase Pro"], desc: `DECO*27の音楽制作の中核を担うAbleton Live 11 Suite。エレクトロニックサウンドとライブパフォーマンス両立に優れたDAWで、「ヴァンパイア」「モザイクロール」のグルーヴィーなビートとシンセレイヤーを構築する。Pushとの組み合わせでライブ制作も自在。`, wikiTitle: 'Ableton_Live' },
       { id: 'serum-deco27', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'DECO*27 (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum ウェーブテーブルシンセ DECO*27 DTM 制作', yt: ["Xfer Serum レビュー 使い方 ウェーブテーブル", "Serum ボカロ EDM シンセ 音作り"], similar: ["Native Instruments Massive X", "Arturia Pigments", "Vital"], desc: 'DECO*27のシンセサウンドの要、Xfer Serum。ウェーブテーブル合成による透明感とエッジのあるシンセリード・パッドが「乙女解剖」「ゴーストルール」のキャッチーな音色を生み出す。カスタムウェーブテーブルで唯一無二のサウンドを追求。', wikiTitle: 'Serum_(synthesizer)' },
@@ -2809,7 +2809,7 @@ export const DB: Artist[] = [
     since: '2009年〜',
     origin: '日本',
     members: 'ピノキオピー (Produce/Vo)',
-    desc: `「すきなことだけでいいです」「神っぽいな」「ドーナツホール」など哲学的かつポップな歌詞と独創的なサウンドで人気のボカロP。初音ミク・GUMIを中心に多様なボカロイドを使い分け、エレクトロニクスとロックを独自に融合させる。自身のボーカル曲も制作・発表している。`,
+    desc: `ボカロP/シンガーソングライター。「神っぽいな」「いーあるふぁんくらぶ」「ラストダンス」など、ファンクとポップを融合させた独特のリズム感と遊び心あふれる歌詞で人気を博す。複雑な楽器アレンジと独自のリズムパターンを組み合わせた音楽性がボカロシーンの中でも個性的なポジションを確立している。本人名義のソロ活動も精力的で、生楽器とエレクトロニックを融合したライブパフォーマンスも高く評価される。`,
     gear: [
       { id: 'flstudio-pinocchiop', brand: 'Image-Line', name: 'FL Studio 21 Producer', cat: 'DAW', catIcon: '💻', user: 'ピノキオピー (Produce)', price: '¥25,000〜¥35,000（Producer）', kw: 'FL Studio DAW ピノキオピー ボカロP DTM 制作', yt: ["FL Studio 21 使い方 DTM 初心者", "FL Studio ボカロP 制作環境"], similar: ["Ableton Live", "Logic Pro", "Cubase Pro"], desc: `ピノキオピーの音楽制作を支えるFL Studio 21 Producer Edition。パターンベースの直感的なワークフローとPatcher（モジュラーパッチング）が、「すきなことだけでいいです」「神っぽいな」のユニークなサウンドデザインを可能にするDTM環境の中核。`, wikiTitle: 'FL_Studio' },
       { id: 'serum-pinocchiop', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'ピノキオピー (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ ピノキオピー DTM ウェーブテーブル', yt: ["Xfer Serum レビュー ウェーブテーブルシンセ", "Serum DTM Jポップ ボカロ 音作り"], similar: ["NI Massive X", "Arturia Pigments", "Vital"], desc: 'ピノキオピーのシンセパッド・リードに活躍するXfer Serum。ビジュアルウェーブテーブルエディターで独自の音色を作り込み、「神っぽいな」「ドーナツホール」の個性的なシンセサウンドを生み出す。', wikiTitle: 'Serum_(synthesizer)' },
@@ -2837,7 +2837,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '日本',
     members: 'syudou (Produce/Vo/Gt)',
-    desc: `「現状ディストラクション」「ベルセルク」「スーパーノヴァ」「チェリーボム」などを発表するボカロP兼シンガーソングライター。ロック・エレクトロニックを軸にしたエッジの効いたサウンドと独特の世界観が特徴。自身のボーカル曲も積極的に制作しており、ボカロとの二刀流で活躍する。`,
+    desc: `ボカロP/シンガーソングライター。「可愛くてごめん」「在りし日の歌」「テレキャスタービーボーイ」など、アニメポップとエレクトロを融合した楽曲でTikTok・YouTube・Spotifyでバイラルヒットを連発。HoneyWorksとのコラボも多く、アニメファン・音楽ファン双方に届く音楽性が特徴。「可愛くてごめん」は特に大ヒットとなり、本人名義での活動も幅広く展開している。`,
     gear: [
       { id: 'cubase-syudou', brand: 'Steinberg', name: 'Cubase Pro 13', cat: 'DAW', catIcon: '💻', user: 'syudou (Produce)', price: '¥65,880（Pro）', kw: 'Cubase Pro DAW syudou ボカロP 制作 DTM', yt: ["Cubase Pro 13 使い方 DTM", "Cubase ボカロP 制作環境 セットアップ"], similar: ["Ableton Live", "Logic Pro", "FL Studio"], desc: `syudouの音楽制作の中枢を担うSteinberg Cubase Pro 13。VSTiとMIDI編集の自由度の高さが「現状ディストラクション」「ベルセルク」の複雑なアレンジと緻密なサウンドデザインを実現する業界標準のDAW。`, wikiTitle: 'Cubase' },
       { id: 'lpstudio-syudou', brand: 'Gibson', name: 'Les Paul Studio', cat: 'ギター', catIcon: '🎸', user: 'syudou (Gt)', price: '¥150,000〜¥220,000', kw: 'Gibson Les Paul Studio ギター syudou ロック ボカロP', yt: ["Gibson Les Paul Studio レビュー 音", "レスポール スタジオ ロック 音作り"], similar: ["Gibson Les Paul Standard", "PRS CE 24", "Epiphone Les Paul"], desc: 'syudouがロックギターパートで使用するGibson Les Paul Studio。ハムバッカーの太く歪んだトーンが「現状ディストラクション」「ベルセルク」のアグレッシブなリフに圧倒的な音圧と迫力をもたらす。', wikiTitle: 'Gibson_Les_Paul_Studio' },
@@ -2865,7 +2865,7 @@ export const DB: Artist[] = [
     since: '2014年〜',
     origin: '日本',
     members: 'ツミキ (Produce/Gt)',
-    desc: `「フォニイ」（Phony）「IDOLA」など独自のポップセンスと複雑な楽曲構成で人気のボカロP。「推しの子」OPテーマ「アイドル」の作曲でも知られる（YOASOBI・Ayaseが編曲・プロデュース）。電子音楽とギターロックを融合した中毒性のあるサウンドが特徴。`,
+    desc: `「フォニイ」などのボカロ楽曲が特に人気のボカロP。ダークで内省的な世界観と疾走感あるバンドサウンドを融合させた楽曲スタイルが特徴で、若い世代から強い共感を得る。初音ミクを用いた楽曲はYouTubeで数千万回再生を記録し、ボカロシーンを代表するアーティストの一人として認知される。`,
     gear: [
       { id: 'flstudio-tsumiki', brand: 'Image-Line', name: 'FL Studio 21 All Plugins', cat: 'DAW', catIcon: '💻', user: 'ツミキ (Produce)', price: '¥55,000〜¥70,000（All Plugins）', kw: 'FL Studio DAW ツミキ ボカロP DTM 制作 フォニイ', yt: ["FL Studio 21 使い方 DTM 完全ガイド", "FL Studio ボカロP 制作 フォニイ 音作り"], similar: ["Ableton Live", "Logic Pro", "Cubase Pro"], desc: `ツミキの音楽制作の要FL Studio 21 All Plugins Edition。Patcher（モジュラーパッチング）と豊富な内蔵シンセがツミキの「フォニイ」「IDOLA」の複雑な楽曲構造とユニークな音色設計を支える。FL Studioならではのパターンベースのワークフローが中毒性のあるリフを生み出す。`, wikiTitle: 'FL_Studio' },
       { id: 'squier-tsumiki', brand: 'Squier', name: 'Classic Vibe Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'ツミキ (Gt)', price: '¥40,000〜¥60,000', kw: 'Squier Classic Vibe Stratocaster ギター ツミキ ボカロP DTM', yt: ["Squier Classic Vibe Stratocaster レビュー 音", "スクワイア ストラト DTM 宅録 音作り"], similar: ["Fender Player Stratocaster", "Fender Telecaster", "Epiphone Les Paul"], desc: 'ツミキがギタートラックに使用するSquier Classic Vibe Stratocaster。コストパフォーマンスに優れたシングルコイルサウンドがツミキのエレクトロニックサウンドにギターのアナログな有機感を加える。', wikiTitle: 'Squier' },
@@ -2892,7 +2892,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '日本',
     members: 'いよわ (Produce)',
-    desc: `「1000年生きてる」「海底都市」「ラブカ？」など超高難度・超複雑な楽曲構成で知られるボカロP。FL StudioとPiapro Studioを駆使した緻密なサウンドデザインと、人間の演奏能力を超えるテクニカルなメロディ・リズム構成が特徴。テクニカルボカロシーンを代表するコンポーザー。`,
+    desc: `ボカロP/クリエイター。「ダーリンダンス」などの楽曲で注目を集める。独自の電子音楽的アプローチとポップなメロディーセンスが融合した楽曲は中毒性が高く、TikTokを中心にバイラルしやすいフックを持つ。ボカロシーン新世代のクリエイターとして注目されており、プロダクションの緻密さとポップさのバランスが評価されている。`,
     gear: [
       { id: 'flstudio-iyowa', brand: 'Image-Line', name: 'FL Studio 21 All Plugins', cat: 'DAW', catIcon: '💻', user: 'いよわ (Produce)', price: '¥55,000〜¥70,000（All Plugins）', kw: 'FL Studio DAW いよわ ボカロP DTM 制作 1000年生きてる', yt: ["FL Studio 21 使い方 DTM 完全解説", "FL Studio テクニカル ボカロ 複雑 制作"], similar: ["Ableton Live", "Logic Pro", "Cubase Pro"], desc: `いよわの音楽制作の全てを担うFL Studio 21 All Plugins Edition。超複雑な変拍子・ポリリズム・和音構成をパターンベースで管理するワークフローと内蔵シンセ群が「1000年生きてる」「海底都市」の人智を超えた楽曲を生み出すプラットフォーム。`, wikiTitle: 'FL_Studio' },
       { id: 'serum-iyowa', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'いよわ (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ いよわ DTM 音作り ボカロ', yt: ["Xfer Serum レビュー 使い方 ウェーブテーブル", "Serum テクニカル ボカロ DTM 音作り"], similar: ["Vital", "NI Massive X", "Arturia Pigments"], desc: 'いよわのシンセ音色設計に不可欠なXfer Serum。ウェーブテーブルのモーフィングとモジュレーションマトリクスを駆使し、「ラブカ？」「海底都市」の複雑で有機的なシンセサウンドを一音一音丹念に設計する。', wikiTitle: 'Serum_(synthesizer)' },
@@ -2920,7 +2920,7 @@ export const DB: Artist[] = [
     since: '2013年〜',
     origin: '日本',
     members: 'すりぃ (Produce/Gt)',
-    desc: `「快楽性難聴」「マーシャル・マキシマイザー」「乙女怪獣キャラメリゼ」などギターロックとエレクトロニクスを融合させた楽曲で人気のボカロP。テレキャスターの鋭いリフとヘヴィな歪みサウンドが特徴で、ビートとシンセの巧みな組み合わせによる中毒性の高いサウンドを得意とする。`,
+    desc: `「もう少しだけ」などの楽曲でSpotify・TikTokを中心にバイラルヒットを記録したシンガーソングライター。切ない恋愛・日常を描いた歌詞と、聴き心地の良いポップサウンドで若い世代のリスナーに届く。透明感ある歌声とシンプルな楽曲構成が感情に直接届くスタイルで、インターネット発のアーティストとして急速にファン層を拡大した。`,
     gear: [
       { id: 'tele-surii', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'すりぃ (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster すりぃ ギター ボカロP', yt: ["Fender Telecaster レビュー ロック", "テレキャス 歪み ハードロック 音作り"], similar: ["Fender Stratocaster", "Gibson Les Paul Studio", "PRS CE 24"], desc: 'すりぃのメインギターFender Telecaster。シングルコイルの鋭くアタック感のあるトーンがヘヴィな歪みを通すことでマスタリングされた独特のサウンドに変化し、「快楽性難聴」「マーシャル・マキシマイザー」のエッジの効いたリフを生み出す。', wikiTitle: 'Fender_Telecaster' },
       { id: 'jcm800-surii', brand: 'Marshall', name: 'JCM800 2203', cat: 'ギターアンプ', catIcon: '🔊', user: 'すりぃ (Gt)', price: '¥180,000〜¥300,000（中古）', kw: 'Marshall JCM800 アンプ すりぃ ロック ヘヴィ', yt: ["Marshall JCM800 レビュー 音 特徴", "JCM800 ハードロック ブリティッシュ 音作り"], similar: ["Marshall JVM410H", "Mesa/Boogie Dual Rectifier", "Peavey 5150"], desc: 'すりぃのギターサウンドの根幹Marshall JCM800 2203。ブリティッシュアンプ特有の中域の密度と自然なサチュレーションがTelesasterの鋭さを増幅し、「快楽性難聴」のあの重厚でエッジの立ったリフトーンを作り出す。', wikiTitle: 'Marshall_JCM800' },
@@ -2948,7 +2948,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '日本',
     members: 'Chinozo (Produce)',
-    desc: `「グッバイ宣言」「このゆびとまれ」など爽やかで切ないエレクトロポップサウンドで人気のボカロP。初音ミクの調声とクリーンで透明感のある楽曲制作が特徴。シンプルながら感情に訴えるメロディと歌詞の世界観が国内外のリスナーを魅了する。`,
+    desc: `ボカロP/シンガーソングライター。「グッバイ宣言」などの楽曲でYouTube・TikTokを中心に爆発的な人気を獲得。エレクトロポップとJ-Popを融合した楽曲はキャッチーなフックと感情的な歌詞が共存しており、幅広い世代に届く。本人名義でのシンガーとしての活動も積極的で、ボカロP・シンガー双方の顔を持つクロスオーバーなアーティスト。`,
     gear: [
       { id: 'flstudio-chinozo', brand: 'Image-Line', name: 'FL Studio 21 Producer', cat: 'DAW', catIcon: '💻', user: 'Chinozo (Produce)', price: '¥25,000〜¥35,000（Producer）', kw: 'FL Studio DAW Chinozo ボカロP DTM グッバイ宣言', yt: ["FL Studio 21 使い方 DTM", "FL Studio ボカロP 制作環境 エレクトロポップ"], similar: ["Ableton Live", "Logic Pro", "Cubase Pro"], desc: `ChinozoのエレクトロポップサウンドをかたちにするFL Studio 21 Producer Edition。「グッバイ宣言」のクリーンで透明感あるビートとシンセのレイヤーをパターンベースの直感的なワークフローで構築する制作環境の中核。`, wikiTitle: 'FL_Studio' },
       { id: 'serum-chinozo', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'Chinozo (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ Chinozo DTM グッバイ宣言', yt: ["Xfer Serum レビュー ウェーブテーブルシンセ", "Serum エレクトロポップ Jポップ 音作り"], similar: ["NI Massive X", "Vital", "Arturia Pigments"], desc: 'Chinozoのシンセサウンドの核Xfer Serum。「グッバイ宣言」の透明感のある煌びやかなシンセリードとふんわりしたパッドをウェーブテーブル合成で精密に設計する。Chinozoサウンドの爽やかさと切なさを音色で表現するキーツール。', wikiTitle: 'Serum_(synthesizer)' },
@@ -2976,7 +2976,7 @@ export const DB: Artist[] = [
     since: '2016年〜',
     origin: '日本',
     members: 'ナユタン星人 (Produce)',
-    desc: `「ダンスロボットダンス」「エイリアンエイリアン」「アンドロメダアンドロメダ」などキャッチーなサウンドと宇宙的・SF的な世界観で人気のボカロP。電子音楽・シンセポップと初音ミクを組み合わせた中毒性の高い楽曲が特徴で、独特の宇宙人キャラクターとして親しまれる。`,
+    desc: `ボカロP。「エイリアンエイリアン」「命に嗣ぐ歌（カバー）」などの楽曲でボカロシーンに独自のポジションを確立。SF・宇宙・異星をテーマにした独創的な世界観と、キャッチーな楽曲構成が特徴でボカロファンから根強い人気を持つ。プロダクションの完成度の高さとコンセプトの一貫性で批評家・ファン双方から評価される。`,
     gear: [
       { id: 'flstudio-nayutan', brand: 'Image-Line', name: 'FL Studio 21 Producer', cat: 'DAW', catIcon: '💻', user: 'ナユタン星人 (Produce)', price: '¥25,000〜¥35,000（Producer）', kw: 'FL Studio DAW ナユタン星人 ボカロP DTM ダンスロボットダンス', yt: ["FL Studio 21 使い方 DTM", "FL Studio ボカロP 制作 シンセポップ"], similar: ["Ableton Live", "Logic Pro", "Cubase Pro"], desc: `ナユタン星人の宇宙的なエレクトロポップを生み出すFL Studio 21 Producer Edition。「ダンスロボットダンス」「エイリアンエイリアン」の中毒性の高いビートとシンセリードを、パターンベースのステップシーケンサーで緻密に組み上げるメインDAW。`, wikiTitle: 'FL_Studio' },
       { id: 'serum-nayutan', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'ナユタン星人 (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ ナユタン星人 DTM ウェーブテーブル', yt: ["Xfer Serum レビュー ウェーブテーブルシンセ", "Serum シンセポップ ボカロ 音作り"], similar: ["NI Massive X", "Vital", "Arturia Pigments"], desc: 'ナユタン星人のシンセリード・アルペジオの中心Xfer Serum。「ダンスロボットダンス」「エイリアンエイリアン」の宇宙を感じさせるキラキラしたシンセサウンドをウェーブテーブルのモーフィングで生み出す。', wikiTitle: 'Serum_(synthesizer)' },
@@ -3004,7 +3004,7 @@ export const DB: Artist[] = [
     since: '1992年〜',
     origin: '東京都',
     members: 'DJ KRUSH (DJ/Produce)',
-    desc: `日本を代表するターンテーブリスト・プロデューサー。無音の静寂を生かした独自のアブストラクトヒップホップスタイルと、DJとしての超絶技巧でニューヨーク・ロンドンのシーンから高い評価を受ける。Mo\'Wax・SONY等からアルバムをリリースし、日本人DJとして初めて世界的なキャリアを確立した先駆者。`,
+    desc: `東京出身のDJ/プロデューサー。1990年代からターンテーブルとサンプラーを駆使した実験的なヒップホップ・エレクトロニカで国際的な評価を確立。Mo' Wax、Warnerなど海外レーベルからもリリースし、欧米のDJシーンで高い評価を受ける。特有の「ダークでスピリチュアルなヒップホップ」スタイルは国内のビートメイカーに多大な影響を与えた。Technics SL-1200やAkai MPCをメイン機材とし、生演奏とエレクトロニックの境界を探求するライブセットも評価が高い。`,
     gear: [
       { id: 'technics1200-djkrush', brand: 'Technics', name: 'SL-1200MK2', cat: '音響機材', catIcon: '🎚️', user: 'DJ KRUSH (DJ)', price: '¥100,000〜¥200,000（中古）', kw: 'Technics SL-1200MK2 ターンテーブル DJ KRUSH ターンテーブリスト', yt: ["Technics SL-1200MK2 レビュー ターンテーブル", "ターンテーブル DJ スクラッチ 使い方"], similar: ["Technics SL-1210MK2", "Rane Twelve MK2", "Pioneer PLX-1000"], desc: 'DJ KRUSHのプレイの核Technics SL-1200MK2。世界標準のDJターンテーブルのクォーツロック駆動とダイレクトドライブの安定したプラッターがDJ KRUSHの緻密なスクラッチと正確なビートジャグリングを支える。Mo\'Waxの名盤群はすべてこのターンテーブルで生み出された。', wikiTitle: 'Technics_SL-1200' },
       { id: 'mixer-djkrush', brand: 'Vestax', name: 'PMC-05 Pro III', cat: '音響機材', catIcon: '🎚️', user: 'DJ KRUSH (DJ)', price: '¥80,000〜¥150,000（中古）', kw: 'Vestax PMC-05 Pro DJミキサー DJ KRUSH スクラッチ', yt: ["Vestax PMC-05 Pro DJミキサー レビュー", "Vestax スクラッチ ターンテーブリスト DJミキサー"], similar: ["Rane 72 MKII", "Pioneer DJM-S9", "Allen & Heath Xone:92"], desc: 'DJ KRUSHが長年愛用したVestax PMC-05 Pro IIIスクラッチミキサー。クロスフェーダーのカーブを細かく調整できる設計と優れたチャンネル分離がDJ KRUSHの繊細なサンプリングとスクラッチワークを可能にした伝説のミキサー。', wikiTitle: 'Vestax' },
@@ -3032,7 +3032,7 @@ export const DB: Artist[] = [
     since: '2016年〜',
     origin: '日本',
     members: 'Ichika Nito (Gt)',
-    desc: `超絶技巧のフィンガータッピングと複雑なコードボイシングでインターネット上のギタリストに絶大な影響を与えるインストギタリスト。「世界で最も独創的なギタリストの一人」と評され、YouTubeとInstagramで国際的な支持を集める。独自の「音楽的なタッピング」スタイルは多くのギタリストが模倣するほど影響力を持つ。`,
+    desc: `「メビウス」「彼女が水着に着替えたら」などのボカロ楽曲で人気のボカロP。ダンスミュージックとボカロポップを融合した軽快なサウンドが特徴で、ライブイベントやファンとの交流も積極的に行う。ニコニコ動画・YouTube双方で高い再生数を記録し、ボカロシーンの継続的な人気クリエイター。`,
     gear: [
       { id: 'prs-ichikanito', brand: 'PRS', name: 'Custom 24', cat: 'ギター', catIcon: '🎸', user: 'Ichika Nito (Gt)', price: '¥350,000〜¥550,000', kw: 'PRS Custom 24 ギター Ichika Nito インスト タッピング', yt: ["PRS Custom 24 レビュー 音 特徴", "PRS Custom 24 プログレ マスロック タッピング 音作り"], similar: ["PRS SE Custom 24", "Ernie Ball Music Man JP15", "Gibson Les Paul Custom"], desc: 'Ichika NitoのメインギターPRS Custom 24。25インチスケールのダブルカッタウェイボディとPRS独自の85/15ピックアップが生み出すクリーンで艶やかなトーンが、Ichikaの複雑なフィンガータッピングとコードボイシングをはっきりと表現する。', wikiTitle: 'PRS_Guitars' },
       { id: 'prs-se-ichikanito', brand: 'PRS', name: 'SE Custom 24', cat: 'ギター', catIcon: '🎸', user: 'Ichika Nito (Gt)', price: '¥80,000〜¥100,000', kw: 'PRS SE Custom 24 ギター Ichika Nito シグネイチャー', yt: ["PRS SE Custom 24 レビュー Ichika Nito", "Ichika Nito シグネイチャーギター レビュー"], similar: ["PRS Custom 24", "Ibanez AZ2204", "Fender Player Stratocaster"], desc: 'Ichika NitoシグネイチャーモデルのベースとなったPRS SE Custom 24。本家Custom 24のDNAを受け継ぎながら手の届きやすい価格帯を実現し、世界中のIchika Nito影響を受けたギタリストへの入門機として広く愛用される。', wikiTitle: 'PRS_Guitars' },
@@ -3058,7 +3058,7 @@ export const DB: Artist[] = [
     since: '1999年〜',
     origin: '大阪府',
     members: 'MIYAVI (Vo/Gt)',
-    desc: `ピックを一切使わず指で弦を叩き・弾くスラップギター奏法を独自に確立した「サムライギタリスト」。「ギャラクシー・スーパーノヴァ」「What's My Name」など国際的なキャリアを持つ日本屈指のロックギタリストで、映画「UNBROKEN」出演でも知られる。`,
+    desc: `大阪府出身のギタリスト/シンガーソングライター。「ピック弾きをしない」独自の「スラップ奏法」でギターを演奏することで知られ、複数の楽器パートを1本のギターで表現する唯一無二のスタイルを確立。THE GAZETTE・DIVのメンバーとしての活動後ソロへ。「Ahead of the Light」「Real?」など多数の作品を持ち、海外での活動も積極的で映画への出演も。メインギターはJackson Guitarのシグネチャーモデルで、親指と指でボディを叩くスラップ奏法から生まれる独特のパーカッシブなサウンドが世界中のギタリストを驚かせている。`,
     gear: [
       { id: 'schecter-miyavi', brand: 'Schecter', name: 'Schecter Japan MIYAVI Signature', cat: 'ギター', catIcon: '🎸', user: 'MIYAVI (Vo/Gt)', price: '¥200,000〜¥350,000', kw: 'Schecter Japan MIYAVI シグネイチャー ギター スラップ', yt: ["Schecter Japan MIYAVI Signature レビュー", "MIYAVI スラップギター 奏法 解説"], similar: ["Music Man Silhouette", "Fender Stratocaster Custom", "PRS Custom 24"], desc: 'MIYAVIのメイン機材Schecter Japan MIYAVIシグネイチャーモデル。ピックを使わず指でボディを叩きながら弦をスラップする独自奏法に最適化されたセッティングが施されており、あの獣的なアタック感と艶やかなトーンを生み出す。', wikiTitle: 'Schecter_Guitar_Research' },
       { id: 'marshall-miyavi', brand: 'Marshall', name: 'JVM410H', cat: 'ギターアンプ', catIcon: '🔊', user: 'MIYAVI (Vo/Gt)', price: '¥200,000〜¥280,000', kw: 'Marshall JVM410H アンプ MIYAVI ロック', yt: ["Marshall JVM410H レビュー アンプ", "JVM410H ロック クランチ 音作り"], similar: ["Marshall JCM800", "Mesa/Boogie Mark V", "Friedman BE-100"], desc: 'MIYAVIのギターサウンドを支えるMarshall JVM410H。4チャンネル設計の多彩なゲイン構成がMIYAVIのクリーンから激しい歪みまでをカバーし、スラップ奏法の鋭いアタック音を力強く増幅する。', wikiTitle: 'Marshall_Amplification' },
@@ -3083,7 +3083,7 @@ export const DB: Artist[] = [
     since: '2003年〜',
     origin: '東京都',
     members: 'KenKen (Ba/Vo)',
-    desc: `日本トップクラスのベーシスト。RHCP・龍平・LIFE IS GROOVEなど幅広いバンドで活躍し、スラップ・タッピング・フィンガリングを自在に操る超絶技巧でシーンを牽引。亡き父・忌野清志郎のDNAを継ぐロックスピリットと、ファンクの深いグルーヴを持つ日本屈指のベースヒーロー。`,
+    desc: `東京出身のベーシスト。RIZE、Dragon Ash、175Rなど多数のバンドへの参加と、国内外のアーティストとのセッション・サポートワークで「日本最高のベーシスト」の一人として評価される。スラップ・フィンガー・ピックを使い分けた幅広いプレイスタイルと、ファンク・ロック・ジャズを横断するグルーヴが特徴。Fender Jazz BassやWarwick等の多様なベースを使用し、セッションワーカーとしての対応力の高さは国内外のミュージシャンから高く評価される。RHCP・Red Hot Chili Peppersのベーシストへのリスペクトも公言している。`,
     gear: [
       { id: 'jazzbass-kenken', brand: 'Fender', name: 'Jazz Bass（Vintage）', cat: 'ベース', catIcon: '🎸', user: 'KenKen (Ba)', price: '¥400,000〜¥1,500,000（ビンテージ）', kw: 'Fender Jazz Bass ビンテージ KenKen ベース ファンク', yt: ["Fender Jazz Bass レビュー ビンテージ", "ジャズベース ファンク スラップ 音作り"], similar: ["Fender Precision Bass", "Music Man StingRay", "Sadowsky Metro"], desc: 'KenKenのメインベースFender Vintage Jazz Bass。60年代製ビンテージの枯れたトーンとブライトな高域がKenKenの超絶スラップとフィンガリングの細かいニュアンスを鮮明に表現し、あのグルーヴィーなベースラインに独特の存在感を与える。', wikiTitle: 'Fender_Jazz_Bass' },
       { id: 'stingray-kenken', brand: 'Music Man', name: 'StingRay', cat: 'ベース', catIcon: '🎸', user: 'KenKen (Ba)', price: '¥200,000〜¥320,000', kw: 'Music Man StingRay ベース KenKen スラップ ファンク', yt: ["Music Man StingRay レビュー ベース", "スティングレイ スラップ ファンク 音作り"], similar: ["Fender Jazz Bass", "Fender Precision Bass", "Spector Euro 4LX"], desc: 'KenKenがJazz Bassと使い分けるMusic Man StingRay。ハムバッカーのパンチのある中域とアクティブEQがKenKenのアグレッシブなスラップに図太い音圧と強烈なアタックを与え、ライブで会場を揺さぶるボトムを作る。', wikiTitle: 'Music_Man_StingRay' },
@@ -3108,7 +3108,7 @@ export const DB: Artist[] = [
     since: '2015年〜',
     origin: '兵庫県',
     members: 'あいみょん (Vo/Gt)',
-    desc: `「マリーゴールド」「愛を伝えたいだとか」「裸の心」など等身大の言葉と鮮烈なメロディで幅広い世代に刺さるシンガーソングライター。西宮出身の関西弁の語感と独特のリリックセンスが特徴で、アコースティックギターを弾き語るスタイルが支持される。`,
+    desc: `兵庫県出身のシンガーソングライター。2015年の活動開始から「愛を伝えたいだとか」「マリーゴールド」「ハルノヒ」「裏切り者のうた」など多数のヒット曲を生み出し、独自の語り口と普遍的な感情を描く歌詞で幅広い世代に支持される。ギターを弾きながらの弾き語りスタイルから出発し、現在はバンド編成でのライブも行う。メインギターはMartin・GibsonのアコースティックギターとFenderのエレキを楽曲によって使い分ける。比喩を多用した歌詞の世界観は「あいみょん節」と呼ばれる独自の文体を確立しており、NHK紅白歌合戦への出演も果たした。`,
     gear: [
       { id: 'martin-aimyon', brand: 'Martin', name: 'D-28', cat: 'ギター', catIcon: '🎸', user: 'あいみょん (Vo/Gt)', price: '¥250,000〜¥350,000', kw: 'Martin D-28 アコースティックギター あいみょん 弾き語り', yt: ["Martin D-28 レビュー アコースティックギター", "マーティン D-28 弾き語り Jポップ 音作り"], similar: ["Martin D-18", "Gibson J-45", "Taylor 314ce"], desc: 'あいみょんの弾き語りの核Martin D-28。スプルーストップとローズウッドサイド&バックが生む豊かな低域と鮮明な高域のバランスが「マリーゴールド」「愛を伝えたいだとか」の温かく力強い弾き語りサウンドを作り出す。', wikiTitle: 'Martin_guitar' },
       { id: 'gibsonlp-aimyon', brand: 'Gibson', name: 'Les Paul Standard', cat: 'ギター', catIcon: '🎸', user: 'あいみょん (Vo/Gt)', price: '¥280,000〜¥400,000', kw: 'Gibson Les Paul Standard ギター あいみょん エレキ', yt: ["Gibson Les Paul Standard レビュー 音", "レスポール Jポップ バンドサウンド 音作り"], similar: ["Gibson SG Standard", "Fender Stratocaster", "PRS CE 24"], desc: 'あいみょんがバンドサウンドやライブで使用するGibson Les Paul Standard。ハムバッカーの温かく甘いトーンがアコースティックスタイルとは異なる力強さと深みを「君はロックを聴かない」などの楽曲に与える。', wikiTitle: 'Gibson_Les_Paul' },
@@ -3133,7 +3133,7 @@ export const DB: Artist[] = [
     since: '2019年〜',
     origin: '千葉県',
     members: '優里 (Vo/Gt)',
-    desc: `「ドライフラワー」「ベテルギウス」など感情に真っすぐ届くバラードで若い世代に絶大な支持を持つシンガーソングライター。TikTokから火がついた「ドライフラワー」は2021年の年間ストリーミング1位を記録し、独自の泣き声質と心情描写の歌詞で一世を風靡した。`,
+    desc: `女性シンガーソングライター。透明感ある歌声と切なくも優しいメロディーで若い世代を中心に支持を集める。SpotifyやApple Musicでのストリーミングを通じてじわじわとリスナーを増やし、SNSを通じたファンとの近い距離感も人気の理由。日常の感情に寄り添う歌詞と心地よいポップサウンドが特徴。`,
     gear: [
       { id: 'taylor-yuri', brand: 'Taylor', name: '314ce', cat: 'ギター', catIcon: '🎸', user: '優里 (Vo/Gt)', price: '¥180,000〜¥250,000', kw: 'Taylor 314ce アコースティックギター 優里 弾き語り', yt: ["Taylor 314ce レビュー アコースティックギター", "テイラー 弾き語り Jポップ 音作り"], similar: ["Martin D-28", "Gibson J-45", "Yamaha LS16"], desc: '優里の弾き語りスタイルを支えるTaylor 314ce。サテン仕上げのグランドオーディトリアムボディとTaylorのES2ピックアップがライブとレコーディング両方で「ドライフラワー」のクリアで温かみのある弾き語りサウンドを実現する。', wikiTitle: 'Taylor_Guitars' },
       { id: 'fendertele-yuri', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '優里 (Vo/Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster ギター 優里 エレキ', yt: ["Fender Telecaster レビュー Jポップ", "テレキャス 弾き語り シンガーソングライター 音作り"], similar: ["Fender Stratocaster", "Gibson Les Paul Studio", "PRS SE Custom 24"], desc: '優里がバンドサウンドやライブで使用するFender Telecaster。シングルコイルの明快なアタックとブライトなトーンが優里の感情的な歌唱と絡み合い、バラードに鋭くも繊細なギターサウンドを与える。', wikiTitle: 'Fender_Telecaster' },
@@ -3158,7 +3158,7 @@ export const DB: Artist[] = [
     since: '2021年〜',
     origin: '日本',
     members: 'なとり (Produce/Vo)',
-    desc: `「Overdose」「Joker」「さみしくて眠れない夜は」など哀愁漂うシンセポップと繊細なボーカルで若い世代に急速に支持を広げる気鋭のアーティスト。シティポップのDNAとエレクトロニックプロダクションを融合させた独自の音世界が国内外で注目を集める。`,
+    desc: `東京出身のシンガーソングライター。「さよーならまたいつか！」「Overdose」「夕暮れ」など、切なくも引き込まれるメロディと繊細な歌詞でTikTokやSpotifyを中心に急成長したアーティスト。R&B・ポップ・J-POPを融合した洗練されたサウンドに、聴き手の共感を呼ぶ日常の感情を描く歌詞が刺さる。NHK朝ドラ「虎に翼」主題歌「さよーならまたいつか！」で一気にメインストリームへ。ライブではギター・シンセを使用し、音源の世界観をステージ上でも丁寧に表現する。楽曲ごとに新しいアプローチを試みる実験精神も音楽的な幅を広げている。`,
     gear: [
       { id: 'ableton-natori', brand: 'Ableton', name: 'Live 11 Suite', cat: 'DAW', catIcon: '💻', user: 'なとり (Produce)', price: '¥99,800（Suite）', kw: 'Ableton Live DAW なとり 制作 DTM シティポップ Overdose', yt: ["Ableton Live 11 使い方 DTM", "Ableton Live シティポップ エレクトロポップ 制作"], similar: ["FL Studio", "Logic Pro", "Cubase Pro"], desc: `なとりの音楽制作の中心Ableton Live 11 Suite。「Overdose」「Joker」のシンセポップサウンドをリアルタイムでトリガーするライブ志向のワークフローと豊富な内蔵エフェクトが、なとりの繊細なエレクトロニックプロダクションを支える。`, wikiTitle: 'Ableton_Live' },
       { id: 'serum-natori', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'なとり (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ なとり DTM Overdose 音作り', yt: ["Xfer Serum レビュー ウェーブテーブルシンセ", "Serum シティポップ エレクトロポップ 音作り"], similar: ["NI Massive X", "Vital", "Arturia Pigments"], desc: 'なとりのシンセリード・パッドに欠かせないXfer Serum。「Overdose」の煌びやかで哀愁漂うシンセサウンドをウェーブテーブルのモーフィングで設計し、なとり固有の甘くセンチメンタルな音色を作り出す。', wikiTitle: 'Serum_(synthesizer)' },
@@ -3183,7 +3183,7 @@ export const DB: Artist[] = [
     since: '2021年〜',
     origin: '日本',
     members: 'imase (Vo/Produce)',
-    desc: `「NIGHT DANCER」「君に夢中」「Shy Boy」などシティポップリバイバルとダンスミュージックを融合させた楽曲で若い世代を中心に急速に人気を獲得した気鋭アーティスト。ファンキーなグルーヴと甘いボーカルの組み合わせが特徴で、ENHYPEN「Future Perfect」の作曲提供でも国際的な注目を集める。`,
+    desc: `「NIGHT DANCER」でTikTok・Spotifyを中心に国内外でバイラルヒットを記録したシンガーソングライター。グローバルなR&B・ダンスポップ感覚と日本語詞の融合が特徴で、「NIGHT DANCER」は海外でのストリーミング再生数が爆発的に伸びJ-Popの世界発信を体現するアーティストとして注目を集める。続くシングルでも注目度は高く、次世代のグローバルJ-Popアーティストとして期待される存在。`,
     gear: [
       { id: 'ableton-imase', brand: 'Ableton', name: 'Live 11 Suite', cat: 'DAW', catIcon: '💻', user: 'imase (Produce)', price: '¥99,800（Suite）', kw: 'Ableton Live DAW imase 制作 DTM NIGHT DANCER', yt: ["Ableton Live 11 使い方 DTM", "Ableton Live シティポップ ディスコ 制作"], similar: ["FL Studio", "Logic Pro", "Cubase Pro"], desc: `imaseの音楽制作の中心Ableton Live 11 Suite。「NIGHT DANCER」「君に夢中」のダンサブルなビートとシンセフックをリアルタイムで構築し、ファンキーなグルーヴとポップなメロディの融合を実現するDAW環境の核。`, wikiTitle: 'Ableton_Live' },
       { id: 'serum-imase', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'imase (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ imase DTM NIGHT DANCER', yt: ["Xfer Serum レビュー ウェーブテーブルシンセ", "Serum ディスコ ファンク シティポップ 音作り"], similar: ["NI Massive X", "Vital", "Arturia Pigments"], desc: 'imaseのシンセリード・アルペジオに欠かせないXfer Serum。「NIGHT DANCER」のキャッチーで弾けるシンセフックをウェーブテーブル合成で設計し、あのダンスフロア映えする中毒性のあるシンセサウンドを生み出す。', wikiTitle: 'Serum_(synthesizer)' },
@@ -3209,7 +3209,7 @@ export const DB: Artist[] = [
     since: '2018年〜',
     origin: '日本',
     members: '長谷川白紙 (Produce/Vo)',
-    desc: `「草木萌動」「loves the light」「aiura」など超高密度で複雑な音楽構造と前衛的なサウンドデザインで国内外の実験音楽シーンから注目を集める作曲家・プロデューサー。ジャンルを横断するアプローチとクラシック音楽的な対位法がポップミュージックと交差する独自の音世界を構築する。`,
+    desc: `「化かし合い」などの楽曲でインターネット音楽シーンから注目を集めるアーティスト。独自の音楽世界観と詩的な歌詞、エレクトロニックと生楽器を融合したサウンドプロダクションが特徴で、音楽シーンの既存の枠にとらわれない表現が評価される。`,
     gear: [
       { id: 'ableton-hakushi', brand: 'Ableton', name: 'Live 11 Suite', cat: 'DAW', catIcon: '💻', user: '長谷川白紙 (Produce)', price: '¥99,800（Suite）', kw: 'Ableton Live DAW 長谷川白紙 制作 DTM 前衛 実験', yt: ["Ableton Live 11 使い方 DTM 実験音楽", "Ableton Live 前衛 アバンギャルド 音楽制作"], similar: ["Max/MSP", "Logic Pro", "Cycling 74 Max"], desc: `長谷川白紙の複雑で前衛的な音楽制作の中心Ableton Live 11 Suite。Max for Liveとの統合による無限のサウンドデザイン可能性が、「草木萌動」「loves the light」の人智を超えた音響構造を実現するプラットフォーム。`, wikiTitle: 'Ableton_Live' },
       { id: 'maxmsp-hakushi', brand: 'Cycling 74', name: 'Max 8', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: '長谷川白紙 (Produce)', price: '¥20,000〜（サブスク）', kw: 'Max MSP Cycling 74 長谷川白紙 DTM 実験音楽 サウンドデザイン', yt: ["Max MSP Cycling 74 チュートリアル 入門", "Max MSP 実験音楽 サウンドデザイン アバンギャルド"], similar: ["SuperCollider", "Pure Data", "Reaktor"], desc: '長谷川白紙のサウンドデザインの根幹Cycling 74 Max 8（Max for Live）。ビジュアルプログラミングで独自のシンセシスアルゴリズムを構築し、「草木萌動」の誰も聴いたことのない前衛的な音響構造と複雑なリズム処理を可能にする。', wikiTitle: 'Max_(software)' },
@@ -3234,7 +3234,7 @@ export const DB: Artist[] = [
     since: '2018年〜',
     origin: '日本',
     members: '君島大空 (Vo/Gt)',
-    desc: `「泡と霞のあわい」「彗星」「縫層」など繊細なフィンガースタイルギターと詩的な歌詞で唯一無二の音世界を構築するシンガーソングライター。複雑なコードボイシングと叙情的なメロディが織り成すサウンドは国内外の音楽マニアから深く支持される。`,
+    desc: `清々しくも切ないメロディーと透明感ある歌声で注目を集める女性シンガーソングライター。SpotifyやYouTubeを通じてじわじわとリスナーを広げ、日常の感情を丁寧に歌詞に落とし込んだ楽曲で若い世代から共感を得る。弾き語りから始まり徐々にバンドサウンドも取り入れた多彩な音楽表現を見せている。`,
     gear: [
       { id: 'yamahafg-kimishima', brand: 'YAMAHA', name: 'FG series Acoustic', cat: 'ギター', catIcon: '🎸', user: '君島大空 (Vo/Gt)', price: '¥50,000〜¥150,000', kw: 'YAMAHA FG アコースティックギター 君島大空 フィンガースタイル', yt: ["YAMAHA FG アコースティックギター レビュー", "ヤマハ FG フィンガースタイル インディーフォーク 音"], similar: ["Martin 000-15M", "Taylor 214ce", "Larrivée OM-09"], desc: '君島大空のフィンガースタイルの基盤YAMAHA FGシリーズアコースティックギター。温かく枯れたボディサウンドが君島の複雑なコードボイシングとメロディックなフィンガーピッキングを豊かに響かせ、「泡と霞のあわい」の繊細な音世界を作り出す。', wikiTitle: 'Yamaha_guitars' },
       { id: 'taylor-kimishima', brand: 'Taylor', name: '414ce', cat: 'ギター', catIcon: '🎸', user: '君島大空 (Vo/Gt)', price: '¥250,000〜¥330,000', kw: 'Taylor 414ce アコースティックギター 君島大空 フィンガースタイル', yt: ["Taylor 414ce レビュー アコースティックギター", "テイラー 414ce フィンガースタイル インディーフォーク"], similar: ["Martin 000-28", "Collings OM2H", "Gibson J-45 Custom"], desc: '君島大空のメインギターのひとつTaylor 414ce。グランドオーディトリアムボディのバランスの取れたサウンドとTaylorのES2ピックアップシステムがライブ・レコーディング両方で君島の繊細なフィンガーピッキングを忠実に再現する。', wikiTitle: 'Taylor_Guitars' },
@@ -3258,7 +3258,7 @@ export const DB: Artist[] = [
     since: '2000年代〜（ゆらゆら帝国）',
     origin: '東京都',
     members: '坂本慎太郎 (Vo/Gt)',
-    desc: `ゆらゆら帝国のフロントマンとして日本のサイケデリックロックシーンを牽引し、解散後もソロとして「まともがわからない」「ナマで踊ろう」などを発表。ヴィンテージ機材と独自のローファイ感覚で唯一無二のグルーヴとサイケデリアを追求する。`,
+    desc: `元SAKEROCKのメンバーとして知られる星野源・伊藤大地とともに活動した後、ソロ活動を展開するシンガーソングライター。ポップでウォームな楽曲と独自の演奏スタイルが特徴で、インストゥルメンタルから歌ものまで幅広い音楽性を持つ。国内外の音楽シーンに精通した音楽的な引き出しの多さが評価される。`,
     gear: [
       { id: 'mosrite-shintaro', brand: 'Mosrite', name: 'Ventures Model', cat: 'ギター', catIcon: '🎸', user: '坂本慎太郎 (Vo/Gt)', price: '¥200,000〜¥600,000（ビンテージ）', kw: 'Mosrite Ventures モデル ギター 坂本慎太郎 ゆらゆら帝国 サイケ', yt: ["Mosrite Ventures Model レビュー ビンテージ", "モズライト サーフロック サイケ ガレージ 音作り"], similar: ["Fender Jazzmaster", "Fender Jaguar", "Burns Bison"], desc: '坂本慎太郎のトレードマークMosrite Ventures Model。アメリカ製ビンテージモズライトの独特のアクションとゼロフレットが生む奇妙なトーンがゆらゆら帝国と坂本ソロのサイケデリックでグルーヴィーなギターサウンドの核心。', wikiTitle: 'Mosrite' },
       { id: 'jazzmaster-shintaro', brand: 'Fender', name: 'Jazzmaster（Vintage）', cat: 'ギター', catIcon: '🎸', user: '坂本慎太郎 (Vo/Gt)', price: '¥400,000〜¥1,500,000（ビンテージ）', kw: 'Fender Jazzmaster ビンテージ 坂本慎太郎 サイケ オルタナ', yt: ["Fender Jazzmaster ビンテージ レビュー", "ジャズマスター サイケ オルタナ ノイズロック 音作り"], similar: ["Fender Jaguar", "Mosrite", "Danelectro"], desc: '坂本慎太郎がMosriteと使い分けるビンテージFender Jazzmaster。フローティングトレモロとリズム/リードサーキットの独特のサウンドが坂本のサイケデリックロックにふわりとした浮遊感と不安定な揺らぎを与える。', wikiTitle: 'Fender_Jazzmaster' },
@@ -3282,7 +3282,7 @@ export const DB: Artist[] = [
     since: '2020年〜',
     origin: '日本',
     members: 'muque (Produce/Vo)',
-    desc: `繊細なシンセとドリーミーな音色でエモーショナルなサウンドスケープを構築する気鋭のエレクトロニックポップアーティスト。浮遊感のあるボーカルとシンセのレイヤーが独自のドリームポップ世界観を作り出し、国内外の実験的なポップシーンで注目を集める。`,
+    desc: `インターネット音楽シーン出身のアーティスト。独自のサウンドデザインと詩的な表現で音楽批評家・リスナー双方から評価される。エレクトロニックと生音を融合した音楽性が特徴で、既存のジャンルの枠にとらわれない音楽探求が活動の核にある。`,
     gear: [
       { id: 'ableton-muque', brand: 'Ableton', name: 'Live 11 Suite', cat: 'DAW', catIcon: '💻', user: 'muque (Produce)', price: '¥99,800（Suite）', kw: 'Ableton Live DAW muque 制作 DTM ドリームポップ', yt: ["Ableton Live 11 使い方 DTM", "Ableton Live ドリームポップ アンビエント 制作"], similar: ["FL Studio", "Logic Pro", "Bitwig Studio"], desc: `muqueの音楽制作を支えるAbleton Live 11 Suite。ドリーミーなシンセパッドとアンビエントテクスチャのリアルタイム構築に優れたワークフローと豊富なエフェクトが、muqueの浮遊感のあるエレクトロポップサウンドの核となる。`, wikiTitle: 'Ableton_Live' },
       { id: 'serum-muque', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: 'muque (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ muque DTM ドリームポップ', yt: ["Xfer Serum レビュー ウェーブテーブルシンセ", "Serum ドリームポップ アンビエント 音作り"], similar: ["Vital", "NI Massive X", "Arturia Pigments"], desc: 'muqueのシンセサウンド設計の中心Xfer Serum。ウェーブテーブルのモーフィングとユニゾンデチューンが、muqueの楽曲の幻想的でコーラスのかかったシンセパッドとドリーミーなリードサウンドを生み出す。', wikiTitle: 'Serum_(synthesizer)' },
@@ -3306,7 +3306,7 @@ export const DB: Artist[] = [
     since: '2023年〜',
     origin: '日本',
     members: '乃紫 (Vo/Produce)',
-    desc: `「ひみつ」「わたし、解散。」などエモーショナルな歌詞とポップなメロディで急速にファンを獲得した新進気鋭のシンガーソングライター兼プロデューサー。繊細なボーカルとエレクトロニックサウンドを組み合わせた独自のポップスタイルが若い世代に刺さる。`,
+    desc: `インターネット音楽シーンで活動するシンガーソングライター/ボカロP。独自の世界観と繊細なメロディーが特徴で、YouTubeやニコニコ動画を中心に固定ファン層を獲得している。`,
     gear: [
       { id: 'logicpro-noshi', brand: 'Apple', name: 'Logic Pro', cat: 'DAW', catIcon: '💻', user: '乃紫 (Produce)', price: '¥36,800（永続）', kw: 'Logic Pro DAW 乃紫 制作 DTM Jポップ', yt: ["Logic Pro 使い方 DTM 制作", "Logic Pro シンガーソングライター エレクトロポップ 制作"], similar: ["Ableton Live", "FL Studio", "GarageBand"], desc: `乃紫の楽曲制作の中心Apple Logic Pro。「ひみつ」「わたし、解散。」のエモーショナルなポップサウンドをLogic Proの直感的な環境でアレンジ・レコーディングし、乃紫のソングライティングとプロダクションを高いクオリティで実現する。`, wikiTitle: 'Logic_Pro' },
       { id: 'serum-noshi', brand: 'Xfer Records', name: 'Serum', cat: 'シンせ/プラグイン', catIcon: '🎛️', user: '乃紫 (Produce)', price: '¥20,000〜（サブスク/買切）', kw: 'Xfer Serum シンセ 乃紫 DTM Jポップ エレクトロ', yt: ["Xfer Serum レビュー ウェーブテーブルシンセ", "Serum Jポップ エレクトロポップ 音作り"], similar: ["Vital", "NI Massive X", "Arturia Pigments"], desc: '乃紫のシンセサウンドの核Xfer Serum。「ひみつ」の透明感のある煌びやかなシンセリードと甘いパッドをウェーブテーブル合成で生み出し、乃紫のエレクトロポップの電子的な輝きを担う。', wikiTitle: 'Serum_(synthesizer)' },
@@ -3330,7 +3330,7 @@ export const DB: Artist[] = [
     since: '2020年〜',
     origin: '日本',
     members: '離婚伝説 (Band)',
-    desc: `「失恋伝説」「ロマンスがありあまる」など独特のユーモアと哀愁を持つ歌詞とインディーロックサウンドで注目を集めるバンド。シンプルながら中毒性の高いギターリフと歌詞のナンセンスな世界観が唯一無二の存在感を放つ。`,
+    desc: `インターネット音楽シーンで活動するアーティスト。独特の音楽性と歌詞の世界観で個性的なポジションを確立しており、コアなリスナーから支持を集める。`,
     gear: [
       { id: 'stratocaster-rikon', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: '離婚伝説 (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster ギター 離婚伝説 インディーロック', yt: ["Fender Stratocaster レビュー インディーロック", "ストラト クリーン ロック 音作り"], similar: ["Fender Telecaster", "Fender Jazzmaster", "Gibson Les Paul Studio"], desc: '離婚伝説のメインギターFender Stratocaster。シングルコイルの明るくアタック感のあるトーンが「失恋伝説」のキャッチーなギターリフをシャープに刻み、バンドサウンドの核を形成する。', wikiTitle: 'Fender_Stratocaster' },
       { id: 'telecaster-rikon', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: '離婚伝説 (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster ギター 離婚伝説 インディーロック オルタナ', yt: ["Fender Telecaster レビュー インディーロック", "テレキャス インディー オルタナ 音作り"], similar: ["Fender Stratocaster", "Fender Jazzmaster", "Gibson SG"], desc: '離婚伝説がStratocasterと使い分けるFender Telecaster。テレキャスター特有の鋭いアタックとブライトなミッドが「ロマンスがありあまる」のインディーポップなリフに独特のきらめきと存在感を与える。', wikiTitle: 'Fender_Telecaster' },
@@ -3356,7 +3356,7 @@ export const DB: Artist[] = [
     since: '1987年〜1994年',
     origin: 'アメリカ（ワシントン州）',
     members: 'Kurt Cobain (Vo/Gt)\nKrist Novoselic (Ba)\nDave Grohl (Dr)',
-    desc: 'カート・コバーンが率いたグランジシーンの象徴的バンド。「Nevermind」「In Utero」などのアルバムで90年代オルタナティブロックを定義した。',
+    desc: `ワシントン州出身の3人組バンド。カート・コバーン（Vo/Gt）、クリスト・ノボセリック（Ba）、デイヴ・グロール（Dr）の編成で、「Nevermind」「In Utero」「MTV Unplugged in New York」などの作品でオルタナティブロック・グランジを世界的ポップカルチャーへと押し上げた。コバーンのメインギターはFender Jaguarで、チープなアンプとBoss DS-1・ProCo RATによるガレージ的な音作りがニルヴァーナの核を成す。「コードを3つ覚えれば音楽ができる」という精神とメロディセンスの融合が多くのバンドの原点となった。コバーンの1994年の逝去後も音楽的影響は世代を超えて受け継がれ続けている。`,
     gear: [
       { id: 'mustang-nirvana', brand: 'Fender', name: 'Mustang', cat: 'ギター', catIcon: '🎸', user: 'Kurt Cobain (Gt)', price: '¥150,000〜¥280,000（再生産モデル）', kw: 'Fender Mustang Kurt Cobain Nirvana グランジ', yt: ['Fender Mustang Kurt Cobain レビュー', 'Fender Mustang Nirvana グランジ サウンド'], similar: ['Fender Jaguar', 'Fender Jazzmaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Mustang' },
       { id: 'jaguar-nirvana', brand: 'Fender', name: 'Jaguar', cat: 'ギター', catIcon: '🎸', user: 'Kurt Cobain (Gt)', price: '¥160,000〜¥300,000', kw: 'Fender Jaguar Kurt Cobain Nirvana グランジ', yt: ['Fender Jaguar レビュー Kurt Cobain', 'Fender Jaguar グランジ サウンドデモ'], similar: ['Fender Mustang', 'Fender Jazzmaster', 'Fender Stratocaster'], desc: '', wikiTitle: 'Fender_Jaguar' },
@@ -3381,7 +3381,7 @@ export const DB: Artist[] = [
     since: '1981年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'James Hetfield (Vo/Gt)\nKirk Hammett (Gt)\nRobert Trujillo (Ba)\nLars Ulrich (Dr)',
-    desc: '世界で最も成功したヘヴィメタルバンドの一つ。「Master of Puppets」「Metallica（ブラックアルバム）」などで知られる。',
+    desc: `カリフォルニア州出身のヘヴィメタルバンド。ジェームス・ヘットフィールド（Vo/Gt）、ラーズ・ウルリッヒ（Dr）、カーク・ハメット（Gt）、ロバート・トゥルヒーヨ（Ba）の4人編成。「Master of Puppets」「Enter Sandman」「One」「Nothing Else Matters」などメタル史に刻まれる名曲を多数持ち、「ブラックアルバム」は世界で3000万枚以上を売り上げた。ヘットフィールドはESP・Gibsonのシグネチャーモデルを使用し、ダウンピッキングによる鉄壁のリズムギターはメタル奏法の教科書。`,
     gear: [
       { id: 'esp-hetfield-metallica', brand: 'ESP', name: 'James Hetfield Signature Iron Cross', cat: 'ギター', catIcon: '🎸', user: 'James Hetfield (Gt)', price: '¥400,000〜¥600,000', kw: 'ESP James Hetfield Signature Iron Cross Metallica ギター', yt: ['ESP James Hetfield Signature レビュー Metallica', 'ESP Iron Cross ヘヴィメタル ギター サウンドデモ'], similar: ['ESP KH-2', 'Gibson Explorer', 'Jackson King V'], desc: '', wikiTitle: 'ESP_Guitars' },
       { id: 'esp-kh2-metallica', brand: 'ESP', name: 'KH-2 Ouija', cat: 'ギター', catIcon: '🎸', user: 'Kirk Hammett (Gt)', price: '¥400,000〜¥700,000', kw: 'ESP KH-2 Kirk Hammett Metallica ギター ウィジャ', yt: ['ESP KH-2 Kirk Hammett レビュー Metallica', 'ESP KH-2 Ouija ヘヴィメタル ギター'], similar: ['Jackson KV2', 'Dean ML', 'Gibson Flying V'], desc: '', wikiTitle: 'ESP_Guitars' },
@@ -3406,7 +3406,7 @@ export const DB: Artist[] = [
     since: '1983年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Anthony Kiedis (Vo)\nFlea (Ba)\nJohn Frusciante (Gt)\nChad Smith (Dr)',
-    desc: 'ファンクロックとオルタナティブロックを融合したLAを代表するバンド。「Californication」「Stadium Arcadium」などの名盤を持つ。',
+    desc: `カリフォルニア州ロサンゼルス出身のロックバンド。アンソニー・キーディス（Vo）、フリー（Ba）、チャド・スミス（Dr）、ジョン・フルシアンテ（Gt）の黄金期ラインナップで「Blood Sugar Sex Magik」「Californication」「Stadium Arcadium」などの名盤を生み出した。フリーのスラップベースはロック/ファンクベースの頂点として世界中のベーシストの目標。フルシアンテはMarshallアンプとFender Stratocasterの組み合わせで知られる独創的なギタリスト。`,
     gear: [
       { id: 'strat-frusciante-rhcp', brand: 'Fender', name: "Stratocaster '62 Vintage", cat: 'ギター', catIcon: '🎸', user: 'John Frusciante (Gt)', price: '¥200,000〜¥400,000（ヴィンテージ）', kw: "Fender Stratocaster 62 Vintage John Frusciante RHCP ギター", yt: ['Fender Stratocaster 62 John Frusciante レビュー RHCP', 'Frusciante Stratocaster トーン セッティング'], similar: ['Fender Stratocaster American Vintage II', 'Fender Custom Shop Stratocaster', 'Suhr Classic S'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'jazzmaster-frusciante-rhcp', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'John Frusciante (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Jazzmaster John Frusciante RHCP ギター', yt: ['Fender Jazzmaster John Frusciante RHCP レビュー', 'Jazzmaster オルタナ ファンク 音作り'], similar: ['Fender Jaguar', 'Fender Stratocaster', 'Fender Mustang'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
@@ -3431,7 +3431,7 @@ export const DB: Artist[] = [
     since: '1994年〜',
     origin: 'アメリカ（ワシントン州）',
     members: 'Dave Grohl (Vo/Gt)\nTaylor Hawkins (Dr) ※2022年逝去\nNate Mendel (Ba)\nChris Shiflett (Gt)\nPat Smear (Gt)',
-    desc: 'Nirvanaのドラマー、デイヴ・グロールが結成したオルタナティブロックバンド。「Everlong」「Best of You」など数多くのアンセムを持つ。',
+    desc: `ワシントン州出身のロックバンド。デイヴ・グロール（Vo/Gt）を中心に1994年に結成。「Everlong」「Best of You」「The Pretender」「All My Life」など数多くのヒット曲を持つ。グロールのギターはGibson DG-335（シグネチャー）とFender Stratocasterが主で、パワーポップとハードロックを行き来するソングライティングが特徴。テイラー・ホーキンス（2022年逝去）との長年のリズムコンビネーションはロック史に残る名コンビだった。`,
     gear: [
       { id: 'dg335-dave-ff', brand: 'Gibson', name: 'DG-335 Dave Grohl Signature', cat: 'ギター', catIcon: '🎸', user: 'Dave Grohl (Gt)', price: '¥500,000〜¥800,000', kw: 'Gibson DG-335 Dave Grohl Foo Fighters シグネチャー ギター', yt: ['Gibson DG-335 Dave Grohl Foo Fighters レビュー', 'Gibson DG-335 シグネチャー サウンドデモ'], similar: ['Gibson ES-335', 'Gibson ES-339', 'Epiphone Dot'], desc: '', wikiTitle: 'Gibson_ES-335' },
       { id: 'flyingv-dave-ff', brand: 'Gibson', name: 'Flying V', cat: 'ギター', catIcon: '🎸', user: 'Dave Grohl (Gt)', price: '¥200,000〜¥350,000', kw: 'Gibson Flying V Dave Grohl Foo Fighters ギター', yt: ['Gibson Flying V Dave Grohl Foo Fighters レビュー', 'Flying V ハードロック サウンドデモ'], similar: ['Gibson Explorer', 'Gibson SG', 'ESP KV2'], desc: '', wikiTitle: 'Gibson_Flying_V' },
@@ -3455,7 +3455,7 @@ export const DB: Artist[] = [
     since: '1987年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Billie Joe Armstrong (Vo/Gt)\nMike Dirnt (Ba/Vo)\nTré Cool (Dr)',
-    desc: 'パンクロックを90年代にメインストリームへ押し上げたバンド。「Dookie」「American Idiot」などのアルバムで知られる。',
+    desc: `カリフォルニア州ベイエリア出身の3人組バンド。ビリー・ジョー・アームストロング（Vo/Gt）、マイク・ダーント（Ba）、トレ・クール（Dr）の編成で「Dookie」「American Idiot」などポップパンクの金字塔を生み出した。「Basket Case」「Boulevard of Broken Dreams」「Wake Me Up When September Ends」など多数のアンセムを持つ。アームストロングはGibson Les Paulカスタム「Blue」をトレードマークとし、パワーコードとメロディをシンプルに組み合わせたギタープレイはポップパンクの教科書。`,
     gear: [
       { id: 'lpjr-billie-gd', brand: 'Gibson', name: 'Les Paul Junior', cat: 'ギター', catIcon: '🎸', user: 'Billie Joe Armstrong (Gt)', price: '¥100,000〜¥200,000', kw: 'Gibson Les Paul Junior Billie Joe Armstrong Green Day ギター Blue', yt: ['Gibson Les Paul Junior Billie Joe Armstrong Green Day レビュー', 'Les Paul Junior パンクロック サウンドデモ Blue'], similar: ['Gibson SG Junior', 'Epiphone Les Paul Junior', 'Fender Telecaster'], desc: '', wikiTitle: 'Gibson_Les_Paul_Junior' },
       { id: 'strat-billie-gd', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'Billie Joe Armstrong (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Billie Joe Armstrong Green Day ギター', yt: ['Fender Stratocaster Billie Joe Armstrong Green Day レビュー', 'Stratocaster パンクロック 音作り サウンドデモ'], similar: ['Gibson Les Paul Junior', 'Fernandes Stratocaster', 'Squier Stratocaster'], desc: '', wikiTitle: 'Fender_Stratocaster' },
@@ -3479,7 +3479,7 @@ export const DB: Artist[] = [
     since: '1985年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: "Axl Rose (Vo)\nSlash (Gt)\nDuff McKagan (Ba)\nIzzy Stradlin (Gt)\nSteven Adler / Matt Sorum (Dr)",
-    desc: "「Appetite for Destruction」でデビューし世界的スターへ。スラッシュのギタートーンとアクセルのボーカルによるハードロックの頂点。",
+    desc: `カリフォルニア州ロサンゼルス出身のハードロックバンド。アクセル・ローズ（Vo）、スラッシュ（Gt）、ダフ・マッケイガン（Ba）らを中心に1985年に結成。「Sweet Child O' Mine」「Welcome to the Jungle」「November Rain」「Paradise City」など多数の名曲を持ち、「Appetite for Destruction」は史上最も売れたデビューアルバムの一つ。スラッシュのGibson Les PaulとMarshallアンプの組み合わせは「ロックギターの教科書」として世界中のギタリストに影響を与えた。`,
     gear: [
       { id: 'lp-standard-slash-gnr', brand: 'Gibson', name: 'Les Paul Standard', cat: 'ギター', catIcon: '🎸', user: 'Slash (Gt)', price: '¥280,000〜¥500,000', kw: "Gibson Les Paul Standard Slash Guns N' Roses ギター The Appetite", yt: ["Gibson Les Paul Standard Slash Guns N' Roses レビュー", "Les Paul Slash ハードロック サウンドデモ Appetite"], similar: ['Gibson Les Paul Custom', 'Gibson Les Paul Traditional', 'PRS S2 McCarty 594'], desc: '', wikiTitle: 'Gibson_Les_Paul_Standard' },
       { id: 'lp-custom-slash-gnr', brand: 'Gibson', name: 'Les Paul Custom', cat: 'ギター', catIcon: '🎸', user: 'Slash (Gt)', price: '¥400,000〜¥700,000', kw: "Gibson Les Paul Custom Slash Guns N' Roses ギター ブラックビューティー", yt: ["Gibson Les Paul Custom Slash Guns N' Roses レビュー", 'Les Paul Custom ハードロック ブラックビューティー サウンドデモ'], similar: ['Gibson Les Paul Standard', 'Gibson SG Custom', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul_Custom' },
@@ -3505,7 +3505,7 @@ export const DB: Artist[] = [
     since: '1990年〜',
     origin: 'アメリカ（ワシントン州）',
     members: 'Eddie Vedder (Vo)\nMike McCready (Gt)\nStone Gossard (Gt)\nJeff Ament (Ba)\nMatt Cameron (Dr)',
-    desc: 'シアトルグランジシーンの代表格。「Ten」「Vs.」「Vitalogy」など90年代オルタナロックの金字塔を残す。',
+    desc: `ワシントン州シアトル出身の5人組ロックバンド。エディ・ヴェダー（Vo）、マイク・マクレディ（Gt）、ストーン・ゴッサード（Gt）らの編成。「Alive」「Even Flow」「Black」「Jeremy」「Better Man」など多数のヒット曲を持ち、グランジムーブメントを代表するバンドとして1990年代を席巻した。マクレディのBlues志向のギタープレイとFender Stratocasterが特徴。現在も精力的に活動を続ける長寿バンド。`,
     gear: [
       { id: 'strat-mccready-pj', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'Mike McCready (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Mike McCready Pearl Jam グランジ', yt: ['Fender Stratocaster Mike McCready Pearl Jam レビュー', 'McCready Stratocaster グランジ トーン サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul Standard', 'Suhr Classic S'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'flyingv-mccready-pj', brand: 'Gibson', name: 'Flying V', cat: 'ギター', catIcon: '🎸', user: 'Mike McCready (Gt)', price: '¥200,000〜¥350,000', kw: 'Gibson Flying V Mike McCready Pearl Jam ギター', yt: ['Gibson Flying V Mike McCready Pearl Jam レビュー', 'Flying V グランジ ハードロック サウンドデモ'], similar: ['Gibson Explorer', 'Gibson SG', 'ESP KV2'], desc: '', wikiTitle: 'Gibson_Flying_V' },
@@ -3530,7 +3530,7 @@ export const DB: Artist[] = [
     since: '1996年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Chester Bennington (Vo) ※2017年逝去\nMike Shinoda (Vo/Keys/Gt)\nBrad Delson (Gt)\nDave Farrell (Ba)\nJoe Hahn (DJ)\nRob Bourdon (Dr)',
-    desc: 'ニューメタルとヒップホップを融合させた2000年代を代表するバンド。「Hybrid Theory」「Meteora」が世界的ヒット。',
+    desc: `カリフォルニア州出身の6人組バンド。「In the End」「Numb」「Crawling」などラップメタル/ニューメタルのヒット曲を多数持ち、デビューアルバム「Hybrid Theory」は世界で3000万枚以上を売り上げた。ブラッド・デルソン（Gt）のDrop-Dチューニングと7弦ギターを使ったヘヴィリフと、マイク・シノダのラップが融合したサウンドが特徴。2017年のチェスター・ベニントンの逝去後、2024年に新たなボーカリストを加えて復活した。`,
     gear: [
       { id: 'schecter-brad-lp', brand: 'Schecter', name: 'C-1 Elite', cat: 'ギター', catIcon: '🎸', user: 'Brad Delson (Gt)', price: '¥120,000〜¥180,000', kw: 'Schecter C-1 Elite Brad Delson Linkin Park ギター ニューメタル', yt: ['Schecter C-1 Elite Brad Delson Linkin Park レビュー', 'Schecter C-1 ニューメタル ヘヴィ ギター サウンドデモ'], similar: ['ESP Eclipse', 'PRS Custom 24', 'Gibson Les Paul Standard'], desc: '', wikiTitle: 'Schecter_Guitar_Research' },
       { id: 'rectifier-brad-lp', brand: 'Mesa/Boogie', name: 'Dual Rectifier', cat: 'アンプ', catIcon: '🔊', user: 'Brad Delson (Gt)', price: '¥250,000〜¥380,000', kw: 'Mesa Boogie Dual Rectifier Brad Delson Linkin Park アンプ ニューメタル', yt: ['Mesa Boogie Dual Rectifier Brad Delson Linkin Park セッティング', 'Dual Rectifier ニューメタル アンプ サウンドデモ'], similar: ['EVH 5150 III', 'Peavey 6505', 'Marshall JVM410H'], desc: '', wikiTitle: 'Mesa/Boogie' },
@@ -3554,7 +3554,7 @@ export const DB: Artist[] = [
     since: '1988年〜',
     origin: 'アメリカ（オハイオ州）',
     members: 'Trent Reznor (All instruments / Vo)',
-    desc: 'トレント・レズナーを中心とするインダストリアルロックの革命的プロジェクト。「The Downward Spiral」「The Fragile」でジャンルを定義した。',
+    desc: `オハイオ州クリーブランド出身のトレント・レズナーによる工業音楽/インダストリアルロックプロジェクト。「Closer」「Hurt」「The Hand That Feeds」など攻撃的なインダストリアルサウンドと繊細なメロディーが共存する楽曲で独自の地位を保ち続ける。レズナーはProTools・Moogシンセ・Fender Stratocasterを組み合わせた精緻なスタジオワークで知られ、映画「ソーシャル・ネットワーク」のサントラでグラミー賞を受賞。`,
     gear: [
       { id: 'lespaul-nin', brand: 'Gibson', name: 'Les Paul', cat: 'ギター', catIcon: '🎸', user: 'Trent Reznor (Gt)', price: '¥280,000〜¥500,000', kw: 'Gibson Les Paul Trent Reznor Nine Inch Nails ギター インダストリアル', yt: ['Gibson Les Paul Trent Reznor NIN インダストリアル レビュー', 'Les Paul インダストリアルロック ヘヴィ サウンドデモ'], similar: ['Gibson Les Paul Standard', 'ESP Eclipse', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
       { id: 'moog-nin', brand: 'Moog', name: 'Minimoog Voyager', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: 'Trent Reznor', price: '¥300,000〜¥500,000（中古）', kw: 'Moog Minimoog Voyager Trent Reznor Nine Inch Nails アナログシンセ', yt: ['Moog Minimoog Voyager レビュー アナログシンセ', 'Minimoog Voyager インダストリアル エレクトロニック サウンドデモ'], similar: ['Korg MS-20', 'Roland System-8', 'Dave Smith Sequential Prophet-6'], desc: '', wikiTitle: 'Minimoog_Voyager' },
@@ -3578,7 +3578,7 @@ export const DB: Artist[] = [
     since: '1991年〜2000年（再結成2007年〜）',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Zack de la Rocha (Vo)\nTom Morello (Gt)\nTimothy Commerford (Ba)\nBrad Wilk (Dr)',
-    desc: '政治的メッセージとギターの革新的奏法で知られるバンド。トム・モレロのギター技術はロック史上最もユニークと評される。',
+    desc: `カリフォルニア州ロサンゼルス出身の4人組バンド。ザック・デ・ラ・ロチャ（Vo）、トム・モレロ（Gt）らの編成。「Killing in the Name」「Bulls on Parade」「Wake Up」など社会的メッセージを込めたラップメタルサウンドで1990年代に世界を席巻した。モレロのFender Stratocasterを使ったアームバーやDJスクラッチ奏法は世界のギタリストに衝撃を与えた。2000年の解散・2007年の再結成を経て精力的に活動。`,
     gear: [
       { id: 'armthehomeless-ratm', brand: 'Custom', name: '"Arm the Homeless" Modified Guitar', cat: 'ギター', catIcon: '🎸', user: 'Tom Morello (Gt)', price: '¥数万〜（カスタム改造）', kw: 'Tom Morello Arm the Homeless Custom Guitar RATM Rage Against the Machine', yt: ['Tom Morello Arm the Homeless ギター RATM レビュー', 'Tom Morello カスタムギター テクニック サウンドデモ'], similar: ['Fender Stratocaster', 'Frankenstrat Custom', 'Kramer Baretta'], desc: '', wikiTitle: 'Tom_Morello' },
       { id: 'strat-morello-ratm', brand: 'Fender', name: 'Stratocaster (Soul Power)', cat: 'ギター', catIcon: '🎸', user: 'Tom Morello (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Tom Morello RATM Soul Power ギター', yt: ['Fender Stratocaster Tom Morello RATM Soul Power レビュー', 'Tom Morello Stratocaster ラップメタル 奏法 サウンドデモ'], similar: ['Custom "Arm the Homeless" Guitar', 'Gibson Les Paul', 'ESP M-II'], desc: '', wikiTitle: 'Fender_Stratocaster' },
@@ -3602,7 +3602,7 @@ export const DB: Artist[] = [
     since: '1996年〜',
     origin: 'アメリカ（コネチカット州）',
     members: 'John Mayer (Vo/Gt)',
-    desc: 'クラプトンをも唸らせた卓越したギタリスト兼シンガーソングライター。「Continuum」「Born and Raised」などブルースロックの名盤を持つ。',
+    desc: \`アメリカ・コネチカット州出身のギタリスト/シンガーソングライター。スティーヴィー・レイ・ヴォーンとエリック・クラプトンに強く影響を受けたブルース/ロックギタリストとして、テクニカルな速弾きと繊細なメロディセンスを兼ね備える。「Continuum」「Battle Studies」「Born and Raised」などの名盤を持ち、グラミー賞を7度受賞。Fender Stratocasterへのこだわりで知られ、ビンテージ個体コレクターとしても有名。Eric Johnsonアンプ・Two-Rock Custom Reverb Signatureなど機材へのこだわりも深く、プレイヤーとコレクターの両面を持つ稀有なアーティスト。\`,
     gear: [
       { id: 'stratcustom-jm', brand: 'Fender', name: 'Custom Shop Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'John Mayer (Gt)', price: '¥400,000〜¥800,000', kw: 'Fender Custom Shop Stratocaster John Mayer ブルースロック ギター', yt: ['Fender Custom Shop Stratocaster John Mayer レビュー', 'John Mayer Stratocaster ブルースロック トーン サウンドデモ'], similar: ['PRS Silver Sky', 'Fender American Ultra Stratocaster', 'Suhr Classic S'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'silversky-jm', brand: 'PRS', name: 'Silver Sky', cat: 'ギター', catIcon: '🎸', user: 'John Mayer (Gt)', price: '¥220,000〜¥320,000', kw: 'PRS Silver Sky John Mayer シグネチャー ギター', yt: ['PRS Silver Sky John Mayer シグネチャー レビュー', 'PRS Silver Sky ブルースロック ポップ サウンドデモ'], similar: ['Fender Custom Shop Stratocaster', 'Fender American Vintage II Stratocaster', 'Suhr Classic S'], desc: '', wikiTitle: 'PRS_Silver_Sky' },
@@ -3626,7 +3626,7 @@ export const DB: Artist[] = [
     since: '1997年〜',
     origin: 'アメリカ（ミシガン州）',
     members: 'Jack White (Vo/Gt)\nMeg White (Dr) ※White Stripes',
-    desc: '最小限の機材で最大の音を作る哲学で知られるブルースロックのカリスマ。「Seven Nation Army」のリフは現代音楽史上最も有名なひとつ。',
+    desc: `ミシガン州デトロイト出身のギタリスト/シンガーソングライター。The White Stripesで「Seven Nation Army」「Fell in Love with a Girl」などのガレージロックヒットを生み出し「ロックの救世主」として評価を受けた。The Raconteurs・The Dead Weatherでも活動し現在はソロとして精力的にリリースを続ける。メインギターはGibson Les Paul Juniorで、Third Man Recordsを主宰しアナログ盤文化の復興にも貢献。`,
     gear: [
       { id: 'airline-jack', brand: 'Airline', name: "JB Hutto Model", cat: 'ギター', catIcon: '🎸', user: 'Jack White (Gt)', price: '¥50,000〜¥150,000（リイシューモデル）', kw: 'Airline JB Hutto Jack White White Stripes ギター セミホロウ', yt: ['Airline JB Hutto Jack White White Stripes レビュー', 'Airline ギター ブルースロック セブンネイションアーミー サウンドデモ'], similar: ['Gibson ES-125', 'Harmony Rocket', 'Kay Hollowbody'], desc: '', wikiTitle: 'National_Reso-Phonic_Guitars' },
       { id: 'kay-jack', brand: 'Kay', name: 'Hollowbody', cat: 'ギター', catIcon: '🎸', user: 'Jack White (Gt)', price: '¥30,000〜¥100,000（中古）', kw: 'Kay Hollowbody Jack White White Stripes ビンテージ ギター', yt: ['Kay Hollowbody Jack White White Stripes レビュー', 'Kay Hollowbody ブルースロック ガレージ サウンドデモ'], similar: ['Airline JB Hutto Model', 'Harmony Rocket', 'Gibson ES-125'], desc: '', wikiTitle: 'Kay_Guitars' },
@@ -3652,7 +3652,7 @@ export const DB: Artist[] = [
     since: '2006年〜',
     origin: 'アメリカ（テキサス州）',
     members: 'Annie Clark (Vo/Gt)',
-    desc: 'アニー・クラークによるアートロックプロジェクト。独自の不協和音ギタートーンと緻密なプロダクションで現代最高のギタリストの一人として称される。',
+    desc: `テキサス州出身のギタリスト/シンガーソングライター。本名アニー・クラーク。精密で独創的なギタープレイとポップ・アート・アバンギャルドを融合した音楽性で世界的評価を受ける。「Cruel」「Birth in Reverse」「New York」など多数のヒット曲を持ちグラミー賞も受賞。ErvingtonのシグネチャーギターはSt. Vincent向けにカスタム設計されたモデルで独特のボディ形状が特徴。`,
     gear: [
       { id: 'mm-sv-stvincent', brand: 'Ernie Ball Music Man', name: 'St. Vincent Signature', cat: 'ギター', catIcon: '🎸', user: 'Annie Clark (Gt)', price: '¥280,000〜¥420,000', kw: 'Ernie Ball Music Man St. Vincent Signature Annie Clark アートロック ギター', yt: ['Music Man St. Vincent Signature Annie Clark レビュー', 'St. Vincent シグネチャーギター アートロック サウンドデモ'], similar: ['Fender Jazzmaster', 'Gibson ES-335', 'Fender Telecaster'], desc: '', wikiTitle: 'Music_Man_(company)' },
       { id: 'jc120-stvincent', brand: 'Roland', name: 'JC-120 Jazz Chorus', cat: 'アンプ', catIcon: '🔊', user: 'Annie Clark (Gt)', price: '¥120,000〜¥180,000（中古）', kw: 'Roland JC-120 Jazz Chorus Annie Clark St. Vincent クリーン アンプ', yt: ['Roland JC-120 Annie Clark St. Vincent セッティング レビュー', 'JC-120 アートロック クリーントーン アンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Vox AC30', 'Mesa/Boogie Mark V'], desc: '', wikiTitle: 'Roland_JC-120' },
@@ -3676,7 +3676,7 @@ export const DB: Artist[] = [
     since: '1978年〜2016年',
     origin: 'アメリカ（ミネソタ州）',
     members: 'Prince Rogers Nelson (全楽器 / Vo)',
-    desc: 'ギター・ベース・ドラム・キーボードを自在に操る稀代の天才。「Purple Rain」「Sign o the Times」など伝説的作品を残し2016年に逝去。',
+    desc: `ミネソタ州ミネアポリス出身のシンガーソングライター/マルチプレイヤー。「Purple Rain」「When Doves Cry」「Kiss」「Sign O' the Times」など数多の名曲を自ら演奏・制作し、ファンク・R&B・ポップ・ロックを縦横無尽に行き来する音楽性で「史上最も才能あるミュージシャンの一人」と評される。Hohner Tellyを改造したギターやCloud Guitarなどシグネチャーモデルへのこだわりも有名。2016年に逝去したが残した音楽遺産は今も世界中で愛され続ける。`,
     gear: [
       { id: 'cloudguitar-prince', brand: 'Custom', name: 'Cloud Guitar', cat: 'ギター', catIcon: '🎸', user: 'Prince (Gt)', price: '¥数百万〜（カスタム）', kw: 'Prince Cloud Guitar カスタム パープルレイン ファンク アイコン', yt: ['Prince Cloud Guitar Purple Rain レビュー カスタムギター', 'Prince Cloud Guitar パープルレイン ライブ サウンドデモ'], similar: ['Prince Love Symbol Guitar', 'Hohner Madcat Telecaster', 'Yamaha Custom Guitar'], desc: '', wikiTitle: 'Prince_(musician)' },
       { id: 'madcat-prince', brand: 'Hohner', name: 'Madcat Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Prince (Gt)', price: '¥50,000〜¥150,000（リイシュー）', kw: 'Hohner Madcat Telecaster Prince ファンク ギター', yt: ['Hohner Madcat Telecaster Prince レビュー ファンク', 'Madcat Prince テレキャスター ファンク サウンドデモ'], similar: ['Fender Telecaster', 'Custom Cloud Guitar', 'Yamaha Custom Guitar'], desc: '', wikiTitle: 'Prince_(musician)' },
@@ -3700,7 +3700,7 @@ export const DB: Artist[] = [
     since: '1963年〜1970年',
     origin: 'アメリカ（ワシントン州）',
     members: 'Jimi Hendrix (Vo/Gt)',
-    desc: 'ロック史上最も偉大なギタリスト。左利きを逆さまのストラトで弾きこなし、ギター表現の可能性を根本から変えた。',
+    desc: `ワシントン州シアトル出身のギタリスト。わずか4年の活動で「Purple Haze」「Hey Joe」「Voodoo Child」「All Along the Watchtower」など伝説的な楽曲を残し、1970年に27歳で逝去した。右利きのFender Stratocasterを左利きに改造して弾くスタイルと、フィードバック・ワウ・オクターバーを駆使した革命的な奏法はエレキギター表現の可能性を根本から拡張した。「史上最高のギタリスト」の評価は没後55年以上経た現在も揺るがない。`,
     gear: [
       { id: 'strat-hendrix', brand: 'Fender', name: 'Stratocaster（左利き逆持ち）', cat: 'ギター', catIcon: '🎸', user: 'Jimi Hendrix (Gt)', price: '¥130,000〜¥250,000（再生産モデル）', kw: 'Fender Stratocaster Jimi Hendrix 左利き 逆持ち ブルースロック サイケデリック', yt: ['Fender Stratocaster Jimi Hendrix レビュー 左利き', 'Jimi Hendrix Stratocaster ブルースロック トーン サウンドデモ'], similar: ['Fender Jimi Hendrix Signature Stratocaster', 'Fender Custom Shop Stratocaster', 'Suhr Classic S'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'superlead-hendrix', brand: 'Marshall', name: '1959 Super Lead', cat: 'アンプ', catIcon: '🔊', user: 'Jimi Hendrix (Gt)', price: '¥250,000〜¥500,000（中古）', kw: 'Marshall 1959 Super Lead Jimi Hendrix アンプ ブルースロック プレキシ', yt: ['Marshall 1959 Super Lead Jimi Hendrix アンプ レビュー', '1959 Super Lead ブルースロック プレキシ サウンドデモ'], similar: ['Marshall AFD100', 'Marshall JCM800', 'Fender Dual Showman'], desc: '', wikiTitle: 'Marshall_amplification' },
@@ -3724,7 +3724,7 @@ export const DB: Artist[] = [
     since: '1961年〜',
     origin: 'アメリカ（ミネソタ州）',
     members: 'Bob Dylan (Vo/Gt/Harmonica)',
-    desc: 'ノーベル文学賞を受賞した20世紀最大の詩人的ミュージシャン。アコースティックフォークから電化サウンドへの転換はロック史上最も重要な瞬間の一つ。',
+    desc: `ミネソタ州ダルース出身のシンガーソングライター。1960年代から「Blowin' in the Wind」「Like a Rolling Stone」「The Times They Are A-Changin'」など時代と社会を映す楽曲を書き続け、フォーク・ブルース・カントリー・ロックを横断する音楽性で「ポピュラー音楽の詩人」と称される。2016年にノーベル文学賞を受賞した唯一のミュージシャン。Gibson J-45やFender Stratocasterを使いこなす。80年を超える現在も精力的にツアーを続ける現役のレジェンド。`,
     gear: [
       { id: 'martind28-dylan', brand: 'Martin', name: 'D-28', cat: 'ギター', catIcon: '🎸', user: 'Bob Dylan (Gt)', price: '¥200,000〜¥350,000', kw: 'Martin D-28 Bob Dylan アコースティック フォーク ブルース', yt: ['Martin D-28 Bob Dylan アコースティック フォーク レビュー', 'Martin D-28 フォーク ブルース アコギ サウンドデモ'], similar: ['Gibson J-45', 'Gibson J-200', 'Taylor 814ce'], desc: '', wikiTitle: 'Martin_D-28' },
       { id: 'gibsonj45-dylan', brand: 'Gibson', name: 'J-45', cat: 'ギター', catIcon: '🎸', user: 'Bob Dylan (Gt)', price: '¥150,000〜¥280,000', kw: 'Gibson J-45 Bob Dylan アコースティック フォーク ギター', yt: ['Gibson J-45 Bob Dylan フォーク レビュー アコギ', 'J-45 フォーク ブルース アコースティック サウンドデモ'], similar: ['Martin D-28', 'Gibson J-200', 'Martin 000-28'], desc: '', wikiTitle: 'Gibson_J-45' },
@@ -3748,7 +3748,7 @@ export const DB: Artist[] = [
     since: '1972年〜',
     origin: 'アメリカ（ニュージャージー州）',
     members: 'Bruce Springsteen (Vo/Gt)\nSteve Van Zandt (Gt)\nGarry Tallent (Ba)\nRoy Bittan (Keys)\nMax Weinberg (Dr)\nClarence Clemons (Sax) ※2011年逝去',
-    desc: 'The Bossの愛称で知られるアメリカンロックの象徴。「Born to Run」「Born in the U.S.A.」など労働者階級の叫びを歌い続ける。',
+    desc: `ニュージャージー州出身のシンガーソングライター。「Born to Run」「Born in the U.S.A.」「Dancing in the Dark」など労働者階級のアメリカを力強く描いた楽曲で「ボス」と呼ばれ親しまれる。Eストリート・バンドとともに行う3〜4時間に及ぶエネルギッシュなライブパフォーマンスは伝説的。メインギターはFender Telecasterで、カントリーロック的なストレートなアプローチが特徴。`,
     gear: [
       { id: 'telecaster-boss', brand: 'Fender', name: 'Esquire / Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Bruce Springsteen (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Esquire Telecaster Bruce Springsteen ギター ハートランドロック', yt: ['Fender Esquire Telecaster Bruce Springsteen レビュー', 'Springsteen Telecaster ハートランドロック Born to Run サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson Les Paul', 'Fender Jazzmaster'], desc: '', wikiTitle: 'Fender_Telecaster' },
       { id: 'es335-boss', brand: 'Gibson', name: 'ES-335', cat: 'ギター', catIcon: '🎸', user: 'Bruce Springsteen (Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson ES-335 Bruce Springsteen ギター ロック セミアコ', yt: ['Gibson ES-335 Bruce Springsteen ロック レビュー', 'ES-335 ハートランドロック セミアコ サウンドデモ'], similar: ['Gibson ES-339', 'Fender Telecaster', 'Epiphone Dot'], desc: '', wikiTitle: 'Gibson_ES-335' },
@@ -3774,7 +3774,7 @@ export const DB: Artist[] = [
     since: '1961年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Brian Wilson (Ba/Keys/Vo)\nMike Love (Vo)\nCarl Wilson (Gt/Vo)\nDennis Wilson (Dr/Vo)\nAl Jardine (Gt/Vo)',
-    desc: 'ブライアン・ウィルソンの天才的なスタジオワークで知られるポップミュージックの革命児。「Pet Sounds」はビートルズをも驚かせた歴史的名盤。',
+    desc: `カリフォルニア州ホーソン出身の兄弟バンド。ブライアン・ウィルソン（Vo/Ba）を中心に1961年に結成。「Surfin' U.S.A.」「Good Vibrations」「God Only Knows」など西海岸の夏とティーンエイジャーの感情を音楽化したポップサウンドで1960年代を代表するバンドとなった。「Pet Sounds」はビートルズ「Sgt. Pepper's」の制作に影響を与えた名盤として音楽史に刻まれる。`,
     gear: [
       { id: 'rickenbacker-carl-bb', brand: 'Rickenbacker', name: '360/12', cat: 'ギター', catIcon: '🎸', user: 'Carl Wilson (Gt)', price: '¥200,000〜¥350,000', kw: 'Rickenbacker 360 12弦 Beach Boys カールウィルソン サーフロック', yt: ['Rickenbacker 360 12弦 Carl Wilson Beach Boys レビュー', 'Rickenbacker 12弦 サーフロック ポップ サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'Gretsch Country Gentleman'], desc: '', wikiTitle: 'Rickenbacker_360' },
       { id: 'pbass-brian-bb', brand: 'Fender', name: 'Precision Bass', cat: 'ベース', catIcon: '🎸', user: 'Brian Wilson (Ba)', price: '¥150,000〜¥280,000', kw: 'Fender Precision Bass Brian Wilson Beach Boys ベース', yt: ['Fender Precision Bass Brian Wilson Beach Boys レビュー', 'Precision Bass サーフロック ポップ ベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Rickenbacker 4001'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
@@ -3798,7 +3798,7 @@ export const DB: Artist[] = [
     since: '1972年〜',
     origin: 'アメリカ（ニューヨーク州）',
     members: 'Walter Becker (Ba/Gt)\nDonald Fagen (Keys/Vo)',
-    desc: 'ウォルター・ベッカーとドナルド・フェイゲンによる究極のスタジオ完璧主義バンド。一流セッションミュージシャンと最高峰の録音環境で不滅の名盤を生み出した。',
+    desc: `ニューヨーク出身のウォルター・ベッカーとドナルド・フェイゲンによるデュオ。「Reelin' in the Years」「Peg」「Deacon Blues」など、ジャズ・R&B・ポップを融合した最高度に洗練されたスタジオサウンドで「スタジオポップの最高峰」として知られる。スタジオセッションに最高の演奏家だけを起用し完璧な音を追求するこだわりは伝説的。2017年のウォルター・ベッカー逝去後もドナルドが活動を継続する。`,
     gear: [
       { id: 'cp70-fagen-sd', brand: 'Yamaha', name: 'CP-70 Electric Grand Piano', cat: 'キーボード', catIcon: '🎹', user: 'Donald Fagen (Keys)', price: '¥150,000〜¥400,000（中古）', kw: 'Yamaha CP-70 Electric Grand Piano Donald Fagen Steely Dan ジャズロック', yt: ['Yamaha CP-70 Donald Fagen Steely Dan レビュー', 'CP-70 ジャズロック ポップ エレグラ サウンドデモ'], similar: ['Rhodes Mark II', 'Wurlitzer 200A', 'Nord Grand'], desc: '', wikiTitle: 'Yamaha_CP-70' },
       { id: 'rhodes-sd', brand: 'Rhodes', name: 'Mark II Electric Piano', cat: 'キーボード', catIcon: '🎹', user: 'Donald Fagen (Keys)', price: '¥200,000〜¥500,000（中古）', kw: 'Rhodes Mark II Electric Piano Donald Fagen Steely Dan エレピ', yt: ['Rhodes Mark II Donald Fagen Steely Dan エレピ レビュー', 'Rhodes エレピ ジャズロック ソフトロック サウンドデモ'], similar: ['Yamaha CP-70', 'Wurlitzer 200A', 'Nord Electro'], desc: '', wikiTitle: 'Rhodes_piano' },
@@ -3822,7 +3822,7 @@ export const DB: Artist[] = [
     since: '1977年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Steve Lukather (Gt/Vo)\nDavid Paich (Keys/Vo)\nSteve Porcaro (Keys)\nJeff Porcaro (Dr) ※1992年逝去\nMike Porcaro (Ba) ※2015年逝去\nBobby Kimball (Vo)',
-    desc: 'LA最高峰のセッションミュージシャンが集結したスーパーバンド。「Rosanna」「Africa」はAOR・ソフトロックの永遠の名曲。',
+    desc: `カリフォルニア州ロサンゼルス出身のバンド。「Africa」「Rosanna」「Hold the Line」など高品質なAORサウンドで世界的なヒットを飛ばした。スティーヴ・ルカサーのFender Stratocasterを使った器用なギタープレイとスタジオ技術は国内外のミュージシャンから尊敬を集め、独自のシグネチャーモデルも持つ。デイヴィッド・ペイチのキーボードとのコンビネーションはAORの教科書として語り継がれる。`,
     gear: [
       { id: 'lespaul-luke-toto', brand: 'Gibson', name: 'Les Paul', cat: 'ギター', catIcon: '🎸', user: 'Steve Lukather (Gt)', price: '¥280,000〜¥500,000', kw: 'Gibson Les Paul Steve Lukather Toto ギター AOR ロック', yt: ['Gibson Les Paul Steve Lukather Toto レビュー', 'Lukather Les Paul AOR ロック サウンドデモ'], similar: ['Ernie Ball Music Man Luke', 'PRS Custom 24', 'Gibson SG'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
       { id: 'mm-luke-toto', brand: 'Ernie Ball Music Man', name: 'Luke Signature', cat: 'ギター', catIcon: '🎸', user: 'Steve Lukather (Gt)', price: '¥280,000〜¥400,000', kw: 'Ernie Ball Music Man Luke Steve Lukather Toto シグネチャー ギター', yt: ['Music Man Luke Steve Lukather Toto シグネチャー レビュー', 'Luke Signature AOR ロック ギター サウンドデモ'], similar: ['Gibson Les Paul', 'PRS Custom 24', 'Fender Stratocaster'], desc: '', wikiTitle: 'Music_Man_(company)' },
@@ -3846,7 +3846,7 @@ export const DB: Artist[] = [
     since: '2006年〜',
     origin: 'アメリカ（ペンシルバニア州）',
     members: 'Taylor Swift (Vo/Gt)',
-    desc: '現代最大のポップスター。カントリーからポップ、インディーフォークまで自在にジャンルを横断し、史上最高の売上を誇るアーティストの一人。',
+    desc: `ペンシルベニア州出身のシンガーソングライター。「Love Story」「You Belong with Me」「Shake It Off」「Anti-Hero」など10作のスタジオアルバムで全て音楽的に異なるアプローチを見せながら世界的メガスターへと成長した。カントリーからポップ・エレクトロ・フォークロア風まで変幻自在なサウンドが特徴。「The Eras Tour」は史上最高興行収入ツアーの一つとなり、2023〜24年の世界経済にも影響を与えた。`,
     gear: [
       { id: 'taylor614-ts', brand: 'Taylor', name: '614ce', cat: 'ギター', catIcon: '🎸', user: 'Taylor Swift (Gt)', price: '¥200,000〜¥320,000', kw: 'Taylor 614ce Taylor Swift アコースティック ギター カントリーポップ', yt: ['Taylor 614ce Taylor Swift アコースティック レビュー', 'Taylor 614ce カントリーポップ アコギ サウンドデモ'], similar: ['Taylor 914ce', 'Martin D-28', 'Gibson J-45'], desc: '', wikiTitle: 'Taylor_Guitars' },
       { id: 'taylor914-ts', brand: 'Taylor', name: '914ce', cat: 'ギター', catIcon: '🎸', user: 'Taylor Swift (Gt)', price: '¥350,000〜¥500,000', kw: 'Taylor 914ce Taylor Swift アコースティック ギター フラッグシップ', yt: ['Taylor 914ce Taylor Swift フラッグシップ アコギ レビュー', 'Taylor 914ce ポップ フォーク アコースティック サウンドデモ'], similar: ['Taylor 614ce', 'Martin D-28', 'Gibson J-200'], desc: '', wikiTitle: 'Taylor_Guitars' },
@@ -3870,7 +3870,7 @@ export const DB: Artist[] = [
     since: '2003年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Kendrick Lamar (Vo / Produce)',
-    desc: '現代最高のラッパーの一人。「DAMN.」でピューリッツァー賞を受賞した唯一のラッパー。TDE所属。「To Pimp a Butterfly」はヒップホップ史に残る金字塔。',
+    desc: `カリフォルニア州コンプトン出身のラッパー/シンガーソングライター。「HUMBLE.」「Money Trees」「Alright」「Not Like Us」など社会的メッセージと巧みなリリシズムを融合したヒップホップで、グラミー賞17部門受賞・ピューリッツァー賞受賞（ポピュラー音楽アーティスト初）という前人未到の評価を受ける。2025年スーパーボウルのハーフタイムショーも担当した現代最高のMCと評される存在。`,
     gear: [
       { id: 'protools-kdot', brand: 'Avid', name: 'Pro Tools', cat: 'DAW', catIcon: '💻', user: 'Kendrick Lamar (Studio)', price: '¥30,000〜¥80,000/年', kw: 'Pro Tools Kendrick Lamar レコーディング スタジオ DAW ヒップホップ', yt: ['Pro Tools Kendrick Lamar スタジオ レコーディング', 'Pro Tools ヒップホップ ラップ スタジオ 録音 使い方'], similar: ['Ableton Live', 'Logic Pro', 'FL Studio'], desc: '', wikiTitle: 'Pro_Tools' },
       { id: 'ableton-kdot', brand: 'Ableton', name: 'Live', cat: 'DAW', catIcon: '💻', user: 'Kendrick Lamar (Produce)', price: '¥60,000〜¥100,000（Suite）', kw: 'Ableton Live Kendrick Lamar ビート制作 DAW ヒップホップ', yt: ['Ableton Live Kendrick Lamar ビート制作 ヒップホップ', 'Ableton Live ヒップホップ ビート制作 使い方'], similar: ['Pro Tools', 'Logic Pro', 'FL Studio'], desc: '', wikiTitle: 'Ableton_Live' },
@@ -3894,7 +3894,7 @@ export const DB: Artist[] = [
     since: '1996年〜',
     origin: 'アメリカ（イリノイ州）',
     members: 'Kanye West (Vo / Produce)',
-    desc: 'ヒップホップを芸術へ昇華させた革命的プロデューサー兼ラッパー。「College Dropout」「My Beautiful Dark Twisted Fantasy」など時代を定義するアルバムを連発。',
+    desc: `イリノイ州シカゴ出身のラッパー/プロデューサー。「The College Dropout」「Late Registration」「808s & Heartbreak」「My Beautiful Dark Twisted Fantasy」「Yeezus」など毎作品でヒップホップの文法を塗り替えてきた。サンプリングを芸術の域に高めたビートメイキングと、自己表現への強烈な探求心が音楽史に残る名盤を生み続けてきた。ローランド808やMPCなどドラムマシンを駆使したプロダクションスタイルはヒップホップビートの進化に多大な影響を与えた。`,
     gear: [
       { id: 'mpc2000-kanye', brand: 'Akai', name: 'MPC2000XL', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: 'Kanye West (Produce)', price: '¥80,000〜¥200,000（中古）', kw: 'Akai MPC2000XL Kanye West サンプラー ヒップホップ ビート制作', yt: ['Akai MPC2000XL Kanye West ビート制作 サンプラー レビュー', 'MPC2000XL ヒップホップ サンプリング ビート 使い方'], similar: ['Akai MPC3000', 'Native Instruments Maschine', 'Akai MPC Live II'], desc: '', wikiTitle: 'Akai_MPC' },
       { id: 'tr808-kanye', brand: 'Roland', name: 'TR-808', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: 'Kanye West (Produce)', price: '¥200,000〜¥400,000（中古）', kw: 'Roland TR-808 Kanye West ドラムマシン 808s Heartbreak ヒップホップ', yt: ['Roland TR-808 Kanye West 808s Heartbreak ドラムマシン レビュー', 'TR-808 ヒップホップ トラップ キック サウンドデモ'], similar: ['Roland TR-909', 'Linn LM-1', 'Roland TR-606'], desc: '', wikiTitle: 'Roland_TR-808' },
@@ -3918,7 +3918,7 @@ export const DB: Artist[] = [
     since: '2004年〜',
     origin: 'アメリカ（ハワイ州）',
     members: 'Bruno Mars (Vo/Gt/Dr)',
-    desc: 'ファンク・R&B・ポップを自在に融合するマルチプレイヤー。「Uptown Funk」「24K Magic」などで知られる現代ポップの頂点に立つアーティスト。',
+    desc: `ハワイ州ホノルル出身のシンガーソングライター。「Just the Way You Are」「Grenade」「Treasure」「Uptown Funk」など多彩なジャンルを横断した多数のヒット曲を持ちグラミー賞15部門受賞。ファンク・R&B・ポップ・ロックンロールを融合した全方位的な音楽性とパフォーマンス能力の高さで「現代最高のエンターテイナーの一人」と評される。Fender Stratocasterや1960年代ヴィンテージのホロウボディギターを使用する。`,
     gear: [
       { id: 'telecaster-bruno', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Bruno Mars (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Bruno Mars ギター ファンク ポップ', yt: ['Fender Telecaster Bruno Mars ファンク ポップ レビュー', 'Telecaster ブルーノマーズ ファンク R&B サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'Fender Custom Shop Telecaster'], desc: '', wikiTitle: 'Fender_Telecaster' },
       { id: 'es335-bruno', brand: 'Gibson', name: 'ES-335', cat: 'ギター', catIcon: '🎸', user: 'Bruno Mars (Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson ES-335 Bruno Mars ギター ファンク R&B', yt: ['Gibson ES-335 Bruno Mars ファンク R&B レビュー', 'ES-335 ブルーノマーズ ポップ ファンク サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-339', 'Fender Stratocaster'], desc: '', wikiTitle: 'Gibson_ES-335' },
@@ -3942,7 +3942,7 @@ export const DB: Artist[] = [
     since: '2003年〜',
     origin: 'アメリカ（テキサス州）',
     members: 'Beyoncé Knowles-Carter (Vo)',
-    desc: "ソロアーティスト・元Destiny's Child。R&B、ポップ、ダンス、カントリーまで幅広いスタイルで世界的スーパースターとして君臨。",
+    desc: `テキサス州ヒューストン出身のシンガー。Destiny's Childのメンバーとしてデビュー後「Crazy in Love」「Halo」「Single Ladies」「Lemonade」「Renaissance」など時代を象徴する楽曲を生み出し、グラミー賞最多受賞アーティスト（32部門）の記録を持つ。R&B・ポップ・ダンス・カントリーまで音楽的に拡張し続けるアーティストとして唯一無二の存在感を放つ。コンサートのクオリティとスペクタクルの高さでも伝説的。`,
     gear: [
       { id: 'sm58-bey', brand: 'Shure', name: 'SM58', cat: 'マイク', catIcon: '🎤', user: 'Beyoncé (ライブ)', price: '¥10,000〜¥15,000', kw: 'Shure SM58 Beyoncé ライブ ボーカル マイク', yt: ['Shure SM58 ビヨンセ ライブ', 'SM58 ダイナミックマイク レビュー デモ'], similar: ['Shure SM7B', 'Sennheiser e935', 'AKG D5'], desc: '', wikiTitle: 'Shure_SM58' },
       { id: 'u87-bey', brand: 'Neumann', name: 'U87', cat: 'マイク', catIcon: '🎤', user: 'Beyoncé (レコーディング)', price: '¥350,000〜¥400,000', kw: 'Neumann U87 Beyoncé レコーディング スタジオ コンデンサーマイク', yt: ['Neumann U87 ビヨンセ スタジオ', 'U87 コンデンサーマイク レビュー'], similar: ['AKG C414', 'Sony C-800G', 'Telefunken U47'], desc: '', wikiTitle: 'Neumann_U87' },
@@ -3963,7 +3963,7 @@ export const DB: Artist[] = [
     since: '1992年〜',
     origin: 'アメリカ（バージニア州）',
     members: 'Pharrell Williams (Vo/Prod)\nChad Hugo (Prod) ※The Neptunes',
-    desc: 'N.E.R.D.のフロントマン、The Neptunesのプロデューサーとして数々のヒット曲を制作。独自のグルーヴ感を持つトラックメーカー。',
+    desc: `バージニア州バージニアビーチ出身のプロデューサー/シンガー。The NeptunesとしてN*E*R*Dのロックバンド活動でも知られ、「Happy」「Get Lucky（Daft Punk）」「Blurred Lines」など多数の大ヒットを生み出した。Moogシンセやビンテージドラムマシンを駆使したプロダクションスタイルはポップミュージックの教科書となっている。ルイ・ヴィトンのクリエイティブディレクターとしてもファッション界で活躍する。`,
     gear: [
       { id: 'mpc3000-pharrell', brand: 'Akai', name: 'MPC3000', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: 'Pharrell (The Neptunes)', price: '¥150,000〜¥250,000（中古）', kw: 'Akai MPC3000 Pharrell Williams The Neptunes ビートメイキング サンプラー', yt: ['Akai MPC3000 The Neptunes Pharrell ビートメイキング', 'MPC3000 サンプラー サウンドデモ レビュー'], similar: ['Akai MPC2000XL', 'Roland SP-808', 'E-mu SP-1200'], desc: '', wikiTitle: 'Akai_MPC3000' },
       { id: 'tr808-pharrell', brand: 'Roland', name: 'TR-808', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: 'Pharrell (The Neptunes)', price: '¥400,000〜¥800,000（中古）', kw: 'Roland TR-808 Pharrell The Neptunes ドラムマシン ヒップホップ', yt: ['Roland TR-808 The Neptunes Pharrell ビート制作', 'TR-808 ドラムマシン サウンドデモ'], similar: ['Roland TR-909', 'Linn LM-1', 'Oberheim DMX'], desc: '', wikiTitle: 'Roland_TR-808' },
@@ -3984,7 +3984,7 @@ export const DB: Artist[] = [
     since: '2007年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Tyler Gregory Okonma (Vo/Prod)',
-    desc: 'Odd Future主宰。ラップ・プロデュース・ファッション・映像まで手がける全方位クリエイター。IGOR・CALL ME IF YOU GET LOSTで批評的成功を収める。',
+    desc: `カリフォルニア州ロサンゼルス出身のラッパー/プロデューサー。Odd Future出身で「IGOR」「CALL ME IF YOU GET LOST」「Chromakopia」などアルバムごとに大胆に音楽性を変えながらR&B・ジャズ・ヒップホップを融合した独自のアートポップスタイルを確立。グラミー賞ラップアルバム・オブ・ザ・イヤーを受賞。ファッション（Golf Wang）・映像・音楽をトータルにプロデュースするマルチクリエイターとしても活躍する。`,
     gear: [
       { id: 'logic-tyler', brand: 'Apple', name: 'Logic Pro X', cat: 'DAW', catIcon: '💻', user: 'Tyler (プロデュース)', price: '¥36,000（買い切り）', kw: 'Logic Pro Tyler The Creator ビートメイキング プロデュース DAW IGOR', yt: ['Logic Pro Tyler The Creator ビート制作 プロデュース', 'Logic Pro X ヒップホップ ビートメイキング 使い方'], similar: ['Ableton Live', 'FL Studio', 'Pro Tools'], desc: '', wikiTitle: 'Logic_Pro' },
       { id: 'prophet6-tyler', brand: 'Dave Smith Instruments', name: 'Prophet-6', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: 'Tyler', price: '¥350,000〜¥450,000', kw: 'Dave Smith Prophet-6 Tyler The Creator シンセ アナログ IGOR', yt: ['Prophet-6 Tyler The Creator IGOR シンせ', 'Dave Smith Prophet-6 アナログシンセ レビュー デモ'], similar: ['Sequential Prophet-5', 'Oberheim OB-6', 'Moog Matriarch'], desc: '', wikiTitle: 'Prophet-6' },
@@ -4005,7 +4005,7 @@ export const DB: Artist[] = [
     since: '2011年〜',
     origin: 'アメリカ（ルイジアナ州）',
     members: 'Frank Ocean (Vo/Prod)',
-    desc: 'Odd Future出身のR&Bアーティスト。BlondedとChannel ORANGEで批評家絶賛。独自の音楽哲学を持つ孤高のクリエイター。',
+    desc: `ルイジアナ州ニューオーリンズ出身のシンガー/プロデューサー。Odd Future出身で「Novacane」「Thinking Bout You」「Pink + White」「Nights」など内省的でシネマティックなR&B/ネオソウルで「現代R&Bの最高峰」と絶賛される。「Channel Orange」「Blonde」はいずれも批評家から満点評価を受けた名盤。限定的なリリースと希少なライブ出演が伝説性を高める。`,
     gear: [
       { id: 'logic-frank', brand: 'Apple', name: 'Logic Pro X', cat: 'DAW', catIcon: '💻', user: 'Frank Ocean', price: '¥36,000（買い切り）', kw: 'Logic Pro Frank Ocean DAW レコーディング Blonde Channel Orange', yt: ['Logic Pro Frank Ocean 制作環境 DAW', 'Logic Pro X R&B インディー ビートメイキング'], similar: ['Pro Tools', 'Ableton Live', 'GarageBand'], desc: '', wikiTitle: 'Logic_Pro' },
       { id: 'prophet5-frank', brand: 'Sequential', name: 'Prophet-5', cat: 'シンセ/プラグイン', catIcon: '🎛️', user: 'Frank Ocean', price: '¥550,000〜¥700,000', kw: 'Sequential Prophet-5 Frank Ocean アナログシンセ ポリフォニック R&B', yt: ['Prophet-5 Frank Ocean シンセ R&B', 'Sequential Prophet-5 アナログシンセ サウンドデモ'], similar: ['Dave Smith Prophet-6', 'Oberheim OB-6', 'Korg Prologue'], desc: '', wikiTitle: 'Prophet-5' },
@@ -4026,7 +4026,7 @@ export const DB: Artist[] = [
     since: '2007年〜',
     origin: 'アメリカ（ウィスコンシン州）',
     members: 'Justin Vernon (Vo/Gt)\nSean Carey (Dr/Vo)\nMike Noyce (Gt)',
-    desc: 'Justin Vernonを中心とするバンド。For Emmaで世界的注目、22 A Million・i,iで前衛的サウンドへ進化。ウィスコンシンの小屋での録音から生まれた神話的デビュー。',
+    desc: `ウィスコンシン州出身のジャスティン・バーノンを中心としたフォーク/インディーポッププロジェクト。「Skinny Love」「Holocene」など独自の文学的な歌詞とフォルセットボイスが融合した繊細な音楽で世界的評価を受ける。アコースティックギターや複数の変則チューニングを駆使した独自のギタープレイで知られ、フォークとエレクトロニックの境界を探求し続ける。`,
     gear: [
       { id: 'tele-boniver', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Justin Vernon', price: '¥100,000〜¥200,000', kw: 'Fender Telecaster Bon Iver Justin Vernon テレキャスター フォーク インディー', yt: ['Fender Telecaster Bon Iver Justin Vernon', 'Telecaster フェンダー テレキャスター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson J-45', 'Martin D-28'], desc: '', wikiTitle: 'Fender_Telecaster' },
       { id: 'j45-boniver', brand: 'Gibson', name: 'J-45', cat: 'ギター', catIcon: '🎸', user: 'Justin Vernon', price: '¥200,000〜¥350,000', kw: 'Gibson J-45 Bon Iver Justin Vernon アコースティックギター フォーク', yt: ['Gibson J-45 Bon Iver Justin Vernon アコギ For Emma', 'Gibson J-45 アコースティックギター サウンドデモ レビュー'], similar: ['Martin D-28', 'Taylor 814ce', 'Guild D-55'], desc: '', wikiTitle: 'Gibson_J-45' },
@@ -4047,7 +4047,7 @@ export const DB: Artist[] = [
     since: '2006年〜',
     origin: 'アメリカ（ワシントン州）',
     members: 'Robin Pecknold (Vo/Gt)\nSkye Skjelset (Gt)\nCasey Wescott (Key)\nChristian Wargo (Ba)\nJ. Tillman (Dr)',
-    desc: 'Robin Pecknoldを中心とするバンド。ハーモニー豊かなフォークサウンドで知られ、セルフタイトルアルバムが批評家絶賛。Pecknoldの緻密なアレンジが特徴。',
+    desc: `ワシントン州シアトル出身のインディーフォークバンド。ロビン・ペックノールドを中心に、緻密なハーモニーとアコースティックサウンドで「現代フォークの頂点」と評される。「White Winter Hymnal」「Helplessness Blues」「Shore」など清澄で壮大な楽曲を生み出し続ける。ペックノールドのMartin・Gibsonアコースティックを使ったソングライティングと、多声部コーラスアレンジの精緻さが特徴。`,
     gear: [
       { id: 'j45-ff', brand: 'Gibson', name: 'J-45', cat: 'ギター', catIcon: '🎸', user: 'Robin Pecknold', price: '¥200,000〜¥350,000', kw: 'Gibson J-45 Fleet Foxes Robin Pecknold アコースティックギター フォーク', yt: ['Gibson J-45 Fleet Foxes Robin Pecknold アコギ', 'Gibson J-45 アコースティックギター サウンドデモ'], similar: ['Martin D-28', 'Taylor 814ce', 'Guild D-55'], desc: '', wikiTitle: 'Gibson_J-45' },
       { id: 'd28-ff', brand: 'Martin', name: 'D-28', cat: 'ギター', catIcon: '🎸', user: 'Fleet Foxes', price: '¥250,000〜¥400,000', kw: 'Martin D-28 Fleet Foxes アコースティックギター フォーク ドレッドノート', yt: ['Martin D-28 Fleet Foxes アコギ フォーク', 'Martin D-28 アコースティックギター サウンドデモ レビュー'], similar: ['Gibson J-45', 'Taylor 814ce', 'Collings D2H'], desc: '', wikiTitle: 'Martin_D-28' },
@@ -4068,7 +4068,7 @@ export const DB: Artist[] = [
     since: '2006年〜',
     origin: 'アメリカ（ニューヨーク州）',
     members: 'Ezra Koenig (Vo/Gt)\nChris Baio (Ba)\nChristopher Tomson (Dr)',
-    desc: 'Ezra Koenigを中心とするバンド。アフロポップ・クラシック・インディーロックを融合した知的なサウンドで人気。Father of the Brideで大きく進化。',
+    desc: `ニューヨーク出身のインディーポップバンド。エズラ・クーニグを中心に2006年に結成。「A-Punk」「Oxford Comma」「Harmony Hall」など、ワールドミュージック・クラシック・ポップを融合した洗練された楽曲で批評的に高い評価を受け続ける。アフリカンリズムを取り入れたアレンジが特徴的で、現代インディーシーンの最重要バンドの一つとして評価される。`,
     gear: [
       { id: 'jazzmaster-vw', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Ezra Koenig / Rostam Batmanglij', price: '¥100,000〜¥200,000', kw: 'Fender Jazzmaster Vampire Weekend Ezra Koenig ジャズマスター インディーロック', yt: ['Fender Jazzmaster Vampire Weekend Ezra Koenig', 'Jazzmaster フェンダー ジャズマスター サウンドデモ'], similar: ['Fender Jaguar', 'Fender Mustang', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'tele-vw', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Ezra Koenig', price: '¥100,000〜¥200,000', kw: 'Fender Telecaster Vampire Weekend Ezra Koenig テレキャスター インディーポップ', yt: ['Fender Telecaster Vampire Weekend Ezra Koenig テレキャスター', 'Telecaster フェンダー テレキャスター サウンドデモ インディー'], similar: ['Fender Stratocaster', 'Gibson Les Paul Jr', 'Rickenbacker 360'], desc: '', wikiTitle: 'Fender_Telecaster' },
@@ -4089,7 +4089,7 @@ export const DB: Artist[] = [
     since: '1998年〜',
     origin: 'アメリカ（ニューヨーク州）',
     members: 'Julian Casablancas (Vo)\nNick Valensi (Gt)\nAlbert Hammond Jr (Gt)\nNikolai Fraiture (Ba)\nFabrizio Moretti (Dr)',
-    desc: 'ニューヨーク出身のインディーロックバンド。Is This Itで2000年代のガレージロックリバイバルを牽引。ローファイかつカッコいいサウンドで世界的影響力を持つ。',
+    desc: `ニューヨーク出身の5人組バンド。ジュリアン・カサブランカス（Vo）、ニック・ヴァレンシ（Gt）、アルバート・ハモンドJr.（Gt）らの編成。「Last Nite」「Reptilia」「Someday」など、ガレージロック・ポストパンク・リバイバルを牽引した2001年デビューアルバム「Is This It」は現代ロック史の名盤として名高い。アルバートのFender Stratocasterカッティングとニックのリードギターの絡みはバンドの音楽的核。`,
     gear: [
       { id: 'lesjr-strokes', brand: 'Gibson', name: 'Les Paul Jr', cat: 'ギター', catIcon: '🎸', user: 'Nick Valensi / Albert Hammond Jr', price: '¥150,000〜¥300,000', kw: 'Gibson Les Paul Jr The Strokes Nick Valensi Albert Hammond Jr ガレージロック', yt: ['Gibson Les Paul Jr The Strokes Nick Valensi ガレージロック', 'Gibson Les Paul Jr レスポールジュニア サウンドデモ'], similar: ['Gibson SG Special', 'Gibson ES-335', 'Fender Jazzmaster'], desc: '', wikiTitle: 'Gibson_Les_Paul_Junior' },
       { id: 'jcm800-strokes', brand: 'Marshall', name: 'JCM 800', cat: 'ギターアンプ', catIcon: '🔊', user: 'Nick Valensi', price: '¥250,000〜¥500,000（中古）', kw: 'Marshall JCM 800 The Strokes ギターアンプ ブリティッシュ ロック', yt: ['Marshall JCM 800 The Strokes ガレージロック アンプ', 'Marshall JCM 800 アンプ サウンドデモ レビュー'], similar: ['Marshall JMP', 'Fender Twin Reverb', 'Vox AC30'], desc: '', wikiTitle: 'Marshall_JCM800' },
@@ -4110,7 +4110,7 @@ export const DB: Artist[] = [
     since: '1986年〜',
     origin: 'アメリカ（マサチューセッツ州）',
     members: 'Black Francis (Vo/Gt)\nJoey Santiago (Gt)\nKim Deal (Ba/Vo)\nDavid Lovering (Dr)',
-    desc: 'ボストン出身のオルタナロックバンド。静と動の対比「ソフトラウド」を確立し、NirvanaなどへのNirvana等への多大な影響を持つ。Surfer RosaとDoolittle は名盤。',
+    desc: `マサチューセッツ州ボストン出身の4人組バンド。ブラック・フランシス（Vo/Gt）、ジョーイ・サンティアゴ（Gt）、キム・ディール（Ba/Vo）、デイヴィッド・ラヴァリング（Dr）の編成。「Where Is My Mind?」「Here Comes Your Man」「Debaser」など、静から動への激烈な展開と不条理な歌詞が組み合わさったオルタナロックサウンドで1990年代グランジに決定的な影響を与えた。`,
     gear: [
       { id: 'strat-pixies', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'Black Francis', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Pixies Black Francis ストラトキャスター オルタナ グランジ', yt: ['Fender Stratocaster Pixies Black Francis オルタナ', 'Stratocaster フェンダー ストラト サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul', 'PRS CE24'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'stingray-pixies', brand: 'Music Man', name: 'StingRay Bass', cat: 'ベース', catIcon: '🎸', user: 'Kim Deal', price: '¥150,000〜¥250,000', kw: 'Music Man StingRay Bass Pixies Kim Deal ベース スティングレイ オルタナ', yt: ['Music Man StingRay Pixies Kim Deal ベース', 'Music Man StingRay Bass ベース サウンドデモ レビュー'], similar: ['Fender Precision Bass', 'Fender Jazz Bass', 'Gibson EB-3'], desc: '', wikiTitle: 'Music_Man_StingRay' },
@@ -4131,7 +4131,7 @@ export const DB: Artist[] = [
     since: '1981年〜2011年',
     origin: 'アメリカ（ニューヨーク州）',
     members: 'Thurston Moore (Gt/Vo)\nKim Gordon (Ba/Vo)\nLee Ranaldo (Gt/Vo)\nSteve Shelley (Dr)',
-    desc: 'Thurston Moore・Kim Gordon・Lee Ranaldoによるニューヨーク出身のバンド。独自のオルタナチューニングと実験的なノイズサウンドで80〜90年代のアンダーグラウンドに多大な影響を与えた。',
+    desc: `ニューヨーク出身の4人組バンド。サーストン・ムーア（Gt/Vo）、キム・ゴードン（Ba/Vo）、リー・ラナルド（Gt）、スティーヴ・シェリー（Dr）の編成。「Teenage Riot」「Kool Thing」「Dirty Boots」など変則チューニングを多用した実験的なノイズロックで1980〜90年代のオルタナシーンを定義した。ムーアのボトルネック奏法や変則チューニングを駆使したギタープレイは後のシューゲイザー・インディーロックに広く影響を与えた。`,
     gear: [
       { id: 'jazzmaster-sy', brand: 'Fender', name: 'Jazzmaster（カスタムチューニング）', cat: 'ギター', catIcon: '🎸', user: 'Thurston Moore / Lee Ranaldo', price: '¥100,000〜¥200,000', kw: 'Fender Jazzmaster Sonic Youth Thurston Moore Lee Ranaldo 変則チューニング ノイズロック', yt: ['Fender Jazzmaster Sonic Youth Thurston Moore ノイズロック 変則チューニング', 'Jazzmaster フェンダー ジャズマスター サウンドデモ オルタナ'], similar: ['Fender Jaguar', 'Fender Mustang', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'jaguar-sy', brand: 'Fender', name: 'Jaguar（変則チューニング）', cat: 'ギター', catIcon: '🎸', user: 'Thurston Moore / Lee Ranaldo', price: '¥100,000〜¥200,000', kw: 'Fender Jaguar Sonic Youth Thurston Moore Lee Ranaldo 変則チューニング ノイズ', yt: ['Fender Jaguar Sonic Youth ノイズロック 変則チューニング', 'Jaguar フェンダー ジャガー サウンドデモ オルタナ'], similar: ['Fender Jazzmaster', 'Fender Mustang', 'Rickenbacker 360'], desc: '', wikiTitle: 'Fender_Jaguar' },
@@ -4152,7 +4152,7 @@ export const DB: Artist[] = [
     since: '2011年〜',
     origin: 'アメリカ（ミシガン州）',
     members: 'Jack Stratton (Dr/Prod)\nTheo Katzman (Vo/Gt/Dr)\nJoe Dart (Ba)\nWoody Goss (Key)',
-    desc: 'ミシガン大学出身のファンクバンド。Joe DartのグルーヴィーなベースラインとJack Strattonのプロデュースセンスで、YouTubeから火がついた現代最高峰のファンクバンド。',
+    desc: `ミシガン州アナーバー出身のファンクバンド。ジャック・ストラットン（Dr）を中心に「Back Pocket」「Dean Town」「1612」など、シンプルで洗練されたファンクサウンドを追求する。ジョー・ダートのFender Jazz Bassによるミニマルなベースライン「Dean Town」は現代ファンクベース奏者の必修曲となっており、批評家・ミュージシャン双方から絶大な支持を受ける。Spotify Silent Albumという革新的なプロモーション手法でも話題になった。`,
     gear: [
       { id: 'jazzbass-vulf', brand: 'Fender', name: 'Jazz Bass（1966年製）', cat: 'ベース', catIcon: '🎸', user: 'Joe Dart', price: '¥1,000,000〜¥3,000,000（ヴィンテージ）', kw: 'Fender Jazz Bass 1966 Joe Dart Vulfpeck ヴィンテージ ベース ファンク', yt: ['Fender Jazz Bass Joe Dart Vulfpeck ファンク ベース', 'Fender Jazz Bass 1966 ヴィンテージ ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Music Man StingRay', 'Sadowsky NYC'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
       { id: 'dartbass-vulf', brand: 'Ernie Ball Music Man', name: 'Joe Dart Signature Bass', cat: 'ベース', catIcon: '🎸', user: 'Joe Dart', price: '¥300,000〜¥400,000', kw: 'Music Man Joe Dart Signature Bass Vulfpeck ファンク シグネチャー', yt: ['Music Man Joe Dart Signature Bass Vulfpeck', 'Joe Dart Signature Bass ベース サウンドデモ レビュー'], similar: ['Fender Jazz Bass', 'Fender Precision Bass', 'Sadowsky NYC'], desc: '', wikiTitle: 'Music_Man_(company)' },
@@ -4173,7 +4173,7 @@ export const DB: Artist[] = [
     since: '1970年〜',
     origin: 'アメリカ（マサチューセッツ州）',
     members: 'Steven Tyler (Vo)\nJoe Perry (Gt)\nBrad Whitford (Gt)\nTom Hamilton (Ba)\nJoey Kramer (Dr)',
-    desc: 'ボストン出身のハードロックバンド。"Walk This Way"で世界的ブレイク後、スランプを経て80〜90年代に第二の黄金期を迎えた「アメリカ最大のロックバンド」。',
+    desc: `マサチューセッツ州ボストン出身のハードロックバンド。スティーヴン・タイラー（Vo）、ジョー・ペリー（Gt）らを中心に1970年に結成。「Dream On」「Sweet Emotion」「Walk This Way」「I Don't Want to Miss a Thing」など多数の名曲を持つ「アメリカン・ロックンロールの帝王」。ペリーのメインギターはGibson Les PaulとFender Stratocasterで、タイラーのパワフルなボーカルとの化学反応が半世紀以上にわたりファンを魅了してきた。`,
     gear: [
       { id: 'lespaul-aerosmith', brand: 'Gibson', name: 'Les Paul Standard', cat: 'ギター', catIcon: '🎸', user: 'Joe Perry', price: '¥350,000〜¥500,000', kw: 'Gibson Les Paul Standard Joe Perry Aerosmith ハードロック レスポール', yt: ['Gibson Les Paul Joe Perry Aerosmith ハードロック ギター', 'Gibson Les Paul Standard レスポール サウンドデモ レビュー'], similar: ['Gibson Les Paul Custom', 'PRS Custom 24', 'Fender Stratocaster'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
       { id: 'jmp-aerosmith', brand: 'Marshall', name: 'Super Lead 1959 (JMP)', cat: 'ギターアンプ', catIcon: '🔊', user: 'Joe Perry / Brad Whitford', price: '¥400,000〜¥800,000（ヴィンテージ）', kw: 'Marshall Super Lead 1959 JMP Joe Perry Aerosmith ハードロック プレキシ', yt: ['Marshall Super Lead 1959 Joe Perry Aerosmith', 'Marshall JMP 1959 プレキシ ヴィンテージ サウンドデモ'], similar: ['Marshall JCM 800', 'Hiwatt DR103', 'Orange Rockerverb'], desc: '', wikiTitle: 'Marshall_JMP' },
@@ -4194,7 +4194,7 @@ export const DB: Artist[] = [
     since: '1972年〜2020年',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Eddie Van Halen (Gt)\nDavid Lee Roth (Vo)\nMichael Anthony (Ba)\nAlex Van Halen (Dr)',
-    desc: 'エディ・ヴァン・ヘイレンのタッピング奏法とブラウンサウンドで80年代を席巻。ギタリスト必聴の「Eruption」を生み出したアメリカン・ハードロックの頂点。',
+    desc: `カリフォルニア州パサデナ出身のハードロックバンド。エドワード・ヴァン・ヘイレン（Gt）を中心に1972年に結成。「Jump」「Hot for Teacher」「Eruption」「Panama」など多数のヒット曲を持ち、エディのタッピング奏法は1978年のデビューと同時にギター界に革命を起こした。エディのメインギターは自作ストライプギター（Frankenstrat）とPeavy EVH Signature。2020年のエディの逝去後も音楽的遺産は受け継がれている。`,
     gear: [
       { id: 'frankenstein-vh', brand: 'EVH', name: '"Frankenstein" Custom Guitar', cat: 'ギター', catIcon: '🎸', user: 'Eddie Van Halen', price: '（レプリカ：¥200,000〜¥500,000）', kw: 'EVH Frankenstein Eddie Van Halen カスタムギター タッピング ブラウンサウンド', yt: ['EVH Frankenstein Eddie Van Halen Frankenstrat カスタムギター', 'Frankenstein Guitar Eddie Van Halen ギター タッピング Eruption'], similar: ['EVH Wolfgang', 'Kramer Baretta', 'Charvel San Dimas'], desc: '', wikiTitle: 'Frankenstrat' },
       { id: 'marshallmod-vh', brand: 'Marshall', name: 'Super Lead 1959（改造 "ブラウンサウンド"）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Eddie Van Halen', price: '¥400,000〜¥800,000（ヴィンテージ）', kw: 'Marshall Super Lead 1959 Eddie Van Halen ブラウンサウンド 改造 ヴィンテージ', yt: ['Marshall Super Lead Eddie Van Halen ブラウンサウンド 改造', 'Marshall 1959 ヴィンテージ ハードロック サウンドデモ'], similar: ['Peavey 5150', 'Mesa/Boogie Mark I', 'Budda Superdrive'], desc: '', wikiTitle: 'Brown_sound' },
@@ -4215,7 +4215,7 @@ export const DB: Artist[] = [
     since: '1969年〜',
     origin: 'アメリカ（テキサス州）',
     members: 'Billy Gibbons (Vo/Gt)\nDusty Hill (Ba/Vo)\nFrank Beard (Dr)',
-    desc: 'テキサス出身の3ピースブルースロックバンド。「Pearly Gates」と呼ばれる伝説のLes Paulと独自のブルース感覚で50年以上活躍。80年代のシンセポップ導入も特徴。',
+    desc: `テキサス州ヒューストン出身の3人組ブルースロックバンド。ビリー・ギボンズ（Gt/Vo）、ダスティ・ヒル（Ba/Vo）、フランク・ビアード（Dr）の編成で1969年に結成。「Sharp Dressed Man」「Gimme All Your Lovin'」「La Grange」など多数のヒット曲を持ちテキサスブルースとロックを融合した。ギボンズのRed/WhiteのFender StratocasterとMarshallアンプの組み合わせは有名で、ブルースロックギターの最高峰として評価される。`,
     gear: [
       { id: 'pearlygates-zz', brand: 'Gibson', name: 'Les Paul Standard 1959 "Pearly Gates"', cat: 'ギター', catIcon: '🎸', user: 'Billy Gibbons', price: '¥30,000,000〜（ヴィンテージ・伝説品）', kw: 'Gibson Les Paul 1959 Pearly Gates Billy Gibbons ZZ Top ヴィンテージ ブルース', yt: ['Gibson Les Paul 1959 Pearly Gates Billy Gibbons ZZ Top', 'Gibson Les Paul 1959 ヴィンテージ ブルースロック サウンドデモ'], similar: ['Gibson Les Paul Standard', 'Gibson Les Paul Custom', 'PRS McCarty'], desc: '', wikiTitle: 'Pearly_Gates_(guitar)' },
       { id: 'muddywaters-zz', brand: 'Fender', name: 'Telecaster "Muddy Waters"', cat: 'ギター', catIcon: '🎸', user: 'Billy Gibbons', price: '¥150,000〜¥300,000', kw: 'Fender Telecaster Muddy Waters Billy Gibbons ZZ Top テレキャスター ブルース', yt: ['Fender Telecaster Muddy Waters Billy Gibbons ZZ Top ブルース', 'Telecaster Muddy Waters テレキャスター ブルース サウンドデモ'], similar: ['Gibson Les Paul', 'Fender Stratocaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
@@ -4236,7 +4236,7 @@ export const DB: Artist[] = [
     since: '1995年〜',
     origin: 'アメリカ（アイオワ州）',
     members: 'Corey Taylor (Vo)\nJim Root (Gt)\nMick Thomson (Gt)\nAlessandro Venturella (Ba)\nJay Weinberg (Dr)\nShawn Crahan (Perc)\nCraig Jones (Samples)\nSid Wilson (DJ)',
-    desc: '9人組のマスクを被ったヘヴィメタルバンド。激烈なサウンドとカオティックなライブパフォーマンスで知られ、Slipknotや「All Hope Is Gone」などで世界的成功を収めた。',
+    desc: `アイオワ州デモインズ出身の9人組ヘヴィメタルバンド。コリィ・テイラー（Vo）、ミック・トムスン（Gt）、ジム・ルート（Gt）らを中心に1995年に結成。「Wait and Bleed」「Duality」「Psychosocial」など多数のヘヴィヒット曲を持ち、マスク着用と9人編成による圧倒的なライブパフォーマンスで「最恐のライブバンド」と呼ばれる。ルートとトムスンはIbanez・ESPの7弦ギターをメインとし、ヘヴィなダウンチューニングとポリリズムが核。`,
     gear: [
       { id: 'ibanez-slipknot', brand: 'Ibanez', name: 'M8M（Jim Root Signature）', cat: 'ギター', catIcon: '🎸', user: 'Jim Root', price: '¥200,000〜¥350,000', kw: 'Ibanez M8M Jim Root Signature Slipknot 8弦ギター メタル ダウンチューニング', yt: ['Ibanez M8M Jim Root Slipknot 8弦ギター メタル', 'Ibanez M8M 8弦ギター シグネチャー サウンドデモ レビュー'], similar: ['Schecter C-8', 'ESP LTD', 'Jackson Soloist 8'], desc: '', wikiTitle: 'Ibanez' },
       { id: 'fender-root', brand: 'Fender', name: 'Jim Root Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Jim Root', price: '¥130,000〜¥200,000', kw: 'Fender Jim Root Telecaster Slipknot シグネチャー テレキャスター メタル', yt: ['Fender Jim Root Telecaster Slipknot シグネチャー', 'Jim Root Telecaster テレキャスター メタル サウンドデモ'], similar: ['Ibanez JCRG', 'ESP LTD EC-1000', 'Gibson Les Paul'], desc: '', wikiTitle: 'Fender_Jim_Root_Telecaster' },
@@ -4257,7 +4257,7 @@ export const DB: Artist[] = [
     since: '1989年〜1999年、2010年〜',
     origin: 'アメリカ（カリフォルニア州）',
     members: 'Stephen Malkmus (Vo/Gt)\nScott Kannberg "Spiral Stairs" (Gt/Vo)\nMark Ibold (Ba)\nBob Nastanovich (Perc/Vo)\nSteve West (Dr)',
-    desc: '90年代ローファイ/インディーロックの代表格。宅録的サウンドと捻くれたメロディで批評家から絶賛。Crooked Rain Crooked RainやSlanted and Enchantedは必聴。',
+    desc: `カリフォルニア州ストックトン出身の5人組バンド。スティーヴン・マルクマス（Vo/Gt）を中心に1989年に結成。「Crooked Rain, Crooked Rain」「Slanted and Enchanted」などルーズでローファイなインディーロックサウンドで1990年代のインディーシーンを代表するバンドとなった。マルクマスのFender Telecasterを使ったカジュアルで卓越したギタープレイは「努力しているように見せない才能」として知られる。`,
     gear: [
       { id: 'jazzmaster-pave', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Stephen Malkmus', price: '¥100,000〜¥200,000', kw: 'Fender Jazzmaster Stephen Malkmus Pavement ジャズマスター ローファイ インディー', yt: ['Fender Jazzmaster Stephen Malkmus Pavement ローファイ', 'Jazzmaster フェンダー ジャズマスター インディーロック サウンドデモ'], similar: ['Fender Jaguar', 'Fender Mustang', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'strat-pave', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'Stephen Malkmus / Scott Kannberg', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Pavement Stephen Malkmus ストラトキャスター インディー ローファイ', yt: ['Fender Stratocaster Pavement Stephen Malkmus', 'Stratocaster フェンダー ストラト インディーロック サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Telecaster', 'Gibson Les Paul Jr'], desc: '', wikiTitle: 'Fender_Stratocaster' },
@@ -4278,7 +4278,7 @@ export const DB: Artist[] = [
     since: '1973年〜1978年、1991年〜1993年、2001年〜',
     origin: 'アメリカ（ニューヨーク州）',
     members: 'Tom Verlaine (Vo/Gt)\nRichard Lloyd (Gt)\nFred Smith (Ba)\nBilly Ficca (Dr)',
-    desc: 'ニューヨーク・パンクシーンの先駆者。Tom VerlaineとRichard Lloydの2本のギターが絡み合うアンサンブルは唯一無二。Marquee Moonは史上最高のデビューアルバムのひとつ。',
+    desc: `ニューヨーク出身の4人組バンド。トム・ヴァーレイン（Gt/Vo）とリチャード・ロイド（Gt）のツインギターを中心に1973年に結成。1977年のアルバム「Marquee Moon」はポストパンク・ニューウェーブの金字塔として現在も絶大な影響力を持つ。ヴァーレインとロイドのインタープレイによるツインギターアプローチはギターロックの文法を刷新し、多くのバンドに影響を与えた。`,
     gear: [
       { id: 'jazzmaster-tv', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Tom Verlaine (Vo/Gt)', price: '¥100,000〜¥200,000', kw: 'Fender Jazzmaster Tom Verlaine Television ジャズマスター NYパンク ポストパンク', yt: ['Fender Jazzmaster Tom Verlaine Television ポストパンク', 'Jazzmaster フェンダー ジャズマスター サウンドデモ'], similar: ['Fender Jaguar', 'Fender Telecaster', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'jazzmaster2-tv', brand: 'Fender', name: 'Jazzmaster（Richard Lloyd）', cat: 'ギター', catIcon: '🎸', user: 'Richard Lloyd (Gt)', price: '¥100,000〜¥200,000', kw: 'Fender Jazzmaster Richard Lloyd Television ジャズマスター ツインギター', yt: ['Fender Jazzmaster Richard Lloyd Television ツインギター', 'Jazzmaster ギターデュオ NYパンク サウンドデモ'], similar: ['Fender Jaguar', 'Fender Telecaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
@@ -4299,7 +4299,7 @@ export const DB: Artist[] = [
     since: '1975年〜1991年',
     origin: 'アメリカ（ニューヨーク州）',
     members: 'David Byrne (Vo/Gt)\nTina Weymouth (Ba)\nChris Frantz (Dr)\nJerry Harrison (Gt/Key)',
-    desc: 'ニューヨーク出身のニューウェーブ / アートロックバンド。Brian Enoとのコラボレーションで生み出した「Remain in Light」はアフロビートとポストパンクの金字塔。',
+    desc: `ロードアイランド州プロビデンス出身の4人組バンド。デヴィッド・バーン（Vo/Gt）を中心に1975年に結成。「Psycho Killer」「Once in a Lifetime」「Burning Down the House」「This Must Be the Place」など、アフリカンリズム・ファンク・ニューウェーブを融合した独自のアートロックサウンドで1970〜80年代を席巻した。バーンのFender StratocasterやTelecasterを使った独特のリズムギターと、ティナ・ウェイマスのファンキーなベースが生むグルーヴが最大の特徴。映画「Stop Making Sense」はロックドキュメンタリー映画の最高傑作として語り継がれる。`,
     gear: [
       { id: 'telecaster-th', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'David Byrne (Vo/Gt)', price: '¥100,000〜¥200,000', kw: 'Fender Telecaster David Byrne Talking Heads テレキャスター ニューウェーブ', yt: ['Fender Telecaster David Byrne Talking Heads ニューウェーブ', 'Telecaster フェンダー テレキャスター サウンドデモ'], similar: ['Fender Stratocaster', 'Fender Jazzmaster', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Telecaster' },
       { id: 'jazzbass-th', brand: 'Fender', name: 'Jazz Bass', cat: 'ベース', catIcon: '🎸', user: 'Tina Weymouth (Ba)', price: '¥100,000〜¥200,000', kw: 'Fender Jazz Bass Tina Weymouth Talking Heads ジャズベース ファンク ニューウェーブ', yt: ['Fender Jazz Bass Tina Weymouth Talking Heads ファンク ニューウェーブ', 'Jazz Bass フェンダー ジャズベース サウンドデモ'], similar: ['Fender Precision Bass', 'Music Man StingRay', 'Rickenbacker 4001'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
@@ -4320,7 +4320,7 @@ export const DB: Artist[] = [
     since: '1964年〜1973年、1992年〜1996年',
     origin: 'アメリカ（ニューヨーク州）',
     members: 'Lou Reed (Vo/Gt)\nJohn Cale (Key/Viola/Ba)\nSterling Morrison (Gt/Ba)\nMoe Tucker (Dr)',
-    desc: 'Andy Warholがプロデュースしたニューヨークのアバンギャルドバンド。バナナのジャケットで知られるデビュー作は商業的に失敗したが、後のオルタナ・パンク・ノイズロック全般に決定的影響を与えた。',
+    desc: `ニューヨーク出身のルー・リード（Vo/Gt）とジョン・ケイル（Ba/Va）らによる実験的ロックバンド。1960年代ニューヨークのアンダーグラウンドシーンからアンディ・ウォーホルの支援を受けてデビュー。「Heroin」「Venus in Furs」「Sweet Jane」「Rock & Roll」などダーク・アバンギャルドなサウンドで当時はほとんど売れなかったが、その影響を受けたバンドは無数に存在し「1000人しか聴かなかったが全員がバンドを結成した」と言われる伝説的存在。リードのロックとポップの境界を消した作曲センスは今も多くのソングライターの原点。`,
     gear: [
       { id: 'jazzmaster-vu', brand: 'Fender', name: 'Jazzmaster', cat: 'ギター', catIcon: '🎸', user: 'Lou Reed (Vo/Gt)', price: '¥100,000〜¥200,000', kw: 'Fender Jazzmaster Lou Reed Velvet Underground ジャズマスター アバンギャルド', yt: ['Fender Jazzmaster Lou Reed Velvet Underground アバンギャルド', 'Jazzmaster フェンダー ジャズマスター サウンドデモ'], similar: ['Fender Jaguar', 'Fender Telecaster', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'telecaster-vu', brand: 'Fender', name: 'Telecaster', cat: 'ギター', catIcon: '🎸', user: 'Lou Reed (Vo/Gt)', price: '¥100,000〜¥200,000', kw: 'Fender Telecaster Lou Reed Velvet Underground テレキャスター ドローン', yt: ['Fender Telecaster Lou Reed Velvet Underground テレキャスター ドローン', 'Telecaster フェンダー テレキャスター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Stratocaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
@@ -4341,7 +4341,7 @@ export const DB: Artist[] = [
     since: '1967年〜',
     origin: 'アメリカ（ミシガン州）',
     members: 'Iggy Pop - James Osterberg (Vo)\nRon Asheton (Gt)\nScott Asheton (Dr)\nDave Alexander (Ba)',
-    desc: '「パンクの神様」と称されるカリスマ的フロントマン。The Stoogesでプロトパンクを確立し、David Bowieとの協働作「Lust for Life」「The Idiot」は現代ロックの礎石。',
+    desc: `ミシガン州出身のロック界のゴッドファーザー。The Stoogesのフロントマンとして「I Wanna Be Your Dog」「Search and Destroy」「Lust for Life」「The Passenger」などパンクロックとロックンロールの精髄を体現する楽曲を生み出した。ステージでの観客へのダイブや野性的なライブパフォーマンスはパンクの原型として多くのアーティストに影響を与えた。デヴィッド・ボウイとの深い友情とコラボレーションでも有名で、ソロ名義でもキャリアを通じて実験的な作品を発表し続ける「パンクの元祖」。`,
     gear: [
       { id: 'mosrite-iggy', brand: 'Mosrite', name: 'Ventures Model', cat: 'ギター', catIcon: '🎸', user: 'Ron Asheton (Gt)', price: '¥150,000〜¥350,000（中古）', kw: 'Mosrite Ventures Model Ron Asheton Iggy Pop Stooges ギター プロトパンク', yt: ['Mosrite Ventures Ron Asheton Iggy Pop Stooges プロトパンク', 'Mosrite Ventures Model ギター ヴィンテージ サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Jaguar', 'Burns Marvin'], desc: '', wikiTitle: 'Mosrite' },
       { id: 'marshall-iggy', brand: 'Marshall', name: 'Super Lead 1959', cat: 'ギターアンプ', catIcon: '🔊', user: 'Ron Asheton (Gt)', price: '¥400,000〜¥800,000（ヴィンテージ）', kw: 'Marshall Super Lead 1959 Ron Asheton Iggy Pop Stooges プロトパンク ハードロック', yt: ['Marshall Super Lead 1959 Ron Asheton Iggy Pop Stooges プロトパンク', 'Marshall 1959 Super Lead ヴィンテージ サウンドデモ'], similar: ['Fender Bassman', 'Hiwatt DR103', 'Orange Rockerverb'], desc: '', wikiTitle: 'Marshall_JMP' },
@@ -4362,7 +4362,7 @@ export const DB: Artist[] = [
     since: '1960年〜1970年',
     origin: 'イギリス（リバプール）',
     members: 'John Lennon (Vo/Gt/Key)\nPaul McCartney (Vo/Ba/Key)\nGeorge Harrison (Gt/Vo)\nRingo Starr (Dr)',
-    desc: "史上最大の影響力を持つロックバンド。Abbey Roadで録音された楽曲はポップミュージックの定義を塗り替え、Sgt. Pepper'sはスタジオ・アルバムの可能性を永遠に変えた。",
+    desc: `イングランド・リヴァプール出身の4人組バンド。ジョン・レノン（Vo/Gt）、ポール・マッカートニー（Vo/Ba）、ジョージ・ハリスン（Vo/Gt）、リンゴ・スター（Dr）の編成で1960年に結成。「Love Me Do」から「Hey Jude」「Let It Be」「Come Together」まで13枚のオリジナルアルバムでポップミュージックの概念そのものを変革し続けた。ハリスンのGibson J-160EとRickenbacker 360-12・レノンのEpiphone Casino・マッカートニーのHofner 500/1ベースなど機材への影響も絶大。「Sgt. Pepper's Lonely Hearts Club Band」を頂点とするスタジオワークの革新性は現代の全ての音楽制作に影響している。`,
     gear: [
       { id: 'rick325-beatles', brand: 'Rickenbacker', name: '325 Jetglo', cat: 'ギター', catIcon: '🎸', user: 'John Lennon (Vo/Gt/Key)', price: '¥300,000〜¥600,000（中古）', kw: 'Rickenbacker 325 Jetglo John Lennon Beatles リッケンバッカー ビートルズ', yt: ['Rickenbacker 325 John Lennon Beatles リッケンバッカー', 'Rickenbacker 325 ギター サウンドデモ レビュー'], similar: ['Rickenbacker 360', 'Epiphone Casino', 'Gibson ES-335'], desc: '', wikiTitle: 'Rickenbacker_325' },
       { id: 'hofner-beatles', brand: 'Hofner', name: '500/1 Violin Bass "ビートルベース"', cat: 'ベース', catIcon: '🎸', user: 'Paul McCartney (Vo/Ba/Key)', price: '¥150,000〜¥300,000', kw: 'Hofner 500/1 Violin Bass Paul McCartney Beatles ヴァイオリンベース ビートルベース', yt: ['Hofner 500/1 Paul McCartney Beatles ヴァイオリンベース ビートルベース', 'Hofner 500/1 Violin Bass サウンドデモ レビュー'], similar: ['Fender Precision Bass', 'Epiphone Jack Casady', 'Gibson EB-2'], desc: '', wikiTitle: 'Höfner_500/1' },
@@ -4383,7 +4383,7 @@ export const DB: Artist[] = [
     since: '1962年〜',
     origin: 'イギリス（ロンドン）',
     members: 'Mick Jagger (Vo)\nKeith Richards (Gt/Vo)\nRonnie Wood (Gt)\nCharlie Watts (Dr)\nBill Wyman (Ba)',
-    desc: '60年以上活動するロックンロールの象徴。Keith Richardsのオープン・チューニングとブルースへの深い傾倒がバンドのサウンドの核心。Exile on Main Stは史上最高のロックアルバムのひとつ。',
+    desc: `イングランド・ロンドン出身の4人組バンド。ミック・ジャガー（Vo）、キース・リチャーズ（Gt）、ロン・ウッド（Gt）、チャーリー・ワッツ（Dr）（2021年逝去）の編成で1962年に結成。「(I Can't Get No) Satisfaction」「Gimme Shelter」「Paint It Black」「Wild Horses」「Start Me Up」など半世紀以上にわたる数多の名曲を持つ「世界最高のロックンロールバンド」。リチャーズのオープンGチューニングとGibson Les Paul・Telecasterを使ったリフは「ロックのDNA」。60年以上活動する現役最長クラスのバンド。`,
     gear: [
       { id: 'micawber-rs', brand: 'Fender', name: 'Telecaster Custom "Micawber"（オープンGチューニング）', cat: 'ギター', catIcon: '🎸', user: 'Keith Richards (Gt/Vo)', price: '（ヴィンテージ・現存品）', kw: 'Fender Telecaster Custom Micawber Keith Richards Rolling Stones オープンGチューニング 5弦', yt: ['Fender Telecaster Micawber Keith Richards Rolling Stones オープンGチューニング', 'Keith Richards Telecaster Micawber 5弦 オープンG チューニング デモ'], similar: ['Fender Telecaster', 'Gibson Les Paul Custom', 'Gibson ES-335'], desc: '', wikiTitle: 'Micawber_(guitar)' },
       { id: 'lespaul-rs', brand: 'Gibson', name: 'Les Paul Custom "Black Beauty"', cat: 'ギター', catIcon: '🎸', user: 'Keith Richards (Gt/Vo)', price: '¥500,000〜¥1,500,000（ヴィンテージ）', kw: 'Gibson Les Paul Custom Black Beauty Keith Richards Rolling Stones レスポール ブルース', yt: ['Gibson Les Paul Custom Black Beauty Keith Richards Rolling Stones', 'Gibson Les Paul Custom レスポールカスタム サウンドデモ'], similar: ['Gibson Les Paul Standard', 'Fender Telecaster', 'PRS McCarty'], desc: '', wikiTitle: 'Gibson_Les_Paul_Custom' },
@@ -4404,7 +4404,7 @@ export const DB: Artist[] = [
     since: '1968年〜1980年',
     origin: 'イギリス（ロンドン）',
     members: 'Jimmy Page (Gt)\nRobert Plant (Vo)\nJohn Paul Jones (Ba/Key)\nJohn Bonham (Dr)',
-    desc: '史上最大のハードロックバンドのひとつ。Jimmy Pageのギタープレイ・プロデュースワーク、John Bonhamのドラムはいまだ超えられない頂点として君臨する。全9アルバムがリリース当時にチャート1位を記録。',
+    desc: `イングランド・ロンドン出身の4人組バンド。ロバート・プラント（Vo）、ジミー・ペイジ（Gt）、ジョン・ポール・ジョーンズ（Ba/Key）、ジョン・ボーナム（Dr）の編成で1968年に結成。「Stairway to Heaven」「Whole Lotta Love」「Kashmir」「Black Dog」など多数の名曲を持ちハードロック・ヘヴィメタルの基礎を構築した。ペイジのGibson Les PaulとMarshallアンプによる壮大なサウンド・ダブルネックギターのライブ演奏はロックギターの象徴。ボーナムのドラムは「ロック史上最高のドラム」との評価も高い。1980年のボーナム逝去後に解散し伝説となった。`,
     gear: [
       { id: 'lespaul-lz', brand: 'Gibson', name: 'Les Paul Standard 1959 "Number One"', cat: 'ギター', catIcon: '🎸', user: 'Jimmy Page (Gt)', price: '¥20,000,000〜（ヴィンテージ）', kw: 'Gibson Les Paul 1959 Jimmy Page Led Zeppelin Number One ヴィンテージ レスポール ブルースロック', yt: ['Gibson Les Paul 1959 Jimmy Page Led Zeppelin Number One ブルースロック', 'Gibson Les Paul 1959 ヴィンテージ レスポール サウンドデモ'], similar: ['Gibson Les Paul Standard', 'Gibson Les Paul Custom', 'PRS McCarty'], desc: '', wikiTitle: 'Jimmy_Page' },
       { id: 'doubleneck-lz', brand: 'Gibson', name: 'EDS-1275 Double Neck', cat: 'ギター', catIcon: '🎸', user: 'Jimmy Page (Gt)', price: '¥700,000〜¥1,200,000', kw: 'Gibson EDS-1275 Double Neck Jimmy Page Led Zeppelin Stairway to Heaven ダブルネック', yt: ['Gibson EDS-1275 Jimmy Page Led Zeppelin Stairway to Heaven ダブルネック', 'Gibson EDS-1275 Double Neck ダブルネックギター サウンドデモ'], similar: ['Gibson SG', 'Gibson Les Paul', 'Fender Electric XII'], desc: '', wikiTitle: 'Gibson_EDS-1275' },
@@ -4425,7 +4425,7 @@ export const DB: Artist[] = [
     since: '1965年〜1995年、2005年',
     origin: 'イギリス（ロンドン）',
     members: 'David Gilmour (Gt/Vo)\nRoger Waters (Ba/Vo)\nRick Wright (Key/Vo)\nNick Mason (Dr)\nSyd Barrett (Gt/Vo・初期)',
-    desc: 'The Dark Side of the Moonは史上最多の連続チャートイン記録を保持するプログレ/サイケデリックの金字塔。David GilmourのストラトサウンドとRoger Watersの思想的歌詞が融合した唯一無二の世界観。',
+    desc: `イングランド・ロンドン出身のバンド。シド・バレット・ロジャー・ウォーターズ・デヴィッド・ギルモア・リック・ライト・ニック・メイソンらの編成で1965年に結成。「The Dark Side of the Moon」「Wish You Were Here」「The Wall」などコンセプチュアルなプログレッシブロックの名盤を生み出した。ギルモアのFender Stratocasterによる泣きのソロとBig MuffやDelayを組み合わせたサウンドは「ギターが感情を語る」極致として語り継がれる。コンサートの照明・映像演出の先駆者としても革新的。`,
     gear: [
       { id: 'blackstrat-pf', brand: 'Fender', name: 'Stratocaster "Black Strat"', cat: 'ギター', catIcon: '🎸', user: 'David Gilmour (Gt/Vo)', price: '（ヴィンテージ・2019年チャリティオークション¥約50億円で落札）', kw: 'Fender Stratocaster Black Strat David Gilmour Pink Floyd ブラックストラト ヴィンテージ', yt: ['Fender Stratocaster Black Strat David Gilmour Pink Floyd Comfortably Numb', 'David Gilmour Black Strat ストラト トーン 解説'], similar: ['Fender Stratocaster White', 'David Gilmour Signature Strat', 'PRS Custom 24'], desc: '', wikiTitle: 'Black_Strat' },
       { id: 'hiwatt-pf', brand: 'Hiwatt', name: 'DR103 100W', cat: 'ギターアンプ', catIcon: '🔊', user: 'David Gilmour (Gt/Vo)', price: '¥300,000〜¥600,000（中古）', kw: 'Hiwatt DR103 David Gilmour Pink Floyd ギターアンプ クリーントーン ブリティッシュ', yt: ['Hiwatt DR103 David Gilmour Pink Floyd クリーントーン', 'Hiwatt DR103 100W ギターアンプ サウンドデモ レビュー'], similar: ['Fender Twin Reverb', 'Marshall JMP', 'Orange OR100'], desc: '', wikiTitle: 'Hiwatt' },
@@ -4446,7 +4446,7 @@ export const DB: Artist[] = [
     since: '1970年〜',
     origin: 'イギリス（ロンドン）',
     members: 'Freddie Mercury (Vo/Key)\nBrian May (Gt)\nJohn Deacon (Ba)\nRoger Taylor (Dr)',
-    desc: 'フレディ・マーキュリーの圧倒的な声とブライアン・メイの自作ギター「レッド・スペシャル」によるアンサンブルで知られる。Bohemian Rhapsodyは現代でも最も再生されるロック楽曲のひとつ。',
+    desc: `イングランド・ロンドン出身の4人組バンド。フレディ・マーキュリー（Vo）、ブライアン・メイ（Gt）、ロジャー・テイラー（Dr/Vo）、ジョン・ディーコン（Ba）の編成で1970年に結成。「Bohemian Rhapsody」「We Will Rock You」「We Are the Champions」「Somebody to Love」など多数の名曲を持つ史上最高のロックバンドの一つ。メイが自作した「レッドスペシャル」ギターと多重録音を駆使したギターオーケストレーション、フレディの超人的なボーカルが融合したサウンドは唯一無二。1991年のフレディ逝去後も残り3人が活動を続け、2018年の映画「ボヘミアン・ラプソディ」で世界的に再注目された。`,
     gear: [
       { id: 'redspecial-queen', brand: 'Brian May Guitars', name: 'Red Special（自作ギター）', cat: 'ギター', catIcon: '🎸', user: 'Brian May (Gt)', price: '¥250,000〜¥350,000（レプリカ）', kw: 'Red Special Brian May Queen 自作ギター レッドスペシャル Burns Tri-Sonic', yt: ['Red Special Brian May Queen 自作ギター レッドスペシャル', 'Red Special ブライアンメイ 自作ギター サウンドデモ'], similar: ['Burns Brian May Signature', 'Guild Brian May Signature', 'Fender Stratocaster'], desc: '', wikiTitle: 'Red_Special' },
       { id: 'voxac30-queen', brand: 'Vox', name: 'AC30 （18台スタック）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Brian May (Gt)', price: '¥200,000〜¥400,000（中古）', kw: 'Vox AC30 Brian May Queen ギターアンプ ブリティッシュ スタック', yt: ['Vox AC30 Brian May Queen ブライアンメイ アンプ', 'Vox AC30 ギターアンプ サウンドデモ クリーン'], similar: ['Marshall JMP', 'Fender Twin Reverb', 'Orange OR15'], desc: '', wikiTitle: 'Vox_AC30' },
@@ -4467,7 +4467,7 @@ export const DB: Artist[] = [
     since: '1962年〜2016年',
     origin: 'イギリス（ロンドン）',
     members: 'David Bowie - David Jones (Vo/Key/Gt)\nMick Ronson (Gt・Ziggy期)\nCarlos Alomar (Gt・中期〜)\nTony Visconti (Ba/Prod)',
-    desc: 'ジギー・スターダストからシン・ホワイト・デュークまで無数のペルソナを操り、ポップミュージックの可能性を拡張し続けた。Berlinトリロジーはブライアン・イーノとの協働による実験的傑作。',
+    desc: `イングランド・ロンドン出身のシンガーソングライター。「Space Oddity」「Ziggy Stardust」「Fame」「Heroes」「Let's Dance」など約50年にわたるキャリアで常に音楽と文化の最前線に立ち続けた「ロックのカメレオン」。グラムロック・ソウル・エレクトロ・ニューウェーブを時代の波を先取りし変化し続けた革新性は唯一無二。ミック・ロンソンとのギターコンビやナイル・ロジャースとの「Let's Dance」制作も有名。2016年の逝去直後にリリースされた「Blackstar」は遺作としても音楽的傑作として高く評価された。`,
     gear: [
       { id: 'sg2000-bowie', brand: 'YAMAHA', name: 'SG-2000', cat: 'ギター', catIcon: '🎸', user: 'Mick Ronson (Gt・Ziggy期)', price: '¥100,000〜¥200,000（中古）', kw: 'Yamaha SG-2000 David Bowie Mick Ronson Ziggy Stardust ギター グラムロック', yt: ['Yamaha SG-2000 Mick Ronson David Bowie Ziggy Stardust グラムロック', 'Yamaha SG-2000 ギター ヴィンテージ サウンドデモ'], similar: ['Gibson Les Paul', 'Gibson SG', 'Fender Stratocaster'], desc: '', wikiTitle: 'Yamaha_SG' },
       { id: 'strat-bowie', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'Mick Ronson (Gt・Ziggy期)', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Mick Ronson David Bowie Ziggy Stardust ストラトキャスター グラムロック', yt: ['Fender Stratocaster Mick Ronson David Bowie Ziggy Stardust ストラト', 'Stratocaster フェンダー ストラト サウンドデモ グラムロック'], similar: ['Gibson Les Paul', 'Yamaha SG-2000', 'PRS Custom 24'], desc: '', wikiTitle: 'Fender_Stratocaster' },
@@ -4488,7 +4488,7 @@ export const DB: Artist[] = [
     since: '1963年〜',
     origin: 'イギリス（サリー州）',
     members: 'Eric Clapton (Gt/Vo)',
-    desc: "「神」と呼ばれたブリティッシュ・ブルースの第一人者。Yardbirds→John Mayall's Bluesbreakers→Cream→Derek and the Dominos→ソロと歴史的キャリアを歩み、Stratocaster 'Blackie'のトーンは現代ギタリスト全員に影響を与えた。",
+    desc: `イングランド・サリー出身のギタリスト/シンガーソングライター。The Yardbirds・Cream・Derek and the Dominosなど多くのバンドで活躍後ソロとして「Layla」「Wonderful Tonight」「Tears in Heaven」「Cocaine」など多数の名曲を生み出した「神のギタリスト（God）」。Fender Stratocaster「Blackie」とMarshallアンプの組み合わせでブルースとロックを融合した圧倒的なギタートーンを確立。ロバート・ジョンソンやB.B. Kingへの深い傾倒がプレイの根底にあり、ブルースを世界規模に広めた功績は計り知れない。`,
     gear: [
       { id: 'beano-ec', brand: 'Gibson', name: 'Les Paul Standard 1960 "Beano"', cat: 'ギター', catIcon: '🎸', user: 'Eric Clapton (Gt/Vo)', price: '（ヴィンテージ・現存品）', kw: 'Gibson Les Paul Standard 1960 Beano Eric Clapton Bluesbreakers ブルースロック ヴィンテージ', yt: ['Gibson Les Paul 1960 Beano Eric Clapton Bluesbreakers ブルースロック', 'Gibson Les Paul 1960 Standard ヴィンテージ ブルース サウンドデモ'], similar: ['Gibson Les Paul Standard', 'Gibson Les Paul Custom', 'PRS McCarty'], desc: '', wikiTitle: 'Beano_album' },
       { id: 'sgfool-ec', brand: 'Gibson', name: 'SG Standard "The Fool"', cat: 'ギター', catIcon: '🎸', user: 'Eric Clapton (Gt/Vo)', price: '（ヴィンテージ・現存品、Cream期）', kw: 'Gibson SG Standard The Fool Eric Clapton Cream サイケデリック ペイント ヴィンテージ', yt: ['Gibson SG The Fool Eric Clapton Cream サイケデリック ペイント', 'Gibson SG Standard Cream Eric Clapton ブルースロック サウンドデモ'], similar: ['Gibson Les Paul', 'Fender Stratocaster', 'Gibson ES-335'], desc: '', wikiTitle: 'The_Fool_(artists)' },
@@ -4509,7 +4509,7 @@ export const DB: Artist[] = [
     since: '1963年〜2023年',
     origin: 'イギリス（サリー州）',
     members: 'Jeff Beck (Gt)',
-    desc: 'ヤードバーズでクラプトンの後釜として台頭し、ソロでブルース・ハードロック・フュージョンを横断した「ギタリストのギタリスト」。ピックをほとんど使わない指弾きと音量ノブ操作による繊細な表現が唯一無二。',
+    desc: `イングランド・サリー出身のギタリスト。The Yardbirdsに参加後、Jeff Beck Groupを経て「Blow by Blow」「Wired」などジャズフュージョンとロックを融合した先駆的名盤を発表した。Fender Stratocasterの「指弾き」奏法（ピックを使わない）とトレモロアームを多用したソロスタイルで独自の境地を開拓し、「ヤードバーズ3大ギタリスト」の一人として語られる。2023年の逝去まで革新的なギタースタイルを追求し続け、圧倒的な技術と音楽性で「ミュージシャンズ・ミュージシャン」として後進から深い尊敬を集めた。`,
     gear: [
       { id: 'strat-jb', brand: 'Fender', name: 'Stratocaster（フィンガーピッキング仕様）', cat: 'ギター', catIcon: '🎸', user: 'Jeff Beck (Gt)', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Jeff Beck フィンガーピッキング ストラト ブルース フュージョン', yt: ['Fender Stratocaster Jeff Beck フィンガーピッキング ブルース フュージョン', 'Jeff Beck Stratocaster トーン 解説 サウンドデモ'], similar: ['Jeff Beck Signature Strat', 'Fender Telecaster', 'Gibson Les Paul'], desc: '', wikiTitle: 'Jeff_Beck' },
       { id: 'lespaul-jb', brand: 'Gibson', name: 'Les Paul Standard（初期・Yardbirds）', cat: 'ギター', catIcon: '🎸', user: 'Jeff Beck (Gt)', price: '¥350,000〜¥500,000', kw: 'Gibson Les Paul Jeff Beck Yardbirds 初期 レスポール ブルースロック', yt: ['Gibson Les Paul Jeff Beck Yardbirds 初期 ブルースロック', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'PRS McCarty'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
@@ -4528,7 +4528,7 @@ export const DB: Artist[] = [
     since: '1968年〜2017年',
     origin: 'イギリス（バーミンガム）',
     members: 'Ozzy Osbourne (Vo)\nTony Iommi (Gt)\nGeezer Butler (Ba)\nBill Ward (Dr)',
-    desc: 'ヘヴィメタルの始祖。Tony Iommのダウンチューニングと指先カットに合わせたカスタム弦によるリフと、Geezer Butlerの文学的歌詞でメタルというジャンルを創造した。Paranoid・Iron Man・War Pigsは不朽の名曲。',
+    desc: `イングランド・バーミンガム出身の4人組バンド。オジー・オズボーン（Vo）、トニー・アイオミ（Gt）、ギーザー・バトラー（Ba）、ビル・ワード（Dr）の編成で1968年に結成。「Paranoid」「Iron Man」「War Pigs」などヘヴィメタルというジャンルそのものを創造した伝説的バンド。アイオミのGibson SG・ダウンチューニングとMarshallアンプを使った「暗く重いリフ」はヘヴィメタルの文法の原型。指先のケガから生まれた独特の弾き方も含め、アイオミのギタースタイルは現代ヘヴィメタル全体の基礎となっている。`,
     gear: [
       { id: 'sg-iommi', brand: 'Gibson', name: 'SG Special（Tony Iommi カスタム仕様）', cat: 'ギター', catIcon: '🎸', user: 'Tony Iommi (Gt)', price: '¥150,000〜¥300,000', kw: 'Gibson SG Tony Iommi Black Sabbath ダウンチューニング カスタム ヘヴィメタル', yt: ['Gibson SG Tony Iommi Black Sabbath ダウンチューニング ヘヴィメタル', 'Gibson SG Special SG ヘヴィメタル サウンドデモ'], similar: ['Gibson SG Standard', 'Jaydee SG', 'Jaydee Monkey Special'], desc: '', wikiTitle: 'Tony_Iommi' },
       { id: 'jaydee-iommi', brand: 'Jaydee', name: 'Monkey Special（カスタム）', cat: 'ギター', catIcon: '🎸', user: 'Tony Iommi (Gt)', price: '（カスタムオーダー品）', kw: 'Jaydee Monkey Special Tony Iommi Black Sabbath カスタムギター ヘヴィメタル', yt: ['Jaydee Monkey Special Tony Iommi Black Sabbath カスタム ヘヴィメタル', 'Tony Iommi Jaydee カスタムギター ヘヴィメタル トーン'], similar: ['Gibson SG', 'Laney Supergroup', 'ESP Signature'], desc: '', wikiTitle: 'Tony_Iommi' },
@@ -4547,7 +4547,7 @@ export const DB: Artist[] = [
     since: '1968年〜',
     origin: 'イギリス（ハートフォードシャー）',
     members: 'Ian Gillan (Vo)\nRitchie Blackmore (Gt)\nJon Lord (Key)\nRoger Glover (Ba)\nIan Paice (Dr)',
-    desc: 'Smoke on the WaterのあのリフでRitchie Blackmoreは歴史を変えた。Jon LordのDistortionをかけたハモンドオルガンとギターの対決という独自フォーマットがディープ・パープルサウンドの本質。',
+    desc: `イングランド出身のハードロックバンド。「Smoke on the Water」「Highway Star」「Child in Time」「Perfect Strangers」など多数の名曲を持ちハードロックの礎を築いた。リッチー・ブラックモアのFender StratocasterとMarshallアンプのコンビネーションはハードロックギターの教科書で、スカラップ指板の使用でも知られる。ジョン・ロードのオルガンとのコンビネーションはクラシック・ハードロックの象徴。メンバーの入れ替わりを経ながらも現在も活動を続ける長寿バンドで、様々なMkラインナップが存在する。`,
     gear: [
       { id: 'strat-dp', brand: 'Fender', name: 'Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'Ritchie Blackmore (Gt)', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Ritchie Blackmore Deep Purple ストラト ハードロック Smoke on the Water', yt: ['Fender Stratocaster Ritchie Blackmore Deep Purple Smoke on the Water ハードロック', 'Ritchie Blackmore Stratocaster ストラト トーン 解説 サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul', 'PRS Custom 24'], desc: '', wikiTitle: 'Ritchie_Blackmore' },
       { id: 'marshall200-dp', brand: 'Marshall', name: 'Major 200W', cat: 'ギターアンプ', catIcon: '🔊', user: 'Ritchie Blackmore (Gt)', price: '¥500,000〜¥1,200,000（ヴィンテージ）', kw: 'Marshall Major 200W Ritchie Blackmore Deep Purple ギターアンプ ハードロック', yt: ['Marshall Major 200W Ritchie Blackmore Deep Purple ハードロック', 'Marshall Major 200W ヴィンテージ アンプ サウンドデモ'], similar: ['Marshall JMP 100W', 'Hiwatt DR201', 'Orange Thunderverb 200'], desc: '', wikiTitle: 'Marshall_Major' },
@@ -4566,7 +4566,7 @@ export const DB: Artist[] = [
     since: '1975年〜',
     origin: 'イギリス（ロンドン）',
     members: 'Bruce Dickinson (Vo)\nDave Murray (Gt)\nAdrian Smith (Gt)\nJanick Gers (Gt)\nSteve Harris (Ba)\nNicko McBrain (Dr)',
-    desc: 'NWOBHMの旗手。Steve Harrisのギャロッピング・ベースライン、3本ギターの壁、ブルース・ディッキンソンの圧倒的なオペラティックボイスで世界的成功を収めた。Eddieというマスコットキャラも文化的アイコン。',
+    desc: `イングランド・ロンドン出身の6人組ヘヴィメタルバンド。スティーヴ・ハリス（Ba）を中心に1975年に結成。「The Number of the Beast」「Aces High」「Fear of the Dark」など多数の名曲を持ち、NWOBHMを代表するバンドとしてヘヴィメタルの世界的普及に貢献した。デイヴ・マーレイ・エイドリアン・スミス・ジャニック・ガーズの3ギタリスト編成によるハーモニーリフは独自の「アイアン・メイデンサウンド」を形成する。ライブは長大なセットリストとエネルギッシュなパフォーマンスで伝説的。`,
     gear: [
       { id: 'strat-maiden', brand: 'Fender', name: 'Stratocaster（Dave Murray）', cat: 'ギター', catIcon: '🎸', user: 'Dave Murray (Gt)', price: '¥150,000〜¥300,000', kw: 'Fender Stratocaster Dave Murray Iron Maiden ストラト ヘヴィメタル NWOBHM', yt: ['Fender Stratocaster Dave Murray Iron Maiden ヘヴィメタル NWOBHM', 'Dave Murray Stratocaster Iron Maiden ストラト トーン 解説'], similar: ['Jackson Soloist', 'ESP Horizon', 'Charvel San Dimas'], desc: '', wikiTitle: 'Dave_Murray_(musician)' },
       { id: 'esp-smith', brand: 'ESP', name: 'Adrian Smith Signature', cat: 'ギター', catIcon: '🎸', user: 'Adrian Smith (Gt)', price: '¥200,000〜¥350,000', kw: 'ESP Adrian Smith Signature Iron Maiden シグネチャーギター ヘヴィメタル', yt: ['ESP Adrian Smith Signature Iron Maiden ヘヴィメタル', 'ESP Adrian Smith Signature ギター サウンドデモ'], similar: ['Jackson DKMG', 'Charvel San Dimas', 'Fender Stratocaster'], desc: '', wikiTitle: 'Adrian_Smith' },
@@ -4585,7 +4585,7 @@ export const DB: Artist[] = [
     since: '1969年〜',
     origin: 'イギリス（バーミンガム）',
     members: 'Rob Halford (Vo)\nGlenn Tipton (Gt)\nK.K. Downing (Gt)\nIan Hill (Ba)\nScott Travis (Dr)',
-    desc: 'ヘヴィメタルのスタイルを確立した「メタルゴッド」。ツインギターによる攻撃的なリフ、Rob Halfordの超高音スクリームで知られ、革ジャンとスタッズというメタルの視覚的アイデンティティも同バンドが生み出した。',
+    desc: `イングランド・バーミンガム出身のヘヴィメタルバンド。ロブ・ハルフォード（Vo）、グレン・ティプトン（Gt）、KKダウニング（Gt）らを中心に1969年に結成。「Breaking the Law」「Living After Midnight」「Painkiller」「You've Got Another Thing Comin'」など多数の名曲を持ち「ヘヴィメタルゴッド」と称される。ツインギターのハーモニーとハーフォードのハイトーンボイスが生む「メタルの黄金様式」を確立し、革ジャンとスタッズというメタルのファッションコードも定着させた。`,
     gear: [
       { id: 'sgsabbath-jp', brand: 'Gibson', name: 'SG Standard（K.K. Downing 初期）', cat: 'ギター', catIcon: '🎸', user: 'K.K. Downing (Gt)', price: '¥150,000〜¥300,000', kw: 'Gibson SG K.K. Downing Judas Priest 初期 ヘヴィメタル NWOBHM', yt: ['Gibson SG K.K. Downing Judas Priest 初期 ヘヴィメタル', 'Gibson SG ヘヴィメタル サウンドデモ'], similar: ['Gibson Flying V', 'Hamer', 'Jackson Soloist'], desc: '', wikiTitle: 'K.K._Downing' },
       { id: 'flyingv-jp', brand: 'Gibson', name: 'Flying V（K.K. Downing）', cat: 'ギター', catIcon: '🎸', user: 'K.K. Downing (Gt)', price: '¥200,000〜¥400,000', kw: 'Gibson Flying V K.K. Downing Judas Priest フライングV ヘヴィメタル', yt: ['Gibson Flying V K.K. Downing Judas Priest ヘヴィメタル フライングV', 'Gibson Flying V ヘヴィメタル サウンドデモ'], similar: ['Gibson SG', 'Dean ML', 'Jackson Rhoads'], desc: '', wikiTitle: 'Gibson_Flying_V' },
@@ -4604,7 +4604,7 @@ export const DB: Artist[] = [
     since: '1975年〜2015年',
     origin: 'イギリス（ロンドン）',
     members: 'Lemmy Kilmister (Ba/Vo)\nPhil Campbell (Gt)\nMikkey Dee (Dr)',
-    desc: 'Lemmy Kilmisterのベースがリードをとるというユニークなアプローチで「ハードロックとパンクの橋渡し」としてメタル史に刻まれた。Aceのスペードは不朽のアンセム。速く、ラウドに、そしてタフに生きたバンド。',
+    desc: `イングランド・ロンドン出身の3人組ハードロック/スピードメタルバンド。レミー・キルミスター（Ba/Vo）を中心に1975年に結成。「Ace of Spades」「Overkill」「Bomber」など、スピードとヘヴィさを極限まで追求した楽曲は後のスラッシュメタル・パンクに多大な影響を与えた。レミーのRickenbackerをMarshallアンプのフルボリュームで歪ませる独特の轟音スタイルが特徴。2015年のレミーの逝去により活動終了したが「最もロックンロールなバンド」の称号は今も揺るがない。`,
     gear: [
       { id: 'rick4001-lemmy', brand: 'Rickenbacker', name: '4001 Bass（Marshall直結歪みトーン）', cat: 'ベース', catIcon: '🎸', user: 'Lemmy Kilmister (Ba/Vo)', price: '¥250,000〜¥400,000', kw: 'Rickenbacker 4001 Lemmy Kilmister Motorhead ベース リッケンバッカー ハードロック Ace of Spades', yt: ['Rickenbacker 4001 Lemmy Kilmister Motorhead Ace of Spades ベース', 'Rickenbacker 4001 ベース サウンドデモ ロック'], similar: ['Fender Precision Bass', 'Gibson Thunderbird', 'Fender Jazz Bass'], desc: '', wikiTitle: 'Lemmy_Kilmister' },
       { id: 'marshallbass-lemmy', brand: 'Marshall', name: 'Super Bass 1992（歪みベースアンプ）', cat: 'ベースアンプ', catIcon: '🔊', user: 'Lemmy Kilmister (Ba/Vo)', price: '¥300,000〜¥600,000（ヴィンテージ）', kw: 'Marshall Super Bass 1992 Lemmy Kilmister Motorhead ベースアンプ 歪み ハードロック', yt: ['Marshall Super Bass 1992 Lemmy Kilmister Motorhead 歪みベースアンプ', 'Marshall Super Bass 1992 ヴィンテージ ベースアンプ サウンドデモ'], similar: ['Ampeg SVT', 'Orange AD200', 'Hiwatt'], desc: '', wikiTitle: 'Marshall_Super_Bass' },
@@ -4622,7 +4622,7 @@ export const DB: Artist[] = [
     since: '1985年〜現在',
     origin: 'イギリス（オックスフォード）',
     members: 'Thom Yorke (Vo/Gt/Key)\nJonny Greenwood (Gt/Key)\nColin Greenwood (Ba)\nEd OBrien (Gt)\nPhilip Selway (Dr)',
-    desc: 'UKオックスフォード出身の5人組。繊細な感受性と実験的サウンドを融合させ、OK Computer・Kid Aなど時代を超える名盤を生み出した。',
+    desc: `イングランド・オックスフォード出身の5人組バンド。トム・ヨーク（Vo）、ジョニー・グリーンウッド（Gt）、コリン・グリーンウッド（Ba）らの編成。「OK Computer」「Kid A」「In Rainbows」など現代ロック/エレクトロニカの金字塔を打ち立てた。グリーンウッドはFender TelecasterにOndes Marteneを加えた前衛的な音作りで知られマルチ楽器奏者として映画音楽でも活躍する。ヨークのAbletonライブセットによる電子音楽的アプローチとバンドの融合がライブの独自性を生む。`,
     gear: [
       { id: 'strat-yorke', brand: 'Fender', name: 'Telecaster（Thom Yorke）', cat: 'ギター', catIcon: '🎸', user: 'Thom Yorke (Vo/Gt/Key)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Thom Yorke Radiohead ギター アルペジオ オルタナ アートロック', yt: ['Fender Telecaster Thom Yorke Radiohead アルペジオ', 'Thom Yorke Telecaster ギタートーン サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'Rickenbacker 360'], desc: '', wikiTitle: 'Fender_Telecaster' },
       { id: 'es335-jg', brand: 'Gibson', name: 'ES-335（Jonny Greenwood）', cat: 'ギター', catIcon: '🎸', user: 'Jonny Greenwood (Gt/Key)', price: '¥380,000〜¥600,000', kw: 'Gibson ES-335 Jonny Greenwood Radiohead セミアコ ギター アートロック', yt: ['Gibson ES-335 Jonny Greenwood Radiohead セミアコ ギター', 'Gibson ES-335 セミアコ ギター サウンドデモ'], similar: ['Gibson ES-345', 'Fender Telecaster', 'Rickenbacker 330'], desc: '', wikiTitle: 'Gibson_ES-335' },
@@ -4638,7 +4638,7 @@ export const DB: Artist[] = [
     since: '1994年〜現在',
     origin: 'イギリス（デヴォン州テインマス）',
     members: 'Matt Bellamy (Vo/Gt/Key)\nChris Wolstenholme (Ba)\nDom Howard (Dr)',
-    desc: '英国デヴォン州出身の3人組。壮大なオーケストラルロックと激しいギターサウンドを融合し、スタジアムを揺るがすスペクタクルなライブで知られる。',
+    desc: `イングランド・デボン出身の3人組バンド。マシュー・ベラミー（Vo/Gt）、クリス・ウォルステンホルム（Ba）、ドミニク・ハワード（Dr）の編成。「Supermassive Black Hole」「Uprising」「Madness」「Knights of Cydonia」など壮大なスペースロックサウンドで世界的な成功を収める。ベラミーはManson Guitarsのシグネチャーモデルを使用し圧倒的なライブパフォーマンスで知られる。スタジアムスケールのライブにおける演出力は世界トップクラス。`,
     gear: [
       { id: 'manson-mb', brand: 'Manson Guitar Works', name: 'MA Series Custom（Matt Bellamy）', cat: 'ギター', catIcon: '🎸', user: 'Matt Bellamy (Vo/Gt/Key)', price: '¥800,000〜¥2,000,000', kw: 'Manson Guitar MA Series Matt Bellamy Muse カスタムギター 内蔵シンせ MIDIコントローラー', yt: ['Manson Guitar MA Series Matt Bellamy Muse カスタムギター', 'Manson Guitar Works カスタム ギター サウンドデモ'], similar: ['Parker Fly', 'Chapman ML1', 'Gibson Les Paul'], desc: '', wikiTitle: 'Manson_Guitar_Works' },
       { id: 'diezel-mb', brand: 'Diezel', name: 'VH4（Matt Bellamy）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Matt Bellamy (Vo/Gt/Key)', price: '¥500,000〜¥800,000', kw: 'Diezel VH4 Matt Bellamy Muse ハイゲインアンプ ドイツ製', yt: ['Diezel VH4 Matt Bellamy Muse ハイゲインアンプ', 'Diezel VH4 ハイゲインアンプ サウンドデモ'], similar: ['Mesa/Boogie Dual Rectifier', 'Peavey 5150', 'EVH 5150 III'], desc: '', wikiTitle: 'Diezel_amplification' },
@@ -4653,7 +4653,7 @@ export const DB: Artist[] = [
     since: '1996年〜現在',
     origin: 'イギリス（ロンドン）',
     members: 'Chris Martin (Vo/Gt/Key)\nJonny Buckland (Gt)\nGuy Berryman (Ba)\nWill Champion (Dr)',
-    desc: 'ロンドン出身の4人組。メランコリックなメロディとスタジアム級のアンセムで世界的な成功を収め、現代最大のロックバンドの一つ。',
+    desc: `イングランド・ロンドン出身の4人組バンド。クリス・マーティン（Vo/Pf）を中心に1996年に結成。「Yellow」「The Scientist」「Viva la Vida」「A Sky Full of Stars」など多数のヒット曲を持つ世界的バンド。マーティンのピアノとボーカルがバンドの中心で、Fender TelecasterやMartin 000-28ECを楽曲によって使い分ける。カラフルなLED演出と組み合わせたスタジアムライブは世界最大規模のエンタテインメントの一つ。`,
     gear: [
       { id: 'j45-cp', brand: 'Gibson', name: 'J-45（Chris Martin）', cat: 'アコギ', catIcon: '🎸', user: 'Chris Martin (Vo/Gt/Key)', price: '¥200,000〜¥350,000', kw: 'Gibson J-45 Chris Martin Coldplay アコギ The Scientist Fix You', yt: ['Gibson J-45 Chris Martin Coldplay アコギ The Scientist', 'Gibson J-45 アコースティックギター サウンドデモ'], similar: ['Martin D-28', 'Taylor 814ce', 'Gibson J-200'], desc: '', wikiTitle: 'Gibson_J-45' },
       { id: 'strat-buckland', brand: 'Fender', name: 'Stratocaster（Jonny Buckland）', cat: 'ギター', catIcon: '🎸', user: 'Jonny Buckland (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Jonny Buckland Coldplay ギター クリーントーン アルペジオ', yt: ['Fender Stratocaster Jonny Buckland Coldplay クリーントーン', 'Stratocaster フェンダー ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'Rickenbacker 360'], desc: '', wikiTitle: 'Fender_Stratocaster' },
@@ -4668,7 +4668,7 @@ export const DB: Artist[] = [
     since: '2002年〜現在',
     origin: 'イギリス（シェフィールド）',
     members: 'Alex Turner (Vo/Gt)\nJamie Cook (Gt)\nNick OMalley (Ba)\nMatt Helders (Dr)',
-    desc: '英国シェフィールド出身の4人組。鋭いリリックとキャッチーなリフで2000年代インディーロックを牽引し、現代最重要バンドの一つとなった。',
+    desc: `イングランド・シェフィールド出身の4人組バンド。アレックス・ターナー（Vo/Gt）を中心に2002年に結成。「I Bet You Look Good on the Dancefloor」「R U Mine?」「Do I Wanna Know?」「505」など名曲多数。インターネットを活用したバイラルでのブレイクから世界最大級のインディーロックバンドへと成長した。ターナーはFender JaguarやTelecasterをメインとし、多彩な音作りを見せる。`,
     gear: [
       { id: 'es355-at', brand: 'Gibson', name: 'ES-355（Alex Turner 近年）', cat: 'ギター', catIcon: '🎸', user: 'Alex Turner (Vo/Gt)', price: '¥500,000〜¥900,000', kw: 'Gibson ES-355 Alex Turner Arctic Monkeys セミアコ Tranquility Base ギター', yt: ['Gibson ES-355 Alex Turner Arctic Monkeys Tranquility Base ギター', 'Gibson ES-355 セミアコ ギター サウンドデモ'], similar: ['Gibson ES-335', 'Gibson ES-330', 'Epiphone Casino'], desc: '', wikiTitle: 'Gibson_ES-355' },
       { id: 'sg-at', brand: 'Gibson', name: 'SG Standard（Alex Turner 初期）', cat: 'ギター', catIcon: '🎸', user: 'Alex Turner (Vo/Gt)', price: '¥150,000〜¥250,000', kw: 'Gibson SG Alex Turner Arctic Monkeys 初期 I Bet You Look Good インディーロック', yt: ['Gibson SG Alex Turner Arctic Monkeys 初期 I Bet You Look Good', 'Gibson SG スタンダード ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul Junior', 'Epiphone SG'], desc: '', wikiTitle: 'Gibson_SG' },
@@ -4683,7 +4683,7 @@ export const DB: Artist[] = [
     since: '1991年〜2009年',
     origin: 'イギリス（マンチェスター）',
     members: 'Liam Gallagher (Vo)\nNoel Gallagher (Gt/Vo)\nPaul Arthurs (Gt)\nPaul McGuigan (Ba)\nTony McCarroll (Dr)',
-    desc: 'マンチェスター出身の兄弟ロックバンド。Liam・Noel Gallagher兄弟を中心に90年代ブリットポップシーンを席巻した。WonderwallとDont Look Back in Angerが代表曲。',
+    desc: `イングランド・マンチェスター出身の5人組バンド。リアム・ギャラガー（Vo）、ノエル・ギャラガー（Gt/Vo）兄弟を中心に1991年に結成。「Wonderwall」「Don't Look Back in Anger」「Champagne Supernova」など英国ロック史に刻まれる名曲を多数持ちブリットポップシーンを席巻した。ノエルのメインギターはEpiphone SupernovaとGibson ES-355で、シンプルなコードワークから生まれる「英国のロックンロール」が特徴。2009年の解散後、2024年に再結成が発表された。`,
     gear: [
       { id: 'sheraton-ng', brand: 'Epiphone', name: 'Sheraton（Noel Gallagher ユニオンジャック）', cat: 'ギター', catIcon: '🎸', user: 'Noel Gallagher (Gt/Vo)', price: '¥80,000〜¥150,000', kw: 'Epiphone Sheraton Noel Gallagher Oasis ユニオンジャック ブリットポップ ギター', yt: ['Epiphone Sheraton Noel Gallagher Oasis ユニオンジャック ブリットポップ', 'Epiphone Sheraton セミアコ ギター サウンドデモ'], similar: ['Gibson ES-335', 'Epiphone Casino', 'Gibson ES-345'], desc: '', wikiTitle: 'Epiphone_Sheraton' },
       { id: 'lespaul-ng', brand: 'Gibson', name: 'Les Paul Standard（Noel Gallagher）', cat: 'ギター', catIcon: '🎸', user: 'Noel Gallagher (Gt/Vo)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Noel Gallagher Oasis レスポール ブリットポップ ハムバッカー', yt: ['Gibson Les Paul Noel Gallagher Oasis レスポール ブリットポップ', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Epiphone Sheraton', 'Gibson SG', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
@@ -4697,7 +4697,7 @@ export const DB: Artist[] = [
     since: '1988年〜現在',
     origin: 'イギリス（ロンドン）',
     members: 'Damon Albarn (Vo/Key)\nGraham Coxon (Gt)\nAlex James (Ba)\nDave Rowntree (Dr)',
-    desc: 'ロンドン出身の4人組。Oasisとのブリットポップ対決で一世を風靡し、後に実験的サウンドへ進化。Damon AlbarnはGorillazでも知られる。',
+    desc: `イングランド・ロンドン出身の4人組バンド。デーモン・アルバーン（Vo）、グレアム・コクソン（Gt）を中心に1988年に結成。「Girls & Boys」「Song 2」「Beetlebum」「Coffee & TV」などブリットポップの旗手としてOasisとのブリットポップ対決でも話題になった。コクソンのFender Telecasterを使った変則的なギタープレイはブリットポップの音楽的核。2010年代に再結成し「The Magic Whip」をリリース。アルバーンはGorillazでも精力的に活動する。`,
     gear: [
       { id: 'tele-coxon', brand: 'Fender', name: 'Telecaster（Graham Coxon）', cat: 'ギター', catIcon: '🎸', user: 'Graham Coxon (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Graham Coxon Blur ギター Song 2 Girls and Boys カッティング', yt: ['Fender Telecaster Graham Coxon Blur Song 2 ギター カッティング', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson SG Special', 'Danelectro 59'], desc: '', wikiTitle: 'Fender_Telecaster' },
       { id: 'sg-coxon', brand: 'Gibson', name: 'SG Special（Graham Coxon）', cat: 'ギター', catIcon: '🎸', user: 'Graham Coxon (Gt)', price: '¥150,000〜¥250,000', kw: 'Gibson SG Special P-90 Graham Coxon Blur ギター ノイジー P90', yt: ['Gibson SG Special P-90 Graham Coxon Blur ノイジーギター', 'Gibson SG Special P-90 ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson Les Paul Junior', 'Harmony Stratotone'], desc: '', wikiTitle: 'Gibson_SG' },
@@ -4711,7 +4711,7 @@ export const DB: Artist[] = [
     since: '1978年〜現在',
     origin: 'イギリス（シェフィールド）',
     members: 'Jarvis Cocker (Vo/Gt)\nMark Webber (Gt)\nSteve Mackey (Ba)\nNick Banks (Dr)\nCandida Doyle (Key)',
-    desc: 'シェフィールド出身の5人組。階級意識に満ちたリリックとキャッチーなポップサウンドで90年代ブリットポップを代表。Common Peopleが不朽の名曲。',
+    desc: `イングランド・シェフィールド出身の5人組バンド。ジャーヴィス・コッカー（Vo/Gt）を中心に1978年に結成し「His n Hers」「Different Class」「This Is Hardcore」でブリットポップの頂点を迎えた。「Common People」「Babies」「Disco 2000」など社会観察と性・階級を描いた歌詞で高い評価を受ける。コッカーのFender Stratocasterと独特のリズムギタープレイが特徴。2012年の再結成後も断続的に活動を続ける。`,
     gear: [
       { id: 'es330-jc', brand: 'Gibson', name: 'ES-330（Jarvis Cocker）', cat: 'ギター', catIcon: '🎸', user: 'Jarvis Cocker (Vo/Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson ES-330 Jarvis Cocker Pulp セミアコ ギター ブリットポップ', yt: ['Gibson ES-330 Jarvis Cocker Pulp セミアコ ギター', 'Gibson ES-330 セミアコ ギター サウンドデモ'], similar: ['Epiphone Casino', 'Gibson ES-335', 'Gibson ES-345'], desc: '', wikiTitle: 'Gibson_ES-330' },
       { id: 'juno60-pulp', brand: 'Roland', name: 'Juno-60（Candida Doyle）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Candida Doyle (Key)', price: '¥100,000〜¥200,000（ヴィンテージ）', kw: 'Roland Juno-60 Candida Doyle Pulp アナログシンせ Common People 80年代サウンド', yt: ['Roland Juno-60 Candida Doyle Pulp アナログシンせ Common People', 'Roland Juno-60 アナログシンせ サウンドデモ'], similar: ['Roland Juno-106', 'Korg Poly-6', 'Sequential Circuits Prophet-5'], desc: '', wikiTitle: 'Roland_Juno-60' },
@@ -4724,7 +4724,7 @@ export const DB: Artist[] = [
     since: '1982年〜1987年',
     origin: 'イギリス（マンチェスター）',
     members: 'Morrissey (Vo)\nJohnny Marr (Gt)\nAndy Rourke (Ba)\nMike Joyce (Dr)',
-    desc: 'マンチェスター出身の4人組。Morrissey・Johnny Marrの才能が結びつき、80年代英国インディーシーンを変えた伝説的バンド。',
+    desc: `イングランド・マンチェスター出身の4人組バンド。モリッシー（Vo）とジョニー・マー（Gt）の創作コンビを中心に1982年に結成。「There Is a Light That Never Goes Out」「This Charming Man」「How Soon Is Now?」など叙情的で文学的な楽曲でポストパンク・インディーポップの金字塔を打ち立てた。マーのFender Telecaster・Rickenbackerを使ったアルペジオとカッティングの組み合わせは現代インディーギタリストの原点。1987年の解散後も影響力は現在まで続く。`,
     gear: [
       { id: 'rick330-marr', brand: 'Rickenbacker', name: '330（Johnny Marr）', cat: 'ギター', catIcon: '🎸', user: 'Johnny Marr (Gt)', price: '¥220,000〜¥380,000', kw: 'Rickenbacker 330 Johnny Marr The Smiths ギター インディーポップ アルペジオ', yt: ['Rickenbacker 330 Johnny Marr The Smiths インディーポップ アルペジオ', 'Rickenbacker 330 ギター サウンドデモ'], similar: ['Rickenbacker 360', 'Fender Jazzmaster', 'Gibson ES-335'], desc: '', wikiTitle: 'Rickenbacker_330' },
       { id: 'jazzmaster-marr', brand: 'Fender', name: 'Jazzmaster（Johnny Marr）', cat: 'ギター', catIcon: '🎸', user: 'Johnny Marr (Gt)', price: '¥150,000〜¥250,000', kw: 'Fender Jazzmaster Johnny Marr The Smiths ギター フローティングトレモロ', yt: ['Fender Jazzmaster Johnny Marr The Smiths ギター', 'Fender Jazzmaster ギター サウンドデモ'], similar: ['Fender Jaguar', 'Rickenbacker 330', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
@@ -4737,7 +4737,7 @@ export const DB: Artist[] = [
     since: '1976年〜現在',
     origin: 'イギリス（クローリー）',
     members: 'Robert Smith (Vo/Gt)\nSimon Gallup (Ba)\nRoger ODonnell (Key)\nJason Cooper (Dr)\nReeves Gabrels (Gt)',
-    desc: '英国クローリー出身のバンド。Robert Smithを中心に、暗く詩的なゴシックサウンドと意外なポップセンスを融合させた独自の音楽世界を構築。',
+    desc: `イングランド・クロウリー出身のバンド。ロバート・スミス（Vo/Gt）を中心に1976年に結成。「Boys Don't Cry」「Love Cats」「Lovesong」「Disintegration」など、ゴシックロック・ポストパンク・ドリームポップを横断する独自の音楽世界で30年以上のキャリアを持つ。スミスのFender Jazzmaster・Mustangをディレイとコーラスで音をぼかした独特のサウンドはゴシックロックの代名詞。スミスの黒髪・白塗りメイクのビジュアルも含めて独自の美学を一貫させており、現在も精力的に活動を続ける。`,
     gear: [
       { id: 'jazzmaster-rs', brand: 'Fender', name: 'Jazzmaster（Robert Smith）', cat: 'ギター', catIcon: '🎸', user: 'Robert Smith (Vo/Gt)', price: '¥150,000〜¥250,000', kw: 'Fender Jazzmaster Robert Smith The Cure ゴシックロック ギター ローチューニング リバーブ', yt: ['Fender Jazzmaster Robert Smith The Cure ゴシックロック ギター', 'Fender Jazzmaster ギター サウンドデモ'], similar: ['Fender Jaguar', 'Fender Stratocaster', 'Rickenbacker 330'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'roland-ce1-cure', brand: 'Roland', name: 'CE-1 Chorus Ensemble（Robert Smith）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Robert Smith (Vo/Gt)', price: '¥60,000〜¥120,000（ヴィンテージ）', kw: 'Roland CE-1 Chorus Robert Smith The Cure コーラス ゴシック ウェットサウンド', yt: ['Roland CE-1 Chorus Robert Smith The Cure ゴシック コーラス', 'Roland CE-1 コーラス ヴィンテージエフェクト サウンドデモ'], similar: ['Boss CE-2', 'Electro-Harmonix Small Clone', 'TC Electronic Corona'], desc: '', wikiTitle: 'Roland_CE-1' },
@@ -4750,7 +4750,7 @@ export const DB: Artist[] = [
     since: '1976年〜1980年',
     origin: 'イギリス（サルフォード）',
     members: 'Ian Curtis (Vo)\nBernard Sumner (Gt/Key)\nPeter Hook (Ba)\nStephen Morris (Dr)',
-    desc: 'サルフォード出身の4人組。Ian Curtisの苦悩に満ちたボーカルと暗く実験的なサウンドで短命ながら永続的な影響を与えた伝説的バンド。',
+    desc: `イングランド・マンチェスター出身の4人組バンド。イアン・カーティス（Vo）、バーナード・サムナー（Gt）、ピーター・フック（Ba）、スティーヴン・モリス（Dr）の編成で1976年に結成。「Love Will Tear Us Apart」「Atmosphere」「She's Lost Control」など暗く叙情的なポストパンクで後のゴシックロック・ニューウェーブに決定的な影響を与えた。フックの高音弦を主体としたベースラインとカーティスの痙攣的なダンスは独自のスタイル。1980年のカーティスの自殺後にNew Orderとして再スタートした。`,
     gear: [
       { id: 'casino-jd', brand: 'Epiphone', name: 'Casino（Bernard Sumner）', cat: 'ギター', catIcon: '🎸', user: 'Bernard Sumner (Gt/Key)', price: '¥80,000〜¥150,000', kw: 'Epiphone Casino Bernard Sumner Joy Division ギター ポストパンク ゴシック', yt: ['Epiphone Casino Bernard Sumner Joy Division ポストパンク ギター', 'Epiphone Casino セミアコ ギター サウンドデモ'], similar: ['Gibson ES-330', 'Rickenbacker 330', 'Fender Telecaster'], desc: '', wikiTitle: 'Epiphone_Casino' },
       { id: 'hondo-hook', brand: 'Hondo', name: 'Rickenbacker Copy Bass（Peter Hook）', cat: 'ベース', catIcon: '🎸', user: 'Peter Hook (Ba)', price: '¥30,000〜¥80,000', kw: 'Hondo Bass Peter Hook Joy Division メロディックベース 高音弦 ポストパンク', yt: ['Peter Hook Joy Division メロディックベース 高音弦 Hondo ポストパンク', 'Hondo Rickenbacker Copy Bass ポストパンク サウンドデモ'], similar: ['Rickenbacker 4001', 'Fender Jazz Bass', 'Yamaha BB'], desc: '', wikiTitle: 'Peter_Hook' },
@@ -4763,7 +4763,7 @@ export const DB: Artist[] = [
     since: '1980年〜現在',
     origin: 'イギリス（サルフォード）',
     members: 'Bernard Sumner (Vo/Gt/Key)\nPeter Hook (Ba)\nStephen Morris (Dr)\nGillian Gilbert (Key/Gt)',
-    desc: 'Joy Division解散後に結成。ロックとエレクトロニックダンスミュージックを融合させ、Blue Mondayでクラブカルチャーに多大な影響を与えた。',
+    desc: `Joy Division解散後にバーナード・サムナー（Vo/Gt）、ピーター・フック（Ba）らが結成。「Blue Monday」「Bizarre Love Triangle」「True Faith」など電子音楽とロックを融合したダンスミュージックの先駆けとして1980〜90年代を代表するバンドとなった。「Blue Monday」は史上最も売れた12インチシングルと言われる。シンセ・ドラムマシン・ギターの組み合わせが生む「ポストパンクダンスポップ」はその後のEDM文化の原型の一つとなった。`,
     gear: [
       { id: 'tb303-no', brand: 'Roland', name: 'TB-303 Bass Line', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Bernard Sumner (Vo/Gt/Key)', price: '¥60,000〜¥150,000（ヴィンテージ）', kw: 'Roland TB-303 New Order シンせ ベースライン アシッド エレクトロニック', yt: ['Roland TB-303 New Order シンせ ベースライン アシッドハウス', 'Roland TB-303 Bass Line シンせ サウンドデモ'], similar: ['Roland TB-3', 'Behringer TD-3', 'Cyclone TT-303'], desc: '', wikiTitle: 'Roland_TB-303' },
       { id: 'tr808-no', brand: 'Roland', name: 'TR-808 Rhythm Composer', cat: 'ドラムマシン', catIcon: '🥁', user: 'Stephen Morris (Dr)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland TR-808 New Order ドラムマシン Blue Monday エレクトロニック ビート', yt: ['Roland TR-808 New Order Blue Monday ドラムマシン エレクトロニック', 'Roland TR-808 ドラムマシン サウンドデモ'], similar: ['Roland TR-909', 'Linn LM-1', 'Oberheim DMX'], desc: '', wikiTitle: 'Roland_TR-808' },
@@ -4779,7 +4779,7 @@ export const DB: Artist[] = [
     since: '1977年〜1986年・2007年〜2008年',
     origin: 'イギリス（ロンドン）',
     members: 'Sting (Ba/Vo)\nAndy Summers (Gt)\nStewart Copeland (Dr)',
-    desc: 'ロンドン出身の3人組。レゲエのリズムと鋭いポストパンクサウンドを融合させ、Every Breath You Take・Roxanne・Message in a Bottleで世界的成功を収めた。',
+    desc: `イングランド出身の3人組バンド。スティング（Vo/Ba）、アンディ・サマーズ（Gt）、スチュワート・コープランド（Dr）の編成で1977年に結成。「Roxanne」「Every Breath You Take」「Message in a Bottle」などレゲエ・ジャズ・ニューウェーブを融合したスタイルで1980年代初頭を席巻した。サマーズのFender Telecasterを使ったモダンジャズ的なコードワークとコープランドのレゲエインフルエンスのドラミングがバンドの音楽的独自性を生む。1986年の活動休止後2007年に再結成ツアーを行った。`,
     gear: [
       { id: 'precision-sting', brand: 'Fender', name: 'Precision Bass（Sting）', cat: 'ベース', catIcon: '🎸', user: 'Sting (Ba/Vo)', price: '¥100,000〜¥200,000', kw: 'Fender Precision Bass Sting The Police ベース レゲエロック', yt: ['Fender Precision Bass Sting The Police ベース レゲエロック', 'Precision Bass フェンダー プレシジョンベース サウンドデモ'], similar: ['Fender Jazz Bass', 'Music Man StingRay', 'Rickenbacker 4001'], desc: '', wikiTitle: 'Fender_Precision_Bass' },
       { id: 'telecaster-summers', brand: 'Fender', name: 'Telecaster（Andy Summers）', cat: 'ギター', catIcon: '🎸', user: 'Andy Summers (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Andy Summers The Police ギター コーラス アルペジオ', yt: ['Fender Telecaster Andy Summers The Police コーラス アルペジオ', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-335', 'Rickenbacker 330'], desc: '', wikiTitle: 'Fender_Telecaster' },
@@ -4795,7 +4795,7 @@ export const DB: Artist[] = [
     since: '1964年〜現在',
     origin: 'イギリス（ロンドン）',
     members: 'Roger Daltrey (Vo)\nPete Townshend (Gt)\nJohn Entwistle (Ba)\nKeith Moon (Dr)',
-    desc: 'ロンドン・モッズシーン出身の4人組。ギター破壊・爆発的ライブパフォーマンスで知られ、My GenerationからTommy・Quadrophenia等ロック史に残る名盤を制作。',
+    desc: `イングランド・ロンドン出身の4人組バンド。ロジャー・ダルトリー（Vo）、ピート・タウンゼント（Gt）、ジョン・エントウィッスル（Ba）、キース・ムーン（Dr）の編成で1964年に結成。「My Generation」「Pinball Wizard」「Won't Get Fooled Again」などロック史に刻まれる名曲を多数持つ。タウンゼントのGibson SGをダウンストロークで叩きつける「ウィンドミル奏法」と、ムーンの破天荒なドラミングはロックの象徴的なイメージとなった。`,
     gear: [
       { id: 'sg-townshend', brand: 'Gibson', name: 'SG Special（Pete Townshend 初期）', cat: 'ギター', catIcon: '🎸', user: 'Pete Townshend (Gt)', price: '¥150,000〜¥300,000', kw: 'Gibson SG Special Pete Townshend The Who 初期 My Generation ギター破壊 モッズ', yt: ['Gibson SG Special Pete Townshend The Who 初期 My Generation ギター破壊', 'Gibson SG Special ギター サウンドデモ'], similar: ['Gibson SG Standard', 'Rickenbacker 1998', 'Fender Stratocaster'], desc: '', wikiTitle: 'Gibson_SG' },
       { id: 'strat-townshend', brand: 'Fender', name: 'Stratocaster（Pete Townshend）', cat: 'ギター', catIcon: '🎸', user: 'Pete Townshend (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Pete Townshend The Who ギター Baba ORiley Wont Get Fooled Again', yt: ['Fender Stratocaster Pete Townshend The Who Baba ORiley ギター', 'Stratocaster フェンダー ギター サウンドデモ'], similar: ['Gibson SG', 'Rickenbacker 1998', 'Hiwatt guitar'], desc: '', wikiTitle: 'Fender_Stratocaster' },
@@ -4810,7 +4810,7 @@ export const DB: Artist[] = [
     since: '1964年〜1996年',
     origin: 'イギリス（ロンドン）',
     members: 'Ray Davies (Vo/Gt)\nDave Davies (Gt)\nPete Quaife (Ba)\nMick Avory (Dr)',
-    desc: 'ロンドン出身の4人組。Dave DaviesがスピーカーをカミソリでスリットしてYou Really Got Meの歪んだリフを生み出し、ロックの歴史を変えた。',
+    desc: `イングランド・ロンドン出身の4人組バンド。レイ・デイヴィス（Vo/Gt）を中心に1964年に結成。「You Really Got Me」「Sunny Afternoon」「Waterloo Sunset」「Lola」など英国的な日常を描いた楽曲でブリティッシュ・インヴェイジョンを牽引した。デイヴ・デイヴィスのギターアンプのスピーカーを面刃で切り裂いて生まれた歪み音は「You Really Got Me」のリフに使われ、ヘヴィメタル・パンクに通じる「歪んだギター」の先駆けとなった歴史的サウンド。`,
     gear: [
       { id: 'harmony-dave', brand: 'Harmony', name: 'H77（Dave Davies ファズトーン）', cat: 'ギター', catIcon: '🎸', user: 'Dave Davies (Gt)', price: '¥30,000〜¥100,000（ヴィンテージ）', kw: 'Harmony H77 Dave Davies The Kinks You Really Got Me ファズ ヴィンテージ ガレージ', yt: ['Harmony H77 Dave Davies The Kinks You Really Got Me ファズ ヴィンテージ', 'Harmony H77 ヴィンテージギター サウンドデモ'], similar: ['Silvertone 1448', 'Danelectro U2', 'National Duolian'], desc: '', wikiTitle: 'Dave_Davies' },
       { id: 'vox-kinks', brand: 'Vox', name: 'AC30（Dave Davies スラッシュスピーカー）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Dave Davies (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Dave Davies The Kinks スラッシュスピーカー ファズ You Really Got Me', yt: ['Vox AC30 Dave Davies The Kinks スラッシュスピーカー You Really Got Me', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Marshall Bluesbreaker', 'Fender Tweed Deluxe', 'Premier 45'], desc: '', wikiTitle: 'Vox_AC30' },
@@ -4824,7 +4824,7 @@ export const DB: Artist[] = [
     since: '1967年〜現在',
     origin: 'イギリス（サリー州）',
     members: 'Peter Gabriel (Vo)\nPhil Collins (Vo/Dr)\nTony Banks (Key)\nMike Rutherford (Gt/Ba)\nSteve Hackett (Gt)',
-    desc: '英国サリー州出身のバンド。Peter Gabriel時代の壮大なプログレから、Phil Collins主導のポップ路線まで幅広い音楽性を持つ。In the Air Tonightのゲートリバーブが特に有名。',
+    desc: `イングランド・サリー出身のバンド。ピーター・ガブリエル（初代Vo）、フィル・コリンズ（Dr/Vo）、スティーヴ・ハケット（Gt）らの編成で1967年に結成。「Supper's Ready」から「Invisible Touch」「I Can't Dance」まで、プログレとポップの両面でトップの作品を生み出した。ハケットのタッピング奏法はヴァン・ヘイレンより先に行われ、コリンズのゲートリバーブドラムは80年代ポップドラムサウンドを定義した。`,
     gear: [
       { id: 'mellotron-genesis', brand: 'Mellotron', name: 'M400（Tony Banks）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Tony Banks (Key)', price: '¥800,000〜¥2,000,000（ヴィンテージ）', kw: 'Mellotron M400 Tony Banks Genesis プログレ キーボード Watcher of the Skies Firth of Fifth', yt: ['Mellotron M400 Tony Banks Genesis プログレ Watcher of the Skies', 'Mellotron M400 キーボード ヴィンテージ サウンドデモ'], similar: ['Chamberlin', 'Novatron', 'GForce M-Tron'], desc: '', wikiTitle: 'Mellotron' },
       { id: 'hammond-genesis', brand: 'Hammond', name: 'B-3（Tony Banks）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Tony Banks (Key)', price: '¥500,000〜¥1,200,000', kw: 'Hammond B-3 Tony Banks Genesis プログレ オルガン キーボード Firth of Fifth', yt: ['Hammond B-3 Tony Banks Genesis プログレ オルガン Firth of Fifth', 'Hammond B-3 オルガン サウンドデモ'], similar: ['Vox Continental', 'Farfisa Organ', 'Crumar Organizer'], desc: '', wikiTitle: 'Hammond_organ' },
@@ -4839,7 +4839,7 @@ export const DB: Artist[] = [
     since: '1968年〜現在',
     origin: 'イギリス（ロンドン）',
     members: 'Jon Anderson (Vo)\nChris Squire (Ba/Vo)\nSteve Howe (Gt)\nRick Wakeman (Key)\nBill Bruford (Dr)',
-    desc: 'ロンドン出身のプログレ界の頂点。Roundabout・Owner of a Lonely Heart・Close to the Edgeなど複雑な楽曲構成と超絶技巧メンバーで知られる。',
+    desc: `イングランド・ロンドン出身の5人組バンド。ジョン・アンダーソン（Vo）、スティーヴ・ハウ（Gt）、クリス・スクワイア（Ba）、リック・ウェイクマン（Key）らを中心に1968年に結成。「Roundabout」「Owner of a Lonely Heart」「Heart of the Sunrise」「Close to the Edge」などプログレッシブロックの金字塔を打ち立てた。ハウの変則チューニングと複雑なコード奏法はプログレギターの教科書で、スクワイアのRickenbackerベースの存在感も抜群。ロジャー・ディーンのアルバムアートワークとともに独自の美学を形成した。`,
     gear: [
       { id: 'es175-howe', brand: 'Gibson', name: 'ES-175（Steve Howe）', cat: 'ギター', catIcon: '🎸', user: 'Steve Howe (Gt)', price: '¥400,000〜¥800,000', kw: 'Gibson ES-175 Steve Howe Yes プログレ ギター Roundabout ジャズ フルアコ', yt: ['Gibson ES-175 Steve Howe Yes プログレ Roundabout ジャズギター', 'Gibson ES-175 フルアコ ジャズギター サウンドデモ'], similar: ['Gibson L-5', 'Epiphone Emperor', 'Gibson ES-335'], desc: '', wikiTitle: 'Gibson_ES-175' },
       { id: 'rick4001-squire', brand: 'Rickenbacker', name: '4001（Chris Squire）', cat: 'ベース', catIcon: '🎸', user: 'Chris Squire (Ba/Vo)', price: '¥220,000〜¥380,000', kw: 'Rickenbacker 4001 Chris Squire Yes ベース プログレ Roundabout リードベース', yt: ['Rickenbacker 4001 Chris Squire Yes Roundabout プログレ ベース', 'Rickenbacker 4001 ベース サウンドデモ'], similar: ['Fender Precision Bass', 'Gibson Thunderbird', 'Music Man StingRay'], desc: '', wikiTitle: 'Rickenbacker_4001' },
@@ -4854,7 +4854,7 @@ export const DB: Artist[] = [
     since: '1968年〜現在',
     origin: 'イギリス（ロンドン）',
     members: 'Robert Fripp (Gt)\nGreg Lake (Ba/Vo)\nMichael Giles (Dr)\nIan McDonald (Key/Sax)',
-    desc: 'ロンドン出身のプログレの最重要バンド。Robert Frippを中心に変容を続け、In the Court of the Crimson Kingで世界を驚かせた。メンバーは時代ごとに大きく変化。',
+    desc: `イングランド・ロンドン出身のプログレッシブロックバンド。ロバート・フリップ（Gt）を中心に1968年に結成。「In the Court of the Crimson King」「Larks' Tongues in Aspic」「Red」などプログレッシブロックの最高傑作を次々と生み出した。フリップのGibson ES-335を使ったアルゴリズム的フレーズと、多重メンバー交代を経ながら続く「バンドの概念」としての在り方が独自。グレッグ・レイクのボーカルとベースも名演として知られる。フリップのGuitarcraftメソッドとソロ活動でも影響力は絶大。`,
     gear: [
       { id: 'lespaul-fripp', brand: 'Gibson', name: 'Les Paul（Robert Fripp 初期）', cat: 'ギター', catIcon: '🎸', user: 'Robert Fripp (Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Robert Fripp King Crimson プログレ ギター 初期 Crimson King', yt: ['Gibson Les Paul Robert Fripp King Crimson 初期 プログレ', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Gibson SG', 'Fender Stratocaster', 'Guild Stratford'], desc: '', wikiTitle: 'Robert_Fripp' },
       { id: 'roland-vg-fripp', brand: 'Roland', name: 'GR-300 + Frippertronics（Robert Fripp）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Robert Fripp (Gt)', price: '¥80,000〜¥180,000（ヴィンテージ）', kw: 'Roland GR-300 Robert Fripp King Crimson Frippertronics テープループ ギターシンせ', yt: ['Roland GR-300 Robert Fripp King Crimson Frippertronics テープループ', 'Roland GR-300 Guitar Synth サウンドデモ'], similar: ['Roland GR-55', 'Eventide H9', 'Line 6 Helix'], desc: '', wikiTitle: 'Frippertronics' },
@@ -4870,7 +4870,7 @@ export const DB: Artist[] = [
     since: '1970年〜1998年',
     origin: 'イギリス（ロンドン）',
     members: 'Keith Emerson (Key)\nGreg Lake (Ba/Gt/Vo)\nCarl Palmer (Dr)',
-    desc: 'Keith Emersonの超絶技巧キーボードプレイ、Greg Lakeの荘厳なボーカル、Carl Palmerの圧倒的ドラムで知られる。クラシック音楽をロックに昇華した巨人。',
+    desc: `イングランド出身の3人組バンド。キース・エマーソン（Key）、グレッグ・レイク（Vo/Ba/Gt）、カール・パーマー（Dr）の編成で1970年に結成。「Tarkus」「Brain Salad Surgery」「Karn Evil 9」などクラシック音楽とロックを大胆に融合したプログレの頂点に立つ作品を発表した。エマーソンのMoogシンセサイザーをナイフで刺す演奏パフォーマンスは伝説的で、現代のシンセ使いの先駆者として評価される。3人全員が当代一の技術を持つ「テクニカルなプログレの極致」として尊敬を集める。`,
     gear: [
       { id: 'moog-modular-emerson', brand: 'Moog', name: 'Moog Modular System（Keith Emerson）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Keith Emerson (Key)', price: '¥2,000,000以上（ヴィンテージ）', kw: 'Moog Modular Keith Emerson ELP プログレ シンせ Lucky Man Tarkus', yt: ['Moog Modular Keith Emerson ELP プログレ Lucky Man Tarkus シンせ', 'Moog Modular System ヴィンテージシンせ サウンドデモ'], similar: ['ARP 2600', 'Buchla 200', 'Roland System 700'], desc: '', wikiTitle: 'Moog_synthesizer' },
       { id: 'hammond-emerson', brand: 'Hammond', name: 'L-100 オルガン（Keith Emerson）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Keith Emerson (Key)', price: '¥300,000〜¥700,000', kw: 'Hammond L-100 Keith Emerson ELP オルガン ナイフ刺し プログレ', yt: ['Hammond L-100 Keith Emerson ELP オルガン ナイフ刺し ライブパフォーマンス', 'Hammond L-100 オルガン ヴィンテージ サウンドデモ'], similar: ['Hammond C-3', 'Hammond B-3', 'Vox Continental'], desc: '', wikiTitle: 'Hammond_organ' },
@@ -4885,7 +4885,7 @@ export const DB: Artist[] = [
     since: '1983年〜現在',
     origin: 'アイルランド（ダブリン）',
     members: 'Kevin Shields (Gt/Vo)\nBilinda Butcher (Gt/Vo)\nDebbie Googe (Ba)\nColm O Ciosóig (Dr)',
-    desc: 'ダブリン出身のシューゲイジングの元祖。LovedにはEverlasting Nothingを収録。Lovelessはグランジ・シューゲイジング双方に絶大な影響を与えた。',
+    desc: `アイルランド・ダブリン出身のバンド。ケヴィン・シールズ（Vo/Gt）を中心に1983年に結成。1991年の「Loveless」でシューゲイザーというジャンルを定義した伝説的バンド。シールズのFender Jazzmasterを使ったトレモロアームの「グライド」奏法によるフィードバック・ウォールオブサウンドは世界のギタリストに多大な影響を与え、現在に至るまでシューゲイザーの頂点とされる。`,
     gear: [
       { id: 'jaguar-shields', brand: 'Fender', name: 'Jaguar（Kevin Shields トレモロアーム多用）', cat: 'ギター', catIcon: '🎸', user: 'Kevin Shields (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Jaguar Kevin Shields My Bloody Valentine シューゲイジング トレモロアーム Only Shallow', yt: ['Fender Jaguar Kevin Shields My Bloody Valentine シューゲイジング Only Shallow トレモロ', 'Fender Jaguar ギター シューゲイジング サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Mustang', 'Fender Stratocaster'], desc: '', wikiTitle: 'Fender_Jaguar' },
       { id: 'jazzmaster-shields', brand: 'Fender', name: 'Jazzmaster（Kevin Shields）', cat: 'ギター', catIcon: '🎸', user: 'Kevin Shields (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Kevin Shields My Bloody Valentine シューゲイジング Loveless', yt: ['Fender Jazzmaster Kevin Shields My Bloody Valentine Loveless シューゲイジング', 'Fender Jazzmaster ギター シューゲイジング サウンドデモ'], similar: ['Fender Jaguar', 'Fender Mustang', 'Epiphone Casino'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
@@ -4900,7 +4900,7 @@ export const DB: Artist[] = [
     since: '1979年〜1997年',
     origin: 'イギリス（スコットランド・グランジマウス）',
     members: 'Elizabeth Fraser (Vo)\nRobin Guthrie (Gt/プログラミング)\nSimon Raymonde (Ba/Key)',
-    desc: 'スコットランド出身のドリームポップ先駆者。Elizabeth Fraserの幻想的ボーカルとRobin Guthrieの霧のようなギターサウンドで唯一無二の音世界を作り出した。',
+    desc: `スコットランド出身のバンド。エリザベス・フレイザー（Vo）、ロビン・ガスリー（Gt）、サイモン・レイモンド（Ba）の編成で1979年に結成。「Heaven or Las Vegas」「Lorelei」などエフェクトを重ねた厚いギターと神秘的なボーカルによるドリームポップサウンドは唯一無二の美を生む。ガスリーのFender Jazzmaster/StratocasterとBoss CE-1コーラス・ディレイを重ねたサウンドはシューゲイザー・ドリームポップの原点として現代にも多大な影響を与えている。`,
     gear: [
       { id: 'jc120-guthrie', brand: 'Roland', name: 'Jazz Chorus JC-120（Robin Guthrie）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Robin Guthrie (Gt/プログラミング)', price: '¥130,000〜¥200,000', kw: 'Roland Jazz Chorus JC-120 Robin Guthrie Cocteau Twins ドリームポップ クリーン コーラス', yt: ['Roland JC-120 Robin Guthrie Cocteau Twins ドリームポップ クリーン コーラス', 'Roland JC-120 Jazz Chorus アンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Vox AC30', 'Fender Deluxe Reverb'], desc: '', wikiTitle: 'Roland_Jazz_Chorus' },
       { id: 'space-echo-ct', brand: 'Roland', name: 'Space Echo RE-201（Robin Guthrie）', cat: 'ギターエフェクター', catIcon: '⚡', user: 'Robin Guthrie (Gt/プログラミング)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland Space Echo RE-201 Robin Guthrie Cocteau Twins テープエコー ドリームポップ', yt: ['Roland Space Echo RE-201 Robin Guthrie Cocteau Twins テープエコー ドリームポップ', 'Roland Space Echo RE-201 テープエコー ヴィンテージ サウンドデモ'], similar: ['Echoplex EP-3', 'Boss DD-7', 'Strymon El Capistan'], desc: '', wikiTitle: 'Roland_Space_Echo' },
@@ -4914,7 +4914,7 @@ export const DB: Artist[] = [
     since: '1989年〜1995年・2014年〜現在',
     origin: 'イギリス（バークシャー州レディング）',
     members: 'Neil Halstead (Gt/Vo)\nRachel Goswell (Gt/Vo)\nSimon Scott (Dr)\nNick Chaplin (Ba)\nChristian Savill (Gt)',
-    desc: 'レディング出身のシューゲイジングバンド。Souvlaki・Alison・When the Sun Hitsなど霧のようなギターウォールと浮遊するボーカルで90年代シューゲイジング界を代表。',
+    desc: `イングランド・レディング出身のバンド。ニール・ハルステッド（Vo/Gt）を中心に1989年に結成。「Souvlaki」「Just for a Day」などシューゲイザー・ドリームポップの名盤を残した。2014年に再結成し2017年には「Slowdive」をリリース。ハルステッドのFender Jaguar/JazzmasterやGibsonを使用し豊富なリバーブとディレイで音の輪郭を溶かすシューゲイザー的手法を体現する。`,
     gear: [
       { id: 'jazzmaster-halstead', brand: 'Fender', name: 'Jazzmaster（Neil Halstead）', cat: 'ギター', catIcon: '🎸', user: 'Neil Halstead (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Neil Halstead Slowdive シューゲイジング When the Sun Hits Alison', yt: ['Fender Jazzmaster Neil Halstead Slowdive シューゲイジング When the Sun Hits', 'Fender Jazzmaster ギター シューゲイジング サウンドデモ'], similar: ['Fender Jaguar', 'Fender Stratocaster', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'strat-goswell', brand: 'Fender', name: 'Stratocaster（Rachel Goswell）', cat: 'ギター', catIcon: '🎸', user: 'Rachel Goswell (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Rachel Goswell Slowdive ギター ドリームポップ シューゲイジング', yt: ['Fender Stratocaster Rachel Goswell Slowdive シューゲイジング ドリームポップ', 'Fender Stratocaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Jaguar', 'Fender Telecaster'], desc: '', wikiTitle: 'Fender_Stratocaster' },
@@ -4929,7 +4929,7 @@ export const DB: Artist[] = [
     since: '1988年〜1996年・2014年〜現在',
     origin: 'イギリス（オックスフォード）',
     members: 'Mark Gardener (Gt/Vo)\nAndy Bell (Gt/Vo)\nSteve Queralt (Ba)\nLoz Colbert (Dr)',
-    desc: 'オックスフォード出身のシューゲイジングバンド。Nowhere・Going Blank Againで頂点に達し、Vapour Trail・Twoleafcloverなど浮遊するギターウォールで知られる。',
+    desc: `イングランド・オックスフォード出身の4人組バンド。マーク・ガードナー（Vo/Gt）、アンディ・ベル（Vo/Gt）を中心に1988年に結成。「Vapour Trail」「Leave Them All Behind」などシューゲイザーの代表格として轟音とメロディーの融合を追求した。ガードナーのFender Jaguarで複数の歪みとコーラスを組み合わせた轟音サウンドが特徴。1996年の解散後2014年に再結成し精力的に活動を続ける。`,
     gear: [
       { id: 'jazzmaster-bell', brand: 'Fender', name: 'Jazzmaster（Andy Bell）', cat: 'ギター', catIcon: '🎸', user: 'Andy Bell (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Andy Bell Ride シューゲイジング Nowhere Twoleafclover', yt: ['Fender Jazzmaster Andy Bell Ride シューゲイジング Nowhere', 'Fender Jazzmaster ギター シューゲイジング サウンドデモ'], similar: ['Fender Jaguar', 'Fender Stratocaster', 'Fender Mustang'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'tele-gardener', brand: 'Fender', name: 'Telecaster（Mark Gardener）', cat: 'ギター', catIcon: '🎸', user: 'Mark Gardener (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Mark Gardener Ride シューゲイジング ギター Vapour Trail', yt: ['Fender Telecaster Mark Gardener Ride シューゲイジング Vapour Trail', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Stratocaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
@@ -4943,7 +4943,7 @@ export const DB: Artist[] = [
     since: '1987年〜現在',
     origin: 'イギリス（ブリストル）',
     members: 'Robert 3D Del Naja (MC/Gt)\nGrant Daddy G Marshall (MC)\nAndrew Mushroom Vowles (MC/DJ)',
-    desc: 'ブリストル出身のトリップホップの創始者。Teardrop・Unfinished Sympathy・Angel・Safeから Bond映画Blue Nothingまで独自の重厚なエレクトロニックサウンドで知られる。',
+    desc: `イングランド・ブリストル出身のグループ。ロバート・デル・ナジャ（3D）らを中心に1988年に結成。「Teardrop」「Unfinished Sympathy」「Safe from Harm」など内省的でシネマティックなトリップホップで独自のジャンルを確立した。電子音楽・ヒップホップ・ソウルを融合したプロダクションスタイルはポルティスヘッドとともに「ブリストルサウンド」を形成し、現代のR&B・エレクトロポップに多大な影響を与えた。`,
     gear: [
       { id: 'akai-mpc60-ma', brand: 'Akai', name: 'MPC60 サンプラー/シーケンサー', cat: 'ドラムマシン', catIcon: '🥁', user: 'Andrew Mushroom Vowles (MC/DJ)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Akai MPC60 Massive Attack トリップホップ サンプラー シーケンサー Unfinished Sympathy', yt: ['Akai MPC60 Massive Attack トリップホップ サンプラー Unfinished Sympathy', 'Akai MPC60 サンプラーシーケンサー ヴィンテージ サウンドデモ'], similar: ['Akai MPC3000', 'Roger Linn LM-1', 'E-mu SP-1200'], desc: '', wikiTitle: 'Akai_MPC' },
       { id: 'tr808-ma', brand: 'Roland', name: 'TR-808 Rhythm Composer', cat: 'ドラムマシン', catIcon: '🥁', user: 'Andrew Mushroom Vowles (MC/DJ)', price: '¥80,000〜¥200,000（ヴィンテージ）', kw: 'Roland TR-808 Massive Attack トリップホップ ドラムマシン ビート 重低音', yt: ['Roland TR-808 Massive Attack トリップホップ ドラムマシン 重低音', 'Roland TR-808 ドラムマシン ヴィンテージ サウンドデモ'], similar: ['Roland TR-909', 'Oberheim DMX', 'Linn LM-1'], desc: '', wikiTitle: 'Roland_TR-808' },
@@ -4959,7 +4959,7 @@ export const DB: Artist[] = [
     since: '1998年〜現在',
     origin: 'イギリス（ロンドン）',
     members: 'Damon Albarn (Vo/Key/Gt)\nJamie Hewlett (アートディレクション)',
-    desc: 'Damon AlbarnとJamie Hewlettによるヴァーチャルバンド。ロック・エレクトロニック・ヒップホップを融合し、Clint Eastwood・Feel Good Inc・Stylo等のクロスジャンルヒットを生み出した。',
+    desc: `イングランド出身のデーモン・アルバーン（BlurのVo）と漫画家ジェイミー・ヒューレットによる仮想バンドプロジェクト。「Feel Good Inc.」「Clint Eastwood」「On Melancholy Hill」などエレクトロポップ・ヒップホップ・オルタナを横断する独自のサウンドで世界的な人気を持つ。アニメーションキャラクターが「バンドメンバー」として存在するコンセプトと、毎作品ごとに豪華ゲストを迎えるコラボスタイルが特徴。`,
     gear: [
       { id: 'korg-triton-gorillaz', brand: 'Korg', name: 'Triton Music Workstation（Damon Albarn）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥150,000〜¥300,000（中古）', kw: 'Korg Triton Damon Albarn Gorillaz キーボード ワークステーション Feel Good Inc', yt: ['Korg Triton Damon Albarn Gorillaz キーボード Feel Good Inc', 'Korg Triton ワークステーション シンせ サウンドデモ'], similar: ['Korg Karma', 'Roland Fantom', 'Yamaha Motif'], desc: '', wikiTitle: 'Korg_Triton' },
       { id: 'fender-rhodes-gorillaz', brand: 'Fender', name: 'Rhodes Stage Piano（Damon Albarn）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Damon Albarn (Vo/Key/Gt)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Fender Rhodes Stage Piano Damon Albarn Gorillaz エレクトリックピアノ Melancholy Hill', yt: ['Fender Rhodes Damon Albarn Gorillaz エレクトリックピアノ Melancholy Hill', 'Fender Rhodes Stage Piano エレピ ヴィンテージ サウンドデモ'], similar: ['Wurlitzer 200A', 'Hohner Clavinet', 'Roland RD-1000'], desc: '', wikiTitle: 'Rhodes_piano' },
@@ -4974,7 +4974,7 @@ export const DB: Artist[] = [
     since: '1971年〜現在',
     origin: 'イギリス（サフォーク州ウッドブリッジ）',
     members: 'Brian Eno (ソロ/プロデューサー)',
-    desc: 'Roxy Music脱退後にアンビエントミュージックを創始したブライアン・イーノ。Discreet Music・Ambient 1からU2・Coldplay・Talkng Headsのプロデュースまで幅広く活動する音楽の革命家。',
+    desc: `イングランド出身の音楽家/プロデューサー。ロキシー・ミュージックのキーボーディストとして活動後、「Ambient 1: Music for Airports」などアンビエントミュージックというジャンルを創造した先駆者。デヴィッド・ボウイ「ベルリン三部作」、U2「The Joshua Tree」など多数の名盤をプロデュース。シンセサイザー・サンプラー・テープ操作を駆使した実験的な音づくりは現代の電子音楽・アンビエントに多大な影響を与えた。`,
     gear: [
       { id: 'ems-vcs3-eno', brand: 'EMS', name: 'VCS3 シンせサイザー（Brian Eno）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥500,000〜¥1,500,000（ヴィンテージ）', kw: 'EMS VCS3 Brian Eno Roxy Music アナログシンせ アンビエント 実験音楽', yt: ['EMS VCS3 Brian Eno Roxy Music アナログシンせ アンビエント 実験音楽', 'EMS VCS3 ヴィンテージシンせ サウンドデモ'], similar: ['Moog Minimoog', 'ARP 2600', 'Roland SH-5'], desc: '', wikiTitle: 'EMS_VCS3' },
       { id: 'revox-a77-eno', brand: 'Revox', name: 'A77 テープレコーダー（Brian Eno テープループ）', cat: 'その他', catIcon: '🎛️', user: 'Brian Eno (ソロ/プロデューサー)', price: '¥50,000〜¥150,000（ヴィンテージ）', kw: 'Revox A77 Brian Eno テープレコーダー テープループ Discreet Music アンビエント', yt: ['Revox A77 Brian Eno テープレコーダー テープループ アンビエント Discreet Music', 'Revox A77 テープレコーダー ヴィンテージ サウンドデモ'], similar: ['Studer A810', 'Echoplex EP-3', 'Roland RE-201'], desc: '', wikiTitle: 'Revox' },
@@ -4989,7 +4989,7 @@ export const DB: Artist[] = [
     since: '1991年〜現在',
     origin: 'イギリス（コーンウォール）',
     members: 'Richard D. James (ソロ)',
-    desc: 'コーンウォール出身のRichard D. Jamesによるソロプロジェクト。Selected Ambient Works・Come to Daddy・Windowlickerで知られ、IDMという音楽ジャンルを定義した天才。',
+    desc: `イングランド出身のリチャード・D・ジェームスによる電子音楽プロジェクト。「Windowlicker」「Come to Daddy」「Avril 14th」など、アシッドテクノからアンビエント・ドリルンベースまで幅広い電子音楽で世界的評価を受ける。ローランドTB-303・TR-808・TR-909を独自にプログラミングした技法は電子音楽の教科書となっており、「電子音楽の鬼才」として音楽批評家から別格の扱いを受ける。`,
     gear: [
       { id: 'korg-ms20-aphex', brand: 'Korg', name: 'MS-20（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥100,000〜¥250,000（ヴィンテージ）', kw: 'Korg MS-20 Aphex Twin Richard James アナログシンせ IDM パッチング', yt: ['Korg MS-20 Aphex Twin Richard James アナログシンせ IDM パッチング', 'Korg MS-20 アナログシンせ ヴィンテージ サウンドデモ'], similar: ['ARP 2600', 'Moog Minimoog', 'Roland SH-101'], desc: '', wikiTitle: 'Korg_MS-20' },
       { id: 'tb303-aphex', brand: 'Roland', name: 'TB-303 Bass Line（Richard D. James）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Richard D. James (ソロ)', price: '¥60,000〜¥150,000（ヴィンテージ）', kw: 'Roland TB-303 Aphex Twin アシッドテクノ ベースライン IDM', yt: ['Roland TB-303 Aphex Twin アシッドテクノ ベースライン IDM', 'Roland TB-303 Bass Line ヴィンテージシンせ サウンドデモ'], similar: ['Roland TB-3', 'Behringer TD-3', 'Cyclone TT-303'], desc: '', wikiTitle: 'Roland_TB-303' },
@@ -5005,7 +5005,7 @@ export const DB: Artist[] = [
     since: '2004年〜現在',
     origin: 'イギリス（サフォーク州フラムリンガム）',
     members: 'Ed Sheeran (ソロ)',
-    desc: 'ループペダルを駆使したソロライブパフォーマンスで世界的人気を誇るシンガーソングライター。Shape of You・Thinking Out Loud・Perfectなど多くのヒットを生み出した。',
+    desc: `イングランド・ハリファックス出身のシンガーソングライター。「Shape of You」「Thinking Out Loud」「Bad Habits」「Perfect」など多数のヒット曲を持つ現代最も成功したソロアーティストの一人。ループペダル（Boss RC-300・RC-505など）を一人で駆使してギター・ボーカル・リズムをリアルタイムに重ねるループライブスタイルが特徴。Martin・TaylorのアコースティックギターとFenderのエレキを楽曲によって使い分け、フォーク・R&B・EDMをポップに昇華するソングライティング力が際立つ。`,
     gear: [
       { id: 'martin-ed-sig', brand: 'Martin', name: 'Ed Sheeran Signature +（Ed Sheeran）', cat: 'アコギ', catIcon: '🎸', user: 'Ed Sheeran (ソロ)', price: '¥80,000〜¥130,000', kw: 'Martin Ed Sheeran Signature アコギ シグネチャー 小型 ループ', yt: ['Martin Ed Sheeran Signature アコギ シグネチャー ループ', 'Martin Ed Sheeran Signature アコースティックギター サウンドデモ'], similar: ['Martin 000-28EC', 'Taylor GS Mini', 'Gibson J-45'], desc: '', wikiTitle: 'Martin_Guitar' },
       { id: 'martin-lx1e-ed', brand: 'Martin', name: 'LX1E Little Martin（Ed Sheeran 初期）', cat: 'アコギ', catIcon: '🎸', user: 'Ed Sheeran (ソロ)', price: '¥25,000〜¥40,000', kw: 'Martin LX1E Little Martin Ed Sheeran アコギ 小型 初期 ストリート', yt: ['Martin LX1E Little Martin Ed Sheeran 初期 ストリート アコギ', 'Martin LX1E Little Martin アコースティックギター サウンドデモ'], similar: ['Martin Ed Sheeran Signature', 'Taylor GS Mini', 'Baby Taylor'], desc: '', wikiTitle: 'Martin_LX1' },
@@ -5020,7 +5020,7 @@ export const DB: Artist[] = [
     since: '2019年〜現在',
     origin: 'イギリス（アイル・オブ・ワイト）',
     members: 'Rhian Teasdale (Gt/Vo)\nHester Chambers (Gt/Vo)\nEllis Durand (Ba)\nHenry Holmes (Dr)\nJosh Omead Mobaraki (Key)',
-    desc: 'アイル・オブ・ワイト出身の5人組。Chaise Loungeでデビューし一躍注目を浴びた。ウィットに富んだ歌詞と90年代オルタナを彷彿とさせるギターサウンドが特徴。',
+    desc: `イングランド・ワイト島出身の女性2人組バンド。ライアン・チャンピオン（Vo/Gt）とヘスター・チャンバーズ（Gt）を中心に2019年に結成。デビュー曲「Chaise Longue」がBBCラジオ6で話題に。ポストパンク・インディーロック・サーフロックを軽快に融合した楽曲と皮肉を交えたユーモラスな歌詞で2020年代UKインディーバンドとして急速に注目を集めた。ライアンのFender Jaguarと軽やかなコードカッティングが特徴的。`,
     gear: [
       { id: 'jazzmaster-rhian', brand: 'Fender', name: 'Jazzmaster（Rhian Teasdale）', cat: 'ギター', catIcon: '🎸', user: 'Rhian Teasdale (Gt/Vo)', price: '¥150,000〜¥280,000', kw: 'Fender Jazzmaster Rhian Teasdale Wet Leg インディーロック Chaise Longue ギター', yt: ['Fender Jazzmaster Rhian Teasdale Wet Leg Chaise Longue インディーロック', 'Fender Jazzmaster ギター インディーロック サウンドデモ'], similar: ['Fender Jaguar', 'Fender Mustang', 'Fender Telecaster'], desc: '', wikiTitle: 'Fender_Jazzmaster' },
       { id: 'telecaster-hester', brand: 'Fender', name: 'Telecaster（Hester Chambers）', cat: 'ギター', catIcon: '🎸', user: 'Hester Chambers (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Hester Chambers Wet Leg インディーロック ギター', yt: ['Fender Telecaster Hester Chambers Wet Leg インディーロック ギター', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Stratocaster', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
@@ -5035,7 +5035,7 @@ export const DB: Artist[] = [
     since: '2012年〜現在',
     origin: 'イギリス（ロンドン・フォレストヒル）',
     members: 'Tom Misch (ソロ/Gt/Key/プロデューサー)',
-    desc: 'ロンドン出身のマルチプレーヤー/プロデューサー。Geography・What Kinda Music（Yussef Dayes共作）でネオソウルとジャズをクロスオーバーし、滑らかなギタートーンと温かいプロダクションで知られる。',
+    desc: `イングランド出身のシンガーソングライター。「Like Real People Do」などフォーク・インディーポップを基盤とした温かく内省的な楽曲で国際的な評価を受ける。ギターの繊細なフィンガーピッキングとソウルフルなボーカルが融合した音楽性で批評家・リスナー双方から高い評価を受け、映画・ドラマへの楽曲提供でも存在感を示す。`,
     gear: [
       { id: 'strat-tommisch', brand: 'Fender', name: 'Stratocaster（Tom Misch メインギター）', cat: 'ギター', catIcon: '🎸', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Tom Misch ネオソウル ジャズ R&B Geography Disco Yes Indeed', yt: ['Fender Stratocaster Tom Misch ネオソウル ジャズ Geography Disco Yes Indeed', 'Fender Stratocaster ネオソウル ギター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'PRS Silver Sky'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'es335-tommisch', brand: 'Gibson', name: 'ES-335（Tom Misch）', cat: 'ギター', catIcon: '🎸', user: 'Tom Misch (ソロ/Gt/Key/プロデューサー)', price: '¥380,000〜¥600,000', kw: 'Gibson ES-335 Tom Misch セミアコ ジャズ ネオソウル', yt: ['Gibson ES-335 Tom Misch セミアコ ジャズ ネオソウル', 'Gibson ES-335 セミアコ ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Gibson ES-330', 'Epiphone Casino'], desc: '', wikiTitle: 'Gibson_ES-335' },
@@ -5051,7 +5051,7 @@ export const DB: Artist[] = [
     since: '2010年〜現在',
     origin: 'イギリス（ロンドン・イズリントン）',
     members: 'Little Simz / Simbi Ajikawo (ソロ)',
-    desc: 'ロンドン・イズリントン出身のラッパー/シンガー。Sometimes I Might Be IntrovertでMercury Prize受賞。ライブ感あふれるバンドサウンドとラップを融合し、英国最重要アーティストの一人として注目される。',
+    desc: `イングランド・ロンドン出身の女性ラッパー。「Introvert」「Woman」「Gorilla」など力強い自己表現とロンドンの日常を描いた鋭い歌詞でグラミー賞・マーキュリー賞を受賞した次世代UKヒップホップの最高峰。バンドサウンドとヒップホップを融合したライブパフォーマンスも高く評価され、「現代最も重要なラッパー」の一人として批評家に絶賛される。`,
     gear: [
       { id: 'maschine-simz', brand: 'Native Instruments', name: 'Maschine MK3（プロダクション）', cat: 'ドラムマシン', catIcon: '🥁', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥60,000〜¥90,000', kw: 'Native Instruments Maschine Little Simz ビートメイク プロダクション ヒップホップ', yt: ['Native Instruments Maschine Little Simz ビートメイク プロダクション ヒップホップ', 'Native Instruments Maschine MK3 ビートメイク サウンドデモ'], similar: ['Akai MPC', 'Ableton Push', 'Roland SP-404'], desc: '', wikiTitle: 'Native_Instruments_Maschine' },
       { id: 'ableton-simz', brand: 'Ableton', name: 'Live（Little Simz DAW）', cat: 'その他', catIcon: '🎛️', user: 'Little Simz / Simbi Ajikawo (ソロ)', price: '¥60,000〜¥100,000', kw: 'Ableton Live Little Simz DAW プロダクション ヒップホップ Sometimes I Might Be Introvert', yt: ['Ableton Live Little Simz プロダクション DAW ヒップホップ', 'Ableton Live DAW 音楽制作 サウンドデモ'], similar: ['Logic Pro', 'FL Studio', 'Pro Tools'], desc: '', wikiTitle: 'Ableton_Live' },
@@ -5066,7 +5066,7 @@ export const DB: Artist[] = [
     since: '1997年〜2004年・2010年〜現在',
     origin: 'イギリス（ロンドン）',
     members: 'Pete Doherty (Gt/Vo)\nCarl Barat (Gt/Vo)\nJohn Hassall (Ba)\nGary Powell (Dr)',
-    desc: 'ロンドン出身の4人組。Pete DohertyとCarl Baratの天才的なソングライティングコンビで2000年代初頭UKインディーロック復権の立役者。Up the Bracket・Can You Stand Me Now・What Katie Didが代表曲。',
+    desc: `イングランド・ロンドン出身の4人組バンド。ピート・ドハーティ（Vo/Gt）とカール・バラーエ（Vo/Gt）の友情と葛藤を中心に2001年に結成。「Can't Stand Me Now」「What a Waster」などローファイでエネルギッシュなガレージロック/パンクサウンドでブリティッシュ・インディーリバイバルを担った。2004年の解散後2010年に再結成し断続的に活動を続ける。ドハーティのFender Telecasterを使ったルーズなカッティングとバラーエのリードギターの絡みがバンドの最大の魅力。`,
     gear: [
       { id: 'telecaster-doherty', brand: 'Fender', name: 'Telecaster（Pete Doherty）', cat: 'ギター', catIcon: '🎸', user: 'Pete Doherty (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster Pete Doherty The Libertines ギター インディーロック ガレージ Up the Bracket', yt: ['Fender Telecaster Pete Doherty The Libertines Up the Bracket インディーロック', 'Fender Telecaster ギター サウンドデモ'], similar: ['Fender Stratocaster', 'Epiphone Casino', 'Gibson SG'], desc: '', wikiTitle: 'Fender_Telecaster' },
       { id: 'casino-barat', brand: 'Epiphone', name: 'Casino（Carl Barat）', cat: 'ギター', catIcon: '🎸', user: 'Carl Barat (Gt/Vo)', price: '¥80,000〜¥150,000', kw: 'Epiphone Casino Carl Barat The Libertines ギター セミアコ インディーロック', yt: ['Epiphone Casino Carl Barat The Libertines セミアコ インディーロック', 'Epiphone Casino セミアコ ギター サウンドデモ'], similar: ['Gibson ES-330', 'Gibson ES-335', 'Fender Jazzmaster'], desc: '', wikiTitle: 'Epiphone_Casino' },
@@ -5081,7 +5081,7 @@ export const DB: Artist[] = [
     since: '1986年〜現在',
     origin: 'イギリス（ウェールズ・ブラックウッド）',
     members: 'James Dean Bradfield (Gt/Vo)\nNicky Wire (Ba)\nSean Moore (Dr)\nRichey Edwards (Gt)',
-    desc: 'ウェールズ・ブラックウッド出身の4人組。A Design for Lifeでブリットポップ時代に頭角を現し、政治的・文学的なリリックで知られる。Richey Edwardsの1995年失踪は今も謎のまま。',
+    desc: `ウェールズ出身の4人組（現3人）バンド。ジェームス・ディーン・ブラッドフィールド（Vo/Gt）らを中心に1986年に結成。「If You Tolerate This Your Children Will Be Next」「A Design for Life」など政治的・知性的な歌詞と骨太なロックサウンドでUKロックシーンの重要な存在として長く活動する。ブラッドフィールドのFender Stratocasterを使った力強いプレイが特徴。`,
     gear: [
       { id: 'lespaul-bradfield', brand: 'Gibson', name: 'Les Paul Standard（James Dean Bradfield）', cat: 'ギター', catIcon: '🎸', user: 'James Dean Bradfield (Gt/Vo)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul James Dean Bradfield Manic Street Preachers ギター A Design for Life ウェールズ', yt: ['Gibson Les Paul James Dean Bradfield Manic Street Preachers A Design for Life', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Fender Telecaster', 'Gibson SG', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
       { id: 'telecaster-bradfield', brand: 'Fender', name: 'Telecaster（James Dean Bradfield）', cat: 'ギター', catIcon: '🎸', user: 'James Dean Bradfield (Gt/Vo)', price: '¥130,000〜¥250,000', kw: 'Fender Telecaster James Dean Bradfield Manic Street Preachers ギター If You Tolerate This', yt: ['Fender Telecaster James Dean Bradfield Manic Street Preachers If You Tolerate This', 'Fender Telecaster ギター サウンドデモ'], similar: ['Gibson Les Paul', 'Gibson SG', 'Fender Stratocaster'], desc: '', wikiTitle: 'Fender_Telecaster' },
@@ -5097,7 +5097,7 @@ export const DB: Artist[] = [
     since: '1990年〜1999年・2007年〜2009年',
     origin: 'イギリス（ウィガン）',
     members: 'Richard Ashcroft (Vo)\nNick McCabe (Gt)\nSimon Jones (Ba)\nPeter Salisbury (Dr)',
-    desc: 'ウィガン出身の4人組。Nick McCabeの渦巻くサイケデリックギターとRichard Ashcroftの詩的ボーカルが融合。Bitter Sweet SymphonyとThe Drugsは90年代UKロックの頂点に立つ。',
+    desc: `イングランド・ウィガン出身の4人組バンド。リチャード・アシュクロフト（Vo）、ニック・マクレイン（Gt）を中心に1990年に結成。「Bitter Sweet Symphony」「The Drugs Don't Work」「Lucky Man」などブリットポップの叙情的な名曲を生み出した。マクレインのFender Stratocasterを使ったスペーシーなサウンドメイクが特徴的で、アシュクロフトの幻視的なボーカルと相まった独自の音楽世界が熱狂的なファンを生む。`,
     gear: [
       { id: 'strat-mccabe', brand: 'Fender', name: 'Stratocaster（Nick McCabe）', cat: 'ギター', catIcon: '🎸', user: 'Nick McCabe (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster Nick McCabe The Verve ギター サイケデリック Bitter Sweet Symphony The Drugs', yt: ['Fender Stratocaster Nick McCabe The Verve サイケデリック Bitter Sweet Symphony', 'Fender Stratocaster ギター サウンドデモ'], similar: ['Fender Jazzmaster', 'Fender Jaguar', 'Gibson ES-335'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'vox-verve', brand: 'Vox', name: 'AC30（Nick McCabe）', cat: 'ギターアンプ', catIcon: '🔊', user: 'Nick McCabe (Gt)', price: '¥180,000〜¥280,000', kw: 'Vox AC30 Nick McCabe The Verve ブリティッシュアンプ サイケデリック', yt: ['Vox AC30 Nick McCabe The Verve ブリティッシュアンプ サイケデリック', 'Vox AC30 コンボアンプ サウンドデモ'], similar: ['Fender Twin Reverb', 'Marshall JTM45', 'Orange Rockerverb'], desc: '', wikiTitle: 'Vox_AC30' },
@@ -5112,7 +5112,7 @@ export const DB: Artist[] = [
     since: '1982年〜現在',
     origin: 'イギリス（グラスゴー）',
     members: 'Bobby Gillespie (Vo)\nAndrew Innes (Gt)\nRobert Young (Gt)\nMartin Duffy (Key)\nGary Mani Mounfield (Ba)\nDarrin Mooney (Dr)',
-    desc: 'グラスゴー出身のバンド。Screamadelicaでロックとアシッドハウスを融合させ時代を変えた。Andrew Innesのハードなリフとロールする電子ビートが共存する唯一無二のサウンドを持つ。',
+    desc: `スコットランド・グラスゴー出身のバンド。ボビー・ギレスピー（Vo）を中心に1982年に結成。「Loaded」「Rocks」「Come Together」などロック・ハウス・ダブを融合した「Screamadelica」（1991）でブリットポップ以前のUKロックシーンに旋風を起こした。マーキュリー賞受賞作「Screamadelica」はUKロック史の名盤として高く評価される。アンドリュー・イネスのGibson ES-335を使った豊かなリズムギターが特徴的で変幻自在の音楽性で30年以上活動を続ける。`,
     gear: [
       { id: 'lespaul-innes', brand: 'Gibson', name: 'Les Paul Standard（Andrew Innes）', cat: 'ギター', catIcon: '🎸', user: 'Andrew Innes (Gt)', price: '¥300,000〜¥500,000', kw: 'Gibson Les Paul Andrew Innes Primal Scream ギター ハードロック Rocks Kowalski', yt: ['Gibson Les Paul Andrew Innes Primal Scream Rocks Kowalski ハードロック', 'Gibson Les Paul Standard レスポール サウンドデモ'], similar: ['Gibson SG', 'Fender Telecaster', 'PRS Custom 24'], desc: '', wikiTitle: 'Gibson_Les_Paul' },
       { id: 'hammond-duffy', brand: 'Hammond', name: 'B-3（Martin Duffy）', cat: 'キーボード/シンせ', catIcon: '🎹', user: 'Martin Duffy (Key)', price: '¥500,000〜¥1,200,000', kw: 'Hammond B-3 Martin Duffy Primal Scream オルガン Movin On Up Come Together', yt: ['Hammond B-3 Martin Duffy Primal Scream オルガン Movin On Up Come Together', 'Hammond B-3 オルガン サウンドデモ'], similar: ['Vox Continental', 'Farfisa Organ', 'Crumar Organizer'], desc: '', wikiTitle: 'Hammond_organ' },
@@ -5128,7 +5128,7 @@ export const DB: Artist[] = [
     since: '2013年〜2019年',
     origin: '神奈川県横浜市',
     members: 'YONCE (Vo) / HSU (Ba) / TAI (Gt) / TAIKING (Gt) / KCEE (DJ/Key) / OK (Dr)',
-    desc: '横浜出身の6人組。ネオソウル・ファンク・シティポップを独自に昇華し、STAY TUNEのヒットで一躍注目を集めた。洗練されたグルーヴとライブパフォーマンスで次世代の邦楽シーンを牽引した。',
+    desc: `神奈川県横浜出身のバンド。YONCE（Vo）、TAIKING（Gt）、HSU（Ba）らの6人編成で「STAY TUNE」「YMM」「808」などロック・ファンク・シティポップ・ジャズを融合した洗練されたサウンドで2010年代後半の日本音楽シーンに旋風を起こした。TAIKINGのFender Stratocasterを使ったファンクライクなカッティングが楽曲の骨格を形成し、HSUのグルーヴィーなベースとOKのタイトなドラムが支えるリズムセクションが圧倒的。2020年の活動休止後、各メンバーが活動を続けている。`,
     gear: [
       { id: 'jazzbass-hsu', brand: 'Fender', name: 'Jazz Bass（HSU）', cat: 'ベース', catIcon: '🎸', user: 'HSU (Ba)', price: '¥130,000〜¥250,000', kw: 'Fender Jazz Bass HSU Suchmos ベース ネオソウル ファンク グルーヴ STAY TUNE', yt: ['Fender Jazz Bass HSU Suchmos ネオソウル ファンク グルーヴ STAY TUNE', 'Fender Jazz Bass ジャズベース サウンドデモ'], similar: ['Fender Precision Bass', 'Music Man StingRay', 'Sadowsky Metro'], desc: '', wikiTitle: 'Fender_Jazz_Bass' },
       { id: 'strat-tai', brand: 'Fender', name: 'Stratocaster（TAI）', cat: 'ギター', catIcon: '🎸', user: 'TAI (Gt)', price: '¥130,000〜¥250,000', kw: 'Fender Stratocaster TAI Suchmos ギター ネオソウル シングルコイル クリーントーン', yt: ['Fender Stratocaster TAI Suchmos ネオソウル ギター クリーントーン', 'Fender Stratocaster ストラトキャスター サウンドデモ'], similar: ['Fender Telecaster', 'Gibson ES-335', 'PRS Silver Sky'], desc: '', wikiTitle: 'Fender_Stratocaster' },
