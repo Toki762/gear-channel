@@ -169,6 +169,11 @@ export default async function ArtistPage({ params }: Props) {
             <span className="tag">{artist.origin}</span>
           </div>
           <div style={{ fontSize: '12px', color: '#888', lineHeight: 1.7 }}>{artist.members}</div>
+          {artist.desc && (
+            <p style={{ marginTop: '14px', fontSize: '13px', color: '#ccc', lineHeight: 1.8 }}>
+              {artist.desc}
+            </p>
+          )}
         </div>
 
         <GearSection artist={artist} dbGear={dbGear} locale={locale} />
