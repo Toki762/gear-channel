@@ -3602,7 +3602,7 @@ export const DB: Artist[] = [
     since: '1996年〜',
     origin: 'アメリカ（コネチカット州）',
     members: 'John Mayer (Vo/Gt)',
-    desc: \`アメリカ・コネチカット州出身のギタリスト/シンガーソングライター。スティーヴィー・レイ・ヴォーンとエリック・クラプトンに強く影響を受けたブルース/ロックギタリストとして、テクニカルな速弾きと繊細なメロディセンスを兼ね備える。「Continuum」「Battle Studies」「Born and Raised」などの名盤を持ち、グラミー賞を7度受賞。Fender Stratocasterへのこだわりで知られ、ビンテージ個体コレクターとしても有名。Eric Johnsonアンプ・Two-Rock Custom Reverb Signatureなど機材へのこだわりも深く、プレイヤーとコレクターの両面を持つ稀有なアーティスト。\`,
+    desc: `アメリカ・コネチカット州出身のギタリスト/シンガーソングライター。スティーヴィー・レイ・ヴォーンとエリック・クラプトンに強く影響を受けたブルース/ロックギタリストとして、テクニカルな速弾きと繊細なメロディセンスを兼ね備える。「Continuum」「Battle Studies」「Born and Raised」などの名盤を持ち、グラミー賞を7度受賞。Fender Stratocasterへのこだわりで知られ、ビンテージ個体コレクターとしても有名。Eric Johnsonアンプ・Two-Rock Custom Reverb Signatureなど機材へのこだわりも深く、プレイヤーとコレクターの両面を持つ稀有なアーティスト。`,
     gear: [
       { id: 'stratcustom-jm', brand: 'Fender', name: 'Custom Shop Stratocaster', cat: 'ギター', catIcon: '🎸', user: 'John Mayer (Gt)', price: '¥400,000〜¥800,000', kw: 'Fender Custom Shop Stratocaster John Mayer ブルースロック ギター', yt: ['Fender Custom Shop Stratocaster John Mayer レビュー', 'John Mayer Stratocaster ブルースロック トーン サウンドデモ'], similar: ['PRS Silver Sky', 'Fender American Ultra Stratocaster', 'Suhr Classic S'], desc: '', wikiTitle: 'Fender_Stratocaster' },
       { id: 'silversky-jm', brand: 'PRS', name: 'Silver Sky', cat: 'ギター', catIcon: '🎸', user: 'John Mayer (Gt)', price: '¥220,000〜¥320,000', kw: 'PRS Silver Sky John Mayer シグネチャー ギター', yt: ['PRS Silver Sky John Mayer シグネチャー レビュー', 'PRS Silver Sky ブルースロック ポップ サウンドデモ'], similar: ['Fender Custom Shop Stratocaster', 'Fender American Vintage II Stratocaster', 'Suhr Classic S'], desc: '', wikiTitle: 'PRS_Silver_Sky' },
