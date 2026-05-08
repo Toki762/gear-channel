@@ -291,6 +291,8 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
   // EC サイト検索クエリ: brand + name のみ（kw の余計な語は含めない）
   const shopEnc = encodeURIComponent([g.brand, name].filter(Boolean).join(' '));
   const amazonTag = 'gearchannel-22';
+  const rakutenAId = '5392f51f.cee8d783.5392f520.4b1b0533';
+  const rakutenSearch = `https://hb.afl.rakuten.co.jp/hgc/${rakutenAId}/?pc=${encodeURIComponent(`https://search.rakuten.co.jp/search/mall/${shopEnc}/`)}&link_type=hybrid_url&m=gear-channel`;
   const amazonSearch = `https://www.amazon.co.jp/s?k=${shopEnc}&tag=${amazonTag}`;
   const nameEnc = encodeURIComponent(name);
   const soundhouseQ = encodeURIComponent(name.replace(/\s*[（(][^）)]*[）)]/g, '').trim());
@@ -394,7 +396,7 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
               <a className="af-btn af-btn-amazon" href={amazonSearch} target="_blank" rel="noopener noreferrer">
                 {t(locale, 'amazonBtn')} <span>›</span>
               </a>
-              <a className="af-btn af-btn-rakuten" href={`https://search.rakuten.co.jp/search/mall/${shopEnc}/`} target="_blank" rel="noopener noreferrer">
+              <a className="af-btn af-btn-rakuten" href={rakutenSearch} target="_blank" rel="noopener noreferrer">
                 {t(locale, 'rakutenBtn')} <span>›</span>
               </a>
               <a className="af-btn af-btn-yahoo" href={`https://shopping.yahoo.co.jp/search?p=${shopEnc}`} target="_blank" rel="noopener noreferrer">
