@@ -290,6 +290,8 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
 
   // EC サイト検索クエリ: brand + name のみ（kw の余計な語は含めない）
   const shopEnc = encodeURIComponent([g.brand, name].filter(Boolean).join(' '));
+  const amazonTag = 'gearchannel-22';
+  const amazonSearch = `https://www.amazon.co.jp/s?k=${shopEnc}&tag=${amazonTag}`;
   const nameEnc = encodeURIComponent(name);
   const soundhouseQ = encodeURIComponent(name.replace(/\s*[（(][^）)]*[）)]/g, '').trim());
 
@@ -305,7 +307,7 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
       <div className="g-top" onClick={onToggle}>
         <div className="g-thumb">
           <a
-            href={`https://www.amazon.co.jp/s?k=${shopEnc}`}
+            href={amazonSearch}
             target="_blank"
             rel="noopener noreferrer"
             onClick={e => e.stopPropagation()}
@@ -362,7 +364,7 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
             <div className="af-card">
               {/* 画像 + 商品名 */}
               <a
-                href={`https://www.amazon.co.jp/s?k=${shopEnc}`}
+                href={amazonSearch}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="af-card-top"
@@ -389,7 +391,7 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
               </a>
 
               {/* ショップボタン */}
-              <a className="af-btn af-btn-amazon" href={`https://www.amazon.co.jp/s?k=${shopEnc}`} target="_blank" rel="noopener noreferrer">
+              <a className="af-btn af-btn-amazon" href={amazonSearch} target="_blank" rel="noopener noreferrer">
                 {t(locale, 'amazonBtn')} <span>›</span>
               </a>
               <a className="af-btn af-btn-rakuten" href={`https://search.rakuten.co.jp/search/mall/${shopEnc}/`} target="_blank" rel="noopener noreferrer">
