@@ -399,7 +399,7 @@ function GearCard({ g, artistId, memberOptions, isOpen, isEditing, override, edi
               <a className="af-btn af-btn-rakuten" href={rakutenSearch} target="_blank" rel="noopener noreferrer">
                 {t(locale, 'rakutenBtn')} <span>›</span>
               </a>
-              <a className="af-btn af-btn-yahoo" href={`https://shopping.yahoo.co.jp/search?p=${shopEnc}&sc_e=af_ys_aflink`} target="_blank" rel="noopener noreferrer">
+              <a className="af-btn af-btn-yahoo" href={`https://ck.jp.ap.valuecommerce.com/servlet/referral?sid=3768826&pid=892608999&vc_url=${encodeURIComponent(`https://shopping.yahoo.co.jp/search?p=${shopEnc}`)}`} target="_blank" rel="noopener noreferrer">
                 {t(locale, 'yahooBtn')} <span>›</span>
               </a>
               <a className="af-btn af-btn-soundhouse" href={`https://www.soundhouse.co.jp/search/index/?search_all=${soundhouseQ}&i_type=a`} target="_blank" rel="noopener noreferrer">
