@@ -48,7 +48,6 @@ function HeaderInner({ locale: initialLocale }: Props) {
           <button type="submit" className="s-btn">{t(locale, 'searchBtn')}</button>
         </form>
         <Link href="/artists" className="nav-a">{t(locale, 'navArtists')}</Link>
-        <Link href="/bbs" className="nav-a">{t(locale, 'navBbs')}</Link>
         {/* 言語切替ボタン */}
         <button
           onClick={toggleLang}

@@ -35,9 +35,11 @@
     /* スマホ：1カラム */
     @media (max-width: 960px) {
       .page-with-sidebar { grid-template-columns: 1fr; padding: 16px 14px 50px; }
-      .page-sidebar-left { display: flex; position: static; flex-direction: row; flex-wrap: wrap; gap: 12px; }
-      .page-sidebar { position: static; flex-direction: row; flex-wrap: wrap; gap: 12px; }
-      .page-sidebar .buyback-img-wrap, .page-sidebar-left .buyback-img-wrap { flex: 0 0 auto; margin: 0 auto; }
+      .page-sidebar-left { display: none; }
+      .page-main { order: 1; }
+      .page-sidebar { order: 2; position: static; flex-direction: row; flex-wrap: wrap; gap: 12px; justify-content: center; padding-top: 8px; }
+      .page-sidebar .buyback-img-wrap { flex: 0 0 auto; margin: 0 auto; }
+      .page-sidebar-label { text-align: center; }
     }
 
     /* Breadcrumb */

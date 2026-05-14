@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { DB } from '@/data/artists';
 import { POPULAR_IDS } from '@/data/config';
-import { fetchPosts, createServerClient } from '@/lib/supabase';
+import { createServerClient } from '@/lib/supabase';
 import BuybackBanner from '@/components/BuybackBanner';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gear-channel.com';
@@ -47,24 +47,15 @@ export default async function HomePage() {
     // artist_views テーブル未作成の場合は無視
   }
   // 6件未満なら POPULAR_IDS で補完
-  if (popularArtists.length < 6) {
+  if (popularArtists.length < 12) {
     const existing = new Set(popularArtists.map(a => a.id));
     const fallback = POPULAR_IDS
       .filter(id => !existing.has(id))
       .map(id => DB.find(a => a.id === id))
       .filter(Boolean) as typeof DB;
-    popularArtists = [...popularArtists, ...fallback].slice(0, 6);
+    popularArtists = [...popularArtists, ...fallback].slice(0, 12);
   } else {
-    popularArtists = popularArtists.slice(0, 6);
-  }
-
-  // 人気スレッド（votes順 上位5件）
-  let popularPosts: any[] = [];
-  try {
-    const result = await fetchPosts({ sort: 'pop', pageSize: 5 });
-    popularPosts = result.posts;
-  } catch {
-    // Supabase接続エラー時はスキップ
+    popularArtists = popularArtists.slice(0, 12);
   }
 
   return (
@@ -88,7 +79,7 @@ export default async function HomePage() {
       <section style={{ marginBottom: '36px' }}>
         <div style={{ marginBottom: '12px' }}>
           <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', letterSpacing: '0.5px' }}>
-            🔥 人気アーティスト
+            🔥 人気アーティスト TOP 12
           </div>
         </div>
         <div className="featured-grid">
@@ -108,38 +99,6 @@ export default async function HomePage() {
           </Link>
         </div>
       </section>
-
-      {/* 人気スレッド */}
-      {popularPosts.length > 0 && (
-        <section style={{ marginBottom: '36px' }}>
-          <div style={{ marginBottom: '10px' }}>
-            <div style={{ fontWeight: 700, fontSize: '13px', color: '#888', letterSpacing: '0.5px' }}>
-              💬 人気のスレッド
-            </div>
-          </div>
-          <div>
-            {popularPosts.map(p => (
-              <Link key={p.id} href={`/bbs?post=${p.id}`} className="post-card" style={{ display: 'block', marginBottom: '8px', textDecoration: 'none' }}>
-                <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start', padding: '12px 14px' }}>
-                  <div style={{ flex: 1 }}>
-                    <div style={{ display: 'flex', gap: '6px', alignItems: 'center', marginBottom: '3px' }}>
-                      <span style={{ fontWeight: 600, fontSize: '14px' }}>{p.title}</span>
-                    </div>
-                    <div style={{ fontSize: '12px', color: '#888' }}>
-                      {(p.body || '').slice(0, 80)}…
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <div style={{ textAlign: 'right', marginTop: '10px' }}>
-            <Link href="/bbs" style={{ fontSize: '13px', color: '#d97706', fontWeight: 600, textDecoration: 'none' }}>
-              掲示板をもっと見る →
-            </Link>
-          </div>
-        </section>
-      )}
 
       {/* JSON-LD: WebSite + Sitelinks Searchbox */}
       <script

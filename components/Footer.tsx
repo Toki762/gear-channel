@@ -23,7 +23,6 @@ export default function Footer() {
           <Link href="/privacy">{t(locale, 'footerPrivacy')}</Link>
           <Link href="/contact">{t(locale, 'footerContact')}</Link>
           <Link href="/artists">{t(locale, 'footerArtists')}</Link>
-          <Link href="/bbs">{t(locale, 'footerBbs')}</Link>
         </nav>
 
         {/* コピーライト */}

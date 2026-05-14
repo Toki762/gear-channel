@@ -26,12 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/bbs`,
-      lastModified: CONTENT_UPDATED_AT,
-      changeFrequency: 'daily',
-      priority: 0.8,
-    },
-    {
       url: `${BASE_URL}/about`,
       lastModified: STATIC_UPDATED_AT,
       changeFrequency: 'monthly',
